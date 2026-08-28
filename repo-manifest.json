@@ -8,6 +8,9 @@
     "exact compression-leakage commutator identity",
     "finite rational compression witness",
     "locality guardrail for projector-compatible local algebras",
+    "equivariant repair to fixed-point linearization and Riesz-projector descent",
+    "covariant compression/leakage and faithful observable quotient",
+    "finite rational repair and central-kernel quotient witness",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -22,9 +25,23 @@
   ],
   "controlling_status": "CURRENT_STATUS.md",
   "kernel_lock": "KERNEL_AUTHORITY_LOCK.json",
-  "theorem": "CausalBaseConstraintFiberCompressionLeakageTheorem_v1.md",
-  "certificate": "constraint_compression_leakage.packet.json",
-  "builder": "python build_constraint_compression_leakage.py",
+  "theorems": [
+    "CausalBaseConstraintFiberCompressionLeakageTheorem_v1.md",
+    "RepairFixedPointGaugeDescentTheorem_v1.md"
+  ],
+  "certificates": [
+    "constraint_compression_leakage.packet.json",
+    "repair_fixedpoint_gauge_descent.packet.json"
+  ],
+  "builders": [
+    "python build_constraint_compression_leakage.py",
+    "python build_repair_fixedpoint_gauge_descent.py"
+  ],
+  "syntheses": [
+    "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
+    "CONSTRAINT_REDUCTION_REFERENCE_SYSTEM_v0.md",
+    "PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md"
+  ],
   "verifier": "python verify.py",
   "dependencies": [],
   "python": ">=3.10"

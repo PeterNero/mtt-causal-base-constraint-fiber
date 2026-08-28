@@ -270,7 +270,7 @@
   "selected_mtt_physics": false,
   "source_hashes": {
     "builder_sha256": "2c042c6e3b969eeb22fc598ec1abadca9370782d814e5797728e87924db392ee",
-    "kernel_authority_lock_sha256": "a3addc2a887cffec853e7be392cfecccf848ce32ec9f766cc72e3621b009dd0f",
+    "kernel_authority_lock_sha256": "08e81747d7fb333d20b426a25deb318c4205b30a49e4840bdc5e9cd844add657",
     "theorem_sha256": "01598cc05fb8b695bc4d1c7b8dfae14d3855e28e45c95b3ca67d3bfbc07827ab"
   },
   "summary": {

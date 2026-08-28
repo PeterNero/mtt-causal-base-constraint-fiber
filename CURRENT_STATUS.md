@@ -5,6 +5,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Kernel model: `572272ade96f4bf2d89dd41c48701a125cd0736343167819855b2cf41f377b45`
 - Model generated: `2026-08-28T05:57:40+00:00`
 - Durable handoff: `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`
+- Current synthesis handoff: `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`
 
 ## Controlling authorities
 
@@ -42,3 +43,11 @@ This is a snapshot, not a substitute for live kernel queries.
 authority and does not close any physical source blocker. Its frontier delta is
 that the relationship between compatibility, locality and compression-induced
 noncommutativity is now one exact, executable identity rather than an analogy.
+
+`RepairFixedPointGaugeDescentTheorem.v1` is also an `EXACT_GENERAL +
+EXACT_BENCHMARK` result. It proves that an equivariant repair symmetry preserving
+a fixed point also preserves its linearization and isolated Riesz projector;
+compression and leakage descend covariantly, and the observable action factors
+through a faithful quotient. Its exact finite witness passes `24/24` checks.
+It consumes but does not rederive `A47`, and it does not close
+`B.ACTION.01`.

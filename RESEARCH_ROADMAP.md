@@ -30,7 +30,7 @@ defined almost everywhere, closable, and compatible with net isotony.
 
 ## Step 3: Repair-to-projector theorem
 
-**State:** open; consumes the current cohesive repair benchmark.
+**State:** abstract equivariant theorem closed; selected q79 instantiation open.
 
 Given a nonlinear repair map `F` and a stable fixed point `u_*`, derive `P` as a
 Riesz/spectral projector of `D F(u_*)` or of the selected Hessian. Prove its
@@ -42,9 +42,20 @@ terms.
 and both leakage maps. This is the first step that can materially advance
 `B.ACTION.01`.
 
+The repository theorem now closes the general implication
+
+```text
+equivariant F + stabilized u_* + isolated tangent cluster
+  -> symmetry-preserved Riesz projector.
+```
+
+The current cohesive benchmark must still supply the selected physical objects
+from one q79 source.
+
 ## Step 4: Constraint curvature and gauge stabilizer
 
-**State:** open.
+**State:** abstract stabilizer/faithful-quotient descent closed; physical
+intertwiner and curvature identification open.
 
 Test whether the antisymmetrized leakage form is the curvature of a natural
 connection on the retained bundle, rather than merely naming it curvature.
@@ -54,6 +65,9 @@ bundle group and its diagonal `Z6` kernel.
 
 **Exit:** a commuting diagram from upper automorphisms to the faithful gauge
 group, preserving connections, Hessians and holonomies.
+
+The exact finite witness already verifies a nontrivial central kernel and
+faithful quotient. It is not the A47 group and supplies no physical connection.
 
 ## Step 5: Selected quantum pair and normalization
 

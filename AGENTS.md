@@ -7,8 +7,10 @@ paper, note, packet name or search hit.
 
 1. Call the MTT MCP `research_bootstrap` first, with this repository and the
    first applicable live blocker.
-2. Load handoff `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade` and compare its model
-   hash with the live kernel model.
+2. Load the latest applicable handoff. The current synthesis handoff is
+   `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is
+   `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`. Compare its model hash with the live
+   kernel model.
 3. Audit this repository and inspect every dirty path before editing.
 4. Retrieve each controlling A/B object from the kernel. Search is evidence
    discovery only; it never overrides curated status.

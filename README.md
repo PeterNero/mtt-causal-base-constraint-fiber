@@ -10,7 +10,7 @@ That sentence is a research hypothesis, not a completed physical theorem. The
 repo is designed to turn it into small, typed, executable claims and to reject
 it where those claims fail.
 
-## First exact result
+## Exact results
 
 The initial theorem proves an exact operator identity. Let `P` be an orthogonal
 projector, `Q = I - P`, and let upper self-adjoint operators `A_tilde` and
@@ -35,6 +35,14 @@ The included rational `3 x 3` witness verifies every matrix identity exactly.
 It does **not** derive the canonical commutation relations, Planck's constant,
 the physical q79 projector, or a Bell state.
 
+The second theorem starts one level higher. For a group-equivariant repair law,
+it proves that every symmetry stabilizing a fixed point commutes with the
+linearized repair operator and its isolated Riesz projector. Compression and
+leakage then transform covariantly, and the action on physical observables
+factors through the source stabilizer modulo its exact kernel. A nonlinear
+finite witness realizes the complete chain with a 12-element source group and a
+two-element central kernel.
+
 ## Run the proof
 
 ```powershell
@@ -51,11 +59,20 @@ checks the exact rational witness and runs the unit tests.
 - `KERNEL_AUTHORITY_LOCK.json`: machine-readable authority snapshot.
 - `CausalBaseConstraintFiberCompressionLeakageTheorem_v1.md`: theorem, proof,
   witness, locality corollary and nonclaims.
+- `RepairFixedPointGaugeDescentTheorem_v1.md`: exact bridge from equivariant
+  repair through fixed-point linearization to Riesz projection and faithful
+  observable symmetry.
+- `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
+  locality, duality and dimensions status map.
+- `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
+  philosophical reading, competing ontologies, objections and Bell boundary.
 - `CONSTRAINT_REDUCTION_REFERENCE_SYSTEM_v0.md`: candidate common language for
   preprojection rules, compression and transferred higher products.
 - `RESEARCH_ROADMAP.md`: ordered route from this identity to a selected MTT
   physical construction.
 - `constraint_compression_leakage.packet.json`: generated exact certificate.
+- `repair_fixedpoint_gauge_descent.packet.json`: generated repair/symmetry
+  certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -83,3 +100,7 @@ The immediate next frontier is therefore not another interpretation. It is to
 derive the physical projector `P` as the tangent/spectral projector of one
 selected closure-repair dynamics and then identify the leakage maps from the
 same source.
+
+The two exact packets currently pass `49/49` rational checks and five unit
+tests. The abstract repair-to-projector arrow is closed; its physical q79
+instantiation is not.

@@ -1,0 +1,462 @@
+{
+  "abstract_chain": [
+    "G-equivariant repair F",
+    "G-stabilized fixed point u_*",
+    "intertwined linearization D F(u_*)",
+    "G-invariant isolated Riesz projector P",
+    "covariant compression Phi_P and leakage L",
+    "faithful reduced action G_*/K_phys"
+  ],
+  "checks": {
+    "H0_equals_2P_plus_5Q": true,
+    "H0_has_eigenvalue_2_on_P": true,
+    "H0_has_eigenvalue_5_on_Q": true,
+    "P_is_low_spectral_projector": true,
+    "central_kernel_acts_trivially_on_retained_algebra": true,
+    "compression_is_group_covariant": true,
+    "conjugation_image_has_order_6": true,
+    "conjugation_kernel_has_order_2": true,
+    "conjugation_kernel_is_exactly_plus_minus_identity": true,
+    "every_group_element_is_orthogonal": true,
+    "faithful_quotient_has_order_6": true,
+    "group_commutes_with_linearization": true,
+    "group_contains_identity": true,
+    "group_is_closed": true,
+    "group_preserves_Riesz_split": true,
+    "leakage_antisymmetrization_is_group_covariant": true,
+    "leakage_is_group_covariant": true,
+    "nonlinear_radial_repair_equivariance_certificate": true,
+    "repair_fixed_point_is_unique_by_positive_split": true,
+    "signed_permutation_group_has_order_12": true,
+    "spectral_gap_is_3": true,
+    "transpose_inverse_is_in_group": true,
+    "witness_leakage_is_nonzero": true,
+    "witness_omega_matches_compressed_commutator": true
+  },
+  "consumes_authority": "A47",
+  "continuous_fit_parameters": 0,
+  "finite_witness": {
+    "ambient_dimension": 3,
+    "conjugation_kernel": [
+      [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ]
+    ],
+    "faithful_quotient_order": 6,
+    "field": "Q",
+    "fixed_point": [
+      "0",
+      "0",
+      "0"
+    ],
+    "group_elements": [
+      [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "high_eigenvalue": "5",
+    "low_eigenvalue": "2",
+    "matrices": {
+      "H0": [
+        [
+          "3",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "3",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "3"
+        ]
+      ],
+      "L_X": [
+        [
+          "2/9",
+          "-1/9",
+          "-1/9"
+        ],
+        [
+          "2/9",
+          "-1/9",
+          "-1/9"
+        ],
+        [
+          "2/9",
+          "-1/9",
+          "-1/9"
+        ]
+      ],
+      "L_Y": [
+        [
+          "-1/9",
+          "2/9",
+          "-1/9"
+        ],
+        [
+          "-1/9",
+          "2/9",
+          "-1/9"
+        ],
+        [
+          "-1/9",
+          "2/9",
+          "-1/9"
+        ]
+      ],
+      "Omega_XY": [
+        [
+          "0",
+          "-1/9",
+          "1/9"
+        ],
+        [
+          "1/9",
+          "0",
+          "-1/9"
+        ],
+        [
+          "-1/9",
+          "1/9",
+          "0"
+        ]
+      ],
+      "P": [
+        [
+          "2/3",
+          "-1/3",
+          "-1/3"
+        ],
+        [
+          "-1/3",
+          "2/3",
+          "-1/3"
+        ],
+        [
+          "-1/3",
+          "-1/3",
+          "2/3"
+        ]
+      ],
+      "Q": [
+        [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      ],
+      "X_tilde": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "Y_tilde": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "observable_kernel_order": 2,
+    "repair": "F(u)=H0*u+(u^T*u)*u",
+    "source_group": "{epsilon R_sigma : epsilon in {+1,-1}, sigma in S3}",
+    "source_group_order": 12,
+    "spectral_gap": "3"
+  },
+  "frontier_delta": "Repair equivariance now has an exact path through fixed-point linearization, isolated Riesz projection, covariant leakage and a faithful observable quotient. Selection of the physical q79 repair/action/projector remains open.",
+  "nonclaims": [
+    "derivation of A47",
+    "selection of the q79 HYM endpoint",
+    "physical Lorentzian action",
+    "canonical quantum observables",
+    "proof that every internal direction is non-spatiotemporal"
+  ],
+  "observed_physical_inputs": [],
+  "schema": "boe.mtt.repair-fixedpoint-gauge-descent.v1",
+  "selected_mtt_physics": false,
+  "source_hashes": {
+    "builder_sha256": "e426a1d6aab32105135c4a27f7cf273088e25681adb8c50b09b79d08142c0f39",
+    "compression_builder_sha256": "2c042c6e3b969eeb22fc598ec1abadca9370782d814e5797728e87924db392ee",
+    "grounding_map_sha256": "80bb2deb3d655d4e4920796e971375c34e24ca47ff6387bf2a9f2816e6c0e6b6",
+    "theorem_sha256": "7dec033396290d2ab8e228cfaa52b1bc965e8263bc8c221e05d94e76960474c2"
+  },
+  "summary": {
+    "all_passed": true,
+    "passed": 24,
+    "total": 24
+  },
+  "theorem_id": "RepairFixedPointGaugeDescentTheorem.v1",
+  "tiers": [
+    "EXACT_GENERAL",
+    "EXACT_BENCHMARK"
+  ]
+}

@@ -8,7 +8,10 @@ Hodge transfer, qutrit finite operators, AQFT nets, HYM geometry and effective
 physical profiles. The proposed reference system asks whether these can be
 organized as views of one preprojection object.
 
-This document is a candidate specification. It is not a theorem.
+This document is a candidate specification, not a theorem as a whole. The
+separate `RepairFixedPointGaugeDescentTheorem.v1` now proves its abstract
+equivariant `F -> D F(u_*) -> P -> faithful quotient` subchain. Selection of
+that subchain from the physical q79 source remains open.
 
 ## 1. Candidate object
 
