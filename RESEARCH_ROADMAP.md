@@ -49,10 +49,31 @@ equivariant F + stabilized u_* + isolated tangent cluster
   -> symmetry-preserved Riesz projector.
 ```
 
-The current cohesive benchmark must still supply the selected physical objects
-from one q79 source.
+The pinned cohesive finite witness has now been evaluated explicitly. Its
+Hessian is `I2`, so the canonical fixed tangent projector is zero. It cannot by
+itself furnish the nontrivial physical `P/Q` split required by this exit.
 
-## Step 4: Constraint curvature and gauge stabilizer
+## Step 4: Excluded-sector propagator and higher transfer
+
+**State:** abstract comparison closed; selected q79 execution open.
+
+The raw compression defect, Feshbach correction and Hodge-transferred higher
+products have now been placed in one exact language:
+
+```text
+E_R(S,T)=P S R T P.
+```
+
+Raw compression uses `R=Q`; Feshbach uses the excluded resolvent; A-infinity
+transfer uses `h=d*G_Q` and signed tree sums. Exact witnesses prove that these
+are not directly equal in general. The common architecture is closed, while
+the propagator is indispensable.
+
+**Exit:** one selected q79 differential and pairing emit `Delta_Q`, harmonic
+`P_Q`, reduced Green `G_Q`, homotopy `h_Q` and the first nonzero transferred
+products on the same domain, with continuum-to-finite error control.
+
+## Step 5: Constraint curvature and gauge stabilizer
 
 **State:** abstract stabilizer/faithful-quotient descent closed; physical
 intertwiner and curvature identification open.
@@ -69,7 +90,7 @@ group, preserving connections, Hessians and holonomies.
 The exact finite witness already verifies a nontrivial central kernel and
 faithful quotient. It is not the A47 group and supplies no physical connection.
 
-## Step 5: Selected quantum pair and normalization
+## Step 6: Selected quantum pair and normalization
 
 **State:** open.
 
@@ -85,20 +106,20 @@ source, with no observed quantum constant used to select the construction.
 Failure is informative: the program must then treat noncommutativity as an
 independent upper structure instead of a consequence of constraint reduction.
 
-## Step 6: Entanglement and uncertainty
+## Step 7: Entanglement and uncertainty
 
 **State:** structurally separated, physically open.
 
 - Use Step 2 to preserve base microcausality.
 - Select a nonfactorizing state and local instruments independently.
-- Derive Robertson-type uncertainty only after Step 5 supplies the physical
+- Derive Robertson-type uncertainty only after Step 6 supplies the physical
   commutator and domains.
 - Keep operational output probability separate from objective actualization.
 
 **Exit:** a same-source Bell/measurement packet with local instruments,
 no-signalling, state provenance and an explicit ontology boundary.
 
-## Step 7: QFT, gravity and extra-dimension verdict
+## Step 8: QFT, gravity and extra-dimension verdict
 
 **State:** open and dependent on `B.ACTION.01`, `B.GEO.01` and `B.QFT.02`.
 

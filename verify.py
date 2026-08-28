@@ -19,6 +19,8 @@ def main() -> None:
     run(sys.executable, "verify_constraint_compression_leakage.py")
     run(sys.executable, "build_repair_fixedpoint_gauge_descent.py")
     run(sys.executable, "verify_repair_fixedpoint_gauge_descent.py")
+    run(sys.executable, "build_cohesive_repair_compression_transfer_comparison.py")
+    run(sys.executable, "verify_cohesive_repair_compression_transfer_comparison.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

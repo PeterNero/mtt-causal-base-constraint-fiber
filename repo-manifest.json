@@ -11,6 +11,8 @@
     "equivariant repair to fixed-point linearization and Riesz-projector descent",
     "covariant compression/leakage and faithful observable quotient",
     "finite rational repair and central-kernel quotient witness",
+    "propagated-excursion comparison for compression, Feshbach and A-infinity transfer",
+    "exact Nil Hodge and rational Feshbach discriminator witnesses",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -27,15 +29,18 @@
   "kernel_lock": "KERNEL_AUTHORITY_LOCK.json",
   "theorems": [
     "CausalBaseConstraintFiberCompressionLeakageTheorem_v1.md",
-    "RepairFixedPointGaugeDescentTheorem_v1.md"
+    "RepairFixedPointGaugeDescentTheorem_v1.md",
+    "CohesiveRepairCompressionTransferComparisonTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
-    "repair_fixedpoint_gauge_descent.packet.json"
+    "repair_fixedpoint_gauge_descent.packet.json",
+    "cohesive_repair_compression_transfer_comparison.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
-    "python build_repair_fixedpoint_gauge_descent.py"
+    "python build_repair_fixedpoint_gauge_descent.py",
+    "python build_cohesive_repair_compression_transfer_comparison.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",

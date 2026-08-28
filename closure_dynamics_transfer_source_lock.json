@@ -1,0 +1,86 @@
+{
+  "schema": "boe.mtt.closure-dynamics-transfer-source-lock.v1",
+  "frozen_at": "2026-08-28",
+  "purpose": "Machine-independent provenance lock for the cohesive-repair, Hodge-transfer and Feshbach comparison theorem.",
+  "sources": [
+    {
+      "repository": "https://github.com/PeterNero/mtt-mathematical-language-discovery-program.git",
+      "branch": "codex/q79-cauchy-imprimitivity-dispersion",
+      "commit": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "Q79_COHESIVE_MAURER_CARTAN_REPAIR_AND_DERIVED_TRANSFORM_INTERTWINER_THEOREM_v1.md",
+      "git_blob": "ceccbaf73ef9b28a3946178176a19375c1a1bc98",
+      "sha256": "55db305c7139bc181011bf1bba3667ed4c238a10bd1d99ae0240609d293bfa15"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-mathematical-language-discovery-program.git",
+      "branch": "codex/q79-cauchy-imprimitivity-dispersion",
+      "commit": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "q79_cohesive_maurer_cartan_repair_and_derived_transform_intertwiner.packet.json",
+      "git_blob": "ae610dac9a5db15bf1c1a0021b7b0b587022e221",
+      "sha256": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-mathematical-language-discovery-program.git",
+      "branch": "codex/q79-cauchy-imprimitivity-dispersion",
+      "commit": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "build_q79_cohesive_maurer_cartan_repair_and_derived_transform_intertwiner.py",
+      "git_blob": "9b2fc068c7c4fcf823c70c45e0fe550b312217ee",
+      "sha256": "49089e3b64023c123ee146bc99a1b70e8d86f97bc0edda3220c247e8eec85b74"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-mathematical-language-discovery-program.git",
+      "branch": "codex/q79-cauchy-imprimitivity-dispersion",
+      "commit": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "HODGE_RESOLVED_A_INFINITY_STATE_REFERENCE_v1.md",
+      "git_blob": "8352c8ded5229a3533cc6cb08e5708da5211c8f0",
+      "sha256": "be2508a529133e8bf1aa010a2fcfe2303e709e3a1386411bb6fc03cdcaa3f19b"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-mathematical-language-discovery-program.git",
+      "branch": "codex/q79-cauchy-imprimitivity-dispersion",
+      "commit": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "hodge_transferred_ainfinity_hym_reference.packet.json",
+      "git_blob": "d9d24bf42fea5d4bbf495a80d670f339986f142c",
+      "sha256": "c33d055185f63bc08497d7f07c3f2b0069dca620510c9fd6e8c945d51634369e"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-mathematical-language-discovery-program.git",
+      "branch": "codex/q79-cauchy-imprimitivity-dispersion",
+      "commit": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "build_hodge_transferred_ainfinity_hym_reference.py",
+      "git_blob": "8739e77cd3e1df68f0381e855f2ab191f3eee182",
+      "sha256": "e99dfd1797a2a6186e0a042588ae509679d0ab3aa8cec35bad2f901f1c15353e"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-qm-source-proof.git",
+      "branch": "main",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "certificates/q79_covariant_projective_module_hym_symbol_naturality_cutset.certificate.json",
+      "git_blob": "2c7c97b2fdac891f03bb7fa93c3fbc14acad9948",
+      "sha256": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+    }
+  ],
+  "extracted_claims": {
+    "cohesive_benchmark": {
+      "background": ["0", "0"],
+      "residual": ["y2 + y2^2", "y1"],
+      "residual_jacobian_at_background": [["0", "1"], ["1", "0"]],
+      "cost_hessian_at_background": [["1", "0"], ["0", "1"]],
+      "repair_jacobian_at_background": [["-1", "0"], ["0", "-1"]]
+    },
+    "nil_hodge_benchmark": {
+      "basis": ["1", "a", "b", "ab", "c", "ac", "bc", "abc"],
+      "differential": "d(c)=ab and d=0 on the other seven basis monomials",
+      "harmonic_basis": ["1", "a", "b", "ac", "bc", "abc"],
+      "homotopy": "h(ab)=c and h=0 on the other seven basis monomials",
+      "transferred_witness": "m3(a,a,b)=ac"
+    },
+    "feshbach_benchmark": {
+      "coupled_hessian": [["1", "0", "1/2", "0"], ["0", "2", "0", "0"], ["1/2", "0", "3", "0"], ["0", "0", "0", "4"]],
+      "retained_projector_diagonal": ["1", "1", "0", "0"],
+      "self_energy_at_zero": [["1/12", "0"], ["0", "0"]],
+      "effective_operator_at_zero": [["11/12", "0"], ["0", "2"]]
+    }
+  },
+  "guard": "The source repositories are evidence inputs only. This lock does not promote their benchmark objects to selected q79 physical authority."
+}

@@ -1,0 +1,966 @@
+{
+  "checks": {
+    "cohesive_background_is_zero": true,
+    "cohesive_cost_hessian_is_identity": true,
+    "cohesive_excluded_projector_is_identity": true,
+    "cohesive_feshbach_defect_is_zero": true,
+    "cohesive_fixed_tangent_projector_has_rank_zero": true,
+    "cohesive_raw_compression_defect_is_zero": true,
+    "cohesive_reduced_green_is_identity": true,
+    "cohesive_repair_jacobian_is_negative_identity": true,
+    "cohesive_residual_jacobian_is_swap": true,
+    "cohesive_residual_vanishes_at_background": true,
+    "every_source_has_commit_blob_and_sha256": true,
+    "feshbach_correction_is_not_raw_compression_defect": true,
+    "feshbach_effective_operator_matches_pinned_witness": true,
+    "feshbach_equality_criterion_fails_on_witness": true,
+    "feshbach_green_inverts_excluded_block": true,
+    "feshbach_raw_Q_excursion_is_one_quarter": true,
+    "feshbach_self_energy_is_one_twelfth": true,
+    "feshbach_split_is_exact": true,
+    "feshbach_weighted_minus_raw_defect_identity": true,
+    "nil_contractible_projector_has_rank_two": true,
+    "nil_contraction_identity": true,
+    "nil_differential_squares_to_zero": true,
+    "nil_first_m3_tree_vanishes_for_aab": true,
+    "nil_green_is_inverse_on_contractible_sector": true,
+    "nil_harmonic_projector_has_rank_six": true,
+    "nil_hodge_laplacian_equals_contractible_projector": true,
+    "nil_homotopy_equals_dstar_green": true,
+    "nil_homotopy_excursion_on_same_leg_is_ac": true,
+    "nil_homotopy_side_conditions": true,
+    "nil_raw_Q_excursion_on_same_leg_vanishes": true,
+    "nil_raw_and_propagated_defects_differ": true,
+    "nil_second_m3_tree_is_ac": true,
+    "nil_transferred_m3_aab_is_ac": true,
+    "nil_weighted_minus_raw_defect_identity": true,
+    "seven_source_artifacts_are_pinned": true,
+    "source_lock_preserves_nonpromotion_guard": true,
+    "source_lock_schema_is_exact": true
+  },
+  "cohesive_repair_benchmark": {
+    "background": [
+      "0",
+      "0"
+    ],
+    "canonical_retained_rank": 0,
+    "closure_cost": "1/2*((y2+y2^2)^2+y1^2)",
+    "complement_projector": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "conclusion": "The exact cohesive finite witness has no nonzero harmonic/fixed tangent sector, so it cannot furnish a nontrivial compression or transferred-interaction test.",
+    "cost_hessian_at_background": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "derived_reduced_green": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "fixed_tangent_projector": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "repair_jacobian_at_background": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1"
+      ]
+    ],
+    "repair_vector_field": [
+      "-y1",
+      "-(y2+y2^2)*(1+2*y2)"
+    ],
+    "residual": [
+      "y2 + y2^2",
+      "y1"
+    ],
+    "residual_jacobian_at_background": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "continuous_fit_parameters": 0,
+  "date": "2026-08-28",
+  "feshbach_benchmark": {
+    "bare_compression": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "conclusion": "The Feshbach correction is the resolvent-weighted excursion, not the raw Q excursion; here their nonzero entries are -1/12 and -1/4 respectively.",
+    "excluded_projector": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "excluded_resolvent_at_zero": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/4"
+      ]
+    ],
+    "feshbach_effective_operator": [
+      [
+        "11/12",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "feshbach_self_energy": [
+      [
+        "1/12",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "hessian": [
+      [
+        "1",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "0",
+        "0"
+      ],
+      [
+        "1/2",
+        "0",
+        "3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "4"
+      ]
+    ],
+    "raw_Q_excursion": [
+      [
+        "1/4",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "retained_projector": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "frontier_delta": "The conjectured direct identification is decided negatively on the pinned benchmarks. Compression, Feshbach and A-infinity share one P-to-Q-to-P excursion architecture, but Feshbach inserts the excluded resolvent and A-infinity inserts the degree-minus-one Hodge homotopy. The cohesive two-dimensional repair witness has P_fix=0, while the auxiliary Nil witness proves raw leakage can vanish although m3 is nonzero. A selected q79 P, G_Q and h are still required for physical promotion.",
+  "general_theorem": {
+    "ainfinity_specialization": "R=h=d*G_Q; m3 is a signed sum of two E_h planar-tree excursions",
+    "compression_defect": "D_Q(S,T)=Phi_P(S)Phi_P(T)-Phi_P(ST)=-E_Q(S,T)",
+    "difference_identity": "D_R-D_Q=-P S (R-Q) T P",
+    "equality_criterion": "D_R=D_Q iff P S (R-Q) T P=0",
+    "excursion": "E_R(S,T)=P S R T P for R=Q R Q",
+    "feshbach_specialization": "R=G_Q(z)=[Q(H-z)Q]^-1 on QH and S=T=H",
+    "norm_bound": "||D_R-D_Q|| <= ||P S Q|| ||R-Q|| ||Q T P||",
+    "propagated_defect": "D_R(S,T)=-E_R(S,T)",
+    "typing_guard": "Q and G_Q have degree 0, while h has degree -1; raw compression and m3 cannot be identified without the propagator and arity data."
+  },
+  "nil_hodge_ainfinity_benchmark": {
+    "adjoint": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "basis": [
+      "1",
+      "a",
+      "b",
+      "ab",
+      "c",
+      "ac",
+      "bc",
+      "abc"
+    ],
+    "conclusion": "The transferred m3 is a signed sum of h=d*G_Q propagated excursions. It is not the unweighted Q compression defect.",
+    "contractible_projector": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "differential": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "harmonic_projector": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "hodge_laplacian": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "homotopy_dstar_green": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "reduced_green": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "witness": {
+      "homotopy_propagated_excursion": "ac",
+      "inputs": [
+        "a",
+        "a",
+        "b"
+      ],
+      "raw_Q_excursion": "0",
+      "transferred_m3": "ac"
+    }
+  },
+  "nonclaims": [
+    "selected q79 harmonic projector",
+    "selected q79 Green operator or homotopy",
+    "physical V3/W9 cohesive endpoint",
+    "continuum-to-finite product transfer",
+    "physical Feshbach self-energy",
+    "closure of B.ACTION.01, B.GEO.01 or B.OP.01"
+  ],
+  "observed_physical_inputs": [],
+  "schema": "boe.mtt.cohesive-repair-compression-transfer-comparison.v1",
+  "selected_mtt_physics": false,
+  "source_hashes": {
+    "builder_sha256": "0a5914e2e63cfbfd83aab69857d6c032bc803a3d414735edece989191d78e859",
+    "source_lock_sha256": "62a7c86232a258eef4d13b7c8a8884b2df6db6fd3eff4257144c58e5db18adc1",
+    "theorem_sha256": "73eba4ffb830eb3f12a13baa39401c41374bbfae9826276a41bd35d76a8845e6"
+  },
+  "summary": {
+    "all_passed": true,
+    "passed": 37,
+    "total": 37
+  },
+  "theorem_id": "CohesiveRepairCompressionTransferComparisonTheorem.v1",
+  "tiers": [
+    "EXACT_GENERAL",
+    "EXACT_PINNED_BENCHMARK_COMPARISON"
+  ]
+}

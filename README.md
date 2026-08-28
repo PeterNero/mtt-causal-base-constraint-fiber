@@ -43,6 +43,22 @@ factors through the source stabilizer modulo its exact kernel. A nonlinear
 finite witness realizes the complete chain with a 12-element source group and a
 two-element central kernel.
 
+The third theorem compares compression with the actual transfer mechanisms
+already present in the MTT research mesh. It proves the common propagated-
+excursion identity
+
+```text
+E_R(S,T) = P S R T P,
+D_R - D_Q = -P S (R-Q) T P.
+```
+
+Raw compression uses `R=Q`, Feshbach reduction uses the excluded resolvent, and
+Hodge transfer uses the degree-minus-one homotopy `h=d*G_Q`. Exact pinned
+witnesses disprove their direct identification: one A-infinity channel has raw
+excursion zero but transferred `m3(a,a,b)=ac`, while the Feshbach raw and
+resolvent-weighted values are respectively `1/4` and `1/12`. The shared
+architecture is exact; the propagator cannot be omitted.
+
 ## Run the proof
 
 ```powershell
@@ -62,6 +78,10 @@ checks the exact rational witness and runs the unit tests.
 - `RepairFixedPointGaugeDescentTheorem_v1.md`: exact bridge from equivariant
   repair through fixed-point linearization to Riesz projection and faithful
   observable symmetry.
+- `CohesiveRepairCompressionTransferComparisonTheorem_v1.md`: exact verdict on
+  raw compression versus Green/homotopy and Feshbach transfer.
+- `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
+  provenance for the read-only source artifacts.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -73,6 +93,8 @@ checks the exact rational witness and runs the unit tests.
 - `constraint_compression_leakage.packet.json`: generated exact certificate.
 - `repair_fixedpoint_gauge_descent.packet.json`: generated repair/symmetry
   certificate.
+- `cohesive_repair_compression_transfer_comparison.packet.json`: generated
+  compression/transfer comparison certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -97,10 +119,12 @@ upstream of open physical source selection:
   universal apparatus family remain open.
 
 The immediate next frontier is therefore not another interpretation. It is to
-derive the physical projector `P` as the tangent/spectral projector of one
-selected closure-repair dynamics and then identify the leakage maps from the
-same source.
+emit one selected q79 differential and pairing, then compute from that same
+source the Hodge operator, harmonic `P_Q`, reduced Green `G_Q`, homotopy
+`h_Q=Dbar_Q*G_Q` and transferred products. Only then can finite compression,
+Feshbach reduction and physical interactions be compared without changing
+sources mid-chain.
 
-The two exact packets currently pass `49/49` rational checks and five unit
-tests. The abstract repair-to-projector arrow is closed; its physical q79
-instantiation is not.
+The three exact packets currently pass `86/86` rational checks and nine unit
+tests. The abstract repair-to-projector and propagated-excursion arrows are
+closed; their physical q79 instantiation is not.
