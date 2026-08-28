@@ -12,6 +12,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Symmetric Weyl covariance/retract handoff: `bdf2db32-3b58-4c4a-8a84-14806e10fb0d`
 - Signed-edge first-jet quotient handoff: `8b06f6ca-11c9-446a-9208-d83f790aa206`
 - Symmetric response transfer handoff: `77d34292-c17e-4638-a357-ffe7302ba450`
+- Symmetric response `m4` handoff: `fa4ebaf3-e925-4c58-8a53-02c3c505cd19`
 
 ## Controlling authorities
 
@@ -196,7 +197,30 @@ every sector with two or more higher-jet inputs vanish.
 
 This is genuine progress beyond the earlier 4,464-associator cutset: the old
 associator is now identified as omitted homotopy-transfer data, and the exact
-correction is computed. The physical frontier is unchanged in type. No `m4`
-or higher operations, `D_fin` identification, selected q79 HYM endpoint,
-continuum intertwiner or physical cyclic/BV action has been supplied, so
-`B.GEO.01`, `B.OP.01` and `B.ACTION.01` remain open.
+correction is computed. At that theorem's tier, `m4` was still open; the next
+result records its closure. The physical `D_fin`, HYM, continuum and action
+frontiers were not changed by the ternary result.
+
+`SymmetricWeylTransferredM4AndArityFourStasheffTheorem.v1` now proves that the
+finite transfer does not truncate after `m3`. The source-locked Merkulov
+recursion gives a nonzero degree-minus-two `m4` with
+
+```text
+all basis quadruples:               5,308,416
+degree-admissible quadruples:       3,869,500
+nonzero m4 quadruples:                693,208
+SI(4) residual failures:                    0
+```
+
+The complete table digest is
+`a534a7f2921037aeea145f865502fc9e78928d030363bb6e5f57c88f4b59231e`.
+An independent implementation reproduces the support count, higher-jet and
+output-sector tables, digest and all arity-four residuals.
+
+The operation is strictly unital, vanishes on all-harmonic inputs and vanishes
+with three or four higher-jet inputs. It is nonzero with one or two higher-jet
+inputs, so the twelve-class ideal participates in the complete chain-level
+transfer and cannot simply be deleted. This is not a physical-vertex theorem.
+`m5+`, `D_fin` matching, the selected HYM endpoint, continuum naturality and a
+selected cyclic/BV or Lorentzian action remain open under `B.GEO.01`,
+`B.OP.01` and `B.ACTION.01`.

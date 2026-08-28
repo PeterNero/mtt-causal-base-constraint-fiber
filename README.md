@@ -134,8 +134,18 @@ Stasheff identity on all 110,592 homogeneous basis triples and therefore
 supplies the precise homotopy correction to 7,124 nonzero binary associators.
 It vanishes on all-harmonic triples and whenever two or more inputs lie in the
 higher-jet ideal. This is an exact finite low-arity result; `m4` and higher,
-the `D_fin` bridge, the continuum HYM realization and a physical action remain
-open.
+the `D_fin` bridge, the continuum HYM realization and a physical action were
+not closed at that tier. The next theorem closes `m4` only.
+
+The ninth theorem proves that the transfer does not truncate after `m3`.
+Using the same source-locked contraction and sign convention, it computes a
+nonzero degree-minus-two `m4` on 693,208 basis quadruples. The arity-four
+Stasheff identity has zero residual on all 3,869,500 degree-admissible
+quadruples, and an independent implementation reproduces the complete support,
+sector tables and operation digest. The operation vanishes with the unit, on
+all-harmonic inputs and with three or four higher-jet inputs, but it is nonzero
+with one or two such inputs. This closes finite transfer through arity four;
+`m5` and higher remain open.
 
 ## Run the proof
 
@@ -143,8 +153,16 @@ open.
 python verify.py
 ```
 
-The verifier uses only the Python standard library. It rebuilds the packet,
-checks the exact rational witness and runs the unit tests.
+The verifier uses only the Python standard library. It rebuilds the first eight
+packets, independently checks the `m4` packet in routine mode and runs the unit
+tests.
+
+The complete independent `m4` table and SI(4) replay is intentionally separate
+from the routine suite because it evaluates 3,869,500 admissible quadruples:
+
+```powershell
+python verify_q79_symmetric_response_transferred_m4.py --recompute
+```
 
 ## Repository map
 
@@ -173,6 +191,8 @@ checks the exact rational witness and runs the unit tests.
 - `SymmetricWeylResponseRetractionAndTransferredM3Theorem_v1.md`: exact
   48-dimensional strong deformation retract and complete transferred `m2/m3`
   execution through the arity-three Stasheff identity.
+- `SymmetricWeylTransferredM4AndArityFourStasheffTheorem_v1.md`: complete
+  transferred `m4`, higher-jet support and exhaustive arity-four certificate.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -186,6 +206,8 @@ checks the exact rational witness and runs the unit tests.
   quotient theorem.
 - `q79_symmetric_response_transfer_source_lock.json`: pinned symmetric DGA,
   selected retract and higher-jet-ideal sources for the response transfer.
+- `q79_symmetric_response_higher_transfer_source_lock.json`: pinned low-arity
+  transfer and Merkulov-recursion boundary for the `m4` extension.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -209,6 +231,8 @@ checks the exact rational witness and runs the unit tests.
   signed-edge parity, formal jet and harmonic-ideal quotient certificate.
 - `q79_symmetric_response_retraction_transferred_m3.packet.json`: generated
   strong-deformation-retract and transferred low-arity operation certificate.
+- `q79_symmetric_response_transferred_m4.packet.json`: generated complete `m4`
+  support, digest, cutsets and SI(4) certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -233,18 +257,18 @@ upstream of open physical source selection:
   universal apparatus family remain open.
 
 The immediate finite frontier is no longer an unexplained harmonic projector
-or a missing ternary correction. The orientation-odd first-jet quotient is
+or a missing ternary/quaternary correction. The orientation-odd first-jet quotient is
 forced for every connection source, and the exact 48-dimensional target now
 retains the complementary higher-jet classes while carrying the transferred
-product through `m3`. What remains finitely is to compute `m4` and higher or
-prove a truncation theorem. Physical promotion still requires the selected
+product through `m4`. The nonzero quaternary operation rules out truncation
+after `m3`; what remains finitely begins at `m5`. Physical promotion still requires the selected
 nonzero-Chern q79 HYM endpoint, analytic domains and pairing, its Green
 operator, physical C4 naturality, a `D_fin` intertwiner and certified
 finite/continuum error bounds from one selected source.
 
-The eight exact packets currently pass `317/317` checks and thirty-four unit
+The nine exact packets currently pass `338/338` checks and thirty-nine unit
 tests. The finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
-low-arity response transfer are closed. The higher transfer, selected HYM
+response transfer through `m4` are closed. Transfer from `m5` onward, the selected HYM
 endpoint, finite-to-continuum intertwiner and physical-action promotion are
 not.

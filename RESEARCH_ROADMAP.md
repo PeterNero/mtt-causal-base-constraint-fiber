@@ -57,7 +57,7 @@ itself furnish the nontrivial physical `P/Q` split required by this exit.
 
 **State:** abstract comparison, selected finite Weyl execution, q79 harmonic
 globalization, minimal full-covariance DGA, universal harmonic first-jet
-quotient and finite transfer through `m3` closed; higher-arity and continuum
+quotient and finite transfer through `m4` closed; arity five onward and continuum
 q79 execution open.
 
 The raw compression defect, Feshbach correction and Hodge-transferred higher
@@ -130,8 +130,15 @@ The 144-dimensional symmetric DGA strongly deformation retracts onto the
 twelve-class higher-jet harmonic ideal. The transferred `m2` is nonassociative,
 but a computed nonzero `m3` satisfies the arity-three Stasheff identity on all
 110,592 basis triples. This replaces the former associativity cutset with an
-exact low-arity `A_infinity` structure. Higher operations have not yet been
-computed or proved to vanish.
+exact low-arity `A_infinity` structure.
+
+The next arity has now been executed as well. The transferred `m4` is nonzero
+on 693,208 basis quadruples and has degree `-2`. The arity-four Stasheff
+identity holds on all 3,869,500 degree-admissible quadruples, with the complete
+support and digest independently replayed. It vanishes on harmonic quadruples
+and with three or more higher-jet inputs, but two higher-jet inputs can
+contribute. Therefore the finite hierarchy provably does not truncate at
+`m3`.
 
 **Remaining exit:** instantiate the proved first-jet selector on the selected
 continuum q79 HYM complex and construct its full response transfer. The source
@@ -139,9 +146,10 @@ must emit the nonzero-Chern endpoint, connection, reduced Green, physical `C4`
 naturality and a finite-to-continuum intertwiner with domains, pairing and
 certified errors. It must also carry the nonharmonic lanes that reproduce
 `D_fin`, either through an associative continuum product or a certified
-`A_infinity` transfer. At the finite tier, compute `m4` and higher or prove a
-truncation theorem. The even higher-jet sector must be retained, quotiented or
-interpreted by that same source rather than by declaration.
+`A_infinity` transfer. At the finite tier, compute `m5` and higher or prove a
+truncation theorem at a later arity. The even higher-jet sector must be
+retained, quotiented or interpreted by that same source rather than by
+declaration.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

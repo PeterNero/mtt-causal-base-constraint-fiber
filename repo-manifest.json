@@ -31,6 +31,8 @@
     "exact 48-dimensional strong deformation retract retaining all symmetric cohomology",
     "complete transferred m2 and m3 tables through the arity-three Stasheff identity",
     "higher-jet sector support and harmonic-vanishing cutsets for transferred m3",
+    "complete transferred m4 table and arity-four Stasheff certificate",
+    "exact non-truncation after m3 and higher-jet support cutsets for m4",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -48,8 +50,9 @@
     "selection of a finite-qutrit-to-continuum scaling family",
     "physical absence of the orientation-even higher-jet sector",
     "instantiation of the conditional first-jet theorem on a selected q79 HYM endpoint",
-    "computation or vanishing of transferred m4 and higher operations",
+    "computation or vanishing of transferred m5 and higher operations",
     "identification of the finite transferred m3 with a physical interaction vertex",
+    "identification of the finite transferred m4 with a physical four-point vertex",
     "identification of the 48-dimensional transfer target with D_fin or rank-102 response data",
     "that every internal MTT direction is non-spatiotemporal",
     "a new globally original operator-theory identity"
@@ -64,7 +67,8 @@
     "Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem_v1.md",
     "SelectedSymmetricWeylCalculusIsometricRetractionAndCovarianceCutsetTheorem_v1.md",
     "SignedEdgeFirstJetSelectionAndHarmonicIdealQuotientTheorem_v1.md",
-    "SymmetricWeylResponseRetractionAndTransferredM3Theorem_v1.md"
+    "SymmetricWeylResponseRetractionAndTransferredM3Theorem_v1.md",
+    "SymmetricWeylTransferredM4AndArityFourStasheffTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -74,7 +78,8 @@
     "q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.packet.json",
     "q79_symmetric_weyl_calculus_isometric_retraction.packet.json",
     "q79_signed_edge_first_jet_harmonic_ideal_quotient.packet.json",
-    "q79_symmetric_response_retraction_transferred_m3.packet.json"
+    "q79_symmetric_response_retraction_transferred_m3.packet.json",
+    "q79_symmetric_response_transferred_m4.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -84,7 +89,8 @@
     "python build_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.py",
     "python build_q79_symmetric_weyl_calculus_isometric_retraction.py",
     "python build_q79_signed_edge_first_jet_harmonic_ideal_quotient.py",
-    "python build_q79_symmetric_response_retraction_transferred_m3.py"
+    "python build_q79_symmetric_response_retraction_transferred_m3.py",
+    "python build_q79_symmetric_response_transferred_m4.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",

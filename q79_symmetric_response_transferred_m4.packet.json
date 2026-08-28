@@ -1,0 +1,232 @@
+{
+  "checks": {
+    "all_5308416_basis_quadruples_are_classified_by_degree": true,
+    "all_pinned_local_source_hashes_match": true,
+    "arity_four_Stasheff_identity_holds_on_all_3869500_admissible_quadruples": true,
+    "binary_homotopy_state_counts_are_reproduced": true,
+    "degree_admissible_quadruple_count_is_3869500": true,
+    "degree_forced_zero_quadruple_count_is_1438916": true,
+    "first_nonzero_m4_witness_is_emitted": true,
+    "local_lambda3_recursion_matches_the_prior_m3_on_all_110592_triples": true,
+    "low_packet_m3_is_nonzero": true,
+    "low_packet_passes_33_of_33_checks": true,
+    "low_packet_target_dimension_is_48": true,
+    "no_physical_parameters_or_observed_values_are_used": true,
+    "operation_table_digest_is_sha256": true,
+    "physical_promotion_guard_is_explicit": true,
+    "source_lock_schema_is_exact": true,
+    "target_basis_has_48_elements": true,
+    "ternary_homotopy_state_counts_are_reproduced": true,
+    "transferred_m4_has_degree_minus_two_on_every_nonzero_value": true,
+    "transferred_m4_is_nonzero": true,
+    "transferred_m4_is_strictly_unital": true,
+    "transferred_m4_vanishes_on_all_harmonic_input_quadruples": true
+  },
+  "date": "2026-08-28",
+  "execution": {
+    "arity_four": {
+      "degree_admissible_basis_quadruples_checked": 3869500,
+      "first_residual_failure": null,
+      "identity": "sum_(r+s+t=4) (-1)^(r+s*t) m_(r+1+t)(1^r tensor m_s tensor 1^t)=0 with Koszul evaluation signs",
+      "residual_failures": 0
+    },
+    "basis": {
+      "all_basis_quadruples": 5308416,
+      "degree_admissible_basis_quadruples": 3869500,
+      "degree_forced_zero_basis_quadruples": 1438916,
+      "target_dimension": 48
+    },
+    "convention": {
+      "degree": -2,
+      "lambda3": "lambda3(a,b,c)=mu(H mu(ia,ib),ic)-(-1)^|a| mu(ia,H mu(ib,ic))",
+      "lambda4": "lambda4(a,b,c,d)=-mu(H lambda3(a,b,c),id)-(-1)^(|a|+|b|)mu(H mu(ia,ib),H mu(ic,id))-mu(ia,H lambda3(b,c,d))",
+      "m4": "m4=p lambda4",
+      "reference": "Merkulov recursion, arXiv:math/9809172, calibrated to the prior exact m3"
+    },
+    "elapsed_seconds": 918.2270669999998,
+    "m4": {
+      "all_harmonic_input_nonzero_basis_quadruples": 0,
+      "first_mixed_old_higher_jet_witness": {
+        "degrees": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "input_indices": [
+          1,
+          12,
+          37,
+          12
+        ],
+        "inputs": [
+          "C:0,0,1",
+          "C:1,0,0",
+          "J:5",
+          "C:1,0,0"
+        ],
+        "m4": {
+          "higher_jet": [],
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "-1/12",
+                "1/12"
+              ]
+            ]
+          ]
+        },
+        "m4_coordinates": [
+          [
+            25,
+            [
+              "-1/12",
+              "1/12"
+            ]
+          ]
+        ]
+      },
+      "first_nonzero_witness": {
+        "degrees": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "input_indices": [
+          1,
+          1,
+          13,
+          12
+        ],
+        "inputs": [
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "m4": {
+          "higher_jet": [],
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "0",
+                "-1/8"
+              ]
+            ]
+          ]
+        },
+        "m4_coordinates": [
+          [
+            25,
+            [
+              "0",
+              "-1/8"
+            ]
+          ]
+        ]
+      },
+      "higher_jet_input_count_distribution": {
+        "0": 363928,
+        "1": 293208,
+        "2": 36072
+      },
+      "input_sector_output_counts": {
+        "CCCC->jet": 52352,
+        "CCCC->old": 273528,
+        "CCCC->old+jet": 38048,
+        "CCCJ->jet": 16876,
+        "CCCJ->old": 37756,
+        "CCCJ->old+jet": 5588,
+        "CCJC->jet": 20928,
+        "CCJC->old": 57056,
+        "CCJC->old+jet": 8400,
+        "CCJJ->jet": 2508,
+        "CCJJ->old": 2608,
+        "CCJJ->old+jet": 368,
+        "CJCC->jet": 20928,
+        "CJCC->old": 57056,
+        "CJCC->old+jet": 8400,
+        "CJCJ->jet": 2828,
+        "CJCJ->old": 3808,
+        "CJCJ->old+jet": 472,
+        "CJJC->jet": 3096,
+        "CJJC->old": 4544,
+        "CJJC->old+jet": 704,
+        "JCCC->jet": 16876,
+        "JCCC->old": 37756,
+        "JCCC->old+jet": 5588,
+        "JCCJ->jet": 912,
+        "JCCJ->old": 1392,
+        "JCCJ->old+jet": 240,
+        "JCJC->jet": 2828,
+        "JCJC->old": 3808,
+        "JCJC->old+jet": 472,
+        "JJCC->jet": 2508,
+        "JJCC->old": 2608,
+        "JJCC->old+jet": 368
+      },
+      "nonzero_basis_quadruples": 693208,
+      "nonzero_table_sha256": "a534a7f2921037aeea145f865502fc9e78928d030363bb6e5f57c88f4b59231e",
+      "output_kind_counts": {
+        "jet": 142640,
+        "old": 481920,
+        "old+jet": 68648
+      },
+      "three_or_more_higher_jet_input_nonzero_basis_quadruples": 0,
+      "unit_input_nonzero_basis_quadruples": 0
+    },
+    "recursion_compression": {
+      "distinct_nonzero_binary_homotopy_values": 585,
+      "distinct_nonzero_ternary_homotopy_values": 11174,
+      "nonzero_binary_homotopy_states": 1024,
+      "nonzero_ternary_homotopy_states": 39764,
+      "projected_product_cache": {
+        "currsize": 400000,
+        "hits": 13018474,
+        "maxsize": 400000,
+        "misses": 1507676
+      }
+    }
+  },
+  "frontier_delta": "The finite transferred q79 response structure is now computed through arity four. m4 is nonzero and the arity-four Stasheff identity is checked exactly on every degree-admissible target-basis quadruple. Therefore the transfer does not truncate after m3. m5+, D_fin matching, the selected HYM endpoint and a physical action remain open.",
+  "parameter_ledger": {
+    "new_fits": 0,
+    "new_observed_values": 0,
+    "new_physical_continuous_parameters": 0,
+    "new_physical_discrete_selectors": 0
+  },
+  "physical_action_selected": false,
+  "physical_vertex_claimed": false,
+  "prior_packet": "q79_symmetric_response_retraction_transferred_m3.packet.json",
+  "prior_packet_sha256": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+  "remaining_open": [
+    "computation or vanishing theorem for m5 and higher",
+    "identification of the 48-dimensional target with D_fin or rank-102 response data",
+    "selected nonzero-Chern q79 HYM endpoint, connection and reduced Green operator",
+    "finite-to-continuum intertwiner with domains, normalization and error bounds",
+    "selected cyclic/BV or Lorentzian action before interpreting m4 as a physical vertex"
+  ],
+  "schema": "boe.mtt.q79-symmetric-response-transferred-m4.v1",
+  "selected_nonzero_Chern_HYM_endpoint": false,
+  "source_lock": "q79_symmetric_response_higher_transfer_source_lock.json",
+  "source_lock_sha256": "25f07e61efa64114a1dd626760895953020e1be2ee47733deeb08ea4dc663045",
+  "summary": {
+    "all_passed": true,
+    "passed": 21,
+    "total": 21
+  },
+  "target_dimension": 48,
+  "target_identified_with_D_fin": false,
+  "theorem": "SymmetricWeylTransferredM4AndArityFourStasheffTheorem_v1.md",
+  "theorem_sha256": "4ce40859a885417f8c9537915da2bb11e560b38327e9e2bd1ad05c893e58ab33",
+  "transferred_m4_computed": true,
+  "transferred_m4_nonzero": true,
+  "transferred_m5_and_higher_computed": false
+}

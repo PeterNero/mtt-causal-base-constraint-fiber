@@ -31,6 +31,7 @@ def main() -> None:
     run(sys.executable, "verify_q79_signed_edge_first_jet_harmonic_ideal_quotient.py")
     run(sys.executable, "build_q79_symmetric_response_retraction_transferred_m3.py")
     run(sys.executable, "verify_q79_symmetric_response_retraction_transferred_m3.py")
+    run(sys.executable, "verify_q79_symmetric_response_transferred_m4.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 
