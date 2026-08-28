@@ -1,0 +1,288 @@
+{
+  "checks": {
+    "all_pinned_local_source_hashes_match": true,
+    "arity_three_Stasheff_identity_holds_on_all_110592_basis_triples": true,
+    "kernel_model_hash_is_pinned": true,
+    "old_only_compressed_associativity_defect_is_not_silently_removed": true,
+    "old_only_inputs_source_nonzero_ternary_transfer": true,
+    "operation_table_digests_are_sha256": true,
+    "retraction_after_inclusion_is_identity_on_all_48_target_basis_elements": true,
+    "six_sources_are_commit_blob_and_sha256_pinned": true,
+    "source_guard_keeps_m4_HYM_Dfin_and_action_open": true,
+    "source_lock_schema_is_exact": true,
+    "strong_deformation_retract_identity_holds_on_all_144_source_basis_elements": true,
+    "target_cohomology_matches_symmetric_1_4_6_4_1": true,
+    "target_degree_dimensions_are_9_20_14_4_1": true,
+    "target_differential_squares_to_zero_on_all_48_basis_elements": true,
+    "target_has_dimension_48": true,
+    "target_inclusion_is_a_cochain_map": true,
+    "target_projection_annihilates_the_transfer_homotopy": true,
+    "target_projection_is_a_cochain_map": true,
+    "three_controlling_authorities_are_pinned": true,
+    "transfer_homotopy_annihilates_the_target_inclusion": true,
+    "transfer_homotopy_squares_to_zero_on_all_144_source_basis_elements": true,
+    "transferred_m1_m2_Leibniz_identity_holds_on_all_2304_basis_pairs": true,
+    "transferred_m2_has_degree_zero_on_every_nonzero_basis_product": true,
+    "transferred_m2_is_strictly_unital_on_all_48_basis_elements": true,
+    "transferred_m3_has_degree_minus_one_on_every_nonzero_basis_triple": true,
+    "transferred_m3_is_nonzero": true,
+    "transferred_m3_vanishes_on_all_harmonic_input_triples": true,
+    "transferred_m3_vanishes_when_any_input_is_the_unit": true,
+    "transferred_m3_vanishes_with_two_or_more_higher_jet_basis_inputs": true,
+    "upstream_extra_classes_are_the_even_generated_ideal": true,
+    "upstream_extra_harmonic_dimensions_are_0_2_5_4_1": true,
+    "upstream_harmonic_quotient_is_strict": true,
+    "upstream_old_complex_is_an_isometric_cochain_retract": true
+  },
+  "continuous_fit_parameters": 0,
+  "date": "2026-08-28",
+  "discrete_physical_selectors": 0,
+  "frontier_delta": "The 144-dimensional symmetric signed Weyl DGA now has an exact 48-dimensional strong deformation retract onto the selected 36-dimensional old q79 cochain complex plus the twelve-class higher-jet harmonic ideal. The transferred m2 and m3 are computed on every target basis pair/triple, and the arity-three Stasheff identity is verified exactly. This explains the old compressed associator as low-arity homotopy-transfer data instead of a failed product. Higher m4+, D_fin matching, the selected HYM endpoint and physical action remain open.",
+  "nonclaims": [
+    "vanishing or computation of m4 and higher transferred products",
+    "identification of the 48-dimensional target with D_fin or the rank-102 continuum operator",
+    "a selected continuum q79 HYM endpoint, connection or Green operator",
+    "physical interpretation or removal of the higher-jet ideal",
+    "a selected physical action, normalization or observable comparison",
+    "closure of B.GEO.01, B.OP.01 or B.ACTION.01"
+  ],
+  "observed_physical_inputs": [],
+  "physical_action_selected": false,
+  "schema": "boe.mtt.q79-symmetric-response-retraction-transferred-m3.v1",
+  "selected_nonzero_Chern_HYM_endpoint": false,
+  "source_hashes": {
+    "builder_sha256": "0978fd67a721bbe3cb2b5b7817222dde00b532daf88b2b8f35d141ecc9efdaeb",
+    "source_lock_sha256": "8c0a8ba02581f77367ea0380bc04ec755d6f1742c8038fdb97b9c69804a02943",
+    "theorem_sha256": "24bf251b0d0ccdcd32ce700689843731e926638c1a4d2794dfa8be3b46a45463"
+  },
+  "strong_deformation_retract": {
+    "identity": "d H_T + H_T d = 1 - i_T p_T",
+    "maps": {
+      "homotopy": "H_T=(1-IQ) h_sym (1-IQ), with h_sym=d*_sym G_sym on nonzero modes",
+      "inclusion": "i_T(x,j)=I_old(x)+j",
+      "projection": "p_T(y)=(Q_old(y),P_J(y))"
+    },
+    "side_conditions": [
+      "p_T i_T=1",
+      "H_T^2=0",
+      "p_T H_T=0",
+      "H_T i_T=0"
+    ],
+    "source": {
+      "degree_dimensions": [
+        9,
+        36,
+        54,
+        36,
+        9
+      ],
+      "name": "symmetric signed Weyl DGA",
+      "total_dimension": 144
+    },
+    "target": {
+      "cohomology_dimensions": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ],
+      "degree_dimensions": [
+        9,
+        20,
+        14,
+        4,
+        1
+      ],
+      "higher_jet_dimensions": [
+        0,
+        2,
+        5,
+        4,
+        1
+      ],
+      "name": "selected old q79 complex direct-sum higher-jet harmonic ideal",
+      "old_complex_dimensions": [
+        9,
+        18,
+        9,
+        0,
+        0
+      ],
+      "total_dimension": 48
+    }
+  },
+  "strong_deformation_retract_to_old_plus_higher_jet_ideal": true,
+  "summary": {
+    "all_passed": true,
+    "passed": 33,
+    "total": 33
+  },
+  "target_identified_with_D_fin": false,
+  "theorem_id": "SymmetricWeylResponseRetractionAndTransferredM3Theorem.v1",
+  "tiers": [
+    "EXACT_FINITE_STRONG_DEFORMATION_RETRACT",
+    "EXACT_TRANSFERRED_M1_M2_M3",
+    "EXACT_ARITY_THREE_A_INFINITY_IDENTITY",
+    "HIGHER_ARITY_AND_PHYSICAL_PROMOTION_OPEN"
+  ],
+  "transferred_m3_computed": true,
+  "transferred_m4_and_higher_computed": false,
+  "transferred_structure": {
+    "basis_counts": {
+      "pairs": 2304,
+      "target": 48,
+      "triples": 110592
+    },
+    "convention": {
+      "arity_three_identity": "Assoc(m2)+m1m3+m3(m1,a,b)+(-1)^|a|m3(a,m1,b)+(-1)^(|a|+|b|)m3(a,b,m1)=0",
+      "m1": "d_T",
+      "m2": "p mu(i tensor i)",
+      "m3": "p mu(H mu(i a,i b),i c) - (-1)^|a| p mu(i a,H mu(i b,i c))"
+    },
+    "m2": {
+      "nonzero_basis_pairs": 881,
+      "nonzero_table_sha256": "7b7e1073a61d7c531a897ae85add0c919b9de75d20c4a0a095cb62429766abdd",
+      "sector_counts": {
+        "CC->old": 673,
+        "CC->old+jet": 56,
+        "CJ->jet": 27,
+        "CJ->old": 40,
+        "JC->jet": 27,
+        "JC->old": 40,
+        "JJ->jet": 18
+      }
+    },
+    "m2_associativity": {
+      "first_nonzero_associator_witness": {
+        "degrees": [
+          1,
+          0,
+          0
+        ],
+        "inputs": [
+          "C:0,0,1",
+          "C:1,0,0",
+          "C:1,0,0"
+        ],
+        "m2_associator": {
+          "higher_jet": [],
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "-3/4",
+                "-3/4"
+              ]
+            ]
+          ]
+        }
+      },
+      "nonzero_old_input_associators_in_48_target": 4996,
+      "nonzero_target_associators": 7124,
+      "prior_old_only_36_target_associators": 4464,
+      "verdict": "The binary target product is not strict associative off harmonics; m3 supplies its exact chain-homotopy correction at arity three."
+    },
+    "m3": {
+      "first_nonzero_associator_and_m3_witness": {
+        "degrees": [
+          1,
+          1,
+          0
+        ],
+        "inputs": [
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:2,0,0"
+        ],
+        "m2_associator": {
+          "higher_jet": [
+            [
+              5,
+              [
+                "1/2",
+                "-1/2"
+              ]
+            ]
+          ],
+          "old": []
+        },
+        "m3": {
+          "higher_jet": [
+            [
+              4,
+              [
+                "-1/4",
+                "-1/4"
+              ]
+            ]
+          ],
+          "old": [
+            [
+              0,
+              0,
+              1,
+              [
+                "1/4",
+                "-1/4"
+              ]
+            ]
+          ]
+        }
+      },
+      "first_nonzero_witness": {
+        "degrees": [
+          1,
+          1,
+          0
+        ],
+        "inputs": [
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "m2_associator": {
+          "higher_jet": [],
+          "old": []
+        },
+        "m3": {
+          "higher_jet": [],
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "1/2",
+                "1/4"
+              ]
+            ]
+          ]
+        }
+      },
+      "harmonic_input_nonzero_basis_triples": 0,
+      "nonzero_associator_and_m3_basis_triples": 3580,
+      "nonzero_basis_triples": 17204,
+      "nonzero_table_sha256": "6f388d2b174f0a19d7bc1169a81a9a004be5f4b1be07c925b1146be2b3e02862",
+      "old_input_nonzero_basis_triples": 11540,
+      "sector_counts": {
+        "CCC->jet": 1512,
+        "CCC->old": 8728,
+        "CCC->old+jet": 1300,
+        "CCJ->jet": 556,
+        "CCJ->old": 1052,
+        "CCJ->old+jet": 148,
+        "CJC->jet": 452,
+        "CJC->old": 1488,
+        "CJC->old+jet": 212,
+        "JCC->jet": 556,
+        "JCC->old": 1052,
+        "JCC->old+jet": 148
+      },
+      "two_or_more_higher_jet_input_nonzero_basis_triples": 0
+    },
+    "scope": "m1, m2, m3 and the arity-three identity only; m4 and higher are not inferred"
+  }
+}

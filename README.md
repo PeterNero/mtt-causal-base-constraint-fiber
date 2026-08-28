@@ -119,6 +119,24 @@ associatively. This is a derived first-jet selector, not yet a physical q79
 HYM promotion: the selected endpoint, continuum intertwiner and error bounds
 remain open.
 
+The eighth theorem closes the previously open finite response transfer through
+arity three without deleting those twelve classes. It constructs the exact
+48-dimensional target
+
+```text
+T = old q79 response complex direct-sum higher-jet harmonic ideal
+```
+
+and an explicit strong deformation retract from the 144-dimensional symmetric
+DGA onto `T`. Homological transfer gives 881 nonzero binary products and 17,204
+nonzero ternary products. The transferred `m3` satisfies the arity-three
+Stasheff identity on all 110,592 homogeneous basis triples and therefore
+supplies the precise homotopy correction to 7,124 nonzero binary associators.
+It vanishes on all-harmonic triples and whenever two or more inputs lie in the
+higher-jet ideal. This is an exact finite low-arity result; `m4` and higher,
+the `D_fin` bridge, the continuum HYM realization and a physical action remain
+open.
+
 ## Run the proof
 
 ```powershell
@@ -152,6 +170,9 @@ checks the exact rational witness and runs the unit tests.
 - `SignedEdgeFirstJetSelectionAndHarmonicIdealQuotientTheorem_v1.md`: exact
   odd/even parity split, universal first-jet selection, twelve-class harmonic
   ideal and strict selected quotient.
+- `SymmetricWeylResponseRetractionAndTransferredM3Theorem_v1.md`: exact
+  48-dimensional strong deformation retract and complete transferred `m2/m3`
+  execution through the arity-three Stasheff identity.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -163,6 +184,8 @@ checks the exact rational witness and runs the unit tests.
 - `q79_signed_edge_first_jet_source_lock.json`: pinned symmetric-calculus,
   harmonic-C4 and adjacent q79 first/second-jet evidence for the first-jet
   quotient theorem.
+- `q79_symmetric_response_transfer_source_lock.json`: pinned symmetric DGA,
+  selected retract and higher-jet-ideal sources for the response transfer.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -184,6 +207,8 @@ checks the exact rational witness and runs the unit tests.
   symmetric-covariance, Hodge-retract and extra-mode certificate.
 - `q79_signed_edge_first_jet_harmonic_ideal_quotient.packet.json`: generated
   signed-edge parity, formal jet and harmonic-ideal quotient certificate.
+- `q79_symmetric_response_retraction_transferred_m3.packet.json`: generated
+  strong-deformation-retract and transferred low-arity operation certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -207,16 +232,19 @@ upstream of open physical source selection:
 - the selected physical upper action, q79 HYM endpoint, continuum operator and
   universal apparatus family remain open.
 
-The immediate next frontier is no longer an unexplained harmonic projector.
-For every first-order connection source, the orientation-odd harmonic quotient
-is forced. What remains is to instantiate that antecedent on the selected
-nonzero-Chern q79 HYM endpoint and construct the full nonharmonic response
-transfer. The physical route must include analytic domains, pairing, Green
-operator, physical C4 naturality, nonharmonic response insertion and certified
+The immediate finite frontier is no longer an unexplained harmonic projector
+or a missing ternary correction. The orientation-odd first-jet quotient is
+forced for every connection source, and the exact 48-dimensional target now
+retains the complementary higher-jet classes while carrying the transferred
+product through `m3`. What remains finitely is to compute `m4` and higher or
+prove a truncation theorem. Physical promotion still requires the selected
+nonzero-Chern q79 HYM endpoint, analytic domains and pairing, its Green
+operator, physical C4 naturality, a `D_fin` intertwiner and certified
 finite/continuum error bounds from one selected source.
 
-The seven exact packets currently pass `284/284` checks and twenty-nine unit
+The eight exact packets currently pass `317/317` checks and thirty-four unit
 tests. The finite `P/G/h` package, q79 harmonic strain globalization, full
-signed-direction DGA covariance and universal harmonic first-jet quotient are
-closed. The selected HYM endpoint, finite-to-continuum intertwiner,
-full-chain response transfer and physical-action promotion are not.
+signed-direction DGA covariance, universal harmonic first-jet quotient and
+low-arity response transfer are closed. The higher transfer, selected HYM
+endpoint, finite-to-continuum intertwiner and physical-action promotion are
+not.
