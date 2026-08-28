@@ -1,0 +1,25 @@
+"""Canonical machine-independent verifier for this repository."""
+
+from __future__ import annotations
+
+import subprocess
+import sys
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent
+
+
+def run(*args: str) -> None:
+    subprocess.run(args, cwd=ROOT, check=True)
+
+
+def main() -> None:
+    run(sys.executable, "build_constraint_compression_leakage.py")
+    run(sys.executable, "verify_constraint_compression_leakage.py")
+    run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
+    print("repository verification passed")
+
+
+if __name__ == "__main__":
+    main()

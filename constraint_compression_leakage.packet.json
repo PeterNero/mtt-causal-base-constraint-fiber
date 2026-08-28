@@ -1,0 +1,286 @@
+{
+  "checks": {
+    "P_Q_are_orthogonal": true,
+    "P_is_idempotent": true,
+    "P_is_self_adjoint": true,
+    "P_plus_Q_is_identity": true,
+    "Q_is_idempotent": true,
+    "Q_is_self_adjoint": true,
+    "XY_multiplicative_defect_identity": true,
+    "YX_multiplicative_defect_identity": true,
+    "both_witness_leakages_are_nonzero": true,
+    "commutator_norm_certificate": true,
+    "commuting_upper_leakage_identity": true,
+    "compatible_control_compressions_commute": true,
+    "compatible_control_leakage_vanishes": true,
+    "compressed_X_Y_are_self_adjoint": true,
+    "compressed_commutator_frobenius_squared_is_2_over_27": true,
+    "compressed_commutator_is_nonzero": true,
+    "compressed_commutator_is_skew_adjoint": true,
+    "compressed_commutator_rank_is_2": true,
+    "compressed_commutator_trace_is_0": true,
+    "exact_operator_norm_bound_holds": true,
+    "general_commutator_decomposition": true,
+    "rank_P_is_2": true,
+    "rank_Q_is_1": true,
+    "upper_X_Y_are_self_adjoint": true,
+    "upper_X_Y_commute": true
+  },
+  "continuous_fit_parameters": 0,
+  "exact_identities": {
+    "commuting_self_adjoint_case": "[Phi_P(A),Phi_P(B)] = L_B^* L_A - L_A^* L_B",
+    "general_commutator": "[Phi_P(A),Phi_P(B)] = Phi_P([A,B]) + P(BQA-AQB)P",
+    "leakage_maps": "L_A=QAP and L_B=QBP",
+    "multiplicative_defect": "Phi_P(S) Phi_P(T) - Phi_P(ST) = -P S Q T P",
+    "norm_bound": "||[Phi_P(A),Phi_P(B)]|| <= 2 ||L_A|| ||L_B|| for [A,B]=0"
+  },
+  "finite_witness": {
+    "ambient_dimension": 3,
+    "exact_invariants": {
+      "L_X_operator_norm_squared": "2/9",
+      "L_Y_operator_norm_squared": "2/9",
+      "commutator_frobenius_norm_squared": "2/27",
+      "commutator_operator_norm_squared": "1/27",
+      "commutator_rank": 2,
+      "commutator_trace": "0",
+      "two_leakage_norm_bound": "4/9"
+    },
+    "excluded_rank": 1,
+    "field": "Q",
+    "matrices": {
+      "L_X": [
+        [
+          "2/9",
+          "-1/9",
+          "-1/9"
+        ],
+        [
+          "2/9",
+          "-1/9",
+          "-1/9"
+        ],
+        [
+          "2/9",
+          "-1/9",
+          "-1/9"
+        ]
+      ],
+      "L_Y": [
+        [
+          "-1/9",
+          "2/9",
+          "-1/9"
+        ],
+        [
+          "-1/9",
+          "2/9",
+          "-1/9"
+        ],
+        [
+          "-1/9",
+          "2/9",
+          "-1/9"
+        ]
+      ],
+      "P": [
+        [
+          "2/3",
+          "-1/3",
+          "-1/3"
+        ],
+        [
+          "-1/3",
+          "2/3",
+          "-1/3"
+        ],
+        [
+          "-1/3",
+          "-1/3",
+          "2/3"
+        ]
+      ],
+      "Q": [
+        [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      ],
+      "X_compressed": [
+        [
+          "4/9",
+          "-2/9",
+          "-2/9"
+        ],
+        [
+          "-2/9",
+          "1/9",
+          "1/9"
+        ],
+        [
+          "-2/9",
+          "1/9",
+          "1/9"
+        ]
+      ],
+      "X_tilde": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "Y_compressed": [
+        [
+          "1/9",
+          "-2/9",
+          "1/9"
+        ],
+        [
+          "-2/9",
+          "4/9",
+          "-2/9"
+        ],
+        [
+          "1/9",
+          "-2/9",
+          "1/9"
+        ]
+      ],
+      "Y_tilde": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "commutator": [
+        [
+          "0",
+          "-1/9",
+          "1/9"
+        ],
+        [
+          "1/9",
+          "0",
+          "-1/9"
+        ],
+        [
+          "-1/9",
+          "1/9",
+          "0"
+        ]
+      ],
+      "compatible_U": [
+        [
+          "7/3",
+          "1/3",
+          "1/3"
+        ],
+        [
+          "1/3",
+          "7/3",
+          "1/3"
+        ],
+        [
+          "1/3",
+          "1/3",
+          "7/3"
+        ]
+      ],
+      "compatible_V": [
+        [
+          "17/3",
+          "2/3",
+          "2/3"
+        ],
+        [
+          "2/3",
+          "17/3",
+          "2/3"
+        ],
+        [
+          "2/3",
+          "2/3",
+          "17/3"
+        ]
+      ],
+      "leakage_antisymmetrization": [
+        [
+          "0",
+          "-1/9",
+          "1/9"
+        ],
+        [
+          "1/9",
+          "0",
+          "-1/9"
+        ],
+        [
+          "-1/9",
+          "1/9",
+          "0"
+        ]
+      ]
+    },
+    "retained_rank": 2
+  },
+  "frontier_delta": "Compression-induced incompatibility and compatible locality descent are separated by one exact leakage identity; physical P, observables, action normalization and q79 source selection remain open.",
+  "kernel_authority_promoted": false,
+  "nonclaims": [
+    "canonical CCR",
+    "Planck constant",
+    "selected physical q79 projector",
+    "Bell state selection",
+    "universal apparatus",
+    "upper physical action"
+  ],
+  "observed_physical_inputs": [],
+  "schema": "boe.mtt.constraint-compression-leakage.v1",
+  "selected_mtt_physics": false,
+  "source_hashes": {
+    "builder_sha256": "2c042c6e3b969eeb22fc598ec1abadca9370782d814e5797728e87924db392ee",
+    "kernel_authority_lock_sha256": "a3addc2a887cffec853e7be392cfecccf848ce32ec9f766cc72e3621b009dd0f",
+    "theorem_sha256": "01598cc05fb8b695bc4d1c7b8dfae14d3855e28e45c95b3ca67d3bfbc07827ab"
+  },
+  "summary": {
+    "all_passed": true,
+    "passed": 25,
+    "total": 25
+  },
+  "theorem_id": "CausalBaseConstraintFiberCompressionLeakageTheorem.v1",
+  "tiers": [
+    "EXACT_GENERAL",
+    "EXACT_BENCHMARK"
+  ]
+}

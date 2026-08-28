@@ -1,0 +1,60 @@
+{
+  "schema": "boe.mtt.kernel-authority-lock.v1",
+  "model_generated_at": "2026-08-28T05:57:40+00:00",
+  "model_state_sha256": "572272ade96f4bf2d89dd41c48701a125cd0736343167819855b2cf41f377b45",
+  "handoff_id": "fa47d1c9-866a-4f9b-8d6b-ca08a3347ade",
+  "status_policy": "Curated A/B objects control status. Corpus and search hits are evidence discovery only.",
+  "authorities": [
+    {
+      "id": "A10",
+      "state": "recorded",
+      "repository": "master_corrigendum",
+      "relative_path": "mtt_master_corrigendum_and_revision_plan.md",
+      "sha256": "909ff31b2fce2b5d3e2a3d93bc44cc579f1392e3359fe17d506a31f5a9e1c2c5",
+      "use": "Correction authority for locality-compatible compression and quantum-claim boundaries."
+    },
+    {
+      "id": "A18",
+      "state": "conditional",
+      "repository": "mtt-sm-parity-closure",
+      "relative_path": "proof_corpus/mtt_selected_quantizationandnonperturbativeqft_strictupgradeaudit_v1.md",
+      "sha256": "7287df306cc3832fb1cccbed43f8794eaa44576799f46fe526f882df2463a1a3",
+      "use": "Current quantization/QFT tier boundary."
+    },
+    {
+      "id": "A47",
+      "state": "established",
+      "repository": "mtt-sm-parity-closure",
+      "relative_path": "proof_corpus/mtt_selected_nativebundleautomorphismgaugegroup_or_parameterassumptionaudit_v1.md",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1",
+      "use": "Selected native-bundle low-energy gauge group and faithful Z6 quotient."
+    }
+  ],
+  "blockers": [
+    {"id": "B.QM.01", "state": "closed", "label": "Canonical q79 Born source theorem"},
+    {"id": "B.HS.01", "state": "open", "label": "Physical visible-hidden Hull-Strominger endpoints"},
+    {"id": "B.GEO.01", "state": "open", "label": "Continuum q79 geometry-to-operator naturality"},
+    {"id": "B.OP.01", "state": "open", "label": "Selected rank-102 continuum operator execution"},
+    {"id": "B.ACTION.01", "state": "open", "label": "Upper action and automorphism transfer"},
+    {"id": "B.QM.03", "state": "open", "label": "Universal apparatus and objective-actualization completion"},
+    {"id": "B.QFT.02", "state": "open", "label": "Quantum BV/QME and renormalized transport"},
+    {"id": "B.MEASURE.01", "state": "open", "label": "Common physical measure and pushforwards"}
+  ],
+  "frontier_results": [
+    {
+      "id": "R.ACTION.COHESIVE_MC_REPAIR",
+      "state": "verified_on_pushed_active_branch_not_yet_selected_paper_authority",
+      "guard": "The repair residual, Hodge Hessian and tangent semigroup are exact on the benchmark; the physical upper action and q79 source selection remain open."
+    },
+    {
+      "id": "R.QM.CONTINUUM_RECORDER_COMPILER",
+      "state": "verified_on_pushed_active_branch_not_yet_selected_paper_authority",
+      "guard": "The compiler is conditional on a selected continuum spectral sector, finite intertwiner and clock normalization."
+    },
+    {
+      "id": "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+      "state": "verified_on_pushed_active_branch_not_yet_selected_paper_authority",
+      "guard": "The same operational reduct admits different ontological completions and selects neither one."
+    }
+  ]
+}

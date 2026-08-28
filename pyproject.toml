@@ -1,0 +1,9 @@
+[project]
+name = "mtt-causal-base-constraint-fiber"
+version = "0.1.0"
+description = "Exact constraint-compression proofs for the MTT causal-base/constraint-fiber program"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.unittest]
+start-directory = "tests"

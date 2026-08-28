@@ -1,0 +1,31 @@
+{
+  "schema": "MTTResearchRepositoryManifest.v1",
+  "repo_id": "mtt-causal-base-constraint-fiber",
+  "title": "MTT causal-base and constraint-fiber research program",
+  "role": "isolated exact proof and language-discovery repository",
+  "authority_scope": [
+    "exact compression multiplicativity defect",
+    "exact compression-leakage commutator identity",
+    "finite rational compression witness",
+    "locality guardrail for projector-compatible local algebras",
+    "typed causal-base/constraint-fiber research contract"
+  ],
+  "does_not_claim": [
+    "derivation of four-dimensional spacetime",
+    "derivation of canonical commutation relations or Planck's constant",
+    "selection of the physical q79 coherent projector",
+    "selection of a physical Bell state or universal apparatus",
+    "closure of the upper physical action",
+    "closure of the continuum HYM endpoint or rank-102 operator",
+    "that every internal MTT direction is non-spatiotemporal",
+    "a new globally original operator-theory identity"
+  ],
+  "controlling_status": "CURRENT_STATUS.md",
+  "kernel_lock": "KERNEL_AUTHORITY_LOCK.json",
+  "theorem": "CausalBaseConstraintFiberCompressionLeakageTheorem_v1.md",
+  "certificate": "constraint_compression_leakage.packet.json",
+  "builder": "python build_constraint_compression_leakage.py",
+  "verifier": "python verify.py",
+  "dependencies": [],
+  "python": ">=3.10"
+}

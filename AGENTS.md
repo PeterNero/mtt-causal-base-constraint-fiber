@@ -1,0 +1,44 @@
+# MTT Research Continuation Protocol
+
+This is an active MTT proof repository. Do not infer current truth from an old
+paper, note, packet name or search hit.
+
+## Mandatory opening
+
+1. Call the MTT MCP `research_bootstrap` first, with this repository and the
+   first applicable live blocker.
+2. Load handoff `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade` and compare its model
+   hash with the live kernel model.
+3. Audit this repository and inspect every dirty path before editing.
+4. Retrieve each controlling A/B object from the kernel. Search is evidence
+   discovery only; it never overrides curated status.
+
+## Scope rules
+
+- Keep all writes inside this repository unless a new handoff explicitly grants
+  another path.
+- Do not edit or clean dirty files in adjacent workers' repositories.
+- Do not rename a conditional compiler as a selected physical theorem.
+- Do not claim that compression alone derives canonical quantum mechanics.
+- Do not call internal bundle directions non-spatiotemporal until the causal
+  and propagation tests in `RESEARCH_CHARTER.md` are discharged.
+- One theorem body has one owner. Other papers and repos should cite its packet
+  and scope summary rather than duplicate it.
+
+## Required verification
+
+```powershell
+python verify.py
+```
+
+Before finishing, audit the repository again, inspect the diff, commit and push
+the intended branch, then update the durable handoff with:
+
+- artifact paths;
+- exact verifier commands;
+- the frontier delta;
+- remaining open exits;
+- terminal state.
+
+Process success is not theorem promotion. Kernel authority integration is a
+separate reviewed step.
