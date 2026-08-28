@@ -1,0 +1,112 @@
+{
+  "schema": "boe.mtt.q79-weyl-koszul-monodromy-c4-source-lock.v1",
+  "frozen_at": "2026-08-28",
+  "purpose": "Machine-independent provenance lock for the exact q79 S3/C4 globalization of the finite Weyl-Koszul Hodge cohomology shadow and its product cutset.",
+  "sources": [
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "5ef764db47f3b59e5f29e2e68959c1f31ea6897a",
+      "path": "SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem_v1.md",
+      "git_blob": "d7aa084415bebf95b889fa08424b487b6575b324",
+      "sha256": "9a47357584e94caddc6fb67353433282e2cd1e89c1efa3c0685a895c552c2fa6"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "5ef764db47f3b59e5f29e2e68959c1f31ea6897a",
+      "path": "selected_finite_weyl_koszul_hodge_and_interaction_cutset.packet.json",
+      "git_blob": "547f6b90c73708cc5549f6b0c1b2fe2614cc4bdf",
+      "sha256": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "5ef764db47f3b59e5f29e2e68959c1f31ea6897a",
+      "path": "build_selected_finite_weyl_koszul_hodge_and_interaction_cutset.py",
+      "git_blob": "6e56d713222c1e7b76420700d5b5e651ea8ddcd9",
+      "sha256": "c429ac6fe1571db42921cfef10ab03ef4a829b19312135594bb7a548370e0cb2"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "5ef764db47f3b59e5f29e2e68959c1f31ea6897a",
+      "path": "q79_weyl_koszul_source_lock.json",
+      "git_blob": "746f51fc174538ebd5a7cd82e3140f47933a30eb",
+      "sha256": "6f4ac6175ea5a831fb890799f5cd1d4bd9ec424d31970e387e850950010d3a6b"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-qm-source-proof.git",
+      "branch": "main",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "proof_corpus/q79_BinaryMonodromy_ReynoldsDescent_and_CorrectedSymmetryExit_Theorem_v1.md",
+      "git_blob": "1e1810b6810b72be84cf8a8b9db88cad2b033d06",
+      "sha256": "22610afbf3ed0a6333e2774e6aa9626ee4b2a238353dfebdc4e83f7c16a4b864"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-qm-source-proof.git",
+      "branch": "main",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "certificates/q79_binary_monodromy_reynolds_descent_corrected_symmetry_exit.certificate.json",
+      "git_blob": "064ee45903787290ac143b69f6032575c4f69ce0",
+      "sha256": "ade778235cad2f3500afc6eae6547906d9f1b9603310ac6b546ba33060e0845b"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-qm-source-proof.git",
+      "branch": "main",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "proof_corpus/q79_SharedRoot_C4_LocalSystem_Promotion_and_HYMInvariance_Cutset_Theorem_v1.md",
+      "git_blob": "02e7f60165f24626d664ad0a080b8113f56b61f7",
+      "sha256": "3321c1a3b7ad8b6d4d4f9c488f324dffa1bbac81b97d2bb43dc8114f771cc01a"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-qm-source-proof.git",
+      "branch": "main",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "certificates/q79_shared_root_c4_local_system_promotion_hym_invariance_cutset.certificate.json",
+      "git_blob": "5d1ac4b59c3386e542fb39d209e1cb3003bbc0ee",
+      "sha256": "84085ed97f583699ea7ca71ec65d1f8c0899b0e5128e0010eefd37ee1f1bff9d"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-q79-total-superconnection-branching.git",
+      "branch": "main",
+      "commit": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+      "path": "artifacts/continuum_to_finite_bridge_contract.packet.json",
+      "git_blob": "9d821a3cf9d9ab4301964bb333fd52947ab2d1da",
+      "sha256": "556301462981741d0162e524046b424bcd75b67a55a5c47cd22216038a90e5ad"
+    }
+  ],
+  "extracted_claims": {
+    "finite_weyl_koszul": {
+      "coefficient_field": "Q(omega), omega^2+omega+1=0",
+      "algebra": "M3(Q(omega))",
+      "automorphisms": ["alpha=Ad_X", "beta=Ad_Z"],
+      "cohomology_dimensions": [1, 2, 1],
+      "harmonic_basis": ["I", "I theta_x", "I theta_z", "I theta_x theta_z"],
+      "harmonic_product": "exterior algebra on theta_x and theta_z",
+      "higher_products": "m_n=0 for n>=3"
+    },
+    "q79_monodromy": {
+      "cover_monodromy": "full S3",
+      "deck_group": "trivial",
+      "strain_representation": "P_sigma direct-sum P_sigma",
+      "strain_local_system": "universal_cover(B_reg) x_mu (R3_D direct-sum R3_E)",
+      "Reynolds_rank": 2,
+      "TT_rank": 4
+    },
+    "q79_shared_root_c4": {
+      "shared_group": "Z64",
+      "unique_order_four_subgroup": [0, 16, 32, 48],
+      "real_generator": [[0, -1], [1, 0]],
+      "strain_generator": "J_DE=[[0,-I3],[I3,0]]",
+      "globalization": "parallel on the regular q79 associated strain local system",
+      "marked_FuYau_autonomous_descent": false
+    },
+    "continuum_bridge_boundary": {
+      "finite_overlap_polar_Feshbach_compiler": "conditional exact",
+      "selected_HYM_endpoint": "open",
+      "continuum_product_connection_and_higher_operation_transfer": "open"
+    }
+  },
+  "guard": "This lock authorizes an exact finite/root-stack cochain and cohomology bridge only. It does not select the nonzero-Chern HYM endpoint, promote the full forward-difference DGA to a global q79 algebra bundle, identify the local C4 cochain map with an autonomous marked-Fu-Yau symmetry, or close B.GEO.01, B.OP.01 or B.ACTION.01."
+}

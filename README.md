@@ -73,6 +73,21 @@ response leaks outside the center, while the compressed response is exactly
 invertible. The finite Weyl contraction is therefore not the finite Dirac
 zero-mode projector.
 
+The fifth theorem supplies the first exact global q79 bridge for that finite
+Hodge object. The six affine `S3` holonomies lift to unitary cochain maps and
+preserve `Delta`, `P`, `G` and `h`. A local Fourier cochain map has order four
+and induces the exact quarter-turn `j=[[0,-1],[1,0]]` on harmonic one-forms.
+After tensoring harmonic `H1` by the determinant line and rank-three sheet
+bundle, the two monodromy signs cancel and give exactly the established q79
+`D/E` strain local system, including `J_DE`, the rank-two Reynolds subbundle
+and rank-four TT subbundle.
+
+The same calculation identifies the precise limit. The harmonic exterior
+product globalizes, but affine reflections have 360 nonmultiplicative basis
+pairs each and the Fourier lift has 108. Full-chain `C4` also fails to commute
+with translated `S3` holonomies. Thus `C4` globalizes on the harmonic/strain
+shadow, not as a parallel automorphism of the full forward-difference DGA.
+
 ## Run the proof
 
 ```powershell
@@ -97,10 +112,15 @@ checks the exact rational witness and runs the unit tests.
 - `SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem_v1.md`: exact
   selected finite differential, Hodge contraction, transferred-product
   verdict and rank-96 cutset.
+- `Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem_v1.md`:
+  exact `S3` cochain descent, local Fourier `C4`, determinant-twisted harmonic
+  `H1` strain intertwiner and full-product cutset.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
   shared-line and cyclic-cotangent inputs.
+- `q79_weyl_koszul_monodromy_c4_source_lock.json`: pinned finite Hodge,
+  q79-monodromy, shared-root `C4` and continuum-boundary inputs.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -116,6 +136,8 @@ checks the exact rational witness and runs the unit tests.
   compression/transfer comparison certificate.
 - `selected_finite_weyl_koszul_hodge_and_interaction_cutset.packet.json`:
   generated exact finite q79 Hodge/cutset certificate.
+- `q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.packet.json`: generated
+  global cohomology-shadow bridge and product-cutset certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -139,13 +161,15 @@ upstream of open physical source selection:
 - the selected physical upper action, q79 HYM endpoint, continuum operator and
   universal apparatus family remain open.
 
-The immediate next frontier is therefore not another finite projector guess.
-It is to construct the selected continuum q79 cochain map whose finite shadow
-is this Weyl-Koszul contraction and whose nonharmonic response insertion
-reproduces `D_fin` through controlled Feshbach or product transfer. That map
-must include analytic domains, physical pairing and finite/continuum error
-bounds from one selected endpoint.
+The immediate next frontier is therefore not another finite projector or
+monodromy guess. It is either to construct a symmetric forward/backward
+covariant calculus that removes the now-explicit full-product defects, or to
+construct the selected continuum q79 HYM cochain map directly. The physical
+route must include the nonzero-Chern endpoint, analytic domains, pairing,
+nonharmonic response insertion and finite/continuum error bounds from one
+selected source.
 
-The four exact packets currently pass `141/141` checks and fourteen unit tests.
-The abstract propagated-excursion theorem and selected finite `P/G/h` package
-are closed; their continuum HYM and physical-action promotion is not.
+The five exact packets currently pass `187/187` checks and nineteen unit
+tests. The finite `P/G/h` package and its q79 harmonic strain globalization are
+closed; the full covariant product calculus, continuum HYM endpoint and
+physical-action promotion are not.

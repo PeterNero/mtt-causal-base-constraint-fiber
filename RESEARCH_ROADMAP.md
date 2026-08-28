@@ -55,8 +55,9 @@ itself furnish the nontrivial physical `P/Q` split required by this exit.
 
 ## Step 4: Excluded-sector propagator and higher transfer
 
-**State:** abstract comparison and selected finite Weyl execution closed;
-continuum q79 execution open.
+**State:** abstract comparison, selected finite Weyl execution and q79
+harmonic-cohomology globalization closed; full covariant algebra and continuum
+q79 execution open.
 
 The raw compression defect, Feshbach correction and Hodge-transferred higher
 products have now been placed in one exact language:
@@ -85,10 +86,22 @@ complex cannot be the source of nonzero physical interactions. Moreover, its
 degree-zero rank-96 range is transverse to the separate rank-96 kernel of
 `D_fin`; coupling them requires a real Feshbach/transfer step.
 
-**Remaining exit:** one selected continuum q79 differential and pairing must
-map to this finite contraction through a cochain/product intertwiner, carry the
-nonharmonic response lanes that reproduce `D_fin`, and provide analytic
-continuum-to-finite error control.
+The q79 monodromy bridge is now also exact. Full affine `S3` acts by unitary
+cochain maps preserving the Hodge contraction. Harmonic `H1` carries two sign
+representations, and its Fourier quarter-turn is the shared-root matrix `j`.
+Tensoring by `det(E_D)` and `E_D` gives exactly the rank-six q79 strain local
+system and `J_DE`. The harmonic exterior product is equivariant.
+
+The full forward-difference DGA does not descend through these canonical
+maps: reflection and Fourier product defects are nonzero, and full-chain `C4`
+does not commute with all translated holonomies. This is the new sharp
+boundary, rather than an unspecified monodromy-naturalness gap.
+
+**Remaining exit:** construct either a selected symmetric covariant calculus
+that resolves those exact product defects or the continuum q79 HYM complex
+directly. It must map to the finite contraction through a cochain/product
+intertwiner, carry the nonharmonic response lanes that reproduce `D_fin`, and
+provide domains, pairing and analytic continuum-to-finite error control.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

@@ -1,0 +1,373 @@
+{
+  "S3_cochain_and_local_C4_naturality": {
+    "Fourier_action": {
+      "cochain": "J0=gamma_F; J1(b,c)=(-gamma_F beta^-1(c),gamma_F(b)); J2(w)=gamma_F beta^-1(w)",
+      "matrix": "F_jk=omega^(jk), gamma_F(A)=F A F*/3",
+      "order": 4,
+      "relations": [
+        "gamma_F alpha gamma_F^-1=beta",
+        "gamma_F beta gamma_F^-1=alpha^-1"
+      ],
+      "square": "affine reflection j -> -j"
+    },
+    "Hodge_naturality": [
+      "Delta",
+      "P",
+      "G",
+      "h1",
+      "h2"
+    ],
+    "affine_group": "g_(eps,b): j -> eps*j+b on Z3",
+    "cochain_action": {
+      "eps_minus": "T0=gamma_g; T1(b,c)=(-gamma_g alpha^-1(b),-gamma_g beta^-1(c)); T2(w)=gamma_g alpha^-1 beta^-1(w)",
+      "eps_plus": "T0=T1=T2=gamma_g"
+    },
+    "harmonic_representations": {
+      "C4": [
+        "1",
+        "j=[[0,-1],[1,0]]",
+        "1"
+      ],
+      "S3": [
+        "trivial",
+        "sign direct-sum sign",
+        "trivial"
+      ]
+    },
+    "matrix_action": "gamma_g=Ad_Ug"
+  },
+  "checks": {
+    "C4_commutes_with_Delta_P_and_G_on_every_degree": true,
+    "C4_intertwines_both_Hodge_homotopies": true,
+    "Fourier_C4_conjugates_alpha_to_beta_and_beta_to_alpha_inverse": true,
+    "Fourier_quarterturn_has_order_four_on_every_degree": true,
+    "Fourier_quarterturn_is_an_exact_cochain_map": true,
+    "Fourier_quarterturn_is_unitary": true,
+    "Fourier_quarterturn_square_is_the_selected_affine_reflection": true,
+    "Hodge_homotopy_and_projector_side_conditions_hold_exactly": true,
+    "J_DE_preserves_the_Reynolds_and_TT_subspaces": true,
+    "Reynolds_projector_is_idempotent_with_trace_two": true,
+    "S3_and_C4_commute_after_harmonic_projection": true,
+    "S3_and_C4_commute_on_harmonic_cohomology": true,
+    "S3_commutes_with_Delta_P_and_G_on_every_degree": true,
+    "S3_intertwines_both_Hodge_homotopies": true,
+    "TT_projector_is_idempotent_with_trace_four": true,
+    "affine_S3_cochain_maps_are_unitary": true,
+    "affine_S3_cochain_maps_obey_the_group_law": true,
+    "affine_S3_conjugates_alpha_beta_by_the_exact_signed_lattice_action": true,
+    "canonical_Fourier_C4_cochain_map_is_not_a_full_DGA_automorphism": true,
+    "canonical_affine_reflections_are_not_full_DGA_automorphisms": true,
+    "determinant_twist_cancels_the_harmonic_H1_sign_for_all_six_holonomies": true,
+    "explicit_reflection_product_defect_is_nonzero": true,
+    "full_chain_C4_does_not_commute_with_all_S3_holonomies": true,
+    "full_forward_difference_DGA_globalization_remains_open": true,
+    "harmonic_C4_tensor_identity_is_exactly_J_DE": true,
+    "harmonic_C4_types_are_one_j_one_in_degrees_0_1_2": true,
+    "harmonic_S3_types_are_trivial_sign_trivial_in_degrees_0_1_2": true,
+    "harmonic_exterior_product_is_C4_equivariant": true,
+    "harmonic_exterior_product_is_S3_equivariant": true,
+    "identity_basis_map_is_an_exact_C4_intertwiner_to_J_DE": true,
+    "identity_basis_map_is_an_exact_S3_intertwiner_to_D_and_E_strain_lanes": true,
+    "induced_strain_C4_has_square_minus_identity_and_order_four": true,
+    "matrix_Hodge_contraction_identity_holds_in_degree_one": true,
+    "matrix_Hodge_contraction_identity_holds_in_degree_two": true,
+    "matrix_Hodge_contraction_identity_holds_in_degree_zero": true,
+    "nine_sources_are_commit_blob_and_sha256_pinned": true,
+    "orientation_preserving_affine_maps_are_full_DGA_automorphisms": true,
+    "reduced_Green_is_the_exact_two_sided_inverse_off_harmonics": true,
+    "six_affine_S3_maps_are_exact_cochain_maps": true,
+    "source_lock_guard_forbids_HYM_and_full_DGA_promotion": true,
+    "source_lock_preserves_full_S3_holonomy_and_trivial_deck_group": true,
+    "source_lock_preserves_the_continuum_product_transfer_blocker": true,
+    "source_lock_preserves_the_marked_FuYau_C4_nogo": true,
+    "source_lock_preserves_the_selected_shared_C4_generator": true,
+    "source_lock_schema_is_exact": true,
+    "strain_C4_commutes_with_all_six_S3_holonomies": true
+  },
+  "continuous_fit_parameters": 0,
+  "date": "2026-08-28",
+  "determinant_twisted_H1_strain_intertwiner": {
+    "C4_generator": [
+      [
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "Reynolds_projector": [
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ]
+    ],
+    "TT_projector": [
+      [
+        "2/3",
+        "-1/3",
+        "-1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1/3",
+        "2/3",
+        "-1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1/3",
+        "-1/3",
+        "2/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "2/3",
+        "-1/3",
+        "-1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1/3",
+        "2/3",
+        "-1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1/3",
+        "-1/3",
+        "2/3"
+      ]
+    ],
+    "intertwiner": [
+      "s tensor [I theta_x] tensor d_i -> D_i",
+      "s tensor [I theta_z] tensor d_i -> E_i"
+    ],
+    "ranks": {
+      "TT": 4,
+      "invariant": 2
+    },
+    "scope": "regular q79 root-stack associated local-system cohomology shadow",
+    "sign_cancellation": "sign^2=1",
+    "source_bundle": "det(E_D) tensor H1(K_W) tensor E_D",
+    "source_monodromy": "sign tensor (sign direct-sum sign) tensor permutation",
+    "target_local_system": "universal_cover(B_reg) x_mu (R3_D direct-sum R3_E)"
+  },
+  "discrete_physical_selectors": 0,
+  "finite_Hodge_contraction": {
+    "Green_polynomial": "G=(7 Delta-Delta^2)/36",
+    "contraction": "dh+hd=I-P",
+    "dimensions": [
+      9,
+      18,
+      9
+    ],
+    "projector_ranks": [
+      1,
+      2,
+      1
+    ],
+    "side_conditions": [
+      "h^2=0",
+      "hP=0",
+      "Ph=0"
+    ]
+  },
+  "frontier_delta": "The selected q79 affine S3 holonomy and shared-root Fourier C4 now act exactly by unitary cochain maps on the finite Weyl-Koszul complex and preserve its Delta, harmonic projector, reduced Green and homotopy. Harmonic H1 carries sign plus sign under S3 and the exact quarter-turn j under C4. After tensoring by det(E_D) and E_D, this is exactly the established rank-six q79 D/E strain local system with J_DE, Reynolds rank two and TT rank four. The harmonic exterior product globalizes, but the canonical reflection and Fourier lifts are not multiplicative on the full forward-difference DGA and full-chain C4 does not commute with all S3 holonomies. Thus the cohomology shadow is globally identified while the full covariant calculus and selected nonzero-Chern HYM endpoint remain open.",
+  "global_full_forward_difference_DGA": false,
+  "global_rootstack_cohomology_bridge": true,
+  "nonclaims": [
+    "global multiplicative descent of the full forward-difference Weyl-Koszul DGA",
+    "autonomous C4 symmetry of the marked Fu-Yau branch",
+    "selected visible-hidden nonzero-Chern HYM endpoint or reduced Green",
+    "continuum connection, nonlinear product or higher-operation transfer",
+    "physical action normalization or closure of B.GEO.01, B.OP.01 or B.ACTION.01"
+  ],
+  "observed_physical_inputs": [],
+  "product_and_globalization_cutset": {
+    "C4_full_DGA_defect_pairs_out_of_1296": 108,
+    "S3_full_DGA_defect_pairs_out_of_1296": {
+      "eps_-1_shift_0": 360,
+      "eps_-1_shift_1": 360,
+      "eps_-1_shift_2": 360,
+      "eps_1_shift_0": 0,
+      "eps_1_shift_1": 0,
+      "eps_1_shift_2": 0
+    },
+    "full_chain_C4_S3_commutator_nonzero_entries": {
+      "eps_-1_shift_0": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      },
+      "eps_-1_shift_1": {
+        "0": 54,
+        "1": 108,
+        "2": 54
+      },
+      "eps_-1_shift_2": {
+        "0": 54,
+        "1": 108,
+        "2": 54
+      },
+      "eps_1_shift_0": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      },
+      "eps_1_shift_1": {
+        "0": 54,
+        "1": 108,
+        "2": 54
+      },
+      "eps_1_shift_2": {
+        "0": 54,
+        "1": 108,
+        "2": 54
+      }
+    },
+    "harmonic_product": "globally S3- and C4-equivariant exterior algebra",
+    "interpretation": "Affine S3 globalizes the cochain and Hodge complex. The combined S3/C4 action globalizes only after harmonic projection, where it is the q79 strain shadow. The canonical lifts do not globalize the full forward-difference multiplication. A covariant enlarged calculus or the actual continuum HYM complex is still required.",
+    "reflection_witness": {
+      "T(a v)-T(a)T(v)": [
+        {
+          "coefficient": [
+            "1",
+            "0"
+          ],
+          "col": 0,
+          "mask": 1,
+          "row": 0
+        },
+        {
+          "coefficient": [
+            "-1",
+            "0"
+          ],
+          "col": 1,
+          "mask": 1,
+          "row": 1
+        }
+      ],
+      "a": "E_00",
+      "v": "I theta_x"
+    }
+  },
+  "schema": "boe.mtt.q79-weyl-koszul-monodromy-c4-cohomology-intertwiner.v1",
+  "selected_nonzero_Chern_HYM_endpoint": false,
+  "source_hashes": {
+    "builder_sha256": "433236c65410b8a480a562619f7d8e18d4d859e504f2bf24eaed6808f5c851eb",
+    "source_lock_sha256": "53850493a69598a9874368be5ed2c201d0af70840d8c1b32249c3070e91b9961",
+    "theorem_sha256": "f4c790180c2018706bd47e0e24c04c03046305e9cc9d24d0f3f38e075edbd417"
+  },
+  "summary": {
+    "all_passed": true,
+    "passed": 46,
+    "total": 46
+  },
+  "theorem_id": "Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem.v1",
+  "tiers": [
+    "SELECTED_EXACT_FINITE",
+    "GLOBAL_ROOTSTACK_COHOMOLOGY_SHADOW",
+    "EXACT_PRODUCT_CUTSET",
+    "PHYSICAL_HYM_OPEN"
+  ]
+}

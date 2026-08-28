@@ -8,6 +8,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Current synthesis handoff: `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
+- Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
 
 ## Controlling authorities
 
@@ -102,3 +103,24 @@ is therefore a constraint-center projector, not the completed-response
 zero-mode projector. The remaining open task under `B.ACTION.01`, `B.GEO.01`
 and `B.OP.01` is the selected continuum cochain/product intertwiner and its
 physical action, not another finite guess for `P`, `G` or `h`.
+
+`Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem.v1`
+now closes the finite/root-stack monodromy bridge that was still implicit.
+The affine q79 `S3` holonomies act by exact unitary cochain maps and preserve
+the whole Hodge contraction. The Fourier quarter-turn is an exact local
+cochain map and acts by `j` on harmonic `H1`. The determinant-twisted object
+
+```text
+det(E_D) tensor H1(K_W) tensor E_D
+```
+
+is exactly the established q79 two-copy `D/E` strain local system. It recovers
+`J_DE`, Reynolds rank two and TT rank four with no fit or selector.
+
+This does not promote the full chain algebra. Translations prevent the local
+Fourier lift from commuting with every `S3` holonomy off harmonics; affine
+reflections and the Fourier lift also fail multiplicativity for the selected
+forward-difference product. Consequently the globally closed object is the
+Hodge cohomology/strain shadow. A covariant enlarged calculus or the selected
+nonzero-Chern HYM deformation complex is still required for `B.GEO.01` and
+`B.ACTION.01`.

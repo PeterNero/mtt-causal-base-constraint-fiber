@@ -23,6 +23,8 @@ def main() -> None:
     run(sys.executable, "verify_cohesive_repair_compression_transfer_comparison.py")
     run(sys.executable, "build_selected_finite_weyl_koszul_hodge_and_interaction_cutset.py")
     run(sys.executable, "verify_selected_finite_weyl_koszul_hodge_and_interaction_cutset.py")
+    run(sys.executable, "build_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.py")
+    run(sys.executable, "verify_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 
