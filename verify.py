@@ -27,6 +27,8 @@ def main() -> None:
     run(sys.executable, "verify_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.py")
     run(sys.executable, "build_q79_symmetric_weyl_calculus_isometric_retraction.py")
     run(sys.executable, "verify_q79_symmetric_weyl_calculus_isometric_retraction.py")
+    run(sys.executable, "build_q79_signed_edge_first_jet_harmonic_ideal_quotient.py")
+    run(sys.executable, "verify_q79_signed_edge_first_jet_harmonic_ideal_quotient.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

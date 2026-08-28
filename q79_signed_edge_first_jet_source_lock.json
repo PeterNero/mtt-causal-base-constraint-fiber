@@ -1,0 +1,115 @@
+{
+  "schema": "boe.mtt.q79-signed-edge-first-jet-source-lock.v1",
+  "date": "2026-08-28",
+  "kernel_model": {
+    "generated_at": "2026-08-28T05:57:40+00:00",
+    "state_sha256": "572272ade96f4bf2d89dd41c48701a125cd0736343167819855b2cf41f377b45"
+  },
+  "controlling_authorities": [
+    {
+      "id": "A10",
+      "state": "recorded",
+      "sha256": "909ff31b2fce2b5d3e2a3d93bc44cc579f1392e3359fe17d506a31f5a9e1c2c5"
+    },
+    {
+      "id": "A18",
+      "state": "conditional",
+      "sha256": "7287df306cc3832fb1cccbed43f8794eaa44576799f46fe526f882df2463a1a3"
+    },
+    {
+      "id": "A47",
+      "state": "established",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "B.GEO.01",
+      "state": "open",
+      "missing": "selected continuum HYM endpoint, connection, reduced Green operator, C4 naturality, domains, normalization and finite/continuum error bounds"
+    },
+    {
+      "id": "B.ACTION.01",
+      "state": "open",
+      "missing": "selected upper action, cyclic pairing, causal normalization and full product transfer"
+    }
+  ],
+  "sources": [
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "9422522d62867d532768685cf342cab1063eac6a",
+      "path": "q79_symmetric_weyl_calculus_isometric_retraction.packet.json",
+      "git_blob": "9e92f7c88f2ed93287003a62d43d3a2c975514ca",
+      "sha256": "8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e",
+      "role": "exact signed-direction DGA, Hodge decomposition and extra-mode cutset"
+    },
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "9422522d62867d532768685cf342cab1063eac6a",
+      "path": "SelectedSymmetricWeylCalculusIsometricRetractionAndCovarianceCutsetTheorem_v1.md",
+      "git_blob": "08711d621223310fea216aad9262cd235df1602a",
+      "sha256": "de5bf958f0a286b10fb49994d4bbe12f0337ec5e2841daede867619c3a5fbc3d",
+      "role": "proof and claim boundary for the symmetric completion"
+    },
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "9422522d62867d532768685cf342cab1063eac6a",
+      "path": "q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.packet.json",
+      "git_blob": "a24b2dea77a2f3621a96699f936f6eec5d5fc73a",
+      "sha256": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d",
+      "role": "exact q79 harmonic C4 action and determinant-twisted strain intertwiner"
+    },
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "9422522d62867d532768685cf342cab1063eac6a",
+      "path": "q79_symmetric_weyl_calculus_source_lock.json",
+      "git_blob": "8084a40dd9c9774250c08e647f6a2dcc691e54cd",
+      "sha256": "90771df96ddd49dc9ab651095c634af07f0264064df8a77e0fb3a00fcd622995",
+      "role": "upstream source and non-promotion guard"
+    },
+    {
+      "repository": "mtt-qm-source-proof",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "certificates/q79_support_stratified_spectral_strain_boundary_hessian.certificate.json",
+      "git_blob": "cee4d3be6820da839259570f2a0c1645958d0b93",
+      "sha256": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8",
+      "role": "adjacent exact first/second-jet comparison evidence; not a derivation of this theorem"
+    },
+    {
+      "repository": "mtt-qm-source-proof",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "proof_corpus/q79_GlobalSupportStratifiedSpectralStrain_and_BoundaryHessian_NoGo_Theorem_v1.md",
+      "git_blob": "dba8795f7e3ef5653ac52afa10948cf2e49de620",
+      "sha256": "0fe26f28d7bd8015dfabe55afc5f40c408f92ca5fcfe495a9f96159224a3b76b",
+      "role": "proof that zero-edge q79 strain directions can vanish at first jet and survive quadratically"
+    }
+  ],
+  "extracted_claims": {
+    "symmetric_harmonic_calculus": {
+      "signed_basis": ["theta_+x", "theta_-x", "theta_+z", "theta_-z"],
+      "cohomology_dimensions": [1, 4, 6, 4, 1],
+      "selected_H1_basis": [
+        "theta_+x-theta_-x",
+        "theta_+z-theta_-z"
+      ],
+      "selected_harmonic_dimensions": [1, 2, 1, 0, 0],
+      "extra_harmonic_dimensions": [0, 2, 5, 4, 1]
+    },
+    "q79_harmonic_C4": {
+      "H1_generator": [[0, -1], [1, 0]],
+      "scope": "regular q79 root-stack associated local-system cohomology shadow",
+      "physical_HYM_C4_lift_selected": false
+    },
+    "adjacent_strain_jet_evidence": {
+      "zero_edge_first_jets_vanish": true,
+      "zero_edge_parabolic_second_jets_survive": true,
+      "same_source_HYM_endpoint_and_Green_selected": false
+    }
+  },
+  "formal_input": {
+    "parallel_transport_family": "T_i(h)=exp(h nabla_i)",
+    "normalized_signed_edge_differential": "[(T_i(h)-1)theta_+i+(T_i(-h)-1)theta_-i]/h",
+    "tier": "universal formal first-jet comparison; no finite-to-continuum convergence is assumed"
+  },
+  "guard": "This source lock permits an exact universal first-jet parity theorem and a conditional HYM corollary. It does not assert that the finite qutrit translations form a selected continuum scaling family, does not select the nonzero-Chern visible-hidden HYM endpoint or its Green operator, does not promote G36 to physical holonomy, and does not close B.GEO.01 or B.ACTION.01."
+}

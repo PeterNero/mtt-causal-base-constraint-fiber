@@ -1,0 +1,489 @@
+{
+  "checks": {
+    "Fourier_is_quarter_turn_on_odd_and_swap_on_even": true,
+    "Fourier_square_is_the_signed_parity_involution": true,
+    "Rees_even_count_is_additive_under_every_nonzero_wedge_product": true,
+    "Rees_even_count_is_preserved_by_reflection_and_C4": true,
+    "Rees_special_fiber_kernel_is_exactly_the_twelve_class_ideal": true,
+    "adjacent_strain_evidence_is_explicitly_non_authoritative_for_this_proof": true,
+    "all_even_derivatives_land_only_in_even_plane_through_order_twelve": true,
+    "all_extra_classes_are_generated_by_the_even_plane": true,
+    "all_odd_derivatives_land_only_in_odd_plane_through_order_twelve": true,
+    "all_repo_local_source_hashes_match": true,
+    "axial_second_symbol_lands_exactly_in_even_plane": true,
+    "even_channel_has_no_principal_first_jet": true,
+    "even_channel_starts_with_h_nabla_squared_over_two": true,
+    "even_generated_ideal_has_exactly_twelve_basis_classes": true,
+    "even_generated_subspace_is_a_two_sided_graded_ideal": true,
+    "even_projector_is_one_plus_Fourier_square_over_two": true,
+    "even_scalar_and_axial_channels_have_Fourier_eigenvalues_plus_and_minus_one": true,
+    "first_order_principal_symbol_has_rank_two_and_lands_exactly_in_odd_plane": true,
+    "four_class_odd_quotient_product_is_associative_on_all_64_basis_triples": true,
+    "full_dimensions_are_1_4_6_4_1": true,
+    "half_edge_metric_makes_odd_even_basis_orthonormal": true,
+    "harmonic_quotient_map_is_multiplicative_on_all_256_basis_pairs": true,
+    "ideal_and_quotient_are_reflection_and_C4_stable": true,
+    "ideal_dimensions_are_0_2_5_4_1": true,
+    "kernel_model_hash_is_pinned": true,
+    "odd_and_even_projectors_both_have_rank_two": true,
+    "odd_channel_starts_with_nabla_at_h_power_zero": true,
+    "odd_even_change_of_basis_is_exact": true,
+    "odd_even_projectors_are_complementary_orthogonal_idempotents": true,
+    "odd_first_correction_is_h_squared_nabla_cubed_over_six": true,
+    "odd_projector_is_one_minus_Fourier_square_over_two": true,
+    "quotient_dimensions_are_1_2_1_0_0": true,
+    "reflection_is_minus_on_odd_and_plus_on_even": true,
+    "reflection_odd_eigenspace_has_dimension_two": true,
+    "signed_exponential_series_splits_exactly_by_derivative_parity": true,
+    "six_sources_are_commit_blob_and_sha256_pinned": true,
+    "source_guard_keeps_HYM_endpoint_and_continuum_intertwiner_open": true,
+    "source_lock_schema_is_exact": true,
+    "symmetric_harmonic_exterior_algebra_has_sixteen_basis_classes": true,
+    "the_q79_harmonic_C4_generator_is_recovered_on_the_odd_plane": true,
+    "three_controlling_authorities_are_pinned": true,
+    "upstream_extra_harmonic_dimensions_are_0_2_5_4_1": true,
+    "upstream_q79_harmonic_C4_is_the_quarter_turn": true,
+    "upstream_selected_H1_is_the_odd_signed_edge_plane": true,
+    "upstream_symmetric_cohomology_is_1_4_6_4_1": true
+  },
+  "conditional_HYM_corollary": {
+    "antecedent_selected_in_q79": false,
+    "missing": [
+      "source-hashed visible-hidden HYM endpoint and common chamber",
+      "selected connection and reduced Green operator",
+      "physical C4 naturality",
+      "finite qutrit to continuum transport family",
+      "domains, normalization and certified error bounds"
+    ],
+    "statement": "Any connection-consistent signed-edge realization of a first-order Dolbeault or gauge deformation operator factors at principal-symbol order through the odd projector P_O."
+  },
+  "continuous_fit_parameters": 0,
+  "date": "2026-08-28",
+  "discrete_physical_selectors": 0,
+  "formal_first_second_jet_split": {
+    "exact_identity": "d_h=sinh(h*nabla)/h tensor o + (cosh(h*nabla)-1)/h tensor e",
+    "first_even_term": "h/2 (nabla_x^2 tensor e_x + nabla_z^2 tensor e_z)",
+    "formal_parameter_status": "jet-order bookkeeper, not a physical length or fitted parameter",
+    "principal_first_jet": "nabla_x tensor o_x + nabla_z tensor o_z",
+    "terms": [
+      {
+        "channel": "odd_first-jet",
+        "derivative_order": 1,
+        "even_coefficient": "0",
+        "h_power_after_normalization": 0,
+        "odd_coefficient": "1"
+      },
+      {
+        "channel": "even_axial-higher-jet",
+        "derivative_order": 2,
+        "even_coefficient": "1/2",
+        "h_power_after_normalization": 1,
+        "odd_coefficient": "0"
+      },
+      {
+        "channel": "odd_first-jet",
+        "derivative_order": 3,
+        "even_coefficient": "0",
+        "h_power_after_normalization": 2,
+        "odd_coefficient": "1/6"
+      },
+      {
+        "channel": "even_axial-higher-jet",
+        "derivative_order": 4,
+        "even_coefficient": "1/24",
+        "h_power_after_normalization": 3,
+        "odd_coefficient": "0"
+      },
+      {
+        "channel": "odd_first-jet",
+        "derivative_order": 5,
+        "even_coefficient": "0",
+        "h_power_after_normalization": 4,
+        "odd_coefficient": "1/120"
+      },
+      {
+        "channel": "even_axial-higher-jet",
+        "derivative_order": 6,
+        "even_coefficient": "1/720",
+        "h_power_after_normalization": 5,
+        "odd_coefficient": "0"
+      },
+      {
+        "channel": "odd_first-jet",
+        "derivative_order": 7,
+        "even_coefficient": "0",
+        "h_power_after_normalization": 6,
+        "odd_coefficient": "1/5040"
+      },
+      {
+        "channel": "even_axial-higher-jet",
+        "derivative_order": 8,
+        "even_coefficient": "1/40320",
+        "h_power_after_normalization": 7,
+        "odd_coefficient": "0"
+      },
+      {
+        "channel": "odd_first-jet",
+        "derivative_order": 9,
+        "even_coefficient": "0",
+        "h_power_after_normalization": 8,
+        "odd_coefficient": "1/362880"
+      },
+      {
+        "channel": "even_axial-higher-jet",
+        "derivative_order": 10,
+        "even_coefficient": "1/3628800",
+        "h_power_after_normalization": 9,
+        "odd_coefficient": "0"
+      },
+      {
+        "channel": "odd_first-jet",
+        "derivative_order": 11,
+        "even_coefficient": "0",
+        "h_power_after_normalization": 10,
+        "odd_coefficient": "1/39916800"
+      },
+      {
+        "channel": "even_axial-higher-jet",
+        "derivative_order": 12,
+        "even_coefficient": "1/479001600",
+        "h_power_after_normalization": 11,
+        "odd_coefficient": "0"
+      }
+    ],
+    "truncation_used_for_executable_coefficient_audit": 12
+  },
+  "frontier_delta": "The orientation-odd q79 harmonic plane is now proved to be the unique principal first-jet landing space of every reflection-covariant connection-generated signed-edge transport family. The twelve extra harmonic classes are exactly the C4-stable ideal generated by the orientation-even plane, and the selected 1,2,1 algebra is the strict associative quotient. The even plane begins at axial second-jet order, so it is retyped rather than arbitrarily discarded. Physical promotion remains conditional because no selected q79 HYM endpoint, finite-to-continuum intertwiner or certified error bound has been supplied.",
+  "full_chain_associative_response_transfer": false,
+  "harmonic_ideal_quotient": {
+    "Rees_degeneration": {
+      "generic_fiber": "isomorphic to the sixteen-class symmetric harmonic algebra when h is invertible",
+      "map": "rho_h(o_i)=o_i, rho_h(e_i)=h e_i",
+      "special_fiber": "the four-class odd exterior algebra with kernel J",
+      "valuation": "number of even generators in a harmonic monomial"
+    },
+    "even_generated_ideal": {
+      "basis_masks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "definition": "J=<e_x,e_z>",
+      "dimensions": [
+        0,
+        2,
+        5,
+        4,
+        1
+      ],
+      "total_dimension": 12
+    },
+    "even_second_jet_channels": {
+      "axial_traceless": "e_x-e_z, Fourier eigenvalue -1",
+      "guard": "These are axial second-difference channels, not a claim of a complete continuum Hessian.",
+      "scalar": "e_x+e_z, Fourier eigenvalue +1"
+    },
+    "first_jet_quotient": {
+      "basis_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "definition": "Lambda(O direct_sum E)/<E> = Lambda(O)",
+      "dimensions": [
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      "product": "strict exterior product; associative and C4-equivariant",
+      "total_dimension": 4
+    },
+    "full_dimensions": [
+      1,
+      4,
+      6,
+      4,
+      1
+    ],
+    "harmonic_algebra": "Lambda(O direct_sum E)"
+  },
+  "nonclaims": [
+    "a selected small-spacing family for the finite qutrit Weyl translations",
+    "convergence of the finite signed calculus to a continuum HYM complex",
+    "physical absence of all orientation-even higher-jet modes",
+    "a complete continuum Hessian carried by the even plane",
+    "the selected nonzero-Chern visible-hidden HYM endpoint or reduced Green operator",
+    "a full-chain associative or A-infinity response transfer",
+    "closure of B.GEO.01, B.OP.01 or B.ACTION.01"
+  ],
+  "observed_physical_inputs": [],
+  "orientation_odd_plane_is_unique_principal_first_jet": true,
+  "schema": "boe.mtt.q79-signed-edge-first-jet-harmonic-ideal-quotient.v1",
+  "selected_finite_to_continuum_intertwiner": false,
+  "selected_harmonic_algebra_is_strict_quotient": true,
+  "selected_nonzero_Chern_HYM_endpoint": false,
+  "signed_edge_parity": {
+    "Fourier_in_parity_basis": [
+      [
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    ],
+    "Fourier_square": [
+      [
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "axial_second_symbol_coefficient": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2"
+      ]
+    ],
+    "change_of_basis_columns": [
+      [
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "even_projector": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "odd_projector": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "parity_basis": [
+      "o_x",
+      "o_z",
+      "e_x",
+      "e_z"
+    ],
+    "principal_first_symbol": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "reflection_in_parity_basis": [
+      [
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "signed_basis": [
+      "theta_+x",
+      "theta_-x",
+      "theta_+z",
+      "theta_-z"
+    ],
+    "signed_metric": [
+      [
+        "1/2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/2"
+      ]
+    ],
+    "uniqueness": "The reversal-odd eigenspace is exactly the two-dimensional odd plane, so every rank-two first-order reflection-covariant symbol projector is P_O=(1-F^2)/2."
+  },
+  "source_hashes": {
+    "builder_sha256": "3680549198d469774c7dcb9738a2023ebad3eda3ee800907358261cc33107011",
+    "source_lock_sha256": "ca9f1da9a8b467d32a989a5b3b2eb1565a41d6d32c96f7e27a02a110a1bf9d42",
+    "theorem_sha256": "e19fb32fddf167e529468f7fb5ef6b9c4f4f0805c92116019006502b7bc4367f"
+  },
+  "summary": {
+    "all_passed": true,
+    "passed": 45,
+    "total": 45
+  },
+  "theorem_id": "SignedEdgeFirstJetSelectionAndHarmonicIdealQuotientTheorem.v1",
+  "tiers": [
+    "EXACT_SIGNED_EDGE_REPRESENTATION",
+    "EXACT_UNIVERSAL_FORMAL_FIRST_JET",
+    "EXACT_HARMONIC_ALGEBRA_QUOTIENT",
+    "CONDITIONAL_HYM_PRINCIPAL_SYMBOL_COROLLARY",
+    "PHYSICAL_ENDPOINT_OPEN"
+  ],
+  "twelve_extra_harmonic_classes_form_even_generated_ideal": true
+}

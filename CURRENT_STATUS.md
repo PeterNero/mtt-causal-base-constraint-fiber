@@ -10,6 +10,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
 - Symmetric Weyl covariance/retract handoff: `bdf2db32-3b58-4c4a-8a84-14806e10fb0d`
+- Signed-edge first-jet quotient handoff: `8b06f6ca-11c9-446a-9208-d83f790aa206`
 
 ## Controlling authorities
 
@@ -145,3 +146,32 @@ harmonics there are 864 leaking basis pairs, 504 compressed-versus-old product
 defects and 4,464 nonzero compressed associators. A selected rule for the
 extra modes and a transferred product, or the actual HYM deformation algebra,
 remain required by `B.GEO.01` and `B.ACTION.01`.
+
+`SignedEdgeFirstJetSelectionAndHarmonicIdealQuotientTheorem.v1` now resolves
+the harmonic selector at the universal first-jet tier. In the exact odd/even
+signed-edge basis, reflection and the Fourier square have parity
+`diag(-1,-1,+1,+1)`, and the unique rank-two first-order projector is
+
+```text
+P_O=(1-Fourier^2)/2.
+```
+
+For formal connection transport `T(h)=exp(h*nabla)`, the exact signed
+difference splits as
+
+```text
+sinh(h*nabla)/h                 -> orientation-odd first jet,
+(cosh(h*nabla)-1)/h             -> orientation-even axial second jet.
+```
+
+The twelve extra harmonic classes are exactly the `C4`-stable ideal generated
+by the even plane, with dimensions `(0,2,5,4,1)`. The selected `(1,2,1)`
+harmonic algebra is therefore the strict associative quotient by this ideal,
+not an arbitrary orthogonal compression. This closes the structural reason a
+first-order connection or Dolbeault source must land in the odd plane.
+
+Physical promotion remains open. No selected small-spacing family connects
+the finite qutrit translations to the missing nonzero-Chern q79 HYM endpoint,
+and no endpoint connection, reduced Green, physical `C4` naturality or error
+bounds have been emitted. The even plane is retyped as higher-jet information;
+it is not declared physically absent. `B.GEO.01` and `B.ACTION.01` remain open.
