@@ -13,6 +13,9 @@
     "finite rational repair and central-kernel quotient witness",
     "propagated-excursion comparison for compression, Feshbach and A-infinity transfer",
     "exact Nil Hodge and rational Feshbach discriminator witnesses",
+    "selected finite q79 Weyl-Koszul differential graded algebra",
+    "exact finite Weyl Hodge projector, reduced Green and contracting homotopy",
+    "strict exterior transfer and rank-96 center-versus-Dirac-kernel cutset",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -30,17 +33,20 @@
   "theorems": [
     "CausalBaseConstraintFiberCompressionLeakageTheorem_v1.md",
     "RepairFixedPointGaugeDescentTheorem_v1.md",
-    "CohesiveRepairCompressionTransferComparisonTheorem_v1.md"
+    "CohesiveRepairCompressionTransferComparisonTheorem_v1.md",
+    "SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
     "repair_fixedpoint_gauge_descent.packet.json",
-    "cohesive_repair_compression_transfer_comparison.packet.json"
+    "cohesive_repair_compression_transfer_comparison.packet.json",
+    "selected_finite_weyl_koszul_hodge_and_interaction_cutset.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
     "python build_repair_fixedpoint_gauge_descent.py",
-    "python build_cohesive_repair_compression_transfer_comparison.py"
+    "python build_cohesive_repair_compression_transfer_comparison.py",
+    "python build_selected_finite_weyl_koszul_hodge_and_interaction_cutset.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",

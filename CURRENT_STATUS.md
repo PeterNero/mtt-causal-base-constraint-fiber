@@ -7,6 +7,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Durable handoff: `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`
 - Current synthesis handoff: `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
+- Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 
 ## Controlling authorities
 
@@ -70,6 +71,34 @@ D_R-D_Q=-P S (R-Q) T P.
 
 The cohesive two-dimensional finite witness itself has Hessian `I2`, so its
 canonical fixed tangent projector has rank zero and cannot supply a nontrivial
-physical compression test. The selected q79 differential, pairing, harmonic
-projector, Green operator, homotopy and finite intertwiner remain open under
-`B.ACTION.01`, `B.GEO.01` and `B.OP.01`.
+physical compression test.
+
+`SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem.v1` now closes the
+finite differential/Hodge part that the comparison theorem left open. From the
+already-selected qutrit Weyl pair it constructs the exact 36-dimensional
+twisted Koszul DGA over `Q(omega)`. Its Hodge Laplacians are
+
+```text
+Delta0=Delta_W,
+Delta1=Delta_W direct-sum Delta_W,
+Delta2=Delta_W,
+```
+
+so the cohomology dimensions are `1,2,1`, the Greens have exact eigenvalues
+`1/3` and `1/6`, and `h=d*G` obeys the full contraction identity. The harmonic
+center is already the exterior algebra on two generators; consequently `m2`
+is exterior multiplication and every transferred `m_n`, `n>=3`, vanishes.
+
+The same theorem resolves a dangerous rank coincidence. `Ran(P_phys)` and
+`ker(D_fin)` both have dimension 96, but
+
+```text
+Ran(P_phys) intersect ker(D_fin)={0}.
+```
+
+The selected shift response leaks out of the center with normalized squared
+norm `5/9`, while `T D_fin E` is exactly invertible. The finite Weyl projector
+is therefore a constraint-center projector, not the completed-response
+zero-mode projector. The remaining open task under `B.ACTION.01`, `B.GEO.01`
+and `B.OP.01` is the selected continuum cochain/product intertwiner and its
+physical action, not another finite guess for `P`, `G` or `h`.

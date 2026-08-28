@@ -1,0 +1,519 @@
+{
+  "checks": {
+    "Hodge_contraction_identity_holds_on_all_nonzero_modes": true,
+    "Hodge_homotopy_squares_to_zero_on_all_modes": true,
+    "Hodge_projector_homotopy_side_conditions_hold_on_all_modes": true,
+    "Koszul_complex_identity_d1_d0_is_exact_on_all_nine_modes": true,
+    "Weyl_center_range_intersects_D_fin_kernel_trivially": true,
+    "Weyl_center_rank_and_D_fin_kernel_dimension_are_both_96": true,
+    "all_64_transferred_m3_basis_values_vanish": true,
+    "all_higher_transferred_products_vanish_by_tree_induction": true,
+    "canonical_evaluation_pairing_has_36_exact_dual_pairs": true,
+    "canonical_evaluation_pairing_is_nondegenerate": true,
+    "center_complement_normalized_HS_norm_is_five_ninths": true,
+    "center_component_normalized_HS_norm_is_one_ninth": true,
+    "charged_Hom_lane_boundary_is_preserved": true,
+    "cohomology_dimensions_are_1_2_1": true,
+    "completed_D_fin_does_not_preserve_the_Weyl_center": true,
+    "compressed_route_has_an_exact_two_sided_inverse": true,
+    "cotangent_completion_adds_zero_algebraic_interaction_coefficients": true,
+    "degree_one_laplacian_is_two_copies_of_Delta_W": true,
+    "degree_two_laplacian_is_the_selected_Delta_W": true,
+    "degree_zero_laplacian_is_the_selected_Delta_W": true,
+    "differential_squares_to_zero_on_all_36_basis_elements": true,
+    "eight_source_artifacts_are_commit_blob_and_hash_pinned": true,
+    "equal_dimensions_do_not_identify_the_two_rank_96_spaces": true,
+    "finite_Weyl_DGA_defines_a_locally_perfect_DGLA": true,
+    "four_harmonic_generators_are_closed": true,
+    "full_complex_spectrum_is_0_4_3_16_6_16": true,
+    "graded_Leibniz_rule_holds_on_all_36_squared_basis_pairs": true,
+    "graded_commutator_is_a_DGLA_by_the_associative_DGA_lemma": true,
+    "harmonic_center_is_a_sub_DGA": true,
+    "minimal_DGLA_on_harmonic_cohomology_is_abelian": true,
+    "nontrivial_finite_interactions_require_nonharmonic_or_charged_lanes": true,
+    "physical_compactification_map_remains_unselected": true,
+    "physical_normalization_remains_unselected": true,
+    "reduced_Green_eigenvalues_are_zero_one_third_one_sixth": true,
+    "response_normalized_HS_norm_is_two_thirds": true,
+    "selected_shift_center_weight_is_one_third": true,
+    "selected_shift_response_has_nonzero_center_complement": true,
+    "selected_shift_response_reconstructed_exactly": true,
+    "selected_weyl_adjoint_actions_commute": true,
+    "shared_line_is_neutral_on_the_adjoint_DGLA": true,
+    "shifted_cotangent_completion_has_dimension_72": true,
+    "source_lock_preserves_the_continuum_nonpromotion_guard": true,
+    "source_lock_preserves_the_rank_96_nonidentification_guard": true,
+    "source_lock_schema_is_exact": true,
+    "source_lock_selects_the_exact_Weyl_spectrum": true,
+    "source_locked_phase_and_shift_routes_are_nonzero": true,
+    "source_locked_route_partial_involution_relations_are_complete": true,
+    "spectator_lift_degree_one_harmonic_rank_is_192": true,
+    "spectator_lift_degree_two_harmonic_rank_is_96": true,
+    "spectator_lift_degree_zero_harmonic_rank_is_96": true,
+    "symmetrized_shift_response_sends_identity_to_R_X": true,
+    "transferred_m2_is_the_exterior_product": true,
+    "twisted_product_has_exact_unit": true,
+    "twisted_product_is_associative_on_all_36_cubed_basis_triples": true,
+    "twisted_weyl_koszul_space_has_dimension_36": true
+  },
+  "completed_response_cutset": {
+    "center_decomposition": {
+      "P_W_R_X": "(1/3)I",
+      "Q_W_R_X": "(X-2X^2)/3",
+      "normalized_HS_norm_squared_center": "1/9",
+      "normalized_HS_norm_squared_complement": "5/9"
+    },
+    "compressed_route": {
+      "inverse": "C^-1=(3/2)S_phase+3S_shift",
+      "operator": "C=(2/3)S_phase+(1/3)S_shift",
+      "reason": "The route squares are complementary projectors and cross-products vanish."
+    },
+    "consequence": "The Weyl Hodge projector is a selected finite constraint projector, not the zero-mode projector of D_fin. Coupling D_fin to this contraction requires a genuine Feshbach or transferred correction.",
+    "leakage_witness": "Q_W ((L_R_X+R_R_X)/2) P_W(I)=Q_W R_X !=0",
+    "rank_96_verdict": {
+      "D_fin_kernel_dimension": 96,
+      "center_range_rank": 96,
+      "equal": false,
+      "intersection_dimension": 0,
+      "proof": "If E v lies in ker(D_fin), then 0=T D_fin E v=Cv. Since C is invertible, v=0."
+    },
+    "selected_response": "R_X=(I+X-2X^2)/3"
+  },
+  "continuous_fit_parameters": 0,
+  "cyclic_cotangent_completion": {
+    "action": "S_cot(x,p)=<p,dx+1/2[x,x]>",
+    "boundary": "This is an exact structural cyclic action, not the selected Lorentzian or compactified physical action.",
+    "completion": "L_hat=L semidirect L![-3]",
+    "dimension": 72,
+    "finite_DGLA": "graded commutator of the 36-dimensional Weyl-Koszul DGA",
+    "free_algebraic_interaction_coefficients": 0,
+    "pairing": "canonical degree-three evaluation pairing",
+    "shared_line_action": "neutral on this adjoint lane"
+  },
+  "date": "2026-08-28",
+  "frontier_delta": "The selected finite q79 Weyl pair now emits an exact same-source differential, DGA, Hodge Laplacians, harmonic projectors, reduced Greens and contracting homotopies. Its harmonic cohomology is the strict exterior algebra on two generators, so m2 is exterior multiplication and every transferred m_n for n>=3 vanishes. The completed D_fin response leaks out of this center, and the rank-96 center range intersects the separate rank-96 D_fin kernel only at zero. Thus the finite Hodge object is closed and its interaction limitation is decided; continuum HYM promotion and the physical action remain open.",
+  "hodge_contraction": {
+    "cohomology": {
+      "basis": [
+        "I",
+        "I theta_x",
+        "I theta_z",
+        "I theta_x theta_z"
+      ],
+      "dimensions": [
+        1,
+        2,
+        1
+      ],
+      "spectator_lift_ranks": [
+        96,
+        192,
+        96
+      ]
+    },
+    "harmonic_projectors": "P0=P_W, P1=P_W direct-sum P_W, P2=P_W",
+    "homotopies": "h1=d0*G1 and h2=d1*G2",
+    "laplacians": {
+      "Delta0": "Delta_W",
+      "Delta1": "diag(Delta_W,Delta_W)",
+      "Delta2": "Delta_W"
+    },
+    "mode_basis": "W_ab=Z^a X^b",
+    "mode_differentials": {
+      "d0": "v -> (p v,q v), p=omega^(-a)-1, q=omega^b-1",
+      "d1": "(r,s) -> p s-q r"
+    },
+    "modes": [
+      {
+        "delta_x": [
+          "0",
+          "0"
+        ],
+        "delta_z": [
+          "0",
+          "0"
+        ],
+        "green_eigenvalue": "0",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          1,
+          2,
+          1
+        ],
+        "homotopy": "0",
+        "lambda_x": [
+          "1",
+          "0"
+        ],
+        "lambda_z": [
+          "1",
+          "0"
+        ],
+        "laplacian_eigenvalue": "0",
+        "mode": [
+          0,
+          0
+        ]
+      },
+      {
+        "delta_x": [
+          "0",
+          "0"
+        ],
+        "delta_z": [
+          "-1",
+          "1"
+        ],
+        "green_eigenvalue": "1/3",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          0,
+          0,
+          0
+        ],
+        "homotopy": "h1(b,c)=(p* b+q* c)/s; h2(w)=(-q* w,p* w)/s",
+        "lambda_x": [
+          "1",
+          "0"
+        ],
+        "lambda_z": [
+          "0",
+          "1"
+        ],
+        "laplacian_eigenvalue": "3",
+        "mode": [
+          0,
+          1
+        ]
+      },
+      {
+        "delta_x": [
+          "0",
+          "0"
+        ],
+        "delta_z": [
+          "-2",
+          "-1"
+        ],
+        "green_eigenvalue": "1/3",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          0,
+          0,
+          0
+        ],
+        "homotopy": "h1(b,c)=(p* b+q* c)/s; h2(w)=(-q* w,p* w)/s",
+        "lambda_x": [
+          "1",
+          "0"
+        ],
+        "lambda_z": [
+          "-1",
+          "-1"
+        ],
+        "laplacian_eigenvalue": "3",
+        "mode": [
+          0,
+          2
+        ]
+      },
+      {
+        "delta_x": [
+          "-2",
+          "-1"
+        ],
+        "delta_z": [
+          "0",
+          "0"
+        ],
+        "green_eigenvalue": "1/3",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          0,
+          0,
+          0
+        ],
+        "homotopy": "h1(b,c)=(p* b+q* c)/s; h2(w)=(-q* w,p* w)/s",
+        "lambda_x": [
+          "-1",
+          "-1"
+        ],
+        "lambda_z": [
+          "1",
+          "0"
+        ],
+        "laplacian_eigenvalue": "3",
+        "mode": [
+          1,
+          0
+        ]
+      },
+      {
+        "delta_x": [
+          "-2",
+          "-1"
+        ],
+        "delta_z": [
+          "-1",
+          "1"
+        ],
+        "green_eigenvalue": "1/6",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          0,
+          0,
+          0
+        ],
+        "homotopy": "h1(b,c)=(p* b+q* c)/s; h2(w)=(-q* w,p* w)/s",
+        "lambda_x": [
+          "-1",
+          "-1"
+        ],
+        "lambda_z": [
+          "0",
+          "1"
+        ],
+        "laplacian_eigenvalue": "6",
+        "mode": [
+          1,
+          1
+        ]
+      },
+      {
+        "delta_x": [
+          "-2",
+          "-1"
+        ],
+        "delta_z": [
+          "-2",
+          "-1"
+        ],
+        "green_eigenvalue": "1/6",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          0,
+          0,
+          0
+        ],
+        "homotopy": "h1(b,c)=(p* b+q* c)/s; h2(w)=(-q* w,p* w)/s",
+        "lambda_x": [
+          "-1",
+          "-1"
+        ],
+        "lambda_z": [
+          "-1",
+          "-1"
+        ],
+        "laplacian_eigenvalue": "6",
+        "mode": [
+          1,
+          2
+        ]
+      },
+      {
+        "delta_x": [
+          "-1",
+          "1"
+        ],
+        "delta_z": [
+          "0",
+          "0"
+        ],
+        "green_eigenvalue": "1/3",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          0,
+          0,
+          0
+        ],
+        "homotopy": "h1(b,c)=(p* b+q* c)/s; h2(w)=(-q* w,p* w)/s",
+        "lambda_x": [
+          "0",
+          "1"
+        ],
+        "lambda_z": [
+          "1",
+          "0"
+        ],
+        "laplacian_eigenvalue": "3",
+        "mode": [
+          2,
+          0
+        ]
+      },
+      {
+        "delta_x": [
+          "-1",
+          "1"
+        ],
+        "delta_z": [
+          "-1",
+          "1"
+        ],
+        "green_eigenvalue": "1/6",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          0,
+          0,
+          0
+        ],
+        "homotopy": "h1(b,c)=(p* b+q* c)/s; h2(w)=(-q* w,p* w)/s",
+        "lambda_x": [
+          "0",
+          "1"
+        ],
+        "lambda_z": [
+          "0",
+          "1"
+        ],
+        "laplacian_eigenvalue": "6",
+        "mode": [
+          2,
+          1
+        ]
+      },
+      {
+        "delta_x": [
+          "-1",
+          "1"
+        ],
+        "delta_z": [
+          "-2",
+          "-1"
+        ],
+        "green_eigenvalue": "1/6",
+        "harmonic_projector_ranks_C0_C1_C2": [
+          0,
+          0,
+          0
+        ],
+        "homotopy": "h1(b,c)=(p* b+q* c)/s; h2(w)=(-q* w,p* w)/s",
+        "lambda_x": [
+          "0",
+          "1"
+        ],
+        "lambda_z": [
+          "-1",
+          "-1"
+        ],
+        "laplacian_eigenvalue": "6",
+        "mode": [
+          2,
+          2
+        ]
+      }
+    ],
+    "reduced_Greens": "G0=G_W, G1=G_W direct-sum G_W, G2=G_W",
+    "spectra": {
+      "degree_0": {
+        "0": 1,
+        "3": 4,
+        "6": 4
+      },
+      "degree_1": {
+        "0": 2,
+        "3": 8,
+        "6": 8
+      },
+      "degree_2": {
+        "0": 1,
+        "3": 4,
+        "6": 4
+      },
+      "total": {
+        "0": 4,
+        "3": 16,
+        "6": 16
+      }
+    }
+  },
+  "nonclaims": [
+    "continuum q79 Dolbeault or Hull-Strominger differential",
+    "physical HYM Hessian or Green kernel",
+    "identification of the Weyl center with ker(D_fin)",
+    "nonzero Yukawa, gauge or gravitational interactions on the harmonic center",
+    "selected Lorentzian action or action normalization",
+    "closure of B.GEO.01, B.OP.01 or B.ACTION.01"
+  ],
+  "observed_physical_inputs": [],
+  "schema": "boe.mtt.selected-finite-weyl-koszul-hodge-interaction-cutset.v1",
+  "selected_continuum_mtt_physics": false,
+  "selected_finite_mtt_geometry": true,
+  "source_hashes": {
+    "builder_sha256": "c429ac6fe1571db42921cfef10ab03ef4a829b19312135594bb7a548370e0cb2",
+    "source_lock_sha256": "6f4ac6175ea5a831fb890799f5cd1d4bd9ec424d31970e387e850950010d3a6b",
+    "theorem_sha256": "9a47357584e94caddc6fb67353433282e2cd1e89c1efa3c0685a895c552c2fa6"
+  },
+  "summary": {
+    "all_passed": true,
+    "passed": 55,
+    "total": 55
+  },
+  "theorem_id": "SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem.v1",
+  "tiers": [
+    "SELECTED_EXACT_FINITE",
+    "EXACT_INTERACTION_CUTSET",
+    "PHYSICAL_CONTINUUM_OPEN"
+  ],
+  "transferred_products": {
+    "consequence": "The selected Weyl constraint complex supplies an exact contraction but does not generate Yukawa, gauge or gravitational interactions on its harmonic center by itself.",
+    "higher_products": "m_n=0 for every n>=3",
+    "m2_basis_order": [
+      "1",
+      "theta_x",
+      "theta_z",
+      "theta_x theta_z"
+    ],
+    "m2_table": [
+      [
+        "1",
+        "theta_x",
+        "theta_z",
+        "theta_x theta_z"
+      ],
+      [
+        "theta_x",
+        "0",
+        "theta_x theta_z",
+        "0"
+      ],
+      [
+        "theta_z",
+        "-theta_x theta_z",
+        "0",
+        "0"
+      ],
+      [
+        "theta_x theta_z",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "m3_nonzero_basis_values": 0,
+    "proof": "The inclusion of the harmonic center is multiplicative. Every higher-transfer tree contains h after a harmonic product, and hP=0."
+  },
+  "weyl_koszul_DGA": {
+    "algebra": "A=M3(Q(omega))",
+    "automorphisms": {
+      "alpha": "Ad_X",
+      "beta": "Ad_Z",
+      "commutation_reason": "ZX=omega XZ and the central phase cancels under conjugation"
+    },
+    "coefficient_field": "Q(omega), omega^2+omega+1=0",
+    "differential": {
+      "d0": "d(a)=(alpha(a)-a)theta_x+(beta(a)-a)theta_z",
+      "d1": "d(b theta_x+c theta_z)=((alpha(c)-c)-(beta(b)-b))theta_x theta_z"
+    },
+    "exhaustive_counts": {
+      "Leibniz_pairs": 1296,
+      "associativity_triples": 46656,
+      "basis_elements": 36,
+      "d_squared_tests": 36,
+      "unit_tests": 72
+    },
+    "forms": [
+      "A",
+      "A theta_x + A theta_z",
+      "A theta_x theta_z"
+    ],
+    "relations": [
+      "theta_x a=alpha(a) theta_x",
+      "theta_z a=beta(a) theta_z",
+      "theta_x^2=theta_z^2=0",
+      "theta_x theta_z=-theta_z theta_x"
+    ]
+  }
+}

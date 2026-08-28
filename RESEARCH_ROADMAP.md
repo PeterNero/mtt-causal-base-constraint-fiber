@@ -55,7 +55,8 @@ itself furnish the nontrivial physical `P/Q` split required by this exit.
 
 ## Step 4: Excluded-sector propagator and higher transfer
 
-**State:** abstract comparison closed; selected q79 execution open.
+**State:** abstract comparison and selected finite Weyl execution closed;
+continuum q79 execution open.
 
 The raw compression defect, Feshbach correction and Hodge-transferred higher
 products have now been placed in one exact language:
@@ -69,9 +70,25 @@ transfer uses `h=d*G_Q` and signed tree sums. Exact witnesses prove that these
 are not directly equal in general. The common architecture is closed, while
 the propagator is indispensable.
 
-**Exit:** one selected q79 differential and pairing emit `Delta_Q`, harmonic
-`P_Q`, reduced Green `G_Q`, homotopy `h_Q` and the first nonzero transferred
-products on the same domain, with continuum-to-finite error control.
+The selected finite Weyl pair now emits a canonical twisted Koszul differential
+and normalized Hilbert-Schmidt pairing. Its exact Hodge package is
+
+```text
+P=(P_W, P_W direct-sum P_W, P_W),
+G=(G_W, G_W direct-sum G_W, G_W),
+h=d*G.
+```
+
+The harmonic algebra is strict exterior algebra, so all transferred products
+above `m2` vanish. This is a result, not a failed search: the finite center
+complex cannot be the source of nonzero physical interactions. Moreover, its
+degree-zero rank-96 range is transverse to the separate rank-96 kernel of
+`D_fin`; coupling them requires a real Feshbach/transfer step.
+
+**Remaining exit:** one selected continuum q79 differential and pairing must
+map to this finite contraction through a cochain/product intertwiner, carry the
+nonharmonic response lanes that reproduce `D_fin`, and provide analytic
+continuum-to-finite error control.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

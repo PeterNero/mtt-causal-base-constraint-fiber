@@ -59,6 +59,20 @@ excursion zero but transferred `m3(a,a,b)=ac`, while the Feshbach raw and
 resolvent-weighted values are respectively `1/4` and `1/12`. The shared
 architecture is exact; the propagator cannot be omitted.
 
+The fourth theorem executes that architecture on the selected finite q79 Weyl
+geometry. The commuting adjoint actions of the selected qutrit Weyl pair define
+a canonical 36-dimensional twisted Koszul DGA. Exact Hodge theory gives
+cohomology dimensions `1,2,1`, reduced-Green eigenvalues `1/3` and `1/6`, and a
+contracting homotopy `h=d*G`. The harmonic center is already an exterior
+subalgebra, so every transferred `m_n` above `m2` vanishes. This proves a useful
+interaction cutset rather than manufacturing a higher product.
+
+It also separates two previously easy-to-confuse 96-dimensional spaces. The
+Weyl-center range and `ker(D_fin)` have zero intersection: the selected shift
+response leaks outside the center, while the compressed response is exactly
+invertible. The finite Weyl contraction is therefore not the finite Dirac
+zero-mode projector.
+
 ## Run the proof
 
 ```powershell
@@ -80,8 +94,13 @@ checks the exact rational witness and runs the unit tests.
   observable symmetry.
 - `CohesiveRepairCompressionTransferComparisonTheorem_v1.md`: exact verdict on
   raw compression versus Green/homotopy and Feshbach transfer.
+- `SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem_v1.md`: exact
+  selected finite differential, Hodge contraction, transferred-product
+  verdict and rank-96 cutset.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
+- `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
+  shared-line and cyclic-cotangent inputs.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -95,6 +114,8 @@ checks the exact rational witness and runs the unit tests.
   certificate.
 - `cohesive_repair_compression_transfer_comparison.packet.json`: generated
   compression/transfer comparison certificate.
+- `selected_finite_weyl_koszul_hodge_and_interaction_cutset.packet.json`:
+  generated exact finite q79 Hodge/cutset certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -118,13 +139,13 @@ upstream of open physical source selection:
 - the selected physical upper action, q79 HYM endpoint, continuum operator and
   universal apparatus family remain open.
 
-The immediate next frontier is therefore not another interpretation. It is to
-emit one selected q79 differential and pairing, then compute from that same
-source the Hodge operator, harmonic `P_Q`, reduced Green `G_Q`, homotopy
-`h_Q=Dbar_Q*G_Q` and transferred products. Only then can finite compression,
-Feshbach reduction and physical interactions be compared without changing
-sources mid-chain.
+The immediate next frontier is therefore not another finite projector guess.
+It is to construct the selected continuum q79 cochain map whose finite shadow
+is this Weyl-Koszul contraction and whose nonharmonic response insertion
+reproduces `D_fin` through controlled Feshbach or product transfer. That map
+must include analytic domains, physical pairing and finite/continuum error
+bounds from one selected endpoint.
 
-The three exact packets currently pass `86/86` rational checks and nine unit
-tests. The abstract repair-to-projector and propagated-excursion arrows are
-closed; their physical q79 instantiation is not.
+The four exact packets currently pass `141/141` checks and fourteen unit tests.
+The abstract propagated-excursion theorem and selected finite `P/G/h` package
+are closed; their continuum HYM and physical-action promotion is not.
