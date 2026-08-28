@@ -9,6 +9,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
+- Symmetric Weyl covariance/retract handoff: `bdf2db32-3b58-4c4a-8a84-14806e10fb0d`
 
 ## Controlling authorities
 
@@ -124,3 +125,23 @@ forward-difference product. Consequently the globally closed object is the
 Hodge cohomology/strain shadow. A covariant enlarged calculus or the selected
 nonzero-Chern HYM deformation complex is still required for `B.GEO.01` and
 `B.ACTION.01`.
+
+`SelectedSymmetricWeylCalculusIsometricRetractionAndCovarianceCutsetTheorem.v1`
+now resolves the finite multiplication defect by the unique minimal signed
+direction orbit `+x,-x,+z,-z`. The resulting 144-dimensional crossed-exterior
+DGA has exact affine `S3` and Fourier `C4` automorphisms and an order-36
+generated covariance group. This group is a finite reference-system result;
+it is not promoted to physical q79 holonomy.
+
+The equal half-edge metric is fixed to squared norm `1/2` and preserves the
+old `0,3,6` spectrum and Green eigenvalues. The selected 36-dimensional
+complex is an exact isometric reducing cochain summand. Its harmonic image is
+the established orientation-odd `(1,2,1)` q79 strain shadow.
+
+The finite completion does not close the physical exit. Its cohomology is
+`(1,4,6,4,1)`, leaving twelve extra harmonic classes of dimensions
+`(0,2,5,4,1)`. The selected image is product closed only on harmonics; off
+harmonics there are 864 leaking basis pairs, 504 compressed-versus-old product
+defects and 4,464 nonzero compressed associators. A selected rule for the
+extra modes and a transferred product, or the actual HYM deformation algebra,
+remain required by `B.GEO.01` and `B.ACTION.01`.

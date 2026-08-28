@@ -1,0 +1,352 @@
+{
+  "checks": {
+    "C4_invariance_forces_one_common_signed_edge_weight": true,
+    "Fourier_C4_has_order_four_on_all_144_basis_elements": true,
+    "Fourier_C4_is_a_symmetric_DGA_automorphism": true,
+    "Fourier_C4_is_a_symmetric_DGA_chain_map": true,
+    "Fourier_C4_square_is_the_affine_reflection": true,
+    "Weyl_mode_product_phase_is_an_exact_two_cocycle": true,
+    "affine_S3_actions_obey_the_group_law_on_all_144_basis_elements": true,
+    "all_six_affine_S3_maps_are_symmetric_DGA_automorphisms": true,
+    "all_six_affine_S3_maps_are_symmetric_DGA_chain_maps": true,
+    "combined_direction_action_is_multiplicative_on_disjoint_masks": true,
+    "compatibility_with_the_selected_two_direction_Laplacian_forces_weight_one_half": true,
+    "compressed_product_agrees_with_old_product_on_all_16_harmonic_pairs": true,
+    "compressed_symmetric_product_is_nonassociative": true,
+    "compressed_symmetric_product_is_not_the_old_forward_product": true,
+    "direction_actions_are_exact_mode_characters": true,
+    "exterior_wedge_sign_is_associative_on_all_4096_mask_triples": true,
+    "extra_harmonic_complement_prevents_a_quasi_isomorphism": true,
+    "four_direction_orbit_is_closed_under_inversion_and_Fourier": true,
+    "full_chain_C4_still_does_not_centralize_affine_S3": true,
+    "full_symmetric_calculus_has_16_harmonic_modes": true,
+    "full_symmetric_harmonic_complement_has_dimensions_0_2_5_4_1": true,
+    "harmonic_selected_image_has_zero_product_leakage": true,
+    "inclusion_intertwines_affine_S3_and_Fourier_C4_cochain_actions": true,
+    "inclusion_is_an_exact_cochain_map": true,
+    "inclusion_is_isometric_for_the_half_edge_metric": true,
+    "inclusion_retraction_is_an_orthogonal_projector": true,
+    "minimal_generated_covariance_group_has_order_36": true,
+    "no_proper_direction_subset_containing_plus_x_plus_z_is_symmetry_closed": true,
+    "retraction_after_inclusion_is_identity_on_all_36_old_basis_elements": true,
+    "retraction_is_an_exact_cochain_map": true,
+    "retraction_is_the_weighted_Hilbert_adjoint_of_inclusion": true,
+    "selected_affine_S3_is_an_order_six_subgroup": true,
+    "selected_full_chain_image_is_not_a_product_subalgebra": true,
+    "selected_harmonic_1_2_1_sector_is_the_orientation_odd_exterior_subalgebra": true,
+    "selected_image_is_a_reducing_summand_for_the_Hodge_Laplacian": true,
+    "six_sources_are_commit_blob_and_sha256_pinned": true,
+    "source_lock_forbids_physical_promotion_of_extra_modes_or_G36": true,
+    "source_lock_preserves_the_exact_old_product_cutset": true,
+    "source_lock_preserves_the_q79_harmonic_strain_actions": true,
+    "source_lock_preserves_the_selected_1_2_1_cohomology": true,
+    "source_lock_schema_is_exact": true,
+    "symmetric_Hodge_contraction_holds_on_all_nonzero_modes": true,
+    "symmetric_Hodge_homotopy_squares_to_zero": true,
+    "symmetric_Weyl_calculus_has_dimension_144": true,
+    "symmetric_cohomology_dimensions_are_1_4_6_4_1": true,
+    "symmetric_differential_squares_to_zero_on_all_144_basis_elements": true,
+    "symmetric_graded_Leibniz_rule_holds_on_all_20736_basis_pairs": true,
+    "symmetric_reduced_Green_eigenvalues_are_one_third_and_one_sixth": true,
+    "symmetric_twisted_product_has_exact_unit": true,
+    "symmetric_twisted_product_is_associative_by_the_checked_crossed_exterior_lemma": true,
+    "weighted_symmetric_Laplacian_is_scalar_on_every_mode_and_degree": true,
+    "weighted_symmetric_spectra_match_binomial_multiplicities": true
+  },
+  "continuous_fit_parameters": 0,
+  "date": "2026-08-28",
+  "discrete_physical_selectors": 0,
+  "finite_covariance": {
+    "Fourier_direction_cycle": [
+      "+x",
+      "+z",
+      "-x",
+      "-z"
+    ],
+    "affine_S3_direction_action": "+/- directions fixed for translations and exchanged by reflection",
+    "full_DGA_product_defects": {
+      "Fourier_C4": 0,
+      "affine_S3": 0
+    },
+    "generated_covariance_group": {
+      "name": "(Z3 x Z3) semidirect C4",
+      "order": 36,
+      "physical_q79_structure_group_selected": false,
+      "selected_S3_subgroup_order": 6
+    },
+    "globalization_boundary": "The enlarged group is an exact finite covariance group. It is not promoted to q79 physical holonomy; C4 still fails to centralize translated S3 actions off harmonics."
+  },
+  "frontier_delta": "The unique minimal signed-direction completion of the selected Weyl calculus is a 144-dimensional exact DGA on +x,-x,+z,-z. Affine S3 and Fourier C4 are now genuine DGA automorphisms with zero product defects and generate the exact order-36 covariance group (Z3 x Z3) semidirect C4. The uniquely normalized half-edge metric preserves the old 0,3,6 Hodge eigenvalues. The selected 36-dimensional complex embeds as an exact isometric reducing cochain summand and its 1,2,1 harmonic exterior algebra is the orientation-odd sector. However the full symmetric complex has twelve additional harmonic classes, the selected image is not product closed off harmonics, and orthogonal product compression is distinct and nonassociative. Thus finite covariance is solved only by retaining extra modes; a physical rule selecting the old harmonic sector or a continuum HYM complex is still required.",
+  "nonclaims": [
+    "physical selection of the twelve extra harmonic classes",
+    "promotion of the order-36 covariance group to q79 physical holonomy",
+    "quasi-isomorphism between the symmetric and selected old complexes",
+    "associative full-chain product on the selected isometric summand",
+    "selected nonzero-Chern HYM endpoint, physical action or normalization",
+    "closure of B.GEO.01, B.OP.01 or B.ACTION.01"
+  ],
+  "normalized_Hodge_theory": {
+    "Green_eigenvalues": [
+      "1/3",
+      "1/6"
+    ],
+    "cohomology_algebra": "exterior algebra on four central signed-edge generators",
+    "cohomology_dimensions": [
+      1,
+      4,
+      6,
+      4,
+      1
+    ],
+    "edge_metric_squared_norm": "1/2 per signed direction",
+    "modes": [
+      {
+        "harmonic_projector_ranks": [
+          1,
+          4,
+          6,
+          4,
+          1
+        ],
+        "mode": [
+          0,
+          0
+        ],
+        "weighted_laplacian_eigenvalue": "0"
+      },
+      {
+        "harmonic_projector_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": [
+          0,
+          1
+        ],
+        "weighted_laplacian_eigenvalue": "3"
+      },
+      {
+        "harmonic_projector_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": [
+          0,
+          2
+        ],
+        "weighted_laplacian_eigenvalue": "3"
+      },
+      {
+        "harmonic_projector_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": [
+          1,
+          0
+        ],
+        "weighted_laplacian_eigenvalue": "3"
+      },
+      {
+        "harmonic_projector_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": [
+          1,
+          1
+        ],
+        "weighted_laplacian_eigenvalue": "6"
+      },
+      {
+        "harmonic_projector_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": [
+          1,
+          2
+        ],
+        "weighted_laplacian_eigenvalue": "6"
+      },
+      {
+        "harmonic_projector_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": [
+          2,
+          0
+        ],
+        "weighted_laplacian_eigenvalue": "3"
+      },
+      {
+        "harmonic_projector_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": [
+          2,
+          1
+        ],
+        "weighted_laplacian_eigenvalue": "6"
+      },
+      {
+        "harmonic_projector_ranks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": [
+          2,
+          2
+        ],
+        "weighted_laplacian_eigenvalue": "6"
+      }
+    ],
+    "normalization_reason": "C4 gives equal weights and each opposite pair must retain the unit weight of one old direction.",
+    "spectrum_by_degree": {
+      "0": {
+        "0": 1,
+        "3": 4,
+        "6": 4
+      },
+      "1": {
+        "0": 4,
+        "3": 16,
+        "6": 16
+      },
+      "2": {
+        "0": 6,
+        "3": 24,
+        "6": 24
+      },
+      "3": {
+        "0": 4,
+        "3": 16,
+        "6": 16
+      },
+      "4": {
+        "0": 1,
+        "3": 4,
+        "6": 4
+      }
+    }
+  },
+  "observed_physical_inputs": [],
+  "schema": "boe.mtt.q79-symmetric-weyl-calculus-isometric-retraction.v1",
+  "selected_complex_retract": {
+    "extra_harmonic_dimensions": [
+      0,
+      2,
+      5,
+      4,
+      1
+    ],
+    "higher_degrees": "exterior powers of I and Q; Q=0 above old degree two",
+    "identities": [
+      "QI=1",
+      "d_sym I=I d_old",
+      "Q d_sym=d_old Q"
+    ],
+    "modewise_degree_one_inclusion": "I(c_x,c_z)=(c_x,-alpha^-1 c_x,c_z,-beta^-1 c_z)",
+    "modewise_degree_one_retraction": "Q(b_+,b_-,c_+,c_-)=((b_+-alpha b_-)/2,(c_+-beta c_-)/2)",
+    "product_diagnostics": {
+      "basis_pair_count": 1296,
+      "basis_triple_count": 46656,
+      "compressed_vs_old_defect_pairs": 504,
+      "harmonic_compressed_vs_old_defect_pairs": 0,
+      "harmonic_image_product_leakage_pairs": 0,
+      "image_product_leakage_pairs": 864,
+      "nonzero_associator_triples": 4464
+    },
+    "selected_H1_actions": {
+      "C4": "[[0,-1],[1,0]]",
+      "S3_reflection": "-I2"
+    },
+    "selected_H1_basis": [
+      "theta_+x-theta_-x",
+      "theta_+z-theta_-z"
+    ],
+    "selected_harmonic_dimensions": [
+      1,
+      2,
+      1,
+      0,
+      0
+    ],
+    "verdict": "The old Hodge complex is a canonical isometric reducing cochain summand and its harmonic exterior algebra survives exactly. Off harmonics, its image is not a product subalgebra; orthogonal compression produces a distinct nonassociative product. The extra twelve harmonic classes cannot be discarded by homological perturbation without an additional selected rule."
+  },
+  "selected_nonzero_Chern_HYM_endpoint": false,
+  "selected_old_complex_full_product_retract": false,
+  "selected_old_complex_isometric_cochain_retract": true,
+  "source_hashes": {
+    "builder_sha256": "f44a8f965422cd36c07b825cc547107f2d1b18de8286785df126d2965bc4f3d5",
+    "source_lock_sha256": "90771df96ddd49dc9ab651095c634af07f0264064df8a77e0fb3a00fcd622995",
+    "theorem_sha256": "de5bf958f0a286b10fb49994d4bbe12f0337ec5e2841daede867619c3a5fbc3d"
+  },
+  "summary": {
+    "all_passed": true,
+    "passed": 52,
+    "total": 52
+  },
+  "symmetric_DGA": {
+    "algebra": "M3(Q(omega))",
+    "automorphisms": [
+      "alpha",
+      "alpha^-1",
+      "beta",
+      "beta^-1"
+    ],
+    "coefficient_field": "Q(omega), omega^2+omega+1=0",
+    "differential": "d(a)=sum_s (sigma_s(a)-a) theta_s",
+    "dimension_by_degree": [
+      9,
+      36,
+      54,
+      36,
+      9
+    ],
+    "directions": [
+      "+x",
+      "-x",
+      "+z",
+      "-z"
+    ],
+    "minimality": "The orbit of +x and +z under inversion and Fourier is all four signed directions.",
+    "relations": "theta_s a=sigma_s(a) theta_s; theta_s theta_t=-theta_t theta_s",
+    "total_dimension": 144
+  },
+  "symmetric_extra_harmonic_modes_selected_physical": false,
+  "symmetric_full_DGA_covariance": true,
+  "theorem_id": "SelectedSymmetricWeylCalculusIsometricRetractionAndCovarianceCutsetTheorem.v1",
+  "tiers": [
+    "SELECTED_EXACT_FINITE_EXTENSION",
+    "EXACT_COVARIANCE_COMPLETION",
+    "EXACT_COCHAIN_RETRACT",
+    "PHYSICAL_SELECTION_OPEN"
+  ]
+}

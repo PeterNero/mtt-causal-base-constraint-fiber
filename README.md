@@ -88,6 +88,20 @@ pairs each and the Fourier lift has 108. Full-chain `C4` also fails to commute
 with translated `S3` holonomies. Thus `C4` globalizes on the harmonic/strain
 shadow, not as a parallel automorphism of the full forward-difference DGA.
 
+The sixth theorem constructs the minimal signed-direction completion that
+removes those product defects. The 144-dimensional calculus on
+`+x,-x,+z,-z` is an exact DGA under affine `S3` and Fourier `C4`; together they
+generate `(Z3 x Z3) semidirect C4` of order 36. The unique equal half-edge
+metric preserves the selected `0,3,6` Hodge eigenvalues.
+
+The old 36-dimensional complex survives exactly as an isometric reducing
+cochain summand. Its harmonic image is the orientation-odd `(1,2,1)` exterior
+algebra already tied to q79 strain. The full symmetric complex also has twelve
+additional harmonic classes. Off harmonics the selected image is not product
+closed: 864 basis pairs leak, compressed multiplication differs on 504 pairs,
+and it has 4,464 nonzero associators. Finite covariance is therefore solved,
+but physical mode selection and full-chain product transfer are not.
+
 ## Run the proof
 
 ```powershell
@@ -115,12 +129,17 @@ checks the exact rational witness and runs the unit tests.
 - `Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem_v1.md`:
   exact `S3` cochain descent, local Fourier `C4`, determinant-twisted harmonic
   `H1` strain intertwiner and full-product cutset.
+- `SelectedSymmetricWeylCalculusIsometricRetractionAndCovarianceCutsetTheorem_v1.md`:
+  minimal four-direction DGA, order-36 covariance, half-edge Hodge theory,
+  selected-complex retract and product/extra-mode cutset.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
   shared-line and cyclic-cotangent inputs.
 - `q79_weyl_koszul_monodromy_c4_source_lock.json`: pinned finite Hodge,
   q79-monodromy, shared-root `C4` and continuum-boundary inputs.
+- `q79_symmetric_weyl_calculus_source_lock.json`: pinned selected-complex and
+  monodromy/C4 cutset inputs for the signed-direction completion.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -138,6 +157,8 @@ checks the exact rational witness and runs the unit tests.
   generated exact finite q79 Hodge/cutset certificate.
 - `q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.packet.json`: generated
   global cohomology-shadow bridge and product-cutset certificate.
+- `q79_symmetric_weyl_calculus_isometric_retraction.packet.json`: generated
+  symmetric-covariance, Hodge-retract and extra-mode certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -161,15 +182,16 @@ upstream of open physical source selection:
 - the selected physical upper action, q79 HYM endpoint, continuum operator and
   universal apparatus family remain open.
 
-The immediate next frontier is therefore not another finite projector or
-monodromy guess. It is either to construct a symmetric forward/backward
-covariant calculus that removes the now-explicit full-product defects, or to
-construct the selected continuum q79 HYM cochain map directly. The physical
-route must include the nonzero-Chern endpoint, analytic domains, pairing,
-nonharmonic response insertion and finite/continuum error bounds from one
-selected source.
+The immediate next frontier is no longer construction of a symmetric finite
+calculus; that object is exact. It is to derive a physical selector for its
+orientation-odd harmonic summand and a symmetry-compatible transferred
+product, or construct the selected continuum q79 HYM cochain map directly.
+The physical route must include the nonzero-Chern endpoint, analytic domains,
+pairing, nonharmonic response insertion and finite/continuum error bounds from
+one selected source.
 
-The five exact packets currently pass `187/187` checks and nineteen unit
-tests. The finite `P/G/h` package and its q79 harmonic strain globalization are
-closed; the full covariant product calculus, continuum HYM endpoint and
+The six exact packets currently pass `239/239` checks and twenty-four unit
+tests. The finite `P/G/h` package, q79 harmonic strain globalization and full
+signed-direction DGA covariance are closed. Physical selection of the extra
+modes, associative selected product transfer, the continuum HYM endpoint and
 physical-action promotion are not.

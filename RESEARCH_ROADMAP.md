@@ -55,9 +55,9 @@ itself furnish the nontrivial physical `P/Q` split required by this exit.
 
 ## Step 4: Excluded-sector propagator and higher transfer
 
-**State:** abstract comparison, selected finite Weyl execution and q79
-harmonic-cohomology globalization closed; full covariant algebra and continuum
-q79 execution open.
+**State:** abstract comparison, selected finite Weyl execution, q79 harmonic
+globalization and the minimal full-covariance DGA closed; selected product and
+continuum q79 execution open.
 
 The raw compression defect, Feshbach correction and Hodge-transferred higher
 products have now been placed in one exact language:
@@ -97,11 +97,25 @@ maps: reflection and Fourier product defects are nonzero, and full-chain `C4`
 does not commute with all translated holonomies. This is the new sharp
 boundary, rather than an unspecified monodromy-naturalness gap.
 
-**Remaining exit:** construct either a selected symmetric covariant calculus
-that resolves those exact product defects or the continuum q79 HYM complex
-directly. It must map to the finite contraction through a cochain/product
-intertwiner, carry the nonharmonic response lanes that reproduce `D_fin`, and
-provide domains, pairing and analytic continuum-to-finite error control.
+The minimal signed-direction completion now removes those DGA defects exactly.
+It has four directions, dimension 144 and finite covariance group
+`(Z3 x Z3) semidirect C4` of order 36. With squared edge norm `1/2`, its Hodge
+eigenvalues remain `0,3,6`. The old complex is an isometric reducing cochain
+summand and its harmonic image is exactly the orientation-odd `(1,2,1)`
+sector.
+
+This completion also exposes the next obstruction. It contains twelve extra
+harmonic classes, so it is not quasi-isomorphic to the selected complex. The
+selected image is not product closed off harmonics, and orthogonal product
+compression is nonassociative. Full covariance is therefore available only
+before the unresolved physical mode/product selection.
+
+**Remaining exit:** derive from the selected source either a physical
+orientation-odd projector plus its associative or `A_infinity` transferred
+product, or the continuum q79 HYM complex directly. It must explain or remove
+the twelve extra harmonic classes, carry the nonharmonic response lanes that
+reproduce `D_fin`, and provide domains, pairing and analytic
+continuum-to-finite error control.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

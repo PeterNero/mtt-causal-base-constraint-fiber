@@ -1,0 +1,77 @@
+{
+  "schema": "boe.mtt.q79-symmetric-weyl-calculus-source-lock.v1",
+  "frozen_at": "2026-08-28",
+  "purpose": "Machine-independent provenance lock for the minimal forward/backward Weyl calculus, its normalized Hodge structure and its exact retraction to the selected two-direction complex.",
+  "sources": [
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "48dc80fa9112c69445e60d6a8cea98f91f9ee91a",
+      "path": "SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem_v1.md",
+      "git_blob": "d7aa084415bebf95b889fa08424b487b6575b324",
+      "sha256": "9a47357584e94caddc6fb67353433282e2cd1e89c1efa3c0685a895c552c2fa6"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "48dc80fa9112c69445e60d6a8cea98f91f9ee91a",
+      "path": "selected_finite_weyl_koszul_hodge_and_interaction_cutset.packet.json",
+      "git_blob": "547f6b90c73708cc5549f6b0c1b2fe2614cc4bdf",
+      "sha256": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "48dc80fa9112c69445e60d6a8cea98f91f9ee91a",
+      "path": "Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem_v1.md",
+      "git_blob": "239940acc3f947dad994064599f4ffedaf757f72",
+      "sha256": "f4c790180c2018706bd47e0e24c04c03046305e9cc9d24d0f3f38e075edbd417"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "48dc80fa9112c69445e60d6a8cea98f91f9ee91a",
+      "path": "q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.packet.json",
+      "git_blob": "a24b2dea77a2f3621a96699f936f6eec5d5fc73a",
+      "sha256": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "48dc80fa9112c69445e60d6a8cea98f91f9ee91a",
+      "path": "build_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.py",
+      "git_blob": "0409d8eea430bf7c8afad84b50ba5789b39e8f0f",
+      "sha256": "433236c65410b8a480a562619f7d8e18d4d859e504f2bf24eaed6808f5c851eb"
+    },
+    {
+      "repository": "https://github.com/PeterNero/mtt-causal-base-constraint-fiber.git",
+      "branch": "main",
+      "commit": "48dc80fa9112c69445e60d6a8cea98f91f9ee91a",
+      "path": "q79_weyl_koszul_monodromy_c4_source_lock.json",
+      "git_blob": "66ddf94b8a0fd4ba0986f5473c180ceb7f32bb9e",
+      "sha256": "53850493a69598a9874368be5ed2c201d0af70840d8c1b32249c3070e91b9961"
+    }
+  ],
+  "extracted_claims": {
+    "selected_two_direction_complex": {
+      "directions": ["+x", "+z"],
+      "dimension": 36,
+      "cohomology_dimensions": [1, 2, 1],
+      "Hodge_spectrum_base": {"0": 1, "3": 4, "6": 4},
+      "Green_eigenvalues": ["1/3", "1/6"]
+    },
+    "exact_symmetry_cutset": {
+      "affine_reflection_product_defects_per_1296": 360,
+      "Fourier_C4_product_defects_per_1296": 108,
+      "harmonic_product_equivariant": true,
+      "global_harmonic_strain_bridge": true,
+      "global_full_forward_difference_DGA": false
+    },
+    "q79_harmonic_strain_shadow": {
+      "H1_S3_type": "sign direct-sum sign",
+      "H1_C4_generator": [[0, -1], [1, 0]],
+      "determinant_twisted_strain_ranks": {"Reynolds": 2, "TT": 4}
+    }
+  },
+  "guard": "The lock authorizes a finite covariance completion and comparison with the already-selected two-direction complex. It does not select the extra harmonic modes as physical, enlarge q79 monodromy from S3 to a new physical structure group, construct the nonzero-Chern HYM endpoint, or close B.GEO.01, B.OP.01 or B.ACTION.01."
+}
