@@ -57,8 +57,9 @@ itself furnish the nontrivial physical `P/Q` split required by this exit.
 
 **State:** abstract comparison, selected finite Weyl execution, q79 harmonic
 globalization, minimal full-covariance DGA, universal harmonic first-jet
-quotient and finite transfer through `m4` closed; arity five onward and continuum
-q79 execution open.
+quotient, finite transfer through `m4`, an all-arity higher-`J` support theorem
+and all-arity nontruncation closed; the full `m5` table, SI(5), complete later
+arity tables and continuum q79 execution remain open.
 
 The raw compression defect, Feshbach correction and Hodge-transferred higher
 products have now been placed in one exact language:
@@ -140,14 +141,45 @@ and with three or more higher-jet inputs, but two higher-jet inputs can
 contribute. Therefore the finite hierarchy provably does not truncate at
 `m3`.
 
+The maximal higher-jet sector is now controlled at every arity. In each nonzero
+mode, mixed one-old/one-`J` transfer excursions span the six-dimensional space
+`R_g=image H`, with graded dimensions `(2,3,1)`. This space is invariant under
+all left/right `J` homotopy multipliers and terminal `J` multiplication projects
+to zero. The resulting planar-tree theorem proves that `m_n` vanishes with
+`n-1` or more `J` inputs for every `n>=3`.
+
+An exact selected execution also proves that `m5` is nonzero:
+
+```text
+m5(C:0,0,1, C:0,0,1, C:0,0,1, C:1,0,1, C:1,0,0)
+  = (1/24 + omega/48) C:2,0,1.
+```
+
+This witness lies in an exactly recurrent family. The two parity subsequences
+satisfy
+
+```text
+m_(2r+3)(x^(2r+1),y,z) = (2+omega)/(4*12^r) C:2,0,1,
+m_(2r+4)(x^(2r+2),y,z) = -omega/(8*12^r) C:2,0,1,
+```
+
+so a nonzero transferred operation exists at every arity `n>=3`. The finite
+structure is proved not to truncate at any finite arity; what remains is full
+table/coherence execution, not the nonvanishing truth value.
+
+The full arity-five domain still has 144,443,776 candidates after all proved
+cheap cutsets, so the complete operation and SI(5) should proceed by distinct
+`H lambda4` state compression and exact covariance-orbit decomposition, not a
+raw `48^5` loop.
+
 **Remaining exit:** instantiate the proved first-jet selector on the selected
 continuum q79 HYM complex and construct its full response transfer. The source
 must emit the nonzero-Chern endpoint, connection, reduced Green, physical `C4`
 naturality and a finite-to-continuum intertwiner with domains, pairing and
 certified errors. It must also carry the nonharmonic lanes that reproduce
 `D_fin`, either through an associative continuum product or a certified
-`A_infinity` transfer. At the finite tier, compute `m5` and higher or prove a
-truncation theorem at a later arity. The even higher-jet sector must be
+`A_infinity` transfer. At the finite tier, complete the `m5` table and SI(5),
+then compute later arities or prove a truncation theorem. The even higher-jet sector must be
 retained, quotiented or interpreted by that same source rather than by
 declaration.
 

@@ -32,6 +32,8 @@ def main() -> None:
     run(sys.executable, "build_q79_symmetric_response_retraction_transferred_m3.py")
     run(sys.executable, "verify_q79_symmetric_response_retraction_transferred_m3.py")
     run(sys.executable, "verify_q79_symmetric_response_transferred_m4.py")
+    run(sys.executable, "build_q79_higher_transfer_jet_filtration_and_m5_feasibility.py")
+    run(sys.executable, "verify_q79_higher_transfer_jet_filtration_and_m5_feasibility.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

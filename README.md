@@ -145,7 +145,32 @@ quadruples, and an independent implementation reproduces the complete support,
 sector tables and operation digest. The operation vanishes with the unit, on
 all-harmonic inputs and with three or four higher-jet inputs, but it is nonzero
 with one or two such inputs. This closes finite transfer through arity four;
-`m5` and higher remain open.
+the complete `m5` table remained open at that tier.
+
+The tenth theorem replaces an invalid fixed-parity extrapolation with the exact
+mode-dependent invariant space `R_g=image(H|V_g)`. In every nonzero Fourier
+mode this space has graded dimensions `(2,3,1)`, is preserved by left and right
+"multiply by `J`, then apply `H`" operators, and every terminal multiplication
+by `J` is killed by the target projection. The resulting tree theorem proves
+for every `n>=3` that `m_n` vanishes with `n-1` or more `J` inputs. The same
+packet evaluates Merkulov's exact `lambda5` on 86,796 selected admissible
+quintuples and gives the independently replayed witness
+
+```text
+m5(C:0,0,1, C:0,0,1, C:0,0,1, C:1,0,1, C:1,0,0)
+  = (1/24 + omega/48) C:2,0,1.
+```
+
+The witness extends to an exact two-parity recurrence. For
+`x=C:0,0,1`, `y=C:1,0,1` and `z=C:1,0,0`, the odd and even subsequences are
+
+```text
+m_(2r+3)(x^(2r+1),y,z) = (2+omega)/(4*12^r) C:2,0,1,
+m_(2r+4)(x^(2r+2),y,z) = -omega/(8*12^r) C:2,0,1.
+```
+
+Therefore `m_n` is nonzero for every `n>=3`: this finite transfer never
+truncates. Complete operation and Stasheff tables from `m5` onward remain open.
 
 ## Run the proof
 
@@ -153,9 +178,10 @@ with one or two such inputs. This closes finite transfer through arity four;
 python verify.py
 ```
 
-The verifier uses only the Python standard library. It rebuilds the first eight
-packets, independently checks the `m4` packet in routine mode and runs the unit
-tests.
+The verifier uses only the Python standard library. It rebuilds the packets,
+independently checks the `m4` packet in routine mode, reconstructs the eight
+higher-jet invariant spaces, the exact `m5` witness and the all-arity recurrence,
+and runs the unit tests.
 
 The complete independent `m4` table and SI(4) replay is intentionally separate
 from the routine suite because it evaluates 3,869,500 admissible quadruples:
@@ -193,6 +219,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   execution through the arity-three Stasheff identity.
 - `SymmetricWeylTransferredM4AndArityFourStasheffTheorem_v1.md`: complete
   transferred `m4`, higher-jet support and exhaustive arity-four certificate.
+- `HigherJetFiltrationAndTransferredAritySupportTheorem_v1.md`: exact
+  all-arity `n-1 J` support theorem, eight-mode invariant-space certificate and
+  closed all-arity nontruncation family.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -208,6 +237,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   selected retract and higher-jet-ideal sources for the response transfer.
 - `q79_symmetric_response_higher_transfer_source_lock.json`: pinned low-arity
   transfer and Merkulov-recursion boundary for the `m4` extension.
+- `q79_higher_transfer_jet_filtration_source_lock.json`: pinned `m4`, contraction
+  and Merkulov `lambda5` boundary for the all-arity support theorem.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -233,6 +264,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   strong-deformation-retract and transferred low-arity operation certificate.
 - `q79_symmetric_response_transferred_m4.packet.json`: generated complete `m4`
   support, digest, cutsets and SI(4) certificate.
+- `q79_higher_transfer_jet_filtration_and_m5_feasibility.packet.json`: generated
+  invariant-space, all-arity support/nontruncation and `m5` workload certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -256,19 +289,22 @@ upstream of open physical source selection:
 - the selected physical upper action, q79 HYM endpoint, continuum operator and
   universal apparatus family remain open.
 
-The immediate finite frontier is no longer an unexplained harmonic projector
-or a missing ternary/quaternary correction. The orientation-odd first-jet quotient is
-forced for every connection source, and the exact 48-dimensional target now
-retains the complementary higher-jet classes while carrying the transferred
-product through `m4`. The nonzero quaternary operation rules out truncation
-after `m3`; what remains finitely begins at `m5`. Physical promotion still requires the selected
+The immediate finite frontier is no longer an unexplained harmonic projector,
+a missing ternary/quaternary correction, or uncertainty about truncation at
+any finite arity. The orientation-odd first-jet quotient is forced for every
+connection source, and the exact 48-dimensional target retains the complementary
+higher-jet classes while carrying a nonzero transferred operation at every
+arity `n>=3`. The all-arity support theorem controls the maximal `J` sector. A
+complete `m5` table and SI(5) still require state compression or exact covariance orbits.
+Physical promotion still requires the selected
 nonzero-Chern q79 HYM endpoint, analytic domains and pairing, its Green
 operator, physical C4 naturality, a `D_fin` intertwiner and certified
 finite/continuum error bounds from one selected source.
 
-The nine exact packets currently pass `338/338` checks and thirty-nine unit
+The ten exact packets currently pass `359/359` checks and forty-five unit
 tests. The finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
-response transfer through `m4` are closed. Transfer from `m5` onward, the selected HYM
+all-arity response nontruncation are closed at their declared tiers. Complete
+operation and Stasheff tables from `m5` onward, the selected HYM
 endpoint, finite-to-continuum intertwiner and physical-action promotion are
 not.

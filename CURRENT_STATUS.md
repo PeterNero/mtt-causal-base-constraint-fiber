@@ -13,6 +13,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Signed-edge first-jet quotient handoff: `8b06f6ca-11c9-446a-9208-d83f790aa206`
 - Symmetric response transfer handoff: `77d34292-c17e-4638-a357-ffe7302ba450`
 - Symmetric response `m4` handoff: `fa4ebaf3-e925-4c58-8a53-02c3c505cd19`
+- Higher-jet support and `m5` handoff: `a6af7d98-09bf-40a6-8231-347acdd1365e`
 
 ## Controlling authorities
 
@@ -221,6 +222,46 @@ The operation is strictly unital, vanishes on all-harmonic inputs and vanishes
 with three or four higher-jet inputs. It is nonzero with one or two higher-jet
 inputs, so the twelve-class ideal participates in the complete chain-level
 transfer and cannot simply be deleted. This is not a physical-vertex theorem.
-`m5+`, `D_fin` matching, the selected HYM endpoint, continuum naturality and a
-selected cyclic/BV or Lorentzian action remain open under `B.GEO.01`,
-`B.OP.01` and `B.ACTION.01`.
+The complete `m5` table was still open at this tier.
+
+`HigherJetFiltrationAndTransferredAritySupportTheorem.v1` now supplies the
+structural result that the m4 census suggested but did not prove. In each of the
+eight nonzero modes, the mixed one-old/one-`J` excursions span exactly
+
+```text
+R_g = image(H restricted to V_g),
+dim R_g = 6,
+graded dimensions = (2,3,1) in degrees (1,2,3).
+```
+
+All 1,152 left/right `J` homotopy images remain in these spaces, and all 1,152
+terminal `J` products have zero target projection. Together with
+`H mu(J,J)=0`, the planar-tree argument proves for every `n>=3` that `m_n`
+vanishes whenever at least `n-1` inputs lie in `J`. This simultaneously explains
+the earlier m3 and m4 support cutsets.
+
+The same result first proves nontruncation at the next arity. An independently
+replayed exact witness is
+
+```text
+m5(C:0,0,1, C:0,0,1, C:0,0,1, C:1,0,1, C:1,0,0)
+  = (1/24 + omega/48) C:2,0,1.
+```
+
+It then goes further. For `x=C:0,0,1`, `y=C:1,0,1` and `z=C:1,0,0`, the exact
+Merkulov recursion reduces to a two-parity state update with scale `1/12` every
+two arities. Therefore
+
+```text
+m_(2r+3)(x^(2r+1),y,z) = (2+omega)/(4*12^r) C:2,0,1,
+m_(2r+4)(x^(2r+2),y,z) = -omega/(8*12^r) C:2,0,1.
+```
+
+Both expressions are nonzero for every `r>=0`. Thus the exact finite transfer
+does not truncate at any finite arity. This does not supply complete operation
+or Stasheff tables. After
+degree, strict-unit, all-harmonic and all-arity higher-`J` cutsets, 144,443,776
+basis quintuples remain. Their complete digest and SI(5) require exact state
+compression or covariance-orbit execution. `D_fin` matching, the selected HYM
+endpoint, continuum naturality and a selected cyclic/BV or Lorentzian action
+remain open under `B.GEO.01`, `B.OP.01` and `B.ACTION.01`.

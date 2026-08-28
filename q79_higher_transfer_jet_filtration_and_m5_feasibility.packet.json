@@ -1,0 +1,546 @@
+{
+  "schema": "boe.mtt.q79-higher-transfer-jet-filtration-and-m5-feasibility.v1",
+  "date": "2026-08-28",
+  "source_lock": {
+    "path": "q79_higher_transfer_jet_filtration_source_lock.json",
+    "sha256": "aacf48663fc908abf0402870ec7857a476cc99f61b396004ce058a03f4eede42"
+  },
+  "checks": {
+    "source_lock_schema_is_exact": true,
+    "all_source_lock_hashes_match": true,
+    "source_lock_preserves_the_physical_nonpromotion_boundary": true,
+    "all_initial_one_old_one_J_homotopy_images_lie_in_the_certified_spans": true,
+    "each_certified_span_equals_the_full_nonzero_mode_image_of_H": true,
+    "certified_spans_are_invariant_under_all_left_and_right_J_homotopy_operators": true,
+    "all_terminal_left_and_right_J_products_project_to_zero": true,
+    "H_annihilates_every_pure_J_basis_pair_product": true,
+    "general_n_minus_1_J_tree_cutset_is_certified": true,
+    "selected_exact_m5_probe_executed": true,
+    "selected_probe_respects_the_general_higher_J_cutset": true,
+    "transferred_m5_is_proved_nonzero_by_an_exact_witness": true,
+    "generic_Merkulov_recursion_matches_the_complete_m3_implementation": true,
+    "generic_Merkulov_recursion_matches_the_complete_m4_implementation": true,
+    "generic_Merkulov_recursion_matches_the_explicit_m5_implementation": true,
+    "two_parity_base_states_certify_the_one_over_twelve_recurrence": true,
+    "closed_form_base_values_m3_and_m4_are_exact": true,
+    "odd_and_even_output_recurrence_bases_scale_by_one_over_twelve": true,
+    "selected_family_is_proved_nonzero_at_every_arity_n_ge_3": true,
+    "selected_repeated_family_is_nonzero_through_arity_ten": true,
+    "selected_repeated_family_has_the_expected_degree_through_arity_ten": true
+  },
+  "all_checks_pass": true,
+  "higher_jet_invariant_subspace_certificate": {
+    "field": "Q(omega), omega^2+omega+1=0",
+    "operator_family": "H mu(-,j) and H mu(j,-) for every one of the 12 J basis vectors",
+    "nonzero_modes": [
+      {
+        "mode": [
+          0,
+          1
+        ],
+        "initial_nonzero_generator_count": 48,
+        "closure_rounds": 1,
+        "generated_nonzero_operator_images": 42,
+        "invariant_span_dimension": 6,
+        "homotopy_image_dimension": 6,
+        "invariant_span_equals_homotopy_image": true,
+        "degree_dimensions": {
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "canonical_span_basis_sha256": "1e7a53a49332e78b5e4661e54d46aa1d60fd57b2bedf8abd6f1ea3a6aa8a6a84",
+        "closure_operator_tests": 144,
+        "closure_failures": 0,
+        "terminal_projection_tests": 144,
+        "terminal_projection_failures": 0,
+        "first_terminal_failure": null
+      },
+      {
+        "mode": [
+          0,
+          2
+        ],
+        "initial_nonzero_generator_count": 48,
+        "closure_rounds": 1,
+        "generated_nonzero_operator_images": 42,
+        "invariant_span_dimension": 6,
+        "homotopy_image_dimension": 6,
+        "invariant_span_equals_homotopy_image": true,
+        "degree_dimensions": {
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "canonical_span_basis_sha256": "f0a86ddc1467323bf50d0578ae65aa4db3b117794377b4893b017cb73781a1f4",
+        "closure_operator_tests": 144,
+        "closure_failures": 0,
+        "terminal_projection_tests": 144,
+        "terminal_projection_failures": 0,
+        "first_terminal_failure": null
+      },
+      {
+        "mode": [
+          1,
+          0
+        ],
+        "initial_nonzero_generator_count": 48,
+        "closure_rounds": 1,
+        "generated_nonzero_operator_images": 42,
+        "invariant_span_dimension": 6,
+        "homotopy_image_dimension": 6,
+        "invariant_span_equals_homotopy_image": true,
+        "degree_dimensions": {
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "canonical_span_basis_sha256": "3053fc07ef86988008b0e404f9d746cadf502c463eed893849270f37779c6f96",
+        "closure_operator_tests": 144,
+        "closure_failures": 0,
+        "terminal_projection_tests": 144,
+        "terminal_projection_failures": 0,
+        "first_terminal_failure": null
+      },
+      {
+        "mode": [
+          1,
+          1
+        ],
+        "initial_nonzero_generator_count": 62,
+        "closure_rounds": 1,
+        "generated_nonzero_operator_images": 72,
+        "invariant_span_dimension": 6,
+        "homotopy_image_dimension": 6,
+        "invariant_span_equals_homotopy_image": true,
+        "degree_dimensions": {
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "canonical_span_basis_sha256": "1c707c9818f6aee26059c7dd033bdd99633ef9b38c4df0815e886ca34515447d",
+        "closure_operator_tests": 144,
+        "closure_failures": 0,
+        "terminal_projection_tests": 144,
+        "terminal_projection_failures": 0,
+        "first_terminal_failure": null
+      },
+      {
+        "mode": [
+          1,
+          2
+        ],
+        "initial_nonzero_generator_count": 62,
+        "closure_rounds": 1,
+        "generated_nonzero_operator_images": 72,
+        "invariant_span_dimension": 6,
+        "homotopy_image_dimension": 6,
+        "invariant_span_equals_homotopy_image": true,
+        "degree_dimensions": {
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "canonical_span_basis_sha256": "b77b1aba8b3552752fdc78147373bd8e8d7651978b7da08dea40b83a00771d01",
+        "closure_operator_tests": 144,
+        "closure_failures": 0,
+        "terminal_projection_tests": 144,
+        "terminal_projection_failures": 0,
+        "first_terminal_failure": null
+      },
+      {
+        "mode": [
+          2,
+          0
+        ],
+        "initial_nonzero_generator_count": 48,
+        "closure_rounds": 1,
+        "generated_nonzero_operator_images": 42,
+        "invariant_span_dimension": 6,
+        "homotopy_image_dimension": 6,
+        "invariant_span_equals_homotopy_image": true,
+        "degree_dimensions": {
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "canonical_span_basis_sha256": "3113c71b5f1466f023aa37f9dc1d598f618ad001994ed17c2f43e3c3e9a7fa99",
+        "closure_operator_tests": 144,
+        "closure_failures": 0,
+        "terminal_projection_tests": 144,
+        "terminal_projection_failures": 0,
+        "first_terminal_failure": null
+      },
+      {
+        "mode": [
+          2,
+          1
+        ],
+        "initial_nonzero_generator_count": 62,
+        "closure_rounds": 1,
+        "generated_nonzero_operator_images": 72,
+        "invariant_span_dimension": 6,
+        "homotopy_image_dimension": 6,
+        "invariant_span_equals_homotopy_image": true,
+        "degree_dimensions": {
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "canonical_span_basis_sha256": "332ff0ff54cc523d40aa57cb64716a268542b56b29ee68d32edafe819a9f10a2",
+        "closure_operator_tests": 144,
+        "closure_failures": 0,
+        "terminal_projection_tests": 144,
+        "terminal_projection_failures": 0,
+        "first_terminal_failure": null
+      },
+      {
+        "mode": [
+          2,
+          2
+        ],
+        "initial_nonzero_generator_count": 62,
+        "closure_rounds": 1,
+        "generated_nonzero_operator_images": 72,
+        "invariant_span_dimension": 6,
+        "homotopy_image_dimension": 6,
+        "invariant_span_equals_homotopy_image": true,
+        "degree_dimensions": {
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "canonical_span_basis_sha256": "f1abed553ef04f6fe7e088ab5176df0e5d1fb558cf58ff9c07612e3d8c7b1489",
+        "closure_operator_tests": 144,
+        "closure_failures": 0,
+        "terminal_projection_tests": 144,
+        "terminal_projection_failures": 0,
+        "first_terminal_failure": null
+      }
+    ],
+    "pure_J_pair_homotopy_failures": 0,
+    "tree_argument": {
+      "pure_J_subtree_rule": "Every non-root pure-J subtree is killed at its first H edge because J is zero-mode harmonic and H|mode(0,0)=0.",
+      "one_old_input_rule": "Any surviving planar tree with exactly one old input is a comb along that input. Its first H edge lies in the certified invariant span; every intermediate J edge preserves the span; the root J multiplication has zero target projection.",
+      "conclusion": "For every n>=3, m_n vanishes term by term when at least n-1 inputs lie in J."
+    }
+  },
+  "m5_combinatorial_feasibility": {
+    "total_basis_quintuples": 254803968,
+    "degree_admissible_basis_quintuples": 165494185,
+    "degree_rule": "|m5|=-3, so 3<=sum(input degrees)<=7",
+    "after_strict_unit_cutset": 144675840,
+    "all_harmonic_cutset_removed_after_unit": 36864,
+    "after_all_harmonic_cutset": 144638976,
+    "n_minus_1_J_cutset_removed_after_prior_cutsets": 195200,
+    "remaining_after_proved_cheap_cutsets": 144443776,
+    "remaining_fraction_of_raw": [
+      144443776,
+      254803968
+    ],
+    "planar_binary_tree_count": 14,
+    "verdict": "The structural cutsets are exact but do not by themselves make a full m5 table cheap; state compression or orbit decomposition is still required."
+  },
+  "m5_selected_exact_probe": {
+    "probe_basis_labels": [
+      "C:0,0,1",
+      "C:1,0,1",
+      "C:1,0,0",
+      "C:2,0,1",
+      "C:2,0,0",
+      "C:0,1,2",
+      "C:0,1,0",
+      "J:4",
+      "J:8",
+      "J:5"
+    ],
+    "degree_admissible_quintuples_checked": 86796,
+    "first_nonzero_m5_witness": {
+      "inputs": [
+        "C:0,0,1",
+        "C:0,0,1",
+        "C:0,0,1",
+        "C:1,0,1",
+        "C:1,0,0"
+      ],
+      "input_degrees": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "output": {
+        "old": [
+          [
+            2,
+            0,
+            1,
+            [
+              "1/24",
+              "1/48"
+            ]
+          ]
+        ],
+        "higher_jet": []
+      },
+      "higher_jet_input_count": 0
+    },
+    "cutset_failures_in_probe": 0,
+    "scope": "deterministic selected exact probe, not the full 48^5 operation table or SI(5) verification"
+  },
+  "selected_higher_arity_repeated_family_probe": {
+    "family": "m_n((C:0,0,1)^(n-2), C:1,0,1, C:1,0,0)",
+    "state_definitions": {
+      "A_k": "H lambda_(k+2)(x^k,y,z)",
+      "B_k": "H lambda_(k+1)(x^k,y)",
+      "T": "H mu(i x,-)",
+      "U": "H mu(-,i z)"
+    },
+    "state_recursion": [
+      "B_k=(-1)^k T B_(k-1)",
+      "A_k=(-1)^(k+1)(T A_(k-1)+U B_k)",
+      "M_k=m_(k+2)(x^k,y,z)=(-1)^(k+1)p(mu(i x,A_(k-1))+mu(B_k,i z))"
+    ],
+    "period_two_state_certificate": [
+      "(A_3,B_3)=(A_1,B_1)/12",
+      "(A_4,B_4)=(A_2,B_2)/12",
+      "the state update depends only on parity of k, hence (A_(k+2),B_(k+2))=(A_k,B_k)/12 for every k>=1",
+      "M_3=M_1/12 and M_4=M_2/12 initialize the odd and even output subsequences"
+    ],
+    "closed_form": {
+      "odd_arity": "m_(2r+3)(x^(2r+1),y,z)=((2+omega)/(4*12^r)) C:2,0,1 for r>=0",
+      "even_arity": "m_(2r+4)(x^(2r+2),y,z)=(-omega/(8*12^r)) C:2,0,1 for r>=0",
+      "conclusion": "m_n is nonzero for every n>=3"
+    },
+    "exact_records": [
+      {
+        "arity": 3,
+        "inputs": [
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "output": {
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "1/2",
+                "1/4"
+              ]
+            ]
+          ],
+          "higher_jet": []
+        },
+        "expected_output_degree": 1
+      },
+      {
+        "arity": 4,
+        "inputs": [
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "output": {
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "0",
+                "-1/8"
+              ]
+            ]
+          ],
+          "higher_jet": []
+        },
+        "expected_output_degree": 1
+      },
+      {
+        "arity": 5,
+        "inputs": [
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "output": {
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "1/24",
+                "1/48"
+              ]
+            ]
+          ],
+          "higher_jet": []
+        },
+        "expected_output_degree": 1
+      },
+      {
+        "arity": 6,
+        "inputs": [
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "output": {
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "0",
+                "-1/96"
+              ]
+            ]
+          ],
+          "higher_jet": []
+        },
+        "expected_output_degree": 1
+      },
+      {
+        "arity": 7,
+        "inputs": [
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "output": {
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "1/288",
+                "1/576"
+              ]
+            ]
+          ],
+          "higher_jet": []
+        },
+        "expected_output_degree": 1
+      },
+      {
+        "arity": 8,
+        "inputs": [
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "output": {
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "0",
+                "-1/1152"
+              ]
+            ]
+          ],
+          "higher_jet": []
+        },
+        "expected_output_degree": 1
+      },
+      {
+        "arity": 9,
+        "inputs": [
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "output": {
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "1/3456",
+                "1/6912"
+              ]
+            ]
+          ],
+          "higher_jet": []
+        },
+        "expected_output_degree": 1
+      },
+      {
+        "arity": 10,
+        "inputs": [
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:0,0,1",
+          "C:1,0,1",
+          "C:1,0,0"
+        ],
+        "output": {
+          "old": [
+            [
+              2,
+              0,
+              1,
+              [
+                "0",
+                "-1/13824"
+              ]
+            ]
+          ],
+          "higher_jet": []
+        },
+        "expected_output_degree": 1
+      }
+    ],
+    "scope": "all-arity theorem for one selected ordered family; it does not compute complete operation tables or Stasheff residual tables at arity five and above"
+  },
+  "general_n_minus_1_J_cutset_proved": true,
+  "transferred_m5_nonzero": true,
+  "transferred_mn_nonzero_for_every_n_ge_3_on_selected_family": true,
+  "full_m5_table_computed": false,
+  "arity_five_Stasheff_identity_fully_verified": false,
+  "physical_D_fin_or_HYM_identification": false,
+  "frontier_delta": "A finite invariant-subspace certificate proves for every n>=3 that m_n vanishes whenever at least n-1 inputs lie in the higher-jet ideal J. A separate exact two-state parity recurrence gives closed nonzero values for m_n(x^(n-2),y,z) at every n>=3, so the transferred hierarchy never truncates at finite arity. Complete operation tables and Stasheff residual tables from arity five onward remain open and require state compression or orbit decomposition.",
+  "open_obligations": [
+    "full m5 operation digest and arity-five Stasheff verification",
+    "state-compressed or covariance-orbit execution of the remaining m5 candidates",
+    "complete operation and Stasheff tables at arity six and above despite proved selected-family nonvanishing",
+    "identification with D_fin, a continuum HYM vertex or a selected physical action",
+    "continuum endpoint, domains, normalization and certified finite-to-continuum error"
+  ]
+}
