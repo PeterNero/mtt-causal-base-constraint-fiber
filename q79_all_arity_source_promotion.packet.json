@@ -1,0 +1,229 @@
+{
+  "check_summary": {
+    "passed": 39,
+    "total": 39
+  },
+  "checks": {
+    "Fourier_has_order_four_on_the_48_dimensional_target": true,
+    "all_four_controlling_blockers_remain_explicitly_open": true,
+    "both_generator_actions_are_monomial_on_all_48_target_basis_elements": true,
+    "contraction_implementation_hash_matches": true,
+    "fourier_commutes_with_source_differential_on_144_basis_elements": true,
+    "fourier_commutes_with_target_differential_on_48_basis_elements": true,
+    "fourier_preserves_source_product_on_20736_basis_pairs": true,
+    "fourier_preserves_target_inclusion_on_48_basis_elements": true,
+    "fourier_preserves_target_projection_on_144_basis_elements": true,
+    "fourier_preserves_transfer_homotopy_on_144_basis_elements": true,
+    "fourier_preserves_transferred_m2_on_2304_basis_pairs": true,
+    "fourier_selected_nontruncating_family_is_equivariant_at_arity_3": true,
+    "fourier_selected_nontruncating_family_is_equivariant_at_arity_4": true,
+    "fourier_selected_nontruncating_family_is_equivariant_at_arity_5": true,
+    "fourier_selected_nontruncating_family_is_equivariant_at_arity_6": true,
+    "fourier_selected_nontruncating_family_is_equivariant_at_arity_7": true,
+    "fourier_selected_nontruncating_family_is_equivariant_at_arity_8": true,
+    "higher_transfer_packet_hash_matches": true,
+    "induced_affine_subgroup_has_order_six": true,
+    "induced_covariance_group_has_order_36": true,
+    "kernel_model_hash_is_locked": true,
+    "response_contraction_packet_hash_matches": true,
+    "selected_family_is_nonzero_at_every_probed_arity_3_through_8": true,
+    "source_lock_schema_is_current": true,
+    "symmetric_DGA_packet_hash_matches": true,
+    "translation_commutes_with_source_differential_on_144_basis_elements": true,
+    "translation_commutes_with_target_differential_on_48_basis_elements": true,
+    "translation_has_order_three_on_the_48_dimensional_target": true,
+    "translation_preserves_source_product_on_20736_basis_pairs": true,
+    "translation_preserves_target_inclusion_on_48_basis_elements": true,
+    "translation_preserves_target_projection_on_144_basis_elements": true,
+    "translation_preserves_transfer_homotopy_on_144_basis_elements": true,
+    "translation_preserves_transferred_m2_on_2304_basis_pairs": true,
+    "translation_selected_nontruncating_family_is_equivariant_at_arity_3": true,
+    "translation_selected_nontruncating_family_is_equivariant_at_arity_4": true,
+    "translation_selected_nontruncating_family_is_equivariant_at_arity_5": true,
+    "translation_selected_nontruncating_family_is_equivariant_at_arity_6": true,
+    "translation_selected_nontruncating_family_is_equivariant_at_arity_7": true,
+    "translation_selected_nontruncating_family_is_equivariant_at_arity_8": true
+  },
+  "claim_boundary": {
+    "does_not_claim": [
+      "that the finite covariance group is physical q79 holonomy",
+      "that a continuum HYM endpoint has been selected",
+      "that D_fin is the transferred HYM operator",
+      "that the physical action or four-dimensional BV compactification is closed",
+      "that approximate endpoint maps satisfy exact all-arity naturality"
+    ]
+  },
+  "claim_id": "CBF.T11",
+  "date": "2026-08-28",
+  "endpoint_contract": {
+    "approximate_case": "If endpoint squares have nonzero defects, use the already closed FSB.03b arity majorants; this theorem does not silently promote approximate maps to exact ones.",
+    "automatic_compiler_rows": [
+      {
+        "requirement": "DGA morphism plus contraction-square identities imply all transferred m_n squares",
+        "row": "AC.01",
+        "state": "closed_exact_general"
+      },
+      {
+        "requirement": "unitary reducing cochain map implies adjoint, Laplacian, projector, Green and H naturality",
+        "row": "AC.02",
+        "state": "closed_exact_general"
+      },
+      {
+        "requirement": "translation and Fourier generators preserve the complete 144-to-48 contraction",
+        "row": "AC.03",
+        "state": "closed_exact_finite_q79"
+      }
+    ],
+    "key_reduction": "Once EP.01-EP.04 provide an exact contraction-preserving source map, Green/homotopy naturality and every higher transferred operation are consequences, not independent rows.",
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7,
+    "physical_source_rows": [
+      {
+        "blocker": "B.HS.01",
+        "requirement": "selected source-hashed visible-hidden HYM endpoint and common chamber",
+        "row": "EP.01",
+        "state": "open"
+      },
+      {
+        "blocker": "B.GEO.01",
+        "requirement": "typed unitary continuum-to-finite source map on declared Sobolev domains",
+        "row": "EP.02",
+        "state": "open"
+      },
+      {
+        "blocker": "B.GEO.01",
+        "requirement": "same map intertwines differential, product and retained projector or supplies certified defects",
+        "row": "EP.03",
+        "state": "open"
+      },
+      {
+        "blocker": "B.GEO.01",
+        "requirement": "selected physical C4/monodromy lift preserves the endpoint source data",
+        "row": "EP.04",
+        "state": "open"
+      },
+      {
+        "blocker": "B.OP.01",
+        "requirement": "rank-102 coefficient arrays, QHP/Feshbach decision, inverse and tail bounds",
+        "row": "EP.05",
+        "state": "open"
+      },
+      {
+        "blocker": "B.ACTION.01",
+        "requirement": "same-source cyclic/BV or Lorentzian action, pairing, real slice and normalization",
+        "row": "EP.06",
+        "state": "open"
+      },
+      {
+        "blocker": "B.ACTION.01",
+        "requirement": "BV-compatible externalization/compactification to the accepted four-dimensional fields",
+        "row": "EP.07",
+        "state": "open"
+      }
+    ],
+    "schema": "boe.mtt.q79-all-arity-continuum-endpoint-contract.v1"
+  },
+  "frontier_delta": {
+    "blocker_states_changed": false,
+    "closed": [
+      "all-arity functoriality of homotopy transfer under a contraction-preserving DGA morphism",
+      "exact preservation of the q79 144-to-48 contraction by translation and Fourier generators",
+      "faithful order-36 induced covariance action on the 48-dimensional target",
+      "reduction of infinitely many exact higher-operation transport checks to finite source identities"
+    ],
+    "open": [
+      "selected visible-hidden HYM endpoint and common chamber",
+      "continuum source morphism and physical C4 lift",
+      "rank-102 coefficient arrays and finite residual/tail execution",
+      "physical cyclic/BV or Lorentzian action and compactification map"
+    ]
+  },
+  "q79_contraction_naturality": {
+    "automatic_consequence": "Every Merkulov planar-tree operation m_n is equivariant for every n; no separate higher-arity covariance census is required.",
+    "contraction_maps": [
+      "i",
+      "p",
+      "H"
+    ],
+    "source_dimension": 144,
+    "target_dimension": 48
+  },
+  "q79_source_DGA": {
+    "checked_generators": [
+      "translation",
+      "fourier"
+    ],
+    "source_dimension": 144,
+    "source_pairs_per_generator": 20736,
+    "source_type": "symmetric crossed-exterior qutrit Weyl DGA over Q(omega)"
+  },
+  "q79_target_group": {
+    "affine_subgroup_order": 6,
+    "generated_order": 36,
+    "physical_holonomy_claimed": false,
+    "representation_is_faithful_at_finite_target_tier": true,
+    "target_covariance_group": "(Z3 x Z3) semidirect C4"
+  },
+  "schema": "boe.mtt.q79-all-arity-source-promotion.packet.v1",
+  "selected_all_arity_regression": {
+    "family": "x^(n-2), y, z",
+    "logical_scope": "The finite probes are regression witnesses. All-arity equivariance follows from the contraction-morphism theorem, not extrapolation from these six arities.",
+    "probes": [
+      {
+        "arity": 3,
+        "fourier_equivariant": true,
+        "source_nonzero": true,
+        "translation_equivariant": true
+      },
+      {
+        "arity": 4,
+        "fourier_equivariant": true,
+        "source_nonzero": true,
+        "translation_equivariant": true
+      },
+      {
+        "arity": 5,
+        "fourier_equivariant": true,
+        "source_nonzero": true,
+        "translation_equivariant": true
+      },
+      {
+        "arity": 6,
+        "fourier_equivariant": true,
+        "source_nonzero": true,
+        "translation_equivariant": true
+      },
+      {
+        "arity": 7,
+        "fourier_equivariant": true,
+        "source_nonzero": true,
+        "translation_equivariant": true
+      },
+      {
+        "arity": 8,
+        "fourier_equivariant": true,
+        "source_nonzero": true,
+        "translation_equivariant": true
+      }
+    ],
+    "x": "C:0,0,1",
+    "y": "C:1,0,1",
+    "z": "C:1,0,0"
+  },
+  "source_lock_sha256": "fe564238632c898f22179dd82ad8f2373724bb793a1d1eb0177c6e1735dcdeb3",
+  "status": "EXACT_GENERAL_ALL_ARITY_CONTRACTION_MORPHISM_THEOREM_AND_EXACT_FINITE_Q79_COVARIANCE_EXECUTION_PHYSICAL_ENDPOINT_OPEN",
+  "theorem": {
+    "conclusion": "Psi m_n=m'_n Psi^(tensor n) for every n>=1",
+    "hodge_corollary": "a unitary reducing cochain intertwiner preserving the declared closed operator domains automatically transports adjoints, Laplacians, spectral projectors, reduced Greens and H=d*G",
+    "hypotheses": [
+      "Phi is a degree-zero DGA morphism",
+      "Psi is the retained chain map",
+      "Phi i=i' Psi",
+      "p' Phi=Psi p",
+      "Phi H=H' Phi"
+    ],
+    "proof_method": "induction on decorated planar binary trees in the Merkulov recursion"
+  },
+  "theorem_sha256": "8add68855ce9d0cc7ff93c666f2c00afae3bda4391eddfc08de4d2ebc08118a9",
+  "tier": "EXACT_GENERAL + SELECTED_EXACT_FINITE; CONDITIONAL_CONTINUUM"
+}

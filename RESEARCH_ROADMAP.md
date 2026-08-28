@@ -172,14 +172,24 @@ cheap cutsets, so the complete operation and SI(5) should proceed by distinct
 `H lambda4` state compression and exact covariance-orbit decomposition, not a
 raw `48^5` loop.
 
+All-arity covariance is now closed independently of that census. The exact
+contraction-morphism theorem proves that one DGA source map preserving `i`, `p`
+and `H` transports every `m_n`. Translation and Fourier satisfy those identities
+on the complete q79 144-to-48 contraction and generate a faithful order-36
+target action. Complete later-arity tables are therefore coherence data, not a
+prerequisite for exact source promotion.
+
 **Remaining exit:** instantiate the proved first-jet selector on the selected
 continuum q79 HYM complex and construct its full response transfer. The source
 must emit the nonzero-Chern endpoint, connection, reduced Green, physical `C4`
 naturality and a finite-to-continuum intertwiner with domains, pairing and
 certified errors. It must also carry the nonharmonic lanes that reproduce
 `D_fin`, either through an associative continuum product or a certified
-`A_infinity` transfer. At the finite tier, complete the `m5` table and SI(5),
-then compute later arities or prove a truncation theorem. The even higher-jet sector must be
+`A_infinity` transfer. The all-arity theorem reduces exact operation transport
+to the endpoint differential/product and contraction squares; approximate
+transport must instead use the existing `FSB.03b` defect majorants. At the
+finite tier, the optional next coherence calculation is the complete `m5`
+table and SI(5). The even higher-jet sector must be
 retained, quotiented or interpreted by that same source rather than by
 declaration.
 

@@ -172,6 +172,16 @@ m_(2r+4)(x^(2r+2),y,z) = -omega/(8*12^r) C:2,0,1.
 Therefore `m_n` is nonzero for every `n>=3`: this finite transfer never
 truncates. Complete operation and Stasheff tables from `m5` onward remain open.
 
+The eleventh theorem closes a different all-arity question: source promotion
+does not require a separate continuum comparison for every nonzero `m_n`. A
+degree-zero DGA morphism preserving the inclusion, projection and transfer
+homotopy transports every planar-tree operation automatically. The exact q79
+translation and Fourier generators preserve the complete 144-to-48 contraction
+and induce a faithful order-36 action on the response target. Hence the whole
+nontruncating hierarchy is equivariant at once. This is an exact general and
+finite theorem, not a continuum promotion: all seven physical endpoint rows
+remain open.
+
 ## Run the proof
 
 ```powershell
@@ -181,7 +191,7 @@ python verify.py
 The verifier uses only the Python standard library. It rebuilds the packets,
 independently checks the `m4` packet in routine mode, reconstructs the eight
 higher-jet invariant spaces, the exact `m5` witness and the all-arity recurrence,
-and runs the unit tests.
+checks the all-arity source-promotion contract, and runs the unit tests.
 
 The complete independent `m4` table and SI(4) replay is intentionally separate
 from the routine suite because it evaluates 3,869,500 admissible quadruples:
@@ -222,6 +232,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `HigherJetFiltrationAndTransferredAritySupportTheorem_v1.md`: exact
   all-arity `n-1 J` support theorem, eight-mode invariant-space certificate and
   closed all-arity nontruncation family.
+- `AllArityContractionMorphismSourcePromotionTheorem_v1.md`: general
+  contraction-morphism theorem, exact all-arity q79 covariance and the strict
+  seven-row continuum endpoint contract.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -239,6 +252,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   transfer and Merkulov-recursion boundary for the `m4` extension.
 - `q79_higher_transfer_jet_filtration_source_lock.json`: pinned `m4`, contraction
   and Merkulov `lambda5` boundary for the all-arity support theorem.
+- `q79_all_arity_source_promotion_source_lock.json`: pinned finite contraction,
+  HYM-naturality, polar-compiler and action/BV boundary sources.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -266,6 +281,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   support, digest, cutsets and SI(4) certificate.
 - `q79_higher_transfer_jet_filtration_and_m5_feasibility.packet.json`: generated
   invariant-space, all-arity support/nontruncation and `m5` workload certificate.
+- `q79_all_arity_source_promotion.packet.json`: generated all-arity naturality,
+  target-covariance and continuum endpoint-contract certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -295,16 +312,18 @@ any finite arity. The orientation-odd first-jet quotient is forced for every
 connection source, and the exact 48-dimensional target retains the complementary
 higher-jet classes while carrying a nonzero transferred operation at every
 arity `n>=3`. The all-arity support theorem controls the maximal `J` sector. A
-complete `m5` table and SI(5) still require state compression or exact covariance orbits.
-Physical promotion still requires the selected
+complete `m5` table and SI(5) still require state compression or exact covariance
+orbits. All-arity covariance no longer requires those tables: it follows from
+the exact source/contraction squares. Physical promotion still requires the selected
 nonzero-Chern q79 HYM endpoint, analytic domains and pairing, its Green
 operator, physical C4 naturality, a `D_fin` intertwiner and certified
 finite/continuum error bounds from one selected source.
 
-The ten exact packets currently pass `359/359` checks and forty-five unit
-tests. The finite `P/G/h` package, q79 harmonic strain globalization, full
+The new source-promotion packet passes `39/39` checks and its independent
+verifier passes `20/20`; the canonical suite passes forty-nine unit tests. The
+finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
-all-arity response nontruncation are closed at their declared tiers. Complete
+all-arity response nontruncation and covariance are closed at their declared tiers. Complete
 operation and Stasheff tables from `m5` onward, the selected HYM
 endpoint, finite-to-continuum intertwiner and physical-action promotion are
 not.

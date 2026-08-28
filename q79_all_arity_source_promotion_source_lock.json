@@ -1,0 +1,104 @@
+{
+  "schema": "boe.mtt.q79-all-arity-source-promotion-source-lock.v1",
+  "date": "2026-08-28",
+  "kernel_model": {
+    "generated_at": "2026-08-28T05:57:40+00:00",
+    "state_sha256": "572272ade96f4bf2d89dd41c48701a125cd0736343167819855b2cf41f377b45"
+  },
+  "controlling_authorities": [
+    {
+      "id": "A10",
+      "state": "recorded",
+      "sha256": "909ff31b2fce2b5d3e2a3d93bc44cc579f1392e3359fe17d506a31f5a9e1c2c5"
+    },
+    {
+      "id": "A18",
+      "state": "conditional",
+      "sha256": "7287df306cc3832fb1cccbed43f8794eaa44576799f46fe526f882df2463a1a3"
+    },
+    {
+      "id": "A47",
+      "state": "established",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "B.HS.01",
+      "state": "open"
+    },
+    {
+      "id": "B.GEO.01",
+      "state": "open"
+    },
+    {
+      "id": "B.OP.01",
+      "state": "open"
+    },
+    {
+      "id": "B.ACTION.01",
+      "state": "open"
+    }
+  ],
+  "local_sources": [
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "a3cfd8bc7664cfe6a7c844e11961facaf481489e",
+      "path": "q79_symmetric_weyl_calculus_isometric_retraction.packet.json",
+      "sha256": "8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e",
+      "role": "exact 144-dimensional symmetric q79 DGA, covariance group and Hodge data"
+    },
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "a3cfd8bc7664cfe6a7c844e11961facaf481489e",
+      "path": "q79_symmetric_response_retraction_transferred_m3.packet.json",
+      "sha256": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+      "role": "exact 144-to-48 contraction and transferred m1, m2 and m3"
+    },
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "a3cfd8bc7664cfe6a7c844e11961facaf481489e",
+      "path": "q79_higher_transfer_jet_filtration_and_m5_feasibility.packet.json",
+      "sha256": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+      "role": "all-arity higher-jet cutset and nontruncating selected family"
+    },
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "a3cfd8bc7664cfe6a7c844e11961facaf481489e",
+      "path": "build_q79_symmetric_response_retraction_transferred_m3.py",
+      "sha256": "0978fd67a721bbe3cb2b5b7817222dde00b532daf88b2b8f35d141ecc9efdaeb",
+      "role": "exact inclusion, projection, transfer homotopy and target operations"
+    }
+  ],
+  "adjacent_authorities": [
+    {
+      "repository": "mtt-q79-total-superconnection-branching",
+      "commit": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+      "path": "theorems/SELECTED_Q79_TOTAL_SUPERCONNECTION_BRANCHING_PROGRAM_v1.md",
+      "sha256": "31db2f9a1a91deee3fe2f9660004d975d952d82f35534b0c9508ef35422fd3cf",
+      "role": "FSB.03a-c polar, nonlinear-operation and fixed-point promotion compilers"
+    },
+    {
+      "repository": "mtt-qm-source-proof",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "proof_corpus/q79_CovariantProjectiveModule_HYMSymbol_Naturality_and_CompressionResidual_Theorem_v1.md",
+      "sha256": "8d41b02bcbd1018233a4da7dbf06363ec12e80a5e074d6480ac6cb2596ea91cc",
+      "role": "universal curved-projector, HYM Hessian naturality and Feshbach criterion"
+    },
+    {
+      "repository": "mtt-preprojection-repair-calculus",
+      "commit": "8bbde0cd96dbcc85f51bf43427cc74ce1aa034af",
+      "path": "theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "formal cyclic Maurer-Cartan action and twisted descent authority"
+    },
+    {
+      "repository": "mtt-preprojection-repair-calculus",
+      "commit": "8bbde0cd96dbcc85f51bf43427cc74ce1aa034af",
+      "path": "theorems/PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1.md",
+      "sha256": "ce8cd73313df474d9619e9111caac25c3931f9d01a114c3b00e0549893fd24d6",
+      "role": "cotangent contraction and explicit physical BV compactification boundary"
+    }
+  ],
+  "guard": "This lock permits a general all-arity naturality theorem and an exact finite q79 covariance execution. It does not supply the selected visible-hidden HYM endpoint, a continuum source morphism, D_fin matching, physical domains, normalization, finite-to-continuum errors or a physical action."
+}

@@ -265,3 +265,31 @@ basis quintuples remain. Their complete digest and SI(5) require exact state
 compression or covariance-orbit execution. `D_fin` matching, the selected HYM
 endpoint, continuum naturality and a selected cyclic/BV or Lorentzian action
 remain open under `B.GEO.01`, `B.OP.01` and `B.ACTION.01`.
+
+`AllArityContractionMorphismSourcePromotionTheorem.v1` now closes the missing
+functoriality step between source data and the complete transferred hierarchy.
+For two contractions, a DGA morphism `Phi` and retained map `Psi` satisfying
+
+```text
+Phi i=i' Psi,   p' Phi=Psi p,   Phi H=H' Phi
+```
+
+intertwine every transferred `m_n`, for all `n>=1`. The proof is termwise on
+decorated planar binary trees. A unitary reducing cochain intertwiner also
+transports adjoints, Laplacians, harmonic projectors, reduced Greens and
+`H=d*G` by functional calculus.
+
+The finite q79 execution is exact. Translation and Fourier preserve the
+source differential and product, all three contraction maps, and the induced
+target differential/product. They generate a faithful order-36 action on the
+48-dimensional target. Thus the already-proved nontruncating hierarchy is
+equivariant at every arity without separately computing complete `m5`, `m6`,
+and later tables.
+
+This changes the continuum acceptance contract, not the physical blocker
+states. Once a selected endpoint supplies one exact source/contraction map,
+Green/homotopy and all higher-operation naturality become consequences. The
+strict physical contract remains `0/7`: endpoint, continuum map, source
+intertwining, physical `C4`, rank-102 execution, physical action and BV-compatible
+four-dimensional externalization are all still open under `B.HS.01`,
+`B.GEO.01`, `B.OP.01` and `B.ACTION.01`.
