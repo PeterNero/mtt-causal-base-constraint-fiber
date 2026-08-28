@@ -193,6 +193,26 @@ table and SI(5). The even higher-jet sector must be
 retained, quotiented or interpreted by that same source rather than by
 declaration.
 
+The seven endpoint rows are no longer treated as independent work items.
+`CBF.T12` proves the exact factorization
+
+```text
+GAS -> EP.01, EP.06
+SYN -> EP.02, EP.03
+GAS+SYN -> EP.04, EP.05
+BV4 -> EP.07.
+```
+
+The immediate physical order is therefore:
+
+1. bind the selected eta9/HYM endpoint and upper action into `GAS`;
+2. construct `SYN` from that exact Hessian and endpoint representation data;
+3. execute the now-deterministic physical `C4` and rank-102/Feshbach rows; and
+4. construct `BV4` from the same source root.
+
+The three packets are structured source objects, not three scalar knobs. The
+physical count remains `0/7` until their actual q79 payloads pass.
+
 ## Step 5: Constraint curvature and gauge stabilizer
 
 **State:** abstract stabilizer/faithful-quotient descent closed; physical

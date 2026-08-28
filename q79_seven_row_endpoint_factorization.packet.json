@@ -1,0 +1,665 @@
+{
+  "baseline_q79_tier": {
+    "finite_covariance_group_order": 36,
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7,
+    "source_claim_id": "CBF.T11",
+    "source_dimension": 144,
+    "source_packet_sha256": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+    "target_dimension": 48
+  },
+  "check_summary": {
+    "passed": 50,
+    "total": 50
+  },
+  "checks": {
+    "C4_generator_has_order_four": true,
+    "EP04_and_EP05_are_deterministic": true,
+    "action_hessian_is_C4_invariant": true,
+    "adjacent_mtt-preprojection-repair-calculus_BV_COMPACTIFICATION_BRIDGE_CONTRACT_hash_matches": true,
+    "adjacent_mtt-preprojection-repair-calculus_PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1_hash_matches": true,
+    "adjacent_mtt-preprojection-repair-calculus_PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1_hash_matches": true,
+    "adjacent_mtt-preprojection-repair-calculus_PREPROJECTION_NORMALIZED_ORIENTATION_BV_PRODUCT_REDUCTION_AND_NEUTRAL_TOPOLOGY_NO_GO_THEOREM_v1_hash_matches": true,
+    "adjacent_mtt-q79-total-superconnection-branching_SELECTED_Q79_TOTAL_SUPERCONNECTION_BRANCHING_PROGRAM_v1_hash_matches": true,
+    "adjacent_mtt-qm-source-proof_q79_CovariantProjectiveModule_HYMSymbol_Naturality_and_CompressionResidual_Theorem_v1_hash_matches": true,
+    "all_arity_theorem_hash_matches": true,
+    "all_four_controlling_blockers_remain_open": true,
+    "all_three_packet_types_have_an_independent_countermodel": true,
+    "all_three_packets_repeat_the_root_hash": true,
+    "baseline_all_physical_rows_are_open": true,
+    "baseline_has_exactly_EP01_through_EP07": true,
+    "baseline_packet_checks_all_pass": true,
+    "baseline_packet_hash_matches": true,
+    "baseline_physical_acceptance_is_zero_of_seven": true,
+    "complement_action_change_changes_effective_values": true,
+    "complement_action_change_preserves_C4_symmetry": true,
+    "complement_action_change_preserves_retained_action": true,
+    "complement_block_is_5I": true,
+    "cotangent_action_vanishes_on_zero_section": true,
+    "degenerate_hessian_does_not_select_a_unique_projector": true,
+    "degenerate_hessian_has_same_compression_for_both_syntheses": true,
+    "effective_operator_is_C4_invariant": true,
+    "effective_operator_is_nine_fifths_I": true,
+    "factorization_covers_exactly_seven_rows": true,
+    "factorization_uses_exactly_three_source_packet_types": true,
+    "feshbach_determinant_identity": true,
+    "field_action_is_nonzero_on_selected_sample": true,
+    "finite_q79_covariance_group_is_order_36": true,
+    "finite_q79_physical_holonomy_is_not_claimed": true,
+    "galerkin_residual_is_nonzero": true,
+    "kernel_model_hash_is_locked": true,
+    "neutral_to_nonzero_character_equivariance_has_only_zero_solution": true,
+    "physical_acceptance_remains_zero_of_seven": true,
+    "retained_and_complement_projectors_resolve_identity": true,
+    "retained_block_is_2I": true,
+    "same_source_self_energy_is_one_fifth_I": true,
+    "schema_contains_no_observed_value_payload": true,
+    "schema_has_no_proof_boolean_shortcut": true,
+    "schema_is_draft_2020_12": true,
+    "schema_requires_cross_packet_certificates": true,
+    "schema_requires_exactly_three_source_packets": true,
+    "schema_requires_one_root_hash": true,
+    "source_lock_schema_is_current": true,
+    "synthesis_is_isometric": true,
+    "two_rational_syntheses_are_isometric": true,
+    "zero_section_actions_cannot_be_identical": true
+  },
+  "claim_boundary": {
+    "does_not_claim": [
+      "that three structured source packets are three scalar parameters",
+      "selection of the q79 HYM endpoint or upper action",
+      "physical rank-102 matrix values",
+      "physical C4 holonomy",
+      "four-dimensional BV compactification",
+      "closure of B.HS.01, B.GEO.01, B.OP.01 or B.ACTION.01"
+    ]
+  },
+  "claim_id": "CBF.T12",
+  "date": "2026-08-29",
+  "endpoint_schema_sha256": "8189fd8e91032cdd6ec50cef0ef82105808c35cc215cd54731d165fb9d489c9f",
+  "exact_feshbach_and_symmetry_witness": {
+    "C4_generator_J": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "QKU": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "complement_Q": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "complement_block": [
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "determinant_K": 81,
+    "determinant_complement_times_effective": 81,
+    "effective_feshbach_operator": [
+      [
+        "9/5",
+        0
+      ],
+      [
+        0,
+        "9/5"
+      ]
+    ],
+    "field_dimension": 4,
+    "galerkin_block": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "hessian_K": [
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        5
+      ]
+    ],
+    "physical_q79_rank102_values_claimed": false,
+    "projector_P": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "retained_dimension": 2,
+    "self_energy": [
+      [
+        "1/5",
+        0
+      ],
+      [
+        0,
+        "1/5"
+      ]
+    ],
+    "synthesis_U": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "frontier_delta": {
+    "blocker_states_changed": false,
+    "closed": [
+      "factorization of EP.01-EP.07 through GAS, SYN and BV4",
+      "proof that EP.04 and EP.05 require no fourth source packet",
+      "exact Hessian/Feshbach/C4 covariance witness",
+      "logical independence of upper action/complement data, synthesis selection and BV compactification",
+      "machine-readable same-source three-packet endpoint schema"
+    ],
+    "dependency_graph_changed": true,
+    "open": [
+      "physical GAS from the selected visible-hidden q79 HYM endpoint and action",
+      "physical SYN from that same endpoint with domains and tail bounds",
+      "physical BV4 with charged/chiral fields and Lorentzian/BV reduction"
+    ],
+    "physical_row_count_changed": false
+  },
+  "minimality_witnesses": {
+    "BV4_independence": {
+      "consequence": "internal cotangent data cannot select a nonzero field action or charged target representation",
+      "cotangent_zero_section_value": 0,
+      "field_action_sample_value": 1,
+      "neutral_to_weight_minus_one_equivariance_equation": "T=-T, hence T=0 over characteristic zero"
+    },
+    "GAS_independence": {
+      "K0": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          5
+        ]
+      ],
+      "K1": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          6
+        ]
+      ],
+      "changed": [
+        "complement Hessian",
+        "Feshbach self-energy",
+        "effective operator"
+      ],
+      "effective_after": [
+        [
+          "11/6",
+          0
+        ],
+        [
+          0,
+          "11/6"
+        ]
+      ],
+      "effective_before": [
+        [
+          "9/5",
+          0
+        ],
+        [
+          0,
+          "9/5"
+        ]
+      ],
+      "operation": "K1=K0+Q",
+      "retained_action_block": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "unchanged": [
+        "endpoint geometry",
+        "stationary point",
+        "synthesis subspace",
+        "retained quadratic action",
+        "retained Galerkin block"
+      ]
+    },
+    "SYN_independence": {
+      "P0": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "P1": [
+        [
+          "9/25",
+          0,
+          "12/25",
+          0
+        ],
+        [
+          0,
+          "9/25",
+          0,
+          "12/25"
+        ],
+        [
+          "12/25",
+          0,
+          "16/25",
+          0
+        ],
+        [
+          0,
+          "12/25",
+          0,
+          "16/25"
+        ]
+      ],
+      "U0": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "U1": [
+        [
+          "3/5",
+          0
+        ],
+        [
+          0,
+          "3/5"
+        ],
+        [
+          "4/5",
+          0
+        ],
+        [
+          0,
+          "4/5"
+        ]
+      ],
+      "common_compression": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "degenerate_hessian": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "scope": "logical independence of source packet types, not a numerical parameter lower bound"
+  },
+  "physical_endpoint_schema": {
+    "cross_packet_required_fields": [
+      "all_source_root_hashes_equal",
+      "action_hessian_identity",
+      "endpoint_synthesis_identity",
+      "action_compactification_identity",
+      "symmetry_compatibility",
+      "parameter_and_observed_input_ledger"
+    ],
+    "interpretation": "three structured source packets, not three scalar parameters",
+    "root_required_fields": [
+      "schema",
+      "source_root_sha256",
+      "geometry_action",
+      "spectral_synthesis",
+      "bv_compactification",
+      "cross_packet_certificates"
+    ],
+    "schema_id": "urn:boe:mtt:q79-physical-endpoint-three-packet:v1",
+    "source_packets": [
+      "geometry_action",
+      "spectral_synthesis",
+      "bv_compactification"
+    ]
+  },
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "schema": "boe.mtt.q79-seven-row-endpoint-factorization.packet.v1",
+  "seven_rows": [
+    {
+      "blocker": "B.HS.01",
+      "compiler_tier": "typed_endpoint_contract",
+      "logical_role": "source_primitive",
+      "physical_state": "open",
+      "row": "EP.01",
+      "source_packets": [
+        "GAS"
+      ]
+    },
+    {
+      "blocker": "B.GEO.01",
+      "compiler_tier": "conditional_polar_and_spectral_synthesis_compilers",
+      "logical_role": "source_primitive",
+      "physical_state": "open",
+      "row": "EP.02",
+      "source_packets": [
+        "SYN"
+      ]
+    },
+    {
+      "blocker": "B.GEO.01",
+      "compiler_tier": "exact_general_and_exact_finite_q79",
+      "logical_role": "finite_source_certificates_then_all_arity_automatic",
+      "physical_state": "open",
+      "row": "EP.03",
+      "source_packets": [
+        "SYN"
+      ]
+    },
+    {
+      "blocker": "B.GEO.01",
+      "compiler_tier": "equivariant_functional_calculus_and_all_arity_naturality",
+      "logical_role": "deterministic_consequence",
+      "physical_state": "open",
+      "row": "EP.04",
+      "source_packets": [
+        "GAS",
+        "SYN"
+      ]
+    },
+    {
+      "blocker": "B.OP.01",
+      "compiler_tier": "exact_galerkin_feshbach_formula",
+      "logical_role": "deterministic_execution",
+      "physical_state": "open",
+      "row": "EP.05",
+      "source_packets": [
+        "GAS",
+        "SYN"
+      ]
+    },
+    {
+      "blocker": "B.ACTION.01",
+      "compiler_tier": "formal_cyclic_lane_only",
+      "logical_role": "source_primitive",
+      "physical_state": "open",
+      "row": "EP.06",
+      "source_packets": [
+        "GAS"
+      ]
+    },
+    {
+      "blocker": "B.ACTION.01",
+      "compiler_tier": "abstract_cotangent_and_orientation_reduction_only",
+      "logical_role": "source_primitive",
+      "physical_state": "open",
+      "row": "EP.07",
+      "source_packets": [
+        "BV4"
+      ]
+    }
+  ],
+  "source_lock_sha256": "e77254f52efa5df1aefb5f4610f190b2b729ee183296582de1920b757dab918b",
+  "source_packet_factorization": {
+    "derived_rows": {
+      "EP.04": [
+        "GAS",
+        "SYN"
+      ],
+      "EP.05": [
+        "GAS",
+        "SYN"
+      ]
+    },
+    "not_a_parameter_count": true,
+    "packet_types": [
+      {
+        "covers": [
+          "EP.01",
+          "EP.06"
+        ],
+        "id": "GAS",
+        "name": "geometry-action source",
+        "physical_state": "open"
+      },
+      {
+        "covers": [
+          "EP.02",
+          "EP.03"
+        ],
+        "id": "SYN",
+        "name": "spectral-synthesis source",
+        "physical_state": "open"
+      },
+      {
+        "covers": [
+          "EP.07"
+        ],
+        "id": "BV4",
+        "name": "BV-compatible four-dimensional compactification source",
+        "physical_state": "open"
+      }
+    ],
+    "physical_packets_accepted": 0,
+    "physical_packets_total": 3,
+    "same_root_source_required": true
+  },
+  "theorem_sha256": "2e9a860a759877a4df06c3885c246ed4cc2679c5069e7d95d5d44b4f0bf213ae",
+  "tier": "EXACT_GENERAL + EXACT_DEPENDENCY_WITNESSES; PHYSICAL_Q79_OPEN"
+}

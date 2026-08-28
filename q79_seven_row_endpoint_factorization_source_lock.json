@@ -1,0 +1,104 @@
+{
+  "schema": "boe.mtt.q79-seven-row-endpoint-factorization-source-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model": {
+    "generated_at": "2026-08-28T05:57:40+00:00",
+    "state_sha256": "572272ade96f4bf2d89dd41c48701a125cd0736343167819855b2cf41f377b45"
+  },
+  "controlling_authorities": [
+    {
+      "id": "A10",
+      "state": "recorded",
+      "sha256": "909ff31b2fce2b5d3e2a3d93bc44cc579f1392e3359fe17d506a31f5a9e1c2c5"
+    },
+    {
+      "id": "A18",
+      "state": "conditional",
+      "sha256": "7287df306cc3832fb1cccbed43f8794eaa44576799f46fe526f882df2463a1a3"
+    },
+    {
+      "id": "A47",
+      "state": "established",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "B.HS.01",
+      "state": "open"
+    },
+    {
+      "id": "B.GEO.01",
+      "state": "open"
+    },
+    {
+      "id": "B.OP.01",
+      "state": "open"
+    },
+    {
+      "id": "B.ACTION.01",
+      "state": "open"
+    }
+  ],
+  "local_sources": [
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "c59ae8e199d2e86a7a9efb4c28784fe86db73f78",
+      "path": "q79_all_arity_source_promotion.packet.json",
+      "sha256": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+      "role": "exact finite all-arity covariance and strict EP.01-EP.07 baseline"
+    },
+    {
+      "repository": "mtt-causal-base-constraint-fiber",
+      "commit": "c59ae8e199d2e86a7a9efb4c28784fe86db73f78",
+      "path": "AllArityContractionMorphismSourcePromotionTheorem_v1.md",
+      "sha256": "8add68855ce9d0cc7ff93c666f2c00afae3bda4391eddfc08de4d2ebc08118a9",
+      "role": "all-arity contraction-morphism theorem"
+    }
+  ],
+  "adjacent_authorities": [
+    {
+      "repository": "mtt-q79-total-superconnection-branching",
+      "commit": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+      "path": "theorems/SELECTED_Q79_TOTAL_SUPERCONNECTION_BRANCHING_PROGRAM_v1.md",
+      "sha256": "31db2f9a1a91deee3fe2f9660004d975d952d82f35534b0c9508ef35422fd3cf",
+      "role": "FSB.03a-d polar, nonlinear, fixed-point and spectral-synthesis compilers"
+    },
+    {
+      "repository": "mtt-qm-source-proof",
+      "commit": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "proof_corpus/q79_CovariantProjectiveModule_HYMSymbol_Naturality_and_CompressionResidual_Theorem_v1.md",
+      "sha256": "8d41b02bcbd1018233a4da7dbf06363ec12e80a5e074d6480ac6cb2596ea91cc",
+      "role": "HYM naturality and exact Galerkin/Feshbach criterion"
+    },
+    {
+      "repository": "mtt-preprojection-repair-calculus",
+      "commit": "8bbde0cd96dbcc85f51bf43427cc74ce1aa034af",
+      "path": "theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "formal cyclic action, signed Hessian and twisted descent"
+    },
+    {
+      "repository": "mtt-preprojection-repair-calculus",
+      "commit": "8bbde0cd96dbcc85f51bf43427cc74ce1aa034af",
+      "path": "theorems/PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1.md",
+      "sha256": "ce8cd73313df474d9619e9111caac25c3931f9d01a114c3b00e0549893fd24d6",
+      "role": "cotangent functoriality, zero-section obstruction and C_BV contract"
+    },
+    {
+      "repository": "mtt-preprojection-repair-calculus",
+      "commit": "8bbde0cd96dbcc85f51bf43427cc74ce1aa034af",
+      "path": "theorems/PREPROJECTION_NORMALIZED_ORIENTATION_BV_PRODUCT_REDUCTION_AND_NEUTRAL_TOPOLOGY_NO_GO_THEOREM_v1.md",
+      "sha256": "f74b950287a85c854cbe4a793a82a0d26ab65805001629505dda2a34ab17b845",
+      "role": "exact orientation-profile reduction and neutral-representation boundary"
+    },
+    {
+      "repository": "mtt-preprojection-repair-calculus",
+      "commit": "8bbde0cd96dbcc85f51bf43427cc74ce1aa034af",
+      "path": "docs/BV_COMPACTIFICATION_BRIDGE_CONTRACT.md",
+      "sha256": "37676d5e4e79e38f9975ee50899d12e8a3d5cf8102738048a383cc57926cc8b5",
+      "role": "typed physical compactification exit rows"
+    }
+  ],
+  "guard": "This lock permits a logical factorization and exact finite dependency witnesses. Three structured source packets are not three scalar parameters. The lock does not provide the selected q79 HYM endpoint, physical action, continuum synthesis, rank-102 values or four-dimensional BV compactification."
+}

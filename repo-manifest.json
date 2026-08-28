@@ -40,6 +40,9 @@
     "all-arity naturality of homotopy transfer under contraction-preserving DGA morphisms",
     "exact all-arity q79 covariance and faithful order-36 action on the 48-dimensional target",
     "strict seven-row continuum endpoint source-promotion contract",
+    "exact factorization of the seven endpoint rows through three same-source packet types",
+    "exact Hessian/Feshbach/C4 execution and minimal-source independence witnesses",
+    "machine-readable q79 physical endpoint three-packet contract",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -64,6 +67,8 @@
     "identification of the 48-dimensional transfer target with D_fin or rank-102 response data",
     "instantiation of the all-arity promotion theorem on a selected continuum HYM endpoint",
     "promotion of finite all-arity covariance to physical q79 holonomy",
+    "physical acceptance of any GAS, SYN or BV4 packet",
+    "that three structured source packets are three scalar physical parameters",
     "that every internal MTT direction is non-spatiotemporal",
     "a new globally original operator-theory identity"
   ],
@@ -80,7 +85,8 @@
     "SymmetricWeylResponseRetractionAndTransferredM3Theorem_v1.md",
     "SymmetricWeylTransferredM4AndArityFourStasheffTheorem_v1.md",
     "HigherJetFiltrationAndTransferredAritySupportTheorem_v1.md",
-    "AllArityContractionMorphismSourcePromotionTheorem_v1.md"
+    "AllArityContractionMorphismSourcePromotionTheorem_v1.md",
+    "SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -93,7 +99,8 @@
     "q79_symmetric_response_retraction_transferred_m3.packet.json",
     "q79_symmetric_response_transferred_m4.packet.json",
     "q79_higher_transfer_jet_filtration_and_m5_feasibility.packet.json",
-    "q79_all_arity_source_promotion.packet.json"
+    "q79_all_arity_source_promotion.packet.json",
+    "q79_seven_row_endpoint_factorization.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -106,12 +113,16 @@
     "python build_q79_symmetric_response_retraction_transferred_m3.py",
     "python build_q79_symmetric_response_transferred_m4.py",
     "python build_q79_higher_transfer_jet_filtration_and_m5_feasibility.py",
-    "python build_q79_all_arity_source_promotion.py"
+    "python build_q79_all_arity_source_promotion.py",
+    "python build_q79_seven_row_endpoint_factorization.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
     "CONSTRAINT_REDUCTION_REFERENCE_SYSTEM_v0.md",
     "PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md"
+  ],
+  "contracts": [
+    "q79_physical_endpoint_three_packet_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

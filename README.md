@@ -182,6 +182,17 @@ nontruncating hierarchy is equivariant at once. This is an exact general and
 finite theorem, not a continuum promotion: all seven physical endpoint rows
 remain open.
 
+The twelfth theorem attacks those seven rows as one system. It proves that
+they factor through three same-source packets: geometry plus action (`GAS`),
+spectral synthesis (`SYN`) and four-dimensional BV compactification (`BV4`).
+The physical `C4` row and rank-102 Galerkin/Feshbach row are deterministic
+consequences of `GAS+SYN`, not additional physical source choices. Exact
+countermodels show that upper complementary action data, synthesis selection
+and physical compactification cannot be inferred from one another. This is a dependency
+reduction, not a three-parameter claim: physical acceptance remains `0/3`
+typed components and `0/7` rows. The components may be stored together; the
+count describes distinct information, not files.
+
 ## Run the proof
 
 ```powershell
@@ -191,7 +202,8 @@ python verify.py
 The verifier uses only the Python standard library. It rebuilds the packets,
 independently checks the `m4` packet in routine mode, reconstructs the eight
 higher-jet invariant spaces, the exact `m5` witness and the all-arity recurrence,
-checks the all-arity source-promotion contract, and runs the unit tests.
+checks the all-arity source-promotion contract, executes the seven-row
+factorization/Feshbach witnesses, and runs the unit tests.
 
 The complete independent `m4` table and SI(4) replay is intentionally separate
 from the routine suite because it evaluates 3,869,500 admissible quadruples:
@@ -235,6 +247,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `AllArityContractionMorphismSourcePromotionTheorem_v1.md`: general
   contraction-morphism theorem, exact all-arity q79 covariance and the strict
   seven-row continuum endpoint contract.
+- `SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md`: exact
+  factorization of the seven endpoint rows through `GAS`, `SYN` and `BV4`,
+  exact minimality countermodels and the derived Feshbach/C4 rows.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -254,6 +269,11 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   and Merkulov `lambda5` boundary for the all-arity support theorem.
 - `q79_all_arity_source_promotion_source_lock.json`: pinned finite contraction,
   HYM-naturality, polar-compiler and action/BV boundary sources.
+- `q79_seven_row_endpoint_factorization_source_lock.json`: pinned all-arity,
+  HYM/Feshbach, action and BV-compactification authorities for the dependency
+  theorem.
+- `q79_physical_endpoint_three_packet_contract.schema.json`: machine-readable
+  same-source input schema for the physical endpoint integration.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -283,6 +303,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   invariant-space, all-arity support/nontruncation and `m5` workload certificate.
 - `q79_all_arity_source_promotion.packet.json`: generated all-arity naturality,
   target-covariance and continuum endpoint-contract certificate.
+- `q79_seven_row_endpoint_factorization.packet.json`: generated dependency,
+  minimality and exact Hessian/Feshbach/C4 certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -319,8 +341,18 @@ nonzero-Chern q79 HYM endpoint, analytic domains and pairing, its Green
 operator, physical C4 naturality, a `D_fin` intertwiner and certified
 finite/continuum error bounds from one selected source.
 
-The new source-promotion packet passes `39/39` checks and its independent
-verifier passes `20/20`; the canonical suite passes forty-nine unit tests. The
+Those obligations are now organized rather than flat. `GAS` must bind the
+selected HYM endpoint to the physical action and normalization; `SYN` must bind
+the continuum Hessian to the retained finite sector; and `BV4` must externalize
+that same source to the accepted four-dimensional BV fields. Once `GAS+SYN`
+exist, the physical symmetry and rank-102/Feshbach rows are computations, not
+new source packets. This reduces source-type ambiguity but does not change the
+strict physical `0/7` count.
+
+The source-promotion packet passes `39/39` checks and its independent verifier
+passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
+its independent verifier passes `37/37`. The canonical suite passes 54 unit
+tests, including the five new dependency tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

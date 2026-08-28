@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:q79-physical-endpoint-three-packet:v1",
+  "title": "q79 physical endpoint three-packet contract",
+  "description": "A same-source input contract whose accepted instantiation is sufficient to execute EP.01 through EP.07. Its three components may be serialized together; they are typed obligations, not a claim that three scalar parameters suffice.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "source_root_sha256",
+    "geometry_action",
+    "spectral_synthesis",
+    "bv_compactification",
+    "cross_packet_certificates"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.q79-physical-endpoint-three-packet.v1"
+    },
+    "source_root_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "geometry_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_root_sha256",
+        "endpoint_source_sha256",
+        "visible_hidden_hym_endpoint",
+        "common_chamber_and_connection_certificate",
+        "anomaly_bianchi_gs_certificate",
+        "shared_line_descent_certificate",
+        "field_and_residual_complexes",
+        "action_source_sha256",
+        "action_and_pairing",
+        "real_slice_and_normalization",
+        "stationary_endpoint_and_hessian",
+        "domains_and_green_data",
+        "source_symmetry_action"
+      ],
+      "properties": {
+        "source_root_sha256": { "$ref": "#/$defs/sha256" },
+        "endpoint_source_sha256": { "$ref": "#/$defs/sha256" },
+        "visible_hidden_hym_endpoint": { "$ref": "#/$defs/artifact" },
+        "common_chamber_and_connection_certificate": { "$ref": "#/$defs/artifact" },
+        "anomaly_bianchi_gs_certificate": { "$ref": "#/$defs/artifact" },
+        "shared_line_descent_certificate": { "$ref": "#/$defs/artifact" },
+        "field_and_residual_complexes": { "$ref": "#/$defs/artifact" },
+        "action_source_sha256": { "$ref": "#/$defs/sha256" },
+        "action_and_pairing": { "$ref": "#/$defs/artifact" },
+        "real_slice_and_normalization": { "$ref": "#/$defs/artifact" },
+        "stationary_endpoint_and_hessian": { "$ref": "#/$defs/artifact" },
+        "domains_and_green_data": { "$ref": "#/$defs/artifact" },
+        "source_symmetry_action": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "spectral_synthesis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_root_sha256",
+        "synthesis_source_sha256",
+        "finite_and_continuum_bases",
+        "isometric_synthesis_and_adjoint",
+        "projectors_and_complement",
+        "sobolev_domains",
+        "differential_product_projector_squares",
+        "spectral_and_multiplicity_selection",
+        "symmetry_and_phase_anchors",
+        "complement_inverse_or_galerkin_certificate",
+        "tail_and_nonlinear_majorants"
+      ],
+      "properties": {
+        "source_root_sha256": { "$ref": "#/$defs/sha256" },
+        "synthesis_source_sha256": { "$ref": "#/$defs/sha256" },
+        "finite_and_continuum_bases": { "$ref": "#/$defs/artifact" },
+        "isometric_synthesis_and_adjoint": { "$ref": "#/$defs/artifact" },
+        "projectors_and_complement": { "$ref": "#/$defs/artifact" },
+        "sobolev_domains": { "$ref": "#/$defs/artifact" },
+        "differential_product_projector_squares": { "$ref": "#/$defs/artifact" },
+        "spectral_and_multiplicity_selection": { "$ref": "#/$defs/artifact" },
+        "symmetry_and_phase_anchors": { "$ref": "#/$defs/artifact" },
+        "complement_inverse_or_galerkin_certificate": { "$ref": "#/$defs/artifact" },
+        "tail_and_nonlinear_majorants": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "bv_compactification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_root_sha256",
+        "compactification_source_sha256",
+        "bases_and_field_stacks",
+        "primal_contraction",
+        "cotangent_lift_and_pairing",
+        "representation_and_shared_line_map",
+        "density_and_fiber_integration",
+        "field_only_action_reduction",
+        "brst_bv_action_reduction",
+        "reality_statistics_and_grading",
+        "gauge_fixing_domains_and_symbols",
+        "bv_pushforward_and_determinant_orientation"
+      ],
+      "properties": {
+        "source_root_sha256": { "$ref": "#/$defs/sha256" },
+        "compactification_source_sha256": { "$ref": "#/$defs/sha256" },
+        "bases_and_field_stacks": { "$ref": "#/$defs/artifact" },
+        "primal_contraction": { "$ref": "#/$defs/artifact" },
+        "cotangent_lift_and_pairing": { "$ref": "#/$defs/artifact" },
+        "representation_and_shared_line_map": { "$ref": "#/$defs/artifact" },
+        "density_and_fiber_integration": { "$ref": "#/$defs/artifact" },
+        "field_only_action_reduction": { "$ref": "#/$defs/artifact" },
+        "brst_bv_action_reduction": { "$ref": "#/$defs/artifact" },
+        "reality_statistics_and_grading": { "$ref": "#/$defs/artifact" },
+        "gauge_fixing_domains_and_symbols": { "$ref": "#/$defs/artifact" },
+        "bv_pushforward_and_determinant_orientation": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "cross_packet_certificates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "all_source_root_hashes_equal",
+        "action_hessian_identity",
+        "endpoint_synthesis_identity",
+        "action_compactification_identity",
+        "symmetry_compatibility",
+        "parameter_and_observed_input_ledger"
+      ],
+      "properties": {
+        "all_source_root_hashes_equal": { "$ref": "#/$defs/artifact" },
+        "action_hessian_identity": { "$ref": "#/$defs/artifact" },
+        "endpoint_synthesis_identity": { "$ref": "#/$defs/artifact" },
+        "action_compactification_identity": { "$ref": "#/$defs/artifact" },
+        "symmetry_compatibility": { "$ref": "#/$defs/artifact" },
+        "parameter_and_observed_input_ledger": { "$ref": "#/$defs/artifact" }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["uri", "sha256"],
+      "properties": {
+        "uri": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Model generated: `2026-08-28T05:57:40+00:00`
 - Durable handoff: `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`
 - Current synthesis handoff: `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`
+- Endpoint-factorization handoff: `716be879-715b-4416-be42-2c096d3d9b0b`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
@@ -293,3 +294,31 @@ strict physical contract remains `0/7`: endpoint, continuum map, source
 intertwining, physical `C4`, rank-102 execution, physical action and BV-compatible
 four-dimensional externalization are all still open under `B.HS.01`,
 `B.GEO.01`, `B.OP.01` and `B.ACTION.01`.
+
+`SevenRowEndpointFactorizationAndMinimalSourceTheorem.v1` now resolves the
+dependency structure of that contract. The seven rows factor through three
+same-source packets:
+
+```text
+GAS = selected geometry plus physical action,
+SYN = selected spectral/continuum synthesis,
+BV4 = physical four-dimensional BV compactification.
+```
+
+`EP.04` is forced by source symmetry plus synthesis equivariance. `EP.05` is
+the Galerkin/Feshbach calculation from the action Hessian and the synthesis
+projector/complement; it introduces no fourth source packet. Exact rational
+witnesses give a nonzero `QKU`, self-energy `(1/5)I2`, effective operator
+`(9/5)I2`, determinant 81 and compatible order-four symmetry.
+
+Exact countermodels also prove that the three packet types cannot be collapsed
+without a new theorem: an upper action can change on the eliminated complement
+while preserving its retained lower action, a degenerate
+Hessian admits distinct rational isometric projectors, and an internal
+cotangent action cannot supply a nonzero zero-section field action or charged
+target representation. This is not a claim of three scalar parameters.
+
+Physical acceptance remains `0/3` packets and `0/7` rows. The frontier change
+is that `B.OP.01` is now typed as deterministic execution after physical
+`GAS+SYN`, while the irreducible source work is construction of physical
+`GAS`, `SYN` and `BV4` from one root hash.

@@ -36,6 +36,8 @@ def main() -> None:
     run(sys.executable, "verify_q79_higher_transfer_jet_filtration_and_m5_feasibility.py")
     run(sys.executable, "build_q79_all_arity_source_promotion.py")
     run(sys.executable, "verify_q79_all_arity_source_promotion.py")
+    run(sys.executable, "build_q79_seven_row_endpoint_factorization.py")
+    run(sys.executable, "verify_q79_seven_row_endpoint_factorization.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 
