@@ -403,34 +403,51 @@ parallel over the selected flat shared line. Since the CBF.T23 incidence is
 root-neutral, the two balanced binary-root presentations are intertwined and
 do not require a selector for this endpoint.
 
-The remaining order is now:
+CBF.T25 now proves that the selected finite source has an exact direct causal
+continuum realization. The `96`-dimensional real-even datum is the fiber of an
+associated bundle over the selected globally hyperbolic base, not a low-mode
+approximation. Consequently its internal analysis/synthesis is the identity,
+the internal complement is zero, and no internal tail or Galerkin error exists.
+The order-zero Yukawa-Higgs term preserves the Lorentzian principal symbol and
+Green hyperbolicity. The graded square reproduces `h^2 H_phys`, and the
+classical fermion/Yukawa BV sublane closes.
 
-1. promote the now selected finite Yukawa-Laplacian total differential through the selected
-   continuum HYM/Galerkin map, including connection, domain and error control;
-2. complete same-root physical BV4 insertion and quantum QME control;
-3. certify the complete physical residual and recover `c_action` using the
-   exact relative-intertwiner, product-square, incidence and Schur theorems;
-4. externalize the accepted action and density through CBF.T13/T14;
-5. derive a sector-resolved spectral law or cross-sector relation reducing the
-   nine FSB.04g scalar coordinates;
-6. emit one held-out source-normalized mass, interaction or threshold scalar.
+This splits the remaining work into two routes that must not be conflated.
 
-The immediate independent target is item 1. The finite physical typing and
-product-totalization questions must not be reopened: CBF.T23-CBF.T24 have
-discharged them. The remaining q79 provider work is the selected continuum
-source and its certified symbol/intertwining map, not a new finite incidence
-or product convention.
+### Direct finite-source route
 
-The continuum route must still complete same-root BV4 insertion and HYM
-synthesis, projection and certified finite-error bounds. Primitive selection
-of the q79 background and the numerical-vacuum clause remain open. A binary
-root selector is not required for the current neutral endpoint; a future odd
-factorwise root-charged interaction would create a new obligation. Another
-normal-frame or finite-trace packet cannot discharge either clause: CBF.T18
-proves those choices are already quotiented or unique. CBF.T22-CBF.T24 and the
-pinned metrology theorem also prove that searching for a second
-sector-specific absolute scale is the wrong target: the only admissible
-absolute extension at the current tier is the shared metrological primitive.
+1. construct one selected coefficient-bearing action/background object that
+   emits the already fixed finite differential and its normalization;
+2. derive the strict numerical Higgs/source coordinates or the smallest
+   explicitly declared universal parameter set;
+3. extend the same source to the bosonic gauge, Higgs and gravitational action;
+4. complete renormalized BV/QME control; and
+5. emit one held-out source-normalized mass, interaction or threshold scalar.
+
+### q79 HYM provenance route
+
+1. select the nonzero-Chern visible-hidden HYM endpoint and common chamber;
+2. construct its domains, connection, reduced Green and normalized modes;
+3. prove the HYM-to-finite intertwiner and certified errors;
+4. compare the descended operator with the direct finite-source class; and
+5. if they agree, state the resulting universality theorem without identifying
+   the routes before the comparison is proved.
+
+The immediate direct target is item 1 of the direct route, followed by the
+held-out scalar. The immediate q79 target remains item 1 of the provenance
+route. The finite physical typing, totalization and direct continuum synthesis
+must not be reopened: CBF.T23-CBF.T25 have discharged them at their declared
+tier. q79 HYM acceptance remains `0/3` packets and `0/7` rows because CBF.T25
+does not claim HYM provenance.
+
+Primitive q79 background selection and the numerical-vacuum clause remain
+open. A binary root selector is not required for the current neutral endpoint;
+a future odd factorwise root-charged interaction would create a new obligation.
+Another normal-frame or finite-trace packet cannot discharge the value clause:
+CBF.T18 proves those choices are already quotiented or unique. CBF.T22-CBF.T25
+and the pinned metrology theorem also prove that searching for a second sector-
+specific absolute scale is the wrong target: the only admissible absolute
+extension at the current tier is the shared metrological primitive.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

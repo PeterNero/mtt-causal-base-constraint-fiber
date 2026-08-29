@@ -21,6 +21,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Symmetric response transfer handoff: `77d34292-c17e-4638-a357-ffe7302ba450`
 - Symmetric response `m4` handoff: `fa4ebaf3-e925-4c58-8a53-02c3c505cd19`
 - Higher-jet support and `m5` handoff: `a6af7d98-09bf-40a6-8231-347acdd1365e`
+- Direct finite-source causal continuum handoff: `c6ac82be-f43f-4464-8943-68814e47539e`
 
 ## Controlling authorities
 
@@ -748,3 +749,55 @@ shared line with the nonzero-Chern HYM connection, choose an arrow of time,
 select a nonlinear physical action, or complete BV/QME. `B.ACTION.01`,
 `B.GEO.01` and `B.OP.01` remain open, with physical acceptance still `0/3`
 packets and `0/7` rows.
+
+`DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md`
+(`CBF.T25`) now closes the provider-neutral direct operator/synthesis clause
+without an eta9 or HYM endpoint. The A48-A51/CBF.T23 finite real-even datum is
+used as the exact internal source fiber of the associated bundle
+
+```text
+E_F=P_SM times_(rho_F) H_F,    dim_C H_F=96.
+```
+
+This is not a Galerkin truncation of a larger internal continuum. Fiberwise
+analysis and synthesis are inverse identities, so
+
+```text
+P_int=I96,
+Q_int=0,
+Feshbach complement term=0,
+omitted internal tail=0,
+internal truncation error=0.
+```
+
+The external four-dimensional field dependence remains a continuum. Its
+Dirac-Yukawa operator is
+
+```text
+D_dir(t;A,H)=D_A+Y_t(H),
+```
+
+with the unchanged Lorentzian Dirac principal symbol. On the selected
+globally hyperbolic base, the smooth order-zero Yukawa-Higgs endomorphism
+therefore preserves Green hyperbolicity and advanced/retarded causal support.
+In a covariantly constant neutral Higgs frame, exact reconstruction gives
+
+```text
+D_dir(t,h)^2=D_Y^2 tensor I96+h^2 I tensor D_phys(t)^2,
+d_t D_dir(t,h)^2|0=h^2 I tensor H_phys.
+```
+
+The response has rank `96`, squared Frobenius norm `768`, and the same exact
+digest as CBF.T23. The signed first-order fermion action remains distinct from
+the positive repair square. Existing continuum certificates supply gauge
+covariance, BRST nilpotency and the classical BV master equation for this
+fermion/Yukawa sublane.
+
+This changes the frontier sharply. A nontrivial q79 HYM Galerkin map is no
+longer required to prove that the selected finite operator has a causal
+four-dimensional continuum realization. It is still required to derive that
+operator from the six-dimensional HYM geometry and to compare the two routes.
+Accordingly `B.GEO.01` remains open as written, and q79 HYM acceptance remains
+`0/3` packets and `0/7` rows. Numerical `h` and `t`, the complete coefficient-
+bearing upper action, bosonic/gravitational completion, quantum BV/QME and a
+held-out scalar prediction remain open.

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mtt.local/schemas/direct-finite-source-continuum.v1.json",
+  "title": "CBF.T25 direct finite-source causal continuum packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "tier",
+    "source_lock_sha256",
+    "contract_schema_sha256",
+    "theorem_sha256",
+    "direct_source_root_sha256",
+    "source_provenance",
+    "direct_internal_realization",
+    "causal_operator",
+    "exact_response",
+    "classical_action_and_bv",
+    "route_classification",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.direct-finite-source-continuum.v1"
+    },
+    "claim_id": {
+      "const": "CBF.T25"
+    },
+    "date": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string"
+    },
+    "source_lock_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "contract_schema_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "theorem_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "direct_source_root_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_provenance": {
+      "type": "object"
+    },
+    "direct_internal_realization": {
+      "type": "object"
+    },
+    "causal_operator": {
+      "type": "object"
+    },
+    "exact_response": {
+      "type": "object"
+    },
+    "classical_action_and_bv": {
+      "type": "object"
+    },
+    "route_classification": {
+      "type": "object"
+    },
+    "parameter_ledger": {
+      "type": "object"
+    },
+    "physical_boundary": {
+      "type": "object"
+    },
+    "physical_packets_accepted": {
+      "const": 0
+    },
+    "physical_packets_total": {
+      "const": 3
+    },
+    "physical_rows_accepted": {
+      "const": 0
+    },
+    "physical_rows_total": {
+      "const": 7
+    },
+    "frontier_delta": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "check_summary": {
+      "type": "object"
+    }
+  }
+}

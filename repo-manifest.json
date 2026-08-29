@@ -95,6 +95,10 @@
     "selection of the CBF.T22 composite product rule by the tensor-differential universal property",
     "exact shared-line connection and holonomy naturality of the physical closure charge",
     "balanced binary-root neutrality of the CBF.T23 Yukawa-Laplacian endpoint",
+    "exact 96-dimensional finite-source associated-bundle realization over the selected causal base",
+    "fiberwise identity synthesis with zero internal complement, tail and truncation error",
+    "Green-hyperbolic direct Dirac-Yukawa operator with exact h-squared H_phys response",
+    "gauge-covariant classical fermion-Yukawa BRST and BV sublane",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -142,7 +146,7 @@
     "existence of a same-root physical Hessian satisfying H_eff=c_action H_resp",
     "physical supply of the relative-response source intertwiner",
     "physical selection of the finite Weyl-Gram source coordinate",
-    "identification of finite identity synthesis with a continuum physical SYN packet",
+    "identification of direct finite identity synthesis with the q79 HYM SYN packet",
     "physical identification of the finite Gram and causal chart source roots",
     "selection of the dimensionful response coefficient by the causal auxiliary lift",
     "identification of the response with the scalar Higgs-potential Hessian or measured Yukawa values",
@@ -179,7 +183,8 @@
     "CausalWeylGramAuxiliaryFeshbachLiftTheorem_v1.md",
     "RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md",
     "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
-    "UpperTensorTotalizationSharedLineSuperchargeSelectionTheorem_v1.md"
+    "UpperTensorTotalizationSharedLineSuperchargeSelectionTheorem_v1.md",
+    "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -205,7 +210,8 @@
     "causal_weyl_gram_auxiliary_lift.packet.json",
     "relative_product_supercharge.packet.json",
     "physical_yukawa_hessian.packet.json",
-    "upper_totalization_supercharge.packet.json"
+    "upper_totalization_supercharge.packet.json",
+    "direct_finite_source_continuum.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -231,7 +237,8 @@
     "python build_causal_weyl_gram_auxiliary_lift.py",
     "python build_relative_product_supercharge_source.py",
     "python build_physical_yukawa_hessian_identification.py",
-    "python build_upper_totalization_supercharge_selection.py"
+    "python build_upper_totalization_supercharge_selection.py",
+    "python build_direct_finite_source_continuum_realization.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -252,7 +259,8 @@
     "causal_weyl_gram_auxiliary_lift_contract.schema.json",
     "relative_product_supercharge_contract.schema.json",
     "physical_yukawa_hessian_contract.schema.json",
-    "upper_totalization_supercharge_contract.schema.json"
+    "upper_totalization_supercharge_contract.schema.json",
+    "direct_finite_source_continuum_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

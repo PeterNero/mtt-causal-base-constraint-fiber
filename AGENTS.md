@@ -26,6 +26,8 @@ paper, note, packet name or search hit.
    `dc7653d5-06f6-472b-8322-415ad063413d`;
    the upper tensor-totalization and shared-line selection handoff is
    `f446c6a4-7804-484e-a7fc-7fce515744f0`;
+   the direct finite-source causal continuum handoff is
+   `c6ac82be-f43f-4464-8943-68814e47539e`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

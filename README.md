@@ -388,6 +388,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `UpperTensorTotalizationSharedLineSuperchargeSelectionTheorem_v1.md`:
   unique graded tensor differential, physical closure charge, shared-line
   naturality and balanced binary-root neutrality.
+- `DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md`:
+  exact `96`-fiber associated-bundle realization, zero internal complement,
+  causal Dirac-Yukawa response and classical fermion/Yukawa BV sublane.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -450,6 +453,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   framed q79 Dirac, universal shared-line and binary-root equivalence sources.
 - `upper_totalization_supercharge_contract.schema.json`: strict universal-
   totalization selection and physical-boundary contract.
+- `direct_finite_source_continuum_source_lock.json`: pinned CBF.T14/T20/T23/T24,
+  A48-A51 finite source, continuum-SM, hyperbolic and finite-exactness inputs.
+- `direct_finite_source_continuum_contract.schema.json`: strict direct-source,
+  causal-operator, exact-response and route-separation contract.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -497,6 +504,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   graph-pullback, pressure-projective, real-rank and boundary certificate.
 - `normal_frame_action_intertwiner_reduction.packet.json`: generated exact
   normal-frame quotient, trace, response-norm and scale-recovery certificate.
+- `direct_finite_source_continuum.packet.json`: generated exact associated-
+  bundle, identity-synthesis, causal-response and classical-BV certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `build_closure_pressure_family_hessian_activation.py`: deterministic CBF.T16
@@ -510,6 +519,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   quotient, trace and endpoint-coefficient packet builder.
 - `verify_normal_frame_action_intertwiner_reduction.py`: independent CBF.T18
   reconstruction and physical-boundary verifier.
+- `build_direct_finite_source_continuum_realization.py`: deterministic CBF.T25
+  associated-bundle and graded-response packet builder.
+- `verify_direct_finite_source_continuum_realization.py`: independent CBF.T25
+  reconstruction and route-boundary verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
 
 ## Kernel workflow
@@ -528,8 +541,9 @@ upstream of open physical source selection:
 - compatible coherent compression already has a locality-descent theorem;
 - a cohesive closure-repair residual and tangent semigroup exist on a certified
   benchmark;
-- the selected physical upper action, q79 HYM endpoint, continuum operator and
-  universal apparatus family remain open.
+- the selected physical upper action, q79 HYM endpoint and its continuum
+  operator, and the universal apparatus family remain open; the direct finite-
+  source continuum operator is closed below at its narrower structural tier.
 
 The immediate finite frontier is no longer an unexplained harmonic projector,
 a missing ternary/quaternary correction, or uncertainty about truncation at
@@ -782,6 +796,53 @@ the CBF.T22 composite product rule conditional on its factor sources; it does
 not select the q79 HYM background, nonlinear physical action or quantum BV
 completion.
 
+`CBF.T25` resolves the next question without pretending that the unresolved
+HYM route is the only possible continuum route. Treat the established
+`96`-dimensional finite real-even datum as the exact internal source fiber of
+
+```text
+E_F=P_SM times_(rho_F) H_F
+```
+
+over the selected globally hyperbolic four-dimensional base. The local
+associated-bundle frames provide inverse analysis and synthesis maps. Hence
+
+```text
+P_int=I96,   Q_int=0,
+```
+
+and the internal Feshbach term, omitted-mode tail and Galerkin error vanish
+exactly. This does not discretize the external spacetime and does not identify
+the finite source with a chosen list of HYM eigenmodes.
+
+The exact continuum operator is
+
+```text
+D_dir(t;A,H)=D_A+Y_t(H).
+```
+
+Its Yukawa-Higgs term is order zero, so the Lorentzian Dirac principal symbol
+and Green-hyperbolic causal support are unchanged. In the constant neutral
+frame, the exact graded square and first response are
+
+```text
+D_dir(t,h)^2=D_Y^2 tensor I96+h^2 I tensor D_phys(t)^2,
+d_t D_dir(t,h)^2|0=h^2 I tensor H_phys.
+```
+
+Independent exact reconstruction reproduces the CBF.T23 rank-`96`, norm-
+squared-`768` response. Gauge covariance, BRST nilpotency and the classical BV
+master equation follow for the fermion/Yukawa sublane from the pinned
+continuum certificates. The signed first-order action is kept distinct from
+the positive repair square.
+
+This closes direct structural continuum realization, not physical value
+selection. The q79 HYM route remains open as a derivation/provenance and future
+universality question; its counters deliberately remain `0/3` and `0/7`.
+The next direct target is the selected coefficient-bearing action/background
+object and one held-out scalar prediction, while q79 work may independently
+construct the HYM-to-finite comparison.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -800,11 +861,13 @@ passes `89/89`. The relative product-supercharge packet passes `68/68` checks
 and its independent verifier passes `77/77`. The physical Yukawa-Hessian
 packet passes `90/90` checks and its independent verifier passes `91/91`. The
 upper-totalization packet passes `69/69` checks and its independent verifier
-passes `86/86`. The canonical suite passes 120
+passes `86/86`. The direct finite-source continuum packet passes `67/67`
+checks and its independent verifier passes `102/102`. The canonical suite passes 127
 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete
-operation and Stasheff tables from `m5` onward, the selected HYM
-endpoint, finite-to-continuum intertwiner and physical-action promotion are
-not.
+operation and Stasheff tables from `m5` onward, the selected HYM endpoint and
+its finite comparison, numerical values, and full physical-action promotion
+are not. A direct finite-source causal continuum realization is now closed and
+must not be reopened as an HYM-projector prerequisite.
