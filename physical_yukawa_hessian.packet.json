@@ -1,0 +1,368 @@
+{
+  "carrier_and_incidence": {
+    "KO6_dimension": 96,
+    "KO6_real_carrier": "particle direct_sum antiparticle",
+    "incidence": "V=V_phase+V_shift is a unitary right-to-left partial isometry",
+    "one_family_basis": [
+      "Q[0:6]",
+      "u^c[6:9]",
+      "d^c[9:12]",
+      "L[12:14]",
+      "e^c[14]",
+      "N^c[15]"
+    ],
+    "particle_carrier": "C3_family tensor H16_SM",
+    "particle_dimension": 48,
+    "phase_pairs": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "phase_source_slots": [
+      6,
+      7,
+      8,
+      14
+    ],
+    "phase_target_slots": [
+      0,
+      1,
+      2,
+      13
+    ],
+    "shift_pairs": [
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        12,
+        15
+      ]
+    ],
+    "shift_source_slots": [
+      9,
+      10,
+      11,
+      15
+    ],
+    "shift_target_slots": [
+      3,
+      4,
+      5,
+      12
+    ],
+    "source_projector_rank": 8,
+    "target_projector_rank": 8
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 90,
+    "total": 90
+  },
+  "checks": {
+    "A48_A51_finite_branch_packet_is_exact": true,
+    "KO6_Dirac_is_J_real": true,
+    "KO6_Dirac_is_odd": true,
+    "KO6_Dirac_is_self_adjoint": true,
+    "KO6_J_anticommutes_with_grading": true,
+    "KO6_norm_squared_is_768": true,
+    "KO6_physical_response_rank_is_96": true,
+    "Lambda_is_the_existing_single_scale": true,
+    "Lorentzian_principal_symbol_is_unchanged": true,
+    "T20_source_is_exact": true,
+    "T22_single_operator_source_is_exact": true,
+    "T22_source_digest_matches": true,
+    "T22_target_digest_matches": true,
+    "all_four_hypercharge_sums_vanish": true,
+    "all_four_nonabelian_Yukawa_contractions_are_singlets": true,
+    "completion_contains_no_observed_target": true,
+    "completion_digest_is_sha256": true,
+    "continuum_HYM_intertwiner_remains_open": true,
+    "contract_schema_is_exact": true,
+    "direct_particle_square_derivative_matches_blocks": true,
+    "eta9_or_new_worker_is_not_used": true,
+    "family_matrices_are_gauge_neutral": true,
+    "finite_physical_typing_truth_value_advances": true,
+    "first_order_fermionic_action_is_not_replaced": true,
+    "handoff_is_pinned": true,
+    "kernel_model_is_pinned": true,
+    "left_and_right_are_complementary": true,
+    "left_projector_has_rank_eight": true,
+    "manifest_A46_hash_is_pinned": true,
+    "manifest_A47_hash_is_pinned": true,
+    "manifest_A48_hash_is_pinned": true,
+    "manifest_A49_hash_is_pinned": true,
+    "manifest_A50_hash_is_pinned": true,
+    "manifest_A51_hash_is_pinned": true,
+    "manifest_A86_hash_is_pinned": true,
+    "neutral_particle_square_is_identity": true,
+    "no_observed_or_fitted_input": true,
+    "no_scalar_Higgs_potential_Hessian_claim": true,
+    "numerical_Higgs_vacuum_is_absent": true,
+    "numerical_Higgs_vacuum_remains_open": true,
+    "one_A51_Higgs_doublet_supplies_all_channels": true,
+    "particle_Dirac_is_odd": true,
+    "particle_Dirac_is_self_adjoint": true,
+    "particle_norm_squared_is_384": true,
+    "particle_physical_response_rank_is_48": true,
+    "phase_and_shift_sources_are_orthogonal": true,
+    "phase_and_shift_targets_are_orthogonal": true,
+    "phase_partial_isometry_source_projector": true,
+    "phase_partial_isometry_target_projector": true,
+    "phase_source_slots_match_T20": true,
+    "physical_BV4_pushforward_remains_open": true,
+    "physical_packet_acceptance_is_unchanged": true,
+    "physical_row_acceptance_is_unchanged": true,
+    "q79_continuum_SM_source_is_exact": true,
+    "q79_hyperbolic_source_is_exact": true,
+    "radial_normalized_shape_is_scale_invariant": true,
+    "radial_square_coefficient_is_h_squared": true,
+    "right_projector_has_rank_eight": true,
+    "same_source_Yukawa_bridge_is_closed": true,
+    "shift_partial_isometry_source_projector": true,
+    "shift_partial_isometry_target_projector": true,
+    "shift_source_slots_match_T20": true,
+    "source_compression_rank_is_24": true,
+    "source_hash_RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md": true,
+    "source_hash_SELECTED_Q79_TOTAL_SUPERCONNECTION_BRANCHING_PROGRAM_v1.md": true,
+    "source_hash_WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md": true,
+    "source_hash_finite_branching.py": true,
+    "source_hash_mtt_selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure_v1.md": true,
+    "source_hash_mtt_selected_nativegaugeactiontofinitebimodule_or_directgenerativesmbaseclosure_v1.md": true,
+    "source_hash_mtt_selected_phic1positivedensitypromotionfromclosedrouteasource_or_strictgaugerows_v1.md": true,
+    "source_hash_mtt_selected_physicalfinitediracoperatorandintersectionform_or_fullfinitetripleclosure_v1.md": true,
+    "source_hash_q79_Continuum_SM_Coupling_and_Higgs_Extended_Classical_BV_Composition_Theorem_v1.md": true,
+    "source_hash_q79_continuum_sm_classical_bv_composition.certificate.json": true,
+    "source_hash_q79_sm_gaugefixed_hyperbolic_bv_equicausal.certificate.json": true,
+    "source_hash_relative_product_supercharge.packet.json": true,
+    "source_hash_same_source_yukawa_source_bridge.packet.json": true,
+    "source_hash_selected_finite_gauge_higgs_branching.packet.json": true,
+    "source_hash_source_manifest.v1.json": true,
+    "source_hash_weyl_gram_closure_repair_source.packet.json": true,
+    "source_lock_schema_is_exact": true,
+    "source_norm_squared_is_192": true,
+    "source_response_is_exact_right_compression": true,
+    "strict_top_level_contract": true,
+    "target_and_source_supports_are_orthogonal": true,
+    "target_compression_rank_is_24": true,
+    "target_norm_squared_is_192": true,
+    "target_response_transport_is_exact": true,
+    "total_incidence_is_unitary_between_halves": true,
+    "transfer_is_nilpotent": true,
+    "upper_MTT_selection_remains_open": true
+  },
+  "claim_id": "CBF.T23",
+  "contract_schema_sha256": "f37dc61b6a36baa576c4c5f8668009414f593e5991c6b604d3eee5d0173e85f1",
+  "date": "2026-08-29",
+  "endpoint_classification": {
+    "BV4": "typed classical q79 SM/BV carrier accepts the four channels; same-root physical pushforward and QME remain open",
+    "GAS": "finite gauge-covariant physical Dirac-Yukawa action form and squared Hessian typing closed; selected upper action density remains open",
+    "SYN": "exact incidence compression of H_- and H_+ closed; continuum HYM/Galerkin map remains open",
+    "finite_field_typing_subclause_advanced": true,
+    "physical_same_source_packet_accepted": false
+  },
+  "frontier_delta": "The CBF.T22 target/source Gram pair now has an exact physical A48/A51 four-channel incidence and KO6-real completion. Its two responses are precisely the left-target and right-source compressions of the first variation of one 96D physical finite Dirac-Yukawa square; at a neutral radial Higgs background the target coefficient is h^2=Lambda^2. This closes finite physical Yukawa-Laplacian Hessian typing with zero new values or knobs. Upper-root selection, the numerical Higgs vacuum, continuum HYM transport and physical BV/QME remain open, so endpoint acceptance stays 0/3 packets and 0/7 rows.",
+  "hessian_compression": {
+    "KO6_completion": "H_phys=H_part direct_sum conjugate(H_part)",
+    "KO6_norm_squared": "768",
+    "KO6_rank": 96,
+    "KO6_response_sha256": "2b78943ded404370d6c2f4216aab01b71c1bc06f4056a6a44a6ee407ad3d398f",
+    "finite_physical_Yukawa_Laplacian_typed": true,
+    "orthogonal_sum": "H_part=H_left+H_right",
+    "particle_norm_squared": "384",
+    "particle_rank": 48,
+    "particle_response_sha256": "b36983815c68659d208f92070349fb0b1c03fc04ccb08c7e4215b99b31eafed7",
+    "particle_square_derivative": "H_part=d[D_part(t)^2]/dt|0",
+    "source_compression": "H_right=H_+",
+    "source_norm_squared": "192",
+    "source_rank": 24,
+    "source_response_sha256": "aafcda28d1dd65a24f1f4d52a57d02cfc432d48a3748ae42933d9b7a02bcfec0",
+    "target_norm_squared": "192",
+    "target_rank": 24,
+    "target_response_sha256": "a5c6f7c8be4dbfd4cf5a5d20499d02a680902d4e53c7f24c1cff4811faf2392e",
+    "target_transport": "H_left=(I3 tensor V) H_- (I3 tensor V)^*"
+  },
+  "lorentzian_product_and_scale": {
+    "T22_coefficient_identification": "mu^2=Lambda^2=h^2",
+    "covariantly_constant_radial_square": "D_AC(t,h)^2=D_Y^2 tensor I96+h^2 I tensor D_phys(t)^2",
+    "internal_order": 0,
+    "numerical_h_or_E0_selected": false,
+    "one_primitive_identification": "h=Lambda=E0=1/L0",
+    "operator": "D_AC(t,h)=D_Y tensor I96+Gamma_Y tensor h D_phys(t)",
+    "principal_symbol_unchanged": true,
+    "target_first_variation": "h^2 H_derived",
+    "varying_Higgs_lower_order_terms_executed": false
+  },
+  "one_higgs_gauge_covariance": {
+    "all_color_and_weak_contractions_are_singlets": true,
+    "channels": {
+      "N": "L Y_N H N^c",
+      "d": "Q Y_d conjugate(H) d^c",
+      "e": "L Y_e conjugate(H) e^c",
+      "u": "Q Y_u H u^c"
+    },
+    "family_matrices_commute_with_gauge_action": true,
+    "hypercharge_6Y_sums": {
+      "N": 0,
+      "d": 0,
+      "e": 0,
+      "u": 0
+    },
+    "neutral_frame_is_evaluation_not_vacuum_selection": true,
+    "selected_Higgs_representation": "(1,2,+1/2)"
+  },
+  "parameter_ledger": {
+    "new_dimensionless_shape_parameters": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_inputs": 0,
+    "sector_specific_scale_parameters": 0,
+    "shared_source_coordinates": 1,
+    "universal_dimensionful_primitives": 1
+  },
+  "physical_boundary": {
+    "continuum_HYM_intertwiner": false,
+    "eta9_or_new_worker_used": false,
+    "finite_physical_Yukawa_Laplacian_typed": true,
+    "first_order_fermionic_action_replaced": false,
+    "full_selected_Lorentz_Higgs_Yukawa_endpoint": false,
+    "numerical_Higgs_vacuum_selected": false,
+    "physical_BV4_pushforward": false,
+    "scalar_Higgs_potential_Hessian_claimed": false,
+    "upper_MTT_composite_root_selected": false
+  },
+  "physical_completion_sha256": "6c573ae5caf9ec76bdec592e2b5ae83553d07b2f71d55cd614f51f131a3e3e78",
+  "physical_dirac_family": {
+    "J_real": true,
+    "KO6_Dirac": "D_phys(t)=D_part(t) direct_sum conjugate(D_part(t))",
+    "auxiliary_T22_lift_relabelled_as_physical": false,
+    "family_maps": {
+      "phase": "Y_p(t)=-P+t(I+Z)",
+      "shift": "Y_s(t)=-P+t(I+X)"
+    },
+    "grading": "Gamma_phys=Gamma_part direct_sum -Gamma_part",
+    "neutral_square": "D_phys(0)^2=I96",
+    "odd": true,
+    "particle_Dirac": "D_part(t)=T(t)+T(t)^*",
+    "real_structure": "J_F=half-swap composed with complex conjugation",
+    "self_adjoint": true,
+    "transfer": "T(t)=Y_p(t) tensor V_phase+Y_s(t) tensor V_shift"
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "schema": "boe.mtt.physical-yukawa-hessian.v1",
+  "source_lock_sha256": "6a9cfa545eb660954086bad1a6a9bd7382211d1871b1943e492f537bf8bfd623",
+  "source_provenance": {
+    "A48_A51_physical_carrier_pinned": true,
+    "CBF_T20_source_pinned": true,
+    "CBF_T22_source_pinned": true,
+    "completion_payload": {
+      "family_maps": {
+        "phase": "-P+t(I+Z)",
+        "shift": "-P+t(I+X)"
+      },
+      "numerical_higgs_vacuum": null,
+      "observed_targets": [],
+      "phase_incidence_pairs": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          13,
+          14
+        ]
+      ],
+      "physical_completion": {
+        "KO6_real": "D_phys=D_part direct_sum conjugate(D_part)",
+        "particle": "D_part=T+T^*",
+        "radial_product": "D_AC=D_Y tensor I96+Gamma_Y tensor h D_phys"
+      },
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "e26b18681b18c5921ecdf854f843afa8aaf3e33d",
+        "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.physical-yukawa-completion-root.v1",
+      "shift_incidence_pairs": [
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          12,
+          15
+        ]
+      ],
+      "source_hashes": {
+        "RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md": "3470093d9f56c64e4a1055450f35b7c2e9d4752171a24328c69d43840f6fea4e",
+        "SELECTED_Q79_TOTAL_SUPERCONNECTION_BRANCHING_PROGRAM_v1.md": "31db2f9a1a91deee3fe2f9660004d975d952d82f35534b0c9508ef35422fd3cf",
+        "WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md": "06faef972ba717fc1b0952b8b86c5e37e1e277af7ddd22141ac9500e8754cf41",
+        "finite_branching.py": "6cad873827a7625875c4d37842d0d2c79053a2f345ef0254d2f2b6897aa12eec",
+        "mtt_selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure_v1.md": "423e3ae86dd8b5abee19e38d53f0bb003fb53fc0e5adc872076cab546934e893",
+        "mtt_selected_nativegaugeactiontofinitebimodule_or_directgenerativesmbaseclosure_v1.md": "75412a0ee97081196e2cd3b331fdf53a2346c6bd96bb2d209e357abbbd01d054",
+        "mtt_selected_phic1positivedensitypromotionfromclosedrouteasource_or_strictgaugerows_v1.md": "5714fa1d7e887cc971be4f779773bd6d466d3d037405654f4031c0ad0b0e7c00",
+        "mtt_selected_physicalfinitediracoperatorandintersectionform_or_fullfinitetripleclosure_v1.md": "221241fe49f9390ad1be6d75320a0c6cbe565914860b2e723a5e0e09a04c1e59",
+        "q79_Continuum_SM_Coupling_and_Higgs_Extended_Classical_BV_Composition_Theorem_v1.md": "a9cf303e39b45bf152e284072a43e0b2f9b0722201ff872621fb39ccf9af7122",
+        "q79_continuum_sm_classical_bv_composition.certificate.json": "c1c4e83ba9b897bb88f277d301b6163acf7460d12c19d92c1d694f932e6563fc",
+        "q79_sm_gaugefixed_hyperbolic_bv_equicausal.certificate.json": "04c71f072bd633b2012b232b442dd2ff1625d28bf11fb387925d94022d596f8b",
+        "relative_product_supercharge.packet.json": "d7ea51d0b9b42f6b1dce67634a5fb8ebebf3e1eca26ae0634cfac58ab777f74c",
+        "same_source_yukawa_source_bridge.packet.json": "ad741d22f22fd911305bf43f9728617c771359adacb1c2996782a4adf07f4410",
+        "selected_finite_gauge_higgs_branching.packet.json": "af24fa273d2f1a79f395d58f3f74505bd635cc839809e1a58d77c7d8cffab868",
+        "source_manifest.v1.json": "c0016e216126298906c4ba1cc25c4d11f985764f56622cede2367aa186a1861c",
+        "weyl_gram_closure_repair_source.packet.json": "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88"
+      }
+    },
+    "handoff_id": "dc7653d5-06f6-472b-8322-415ad063413d",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "e26b18681b18c5921ecdf854f843afa8aaf3e33d",
+      "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "same_source_Yukawa_bridge_pinned": true,
+    "upper_MTT_composite_root_selected": false
+  },
+  "theorem_sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+  "tier": "EXACT_FINITE_PHYSICAL_YUKAWA_LAPLACIAN_HESSIAN_TYPING + SELECTED_CONTINUUM_ENDPOINT_OPEN"
+}

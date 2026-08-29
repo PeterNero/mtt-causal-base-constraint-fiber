@@ -87,6 +87,10 @@
     "exact graded causal product-square and neutral-relative subtraction",
     "single-operator derivation of the causal target response with mu squared equal to Lambda squared",
     "one-dimensional absolute-scale orbit and one-universal-metrology-primitive completion",
+    "exact four-channel A48/A51 Yukawa incidence for the routed phase and shift family maps",
+    "exact 96-dimensional KO6-real physical finite Dirac completion without observed Yukawa values",
+    "physical left-target and right-source Hessian compression of the CBF.T22 Gram pair",
+    "neutral-Higgs radial typing of the target coefficient as h squared equal to Lambda squared",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -124,7 +128,7 @@
     "selection of the physical scale or nonlinear family-breaking values",
     "a same-root derivation of the direct residual and finite q79 family responses",
     "a physical origin or value for the closure-pressure multiplier",
-    "identification of the finite family-response Hessian with a Lorentz-Higgs Yukawa map",
+    "identification of the finite Yukawa-Laplacian compression with a selected continuum HYM endpoint",
     "derivation of three family magnitudes from the first finite response pair",
     "selection of the affine finite action by one physical endpoint",
     "selection of the physical action density or overall quantum normalization",
@@ -137,7 +141,7 @@
     "identification of finite identity synthesis with a continuum physical SYN packet",
     "physical identification of the finite Gram and causal chart source roots",
     "selection of the dimensionful response coefficient by the causal auxiliary lift",
-    "identification of the response endomorphism with a Lorentz-Higgs-Yukawa insertion",
+    "identification of the response with the scalar Higgs-potential Hessian or measured Yukawa values",
     "upper-MTT physical selection of the deterministic relative product-supercharge root",
     "derivation of a numerical universal metrological scale without a rod, clock or energy primitive",
     "interpretation of the auxiliary 96-dimensional odd lift as additional physical particle states",
@@ -169,7 +173,8 @@
     "EquivariantFeshbachOneDimensionalResponseTheorem_v1.md",
     "WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md",
     "CausalWeylGramAuxiliaryFeshbachLiftTheorem_v1.md",
-    "RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md"
+    "RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md",
+    "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -193,7 +198,8 @@
     "equivariant_feshbach_response.packet.json",
     "weyl_gram_closure_repair_source.packet.json",
     "causal_weyl_gram_auxiliary_lift.packet.json",
-    "relative_product_supercharge.packet.json"
+    "relative_product_supercharge.packet.json",
+    "physical_yukawa_hessian.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -217,7 +223,8 @@
     "python build_equivariant_feshbach_response.py",
     "python build_weyl_gram_closure_repair_source.py",
     "python build_causal_weyl_gram_auxiliary_lift.py",
-    "python build_relative_product_supercharge_source.py"
+    "python build_relative_product_supercharge_source.py",
+    "python build_physical_yukawa_hessian_identification.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -236,7 +243,8 @@
     "equivariant_feshbach_response_contract.schema.json",
     "weyl_gram_closure_repair_contract.schema.json",
     "causal_weyl_gram_auxiliary_lift_contract.schema.json",
-    "relative_product_supercharge_contract.schema.json"
+    "relative_product_supercharge_contract.schema.json",
+    "physical_yukawa_hessian_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

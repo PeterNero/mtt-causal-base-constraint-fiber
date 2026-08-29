@@ -382,6 +382,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md`: canonical
   odd closure-repair supercharge, graded causal product, neutral-relative
   square and one-universal-metrology-scale theorem.
+- `PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md`: exact A48/A51
+  four-channel incidence, KO6-real physical completion and CBF.T22
+  target/source Hessian compression.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -436,6 +439,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   continuum-SM, product-Dirac and metrology inputs for CBF.T22.
 - `relative_product_supercharge_contract.schema.json`: strict single-operator
   provenance, scale and physical-boundary contract.
+- `physical_yukawa_hessian_source_lock.json`: pinned CBF.T20/T22, A46-A51,
+  A86, q79 continuum-SM and Lorentzian-hyperbolic sources for CBF.T23.
+- `physical_yukawa_hessian_contract.schema.json`: strict finite physical
+  Yukawa-Laplacian typing and selected-endpoint boundary contract.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -705,6 +712,32 @@ upper-MTT theorem has not selected it as the physical root. Physical
 Lorentz/Higgs/Yukawa identification, continuum HYM transport and BV
 pushforward remain open, so physical acceptance stays `0/3` and `0/7`.
 
+`CBF.T23` now closes the finite physical field-typing part of that statement.
+In the A46 ordering
+
+```text
+H16=Q(6)+u^c(3)+d^c(3)+L(2)+e^c+N^c,
+```
+
+the A48/A51 one-Higgs incidence gives orthogonal partial isometries
+
+```text
+V_phase:{u^c,e^c}->{Q_up,L_down},
+V_shift:{d^c,N^c}->{Q_down,L_up}.
+```
+
+Inserting the CBF.T20 families into these channels produces a self-adjoint,
+odd and `J_F`-real `96D` physical finite Dirac family. The derivative of its
+square has left-target and right-source compressions exactly equal to the
+CBF.T22 pair `H_-` and `H_+`. At neutral radial Higgs amplitude `h`, the target
+coefficient is `h^2`; at the adopted one-primitive tier
+`h=Lambda=E0=1/L0`, so `mu^2=Lambda^2=h^2` without a sector scale.
+
+This is a finite gauge-covariant Yukawa-Laplacian identification. It is not a
+scalar Higgs-potential Hessian, a numerical vacuum selection or a measured
+mass prediction. Upper-root selection, continuum HYM transport and physical
+BV/QME remain open; endpoint acceptance therefore stays `0/3` and `0/7`.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -720,7 +753,9 @@ checks and its independent verifier passes `58/58`. The Weyl-Gram direct-source
 packet passes `61/61` checks and its independent verifier passes `79/79`. The
 causal auxiliary-lift packet passes `56/56` checks and its independent verifier
 passes `89/89`. The relative product-supercharge packet passes `68/68` checks
-and its independent verifier passes `77/77`. The canonical suite passes 108
+and its independent verifier passes `77/77`. The physical Yukawa-Hessian
+packet passes `90/90` checks and its independent verifier passes `91/91`. The
+canonical suite passes 114
 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and

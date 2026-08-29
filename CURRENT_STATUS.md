@@ -652,3 +652,55 @@ identity, not upper-MTT selection of the composite root. Physical
 Lorentz/Higgs/Yukawa identification, continuum HYM/Galerkin transport and the
 physical BV pushforward remain open. Acceptance therefore remains `0/3`
 packets and `0/7` rows.
+
+`PhysicalYukawaIncidenceKO6HessianCompressionTheorem.v1` (`CBF.T23`) now
+closes the finite physical field-typing subclause without relabelling the
+CBF.T22 auxiliary lift as the physical carrier. In the established A46 basis,
+the A48/A51 one-Higgs incidence defines
+
+```text
+V_phase:{u^c,e^c}->{Q_up,L_down},
+V_shift:{d^c,N^c}->{Q_down,L_up}.
+```
+
+These are orthogonal partial isometries between complementary rank-eight
+source and target subspaces of `H16`. Inserting the source-pinned families
+
+```text
+Y_p(t)=-P+t(I+Z),
+Y_s(t)=-P+t(I+X)
+```
+
+gives the particle transfer and physical finite Dirac family
+
+```text
+T(t)=Y_p(t) tensor V_phase+Y_s(t) tensor V_shift,
+D_part(t)=T(t)+T(t)^*,
+D_phys(t)=D_part(t) direct_sum conjugate(D_part(t)).
+```
+
+`D_phys(t)` is exactly `96D`, self-adjoint, grading-odd and `J_F`-real. Its
+neutral square is `I96`. The first variation of `D_part(t)^2` is the
+orthogonal sum of
+
+```text
+H_left=(I3 tensor V) H_- (I3 tensor V)^*,
+H_right=H_+.
+```
+
+Both blocks have rank 24 and squared norm 192; the particle response has rank
+48 and squared norm 384, while the forced KO6 completion has rank 96 and
+squared norm 768. Thus the CBF.T22 Gram pair is exactly the physical
+left-target/right-source compression of one four-channel Dirac-Yukawa square.
+
+At a covariantly constant neutral Higgs radial amplitude `h`, the response is
+`h^2 H_phys`. With the existing one-primitive identification
+`h=Lambda=E0=1/L0`, the target compression is
+`Lambda^2 H_derived` and `mu^2=Lambda^2=h^2`. No observed value, fitted
+coefficient, new shape parameter or sector-specific scale enters.
+
+This closes finite gauge-covariant Yukawa-Laplacian Hessian typing. It does
+not select the numerical Higgs vacuum or upper composite root, identify a
+scalar Higgs-potential Hessian, execute continuum HYM/Galerkin transport, or
+complete the physical BV pushforward/QME. Physical packet and row acceptance
+therefore remain `0/3` and `0/7`.

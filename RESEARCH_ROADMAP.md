@@ -376,31 +376,46 @@ scale remains.
 
 This closes mathematical single-operator provenance, not physical source
 selection. The deterministic composite root still needs an upper-MTT
-selection certificate, and its response must still be identified with the
-actual Lorentz/Higgs/Yukawa or other physical field second variation.
+selection certificate.
+
+CBF.T23 now closes the finite physical field-typing subclause. The A48/A51
+one-Higgs incidence inserts the CBF.T20 family maps into all four
+gauge-invariant Dirac-Yukawa channels, and the KO6-real completion is exact.
+The first variation of the physical finite Dirac square has CBF.T22's `H_-`
+and `H_+` as its left-target and right-source compressions. At a neutral
+radial Higgs background the coefficient is `h^2`; the one-primitive tier sets
+`h=Lambda`, without selecting its numerical value. This is a finite
+Yukawa-Laplacian Hessian identity, not a scalar Higgs-potential Hessian or a
+selected continuum endpoint.
 
 The remaining order is now:
 
 1. derive an upper-MTT selection rule for the deterministic CBF.T22 composite
    root, without treating the categorical product itself as physical
    selection;
-2. type the response into a gauge-invariant Lorentz/Higgs left-right Yukawa or
-   another explicit physical field second variation;
-3. complete same-root BV4 insertion and, for the q79 provider route, continuum
-   HYM synthesis, projection and certified finite-error bounds;
-4. use the now exact relative-intertwiner, product-square and Schur theorems to certify the
-   complete physical residual and recover `c_action`;
+2. promote the now exact finite Yukawa-Laplacian incidence through the selected
+   continuum HYM/Galerkin map, including connection, domain and error control;
+3. complete same-root physical BV4 insertion and quantum QME control;
+4. certify the complete physical residual and recover `c_action` using the
+   exact relative-intertwiner, product-square, incidence and Schur theorems;
 5. externalize the accepted action and density through CBF.T13/T14;
 6. derive a sector-resolved spectral law or cross-sector relation reducing the
    nine FSB.04g scalar coordinates;
 7. emit one held-out source-normalized mass, interaction or threshold scalar.
 
-The next physical theorem must discharge item 1 or 2. Another normal-frame or
-finite-trace packet cannot do so: CBF.T18 proves those choices are already
-quotiented or unique. CBF.T22 and the pinned metrology theorem also prove that
-searching for a second sector-specific absolute scale is the wrong target: the
-only admissible absolute extension at the current tier is the one shared
-metrological primitive.
+The immediate independent target is item 1 or 2. The finite physical typing
+question must not be reopened: CBF.T23 has discharged it. The remaining q79
+provider work is the selected continuum source and its certified map, not a
+new finite incidence convention.
+
+The continuum route must still complete same-root BV4 insertion and HYM
+synthesis, projection and certified finite-error bounds. The upper-root
+selection and numerical-vacuum clauses remain separate. Another
+normal-frame or finite-trace packet cannot discharge either clause: CBF.T18
+proves those choices are already quotiented or unique. CBF.T22-CBF.T23 and the
+pinned metrology theorem also prove that searching for a second
+sector-specific absolute scale is the wrong target: the only admissible
+absolute extension at the current tier is the shared metrological primitive.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

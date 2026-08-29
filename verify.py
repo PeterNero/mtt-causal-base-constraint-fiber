@@ -58,6 +58,8 @@ def main() -> None:
     run(sys.executable, "verify_causal_weyl_gram_auxiliary_lift.py")
     run(sys.executable, "build_relative_product_supercharge_source.py")
     run(sys.executable, "verify_relative_product_supercharge_source.py")
+    run(sys.executable, "build_physical_yukawa_hessian_identification.py")
+    run(sys.executable, "verify_physical_yukawa_hessian_identification.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 
