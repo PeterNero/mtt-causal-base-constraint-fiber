@@ -1,0 +1,103 @@
+{
+  "schema": "boe.mtt.finite-dirac-cubic-variational-action-source-lock.v1",
+  "claim_id": "CBF.T29",
+  "date": "2026-08-29",
+  "handoff_id": "2921d8c2-d14a-4f82-b8f0-25f0c5b28b96",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "dd66991011c3a8456ce704db919efa6e475dc7f6",
+    "mtt-preprojection-repair-calculus": "b7ff488247806b54ae8e0541f509054a58369f43",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "weyl_gram_closure_repair_source.packet.json",
+      "sha256": "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+      "role": "CBF.T20 selected finite Weyl/Gram primitive used to reconstruct D0 and D1"
+    },
+    {
+      "path": "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
+      "sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+      "role": "CBF.T23 exact KO6 grading, finite Dirac family and physical response"
+    },
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "CBF.T23 exact physical Hessian digest and KO6 source boundary"
+    },
+    {
+      "path": "CanonicalNormalizedDiracSquareDefectRepairActionAndValueSelectionNoGoTheorem_v1.md",
+      "sha256": "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158",
+      "role": "CBF.T26 positive Dirac-square defect repair functional"
+    },
+    {
+      "path": "direct_dirac_defect_repair_action.packet.json",
+      "sha256": "82d01b74e1ccb9f272202fed482a8259d7d52171894aaad57eca5a0ff87a56be",
+      "role": "CBF.T26 exact repair polynomial and scalar Hessian"
+    },
+    {
+      "path": "CanonicalFiniteDiracSpectralActionClassificationAndProfileSelectionNoGoTheorem_v1.md",
+      "sha256": "5b91050752dcc4c21376222df496bd26fbf37feaec15b0f1259536a512f641f3",
+      "role": "CBF.T27 joint D0-H_phys spectrum and scalar-profile boundary"
+    },
+    {
+      "path": "finite_dirac_spectral_action_classification.packet.json",
+      "sha256": "54c268a9050872a73d37ca5be58b3cd3110dd8452ab74e4ed2b6680f93c9fdae",
+      "role": "CBF.T27 exact factorization and joint spectral multiplicities"
+    },
+    {
+      "path": "FiniteDiracOperatorSpaceRepairHessianSemigroupAndProfileBoundaryTheorem_v1.md",
+      "sha256": "23ac40d68732a3c3b934a76ca4ca29ac10956340ba600a9f60fd277a29d04111",
+      "role": "CBF.T28 full operator-space repair Hessian and semigroup"
+    },
+    {
+      "path": "finite_dirac_operator_repair_semigroup.packet.json",
+      "sha256": "5e60a90ed8fbafd40d26f3aeaed9a7c8d9f5724d5aa9e00b952cc507f136d03e",
+      "role": "CBF.T28 exact A_rep=J0 squared spectrum and typed action boundary"
+    },
+    {
+      "path": "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md",
+      "sha256": "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+      "role": "CBF.T25 physical fermionic and classical-BV sublane distinction"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+      "sha256": "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+      "role": "H4-T9 Helmholtz, direct variational anchor and normal-square theorem"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "H4-T10 cyclic cubic transgression and signed-versus-repair boundary"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1.md",
+      "sha256": "ce8cd73313df474d9619e9111caac25c3931f9d01a114c3b00e0549893fd24d6",
+      "role": "H4-T15 field-only action and physical BV compactification gate"
+    }
+  ],
+  "boundary": {
+    "direct_signed_variational_action_before": false,
+    "direct_signed_variational_action_after": true,
+    "signed_Hessian_inertia_before": false,
+    "signed_Hessian_inertia_after": true,
+    "signed_Hessian_square_bridge_before": false,
+    "signed_Hessian_square_bridge_after": true,
+    "KO6_odd_trace_cancellation_before": false,
+    "KO6_odd_trace_cancellation_after": true,
+    "canonical_two_anchor_no_go_before": false,
+    "canonical_two_anchor_no_go_after": true,
+    "full_B_ACTION_01_closed": false,
+    "physical_Lorentzian_action_selected": false,
+    "physical_scalar_spectral_profile_selected": false,
+    "nonzero_physical_source_coordinate_selected": false,
+    "held_out_physical_observable_emitted": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

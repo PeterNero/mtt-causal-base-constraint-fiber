@@ -1,0 +1,428 @@
+{
+  "KO6_cancellation": {
+    "D1_sector_norms": {
+      "Pi_minus": "1",
+      "Pi_plus": "1",
+      "Pi_zero": "0"
+    },
+    "all_odd_traces_vanish": true,
+    "grading_relation": "Gamma96 D_phys(t) Gamma96=-D_phys(t)",
+    "mechanism": "equal KO6 partner contributions cancel in J0 and add in J0^2",
+    "repair_quadratic_pullback": "8",
+    "sampled_odd_moments": {
+      "-1": {
+        "1": "0",
+        "3": "0",
+        "5": "0",
+        "7": "0"
+      },
+      "0": {
+        "1": "0",
+        "3": "0",
+        "5": "0",
+        "7": "0"
+      },
+      "1": {
+        "1": "0",
+        "3": "0",
+        "5": "0",
+        "7": "0"
+      },
+      "1/2": {
+        "1": "0",
+        "3": "0",
+        "5": "0",
+        "7": "0"
+      },
+      "3/2": {
+        "1": "0",
+        "3": "0",
+        "5": "0",
+        "7": "0"
+      }
+    },
+    "sampled_t_values": [
+      "-1",
+      "0",
+      "1/2",
+      "1",
+      "3/2"
+    ],
+    "signed_action_pullback": "S_sig(D_phys(t))=0",
+    "signed_quadratic_pullback": "0"
+  },
+  "Morse_Bott_decomposition": {
+    "finite_Morse_Bott": true,
+    "negative_normal_dimension": 2304,
+    "normal_negative": "Ran(Pi_minus)",
+    "normal_positive": "Ran(Pi_plus)",
+    "orbit": "U(96)/(U(48) x U(48))",
+    "positive_normal_dimension": 2304,
+    "tangent": "Ran(Pi_zero)=ker J0",
+    "tangent_real_dimension": 4608
+  },
+  "action_tier_reconciliation": {
+    "CBF_T25": "fermion/Yukawa spinor action remains distinct and unaffected",
+    "CBF_T28": "positive repair semigroup is the exact normal-square shadow",
+    "H4_T10": "finite trace-cubic transgression only; no q79 Maurer-Cartan identification",
+    "H4_T15": "field-only finite action exists; physical BV compactification gate remains open",
+    "H4_T9": "direct variational branch instantiated for F(D)=D^2-I96",
+    "physical_pairing_or_polarization_required": true
+  },
+  "automorphism_transfer": {
+    "Hessian_intertwiner": "J_(UDU^*) Ad_U=Ad_U J_D",
+    "action_invariant": "S_sig(UDU^*)=S_sig(D)",
+    "continuum_q79_transfer_closed": false,
+    "finite_operator_space_closed": true,
+    "group": "U(96)",
+    "residual_covariant": "F(UDU^*)=UF(D)U^*"
+  },
+  "canonical_two_anchor_classification": {
+    "Hessian_eigenvalues": {
+      "Pi_minus": "2(-a+b)",
+      "Pi_plus": "2(a+b)",
+      "Pi_zero": "2b/3"
+    },
+    "all_exact_square_solutions_cancel": true,
+    "all_noncancelling_members_change_residual_or_zero_modes": true,
+    "class": "S_(a,b)=aS_sig+bS_0",
+    "exact_square_solutions": [
+      {
+        "a": -1,
+        "b": 0
+      },
+      {
+        "a": 1,
+        "b": 0
+      }
+    ],
+    "family_pullback": "b(2t^2-(8/9)t^3)",
+    "normal_square_equations": [
+      "(a+b)^2=1",
+      "(-a+b)^2=1",
+      "b=0"
+    ],
+    "scope": "canonical anchors emitted by I96 and D0 only"
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 148,
+    "total": 148
+  },
+  "checks": {
+    "D0_is_self_adjoint": true,
+    "D0_minus_rank_is_48": true,
+    "D0_plus_rank_is_48": true,
+    "D0_square_is_identity": true,
+    "D0_trace_is_zero": true,
+    "D1_has_no_zero_sector": true,
+    "D1_minus_norm_is_one": true,
+    "D1_plus_norm_is_one": true,
+    "D1_signed_Hessian_decomposes": true,
+    "D1_signed_Hessian_square_is_repair_Hessian": true,
+    "D1_three_projectors_are_pairwise_orthogonal": true,
+    "D1_three_projectors_resolve": true,
+    "H_phys_matches_T23": true,
+    "H_phys_signed_Hessian_decomposes": true,
+    "H_phys_signed_Hessian_square_is_repair_Hessian": true,
+    "H_phys_three_projectors_are_pairwise_orthogonal": true,
+    "H_phys_three_projectors_resolve": true,
+    "Hessian_is_conjugation_covariant": true,
+    "KO6_cancellation_is_newly_closed": true,
+    "T20_source_is_exact": true,
+    "T23_response_is_exact": true,
+    "T26_repair_action_is_exact": true,
+    "T27_spectral_classification_is_exact": true,
+    "T28_operator_repair_is_exact": true,
+    "canonical_two_anchor_no_go_is_newly_closed": true,
+    "contract_schema_is_exact": true,
+    "critical_locus_rejects_zero_operator": true,
+    "cyclic_permutation_is_unitary": true,
+    "direct_signed_action_is_newly_closed": true,
+    "exact_square_members_cancel_on_family": true,
+    "family_0_is_KO6_odd": true,
+    "family_0_odd_moment_1_vanishes": true,
+    "family_0_odd_moment_3_vanishes": true,
+    "family_0_odd_moment_5_vanishes": true,
+    "family_0_odd_moment_7_vanishes": true,
+    "family_0_signed_action_cancels": true,
+    "family_0_weighted_action_matches_polynomial": true,
+    "family_1_is_KO6_odd": true,
+    "family_1_odd_moment_1_vanishes": true,
+    "family_1_odd_moment_3_vanishes": true,
+    "family_1_odd_moment_5_vanishes": true,
+    "family_1_odd_moment_7_vanishes": true,
+    "family_1_over_2_is_KO6_odd": true,
+    "family_1_over_2_odd_moment_1_vanishes": true,
+    "family_1_over_2_odd_moment_3_vanishes": true,
+    "family_1_over_2_odd_moment_5_vanishes": true,
+    "family_1_over_2_odd_moment_7_vanishes": true,
+    "family_1_over_2_signed_action_cancels": true,
+    "family_1_over_2_weighted_action_matches_polynomial": true,
+    "family_1_signed_action_cancels": true,
+    "family_1_weighted_action_matches_polynomial": true,
+    "family_3_over_2_is_KO6_odd": true,
+    "family_3_over_2_odd_moment_1_vanishes": true,
+    "family_3_over_2_odd_moment_3_vanishes": true,
+    "family_3_over_2_odd_moment_5_vanishes": true,
+    "family_3_over_2_odd_moment_7_vanishes": true,
+    "family_3_over_2_signed_action_cancels": true,
+    "family_3_over_2_weighted_action_matches_polynomial": true,
+    "family_minus_1_is_KO6_odd": true,
+    "family_minus_1_odd_moment_1_vanishes": true,
+    "family_minus_1_odd_moment_3_vanishes": true,
+    "family_minus_1_odd_moment_5_vanishes": true,
+    "family_minus_1_odd_moment_7_vanishes": true,
+    "family_minus_1_signed_action_cancels": true,
+    "family_minus_1_weighted_action_matches_polynomial": true,
+    "full_B_ACTION_01_remains_open": true,
+    "full_operator_dimension_is_9216": true,
+    "generic_signed_Hessian_decomposes": true,
+    "generic_signed_Hessian_square_is_repair_Hessian": true,
+    "generic_three_projectors_are_pairwise_orthogonal": true,
+    "generic_three_projectors_resolve": true,
+    "grading_anticommutes_with_D0": true,
+    "grading_anticommutes_with_D1": true,
+    "grading_is_self_adjoint": true,
+    "grading_square_is_identity": true,
+    "handoff_is_pinned": true,
+    "held_out_observable_remains_open": true,
+    "kernel_model_is_pinned": true,
+    "material_projectors_are_orthogonal": true,
+    "material_projectors_resolve_identity": true,
+    "negative_inertia_is_2304": true,
+    "negative_sample_has_eigenvalue_minus_two": true,
+    "negative_signed_Hessian_decomposes": true,
+    "negative_signed_Hessian_square_is_repair_Hessian": true,
+    "negative_three_projectors_are_pairwise_orthogonal": true,
+    "negative_three_projectors_resolve": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "noncancelling_weighted_member_changes_zero_sector_square": true,
+    "nonzero_physical_coordinate_remains_open": true,
+    "orbit_commutator_equals_zero_mode": true,
+    "orbit_generator_is_skew_adjoint": true,
+    "physical_Lorentzian_action_remains_open": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "physical_scalar_profile_remains_open": true,
+    "positive_inertia_is_2304": true,
+    "positive_repair_gradient_accepts_zero_operator": true,
+    "positive_sample_has_eigenvalue_plus_two": true,
+    "positive_signed_Hessian_decomposes": true,
+    "positive_signed_Hessian_square_is_repair_Hessian": true,
+    "positive_three_projectors_are_pairwise_orthogonal": true,
+    "positive_three_projectors_resolve": true,
+    "repair_quadratic_matches_T28": true,
+    "repair_quadratic_pullback_is_eight": true,
+    "residual_is_conjugation_covariant": true,
+    "signed_Hessian_inertia_is_newly_closed": true,
+    "signed_Hessian_is_self_adjoint_on_probe": true,
+    "signed_Hessian_square_bridge_is_newly_closed": true,
+    "signed_action_directional_derivative_is_residual_pairing": true,
+    "signed_action_is_conjugation_invariant": true,
+    "signed_action_is_normalized_at_D0": true,
+    "signed_gradient_vanishes_at_D0": true,
+    "signed_quadratic_pullback_cancels": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "source_13_hash_matches": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "strict_top_level_contract": true,
+    "two_anchor_exact_square_solutions_are_plus_minus_signed": true,
+    "two_anchor_square_equations_force_b_zero": true,
+    "weighted_Hessian_lifts_orbit_zero_mode": true,
+    "weighted_Hessian_negative_sector_is_two": true,
+    "weighted_Hessian_positive_sector_is_two": true,
+    "weighted_Hessian_square_differs_from_repair": true,
+    "weighted_Hessian_zero_sector_is_two_thirds": true,
+    "weighted_action_is_normalized_at_D0": true,
+    "weighted_directional_derivative_matches_gradient": true,
+    "weighted_extra_stationary_point_is_not_closure": true,
+    "weighted_pullback_has_extra_stationary_point": true,
+    "zero_inertia_is_4608": true,
+    "zero_mode_is_nonzero": true,
+    "zero_sample_is_in_Hessian_kernel": true,
+    "zero_signed_Hessian_decomposes": true,
+    "zero_signed_Hessian_square_is_repair_Hessian": true,
+    "zero_three_projectors_are_pairwise_orthogonal": true,
+    "zero_three_projectors_resolve": true
+  },
+  "claim_id": "CBF.T29",
+  "configuration_space": {
+    "D0_sha256": "2fcca7a21d905865c331db9785e061249342da3ed5b0c59539a31a1a2ea72fd1",
+    "D0_spectrum": {
+      "-1": 48,
+      "1": 48
+    },
+    "D1_sha256": "0646f96f487fdb3de70596073ec295ad967d5845d4cfae06e9a777da3369ed5a",
+    "Gamma96_sha256": "b46dcc77ba482aaafba280d21aa034e8db0a378aedc3ff1997203f681bd9470e",
+    "H_F_complex_dimension": 96,
+    "V_sa_real_dimension": 9216,
+    "basepoint": "D0",
+    "carrier": "V_sa=End_sa(H_F)",
+    "metric": "g(X,Y)=Re tau96(X^*Y)",
+    "normalized_trace": "tau96=Tr/96"
+  },
+  "critical_locus": {
+    "equals_closure_locus": true,
+    "exact_locus": "Crit(S_sig)={D=D^*:D^2=I96}",
+    "normal_square_has_extra_critical_points": true,
+    "zero_operator_positive_repair_gradient": "0",
+    "zero_operator_signed_gradient": "-I96"
+  },
+  "date": "2026-08-29",
+  "direct_variational_action": {
+    "Helmholtz_exact": true,
+    "bounded_below": false,
+    "definition": "S_sig(D)=tau96(D^3/3-D)",
+    "gradient": "grad S_sig(D)=D^2-I96",
+    "normalized_at_D0": true,
+    "physical_action_claimed": false,
+    "unique_up_to_additive_constant": true,
+    "variation": "dS_sig(D)[X]=tau96((D^2-I96)X)"
+  },
+  "frontier_delta": "The finite closure residual now has its unique normalized direct cubic variational primitive. Its signed Hessian has inertia (2304,2304,4608) and squares exactly to the T28 positive repair Hessian. KO6 grading then proves that every odd trace, the action pullback and its signed quadratic physical-family response cancel exactly, while repair remains 8. The canonical D0-weighted escape is nonzero but changes the residual and orbit zero modes. The remaining action blocker is therefore a selected physical pairing/polarization and compactification map, not another scalar trace fit.",
+  "normal_square_bridge": {
+    "T28_spectrum": {
+      "0": 4608,
+      "4": 4608
+    },
+    "exact_identity": "H_sig^2=J0^2=4(Pi_plus+Pi_minus)=A_rep",
+    "same_root": true,
+    "signed_source_is_not_positive_repair": true
+  },
+  "parameter_ledger": {
+    "canonical_coefficients_are_fixed_by_gradient": true,
+    "canonical_cubic_coefficients": [
+      "1/3",
+      "-1"
+    ],
+    "new_dimensionful_primitives": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0,
+    "new_sector_specific_parameters": 0
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "KO6_scalar_odd_trace_cancellation_closed": true,
+    "canonical_two_anchor_no_go_closed": true,
+    "continuum_q79_action_transfer_closed": false,
+    "finite_signed_variational_action_closed": true,
+    "held_out_physical_observable_emitted": false,
+    "nonzero_physical_source_coordinate_selected": false,
+    "physical_Lorentzian_or_BV_action_selected": false,
+    "physical_pairing_density_and_real_slice_selected": false,
+    "signed_Hessian_and_inertia_closed": true,
+    "signed_to_positive_normal_square_closed": true
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "schema": "boe.mtt.finite-dirac-cubic-variational-action.v1",
+  "signed_Hessian": {
+    "definition": "H_sig=J0, J0(X)=D0X+XD0",
+    "inertia": {
+      "negative": 2304,
+      "positive": 2304,
+      "zero": 4608
+    },
+    "materialized_9216_square_matrix": false,
+    "self_adjoint": true,
+    "spectrum": {
+      "-2": 2304,
+      "0": 4608,
+      "2": 2304
+    },
+    "superprojector_form": "J0=2Pi_plus-2Pi_minus"
+  },
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "handoff_id": "2921d8c2-d14a-4f82-b8f0-25f0c5b28b96",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "dd66991011c3a8456ce704db919efa6e475dc7f6",
+      "mtt-preprojection-repair-calculus": "b7ff488247806b54ae8e0541f509054a58369f43",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 13,
+    "source_root_payload": {
+      "D0_sha256": "2fcca7a21d905865c331db9785e061249342da3ed5b0c59539a31a1a2ea72fd1",
+      "D1_sha256": "0646f96f487fdb3de70596073ec295ad967d5845d4cfae06e9a777da3369ed5a",
+      "Gamma96_sha256": "b46dcc77ba482aaafba280d21aa034e8db0a378aedc3ff1997203f681bd9470e",
+      "H_phys_sha256": "2b78943ded404370d6c2f4216aab01b71c1bc06f4056a6a44a6ee407ad3d398f",
+      "KO6_pullback": "S_sig(D_phys(t))=0",
+      "configuration_space": "End_sa(H_F), dim_R=9216",
+      "metric": "g(X,Y)=Re (Tr/96)(X^*Y)",
+      "normal_square": "H_sig^2=A_rep=4(Pi_plus+Pi_minus)",
+      "observed_targets": [],
+      "physical_Lorentzian_or_BV_action": null,
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "dd66991011c3a8456ce704db919efa6e475dc7f6",
+        "mtt-preprojection-repair-calculus": "b7ff488247806b54ae8e0541f509054a58369f43",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.finite-dirac-cubic-variational-action-root.v1",
+      "signed_action": "S_sig(D)=tau96(D^3/3-D)",
+      "signed_hessian": "H_sig=J0=2Pi_plus-2Pi_minus",
+      "signed_hessian_inertia": {
+        "negative": 2304,
+        "positive": 2304,
+        "zero": 4608
+      },
+      "source_hashes": [
+        "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+        "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+        "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+        "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158",
+        "82d01b74e1ccb9f272202fed482a8259d7d52171894aaad57eca5a0ff87a56be",
+        "5b91050752dcc4c21376222df496bd26fbf37feaec15b0f1259536a512f641f3",
+        "54c268a9050872a73d37ca5be58b3cd3110dd8452ab74e4ed2b6680f93c9fdae",
+        "23ac40d68732a3c3b934a76ca4ca29ac10956340ba600a9f60fd277a29d04111",
+        "5e60a90ed8fbafd40d26f3aeaed9a7c8d9f5724d5aa9e00b952cc507f136d03e",
+        "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+        "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+        "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+        "ce8cd73313df474d9619e9111caac25c3931f9d01a114c3b00e0549893fd24d6"
+      ],
+      "theorem_sha256": "d8d6ccdf71bad49bc922f2b44aaed8369bb80c1101130c2a636c91ddf2840336"
+    },
+    "source_root_sha256": "2f2fcfc55f6a172c27c3ff92ebe0fdd7dbfe02cccac6790842877a6b9a7e24ba"
+  },
+  "status": "exact same-root signed finite variational action, signed Hessian and normal-square bridge; exact KO6 cancellation and canonical two-anchor no-go; physical Lorentzian/BV action remains open",
+  "weighted_anchor_escape_test": {
+    "Hessian": "K_0=2(Pi_plus+Pi_minus)+(2/3)Pi_zero",
+    "constrained_stationary_points": [
+      "0",
+      "3/2"
+    ],
+    "definition": "S_0(D)=tau96(D0(D^3/3-D))+2/3",
+    "family_pullback": "S_0(D_phys(t))=2t^2-(8/9)t^3",
+    "gradient": "G_0(D)=(D^2D0+DD0D+D0D^2)/3-D0",
+    "physical_value_selector": false,
+    "preserves_full_U96": false,
+    "sampled_values": {
+      "-1": "26/9",
+      "0": "0",
+      "1": "10/9",
+      "1/2": "7/18",
+      "3/2": "3/2"
+    },
+    "squares_to_A_rep": false,
+    "three_halves_is_full_closure": false
+  }
+}

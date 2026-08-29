@@ -70,6 +70,8 @@ def main() -> None:
     run(sys.executable, "verify_finite_dirac_spectral_action_classification.py")
     run(sys.executable, "build_finite_dirac_operator_repair_semigroup.py")
     run(sys.executable, "verify_finite_dirac_operator_repair_semigroup.py")
+    run(sys.executable, "build_finite_dirac_cubic_variational_action.py")
+    run(sys.executable, "verify_finite_dirac_cubic_variational_action.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 
