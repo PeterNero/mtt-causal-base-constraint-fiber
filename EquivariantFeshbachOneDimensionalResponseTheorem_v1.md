@@ -1,0 +1,455 @@
+# Equivariant Feshbach Response-Module and One-Dimensional Source-Line Theorem v1
+
+## Status
+
+```text
+Claim id:                                      CBF.T19
+General Feshbach covariance theorem:           EXACT
+Finite response-module dimension ladder:      EXACT SOURCE-PINNED
+Equivariance-alone one-line implication:       DISPROVED
+Relative-response one-line criterion:          EXACT NECESSARY/SUFFICIENT CUTSET
+Selected physical relative intertwiner:        OPEN
+Physical GAS/SYN/BV4 packets:                  0/3
+Physical endpoint rows:                        0/7
+Observed construction inputs:                  0
+Fitted coefficients:                           0
+```
+
+This theorem continues CBF.T18. That theorem reduced the action-side physical
+exit to
+
+```text
+H_eff = c_action H_resp,
+c_action = <H_resp,H_eff>_F/192.
+```
+
+The question here is whether physical symmetry and Feshbach reduction make the
+first identity automatic. The answer has two parts:
+
+1. Feshbach reduction preserves exact equivariance, including the inverse on
+   the excluded sector.
+2. The currently selected gauge, Fourier and routing constraints do not by
+   themselves leave a one-dimensional Hessian space.
+
+The exact finite reduction ladder is
+
+```text
+36 -> 18 -> 9 -> 1.
+```
+
+The last step requires a relative-response source intertwiner. It cannot be
+replaced by ordinary equivariance. This result therefore removes a false
+shortcut and gives a smaller, algebraic endpoint certificate that is both
+necessary and sufficient once the physical source exists.
+
+## 1. Pinned finite response
+
+Let
+
+```text
+A = A_shift,
+B = B_phase = F3^* A F3
+```
+
+be the exact FSB.04e response pair. Both are Hermitian, invertible and have
+spectrum `{-4,-2,2}`. On one phase/shift route copy define
+
+```text
+H6 = diag(B,A).
+```
+
+The complete CBF.T18 response is
+
+```text
+H_resp = B tensor R_phase + A tensor R_shift.
+```
+
+There are four active route copies and 24 inactive finite directions. Hence
+
+```text
+rank(H_resp)=24,
+||H_resp||_F^2=192,
+rank(H6)=6,
+||H6||_F^2=48.
+```
+
+No continuum or physical identification is made by writing `H6`. It is only
+the faithful active reduced form of the already pinned finite matrix.
+
+## 2. The natural routed symmetry
+
+On `C3_phase direct-sum C3_shift`, introduce
+
+```text
+L = diag(I3,-I3),
+W = [[0,F3^*],[F3,0]].
+```
+
+Both are unitary involutions. The first records phase/shift parity. The second
+exchanges the two lanes while applying the selected Fourier transport. Exact
+Fourier covariance gives
+
+```text
+[H6,L]=0,
+[H6,W]=0.
+```
+
+These are source-owned symmetries. They are not defined as the stabilizer of
+`H6`.
+
+### Theorem 2.1: routed commutant dimension
+
+The complex vector space
+
+```text
+C_route = {M in M6(C): [M,L]=[M,W]=0}
+```
+
+has dimension nine. Its Hermitian part has real dimension nine.
+
+### Proof
+
+Commutation with `L` forces
+
+```text
+M = diag(X,Y).
+```
+
+Commutation with `W` then gives
+
+```text
+X = F3^* Y F3.
+```
+
+Thus `Y` is an arbitrary `3 x 3` complex matrix. This proves complex dimension
+nine. Restricting `Y` to Hermitian matrices gives the nine-dimensional real
+Hermitian module. The certificate independently obtains rank 27 for the
+constraint system on 36 matrix coordinates and hence nullity nine. QED.
+
+### Corollary 2.2
+
+Ordinary lane/Fourier equivariance does not imply
+
+```text
+M in span(H6).
+```
+
+For example, `I6` commutes with both `L` and `W` but is not proportional to
+`H6`.
+
+This negative result is important. Defining a larger symmetry group as the
+stabilizer of `H6` would only assume the desired conclusion.
+
+## 3. Full sector reduction ladder
+
+The active H16 routes are the four gauge-distinct sectors
+
+```text
+u, e, d, N.
+```
+
+Gauge covariance makes each color multiplet scalar in color, but it does not
+identify the family Hessians of gauge-inequivalent sectors. Before additional
+source relations, the active gauge-compatible Hermitian response therefore
+has four independent `Herm(3)` blocks:
+
+```text
+(X_u,X_e,X_d,X_N),
+dim_R = 4*9 = 36.
+```
+
+### Theorem 3.1: exact ladder
+
+The selected finite constraints reduce the response module as follows.
+
+```text
+gauge-compatible sectors:
+  X_u, X_e, X_d, X_N independent                         dimension 36
+
+Fourier-paired sectors:
+  X_u=F3^*X_dF3, X_e=F3^*X_NF3                         dimension 18
+
+universal routed source:
+  X_d=X_N=X, X_u=X_e=F3^*XF3                           dimension 9
+
+selected first-response source line:
+  X=c A, F3^*XF3=c B                                    dimension 1
+```
+
+### Proof
+
+`Herm(3)` has the standard nine-element real basis consisting of three real
+diagonal matrices, three real symmetric off-diagonal matrices and three
+imaginary skew off-diagonal Hermitian matrices. Four independent copies give
+36 dimensions. Fourier pairing leaves two freely chosen copies, giving 18.
+Universal routing leaves one freely chosen copy, giving nine. Restriction to
+the nonzero line generated by `A` leaves one. The builder constructs all four
+bases and verifies exact ranks `36`, `18`, `9` and `1` over the pinned
+coefficient field. QED.
+
+### Interpretation
+
+The equal coefficients on `u/e` and `d/N` in `H_resp` are not consequences of
+gauge invariance. They are part of the selected universal response source.
+Likewise, Fourier covariance relates the phase and shift shapes but does not
+choose the shape `A`. A physical endpoint must therefore transport both:
+
+1. universal routing across the declared active sectors; and
+2. the selected first-response source line.
+
+This is the exact content hidden inside the phrase "same-source operator
+intertwiner."
+
+## 4. General equivariant Feshbach theorem
+
+Let an upper Hilbert carrier split as
+
+```text
+H_up = P H_up direct-sum Q H_up.
+```
+
+Let `K` be a self-adjoint Hessian. Let a group `G` act unitarily by `Pi(g)` and
+assume
+
+```text
+[K,Pi(g)]=0,
+[P,Pi(g)]=0
+```
+
+for every `g`. Write the block form
+
+```text
+K = [[K_PP,K_PQ],[K_QP,K_QQ]].
+```
+
+### Theorem 4.1: nonreducing covariance
+
+If `K_QQ` is invertible on `Q H_up`, then
+
+```text
+F_P(K)=K_PP-K_PQ K_QQ^-1 K_QP
+```
+
+commutes with the retained representation of `G`.
+
+### Proof
+
+Since `P` and `Q` commute with `Pi(g)`, every block of `K` intertwines the
+corresponding retained or excluded representation. In particular `K_QQ`
+commutes with the excluded representation. Multiplying
+
+```text
+K_QQ Pi_Q(g)=Pi_Q(g)K_QQ
+```
+
+on both sides by `K_QQ^-1` proves that its inverse commutes as well. Both terms
+in `F_P(K)` are therefore retained intertwiners. QED.
+
+### Corollary 4.2: reducing case
+
+If `K_PQ=0`, then `F_P(K)=K_PP`. Equivariance follows directly.
+
+### Corollary 4.3: synthesized form
+
+If `U:V_fin->H_up` is an isometric intertwiner with `P=UU^*`, then
+
+```text
+H_eff = U^* F_P(K) U
+```
+
+is equivariant on `V_fin`.
+
+The theorem is exact. No Galerkin limit, perturbation expansion or numerical
+tolerance is needed for the covariance statement. Numerical work enters only
+when proving invertibility, domains and continuum-to-finite error bounds for a
+physical `K` and `U`.
+
+## 5. Why covariance does not finish the endpoint
+
+Theorem 4.1 puts `H_eff` in the appropriate equivariant module. Theorem 2.1
+shows that the natural routed module has dimension nine. Therefore
+
+```text
+equivariant K and U
+  do not imply
+H_eff=c H_resp.
+```
+
+The certificate includes two exact nonreducing Feshbach witnesses with the
+same `L/W` equivariance, the same retained/complement dimensions and the same
+invertible complement:
+
+```text
+first witness:   H_eff=(7/3)H6,
+negative control: H_eff=I6.
+```
+
+The second witness has a nonzero best-fit response residual. Thus no proof may
+promote Feshbach covariance alone into the CBF.T18 identity.
+
+## 6. Relative-response intertwiner
+
+Define the selected family-lane comparison algebra on the active six-space by
+the generators
+
+```text
+A6=diag(A,A),
+B6=diag(B,B),
+L,
+W.
+```
+
+FSB.04f proves that `A` and `B` generate `M3(C)`. The lane parity removes
+off-diagonal lane maps, and the Fourier lane exchange identifies the two
+remaining scalar lane coefficients.
+
+### Theorem 6.1: scalar comparison commutant
+
+The commutant of `{A6,B6,L,W}` is exactly `C I6`.
+
+### Proof
+
+Commutation with `L` makes a comparison block diagonal. On each lane,
+commutation with `A` and `B` makes the block scalar because these matrices
+generate `M3(C)`. Commutation with `W` equates the two scalars. The exact
+constraint matrix has rank 35 on 36 complex coordinates, independently
+confirming one-dimensional nullity. QED.
+
+Because `H6` is invertible, every candidate active effective Hessian `M`
+defines a relative comparison
+
+```text
+T_rel = H6^-1 M.
+```
+
+### Theorem 6.2: one-dimensional response criterion
+
+The following are equivalent:
+
+1. `T_rel` commutes with `A6`, `B6`, `L` and `W`;
+2. `T_rel=c I6` for one scalar `c`;
+3. `M=c H6`.
+
+### Proof
+
+Theorem 6.1 proves `1 => 2`. Multiplication by `H6` proves `2 => 3`.
+Conversely, `M=cH6` gives `T_rel=cI6`, proving `3 => 1`. QED.
+
+This is the desired one-dimensional theorem, but its hypothesis is a
+relative-response source condition, not ordinary symmetry. It says that the
+physical and finite Hessians represent the same selected family-lane operator
+source before their overall normalization is compared.
+
+## 7. Full-carrier conditions
+
+The active six-space theorem must be applied to all four active route copies.
+A physical endpoint must additionally prove:
+
+```text
+the 24-dimensional inactive finite kernel is preserved,
+the four active route copies use the source-prescribed multiplicities,
+no unsupported cross-sector blocks survive,
+the same scalar c applies to every active copy.
+```
+
+These are not optional details. Without them, separate gauge-sector
+coefficients can survive even when every family block obeys Fourier covariance.
+Once these support and multiplicity conditions and Theorem 6.2 hold, the full
+identity follows:
+
+```text
+H_eff=c_action H_resp.
+```
+
+CBF.T18 then gives the unique coefficient
+
+```text
+c_action=<H_resp,H_eff>_F/192.
+```
+
+## 8. Exact Feshbach witness
+
+The finite witness uses a retained and excluded copy of the active six-space.
+Set
+
+```text
+D=3I6,
+C=2I6,
+M=(7/3)H6,
+K_PP=M+C D^-1 C^*,
+K=[[K_PP,C],[C^*,D]].
+```
+
+Then
+
+```text
+D^-1=(1/3)I6,
+F_P(K)=K_PP-C D^-1 C^*=M=(7/3)H6.
+```
+
+The upper symmetry is `diag(L,L)` and `diag(W,W)`. The complete `K` commutes
+with both, and the canonical inclusion intertwines them. The recovered scale is
+exactly `7/3`, and the response residual vanishes.
+
+Replacing `M` by `I6` gives the negative control. It remains exactly
+equivariant and has the same complement inverse, but its response residual is
+nonzero and its relative comparison fails the selected algebra-commutator
+test.
+
+The witness proves the theorem and its boundary. It is not a selected physical
+upper Hessian.
+
+## 9. Endpoint consequence
+
+The old terminal task appeared to require a general entrywise comparison of
+two `48 x 48` matrices. The exact equivalent source-first task is now:
+
+```text
+1. prove physical support and route multiplicity;
+2. prove K_phys, U, Q and the Q inverse are same-root objects;
+3. prove the relative-response comparison commutes with the four selected
+   family-lane generators;
+4. evaluate one nonzero scalar coefficient;
+5. derive its physical meaning from BV4 density and compactification.
+```
+
+This is smaller, but it is not automatic. Step 3 is the selected operator
+source theorem that remains absent from the physical endpoint.
+
+## 10. Claim boundary
+
+### Proved here
+
+- exact Feshbach covariance in reducing and nonreducing cases;
+- inverse covariance of the excluded block;
+- the exact response-module ladder `36 -> 18 -> 9 -> 1`;
+- a no-go for deriving the response line from lane/Fourier equivariance alone;
+- scalar commutant of the selected comparison algebra;
+- necessary and sufficient relative-response criterion for proportionality;
+- exact positive and negative rational witnesses;
+- zero observed inputs and zero fitted coefficients.
+
+### Not proved here
+
+- a selected q79 or provider-neutral physical endpoint;
+- physical `K_phys`, synthesis `U`, complement inverse or continuum tail bound;
+- a same-root relative-response intertwiner;
+- physical GAS, SYN or BV4 acceptance;
+- the BV density or absolute value of `c_action`;
+- Lorentz/Higgs/Yukawa typing or any charged magnitude;
+- closure of `B.GEO.01`, `B.OP.01` or `B.ACTION.01`.
+
+Physical acceptance therefore remains `0/3` packets and `0/7` rows.
+
+## 11. Reproduction
+
+```powershell
+python build_equivariant_feshbach_response.py
+python verify_equivariant_feshbach_response.py
+python -m unittest tests.test_equivariant_feshbach_response -v
+python verify.py
+```
+
+The independent verifier hard-codes the selected finite matrices and rebuilds
+the module ranks, centralizer ranks, Feshbach witnesses, scale and negative
+control without importing the builder.

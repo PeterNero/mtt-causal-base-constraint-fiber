@@ -14,6 +14,8 @@ paper, note, packet name or search hit.
    handoff is `c90aa36c-e4b7-4dbe-9eaf-b599b414d474`; the affine zero-section
    action handoff is `4d8dd6f2-dda8-4904-92d1-14b1b0788498`; the normal-frame
    action-intertwiner handoff is `990a6f58-451b-4cb2-ba76-45e173bf4e09`;
+   the equivariant Feshbach response handoff is
+   `54421bb0-aa9e-4c9f-a1a4-a89e7d2dea0d`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

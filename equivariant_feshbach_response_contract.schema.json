@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:equivariant-feshbach-response:v1",
+  "title": "Equivariant Feshbach response-module and source-line contract",
+  "description": "Separates automatic Feshbach covariance from the additional source intertwiner needed to force the selected one-dimensional response line.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "finite_response",
+    "module_ladder",
+    "feshbach_covariance",
+    "relative_intertwiner",
+    "physical_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.equivariant-feshbach-response.v1"
+    },
+    "finite_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["formula", "rank", "frobenius_norm_squared"],
+      "properties": {
+        "formula": {
+          "const": "H_resp=B_phase tensor R_phase+A_shift tensor R_shift"
+        },
+        "rank": { "const": 24 },
+        "frobenius_norm_squared": { "const": 192 }
+      }
+    },
+    "module_ladder": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gauge_sector_dimension",
+        "Fourier_paired_dimension",
+        "universal_routed_dimension",
+        "relative_response_line_dimension"
+      ],
+      "properties": {
+        "gauge_sector_dimension": { "const": 36 },
+        "Fourier_paired_dimension": { "const": 18 },
+        "universal_routed_dimension": { "const": 9 },
+        "relative_response_line_dimension": { "const": 1 }
+      }
+    },
+    "feshbach_covariance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reducing_case_equivariant",
+        "nonreducing_case_equivariant",
+        "equivariance_alone_forces_response_line"
+      ],
+      "properties": {
+        "reducing_case_equivariant": { "const": true },
+        "nonreducing_case_equivariant": { "const": true },
+        "equivariance_alone_forces_response_line": { "const": false }
+      }
+    },
+    "relative_intertwiner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "test",
+        "comparison_commutant_dimension",
+        "conclusion",
+        "physically_supplied"
+      ],
+      "properties": {
+        "test": {
+          "const": "T=H_resp,act^-1 H_eff,act commutes with the selected family-lane algebra"
+        },
+        "comparison_commutant_dimension": { "const": 1 },
+        "conclusion": { "const": "H_eff,act=c_action H_resp,act" },
+        "physically_supplied": { "const": false }
+      }
+    },
+    "physical_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "physical_endpoint_selected",
+        "physical_action_scale_selected",
+        "physical_packets_accepted",
+        "physical_rows_accepted"
+      ],
+      "properties": {
+        "physical_endpoint_selected": { "const": false },
+        "physical_action_scale_selected": { "const": false },
+        "physical_packets_accepted": { "const": 0 },
+        "physical_rows_accepted": { "const": 0 }
+      }
+    }
+  }
+}

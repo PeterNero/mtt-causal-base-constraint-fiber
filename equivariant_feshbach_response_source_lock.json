@@ -1,0 +1,65 @@
+{
+  "schema": "boe.mtt.equivariant-feshbach-response-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repository_head_before": "a62c6326f399ed9a3ee7b5a427ce3a08a4a8607a",
+  "handoff_id": "54421bb0-aa9e-4c9f-a1a4-a89e7d2dea0d",
+  "local_sources": [
+    {
+      "path": "NormalFrameQuotientAndActionIntertwinerMinimalDataTheorem_v1.md",
+      "sha256": "6a1ff46753065e4cb647ccfdcbe69e6915642af8ae671ff35c628613d1755bc5",
+      "role": "CBF.T18 effective-Hessian identity, norm 192 and scale boundary"
+    },
+    {
+      "path": "normal_frame_action_intertwiner_reduction.packet.json",
+      "sha256": "e0840c47b11dd9a7b6e6439f182a51cb9cd5e5947829740123d57a33dd656fc0",
+      "role": "exact CBF.T18 routed response and endpoint residual contract"
+    },
+    {
+      "path": "CohesiveRepairCompressionTransferComparisonTheorem_v1.md",
+      "sha256": "73eba4ffb830eb3f12a13baa39401c41374bbfae9826276a41bd35d76a8845e6",
+      "role": "CBF.T3 propagated-excursion and Feshbach specialization"
+    },
+    {
+      "path": "q79_physical_endpoint_three_packet_contract.schema.json",
+      "sha256": "8189fd8e91032cdd6ec50cef0ef82105808c35cc215cd54731d165fb9d489c9f",
+      "role": "same-root GAS, SYN and BV4 endpoint boundary"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_dynamic_weyl_orbit.packet.json",
+      "sha256": "a265cf03d5b9e459906bebe17c8bca80152e644765bdfc5d8cb2e77fe931a074",
+      "role": "FSB.04e exact Fourier-related phase and shift response shapes"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_family_response_algebra.packet.json",
+      "sha256": "9b2c3484d3b0524620bd4a52a36a8becf5c8d270f062543f9e43cd3abfe0789f",
+      "role": "FSB.04f exact full family response algebra"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/state/source_manifest.v1.json",
+      "sha256": "c0016e216126298906c4ba1cc25c4d11f985764f56622cede2367aa186a1861c",
+      "role": "finite q79 source-manifest root"
+    }
+  ],
+  "read_only_repository_heads": {
+    "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706"
+  },
+  "source_tiers": {
+    "CBF_T18": "exact finite quotient and conditional physical identity",
+    "FSB_04e_04f": "closed exact finite response orbit and algebra; physical endpoint open",
+    "Feshbach_source": "exact general theorem and finite witness only"
+  },
+  "boundary": {
+    "physical_GAS_packet_supplied": false,
+    "physical_SYN_packet_supplied": false,
+    "physical_BV4_packet_supplied": false,
+    "same_root_relative_response_intertwiner_supplied": false,
+    "physical_action_scale_selected": false,
+    "Lorentz_Higgs_Yukawa_typing_proved": false,
+    "strict_charged_magnitude_values_remaining": 9,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

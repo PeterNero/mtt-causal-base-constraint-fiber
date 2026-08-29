@@ -592,6 +592,28 @@ exists, `c_action` is uniquely computed by Frobenius contraction. Its value
 cannot be recovered from normalized finite data alone, and no endpoint or
 physical row is promoted here.
 
+`CBF.T19` proves the next exact operator-theory step and corrects an overly
+optimistic shortcut. Equivariant synthesis and an invertible equivariant
+excluded block make the Feshbach effective Hessian equivariant. But the actual
+selected lane-parity/Fourier symmetry leaves nine Hermitian directions. The
+complete exact finite module ladder is
+
+```text
+36 gauge-sector directions
+ -> 18 Fourier-paired directions
+ -> 9 universal routed directions
+ -> 1 selected relative-response line.
+```
+
+The last arrow is equivalent to requiring
+`H_resp,act^-1 H_eff,act` to commute with the selected full family-lane
+comparison algebra, whose commutant is exactly scalar. A rational
+nonreducing witness recovers scale `7/3` with zero residual, while an
+equivariant identity-matrix negative control proves that ordinary symmetry is
+insufficient. The theorem therefore reduces the endpoint to a same-root
+source-intertwining statement plus one BV-normalized scalar; it does not
+accept a physical packet.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -602,7 +624,9 @@ its independent verifier passes `68/68`. The closure-pressure packet passes
 `54/54` checks and its independent verifier passes `59/59`. The canonical
 affine-action packet passes `60/60` checks and its independent verifier passes
 `90/90`. The normal-frame packet passes `65/65` checks and its independent
-verifier passes `108/108`. The canonical suite passes 84 unit tests. The
+verifier passes `108/108`. The equivariant Feshbach packet passes `48/48`
+checks and its independent verifier passes `58/58`. The canonical suite passes
+90 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

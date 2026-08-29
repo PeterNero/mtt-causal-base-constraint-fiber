@@ -335,17 +335,34 @@ c_action=<H_resp,H_eff>_F/192.
 Normalized finite data cannot select `c_action`; it must be emitted by the
 physical action/density endpoint.
 
+CBF.T19 further proves that Feshbach covariance alone lands in a
+nine-dimensional routed Hermitian module. The exact route to the response
+line is the same-root relative comparison
+
+```text
+T_rel=H_resp,act^-1 H_eff,act,
+```
+
+whose commutation with the selected family-lane comparison algebra is
+necessary and sufficient for `H_eff,act=c_action H_resp,act`. The complete
+finite reduction is `36 -> 18 -> 9 -> 1`; each arrow now has a named source
+obligation rather than being hidden inside "equivariance."
+
 The remaining order is now:
 
-1. obtain one selected same-root `GAS+SYN+BV4` endpoint supplying `K_phys`,
-   synthesis, complement inverse or reducing certificate, and BV density;
-2. evaluate the exact or interval-certified residual
-   `H_eff-c_action H_resp` and recover `c_action` from the same root;
-3. externalize that action and density through the CBF.T13/T14 BV contract;
-4. derive a gauge-invariant Lorentz/Higgs left-right Yukawa second variation;
-5. derive a sector-resolved spectral law or cross-sector relation reducing the
+1. construct one selected source that identifies the four gauge-sector blocks,
+   Fourier pairs and universal routed block, then proves the relative-response
+   comparison intertwiner;
+2. obtain same-root `GAS+SYN+BV4` data supplying `K_phys`, synthesis,
+   complement inverse or reducing certificate, and BV density;
+3. certify support and route multiplicity, recover `c_action` from the same
+   root, and use the relative-intertwiner theorem to prove the full residual
+   vanishes;
+4. externalize that action and density through the CBF.T13/T14 BV contract;
+5. derive a gauge-invariant Lorentz/Higgs left-right Yukawa second variation;
+6. derive a sector-resolved spectral law or cross-sector relation reducing the
    nine FSB.04g scalar coordinates;
-6. emit one held-out source-normalized mass, interaction or threshold scalar.
+7. emit one held-out source-normalized mass, interaction or threshold scalar.
 
 The next physical theorem must discharge item 1 or 2. Another normal-frame or
 finite-trace packet cannot do so: CBF.T18 proves those choices are already
