@@ -253,6 +253,29 @@ operator has only two nonzero singular levels, the physical pressure and
 same-root source are unselected, and Lorentz/Higgs/Yukawa typing plus all nine
 charged magnitude values remain open.
 
+The seventeenth theorem supplies the missing finite zero-section action and
+proves why it is minimal. The canonical cotangent term `<lambda,Phi>` vanishes
+when its dual field is zero and cannot activate curvature at a regular point.
+Adding the field-only affine normal term
+
+```text
+U_ell(n,k)=-ell(n)
+```
+
+is necessary and sufficient in the minimal affine class. On the nonlinear
+closure graph it becomes
+
+```text
+U_ell(-psi(k),k)=ell(psi(k)),
+```
+
+so a linear upper action produces the full lower quadratic family response.
+The exact finite action has real bordered dimension 160, rank 112 and kernel
+dimension 48. Moreover, `L_p(n,k,p mu)=p L_1(n,k,mu)` proves that all nonzero
+pressure magnitudes are one unoriented classical projective class. Pressure
+therefore adds no continuous dimensionless family-shape knob; one overall
+physical action scale, density and the complete physical typing remain open.
+
 ## Run the proof
 
 ```powershell
@@ -265,7 +288,8 @@ higher-jet invariant spaces, the exact `m5` witness and the all-arity recurrence
 checks the all-arity source-promotion contract, executes the seven-row
 factorization/Feshbach witnesses, executes the associated-matter product-Dirac
 and `3 x 16` BV4 witness, independently reconstructs the closure-pressure
-family Hessian and its rank/symmetry boundaries, and runs the unit tests.
+family Hessian, reconstructs the affine zero-section action and its realified
+rank/projective-pressure boundaries, and runs the unit tests.
 
 The complete independent `m4` table and SI(4) replay is intentionally separate
 from the routine suite because it evaluates 3,869,500 admissible quadruples:
@@ -324,6 +348,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem_v1.md`:
   regular-multiplier zero-pressure no-go, exact closure-pressure activation,
   finite family-response symmetry reduction and magnitude boundary.
+- `AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md`:
+  zero-section necessity, graph-pullback action, nonzero-pressure projective
+  uniqueness and exact finite realified action witness.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -366,6 +393,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `closure_pressure_family_hessian_activation_contract.schema.json`:
   machine-readable pressure, curvature, source-provenance and physical-typing
   acceptance contract.
+- `affine_zero_section_action_source_lock.json`: pinned CBF.T16, H4 action/
+  cotangent boundaries and FSB.04e/04f/04g response sources.
+- `affine_zero_section_action_contract.schema.json`: machine-readable closure
+  graph, zero-section action, projective pressure and physical-typing contract.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -409,12 +440,17 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `closure_pressure_family_hessian_activation.packet.json`: generated exact
   multiplier no-go, pressure activation, rank, symmetry and value-boundary
   certificate.
+- `affine_zero_section_action.packet.json`: generated exact affine-action,
+  graph-pullback, pressure-projective, real-rank and boundary certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `build_closure_pressure_family_hessian_activation.py`: deterministic CBF.T16
   packet builder.
 - `verify_closure_pressure_family_hessian_activation.py`: independent CBF.T16
   reconstruction and boundary verifier.
+- `build_affine_zero_section_action.py`: deterministic CBF.T17 packet builder.
+- `verify_affine_zero_section_action.py`: independent CBF.T17 action,
+  realification and projective-pressure verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
 
 ## Kernel workflow
@@ -499,6 +535,20 @@ normal pressure. The pressure scale, Lorentz/Higgs left-right typing and nine
 charged values remain open, so physical acceptance stays `0/3` packets and
 `0/7` rows.
 
+`CBF.T17` closes the finite action-form and parameter-class questions. The
+minimal field-only completion is the affine normal tadpole, and restricting it
+to the curved closure graph yields exactly `1/2 Re<k,H_resp k>`. Together with
+the canonical multiplier term, this gives one finite polynomial that emits
+`J`, the response curvature, normalized nonzero pressure and the activated
+family Hessian. Its real bordered Hessian has exact inertia `(48,64,48)`.
+
+All nonzero pressure magnitudes are related by a multiplier-coordinate change
+and overall action rescaling. Hence this tier has zero new continuous
+dimensionless pressure-shape parameters. This does not select the physical
+overall action normalization or density, and the finite polynomial is still
+assembled from locked sources rather than emitted by one selected physical
+endpoint. Physical acceptance remains unchanged.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -507,7 +557,8 @@ provider-neutral packet passes `40/40` checks and its independent verifier
 passes `50/50`. The direct multiplier-source packet passes `57/57` checks and
 its independent verifier passes `68/68`. The closure-pressure packet passes
 `54/54` checks and its independent verifier passes `59/59`. The canonical
-suite passes 73 unit tests. The
+affine-action packet passes `60/60` checks and its independent verifier passes
+`90/90`. The canonical suite passes 78 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

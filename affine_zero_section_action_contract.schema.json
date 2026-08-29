@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:affine-zero-section-action:v1",
+  "title": "Affine zero-section action and projective pressure contract",
+  "description": "Source data needed to turn a regular nonlinear closure graph into a pressure-activated lower quadratic action without treating the finite construction as a selected physical BV or Yukawa action.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "root_source",
+    "closure_graph",
+    "zero_section_action",
+    "multiplier_completion",
+    "projective_pressure",
+    "descent",
+    "physical_typing",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.affine-zero-section-action.v1"
+    },
+    "root_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["root_source_sha256", "linear_source", "curvature_source", "physical_same_root_certificate"],
+      "properties": {
+        "root_source_sha256": { "$ref": "#/$defs/sha256" },
+        "linear_source": { "$ref": "#/$defs/artifact" },
+        "curvature_source": { "$ref": "#/$defs/artifact" },
+        "physical_same_root_certificate": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "closure_graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["residual", "normal_derivative", "second_fundamental_form"],
+      "properties": {
+        "residual": { "$ref": "#/$defs/artifact" },
+        "normal_derivative": { "const": "I_N" },
+        "second_fundamental_form": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "zero_section_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field_only_action", "normal_covector", "intrinsic_tangent_Hessian_zero"],
+      "properties": {
+        "field_only_action": { "$ref": "#/$defs/artifact" },
+        "normal_covector": { "$ref": "#/$defs/artifact" },
+        "intrinsic_tangent_Hessian_zero": { "const": true }
+      }
+    },
+    "multiplier_completion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "critical_multiplier", "canonical_evaluation_coefficient"],
+      "properties": {
+        "action": { "$ref": "#/$defs/artifact" },
+        "critical_multiplier": { "$ref": "#/$defs/artifact" },
+        "canonical_evaluation_coefficient": { "const": 1 }
+      }
+    },
+    "projective_pressure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zero_branch_separate", "nonzero_unoriented_classes", "physical_action_scale_selected"],
+      "properties": {
+        "zero_branch_separate": { "const": true },
+        "nonzero_unoriented_classes": { "const": 1 },
+        "physical_action_scale_selected": { "const": false }
+      }
+    },
+    "descent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A47_gauge", "A50_shared_circle", "family_stabilizer"],
+      "properties": {
+        "A47_gauge": { "$ref": "#/$defs/artifact" },
+        "A50_shared_circle": { "$ref": "#/$defs/artifact" },
+        "family_stabilizer": { "const": "U(1)" }
+      }
+    },
+    "physical_typing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["Lorentz_Higgs_Yukawa_map", "causal_BV_action", "physical_density", "held_out_prediction"],
+      "properties": {
+        "Lorentz_Higgs_Yukawa_map": { "$ref": "#/$defs/artifact" },
+        "causal_BV_action": { "$ref": "#/$defs/artifact" },
+        "physical_density": { "$ref": "#/$defs/artifact" },
+        "held_out_prediction": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "claim_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["physical_action_selected", "physical_scale_selected", "physical_Yukawa_values_derived", "physical_rows_accepted"],
+      "properties": {
+        "physical_action_selected": { "const": false },
+        "physical_scale_selected": { "const": false },
+        "physical_Yukawa_values_derived": { "const": false },
+        "physical_rows_accepted": { "const": 0 }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path_or_uri", "sha256", "status"],
+      "properties": {
+        "path_or_uri": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "status": { "enum": ["exact", "conditional", "selected", "open"] }
+      }
+    }
+  }
+}

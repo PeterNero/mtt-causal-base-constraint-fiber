@@ -312,6 +312,29 @@ The direct-source frontier is therefore no longer "add nonlinear terms." It is:
 Until item 5 succeeds, the result remains an exact structural source compiler
 rather than true Standard Model value closure.
 
+`CBF.T17` now closes item 1 at the finite algebraic and classical-projective
+tier, with one remaining physical qualifier. The minimal field-only action is
+the affine normal tadpole, and its exact graph pullback produces the lower A/B
+family quadratic. All nonzero pressure magnitudes form one classical
+projective class, so no new continuous dimensionless pressure-shape parameter
+is introduced. The physical action density and overall quantum normalization
+are not selected.
+
+The remaining order is now:
+
+1. select the normal covector, density and action normalization from the same
+   physical endpoint/product that emits the response curvature;
+2. prove the same-root intertwiner to the finite action polynomial;
+3. derive a gauge-invariant Lorentz/Higgs left-right Yukawa second variation;
+4. derive a sector-resolved spectral law or cross-sector relation reducing the
+   nine FSB.04g scalar coordinates;
+5. emit one held-out source-normalized mass, interaction or threshold scalar;
+6. externalize the same action through the CBF.T13/T14 BV contract.
+
+The next useful theorem must discharge item 1 or 2. Another rescaling of the
+finite action cannot do so because CBF.T17 has already quotiented every
+nonzero classical pressure magnitude into one projective class.
+
 ## Step 5: Constraint curvature and gauge stabilizer
 
 **State:** abstract stabilizer/faithful-quotient descent and finite

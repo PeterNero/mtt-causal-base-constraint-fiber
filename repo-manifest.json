@@ -63,6 +63,10 @@
     "closure-pressure contraction of residual curvature into the tangent Hessian",
     "exact finite family-response bordered-rank and U(3)-to-U(1) symmetry witness",
     "exact two-singular-level family-magnitude no-go",
+    "minimal affine zero-section action necessity and sufficiency theorem",
+    "exact nonlinear graph pullback from an upper linear action to the lower family quadratic",
+    "projective uniqueness of nonzero classical closure-pressure magnitude",
+    "exact 160-dimensional realified finite action rank and inertia witness",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -102,6 +106,9 @@
     "a physical origin or value for the closure-pressure multiplier",
     "identification of the finite family-response Hessian with a Lorentz-Higgs Yukawa map",
     "derivation of three family magnitudes from the first finite response pair",
+    "selection of the affine finite action by one physical endpoint",
+    "selection of the physical action density or overall quantum normalization",
+    "identification of classical projective pressure normalization with a measured physical scale",
     "that three structured source packets are three scalar physical parameters",
     "that every internal MTT direction is non-spatiotemporal",
     "a new globally original operator-theory identity"
@@ -124,7 +131,8 @@
     "AssociatedMatterProductDiracBVExternalizationCompilerTheorem_v1.md",
     "ProviderNeutralProjectionSourceQuotientAndQ79NecessityTheorem_v1.md",
     "MinimalOneConstraintMultiplierSourceAndThreeFamilyIndexTheorem_v1.md",
-    "ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem_v1.md"
+    "ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem_v1.md",
+    "AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -142,7 +150,8 @@
     "q79_bv4_associated_matter_externalization.packet.json",
     "provider_neutral_projection_source_quotient.packet.json",
     "direct_one_constraint_multiplier_source.packet.json",
-    "closure_pressure_family_hessian_activation.packet.json"
+    "closure_pressure_family_hessian_activation.packet.json",
+    "affine_zero_section_action.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -160,7 +169,8 @@
     "python build_q79_bv4_associated_matter_externalization.py",
     "python build_provider_neutral_projection_source_quotient.py",
     "python build_direct_one_constraint_multiplier_source.py",
-    "python build_closure_pressure_family_hessian_activation.py"
+    "python build_closure_pressure_family_hessian_activation.py",
+    "python build_affine_zero_section_action.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -173,7 +183,8 @@
     "q79_bv4_associated_matter_externalization_contract.schema.json",
     "provider_neutral_physical_source_contract.schema.json",
     "direct_one_constraint_multiplier_source_contract.schema.json",
-    "closure_pressure_family_hessian_activation_contract.schema.json"
+    "closure_pressure_family_hessian_activation_contract.schema.json",
+    "affine_zero_section_action_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

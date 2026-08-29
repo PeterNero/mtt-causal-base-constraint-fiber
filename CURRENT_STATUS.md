@@ -11,6 +11,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Provider-neutral source/q79 classification handoff: `f8fdd194-ed79-45af-a124-5c6219a6dce1`
 - Direct one-constraint multiplier-source handoff: `b8d489d8-41ea-4481-9c15-b31904f215af`
 - Closure-pressure family-Hessian handoff: `c90aa36c-e4b7-4dbe-9eaf-b599b414d474`
+- Affine zero-section action handoff: `4d8dd6f2-dda8-4904-92d1-14b1b0788498`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
@@ -430,3 +431,30 @@ same-root intertwiner between CBF.T15 and the q79 response pair, the origin and
 value of pressure, Lorentz/Higgs/Yukawa typing and all nine charged values are
 open. Physical acceptance remains `0/3` packets and `0/7` rows; `B.ACTION.01`
 and `B.SM.02` remain open.
+
+`AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem.v1`
+now fills the finite zero-section-action gap left by CBF.T16. For a regular
+closure graph, the unshifted cotangent action vanishes on the dual zero section
+and forces zero multiplier. The unique minimal affine field-only completion is
+
+```text
+U_ell(n,k)=-ell(n).
+```
+
+Its restriction to `n=-psi(k)` is exactly `ell(psi(k))`. Thus the simple upper
+linear term becomes the lower nonlinear action because the coherent locus is
+curved. In the finite A/B witness this is `1/2 Re<k,H_resp k>`, with real
+bordered dimension 160, rank 112, kernel 48 and inertia `(48,64,48)`.
+
+For every `p!=0`, the identity `L_p(n,k,p mu)=p L_1(n,k,mu)` proves one
+unoriented classical projective pressure class. The pressure magnitude is not
+a new continuous dimensionless family parameter; the remaining scalar is the
+overall physical action normalization relative to the physical density and
+quantum phase convention.
+
+This closes a finite algebraic action object, not its physical selection. The
+action is assembled from separately locked sources, and no selected endpoint
+yet emits its normal covector, density and family product on one hash. Physical
+Lorentz/Higgs/Yukawa typing and the nine charged values remain open, so
+physical acceptance stays `0/3` packets and `0/7` rows. `B.ACTION.01` and
+`B.SM.02` remain open.

@@ -1,0 +1,103 @@
+{
+  "schema": "boe.mtt.affine-zero-section-action-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repository_head_before": "563778fdb161014b7497a84ff19fde6500906816",
+  "local_sources": [
+    {
+      "path": "ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem_v1.md",
+      "sha256": "ab7119a4155f9c42d593b9fc1ca2599e7f2363c027cfbb8cd654fe22c3a3036a",
+      "role": "CBF.T16 regular-multiplier no-go and pressure-activated tangent Hessian"
+    },
+    {
+      "path": "closure_pressure_family_hessian_activation.packet.json",
+      "sha256": "488e6ed8013781592f86c68e73806fcaf3532b9099163357eb6962617f87be82",
+      "role": "exact CBF.T16 finite A/B response, rank, symmetry and value boundary"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/docs/PHYSICAL_ACTION_BRIDGE_CONTRACT.md",
+      "sha256": "ab7fa0936b4b8f650ee0996e974476684367305a5b45ffbaea5c1aadf74e4336",
+      "role": "action-versus-repair and zero-section physical bridge guard"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "H4-T10 cyclic action and signed-Hessian comparison"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_COMMON_CURVATURE_JORDAN_LIE_SPLITTING_THEOREM_v1.md",
+      "sha256": "fb1cbdf69cbd1a87154e5ef59679b148eb39f5d0c42b4d51f4433818ec83b6be",
+      "role": "common multiplication source for Jordan stability and Lie orientation"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_Q79_SHARED_LINE_NEUTRALITY_AND_CYCLIC_COTANGENT_COMPLETION_THEOREM_v1.md",
+      "sha256": "5e0f0d7d16bf70a45882f3a39354a95891b16394e4843973edc4bef405d223a2",
+      "role": "H4-T14 canonical cotangent completion and zero-section limitation"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1.md",
+      "sha256": "ce8cd73313df474d9619e9111caac25c3931f9d01a114c3b00e0549893fd24d6",
+      "role": "H4-T15 cotangent reduction and physical BV nonidentification gate"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/certificates/h4_q79_string_cyclic_cotangent.json",
+      "sha256": "84aaa6a28a2ecb2d239d6e3c2cfe363104c1b44ceb79f1ac919634edc8a4f8e3",
+      "role": "exact canonical-evaluation cotangent witness"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_dynamic_weyl_orbit.packet.json",
+      "sha256": "a265cf03d5b9e459906bebe17c8bca80152e644765bdfc5d8cb2e77fe931a074",
+      "role": "FSB.04e exact same-orbit A/B family response matrices"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_family_response_algebra.packet.json",
+      "sha256": "9b2c3484d3b0524620bd4a52a36a8becf5c8d270f062543f9e43cd3abfe0789f",
+      "role": "FSB.04f M3(C), commutant and CP-sensitive finite orientation"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_spectral_coordinate_minimality.packet.json",
+      "sha256": "0c04dc7f1d216099b03930b7f98957b1e12bcc6f618c40529e64da067b453caf",
+      "role": "FSB.04g nine-value minimality boundary"
+    }
+  ],
+  "read_only_repository_heads": {
+    "mtt-preprojection-repair-calculus": "8bbde0cd96dbcc85f51bf43427cc74ce1aa034af",
+    "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706"
+  },
+  "curated_authorities": [
+    {
+      "id": "A46",
+      "state": "established",
+      "sha256": "7413bbfac4fd741ab024a056d31f21a3faa6a959101253e8f41df8afd4358226",
+      "scope": "48-state H_chiral=C3_family tensor H16 representation"
+    },
+    {
+      "id": "A47",
+      "state": "established",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1",
+      "scope": "faithful low-energy gauge group modulo Z6"
+    },
+    {
+      "id": "A50",
+      "state": "established",
+      "sha256": "327fa5b3468908fef396f4d76dc3e0d98f993d570510d08765dc1bb157be2fd1",
+      "scope": "shared hypercharge circle and neutral N^c line"
+    }
+  ],
+  "open_blockers": [
+    "B.ACTION.01",
+    "B.SM.02"
+  ],
+  "boundary": {
+    "finite_algebraic_action_object_can_be_constructed": true,
+    "physical_same_root_selection_is_not_proved": true,
+    "finite_unit_normalization_is_not_the_physical_HYM_density": true,
+    "overall_physical_action_scale_is_not_selected": true,
+    "Lorentz_Higgs_Yukawa_typing_is_not_proved": true,
+    "strict_charged_magnitude_values_remaining": 9,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}
