@@ -1,0 +1,85 @@
+{
+  "schema": "boe.mtt.direct-one-constraint-multiplier-source-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repository_head_before": "02732cbbb52f395a166d58abcaaebdc8d6ac49ba",
+  "local_sources": [
+    {
+      "path": "AssociatedMatterProductDiracBVExternalizationCompilerTheorem_v1.md",
+      "sha256": "564ed4fc0aee62f342d9074d2e8ac429bab716d350ac8ee0ffd0421e60a0c8f6",
+      "role": "CBF.T13 product-Dirac compiler and 80-to-48 witness"
+    },
+    {
+      "path": "q79_bv4_associated_matter_externalization.packet.json",
+      "sha256": "1ceaafcabb8cd0b31045a7fca4d919a0791418cbf88ec9868175b5764ec934d4",
+      "role": "exact D_plus and self-adjoint internal operator certificate"
+    },
+    {
+      "path": "ProviderNeutralProjectionSourceQuotientAndQ79NecessityTheorem_v1.md",
+      "sha256": "0f4e684b6b175423e1a253023c2dbd1b6828a595fa0186feba9495b0ac66e94f",
+      "role": "CBF.T14 provider-neutral source interface and no-source/no-values boundary"
+    },
+    {
+      "path": "provider_neutral_projection_source_quotient.packet.json",
+      "sha256": "b051b722cbee420e17a965499f943a166b231cb9dee4233dc0542e2f0f957ab7",
+      "role": "provider-neutral exact classification packet"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+      "sha256": "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+      "role": "H4-T9 universal multiplier action and repair-normal theorem"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "H4-T10 field-only cyclic action and signed/positive distinction"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1.md",
+      "sha256": "ce8cd73313df474d9619e9111caac25c3931f9d01a114c3b00e0549893fd24d6",
+      "role": "H4-T15 multiplier/cotangent externalization boundary"
+    }
+  ],
+  "curated_authorities": [
+    {
+      "id": "A18",
+      "state": "conditional",
+      "sha256": "7287df306cc3832fb1cccbed43f8794eaa44576799f46fe526f882df2463a1a3",
+      "scope": "conditional quantization and finite-domain QFT"
+    },
+    {
+      "id": "A46",
+      "state": "established",
+      "sha256": "7413bbfac4fd741ab024a056d31f21a3faa6a959101253e8f41df8afd4358226",
+      "scope": "H_chiral=C3_family tensor H16, dimension 48, with exact anomalies"
+    },
+    {
+      "id": "A47",
+      "state": "established",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1",
+      "scope": "faithful low-energy gauge group modulo Z6"
+    },
+    {
+      "id": "A50",
+      "state": "established",
+      "sha256": "327fa5b3468908fef396f4d76dc3e0d98f993d570510d08765dc1bb157be2fd1",
+      "scope": "unique anomaly-free shared hypercharge circle at profile tier"
+    }
+  ],
+  "open_blockers": [
+    "B.ACTION.01",
+    "B.OP.01",
+    "B.SM.02"
+  ],
+  "boundary": {
+    "one_constraint_source_is_a_minimal_conditional_reconstruction": true,
+    "four_copy_multiplicity_is_not_claimed_as_an_independent_MTT_prediction": true,
+    "multiplier_action_is_not_retyped_as_the_selected_physical_BV_action": true,
+    "physical_dimensionful_scale_is_not_selected": true,
+    "nonlinear_family_breaking_values_are_not_selected": true,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

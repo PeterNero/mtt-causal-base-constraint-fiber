@@ -212,6 +212,23 @@ anomaly, shared-circle and `Z6` rows. This is a universal compiler, not the
 selected q79 operator: the full physical `BV4` packet and all interaction
 values remain open.
 
+The fifteenth theorem supplies an exact direct source for that free witness.
+For one family-blind coisometric residual
+
+```text
+J : C^4 tensor H16 -> H16,
+```
+
+rank-nullity gives `ker J=C^3 tensor H16`, and three retained family copies
+occur exactly at source multiplicity four within this one-residual-copy class.
+Every normalized such `J` is `U(4)`-equivalent to `[I16 0 0 0]`. Its H4-T9
+multiplier Hessian is precisely the existing `80 x 80` CBF.T13 operator, its
+normal square gives the positive repair Hessian, and the exact repair
+semigroup converges to the 48-state projector. This is a conditional reverse-
+source result, not an independent prediction that nature starts with four
+copies. Its residual `U(3)` symmetry also proves a no-go: the free source alone
+cannot split family masses or select mixing and CP data.
+
 ## Run the proof
 
 ```powershell
@@ -276,6 +293,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `ProviderNeutralProjectionSourceQuotientAndQ79NecessityTheorem_v1.md`:
   provider-neutral source quotient, exact non-q79 80-to-48 witness, strict q79
   necessity classification and no-source/no-values countermodels.
+- `MinimalOneConstraintMultiplierSourceAndThreeFamilyIndexTheorem_v1.md`:
+  exact minimal one-constraint family index, unitary source classification,
+  multiplier/repair identity, projection flow and free-family no-go.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -309,6 +329,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `provider_neutral_physical_source_contract.schema.json`: machine-readable
   source interface shared by q79, direct-repair, finite-spectral and certified
   universality-class providers.
+- `direct_one_constraint_multiplier_source_lock.json`: pinned CBF.T13/T14,
+  H4-T9/T10/T15 and A46/A47/A50 source boundary for the direct source theorem.
+- `direct_one_constraint_multiplier_source_contract.schema.json`: strict
+  conditional contract for one normalized four-to-one typed residual.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -347,6 +371,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   Dirac, 48-state representation, action/pairing and complement certificate.
 - `provider_neutral_projection_source_quotient.packet.json`: generated source-
   quotient, q79 classification, equivalence witness and value no-go certificate.
+- `direct_one_constraint_multiplier_source.packet.json`: generated exact
+  family-index, action/repair, flow, descent and parameter-boundary certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -408,12 +434,22 @@ values cannot be reconstructed from the retained free kernel alone. A direct
 repair/action or finite spectral source may bypass q79 geometry only by filling
 the same selected action, synthesis, normalization and BV obligations.
 
+`CBF.T15` now fills the free direct-source subclause. It proves that the
+CBF.T13 `80 -> 48` operator is the normalized H4-T9 multiplier Hessian for the
+minimal one-residual-copy, family-blind source compatible with the A46 target.
+Its repair flow converges exactly to the retained carrier, with no continuous
+dimensionless matrix parameter after source-frame quotient. This does not
+promote a physical source: the four-copy premise is reverse-derived from A46,
+one overall physical scale is unselected, and the exact `U(3)` stabilizer
+forbids family splitting until selected nonlinear same-source tensors enter.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
 passes `71/71` checks and its independent verifier passes `47/47`. The
 provider-neutral packet passes `40/40` checks and its independent verifier
-passes `50/50`. The canonical suite passes 63 unit tests. The
+passes `50/50`. The direct multiplier-source packet passes `57/57` checks and
+its independent verifier passes `68/68`. The canonical suite passes 68 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

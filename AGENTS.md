@@ -9,7 +9,8 @@ paper, note, packet name or search hit.
    first applicable live blocker.
 2. Load the latest applicable handoff. The current endpoint-integration handoff is
    `716be879-715b-4416-be42-2c096d3d9b0b`; the provider-neutral source handoff is
-   `f8fdd194-ed79-45af-a124-5c6219a6dce1`; the associated-matter BV4 handoff is
+   `f8fdd194-ed79-45af-a124-5c6219a6dce1`; the direct multiplier-source handoff is
+   `b8d489d8-41ea-4481-9c15-b31904f215af`; the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is
    `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`. Compare its model hash with the live

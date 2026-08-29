@@ -9,6 +9,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Endpoint-factorization handoff: `716be879-715b-4416-be42-2c096d3d9b0b`
 - Associated-matter BV4 handoff: `7a343059-b0e9-44fc-a725-733048697896`
 - Provider-neutral source/q79 classification handoff: `f8fdd194-ed79-45af-a124-5c6219a6dce1`
+- Direct one-constraint multiplier-source handoff: `b8d489d8-41ea-4481-9c15-b31904f215af`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
@@ -380,3 +381,25 @@ charter tests. A direct repair/action source, finite spectral/action source or
 proved universality class may bypass six-dimensional q79 geometry, but none
 may bypass selected action, normalization, modes and held-out comparison.
 Physical acceptance remains `0/3` packets and `0/7` rows.
+
+`MinimalOneConstraintMultiplierSourceAndThreeFamilyIndexTheorem.v1` now closes
+the free direct-source subclause behind the CBF.T13 witness. Under the explicit
+one-residual-copy and family-blind hypothesis,
+
+```text
+J : C^m tensor H16 -> H16
+```
+
+has `(m-1)` family copies in its kernel, so the A46 three-family carrier forces
+`m=4`. All normalized sources in this class are `U(4)`-equivalent. At the
+canonical representative, the H4-T9 multiplier Hessian is exactly the prior
+`80 x 80` operator, its source normal square is the positive repair Hessian,
+and `T_r=P+rQ` contracts the source exactly onto the rank-48 projector.
+
+This advances source provenance without changing physical acceptance. It is a
+reverse-minimality theorem conditional on the A46 target, not an independent
+prediction of four primordial copies. The free source retains a full `U(3)`
+family stabilizer, whose commutant is scalar; therefore it cannot emit family
+mass splittings, CKM/PMNS orientation or CP data. One physical scale and the
+selected nonlinear family/sector values remain open, as do `B.ACTION.01`,
+`B.OP.01` and `B.SM.02`.

@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:direct-one-constraint-multiplier-source:v1",
+  "title": "Direct one-constraint multiplier source contract",
+  "description": "A provider-neutral benchmark/conditional source that realizes the 48-state free associated-matter kernel as the index of one family-blind coisometric closure constraint.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "source",
+    "constraint",
+    "actions",
+    "descent",
+    "externalization",
+    "parameter_ledger",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.direct-one-constraint-multiplier-source.v1"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "root_source_sha256",
+        "provider_kind",
+        "status",
+        "one_family_dimension",
+        "source_multiplicity",
+        "residual_multiplicity"
+      ],
+      "properties": {
+        "root_source_sha256": { "$ref": "#/$defs/sha256" },
+        "provider_kind": { "const": "direct_closure_repair" },
+        "status": { "enum": ["benchmark", "conditional", "accepted"] },
+        "one_family_dimension": { "const": 16 },
+        "source_multiplicity": { "const": 4 },
+        "residual_multiplicity": { "const": 1 }
+      }
+    },
+    "constraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operator",
+        "family_blind",
+        "surjective",
+        "coisometric",
+        "kernel_dimension",
+        "cokernel_dimension",
+        "unitary_equivalence_certificate"
+      ],
+      "properties": {
+        "operator": { "$ref": "#/$defs/artifact" },
+        "family_blind": { "const": true },
+        "surjective": { "const": true },
+        "coisometric": { "const": true },
+        "kernel_dimension": { "const": 48 },
+        "cokernel_dimension": { "const": 0 },
+        "unitary_equivalence_certificate": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "actions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "multiplier_action",
+        "multiplier_hessian",
+        "positive_repair_cost",
+        "repair_hessian",
+        "repair_flow"
+      ],
+      "properties": {
+        "multiplier_action": { "$ref": "#/$defs/artifact" },
+        "multiplier_hessian": { "$ref": "#/$defs/artifact" },
+        "positive_repair_cost": { "$ref": "#/$defs/artifact" },
+        "repair_hessian": { "$ref": "#/$defs/artifact" },
+        "repair_flow": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "descent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gauge_intertwining",
+        "shared_circle_intertwining",
+        "family_stabilizer",
+        "family_universality_no_go"
+      ],
+      "properties": {
+        "gauge_intertwining": { "$ref": "#/$defs/artifact" },
+        "shared_circle_intertwining": { "$ref": "#/$defs/artifact" },
+        "family_stabilizer": { "const": "U(3)" },
+        "family_universality_no_go": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "externalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amk_compiler",
+        "product_dirac_compiler",
+        "free_bv_status"
+      ],
+      "properties": {
+        "amk_compiler": { "$ref": "#/$defs/artifact" },
+        "product_dirac_compiler": { "$ref": "#/$defs/artifact" },
+        "free_bv_status": { "enum": ["benchmark", "conditional", "accepted"] }
+      }
+    },
+    "parameter_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "continuous_dimensionless_parameters_after_equivalence",
+        "unselected_dimensionful_scales",
+        "unselected_nonlinear_flavor_values"
+      ],
+      "properties": {
+        "continuous_dimensionless_parameters_after_equivalence": { "const": 0 },
+        "unselected_dimensionful_scales": { "const": 1 },
+        "unselected_nonlinear_flavor_values": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "claim_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "physical_source_selected",
+        "physical_rows_accepted",
+        "four_copy_origin_independently_derived",
+        "family_magnitudes_derived"
+      ],
+      "properties": {
+        "physical_source_selected": { "const": false },
+        "physical_rows_accepted": { "const": 0 },
+        "four_copy_origin_independently_derived": { "const": false },
+        "family_magnitudes_derived": { "const": false }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path_or_uri", "sha256", "status"],
+      "properties": {
+        "path_or_uri": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "status": { "enum": ["benchmark", "conditional", "accepted", "open"] }
+      }
+    }
+  }
+}

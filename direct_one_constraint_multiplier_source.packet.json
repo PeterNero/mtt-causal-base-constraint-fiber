@@ -1,0 +1,329 @@
+{
+  "actions": {
+    "closure_residual": "Phi(a)=J a",
+    "coherent_projector": "P=I-Q",
+    "critical_locus": "ker(J) x {0} = C3 tensor H16",
+    "positive_repair_cost": "R(a)=1/2 ||J a||^2",
+    "repair_hessian": "Q=J*J",
+    "sample": {
+      "multiplier_action": 560,
+      "twice_repair_cost": 2840
+    },
+    "signed_hessian": "D_J=[[0,J*],[J,0]]",
+    "signed_multiplier_action": "S_mult(a,lambda)=Re<lambda,J a>",
+    "signed_spectrum": {
+      "+1": 16,
+      "-1": 16,
+      "0": 48
+    }
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 57,
+    "total": 57
+  },
+  "checks": {
+    "A46_Witten_parity_is_even": true,
+    "A46_anomaly_rows_remain_zero": true,
+    "A47_global_group_is_preserved": true,
+    "A50_shared_circle_weights_are_preserved": true,
+    "Hadamard_source_frame_is_orthogonal": true,
+    "J_annihilates_P": true,
+    "J_has_rank_16": true,
+    "J_is_coisometric": true,
+    "J_is_surjective": true,
+    "J_star_is_injective": true,
+    "P_and_Q_are_complementary": true,
+    "P_is_rank_48_projector": true,
+    "Q_is_rank_16_projector": true,
+    "T13_characterwise_index_matches": true,
+    "T13_witness_has_same_dimensions": true,
+    "T13_witness_has_same_kernel_and_cokernel": true,
+    "T13_witness_has_same_spectrum_and_gap": true,
+    "T14_provider_interface_accepts_direct_repair": true,
+    "contract_schema_freezes_m4_to_m1": true,
+    "contract_schema_preserves_nonpromotion": true,
+    "critical_kernel_sample_satisfies_Ja_zero": true,
+    "family_commutant_has_dimension_one": true,
+    "family_cycle_intertwines_multiplier_hessian": true,
+    "family_cycle_preserves_J": true,
+    "family_cycle_preserves_P": true,
+    "family_natural_linear_operator_is_scalar": true,
+    "multiplicity_three_kernel_occurs_only_at_m4_in_test_range": true,
+    "multiplier_hessian_is_symmetric": true,
+    "multiplier_hessian_kernel_is_48": true,
+    "multiplier_hessian_obeys_D_cubed_equals_D": true,
+    "multiplier_hessian_rank_is_32": true,
+    "multiplier_hessian_square_has_normal_blocks": true,
+    "multiplier_hessian_trace_is_zero": true,
+    "no_observed_values_enter_source": true,
+    "nonlinear_family_values_remain_unselected": true,
+    "physical_packet_acceptance_is_unchanged": true,
+    "physical_row_acceptance_is_unchanged": true,
+    "physical_scale_remains_unselected": true,
+    "rank_nullity_formula_holds_for_all_declared_m": true,
+    "repair_flow_fixes_coherent_projector": true,
+    "repair_flow_scales_residual": true,
+    "repair_flow_semigroup_is_exact": true,
+    "repair_flow_zero_limit_is_P": true,
+    "sample_multiplier_action_is_exact": true,
+    "sample_repair_cost_is_exact": true,
+    "shared_circle_commutes_with_multiplier_hessian": true,
+    "shared_circle_intertwines_J": true,
+    "signed_spectrum_multiplicities_are_16_48_16": true,
+    "source_hash::../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1.md": true,
+    "source_hash::../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md": true,
+    "source_hash::../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md": true,
+    "source_hash::AssociatedMatterProductDiracBVExternalizationCompilerTheorem_v1.md": true,
+    "source_hash::ProviderNeutralProjectionSourceQuotientAndQ79NecessityTheorem_v1.md": true,
+    "source_hash::provider_neutral_projection_source_quotient.packet.json": true,
+    "source_hash::q79_bv4_associated_matter_externalization.packet.json": true,
+    "spread_source_is_coisometric": true,
+    "spread_source_is_unitarily_equivalent_to_J0": true
+  },
+  "claim_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_OP_01_closed": false,
+    "B_SM_02_closed": false,
+    "family_magnitudes_derived": false,
+    "field_only_cyclic_action_selected": false,
+    "four_copy_origin_independently_derived": false,
+    "physical_scale_selected": false,
+    "physical_source_selected": false
+  },
+  "claim_id": "CBF.T15",
+  "contract_schema_sha256": "f12be8a00bae38a6d838e0101b8b1362c0bc4c2f592ffa7af0aa6a7f966cf380",
+  "date": "2026-08-29",
+  "decision": "MINIMAL_FREE_MATTER_DIRECT_SOURCE_CLASS_CLOSED_PHYSICAL_SOURCE_OPEN",
+  "descent": {
+    "family_commutant_dimension": 1,
+    "flavor_no_go": "every source-natural linear family operator is scalar",
+    "free_family_stabilizer": "U(3)",
+    "gauge_group": "(SU3 x SU2 x U1Y)/Z6",
+    "kernel_representation": "I3_family tensor rho16",
+    "shared_circle_weights_6Y": [
+      1,
+      -4,
+      2,
+      -3,
+      6,
+      0
+    ],
+    "three_family_anomalies": {
+      "SU2_squared_U1_twice_Dynkin": 0,
+      "SU3_cubic": 0,
+      "SU3_squared_U1_twice_Dynkin": 0,
+      "U1_cubic": 0,
+      "gravitational_U1": 0,
+      "weak_doublet_count": 12
+    }
+  },
+  "externalization": {
+    "T13_product_dimension": 160,
+    "T13_retained_product_dimension": 96,
+    "characterwise_index": "3[H16]",
+    "free_associated_matter_source_subclause": "CLOSED_AT_CONDITIONAL_BENCHMARK_TIER",
+    "internal_operator_equals_T13_D_X": true,
+    "physical_BV_externalization": "OPEN"
+  },
+  "frontier_delta": {
+    "after": "the matrix is the unique normalized multiplier Hessian of the minimal one-constraint family-blind source class and its repair flow converges to the A46 carrier",
+    "before": "CBF.T13's 80-to-48 matrix was an exact compiler witness without an upper closure-action origin",
+    "remaining": "selected nonlinear cyclic source, physical scale, transferred products and BV pushforward"
+  },
+  "minimality_theorem": {
+    "independent_prediction_of_four_copies": false,
+    "kernel_family_copies_formula": "m-1",
+    "logical_direction": "A46 three-family target plus one family-blind residual copy implies the minimal four-copy source",
+    "multiplicity_table": [
+      {
+        "family_copies_in_kernel": 0,
+        "kernel_dimension": 0,
+        "residual_dimension": 16,
+        "source_dimension": 16,
+        "source_multiplicity": 1
+      },
+      {
+        "family_copies_in_kernel": 1,
+        "kernel_dimension": 16,
+        "residual_dimension": 16,
+        "source_dimension": 32,
+        "source_multiplicity": 2
+      },
+      {
+        "family_copies_in_kernel": 2,
+        "kernel_dimension": 32,
+        "residual_dimension": 16,
+        "source_dimension": 48,
+        "source_multiplicity": 3
+      },
+      {
+        "family_copies_in_kernel": 3,
+        "kernel_dimension": 48,
+        "residual_dimension": 16,
+        "source_dimension": 64,
+        "source_multiplicity": 4
+      },
+      {
+        "family_copies_in_kernel": 4,
+        "kernel_dimension": 64,
+        "residual_dimension": 16,
+        "source_dimension": 80,
+        "source_multiplicity": 5
+      },
+      {
+        "family_copies_in_kernel": 5,
+        "kernel_dimension": 80,
+        "residual_dimension": 16,
+        "source_dimension": 96,
+        "source_multiplicity": 6
+      }
+    ],
+    "one_family_dimension": 16,
+    "residual_multiplicity": 1,
+    "three_family_source_multiplicity": 4
+  },
+  "next_source_object": {
+    "first_decisive_output": "one held-out source-normalized interaction or threshold scalar",
+    "form": "Phi(a)=J a+B2(a,a)+B3(a,a,a)+... or an equivalent field-only cyclic action",
+    "must_break": "free U(3) family stabilizer through selected noncommuting family data",
+    "must_preserve": [
+      "A47 gauge group",
+      "A50 shared circle",
+      "same-root provenance",
+      "cyclic or BV action identity"
+    ]
+  },
+  "parameter_ledger": {
+    "continuous_dimensionless_matrix_parameters_after_equivalence": 0,
+    "note": "The count nine follows the current B.SM.02 charged-row frontier and is not derived by this theorem.",
+    "observed_values_used": 0,
+    "postprojection_charge_choices": 0,
+    "unselected_dimensionful_scales": 1,
+    "unselected_nonlinear_family_or_sector_values": 9
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "repair_flow": {
+    "composition": "T_r T_s=T_(rs)",
+    "equation": "da/dt=-Q a",
+    "formal_operator": "T_r=P+rQ",
+    "limit": "T_0=P",
+    "sample_product": [
+      1,
+      6
+    ],
+    "sample_r": [
+      1,
+      2
+    ],
+    "sample_s": [
+      1,
+      3
+    ],
+    "solution": "a(t)=P a(0)+exp(-t) Q a(0)"
+  },
+  "schema": "boe.mtt.direct-one-constraint-multiplier-source.v1",
+  "source_lock_sha256": "2aa6ec3ebdbee04001209a867c58a42b32d0423fedc87230ea7b880f116eac9d",
+  "theorem_sha256": "bdd1dd7054ee345c9b0dc3f89ef30f5131fd16ffa8e011fcc5a862d26e70ac96",
+  "tier": "EXACT_GENERAL + EXACT_BENCHMARK + CONDITIONAL_DIRECT_SOURCE_RECONSTRUCTION",
+  "unitary_source_class": {
+    "all_unit_covectors_equivalent_under": "U(4)",
+    "canonical_J": "[I16 0 0 0]",
+    "continuous_dimensionless_parameters_after_equivalence": 0,
+    "nontrivial_covector": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "source_frame": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    ]
+  }
+}

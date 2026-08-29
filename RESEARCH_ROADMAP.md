@@ -274,6 +274,28 @@ them through the provider-neutral quotient. Agreement of the complete source
 packet would establish a universality result; agreement of dimensions or
 indices alone would not.
 
+`CBF.T15` closes `PN.01` only for the normalized free associated-matter
+subclass. The residual `Phi(a)=J a` has a stationary critical locus, exact
+multiplier action, positive repair normal and rank-48 limiting projector. It
+also proves the conditional source-index statement `4 source copies - 1
+residual copy = 3 retained family copies`. This does not close physical
+`PN.01`: selection of the source class and its physical normalization remain
+open.
+
+The next direct-source frontier is therefore one nonlinear same-root object,
+not another free matrix:
+
+1. construct `Phi(a)=J a+B2(a,a)+B3(a,a,a)+...` or an equivalent field-only
+   cyclic action with the present Hessian;
+2. prove its higher tensors are gauge and shared-circle invariant but break
+   the free `U(3)` family stabilizer through selected noncommuting data;
+3. derive its physical scale from the causal/action normalization;
+4. emit one held-out source-normalized interaction or threshold scalar; and
+5. externalize the same tensors through the CBF.T13/T14 BV contract.
+
+Until item 4 succeeds, the result remains an exact structural source compiler
+rather than true Standard Model value closure.
+
 ## Step 5: Constraint curvature and gauge stabilizer
 
 **State:** abstract stabilizer/faithful-quotient descent closed; physical
