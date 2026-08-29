@@ -904,3 +904,81 @@ CBF.T26 repair minimum. It does not by itself emit family hierarchy or a
 dimensionful Higgs/Yukawa magnitude. Strict values, signed physical action,
 held-out prediction, `B.ACTION.01` and `B.SM.02` remain open; physical
 acceptance remains `0/3` packets and `0/7` rows.
+
+`FiniteDiracOperatorSpaceRepairHessianSemigroupAndProfileBoundaryTheorem_v1.md`
+(`CBF.T28`) closes the full finite operator-space linearized repair problem.
+On the real self-adjoint `96 x 96` operator space, the signed Jacobian at the
+closure involution is
+
+```text
+J0(X)=D0 X+X D0,
+```
+
+with spectrum `{-2^2304,0^4608,+2^2304}`. Its square is exactly the positive
+repair Hessian, with spectrum `{0^4608,4^4608}`, and generates the selected
+contractive normal repair semigroup. This proves the finite tangent/normal
+Morse-Bott split and repair flow. It does not select a scalar physical action
+profile or a nonzero value.
+
+`CanonicalDiracDefectCubicVariationalActionAndKODoublingCancellationTheorem_v1.md`
+(`CBF.T29`) integrates that signed Jacobian exactly:
+
+```text
+S_sig(D)=tau_96(D^3/3-D),
+grad S_sig(D)=D^2-I96.
+```
+
+The Hessian of `S_sig` is `J0`, so its square is the CBF.T28 positive repair
+Hessian. The KO6-real doubled family has vanishing odd trace at every source
+coordinate, hence `S_sig(D_phys(t))=0`. A complete classification within the
+canonical `I96,D0` two-anchor class proves that every action preserving the
+exact square bridge also cancels on the family. The signed finite variational
+source is closed, but a nonzero scalar value does not come from that odd trace.
+
+`KO6PhysicalPolarizationFermionicDeterminantAndNeutralChamberValueSelectionTheorem_v1.md`
+(`CBF.T30`) closes the next finite value tier from the already selected
+physical Grassmann fermion action. With
+
+```text
+B(t)=P_chi^- D_phys(t) P_chi^+ : H_chi^+ -> H_chi^-,
+dim H_chi^+=dim H_chi^-=48,
+```
+
+exact restriction gives three positive branches of multiplicity `16` and
+
+```text
+det(B(t)^*B(t))=[(1-2t)(1-t)(1+t)]^32.
+```
+
+KO chirality selects the physical chiral block; it is not used as statistics.
+The fermionic determinant sign comes from the CBF.T25 Grassmann fields. The
+invertible component containing the selected neutral basepoint `t=0` is
+`(-1,1/2)`. Its normalized finite Gaussian has one strict global minimum,
+
+```text
+t_*=(1-sqrt(13))/6=-0.4342585459106649...,
+```
+
+which emits the exact dimensionless response factors
+
+```text
+sigma_-4=(2+sqrt(13))/3 =1.8685170918213298...,
+sigma_-2=(5+sqrt(13))/6 =1.4342585459106649...,
+sigma_+2=(7-sqrt(13))/6 =0.5657414540893351....
+```
+
+This is the first nonzero source-selected finite physical-fermion coordinate
+and value triplet in the CBF chain. It uses zero observed construction inputs,
+zero fitted coefficients and zero new continuous parameters. A later common
+scale `h` would give conditional values `m_lambda=h sigma_lambda`, but `h` and
+the sector/generation map are not selected here.
+
+The physical boundary is exact rather than rhetorical. For an external
+squared mode `x=p^2/h^2`, the determinant profile has an `x=0` stationary
+condition `3t^2-t-1=0`, while its large-`x` leading condition is `t=1/3`.
+Therefore `t_*` is not a universal stationary point of the full spacetime
+determinant. The external spectral measure, renormalization and counterterms,
+bosonic action, absolute scale and measured-sector identification remain open.
+Physical q79 acceptance consequently remains `0/3` packets and `0/7` rows;
+the finite determinant profile, chamber coordinate and three dimensionless
+values must nevertheless no longer be reported as open.

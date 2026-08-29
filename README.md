@@ -536,6 +536,18 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   full-spectrum and spectral-functional classifier.
 - `verify_finite_dirac_spectral_action_classification.py`: independent CBF.T27
   factorization, projector, multiplicity and action-profile reconstruction.
+- `build_finite_dirac_operator_repair_semigroup.py`: deterministic CBF.T28
+  operator-space Hessian and repair-semigroup packet builder.
+- `verify_finite_dirac_operator_repair_semigroup.py`: independent CBF.T28
+  tangent/normal, spectrum and semigroup reconstruction.
+- `build_finite_dirac_cubic_variational_action.py`: deterministic CBF.T29
+  signed cubic action, Morse-Bott and KO6-cancellation packet builder.
+- `verify_finite_dirac_cubic_variational_action.py`: independent CBF.T29
+  action variation, Hessian square and no-go reconstruction.
+- `build_ko6_fermionic_determinant_value_selection.py`: deterministic CBF.T30
+  chiral determinant, neutral chamber and finite value packet builder.
+- `verify_ko6_fermionic_determinant_value_selection.py`: independent CBF.T30
+  `96D` source reconstruction, determinant and value-boundary verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
 
 ## Kernel workflow
@@ -910,6 +922,56 @@ profile-free value search cannot advance the physical frontier. The closure
 basepoint `t=0` is still a nonzero operator with spectrum
 `{-1^48,+1^48}`, but it does not emit family hierarchy.
 
+`CBF.T28` places this finite family on the full real self-adjoint operator
+space. The closure-repair Hessian is the square of the signed Jacobian at
+`D0`; its tangent kernel has dimension `4608`, its normal image has dimension
+`4608`, and the positive repair semigroup is exact. This closes the selected
+finite repair dynamics without mistaking its positive normal square for the
+physical signed fermion action.
+
+`CBF.T29` then integrates the exact signed gradient on operator space:
+
+```text
+S_sig(D)=tau_96(D^3/3-D),
+grad S_sig(D)=D^2-I96.
+```
+
+Its Hessian squares to the CBF.T28 repair Hessian. KO6 doubling cancels every
+odd trace, including the pullback of `S_sig` along `D_phys(t)`. The theorem
+therefore closes the finite cubic variational source and proves why it cannot
+by itself select a nonzero scalar coordinate.
+
+`CBF.T30` uses the selected physical Grassmann fermion action rather than
+inventing another scalar trace profile. Chiral restriction gives
+
+```text
+B(t)=P_chi^- D_phys(t) P_chi^+,
+det(B(t)^*B(t))=[(1-2t)(1-t)(1+t)]^32.
+```
+
+The invertible component containing the selected neutral basepoint is
+`(-1,1/2)`. Its normalized finite Gaussian profile has the unique minimum
+
+```text
+t_*=(1-sqrt(13))/6=-0.4342585459106649...,
+```
+
+and emits the exact positive dimensionless factors
+
+```text
+(2+sqrt(13))/3 = 1.8685170918213298...,
+(5+sqrt(13))/6 = 1.4342585459106649...,
+(7-sqrt(13))/6 = 0.5657414540893351....
+```
+
+These are the first source-selected nonzero finite physical-fermion response
+values in the CBF chain, obtained with no observed target and no fitted
+coefficient. They are not yet Standard-Model masses. A direct external-mode
+calculation proves that the full four-dimensional determinant does not retain
+the same stationary coordinate mode by mode; the external spectral measure,
+renormalization, bosonic action, sector map and common dimensionful scale must
+still be selected before phenomenological promotion.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -932,15 +994,18 @@ passes `86/86`. The direct finite-source continuum packet passes `67/67`
 checks and its independent verifier passes `102/102`. The direct Dirac defect-
 repair packet passes `50/50` checks and its independent verifier passes
 `87/87`. The finite Dirac spectral-classification packet passes `63/63`
-checks and its independent verifier passes `123/123`. The canonical suite
-passes 141
-unit tests. The
+checks and its independent verifier passes `123/123`. The finite repair-
+semigroup packet passes `96/96` checks and its independent verifier passes
+`113/113`. The signed cubic-action packet passes `148/148` checks and its
+independent verifier passes `179/179`. The KO6 determinant value-selection
+packet passes `107/107` checks and its independent verifier passes `131/131`.
+The canonical suite passes 166 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete
 operation and Stasheff tables from `m5` onward, the selected HYM endpoint and
-its finite comparison, numerical values, and full physical-action promotion
-are not. A direct finite-source causal continuum realization, its normalized
-quartic repair action and complete finite spectral family are now closed and
-must not be reopened as an HYM-projector, signed-action prerequisite or
-profile-free value search.
+its finite comparison, final dimensionful observables, and full physical-action
+promotion are not. A direct finite-source causal continuum realization, its
+normalized quartic repair action, complete finite spectral family and finite
+Grassmann-Gaussian value selector are now closed and must not be reopened as
+an HYM-projector, signed-action prerequisite or profile-free value search.

@@ -107,6 +107,15 @@
     "exact three-branch signed and squared 96-dimensional Dirac spectrum",
     "universal normalized scalar spectral-functional classification",
     "profile-independent polynomial and heat stationary-coordinate no-go",
+    "exact self-adjoint operator-space repair Hessian and positive repair semigroup",
+    "exact tangent-normal Morse-Bott split for the finite closure involution",
+    "canonical signed cubic variational source with gradient D squared minus identity",
+    "exact square bridge from the signed Hessian to the positive repair Hessian",
+    "KO6 odd-trace cancellation and canonical two-anchor action no-go",
+    "exact KO6 physical chiral determinant and finite Grassmann-Gaussian profile",
+    "neutral invertible-chamber selection of one nonzero algebraic coordinate",
+    "three exact dimensionless finite physical-fermion response factors and ratios",
+    "external spectral-mode nonuniversality obstruction to premature four-dimensional promotion",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -152,6 +161,10 @@
     "selection of a nonzero physical source coordinate by the unshifted direct defect square",
     "selection of the physical spectral-action profile by the normalized finite trace",
     "interpretation of a profile-dependent stationary coordinate as a measured Yukawa value",
+    "identification of the finite KO6 determinant coordinate with the renormalized four-dimensional vacuum",
+    "selection of the external spectral measure or renormalization scheme",
+    "identification of the three finite determinant branches with measured fermion generations",
+    "derivation of a dimensionful mass from the finite determinant without a physical scale primitive",
     "identification of classical projective pressure normalization with a measured physical scale",
     "selection of the physical action coefficient by the normal-frame quotient",
     "identification of the normalized finite Weyl trace with the physical BV density",
@@ -198,7 +211,10 @@
     "UpperTensorTotalizationSharedLineSuperchargeSelectionTheorem_v1.md",
     "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md",
     "CanonicalNormalizedDiracSquareDefectRepairActionAndValueSelectionNoGoTheorem_v1.md",
-    "CanonicalFiniteDiracSpectralActionClassificationAndProfileSelectionNoGoTheorem_v1.md"
+    "CanonicalFiniteDiracSpectralActionClassificationAndProfileSelectionNoGoTheorem_v1.md",
+    "FiniteDiracOperatorSpaceRepairHessianSemigroupAndProfileBoundaryTheorem_v1.md",
+    "CanonicalDiracDefectCubicVariationalActionAndKODoublingCancellationTheorem_v1.md",
+    "KO6PhysicalPolarizationFermionicDeterminantAndNeutralChamberValueSelectionTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -227,7 +243,10 @@
     "upper_totalization_supercharge.packet.json",
     "direct_finite_source_continuum.packet.json",
     "direct_dirac_defect_repair_action.packet.json",
-    "finite_dirac_spectral_action_classification.packet.json"
+    "finite_dirac_spectral_action_classification.packet.json",
+    "finite_dirac_operator_repair_semigroup.packet.json",
+    "finite_dirac_cubic_variational_action.packet.json",
+    "ko6_fermionic_determinant_value_selection.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -256,7 +275,10 @@
     "python build_upper_totalization_supercharge_selection.py",
     "python build_direct_finite_source_continuum_realization.py",
     "python build_direct_dirac_defect_repair_action.py",
-    "python build_finite_dirac_spectral_action_classification.py"
+    "python build_finite_dirac_spectral_action_classification.py",
+    "python build_finite_dirac_operator_repair_semigroup.py",
+    "python build_finite_dirac_cubic_variational_action.py",
+    "python build_ko6_fermionic_determinant_value_selection.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -280,7 +302,10 @@
     "upper_totalization_supercharge_contract.schema.json",
     "direct_finite_source_continuum_contract.schema.json",
     "direct_dirac_defect_repair_action_contract.schema.json",
-    "finite_dirac_spectral_action_classification_contract.schema.json"
+    "finite_dirac_spectral_action_classification_contract.schema.json",
+    "finite_dirac_operator_repair_semigroup_contract.schema.json",
+    "finite_dirac_cubic_variational_action_contract.schema.json",
+    "ko6_fermionic_determinant_value_selection_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

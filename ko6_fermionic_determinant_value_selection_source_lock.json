@@ -1,0 +1,108 @@
+{
+  "schema": "boe.mtt.ko6-fermionic-determinant-value-selection-source-lock.v1",
+  "claim_id": "CBF.T30",
+  "date": "2026-08-30",
+  "handoff_id": "54b63b63-c684-4fb5-a34d-6cfc556f5a6c",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "5ec8ff91b2531c275ad8e3f1e6c5a19d13373adc",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "weyl_gram_closure_repair_source.packet.json",
+      "sha256": "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+      "role": "CBF.T20 selected P-X-Z-F3 primitive and affine source coordinate"
+    },
+    {
+      "path": "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
+      "sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+      "role": "CBF.T23 selected KO6-real odd finite Dirac-Yukawa family"
+    },
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "CBF.T23 machine-verified grading, reality and finite response"
+    },
+    {
+      "path": "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md",
+      "sha256": "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+      "role": "CBF.T25 physical first-order fermion action and classical BV sublane"
+    },
+    {
+      "path": "direct_finite_source_continuum.packet.json",
+      "sha256": "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+      "role": "CBF.T25 causal continuum realization and value boundary"
+    },
+    {
+      "path": "CanonicalFiniteDiracSpectralActionClassificationAndProfileSelectionNoGoTheorem_v1.md",
+      "sha256": "5b91050752dcc4c21376222df496bd26fbf37feaec15b0f1259536a512f641f3",
+      "role": "CBF.T27 exact spectrum and previously unselected determinant stationary roots"
+    },
+    {
+      "path": "finite_dirac_spectral_action_classification.packet.json",
+      "sha256": "54c268a9050872a73d37ca5be58b3cd3110dd8452ab74e4ed2b6680f93c9fdae",
+      "role": "CBF.T27 exact factorization and branch multiplicities"
+    },
+    {
+      "path": "CanonicalDiracDefectCubicVariationalActionAndKODoublingCancellationTheorem_v1.md",
+      "sha256": "d8d6ccdf71bad49bc922f2b44aaed8369bb80c1101130c2a636c91ddf2840336",
+      "role": "CBF.T29 exact signed source, KO6 cancellation and action-tier boundary"
+    },
+    {
+      "path": "finite_dirac_cubic_variational_action.packet.json",
+      "sha256": "335741ff66e0ead0c605cbe800494a9efbbfded608db5040601d7e42b99c1a51",
+      "role": "CBF.T29 exact finite signed-action packet"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_gaugeinsertedheatsupertracesecondvariation_or_commonschemethresholdpayload_v1.md",
+      "sha256": "04d64e6d6df86b259da0dfd41d0e67fd2ff7cc3c0fdde73ddfb6d986e150f76b",
+      "role": "A56 no-go preventing KO chirality from being relabelled as statistics grading"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_gaugekineticactionderivationandfrozenprofilevalidation_v1.md",
+      "sha256": "06907a775876de315ace9d001386a1bb6df1b2c00407475100f79b3867a6a1b6",
+      "role": "A73 determinant response rule and physical-selection boundary"
+    }
+  ],
+  "external_context": [
+    {
+      "url": "https://arxiv.org/abs/hep-th/0608221",
+      "role": "KO-dimension-six Lorentzian finite geometry and fermion-doubling resolution"
+    },
+    {
+      "url": "https://arxiv.org/abs/hep-th/0608226",
+      "role": "KO6 grading and physical fermionic Standard-Model action"
+    },
+    {
+      "url": "https://arxiv.org/abs/1903.04769",
+      "role": "invariant physical-subspace characterization and projection boundary"
+    }
+  ],
+  "boundary": {
+    "finite_KO6_physical_fermion_action_available": true,
+    "finite_chiral_Gaussian_profile_before": false,
+    "finite_chiral_Gaussian_profile_after": true,
+    "neutral_invertible_chamber_before": false,
+    "neutral_invertible_chamber_after": true,
+    "finite_Gaussian_stationary_coordinate_before": false,
+    "finite_Gaussian_stationary_coordinate_after": true,
+    "exact_dimensionless_branch_values_before": false,
+    "exact_dimensionless_branch_values_after": true,
+    "KO_chirality_used_as_statistics_grading": false,
+    "full_four_dimensional_fermion_determinant_selected": false,
+    "external_spectral_measure_selected": false,
+    "renormalization_scheme_selected": false,
+    "overall_dimensionful_scale_selected": false,
+    "branch_values_identified_with_SM_masses": false,
+    "full_B_ACTION_01_closed": false,
+    "full_B_SM_02_closed": false,
+    "held_out_physical_observable_emitted": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}
