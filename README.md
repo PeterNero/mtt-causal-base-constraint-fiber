@@ -276,6 +276,21 @@ pressure magnitudes are one unoriented classical projective class. Pressure
 therefore adds no continuous dimensionless family-shape knob; one overall
 physical action scale, density and the complete physical typing remain open.
 
+The eighteenth theorem removes an artificial part of that source obligation.
+A46/A47/A50 select the unique invariant neutral line `N^c subset H16`, but a
+unit frame in that line is conventional. The exact change
+
+```text
+(B,epsilon,n,lambda)->(aB,epsilon/a,an,lambda/a)
+```
+
+leaves both the contracted Hessian `H=epsilon o B` and the full affine action
+unchanged. Every nonzero one-dimensional factorization has one `GL(1,C)`
+orbit. A74 also fixes the finite family measure to `Tr/3`. The physical exit is
+therefore reduced to `H_eff=c_action H_resp` plus the same-root BV density,
+with the prospective coefficient formula
+`c_action=<H_resp,H_eff>_F/192`. The endpoint and coefficient remain open.
+
 ## Run the proof
 
 ```powershell
@@ -289,7 +304,8 @@ checks the all-arity source-promotion contract, executes the seven-row
 factorization/Feshbach witnesses, executes the associated-matter product-Dirac
 and `3 x 16` BV4 witness, independently reconstructs the closure-pressure
 family Hessian, reconstructs the affine zero-section action and its realified
-rank/projective-pressure boundaries, and runs the unit tests.
+rank/projective-pressure boundaries, reconstructs the normal-frame quotient,
+finite trace and action-scale residual, and runs the unit tests.
 
 The complete independent `m4` table and SI(4) replay is intentionally separate
 from the routine suite because it evaluates 3,869,500 admissible quadruples:
@@ -351,6 +367,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md`:
   zero-section necessity, graph-pullback action, nonzero-pressure projective
   uniqueness and exact finite realified action witness.
+- `NormalFrameQuotientAndActionIntertwinerMinimalDataTheorem_v1.md`: unique
+  invariant normal line, exact `GL(1,C)` factorization quotient, finite trace
+  uniqueness and minimal physical Hessian-intertwiner exit.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -397,6 +416,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   cotangent boundaries and FSB.04e/04f/04g response sources.
 - `affine_zero_section_action_contract.schema.json`: machine-readable closure
   graph, zero-section action, projective pressure and physical-typing contract.
+- `normal_frame_action_intertwiner_source_lock.json`: pinned CBF.T17,
+  A46/A47/A50, A74/A86, FSB.04e/04f and BV-density boundary sources.
+- `normal_frame_action_intertwiner_contract.schema.json`: machine-readable
+  normal-line quotient, finite trace and physical Hessian-intertwiner contract.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -442,6 +465,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   certificate.
 - `affine_zero_section_action.packet.json`: generated exact affine-action,
   graph-pullback, pressure-projective, real-rank and boundary certificate.
+- `normal_frame_action_intertwiner_reduction.packet.json`: generated exact
+  normal-frame quotient, trace, response-norm and scale-recovery certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `build_closure_pressure_family_hessian_activation.py`: deterministic CBF.T16
@@ -451,6 +476,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `build_affine_zero_section_action.py`: deterministic CBF.T17 packet builder.
 - `verify_affine_zero_section_action.py`: independent CBF.T17 action,
   realification and projective-pressure verifier.
+- `build_normal_frame_action_intertwiner_reduction.py`: deterministic CBF.T18
+  quotient, trace and endpoint-coefficient packet builder.
+- `verify_normal_frame_action_intertwiner_reduction.py`: independent CBF.T18
+  reconstruction and physical-boundary verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
 
 ## Kernel workflow
@@ -549,6 +578,20 @@ overall action normalization or density, and the finite polynomial is still
 assembled from locked sources rather than emitted by one selected physical
 endpoint. Physical acceptance remains unchanged.
 
+`CBF.T18` proves that the separately displayed normal covector and curvature
+factor are not independent source values. A46/A47/A50 select one invariant
+complex normal line; all nonzero frames and factorizations of the same
+contracted response lie in one exact `GL(1,C)` orbit and give literally the
+same affine action. The A74 Weyl commutant theorem fixes the normalized family
+functional to `Tr/3`. The routed response has exact rank 24, Frobenius norm
+squared 192 and normalized full trace square 4.
+
+The action-side physical exit is now one same-root equality
+`H_eff=c_action H_resp` and the BV density/compactification map. If an endpoint
+exists, `c_action` is uniquely computed by Frobenius contraction. Its value
+cannot be recovered from normalized finite data alone, and no endpoint or
+physical row is promoted here.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -558,7 +601,8 @@ passes `50/50`. The direct multiplier-source packet passes `57/57` checks and
 its independent verifier passes `68/68`. The closure-pressure packet passes
 `54/54` checks and its independent verifier passes `59/59`. The canonical
 affine-action packet passes `60/60` checks and its independent verifier passes
-`90/90`. The canonical suite passes 78 unit tests. The
+`90/90`. The normal-frame packet passes `65/65` checks and its independent
+verifier passes `108/108`. The canonical suite passes 84 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

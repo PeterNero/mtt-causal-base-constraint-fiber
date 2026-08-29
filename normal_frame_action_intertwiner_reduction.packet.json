@@ -1,0 +1,249 @@
+{
+  "check_summary": {
+    "failed": [],
+    "passed": 65,
+    "total": 65
+  },
+  "checks": {
+    "A50_hypercharge_kernel_has_dimension_one": true,
+    "A50_hypercharge_operator_has_rank_15": true,
+    "A74_does_not_bind_physical_action": true,
+    "A74_trace_choice_adds_no_knob": true,
+    "A74_trace_packet_selects_normalized_trace": true,
+    "FSB04e_is_exact_finite_same_source": true,
+    "FSB04f_generates_full_M3": true,
+    "Lorentz_Higgs_Yukawa_typing_remains_open": true,
+    "T17_exact_action_is_imported": true,
+    "T17_physical_rows_remain_zero": true,
+    "Weyl_clock_is_unitary": true,
+    "Weyl_pair_commutant_dimension_is_one": true,
+    "Weyl_shift_is_unitary": true,
+    "all_other_H16_weights_are_nonzero": true,
+    "contract_keeps_absolute_scale_open": true,
+    "contract_quotients_separate_normal_covector": true,
+    "contract_requires_one_Hessian_identity": true,
+    "contract_schema_is_exact": true,
+    "endpoint_scale_formula_recovers_all_exact_samples": true,
+    "endpoint_scale_residual_vanishes_on_all_exact_samples": true,
+    "finite_trace_is_not_promoted_to_BV_density": true,
+    "kernel_model_is_pinned": true,
+    "neutral_projector_has_rank_one": true,
+    "neutral_projector_is_in_hypercharge_kernel": true,
+    "nine_charged_values_remain_open": true,
+    "no_fitted_coefficients_enter_the_witness": true,
+    "no_observed_values_enter_the_witness": true,
+    "nonzero_factorizations_form_one_tested_GL1_orbit": true,
+    "normal_frame_GL1_samples_are_nonzero": true,
+    "normal_frame_closure_graph_is_exactly_invariant": true,
+    "normal_frame_contraction_is_exactly_invariant": true,
+    "normal_frame_full_affine_action_is_exactly_invariant": true,
+    "normalized_density_has_trace_one": true,
+    "normalized_density_is_clock_invariant": true,
+    "normalized_density_is_shift_invariant": true,
+    "normalized_finite_shape_cannot_distinguish_two_positive_scales": true,
+    "physical_action_scale_remains_open": true,
+    "physical_packet_acceptance_is_unchanged": true,
+    "physical_row_acceptance_is_unchanged": true,
+    "physical_same_root_intertwiner_remains_open": true,
+    "response_AB_commutant_dimension_is_one": true,
+    "routed_response_frobenius_norm_squared_is_192": true,
+    "routed_response_has_rank_24": true,
+    "routed_response_is_Hermitian": true,
+    "routed_response_normalized_active_trace_square_is_8": true,
+    "routed_response_normalized_full_trace_square_is_4": true,
+    "routed_response_trace_is_minus_32": true,
+    "selected_object_is_line_not_frame": true,
+    "separate_normal_frame_adds_no_physical_parameter": true,
+    "source_hash_AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md": true,
+    "source_hash_BV_COMPACTIFICATION_BRIDGE_CONTRACT.md": true,
+    "source_hash_MTT_Selected_FiniteWeylTraceUniqueness_or_PhysicalBoundarySource_Derivation_v1.md": true,
+    "source_hash_affine_zero_section_action.packet.json": true,
+    "source_hash_finite_weyl_trace_uniqueness_derivation.packet.json": true,
+    "source_hash_mtt_selected_nativebundleautomorphismgaugegroup_or_parameterassumptionaudit_v1.md": true,
+    "source_hash_mtt_selected_neutralalgebrasummandorequivalentaxiomrevision_v1.md": true,
+    "source_hash_mtt_selected_normalizeddeterminantactionfrommtthessian_or_independentgaugeprofiletest_v1.md": true,
+    "source_hash_mtt_selected_phic1positivedensitypromotionfromclosedrouteasource_or_strictgaugerows_v1.md": true,
+    "source_hash_mtt_selected_typedfamilygaugecarrieranddiagonalsmrepresentationtheorem_v1.md": true,
+    "source_hash_provider_neutral_physical_source_contract.schema.json": true,
+    "source_hash_q79_physical_endpoint_three_packet_contract.schema.json": true,
+    "source_hash_source_manifest.v1.json": true,
+    "source_hash_triadic_dynamic_weyl_orbit.packet.json": true,
+    "source_hash_triadic_family_response_algebra.packet.json": true,
+    "source_lock_schema_is_exact": true
+  },
+  "claim_boundary": {
+    "Lorentz_Higgs_Yukawa_typing": false,
+    "charged_values_derived": 0,
+    "physical_BV_density_selected": false,
+    "physical_action_scale_selected": false,
+    "physical_endpoint_selected": false,
+    "physical_packets_accepted": 0,
+    "physical_rows_accepted": 0
+  },
+  "claim_id": "CBF.T18",
+  "contract_schema_sha256": "4ffa3e6e6c1ee1532c23e5c000b764fc4cb9e9b1047425361736ca4daad49c1b",
+  "contracted_response": {
+    "complex_dimension": 48,
+    "complex_kernel": 24,
+    "complex_rank": 24,
+    "formula": "H_resp=B_phase tensor R_phase+A_shift tensor R_shift",
+    "frobenius_norm_squared": "192",
+    "new_matrix_added": false,
+    "normalized_active_trace_square": "8",
+    "normalized_full_trace_square": "4",
+    "trace": "-32"
+  },
+  "date": "2026-08-29",
+  "decision": [
+    "A46_A47_A50_SELECT_ONE_INVARIANT_NORMAL_LINE_NOT_A_FRAME",
+    "SEPARATE_NONZERO_NORMAL_FACTORS_FORM_ONE_GL1_ORBIT",
+    "THE_CONTRACTED_HESSIAN_IS_THE_FRAME_INVARIANT_ACTION_DATUM",
+    "A74_FIXES_THE_FINITE_FAMILY_TRACE_NOT_THE_PHYSICAL_BV_DENSITY",
+    "THE_PHYSICAL_EXIT_IS_ONE_SAME_ROOT_HESSIAN_INTERTWINER_AND_SCALE"
+  ],
+  "finite_source_manifest_sha256": "c0016e216126298906c4ba1cc25c4d11f985764f56622cede2367aa186a1861c",
+  "finite_trace": {
+    "Weyl_commutant_dimension": 1,
+    "family_algebra": "M3(C)",
+    "finite_family_measure_parameters": 0,
+    "functional": "tau3(A)=Tr(A)/3",
+    "invariant_density": "I3/3",
+    "physical_BV_density_identified": false,
+    "response_AB_commutant_dimension": 1
+  },
+  "frontier_delta": "The A47/A50 neutral normal object is now proved to be one selected line, while its frame and the separate factors epsilon and B are quotient data. A74 removes the finite family-measure choice. The action-side physical exit is reduced to one same-root identity H_eff=c_action H_resp, with c_action uniquely recoverable from an endpoint but nonidentifiable from normalized finite data alone.",
+  "normal_frame_quotient": {
+    "factorization_orbits_for_nonzero_H": 1,
+    "frame_action": "(B,epsilon,n,lambda)->(aB,epsilon/a,an,lambda/a)",
+    "frame_group": "GL(1,C)",
+    "frame_samples": [
+      [
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "0"
+      ]
+    ],
+    "full_action_invariant": "A_(aB,epsilon/a)(an,k,lambda/a)=A_(B,epsilon)(n,k,lambda)",
+    "invariant_contraction": "H=epsilon o B",
+    "separate_frame_is_physical_parameter": false
+  },
+  "normal_line": {
+    "H16_order": [
+      "Q6",
+      "u3",
+      "d3",
+      "L2",
+      "e1",
+      "N1"
+    ],
+    "carrier": "N^c subset H16",
+    "complex_dimension": 1,
+    "expanded_hypercharge_weights_6Y": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -4,
+      -4,
+      -4,
+      2,
+      2,
+      2,
+      -3,
+      -3,
+      6,
+      0
+    ],
+    "invariant_multiplicity": 1,
+    "projector": "diag(0,...,0,1)",
+    "separate_real_ray_selected": false,
+    "unit_frame_selected": false
+  },
+  "parameter_ledger": {
+    "conditional_common_action_coefficients_per_endpoint": 1,
+    "finite_family_measure_parameters": 0,
+    "fitted_coefficients": 0,
+    "new_contracted_response_matrices": 0,
+    "normal_frame_parameters_after_quotient": 0,
+    "observed_construction_inputs": 0,
+    "selected_physical_action_coefficients": 0,
+    "strict_charged_magnitude_values_remaining": 9
+  },
+  "physical_intertwiner_minimal_data": {
+    "coefficient_formula": "c_action=<H_resp,H_eff>_F/192",
+    "coefficient_is_unique_if_identity_holds": true,
+    "exact_recovered_scales": [
+      "1/2",
+      "7/3",
+      "5"
+    ],
+    "exact_test_scales": [
+      "1/2",
+      "7/3",
+      "5"
+    ],
+    "nonreducing_case": "H_eff=U^*K_phys U-U^*K_phys Q(QK_physQ)^-1QK_physU",
+    "physical_density_and_BV_pushforward_supplied": false,
+    "reducing_case": "H_eff=U^* K_phys U",
+    "required_identity": "H_eff=c_action H_resp",
+    "residual": "R_action=H_eff-c_action H_resp",
+    "same_root_physical_intertwiner_supplied": false,
+    "same_root_required": true
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "scale_nonidentifiability": {
+    "absolute_Hessian_and_quantum_phase_change": true,
+    "endpoint_action_or_equivalent_metrology_required": true,
+    "invariants_preserved": [
+      "rank_and_kernel",
+      "projective_spectrum",
+      "normal_frame_orbit",
+      "automorphism_and_commutant_groups",
+      "normalized_trace_state",
+      "normalized_response_direction"
+    ],
+    "normalized_shape_determines_absolute_scale": false,
+    "positive_scale_family": "{c H_resp:c>0}"
+  },
+  "schema": "boe.mtt.normal-frame-action-intertwiner.v1",
+  "source_lock_sha256": "ef9dac0fa3e17084cd18327216f72b9353339e75316bb458e686433c83bde592",
+  "source_provenance": {
+    "A46_A47_A50_select_normal_line": true,
+    "A74_selects_finite_trace": true,
+    "A86_FSB04e_04f_select_finite_response_tier": true,
+    "finite_source_manifest_is_physical_endpoint_root": false,
+    "physical_endpoint_status": "OPEN"
+  },
+  "theorem_sha256": "6a1ff46753065e4cb647ccfdcbe69e6915642af8ae671ff35c628613d1755bc5",
+  "tier": "EXACT_GENERAL + EXACT_SOURCE_PINNED_FINITE_QUOTIENT_WITNESS + CONDITIONAL_PHYSICAL_INTERTWINER_REDUCTION"
+}

@@ -12,6 +12,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Direct one-constraint multiplier-source handoff: `b8d489d8-41ea-4481-9c15-b31904f215af`
 - Closure-pressure family-Hessian handoff: `c90aa36c-e4b7-4dbe-9eaf-b599b414d474`
 - Affine zero-section action handoff: `4d8dd6f2-dda8-4904-92d1-14b1b0788498`
+- Normal-frame action-intertwiner handoff: `990a6f58-451b-4cb2-ba76-45e173bf4e09`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
@@ -452,9 +453,41 @@ a new continuous dimensionless family parameter; the remaining scalar is the
 overall physical action normalization relative to the physical density and
 quantum phase convention.
 
-This closes a finite algebraic action object, not its physical selection. The
-action is assembled from separately locked sources, and no selected endpoint
-yet emits its normal covector, density and family product on one hash. Physical
-Lorentz/Higgs/Yukawa typing and the nine charged values remain open, so
-physical acceptance stays `0/3` packets and `0/7` rows. `B.ACTION.01` and
-`B.SM.02` remain open.
+This closes a finite algebraic action object, not its physical selection.
+CBF.T18 below replaces the overly strong request for separately selected
+normal factors by a frame-quotiented contracted-Hessian obligation.
+
+`NormalFrameQuotientAndActionIntertwinerMinimalDataTheorem.v1` proves that
+A46/A47/A50 select the unique gauge/shared-circle invariant complex line
+`N^c subset H16`, but not a unit frame. For every `a in GL(1,C)`,
+
+```text
+(B,epsilon,n,lambda)->(aB,epsilon/a,an,lambda/a)
+```
+
+leaves both `H=epsilon o B` and the full affine multiplier action exactly
+unchanged. Every nonzero one-dimensional factorization of the same `H` lies
+in one such orbit. A normal frame and a separately normalized covector are
+therefore not physical source parameters.
+
+The A74 Weyl commutant theorem fixes the finite family functional to `Tr/3`.
+For the exact routed response,
+
+```text
+rank(H_resp)=24,
+<H_resp,H_resp>_F=192,
+(Tr/48)(H_resp^*H_resp)=4.
+```
+
+The physical action exit is now one same-root equality
+
+```text
+H_eff=c_action H_resp,
+c_action=<H_resp,H_eff>_F/192,
+```
+
+together with the BV density and compactification map. The coefficient is
+unique once a physical endpoint exists, but normalized finite data cannot
+select it. No physical endpoint, BV density, Lorentz/Higgs/Yukawa typing or
+charged value is promoted. Acceptance remains `0/3` packets and `0/7` rows;
+`B.ACTION.01` and `B.SM.02` remain open.

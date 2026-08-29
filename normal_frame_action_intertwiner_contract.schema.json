@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:normal-frame-action-intertwiner:v1",
+  "title": "Normal-frame quotient and action-intertwiner minimal-data contract",
+  "description": "The exact finite quotient that removes separate normal-frame data and isolates the remaining physical same-root Hessian intertwiner and action scale.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "source_root",
+    "normal_line",
+    "normal_frame_quotient",
+    "finite_trace",
+    "contracted_response",
+    "physical_intertwiner",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.normal-frame-action-intertwiner.v1"
+    },
+    "source_root": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "finite_source_manifest_sha256",
+        "physical_root_source_sha256",
+        "all_physical_objects_share_root"
+      ],
+      "properties": {
+        "finite_source_manifest_sha256": { "$ref": "#/$defs/sha256" },
+        "physical_root_source_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "all_physical_objects_share_root": { "const": false }
+      }
+    },
+    "normal_line": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "carrier",
+        "projector",
+        "complex_dimension",
+        "invariant_multiplicity",
+        "unit_frame_selected"
+      ],
+      "properties": {
+        "carrier": { "const": "N^c subset H16" },
+        "projector": { "const": "diag(0,...,0,1)" },
+        "complex_dimension": { "const": 1 },
+        "invariant_multiplicity": { "const": 1 },
+        "unit_frame_selected": { "const": false }
+      }
+    },
+    "normal_frame_quotient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame_group",
+        "frame_action",
+        "invariant_contraction",
+        "factorization_orbits_for_nonzero_response",
+        "separate_normal_covector_is_physical_input"
+      ],
+      "properties": {
+        "frame_group": { "const": "GL(1,C)" },
+        "frame_action": {
+          "const": "(B,epsilon,n,lambda)->(aB,epsilon/a,an,lambda/a)"
+        },
+        "invariant_contraction": { "const": "H=epsilon o B" },
+        "factorization_orbits_for_nonzero_response": { "const": 1 },
+        "separate_normal_covector_is_physical_input": { "const": false }
+      }
+    },
+    "finite_trace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family_algebra",
+        "invariant_density",
+        "functional",
+        "free_measure_parameters",
+        "physical_density_identified"
+      ],
+      "properties": {
+        "family_algebra": { "const": "M3(C)" },
+        "invariant_density": { "const": "I3/3" },
+        "functional": { "const": "tau3(A)=Tr(A)/3" },
+        "free_measure_parameters": { "const": 0 },
+        "physical_density_identified": { "const": false }
+      }
+    },
+    "contracted_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "finite_Hessian",
+        "complex_rank",
+        "frobenius_norm_squared",
+        "normalized_full_trace_square"
+      ],
+      "properties": {
+        "finite_Hessian": { "const": "H_resp=B_phase tensor R_phase+A_shift tensor R_shift" },
+        "complex_rank": { "const": 24 },
+        "frobenius_norm_squared": { "const": 192 },
+        "normalized_full_trace_square": { "const": 4 }
+      }
+    },
+    "physical_intertwiner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "same_root_effective_Hessian",
+        "finite_synthesis",
+        "required_identity",
+        "coefficient_formula",
+        "absolute_scale_selected"
+      ],
+      "properties": {
+        "same_root_effective_Hessian": { "$ref": "#/$defs/artifact" },
+        "finite_synthesis": { "$ref": "#/$defs/artifact" },
+        "required_identity": { "const": "H_eff=c_action H_resp" },
+        "coefficient_formula": {
+          "const": "c_action=<H_resp,H_eff>_F/<H_resp,H_resp>_F"
+        },
+        "absolute_scale_selected": { "const": false }
+      }
+    },
+    "claim_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "physical_endpoint_selected",
+        "physical_action_scale_selected",
+        "Lorentz_Higgs_Yukawa_typing",
+        "charged_values_derived",
+        "physical_packets_accepted",
+        "physical_rows_accepted"
+      ],
+      "properties": {
+        "physical_endpoint_selected": { "const": false },
+        "physical_action_scale_selected": { "const": false },
+        "Lorentz_Higgs_Yukawa_typing": { "const": false },
+        "charged_values_derived": { "const": 0 },
+        "physical_packets_accepted": { "const": 0 },
+        "physical_rows_accepted": { "const": 0 }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path_or_uri", "sha256", "status"],
+      "properties": {
+        "path_or_uri": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "status": { "enum": ["accepted", "conditional", "open"] }
+      }
+    }
+  }
+}

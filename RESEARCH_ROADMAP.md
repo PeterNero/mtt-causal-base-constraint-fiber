@@ -320,20 +320,37 @@ projective class, so no new continuous dimensionless pressure-shape parameter
 is introduced. The physical action density and overall quantum normalization
 are not selected.
 
+`CBF.T18` removes two apparent source obligations from that qualifier.
+A46/A47/A50 already select the unique invariant neutral line, while a frame
+and the separate factors `epsilon` and `B` are one `GL(1,C)` quotient orbit.
+A74 already fixes the finite family functional to `Tr/3`. The frame-invariant
+datum is the contracted `H_resp`, whose exact squared Frobenius norm is 192.
+The physical action match is therefore the single equation
+
+```text
+H_eff=c_action H_resp,
+c_action=<H_resp,H_eff>_F/192.
+```
+
+Normalized finite data cannot select `c_action`; it must be emitted by the
+physical action/density endpoint.
+
 The remaining order is now:
 
-1. select the normal covector, density and action normalization from the same
-   physical endpoint/product that emits the response curvature;
-2. prove the same-root intertwiner to the finite action polynomial;
-3. derive a gauge-invariant Lorentz/Higgs left-right Yukawa second variation;
-4. derive a sector-resolved spectral law or cross-sector relation reducing the
+1. obtain one selected same-root `GAS+SYN+BV4` endpoint supplying `K_phys`,
+   synthesis, complement inverse or reducing certificate, and BV density;
+2. evaluate the exact or interval-certified residual
+   `H_eff-c_action H_resp` and recover `c_action` from the same root;
+3. externalize that action and density through the CBF.T13/T14 BV contract;
+4. derive a gauge-invariant Lorentz/Higgs left-right Yukawa second variation;
+5. derive a sector-resolved spectral law or cross-sector relation reducing the
    nine FSB.04g scalar coordinates;
-5. emit one held-out source-normalized mass, interaction or threshold scalar;
-6. externalize the same action through the CBF.T13/T14 BV contract.
+6. emit one held-out source-normalized mass, interaction or threshold scalar.
 
-The next useful theorem must discharge item 1 or 2. Another rescaling of the
-finite action cannot do so because CBF.T17 has already quotiented every
-nonzero classical pressure magnitude into one projective class.
+The next physical theorem must discharge item 1 or 2. Another normal-frame or
+finite-trace packet cannot do so: CBF.T18 proves those choices are already
+quotiented or unique, and proves the absolute scale nonidentifiable before the
+physical endpoint exists.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

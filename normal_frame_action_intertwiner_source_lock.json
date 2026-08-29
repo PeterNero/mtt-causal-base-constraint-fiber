@@ -1,0 +1,110 @@
+{
+  "schema": "boe.mtt.normal-frame-action-intertwiner-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repository_head_before": "ddc206737d1992f351f489442f062ad1580b2fee",
+  "local_sources": [
+    {
+      "path": "AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md",
+      "sha256": "77759a36b19a789f3c09313f22ca9b632e3f4a114dd2eb4555c2f711c718b05f",
+      "role": "CBF.T17 affine action, graph pullback and pressure-projective boundary"
+    },
+    {
+      "path": "affine_zero_section_action.packet.json",
+      "sha256": "7e72b8bbf8aa0e2ca3384133b953c1d2f57804d0e7ea415d5314b1d1736f40ee",
+      "role": "exact CBF.T17 finite A/B action witness"
+    },
+    {
+      "path": "provider_neutral_physical_source_contract.schema.json",
+      "sha256": "6cf6c787951393c662973315f775304ab5e702b3898021d97b6251d7d1a0e308",
+      "role": "provider-neutral same-source physical input boundary"
+    },
+    {
+      "path": "q79_physical_endpoint_three_packet_contract.schema.json",
+      "sha256": "8189fd8e91032cdd6ec50cef0ef82105808c35cc215cd54731d165fb9d489c9f",
+      "role": "GAS, SYN and BV4 same-root endpoint contract"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_typedfamilygaugecarrieranddiagonalsmrepresentationtheorem_v1.md",
+      "sha256": "7413bbfac4fd741ab024a056d31f21a3faa6a959101253e8f41df8afd4358226",
+      "role": "A46 typed H16 matter carrier and exact hypercharge rows"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_nativebundleautomorphismgaugegroup_or_parameterassumptionaudit_v1.md",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1",
+      "role": "A47 faithful SM gauge group and representation action"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_neutralalgebrasummandorequivalentaxiomrevision_v1.md",
+      "sha256": "327fa5b3468908fef396f4d76dc3e0d98f993d570510d08765dc1bb157be2fd1",
+      "role": "A50 selected neutral line and unique anomaly-free shared circle"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_normalizeddeterminantactionfrommtthessian_or_independentgaugeprofiletest_v1.md",
+      "sha256": "665dfbc01a5203343eace537f303abd4f5dccf46e275b61492f2f6d31331a8af",
+      "role": "A74 exact normalized finite trace subtheorem and physical gate"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_FiniteWeylTraceUniqueness_or_PhysicalBoundarySource_Derivation_v1.md",
+      "sha256": "58b56f631ac45e50329619933b05c1d3198c454884502fe6704c00f70a2a9421",
+      "role": "finite qutrit Weyl invariant-functional uniqueness theorem"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/candidate_data/selected_finiteweyl_traceuniqueness_or_physicalboundarysource_derivation/finite_weyl_trace_uniqueness_derivation.packet.json",
+      "sha256": "b7d7294b807d339cf8aae68327962067b250324eb93267b8d0cc2eba66669bf9",
+      "role": "exact Tr/3 finite Weyl trace certificate"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_phic1positivedensitypromotionfromclosedrouteasource_or_strictgaugerows_v1.md",
+      "sha256": "5714fa1d7e887cc971be4f779773bd6d466d3d037405654f4031c0ad0b0e7c00",
+      "role": "A86 source-owned finite response and positive Gram density tier"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/state/source_manifest.v1.json",
+      "sha256": "c0016e216126298906c4ba1cc25c4d11f985764f56622cede2367aa186a1861c",
+      "role": "FSB source-manifest root for the finite response chain"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_dynamic_weyl_orbit.packet.json",
+      "sha256": "a265cf03d5b9e459906bebe17c8bca80152e644765bdfc5d8cb2e77fe931a074",
+      "role": "FSB.04e exact source-owned dynamic A/B orbit and physical boundary"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_family_response_algebra.packet.json",
+      "sha256": "9b2c3484d3b0524620bd4a52a36a8becf5c8d270f062543f9e43cd3abfe0789f",
+      "role": "FSB.04f full M3(C) family response algebra and scalar commutant"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/docs/BV_COMPACTIFICATION_BRIDGE_CONTRACT.md",
+      "sha256": "37676d5e4e79e38f9975ee50899d12e8a3d5cf8102738048a383cc57926cc8b5",
+      "role": "physical density, pairing and compactification normalization guard"
+    }
+  ],
+  "read_only_repository_heads": {
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66",
+    "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+    "mtt-preprojection-repair-calculus": "8bbde0cd96dbcc85f51bf43427cc74ce1aa034af"
+  },
+  "source_tiers": {
+    "A46_A47_A50_neutral_line": "established",
+    "A74_normalized_trace_subtheorem": "exact algebraic; physical action binding open",
+    "A86_finite_response_source": "exact corpus-action source; primitive physical core open",
+    "FSB04e_04f_response": "closed exact finite; physical endpoint open"
+  },
+  "boundary": {
+    "unique_gauge_shared_circle_invariant_normal_line": true,
+    "unit_frame_or_nonzero_covector_selected": false,
+    "normal_frame_is_a_physical_parameter": false,
+    "contracted_finite_Hessian_is_exact": true,
+    "normalized_family_trace_is_exact": true,
+    "normalized_family_trace_is_the_physical_BV_density": false,
+    "physical_same_root_intertwiner_proved": false,
+    "physical_action_scale_selected": false,
+    "Lorentz_Higgs_Yukawa_typing_proved": false,
+    "strict_charged_magnitude_values_remaining": 9,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}
