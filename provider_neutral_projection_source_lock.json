@@ -1,0 +1,112 @@
+{
+  "schema": "boe.mtt.provider-neutral-projection-source-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repository_head_before": "43216f4a8eeb7dd716d95242e07271accb7feff2",
+  "local_sources": [
+    {
+      "path": "RESEARCH_CHARTER.md",
+      "sha256": "36670ba44b3162fbb6e57829f79eba39f85cba44ea2ff24a7ee95ca643731091",
+      "role": "provider-neutral fixed-point and constraint-fiber projection charter"
+    },
+    {
+      "path": "SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md",
+      "sha256": "2e9a860a759877a4df06c3885c246ed4cc2679c5069e7d95d5d44b4f0bf213ae",
+      "role": "GAS, SYN and BV4 factorization and minimality boundary"
+    },
+    {
+      "path": "AssociatedMatterProductDiracBVExternalizationCompilerTheorem_v1.md",
+      "sha256": "564ed4fc0aee62f342d9074d2e8ac429bab716d350ac8ee0ffd0421e60a0c8f6",
+      "role": "provider-independent associated-matter projection compiler"
+    },
+    {
+      "path": "q79_physical_endpoint_three_packet_contract.schema.json",
+      "sha256": "8189fd8e91032cdd6ec50cef0ef82105808c35cc215cd54731d165fb9d489c9f",
+      "role": "q79-specific provider contract to be compared with the neutral interface"
+    },
+    {
+      "path": "Q79_ETA9_ENDPOINT_UNLOCK_DECISION_PROGRAM_v1.md",
+      "sha256": "8e3de06d78c9086dbfa653c4551d3fa7b244bfa2dde1f96b822e70bbf9071292",
+      "role": "current q79 endpoint construction route"
+    },
+    {
+      "path": "q79_bv4_associated_matter_externalization.packet.json",
+      "sha256": "1ceaafcabb8cd0b31045a7fca4d919a0791418cbf88ec9868175b5764ec934d4",
+      "role": "exact 80-to-48 product-Dirac compiler witness"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_EQUIVARIANT_INDEX_FIRST_KERNEL_COMPILER_AND_POSITIVE_HESSIAN_CHIRALITY_NO_GO_THEOREM_v1.md",
+      "sha256": "31c3b3e8a9045977392a86c8087926e01c22e6f49be1b0bcb8f6d7aa062c5f3b",
+      "role": "index-first kernel compiler and chirality no-go boundary"
+    }
+  ],
+  "curated_authorities": [
+    {
+      "id": "A11",
+      "state": "established",
+      "sha256": "ccacd5227f91ab08fa3cb961c395d8abc07ff861a1fcbbd583095f6809bdcecc",
+      "scope": "q=79 mod 448 on the selected exact discrete branch with stated assumptions"
+    },
+    {
+      "id": "A18",
+      "state": "conditional",
+      "sha256": "7287df306cc3832fb1cccbed43f8794eaa44576799f46fe526f882df2463a1a3",
+      "scope": "conditional quantization and finite-domain QFT only"
+    },
+    {
+      "id": "A45",
+      "state": "established",
+      "sha256": "23ff816d6b04789f479dca6c8bf70f790832c7ef1cbb995115ff458d0388f633",
+      "scope": "selected 1,2,3 rank flag and weak real structure"
+    },
+    {
+      "id": "A46",
+      "state": "established",
+      "sha256": "7413bbfac4fd741ab024a056d31f21a3faa6a959101253e8f41df8afd4358226",
+      "scope": "48-state three-family representation and anomaly table"
+    },
+    {
+      "id": "A47",
+      "state": "established",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1",
+      "scope": "native faithful Standard Model gauge group modulo Z6"
+    },
+    {
+      "id": "A50",
+      "state": "established",
+      "sha256": "327fa5b3468908fef396f4d76dc3e0d98f993d570510d08765dc1bb157be2fd1",
+      "scope": "unique anomaly-free shared hypercharge circle at profile tier"
+    }
+  ],
+  "open_blockers": [
+    "B.HS.01",
+    "B.GEO.01",
+    "B.OP.01",
+    "B.ACTION.01"
+  ],
+  "external_context_only": [
+    {
+      "title": "The Spectral Action Principle",
+      "url": "https://arxiv.org/abs/hep-th/9606001",
+      "role": "precedent for an operator-first finite internal source"
+    },
+    {
+      "title": "The generally covariant locality principle",
+      "url": "https://arxiv.org/abs/math-ph/0112041",
+      "role": "precedent for base-local functorial physical theories"
+    },
+    {
+      "title": "Factorization algebra",
+      "url": "https://arxiv.org/abs/2310.06137",
+      "role": "precedent for local-to-global observable data without literal extra spacetime"
+    }
+  ],
+  "boundary": {
+    "source_lock_is_evidence_for_classification_not_physical_selection": true,
+    "q79_discrete_authority_is_not_promoted_to_a_physical_endpoint": true,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

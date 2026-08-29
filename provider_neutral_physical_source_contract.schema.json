@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:provider-neutral-physical-source:v1",
+  "title": "Provider-neutral MTT physical source contract",
+  "description": "The minimal same-source interface consumed by fixed-point, spectral and BV projection. It does not require a q79 or compactification realization, but it does require selected provenance and every physical datum that projection cannot manufacture.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "root_source",
+    "selection",
+    "causal_base",
+    "source_packets",
+    "bindings",
+    "constraint_fiber",
+    "acceptance"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.provider-neutral-physical-source.v1"
+    },
+    "root_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider_id",
+        "provider_kind",
+        "root_source_sha256"
+      ],
+      "properties": {
+        "provider_id": { "type": "string", "minLength": 1 },
+        "provider_kind": {
+          "enum": [
+            "q79_hull_strominger",
+            "direct_closure_repair",
+            "finite_spectral_action",
+            "universality_class",
+            "other_certified_source"
+          ]
+        },
+        "root_source_sha256": { "$ref": "#/$defs/sha256" },
+        "provider_specific_coordinates": {
+          "type": "object",
+          "description": "Optional coordinates forgotten by the physical projection functor."
+        }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "selection_rule",
+        "selection_certificate",
+        "observed_targets_not_used"
+      ],
+      "properties": {
+        "selection_rule": { "type": "string", "minLength": 1 },
+        "selection_certificate": { "$ref": "#/$defs/artifact" },
+        "observed_targets_not_used": { "const": true }
+      }
+    },
+    "causal_base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dimension",
+        "globally_hyperbolic",
+        "lorentzian_domain_certificate",
+        "green_hyperbolic_certificate"
+      ],
+      "properties": {
+        "dimension": { "const": 4 },
+        "globally_hyperbolic": { "const": true },
+        "lorentzian_domain_certificate": { "$ref": "#/$defs/artifact" },
+        "green_hyperbolic_certificate": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "source_packets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gas",
+        "syn",
+        "amk",
+        "den",
+        "bv4"
+      ],
+      "properties": {
+        "gas": { "$ref": "#/$defs/sameSourceArtifact" },
+        "syn": { "$ref": "#/$defs/sameSourceArtifact" },
+        "amk": { "$ref": "#/$defs/sameSourceArtifact" },
+        "den": { "$ref": "#/$defs/sameSourceArtifact" },
+        "bv4": { "$ref": "#/$defs/sameSourceArtifact" }
+      }
+    },
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "one_root_hash_for_all_packets",
+        "fixed_point_hessian_identity",
+        "spectral_projector_and_green_identity",
+        "source_synthesis_intertwiner",
+        "action_bv_pushforward",
+        "normalization_and_interaction_source"
+      ],
+      "properties": {
+        "one_root_hash_for_all_packets": { "const": true },
+        "fixed_point_hessian_identity": { "$ref": "#/$defs/artifact" },
+        "spectral_projector_and_green_identity": { "$ref": "#/$defs/artifact" },
+        "source_synthesis_intertwiner": { "$ref": "#/$defs/artifact" },
+        "action_bv_pushforward": { "$ref": "#/$defs/artifact" },
+        "normalization_and_interaction_source": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "constraint_fiber": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "no_independent_causal_cone",
+        "no_independent_clock",
+        "no_independent_initial_data",
+        "vertical_relabelings_are_gauge_or_representation",
+        "effects_descend_through_selected_invariants",
+        "base_microcausality_certificate"
+      ],
+      "properties": {
+        "no_independent_causal_cone": { "$ref": "#/$defs/artifact" },
+        "no_independent_clock": { "$ref": "#/$defs/artifact" },
+        "no_independent_initial_data": { "$ref": "#/$defs/artifact" },
+        "vertical_relabelings_are_gauge_or_representation": { "$ref": "#/$defs/artifact" },
+        "effects_descend_through_selected_invariants": { "$ref": "#/$defs/artifact" },
+        "base_microcausality_certificate": { "$ref": "#/$defs/artifact" }
+      }
+    },
+    "acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "packet_rows",
+        "physical_rows",
+        "held_out_observable_comparison"
+      ],
+      "properties": {
+        "packet_rows": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": { "$ref": "#/$defs/acceptanceRow" }
+        },
+        "physical_rows": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": { "$ref": "#/$defs/acceptanceRow" }
+        },
+        "held_out_observable_comparison": { "$ref": "#/$defs/artifact" }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path_or_uri", "sha256", "status"],
+      "properties": {
+        "path_or_uri": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "status": {
+          "enum": ["accepted", "conditional", "open", "benchmark"]
+        }
+      }
+    },
+    "sameSourceArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path_or_uri",
+        "sha256",
+        "root_source_sha256",
+        "status"
+      ],
+      "properties": {
+        "path_or_uri": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "root_source_sha256": { "$ref": "#/$defs/sha256" },
+        "status": {
+          "enum": ["accepted", "conditional", "open", "benchmark"]
+        }
+      }
+    },
+    "acceptanceRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "accepted", "certificate"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "accepted": { "type": "boolean" },
+        "certificate": { "$ref": "#/$defs/artifact" }
+      }
+    }
+  }
+}

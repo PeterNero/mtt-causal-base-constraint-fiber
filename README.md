@@ -273,6 +273,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `AssociatedMatterProductDiracBVExternalizationCompilerTheorem_v1.md`: exact
   associated-matter zero-mode, representation, free-action, causal-mode and
   complement-gap compiler with a `3 x 16 = 48` witness.
+- `ProviderNeutralProjectionSourceQuotientAndQ79NecessityTheorem_v1.md`:
+  provider-neutral source quotient, exact non-q79 80-to-48 witness, strict q79
+  necessity classification and no-source/no-values countermodels.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -301,6 +304,11 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   H4-T18, H4-T21, A46/A47/A50 and shared-circle inputs for the BV4 compiler.
 - `q79_bv4_associated_matter_externalization_contract.schema.json`:
   machine-readable same-root `AMK+EXT4+DEN` instance and remaining-row schema.
+- `provider_neutral_projection_source_lock.json`: kernel-authority and local
+  source lock for the q79/provider classification.
+- `provider_neutral_physical_source_contract.schema.json`: machine-readable
+  source interface shared by q79, direct-repair, finite-spectral and certified
+  universality-class providers.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -337,6 +345,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   minimality and exact Hessian/Feshbach/C4 certificate.
 - `q79_bv4_associated_matter_externalization.packet.json`: generated product-
   Dirac, 48-state representation, action/pairing and complement certificate.
+- `provider_neutral_projection_source_quotient.packet.json`: generated source-
+  quotient, q79 classification, equivalence witness and value no-go certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -388,11 +398,22 @@ charged/chiral four-dimensional carrier and its free causal operators. It does
 not supply that endpoint instance, the nonlinear overlap values, the complete
 bosonic/gravity stack or the quantum pushforward.
 
+The projection interface is now also separated from its expected geometric
+provider. `CBF.T14` proves that source-preserving equivalent realizations give
+equivalent projected records and supplies an exact non-q79 benchmark. Thus q79
+is not logically necessary for the compiler. It remains an active geometric
+provider candidate whose physical sufficiency is open, not a discarded branch.
+The same theorem proves that complement thresholds and normalized interaction
+values cannot be reconstructed from the retained free kernel alone. A direct
+repair/action or finite spectral source may bypass q79 geometry only by filling
+the same selected action, synthesis, normalization and BV obligations.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
 passes `71/71` checks and its independent verifier passes `47/47`. The
-canonical suite passes 58 unit tests. The
+provider-neutral packet passes `40/40` checks and its independent verifier
+passes `50/50`. The canonical suite passes 63 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

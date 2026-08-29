@@ -8,6 +8,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Current synthesis handoff: `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`
 - Endpoint-factorization handoff: `716be879-715b-4416-be42-2c096d3d9b0b`
 - Associated-matter BV4 handoff: `7a343059-b0e9-44fc-a725-733048697896`
+- Provider-neutral source/q79 classification handoff: `f8fdd194-ed79-45af-a124-5c6219a6dce1`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
@@ -23,6 +24,8 @@ This is a snapshot, not a substitute for live kernel queries.
 |---|---|---|
 | `A10` | recorded correction authority | Requires locality-compatible compression and separates compression from derivation of canonical noncommutativity. |
 | `A18` | conditional | Six conditional quantization and four finite-domain QFT results; continuum and full physical existence obligations remain. |
+| `A11` | established | Selects `q=79 mod 448` on its exact discrete branch; it does not by itself select the physical HYM/action endpoint. |
+| `A45` | established | Supplies the selected `1,2,3` rank flag and weak real structure without making q79 a projection axiom. |
 | `A47` | established | Derives the faithful low-energy gauge group `(SU3 x SU2 x U1)/Z6` from selected native bundle tensors. |
 | `A46` | established | Supplies the exact 48-state three-family representation and anomaly table consumed by the associated-matter witness. |
 | `A50` | established | Supplies the unique anomaly-free shared hypercharge circle and exact `6Y` rows. |
@@ -350,3 +353,30 @@ actual HYM metric, normalized zero modes, upper action and vertices; the full
 bosonic/gravitational stack, four-dimensional gauge background and quantum
 BV/QME pushforward remain open. Physical acceptance therefore stays `0/3`
 packets and `0/7` rows under `B.HS.01`, `B.GEO.01` and `B.ACTION.01`.
+
+`ProviderNeutralProjectionSourceQuotientAndQ79NecessityTheorem.v1` now resolves
+the logical role of the q79 endpoint. The fixed-point, spectral-transfer and
+associated-matter compilers consume a provider-neutral same-source object
+containing `GAS+SYN+AMK+DEN+BV4`; they do not consume the integer `79`, eta9
+coordinates or a Fu-Yau atlas as such. Source-preserving unitary equivalence
+intertwines every compressed operator, transferred product, product-Dirac
+operator, action and pairing, so the physical compiler factors through the
+source quotient.
+
+An exact non-q79 benchmark cyclically changes the family frame of the same
+80-to-48 operator while preserving `D_X`, `P_0` and the A46/A50 family-blind
+shared-circle action. This disproves q79 necessity at compiler tier, but the
+benchmark is explicitly nonphysical. Two exact countermodels then show why a
+selected source cannot be discarded: operators with scales `1` and `2` have
+the same 48-dimensional zero-mode projection but complement gaps `1` and `2`,
+and normalized invariant tensors with coefficients `1` and `2` have distinct
+unitary norms. Free structure therefore cannot manufacture threshold or
+interaction values.
+
+The strict classification is now: q79 necessity for the compiler is false;
+q79 physical sufficiency is open; q79 physical uniqueness is not established;
+and q79 is a pure constraint-fiber realization only conditionally on the five
+charter tests. A direct repair/action source, finite spectral/action source or
+proved universality class may bypass six-dimensional q79 geometry, but none
+may bypass selected action, normalization, modes and held-out comparison.
+Physical acceptance remains `0/3` packets and `0/7` rows.

@@ -248,6 +248,32 @@ physical eta9/HYM root, this repository can:
 The physical `AMK`, `EXT4`, density and action instances are still open. No
 q79 row is accepted merely because the universal compiler passes.
 
+`CBF.T14` now separates the source interface from one provider. Projection
+factors through source-preserving equivalence classes of
+
+```text
+root selection + EXT4 + GAS + SYN + AMK + DEN + BV4.
+```
+
+The q79 Hull-Strominger branch is one candidate realization of this interface,
+not an argument of the projection functor. An exact non-q79 80-to-48 benchmark
+disproves logical necessity at compiler tier. Exact threshold and interaction
+countermodels prove that a geometric bypass cannot omit the selected action,
+complement spectrum, density or normalized interaction tensors.
+
+The new parallel physical route is therefore:
+
+1. `PN.01`: construct a selected direct repair/action and stationary fixed point;
+2. `PN.02`: derive its Hessian, domains, projector, reduced Green and causal binding;
+3. `PN.03`: derive the normalized 48-state `AMK+DEN` packet from that same root;
+4. `PN.04`: emit one held-out invariant interaction or threshold value; and
+5. `PN.05`: construct the BV pushforward and compare held-out observables.
+
+The q79 worker should continue independently. If both routes close, compare
+them through the provider-neutral quotient. Agreement of the complete source
+packet would establish a universality result; agreement of dimensions or
+indices alone would not.
+
 ## Step 5: Constraint curvature and gauge stabilizer
 
 **State:** abstract stabilizer/faithful-quotient descent closed; physical
