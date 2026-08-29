@@ -213,6 +213,14 @@ The immediate physical order is therefore:
 The three packets are structured source objects, not three scalar knobs. The
 physical count remains `0/7` until their actual q79 payloads pass.
 
+The upstream eta9 selection campaign is governed by
+`Q79_ETA9_ENDPOINT_UNLOCK_DECISION_PROGRAM_v1.md`. It replaces arbitrary-member
+evaluation and premature full-frame reconstruction by an ordered sequence of
+primitive quotient detection, one-vector transport, goal-oriented adjoint
+readout, certified 122-variable root selection and same-source endpoint
+compilation. Its success output is the `GAS` source required by this step; a
+certified obstruction is an equally valid branch decision.
+
 ## Step 5: Constraint curvature and gauge stabilizer
 
 **State:** abstract stabilizer/faithful-quotient descent closed; physical

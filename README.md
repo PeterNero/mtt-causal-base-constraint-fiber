@@ -282,6 +282,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   preprojection rules, compression and transferred higher products.
 - `RESEARCH_ROADMAP.md`: ordered route from this identity to a selected MTT
   physical construction.
+- `Q79_ETA9_ENDPOINT_UNLOCK_DECISION_PROGRAM_v1.md`: quotient-first,
+  goal-oriented decision tree for selecting or obstructing the same-source
+  eta9/Deligne/HYM endpoint before expensive full reconstruction.
 - `constraint_compression_leakage.packet.json`: generated exact certificate.
 - `repair_fixedpoint_gauge_descent.packet.json`: generated repair/symmetry
   certificate.
