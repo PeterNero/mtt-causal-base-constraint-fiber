@@ -374,9 +374,9 @@ absolute rescalings form one orbit. At the adopted one-universal-metrology-
 primitive tier, `Lambda=E0=1/L0` and no sector-specific response or clock
 scale remains.
 
-This closes mathematical single-operator provenance, not physical source
-selection. The deterministic composite root still needs an upper-MTT
-selection certificate.
+This closes mathematical single-operator provenance. At that stage the
+deterministic composite operation still needed an upper differential
+selection rule.
 
 CBF.T23 now closes the finite physical field-typing subclause. The A48/A51
 one-Higgs incidence inserts the CBF.T20 family maps into all four
@@ -388,31 +388,46 @@ radial Higgs background the coefficient is `h^2`; the one-primitive tier sets
 Yukawa-Laplacian Hessian identity, not a scalar Higgs-potential Hessian or a
 selected continuum endpoint.
 
+CBF.T24 now closes that operation-selection clause. The external and physical
+finite odd operators have canonical oriented nilpotent chiral halves `q_Y`
+and `q_F`. The graded tensor-product differential is uniquely
+
+```text
+q_tot=q_Y tensor I+Gamma_Y tensor h q_F,
+```
+
+because grading, nilpotence and the factor restrictions force the Koszul
+coefficient to be `Gamma_Y`. Its self-adjoint closure charge is exactly the
+CBF.T22 product after the CBF.T23 physical replacement. The construction is
+parallel over the selected flat shared line. Since the CBF.T23 incidence is
+root-neutral, the two balanced binary-root presentations are intertwined and
+do not require a selector for this endpoint.
+
 The remaining order is now:
 
-1. derive an upper-MTT selection rule for the deterministic CBF.T22 composite
-   root, without treating the categorical product itself as physical
-   selection;
-2. promote the now exact finite Yukawa-Laplacian incidence through the selected
+1. promote the now selected finite Yukawa-Laplacian total differential through the selected
    continuum HYM/Galerkin map, including connection, domain and error control;
-3. complete same-root physical BV4 insertion and quantum QME control;
-4. certify the complete physical residual and recover `c_action` using the
+2. complete same-root physical BV4 insertion and quantum QME control;
+3. certify the complete physical residual and recover `c_action` using the
    exact relative-intertwiner, product-square, incidence and Schur theorems;
-5. externalize the accepted action and density through CBF.T13/T14;
-6. derive a sector-resolved spectral law or cross-sector relation reducing the
+4. externalize the accepted action and density through CBF.T13/T14;
+5. derive a sector-resolved spectral law or cross-sector relation reducing the
    nine FSB.04g scalar coordinates;
-7. emit one held-out source-normalized mass, interaction or threshold scalar.
+6. emit one held-out source-normalized mass, interaction or threshold scalar.
 
-The immediate independent target is item 1 or 2. The finite physical typing
-question must not be reopened: CBF.T23 has discharged it. The remaining q79
-provider work is the selected continuum source and its certified map, not a
-new finite incidence convention.
+The immediate independent target is item 1. The finite physical typing and
+product-totalization questions must not be reopened: CBF.T23-CBF.T24 have
+discharged them. The remaining q79 provider work is the selected continuum
+source and its certified symbol/intertwining map, not a new finite incidence
+or product convention.
 
 The continuum route must still complete same-root BV4 insertion and HYM
-synthesis, projection and certified finite-error bounds. The upper-root
-selection and numerical-vacuum clauses remain separate. Another
+synthesis, projection and certified finite-error bounds. Primitive selection
+of the q79 background and the numerical-vacuum clause remain open. A binary
+root selector is not required for the current neutral endpoint; a future odd
+factorwise root-charged interaction would create a new obligation. Another
 normal-frame or finite-trace packet cannot discharge either clause: CBF.T18
-proves those choices are already quotiented or unique. CBF.T22-CBF.T23 and the
+proves those choices are already quotiented or unique. CBF.T22-CBF.T24 and the
 pinned metrology theorem also prove that searching for a second
 sector-specific absolute scale is the wrong target: the only admissible
 absolute extension at the current tier is the shared metrological primitive.

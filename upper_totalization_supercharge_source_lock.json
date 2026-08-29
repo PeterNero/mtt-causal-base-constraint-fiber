@@ -1,0 +1,112 @@
+{
+  "schema": "boe.mtt.upper-totalization-supercharge-source-lock.v1",
+  "claim_id": "CBF.T24",
+  "date": "2026-08-29",
+  "handoff_id": "f446c6a4-7804-484e-a7fc-7fce515744f0",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "63351fa47c280c001755dbd9f23003f87c68bcb3",
+    "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "20 Mathematical Language Discovery Program": "0b99967a68dfdf9d50c80408874a0c9a9d27b387"
+  },
+  "local_sources": [
+    {
+      "path": "RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md",
+      "sha256": "3470093d9f56c64e4a1055450f35b7c2e9d4752171a24328c69d43840f6fea4e",
+      "role": "CBF.T22 canonical graded product and one-scale source theorem"
+    },
+    {
+      "path": "relative_product_supercharge.packet.json",
+      "sha256": "d7ea51d0b9b42f6b1dce67634a5fb8ebebf3e1eca26ae0634cfac58ab777f74c",
+      "role": "CBF.T22 exact product-square and response packet"
+    },
+    {
+      "path": "WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md",
+      "sha256": "06faef972ba717fc1b0952b8b86c5e37e1e277af7ddd22141ac9500e8754cf41",
+      "role": "CBF.T20 primitive routed family-map theorem"
+    },
+    {
+      "path": "weyl_gram_closure_repair_source.packet.json",
+      "sha256": "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+      "role": "CBF.T20 exact P, X, Z and routing payload"
+    },
+    {
+      "path": "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
+      "sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+      "role": "CBF.T23 physical nilpotent Yukawa incidence and KO6 completion theorem"
+    },
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "CBF.T23 exact 96-dimensional physical response packet"
+    },
+    {
+      "path": "AssociatedMatterProductDiracBVExternalizationCompilerTheorem_v1.md",
+      "sha256": "564ed4fc0aee62f342d9074d2e8ac429bab716d350ac8ee0ffd0421e60a0c8f6",
+      "role": "CBF.T13 graded associated-matter product-Dirac compiler"
+    },
+    {
+      "path": "q79_bv4_associated_matter_externalization.packet.json",
+      "sha256": "1ceaafcabb8cd0b31045a7fca4d919a0791418cbf88ec9868175b5764ec934d4",
+      "role": "CBF.T13 exact chiral grading and product-square witness"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/theorems/ALMOST_COMMUTATIVE_SHARED_ROOT_SPINC_FACTORIZATION_THEOREM_v1.md",
+      "sha256": "dbda6cf8a0b9c9c3bd11c8e488cdcf40350da3a6d4f4f2d73a2f7ff22cc54d92",
+      "role": "selected shared-root factorization and balanced conjugate-root cancellation theorem"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/almost_commutative_shared_root_spinc.packet.json",
+      "sha256": "9dbad2ea0dd63592d0129c4ae101b8303b88b0b7fe297ddca7ce2d6c46a94193",
+      "role": "exact connection-preserving shared-root factorization packet"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/theorems/BINARY_ROOT_CAR_NET_AND_GNS_EQUIVALENCE_THEOREM_v1.md",
+      "sha256": "5fc87738556241e4321b4a87ea4841ed7d73ff199d5addf2d96b1e50d443e4d2",
+      "role": "free binary-root observable-equivalence theorem"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/binary_root_car_net_equivalence.packet.json",
+      "sha256": "90b3b1becb069bbccef91c88a45e007a1f77bd34080921bb1fa74bd02f17040f",
+      "role": "exact binary-root CAR and even-observable equivalence packet"
+    },
+    {
+      "path": "../20 Mathematical Language Discovery Program/Q79_UNIVERSAL_SHARED_DIFFERENTIAL_LINE_AND_FINITE_OPERATOR_INTERTWINER_v1.md",
+      "sha256": "5c46f871ab80abb2dbcbd486a8a70a294f8b29461ac67b01e315f442ab63f129",
+      "role": "universal shared differential line and finite-operator naturality theorem"
+    },
+    {
+      "path": "../20 Mathematical Language Discovery Program/q79_universal_shared_line_intertwiner.packet.json",
+      "sha256": "6a39eef5e86082040a705b7259ceced756f3b9b569e444a3075a3f239123b1ff",
+      "role": "exact shared-line connection, holonomy, and finite Hessian packet"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/Framed_q79_Free_Dirac_CAR_Net_and_Hadamard_State_Space_Cutset_Theorem_v1.md",
+      "sha256": "5f2588a22602fd2d118385807c6a5a8f9902978dffab83916291324787caa35f",
+      "role": "selected framed q79 chiral free Dirac source theorem"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/framed_q79_free_dirac_car_net.certificate.json",
+      "sha256": "a08510eb3ac77607094bf9e5469523b6c0e4841680ff2e729f592fbbeb66e36d",
+      "role": "exact external chirality, Clifford, and free causal Dirac certificate"
+    }
+  ],
+  "boundary": {
+    "CBF_T22_composite_product_selected_before": false,
+    "CBF_T22_composite_product_selected_after": true,
+    "selection_kind": "unique graded tensor totalization conditional on the selected factor sources",
+    "one_binary_root_selected": false,
+    "binary_root_selector_required_for_this_endpoint": false,
+    "primitive_q79_background_selected_here": false,
+    "continuum_HYM_intertwiner": false,
+    "physical_BV_QME": false,
+    "nonlinear_physical_action_selected": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

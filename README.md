@@ -385,6 +385,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md`: exact A48/A51
   four-channel incidence, KO6-real physical completion and CBF.T22
   target/source Hessian compression.
+- `UpperTensorTotalizationSharedLineSuperchargeSelectionTheorem_v1.md`:
+  unique graded tensor differential, physical closure charge, shared-line
+  naturality and balanced binary-root neutrality.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -443,6 +446,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   A86, q79 continuum-SM and Lorentzian-hyperbolic sources for CBF.T23.
 - `physical_yukawa_hessian_contract.schema.json`: strict finite physical
   Yukawa-Laplacian typing and selected-endpoint boundary contract.
+- `upper_totalization_supercharge_source_lock.json`: pinned CBF.T20-T23,
+  framed q79 Dirac, universal shared-line and binary-root equivalence sources.
+- `upper_totalization_supercharge_contract.schema.json`: strict universal-
+  totalization selection and physical-boundary contract.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -707,10 +714,11 @@ metrology orbit. At the adopted one-primitive tier it is shared as
 `Lambda=E0=1/L0`, with no numerical value selected and no sector-specific
 scale.
 
-The composite root is deterministic and excludes the target response, but an
-upper-MTT theorem has not selected it as the physical root. Physical
-Lorentz/Higgs/Yukawa identification, continuum HYM transport and BV
-pushforward remain open, so physical acceptance stays `0/3` and `0/7`.
+The composite product is deterministic and excludes the target response. At
+the CBF.T22 tier alone its upper differential selection was still open;
+CBF.T24 below closes that precise operation-selection clause. Continuum HYM
+transport and BV pushforward remain open, so physical acceptance stays `0/3`
+and `0/7`.
 
 `CBF.T23` now closes the finite physical field-typing part of that statement.
 In the A46 ordering
@@ -735,8 +743,44 @@ coefficient is `h^2`; at the adopted one-primitive tier
 
 This is a finite gauge-covariant Yukawa-Laplacian identification. It is not a
 scalar Higgs-potential Hessian, a numerical vacuum selection or a measured
-mass prediction. Upper-root selection, continuum HYM transport and physical
-BV/QME remain open; endpoint acceptance therefore stays `0/3` and `0/7`.
+mass prediction. CBF.T24 now supplies its upper tensor-totalization rule;
+continuum HYM transport and physical BV/QME remain open, so endpoint
+acceptance stays `0/3` and `0/7`.
+
+`CBF.T24` moves one level before the self-adjoint product operator. The
+external and finite physical Dirac operators have canonical oriented chiral
+halves
+
+```text
+q_Y=Pi_Y,- D_Y Pi_Y,+,
+q_F(t)=T(t) direct_sum conjugate(T(t)^*).
+```
+
+Both square to zero. The graded Leibniz rule then has one factor-local tensor
+totalization:
+
+```text
+q_tot=q_Y tensor I+Gamma_Y tensor h q_F.
+```
+
+Its closure charge is exactly
+
+```text
+B_tot=q_tot+q_tot^*=D_Y tensor I+Gamma_Y tensor h D_phys(t),
+```
+
+and its relative square has first variation `h^2 H_phys`. The Koszul sign is
+not optional: replacing `Gamma_Y` by `I` leaves the exact nonzero obstruction
+`2h q_Y tensor q_F`.
+
+The totalization is parallel over the selected universal q79 shared line.
+The two binary roots differ by an order-two line on each of two balanced
+factors, so their complete change is trivial. Because the CBF.T23 incidence
+is scalar-line neutral, this endpoint does not require choosing `+i` or `-i`.
+That is root neutrality, not an arrow-of-time selection. The result selects
+the CBF.T22 composite product rule conditional on its factor sources; it does
+not select the q79 HYM background, nonlinear physical action or quantum BV
+completion.
 
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
@@ -755,7 +799,8 @@ causal auxiliary-lift packet passes `56/56` checks and its independent verifier
 passes `89/89`. The relative product-supercharge packet passes `68/68` checks
 and its independent verifier passes `77/77`. The physical Yukawa-Hessian
 packet passes `90/90` checks and its independent verifier passes `91/91`. The
-canonical suite passes 114
+upper-totalization packet passes `69/69` checks and its independent verifier
+passes `86/86`. The canonical suite passes 120
 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and

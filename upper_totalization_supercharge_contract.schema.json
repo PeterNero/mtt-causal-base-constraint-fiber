@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.upper-totalization-supercharge.v1",
+  "title": "CBF.T24 upper tensor-totalization supercharge selection packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "tier",
+    "source_lock_sha256",
+    "contract_schema_sha256",
+    "theorem_sha256",
+    "selection_root_sha256",
+    "source_provenance",
+    "factor_differentials",
+    "totalization_uniqueness",
+    "physical_closure_charge",
+    "shared_line_naturality",
+    "binary_root_balance",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.upper-totalization-supercharge.v1"},
+    "claim_id": {"const": "CBF.T24"},
+    "date": {"type": "string"},
+    "tier": {"type": "string"},
+    "source_lock_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "contract_schema_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "theorem_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "selection_root_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_provenance": {"type": "object"},
+    "factor_differentials": {"type": "object"},
+    "totalization_uniqueness": {"type": "object"},
+    "physical_closure_charge": {"type": "object"},
+    "shared_line_naturality": {"type": "object"},
+    "binary_root_balance": {"type": "object"},
+    "parameter_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "new_observed_inputs",
+        "new_fitted_coefficients",
+        "new_continuous_shape_parameters",
+        "new_binary_root_selectors",
+        "universal_dimensionful_primitives",
+        "sector_specific_scales"
+      ],
+      "properties": {
+        "new_observed_inputs": {"const": 0},
+        "new_fitted_coefficients": {"const": 0},
+        "new_continuous_shape_parameters": {"const": 0},
+        "new_binary_root_selectors": {"const": 0},
+        "universal_dimensionful_primitives": {"const": 1},
+        "sector_specific_scales": {"const": 0}
+      }
+    },
+    "physical_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "CBF_T22_composite_product_selected",
+        "selection_is_conditional_on_factor_sources",
+        "one_binary_root_selected",
+        "binary_root_selector_required_for_this_endpoint",
+        "primitive_q79_background_selected_here",
+        "continuum_HYM_intertwiner",
+        "physical_BV_QME",
+        "nonlinear_physical_action_selected",
+        "full_B_ACTION_01_closed"
+      ],
+      "properties": {
+        "CBF_T22_composite_product_selected": {"const": true},
+        "selection_is_conditional_on_factor_sources": {"const": true},
+        "one_binary_root_selected": {"const": false},
+        "binary_root_selector_required_for_this_endpoint": {"const": false},
+        "primitive_q79_background_selected_here": {"const": false},
+        "continuum_HYM_intertwiner": {"const": false},
+        "physical_BV_QME": {"const": false},
+        "nonlinear_physical_action_selected": {"const": false},
+        "full_B_ACTION_01_closed": {"const": false}
+      }
+    },
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer"},
+        "total": {"type": "integer"},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

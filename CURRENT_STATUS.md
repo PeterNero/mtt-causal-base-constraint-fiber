@@ -648,10 +648,10 @@ scale parameters, and the same primitive is compatible with the q79 clock
 rate `gamma=log(448)E0`. No numerical value of `E0` or `L0` is selected.
 
 This closes single-operator provenance and the relative causal-synthesis
-identity, not upper-MTT selection of the composite root. Physical
-Lorentz/Higgs/Yukawa identification, continuum HYM/Galerkin transport and the
-physical BV pushforward remain open. Acceptance therefore remains `0/3`
-packets and `0/7` rows.
+identity. At the CBF.T22 tier, upper differential selection of the composite
+product was still open; CBF.T24 below closes that precise operation-selection
+clause. Continuum HYM/Galerkin transport and the physical BV pushforward
+remain open. Acceptance therefore remains `0/3` packets and `0/7` rows.
 
 `PhysicalYukawaIncidenceKO6HessianCompressionTheorem.v1` (`CBF.T23`) now
 closes the finite physical field-typing subclause without relabelling the
@@ -700,7 +700,51 @@ At a covariantly constant neutral Higgs radial amplitude `h`, the response is
 coefficient, new shape parameter or sector-specific scale enters.
 
 This closes finite gauge-covariant Yukawa-Laplacian Hessian typing. It does
-not select the numerical Higgs vacuum or upper composite root, identify a
-scalar Higgs-potential Hessian, execute continuum HYM/Galerkin transport, or
-complete the physical BV pushforward/QME. Physical packet and row acceptance
-therefore remain `0/3` and `0/7`.
+not select the numerical Higgs vacuum, identify a scalar Higgs-potential
+Hessian, execute continuum HYM/Galerkin transport, or complete the physical
+BV pushforward/QME. CBF.T24 below supplies the upper tensor-totalization rule.
+Physical packet and row acceptance therefore remain `0/3` and `0/7`.
+
+`UpperTensorTotalizationSharedLineSuperchargeSelectionTheorem.v1` (`CBF.T24`)
+now closes the CBF.T22 composite-product selection clause by moving before
+the self-adjoint operator. On the selected framed-Cauchy realization,
+
+```text
+q_Y=Pi_Y,- D_Y Pi_Y,+,
+q_F(t)=T(t) direct_sum conjugate(T(t)^*)
+```
+
+are the oriented nilpotent chiral halves of the external Dirac operator and
+the CBF.T23 physical finite Dirac-Yukawa family. The unique minimal
+factor-local tensor differential extending both and obeying graded Leibniz is
+
+```text
+q_tot(t,h)=q_Y tensor I+Gamma_Y tensor h q_F(t).
+```
+
+The exact four-variable coefficient system has rank four and unique solution
+`A=diag(1,-1)=Gamma_Y`. The ungraded candidate with `A=I` fails nilpotence by
+the nonzero cross term `2h q_Y tensor q_F`. Therefore
+
+```text
+B_tot=q_tot+q_tot^*
+     =D_Y tensor I+Gamma_Y tensor h D_phys(t)
+```
+
+is selected by the tensor-differential universal property, not appended as a
+second operator axiom. Its square is the CBF.T22/CBF.T23 product square, and
+its neutral-relative first variation is exactly `h^2 H_phys`.
+
+The construction is parallel over the selected q79 universal shared line.
+The two binary roots `16` and `48 mod 64` differ by the order-two line
+`epsilon`; both the SpinC and residual factors acquire `epsilon`, so the
+complete change is `epsilon^2=1`. CBF.T23 acts on a root-neutral finite factor
+and is intertwined by this balanced change. No `+i/-i` selector is required
+for this endpoint, and none is introduced.
+
+This advances only operation selection conditional on the selected factor
+sources. It does not primitively select the q79 background, identify the flat
+shared line with the nonzero-Chern HYM connection, choose an arrow of time,
+select a nonlinear physical action, or complete BV/QME. `B.ACTION.01`,
+`B.GEO.01` and `B.OP.01` remain open, with physical acceptance still `0/3`
+packets and `0/7` rows.
