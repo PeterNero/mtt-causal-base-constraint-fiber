@@ -16,6 +16,8 @@ paper, note, packet name or search hit.
    action-intertwiner handoff is `990a6f58-451b-4cb2-ba76-45e173bf4e09`;
    the equivariant Feshbach response handoff is
    `54421bb0-aa9e-4c9f-a1a4-a89e7d2dea0d`;
+   the eta9-independent Weyl-Gram direct-source handoff is
+   `6e3b0647-30a0-4529-af43-7c61b0004cca`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

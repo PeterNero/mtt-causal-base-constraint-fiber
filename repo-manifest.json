@@ -76,6 +76,9 @@
     "exact 36-to-18-to-9-to-1 finite response-module ladder",
     "equivariance-alone response-line no-go and negative control",
     "scalar relative-response comparison commutant and proportionality criterion",
+    "exact primitive Weyl-Gram derivation of the normalized finite response blocks",
+    "exact four-to-two-to-one shared source-coordinate reduction",
+    "eta9-independent finite relative-response source with identity intertwiner",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -122,6 +125,8 @@
     "identification of the normalized finite Weyl trace with the physical BV density",
     "existence of a same-root physical Hessian satisfying H_eff=c_action H_resp",
     "physical supply of the relative-response source intertwiner",
+    "physical selection of the finite Weyl-Gram source coordinate",
+    "identification of finite identity synthesis with a continuum physical SYN packet",
     "that three structured source packets are three scalar physical parameters",
     "that every internal MTT direction is non-spatiotemporal",
     "a new globally original operator-theory identity"
@@ -147,7 +152,8 @@
     "ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem_v1.md",
     "AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md",
     "NormalFrameQuotientAndActionIntertwinerMinimalDataTheorem_v1.md",
-    "EquivariantFeshbachOneDimensionalResponseTheorem_v1.md"
+    "EquivariantFeshbachOneDimensionalResponseTheorem_v1.md",
+    "WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -168,7 +174,8 @@
     "closure_pressure_family_hessian_activation.packet.json",
     "affine_zero_section_action.packet.json",
     "normal_frame_action_intertwiner_reduction.packet.json",
-    "equivariant_feshbach_response.packet.json"
+    "equivariant_feshbach_response.packet.json",
+    "weyl_gram_closure_repair_source.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -189,7 +196,8 @@
     "python build_closure_pressure_family_hessian_activation.py",
     "python build_affine_zero_section_action.py",
     "python build_normal_frame_action_intertwiner_reduction.py",
-    "python build_equivariant_feshbach_response.py"
+    "python build_equivariant_feshbach_response.py",
+    "python build_weyl_gram_closure_repair_source.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -205,7 +213,8 @@
     "closure_pressure_family_hessian_activation_contract.schema.json",
     "affine_zero_section_action_contract.schema.json",
     "normal_frame_action_intertwiner_contract.schema.json",
-    "equivariant_feshbach_response_contract.schema.json"
+    "equivariant_feshbach_response_contract.schema.json",
+    "weyl_gram_closure_repair_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

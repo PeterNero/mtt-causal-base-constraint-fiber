@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:weyl-gram-closure-repair-source:v1",
+  "title": "Weyl-Gram closure-repair relative-response source contract",
+  "description": "A provider-neutral finite source candidate deriving the selected routed response as a first Gram variation of primitive finite operators.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "tier",
+    "source_lock_sha256",
+    "contract_schema_sha256",
+    "theorem_sha256",
+    "primitive_root_sha256",
+    "primitive_source",
+    "gram_derivation",
+    "universal_routing",
+    "relative_intertwiner",
+    "finite_action",
+    "parameter_ledger",
+    "physical_boundary",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": { "const": "boe.mtt.weyl-gram-closure-repair-source.v1" },
+    "claim_id": { "const": "CBF.T20" },
+    "date": { "type": "string" },
+    "tier": { "const": "EXACT_SOURCE_PINNED_FINITE_DIRECT_SOURCE + PROVIDER_NEUTRAL_PHYSICAL_CANDIDATE" },
+    "source_lock_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "contract_schema_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "theorem_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "finite_source_manifest_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "primitive_root_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "primitive_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operators", "source_coordinate_dimension", "observed_inputs", "fitted_coefficients", "target_response_excluded_from_root"],
+      "properties": {
+        "operators": { "const": ["P", "X", "Z", "F3"] },
+        "source_coordinate_dimension": { "const": 1 },
+        "observed_inputs": { "const": 0 },
+        "fitted_coefficients": { "const": 0 },
+        "primitive_payload": { "type": "object" },
+        "target_response_excluded_from_root": { "const": true },
+        "source_manifest_path": { "type": "string" }
+      }
+    },
+    "gram_derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shift_family", "phase_family", "first_variations_derived", "exact_derivative_formula", "Fourier_covariant_for_all_t"],
+      "properties": {
+        "shift_family": { "const": "Y_s(t)=-P+t(I+X)" },
+        "phase_family": { "const": "Y_p(t)=-P+t(I+Z)" },
+        "Gram_family": { "type": "string" },
+        "first_variations_derived": { "const": true },
+        "exact_derivative_formula": { "const": "G_M'(0)=-(P M^*+M P)" },
+        "centered_difference_formula": { "type": "string" },
+        "shift_first_variation": { "type": "array" },
+        "phase_first_variation": { "type": "array" },
+        "Fourier_covariant_for_all_t": { "const": true }
+      }
+    },
+    "universal_routing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phase_sectors", "shift_sectors", "coordinate_dimension_ladder", "shared_coordinate_forced"],
+      "properties": {
+        "sector_order": { "const": ["u", "e", "d", "N"] },
+        "phase_sectors": { "const": ["u", "e"] },
+        "shift_sectors": { "const": ["d", "N"] },
+        "phase_H16_slots": { "const": [6, 7, 8, 14] },
+        "shift_H16_slots": { "const": [9, 10, 11, 15] },
+        "coordinate_dimension_ladder": { "const": [4, 2, 1] },
+        "shared_coordinate_forced": { "const": true },
+        "shared_coordinate": { "const": ["t", "t", "t", "t"] },
+        "anti_diagonal_transformation": { "type": "string" }
+      }
+    },
+    "relative_intertwiner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["comparison", "T_rel_is_identity", "commutators_zero", "finite_source_line_derived", "normalized_finite_coefficient"],
+      "properties": {
+        "comparison": { "const": "T_rel=H_resp,act^-1 H_derived,act" },
+        "active_dimension": { "const": 6 },
+        "active_response_rank": { "const": 6 },
+        "T_rel": { "type": "array" },
+        "T_rel_is_identity": { "const": true },
+        "commutators_zero": { "const": true },
+        "comparison_commutant_dimension_from_CBF_T19": { "const": 1 },
+        "finite_source_line_derived": { "const": true },
+        "normalized_finite_coefficient": { "const": "1" }
+      }
+    },
+    "finite_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "graph_pullback", "finite_identity_synthesis", "physical_SYN_packet"],
+      "properties": {
+        "action": { "const": "A(n,k,lambda)=-epsilon(n)+Re<lambda,n+psi(k)>" },
+        "graph_pullback": { "const": "A(-psi(k),k,lambda)=1/2 Re<k,H_derived k>" },
+        "closure_graph": { "type": "string" },
+        "graph_pullback_samples": { "type": "integer", "minimum": 1 },
+        "finite_identity_synthesis": { "const": true },
+        "identity_synthesis_statement": { "type": "string" },
+        "physical_SYN_packet": { "const": false }
+      }
+    },
+    "parameter_ledger": {
+      "type": "object",
+      "required": ["observed_construction_inputs", "fitted_matrix_coefficients", "new_continuous_response_shape_parameters", "shared_finite_source_coordinates", "unselected_overall_physical_action_scales"],
+      "properties": {
+        "observed_construction_inputs": { "const": 0 },
+        "fitted_matrix_coefficients": { "const": 0 },
+        "new_continuous_response_shape_parameters": { "const": 0 },
+        "shared_finite_source_coordinates": { "const": 1 },
+        "derived_normalized_finite_response_coefficient": { "const": "1" },
+        "unselected_overall_physical_action_scales": { "const": 1 }
+      },
+      "additionalProperties": false
+    },
+    "physical_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["physically_selected", "eta9_or_HYM_endpoint_used", "physical_causal_base_supplied", "physical_SYN_supplied", "physical_BV4_supplied", "physical_action_scale_selected", "physical_packets_accepted", "physical_rows_accepted"],
+      "properties": {
+        "physically_selected": { "const": false },
+        "eta9_or_HYM_endpoint_used": { "const": false },
+        "physical_causal_base_supplied": { "const": false },
+        "physical_SYN_supplied": { "const": false },
+        "physical_BV4_supplied": { "const": false },
+        "physical_action_scale_selected": { "const": false },
+        "Lorentz_Higgs_Yukawa_typing": { "const": false },
+        "physical_packets_accepted": { "const": 0 },
+        "physical_rows_accepted": { "const": 0 }
+      }
+    },
+    "physical_packets_accepted": { "const": 0 },
+    "physical_packets_total": { "const": 3 },
+    "physical_rows_accepted": { "const": 0 },
+    "physical_rows_total": { "const": 7 },
+    "frontier_delta": { "type": "string" },
+    "checks": { "type": "object" },
+    "check_summary": { "type": "object" }
+  }
+}

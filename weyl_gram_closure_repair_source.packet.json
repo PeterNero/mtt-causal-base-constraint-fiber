@@ -1,0 +1,817 @@
+{
+  "check_summary": {
+    "failed": [],
+    "passed": 61,
+    "total": 61
+  },
+  "checks": {
+    "F3_is_unitary": true,
+    "FSB04e_packet_is_exact": true,
+    "Fourier_paired_source_coordinates_have_rank_2": true,
+    "Gram_families_are_Fourier_covariant": true,
+    "Gram_families_are_Hermitian": true,
+    "Gram_positive_form_identity_is_exact": true,
+    "P_is_Fourier_invariant": true,
+    "P_is_Hermitian_involution": true,
+    "T17_action_packet_is_exact": true,
+    "T19_packet_is_exact": true,
+    "T19_relative_intertwiner_condition_is_satisfied": true,
+    "Weyl_phase_response_is_derived_from_Z": true,
+    "Weyl_shift_response_is_derived_from_X": true,
+    "active_response_is_invertible": true,
+    "affine_graph_pullback_is_exact": true,
+    "anti_diagonal_source_is_independent": true,
+    "centered_phase_derivative_matches_formula": true,
+    "centered_shift_derivative_matches_formula": true,
+    "contract_schema_is_exact": true,
+    "coordinate_swap_fixes_shared_line": true,
+    "coordinate_swap_negates_anti_line": true,
+    "derived_first_variations_are_Hermitian": true,
+    "derived_phase_block_matches_locked_response": true,
+    "derived_phase_is_Fourier_conjugate_of_shift": true,
+    "derived_routed_Hessian_has_rank_24": true,
+    "derived_routed_Hessian_is_Hermitian": true,
+    "derived_routed_Hessian_matches_locked_Hresp": true,
+    "derived_routed_Hessian_norm_squared_is_192": true,
+    "derived_shift_block_matches_locked_response": true,
+    "eta9_or_HYM_endpoint_is_not_used": true,
+    "finite_identity_synthesis_has_exact_effective_Hessian": true,
+    "four_independent_sector_coordinates_have_rank_4": true,
+    "kernel_model_is_pinned": true,
+    "neutral_Gram_is_identity_phase": true,
+    "neutral_Gram_is_identity_shift": true,
+    "no_fitted_coefficients_enter_source": true,
+    "no_observed_values_enter_source": true,
+    "phase_response_is_Fourier_conjugate": true,
+    "physical_BV4_remains_open": true,
+    "physical_SYN_remains_open": true,
+    "physical_action_scale_remains_open": true,
+    "physical_causal_base_remains_open": true,
+    "physical_packet_acceptance_is_unchanged": true,
+    "physical_row_acceptance_is_unchanged": true,
+    "primitive_root_excludes_target_response": true,
+    "primitive_root_is_sha256": true,
+    "relative_response_commutators_vanish": true,
+    "relative_response_is_identity": true,
+    "shared_neutral_source_coordinate_has_rank_1": true,
+    "source_families_are_Fourier_covariant": true,
+    "source_hash_AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md": true,
+    "source_hash_ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem_v1.md": true,
+    "source_hash_EquivariantFeshbachOneDimensionalResponseTheorem_v1.md": true,
+    "source_hash_affine_zero_section_action.packet.json": true,
+    "source_hash_direct_one_constraint_multiplier_source.packet.json": true,
+    "source_hash_equivariant_feshbach_response.packet.json": true,
+    "source_hash_provider_neutral_physical_source_contract.schema.json": true,
+    "source_hash_q79_physical_endpoint_three_packet_contract.schema.json": true,
+    "source_hash_source_manifest.v1.json": true,
+    "source_hash_triadic_dynamic_weyl_orbit.packet.json": true,
+    "source_lock_schema_is_exact": true
+  },
+  "claim_id": "CBF.T20",
+  "contract_schema_sha256": "c9220563c4bd1dc66098bcfb9bc5e243b5457719796e77aa1468bd41a9660245",
+  "date": "2026-08-29",
+  "finite_action": {
+    "action": "A(n,k,lambda)=-epsilon(n)+Re<lambda,n+psi(k)>",
+    "closure_graph": "psi(k)=1/2 n0 Re<k,H_derived k>",
+    "finite_identity_synthesis": true,
+    "graph_pullback": "A(-psi(k),k,lambda)=1/2 Re<k,H_derived k>",
+    "graph_pullback_samples": 4,
+    "identity_synthesis_statement": "U=I48, Q=0, H_eff=H_derived",
+    "physical_SYN_packet": false
+  },
+  "finite_source_manifest_sha256": "c0016e216126298906c4ba1cc25c4d11f985764f56622cede2367aa186a1861c",
+  "frontier_delta": "The normalized finite 9-to-1 response-line source is now constructed without eta9/HYM data: one shared neutral deformation of the pinned P,X,Z,F3 Weyl frame emits A_shift and B_phase as exact first Gram variations, routes them to H_resp, and satisfies the CBF.T19 relative intertwiner with T_rel=I. What remains is physical selection of this finite deformation from a Lorentzian causal/continuum root, nontrivial SYN transport, BV4 density and absolute action normalization.",
+  "gram_derivation": {
+    "Fourier_covariant_for_all_t": true,
+    "Gram_family": "G_alpha(t)=Y_alpha(t)Y_alpha(t)^*",
+    "centered_difference_formula": "G_M'(0)=(G_M(1)-G_M(-1))/2",
+    "exact_derivative_formula": "G_M'(0)=-(P M^*+M P)",
+    "first_variations_derived": true,
+    "phase_family": "Y_p(t)=-P+t(I+Z)",
+    "phase_first_variation": [
+      [
+        [
+          "-4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "shift_family": "Y_s(t)=-P+t(I+X)",
+    "shift_first_variation": [
+      [
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    ]
+  },
+  "parameter_ledger": {
+    "derived_normalized_finite_response_coefficient": "1",
+    "fitted_matrix_coefficients": 0,
+    "new_continuous_response_shape_parameters": 0,
+    "observed_construction_inputs": 0,
+    "shared_finite_source_coordinates": 1,
+    "unselected_overall_physical_action_scales": 1
+  },
+  "physical_boundary": {
+    "Lorentz_Higgs_Yukawa_typing": false,
+    "eta9_or_HYM_endpoint_used": false,
+    "physical_BV4_supplied": false,
+    "physical_SYN_supplied": false,
+    "physical_action_scale_selected": false,
+    "physical_causal_base_supplied": false,
+    "physical_packets_accepted": 0,
+    "physical_rows_accepted": 0,
+    "physically_selected": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "primitive_root_sha256": "66ea67ad8c0c554dc07ec56dfda2836dfc3761dda848d2c074186b6d45a84770",
+  "primitive_source": {
+    "fitted_coefficients": 0,
+    "observed_inputs": 0,
+    "operators": [
+      "P",
+      "X",
+      "Z",
+      "F3"
+    ],
+    "primitive_payload": {
+      "F3": [
+        [
+          [
+            "0",
+            "1/3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/3",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1/3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1/6",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/6",
+            "-1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1/3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1/6",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/6",
+            "1/2",
+            "0"
+          ]
+        ]
+      ],
+      "P": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "X": [
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "Z": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "-1/2"
+          ]
+        ]
+      ],
+      "route": {
+        "phase_H16_slots": [
+          6,
+          7,
+          8,
+          14
+        ],
+        "phase_sectors": [
+          "u",
+          "e"
+        ],
+        "shift_H16_slots": [
+          9,
+          10,
+          11,
+          15
+        ],
+        "shift_sectors": [
+          "d",
+          "N"
+        ]
+      },
+      "source_line": [
+        "t",
+        "t",
+        "t",
+        "t"
+      ]
+    },
+    "source_coordinate_dimension": 1,
+    "source_manifest_path": "../mtt-q79-total-superconnection-branching/state/source_manifest.v1.json",
+    "target_response_excluded_from_root": true
+  },
+  "relative_intertwiner": {
+    "T_rel": [
+      [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "T_rel_is_identity": true,
+    "active_dimension": 6,
+    "active_response_rank": 6,
+    "commutators_zero": true,
+    "comparison": "T_rel=H_resp,act^-1 H_derived,act",
+    "comparison_commutant_dimension_from_CBF_T19": 1,
+    "finite_source_line_derived": true,
+    "normalized_finite_coefficient": "1"
+  },
+  "schema": "boe.mtt.weyl-gram-closure-repair-source.v1",
+  "source_lock_sha256": "21912219dcce54a3f762c732ce1dd5631cc31f34da241bff3057e71b73221513",
+  "theorem_sha256": "06faef972ba717fc1b0952b8b86c5e37e1e277af7ddd22141ac9500e8754cf41",
+  "tier": "EXACT_SOURCE_PINNED_FINITE_DIRECT_SOURCE + PROVIDER_NEUTRAL_PHYSICAL_CANDIDATE",
+  "universal_routing": {
+    "anti_diagonal_transformation": "sign representation under pair-lane exchange",
+    "coordinate_dimension_ladder": [
+      4,
+      2,
+      1
+    ],
+    "phase_H16_slots": [
+      6,
+      7,
+      8,
+      14
+    ],
+    "phase_sectors": [
+      "u",
+      "e"
+    ],
+    "sector_order": [
+      "u",
+      "e",
+      "d",
+      "N"
+    ],
+    "shared_coordinate": [
+      "t",
+      "t",
+      "t",
+      "t"
+    ],
+    "shared_coordinate_forced": true,
+    "shift_H16_slots": [
+      9,
+      10,
+      11,
+      15
+    ],
+    "shift_sectors": [
+      "d",
+      "N"
+    ]
+  }
+}

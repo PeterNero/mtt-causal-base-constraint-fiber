@@ -1,0 +1,72 @@
+{
+  "schema": "boe.mtt.weyl-gram-closure-repair-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repository_head_before": "99aa5287e07ba269072e4dde543ed7dd67b2e562",
+  "handoff_id": "6e3b0647-30a0-4529-af43-7c61b0004cca",
+  "local_sources": [
+    {
+      "path": "EquivariantFeshbachOneDimensionalResponseTheorem_v1.md",
+      "sha256": "12e91abaf801ca43ce5683912ba3385b87ddef42d6f95ab131122648322d8a7b",
+      "role": "CBF.T19 response-module ladder and relative-intertwiner criterion"
+    },
+    {
+      "path": "equivariant_feshbach_response.packet.json",
+      "sha256": "8215e533f6258eb1f278f26a3c85bd1a18ff7c3f0673f05e4026199461b5ec88",
+      "role": "exact CBF.T19 comparison algebra and endpoint boundary"
+    },
+    {
+      "path": "AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md",
+      "sha256": "77759a36b19a789f3c09313f22ca9b632e3f4a114dd2eb4555c2f711c718b05f",
+      "role": "CBF.T17 affine closure action and graph pullback"
+    },
+    {
+      "path": "affine_zero_section_action.packet.json",
+      "sha256": "7e72b8bbf8aa0e2ca3384133b953c1d2f57804d0e7ea415d5314b1d1736f40ee",
+      "role": "exact CBF.T17 finite action witness"
+    },
+    {
+      "path": "ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem_v1.md",
+      "sha256": "ab7119a4155f9c42d593b9fc1ca2599e7f2363c027cfbb8cd654fe22c3a3036a",
+      "role": "CBF.T16 pressure-curvature activation and physical boundary"
+    },
+    {
+      "path": "direct_one_constraint_multiplier_source.packet.json",
+      "sha256": "16425d98ec644395e18a61dece1c3e6610c092b2a7655a17ff3b61ff2ef0f4b7",
+      "role": "CBF.T15 minimal direct residual source and repair flow"
+    },
+    {
+      "path": "provider_neutral_physical_source_contract.schema.json",
+      "sha256": "6cf6c787951393c662973315f775304ab5e702b3898021d97b6251d7d1a0e308",
+      "role": "provider-neutral physical-source acceptance boundary"
+    },
+    {
+      "path": "q79_physical_endpoint_three_packet_contract.schema.json",
+      "sha256": "8189fd8e91032cdd6ec50cef0ef82105808c35cc215cd54731d165fb9d489c9f",
+      "role": "GAS, SYN and BV4 endpoint contract"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_dynamic_weyl_orbit.packet.json",
+      "sha256": "a265cf03d5b9e459906bebe17c8bca80152e644765bdfc5d8cb2e77fe931a074",
+      "role": "primitive P, X, Z, F3 and comparison response shapes"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/state/source_manifest.v1.json",
+      "sha256": "c0016e216126298906c4ba1cc25c4d11f985764f56622cede2367aa186a1861c",
+      "role": "finite q79 primitive source-manifest root"
+    }
+  ],
+  "boundary": {
+    "primitive_finite_Weyl_data_are_source_pinned": true,
+    "eta9_or_HYM_endpoint_used": false,
+    "direct_finite_source_physically_selected": false,
+    "physical_causal_base_supplied": false,
+    "physical_SYN_supplied": false,
+    "physical_BV4_supplied": false,
+    "physical_action_scale_selected": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

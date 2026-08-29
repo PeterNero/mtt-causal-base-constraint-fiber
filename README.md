@@ -614,6 +614,27 @@ insufficient. The theorem therefore reduces the endpoint to a same-root
 source-intertwining statement plus one BV-normalized scalar; it does not
 accept a physical packet.
 
+`CBF.T20` constructs that last line at the normalized finite-source tier
+without relying on eta9/HYM endpoint output. The exact source is one shared
+neutral deformation of the pinned Weyl frame:
+
+```text
+Y_s(t)=-P+t(I+X),
+Y_p(t)=-P+t(I+Z).
+```
+
+The first variations of `Y_alpha(t)Y_alpha(t)^*` are exactly the shift and
+phase response blocks, and universal routing gives the prior rank-24
+`H_resp`. The source-coordinate reduction is `4 -> 2 -> 1`, while the active
+relative comparison is `T_rel=I6`. The primitive hash excludes the target
+response, and independent verification reconstructs the operators from
+hard-coded exact field entries.
+
+This does not promote a physical endpoint. The finite identity synthesis is
+only an algebraic benchmark; causal-base selection, continuum SYN data, BV4
+density and the absolute action scale remain open. Physical acceptance stays
+`0/3` packets and `0/7` rows.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -625,8 +646,9 @@ its independent verifier passes `68/68`. The closure-pressure packet passes
 affine-action packet passes `60/60` checks and its independent verifier passes
 `90/90`. The normal-frame packet passes `65/65` checks and its independent
 verifier passes `108/108`. The equivariant Feshbach packet passes `48/48`
-checks and its independent verifier passes `58/58`. The canonical suite passes
-90 unit tests. The
+checks and its independent verifier passes `58/58`. The Weyl-Gram direct-source
+packet passes `61/61` checks and its independent verifier passes `79/79`. The
+canonical suite passes 96 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

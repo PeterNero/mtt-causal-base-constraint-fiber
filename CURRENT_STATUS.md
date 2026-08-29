@@ -526,3 +526,36 @@ same-root relative source intertwiner and one scalar evaluation. It does not
 supply that physical intertwiner, `K_phys`, `U`, a complement inverse, BV4
 density or `c_action`. Physical acceptance remains `0/3` packets and `0/7`
 rows under `B.GEO.01`, `B.OP.01` and `B.ACTION.01`.
+
+`WeylGramClosureRepairRelativeResponseSourceTheorem.v1` (`CBF.T20`) now
+constructs the normalized finite response line without eta9/HYM endpoint
+data. Starting only from the pinned finite Weyl primitives `P,X,Z,F3`, it
+defines the positive Gram families
+
+```text
+Y_s(t)=-P+t(I+X),       G_s(t)=Y_s(t)Y_s(t)^*,
+Y_p(t)=-P+t(I+Z),       G_p(t)=Y_p(t)Y_p(t)^*.
+```
+
+Their exact first variations at the neutral point are the prior shift and
+phase response blocks. One shared neutral source coordinate routes those
+blocks through the exact source-coordinate ladder `4 -> 2 -> 1`, yielding the
+full rank-24 routed Hessian with Frobenius norm squared 192. On the active
+carrier,
+
+```text
+T_rel=H_resp,act^-1 H_derived,act=I6,
+```
+
+so the CBF.T19 relative-intertwiner cutset is satisfied exactly at normalized
+finite tier. The primitive-root hash excludes `H_resp`, `A_shift` and
+`B_phase`; the response is built before it is compared with the earlier
+packet. There are no observed inputs, fitted matrix coefficients or new
+continuous response-shape parameters.
+
+This closes the eta9-independent **finite source-line construction**, not its
+physical promotion. The shared deformation still lacks selection by a
+Lorentzian causal base, a same-root continuum synthesis and complement,
+physical BV4 density, and absolute action normalization. The finite
+`U=I48,Q=0` benchmark is not a physical SYN packet. Acceptance therefore
+remains `0/3` packets and `0/7` rows under the same three blockers.

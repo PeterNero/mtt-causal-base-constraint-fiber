@@ -52,6 +52,8 @@ def main() -> None:
     run(sys.executable, "verify_normal_frame_action_intertwiner_reduction.py")
     run(sys.executable, "build_equivariant_feshbach_response.py")
     run(sys.executable, "verify_equivariant_feshbach_response.py")
+    run(sys.executable, "build_weyl_gram_closure_repair_source.py")
+    run(sys.executable, "verify_weyl_gram_closure_repair_source.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

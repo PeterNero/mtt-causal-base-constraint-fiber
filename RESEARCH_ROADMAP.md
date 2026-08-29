@@ -348,11 +348,17 @@ necessary and sufficient for `H_eff,act=c_action H_resp,act`. The complete
 finite reduction is `36 -> 18 -> 9 -> 1`; each arrow now has a named source
 obligation rather than being hidden inside "equivariance."
 
+CBF.T20 now discharges the finite normalized form of the last source
+obligation. The pinned Weyl primitives `P,X,Z,F3` generate the shift and phase
+blocks as first variations of positive Gram families, and one neutral shared
+coordinate reduces the fixed-shape source space `4 -> 2 -> 1`. The resulting
+relative comparison is exactly `T_rel=I`. This is independent of eta9/HYM
+endpoint data and uses no observed or fitted coefficient.
+
 The remaining order is now:
 
-1. construct one selected source that identifies the four gauge-sector blocks,
-   Fourier pairs and universal routed block, then proves the relative-response
-   comparison intertwiner;
+1. select the finite Weyl-Gram deformation from a Lorentzian causal-base and
+   continuum source, rather than merely from the pinned finite manifest;
 2. obtain same-root `GAS+SYN+BV4` data supplying `K_phys`, synthesis,
    complement inverse or reducing certificate, and BV density;
 3. certify support and route multiplicity, recover `c_action` from the same
