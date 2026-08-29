@@ -10,6 +10,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Associated-matter BV4 handoff: `7a343059-b0e9-44fc-a725-733048697896`
 - Provider-neutral source/q79 classification handoff: `f8fdd194-ed79-45af-a124-5c6219a6dce1`
 - Direct one-constraint multiplier-source handoff: `b8d489d8-41ea-4481-9c15-b31904f215af`
+- Closure-pressure family-Hessian handoff: `c90aa36c-e4b7-4dbe-9eaf-b599b414d474`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
@@ -49,6 +50,7 @@ This is a snapshot, not a substitute for live kernel queries.
 | `B.GEO.01` | open | Physical metric, HYM connection, Green operator, symmetry and finite/continuum naturality. |
 | `B.OP.01` | open | Selected rank-102 entries, kernel projection, inverse/tail bounds and physical intertwiner. |
 | `B.ACTION.01` | open | One selected upper action/differential object with physical pairing, causal action, normalization and transfer. |
+| `B.SM.02` | open | Same-source family/Yukawa orientation and nine charged scalar values with physical typing and held-out validation. |
 | `B.QM.03` | open | Same-source universal apparatus family and any stronger objective-actualization process. |
 | `B.QFT.02` | open | Interacting state, renormalized BV/QME transport, continuum limit and observables. |
 | `B.MEASURE.01` | open | One normalized upper measure with distinct typed pushforwards. |
@@ -403,3 +405,28 @@ family stabilizer, whose commutant is scalar; therefore it cannot emit family
 mass splittings, CKM/PMNS orientation or CP data. One physical scale and the
 selected nonlinear family/sector values remain open, as do `B.ACTION.01`,
 `B.OP.01` and `B.SM.02`.
+
+`ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem.v1`
+now decides the first nonlinear extension of that source. For every regular
+graph residual `Phi(n,k)=n+psi(k)`, the pure multiplier equations force
+`lambda=0`; therefore `D2psi` and all higher residual jets disappear from the
+zero-pressure multiplier Hessian. The positive repair Hessian has the same
+quadratic limitation. A normal load instead produces the exact tangent second
+variation
+
+```text
+<u,H_p v>=p<n0,D2psi(0)[u,v]>.
+```
+
+The source-pinned finite witness contracts the FSB.04e/04f response curvature
+with the neutral A50 `N^c` line. It preserves A47 and the shared circle, changes
+the bordered rank from `32` to `56`, and reduces the free family stabilizer
+from `U(3)` to scalar `U(1)`. Its complex spectrum is `-4,-2,+2` with
+multiplicity eight each and zero with multiplicity 24. Hence it supplies
+CP-sensitive family orientation but only two nonzero singular magnitudes.
+
+This is a conditional composition, not an accepted physical source. The
+same-root intertwiner between CBF.T15 and the q79 response pair, the origin and
+value of pressure, Lorentz/Higgs/Yukawa typing and all nine charged values are
+open. Physical acceptance remains `0/3` packets and `0/7` rows; `B.ACTION.01`
+and `B.SM.02` remain open.

@@ -229,6 +229,30 @@ source result, not an independent prediction that nature starts with four
 copies. Its residual `U(3)` symmetry also proves a no-go: the free source alone
 cannot split family masses or select mixing and CP data.
 
+The sixteenth theorem determines exactly what can and cannot activate family
+curvature in that source. For a regular graph residual
+
+```text
+Phi(n,k)=n+psi(k),
+```
+
+surjectivity forces the multiplier to vanish at every critical point of the
+pure multiplier action. Consequently, nonlinear residual jets are invisible
+in both the zero-pressure multiplier Hessian and the quadratic repair cost.
+A nonzero normal load changes this: at pressure `p n0`, the tangent Hessian is
+
+```text
+<u,H_p v>=p<n0,D2 psi(0)[u,v]>.
+```
+
+An exact A46/A47/A50-compatible witness uses the FSB.04e/04f family responses.
+It raises the `80 x 80` bordered-Hessian rank from `32` to `56`, preserves the
+gauge and shared-circle actions, and reduces the common family stabilizer from
+`U(3)` to `U(1)`. This is a real activation result, but not a mass result: the
+operator has only two nonzero singular levels, the physical pressure and
+same-root source are unselected, and Lorentz/Higgs/Yukawa typing plus all nine
+charged magnitude values remain open.
+
 ## Run the proof
 
 ```powershell
@@ -240,7 +264,8 @@ independently checks the `m4` packet in routine mode, reconstructs the eight
 higher-jet invariant spaces, the exact `m5` witness and the all-arity recurrence,
 checks the all-arity source-promotion contract, executes the seven-row
 factorization/Feshbach witnesses, executes the associated-matter product-Dirac
-and `3 x 16` BV4 witness, and runs the unit tests.
+and `3 x 16` BV4 witness, independently reconstructs the closure-pressure
+family Hessian and its rank/symmetry boundaries, and runs the unit tests.
 
 The complete independent `m4` table and SI(4) replay is intentionally separate
 from the routine suite because it evaluates 3,869,500 admissible quadruples:
@@ -296,6 +321,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `MinimalOneConstraintMultiplierSourceAndThreeFamilyIndexTheorem_v1.md`:
   exact minimal one-constraint family index, unitary source classification,
   multiplier/repair identity, projection flow and free-family no-go.
+- `ClosurePressureFamilyHessianActivationAndRegularMultiplierNoGoTheorem_v1.md`:
+  regular-multiplier zero-pressure no-go, exact closure-pressure activation,
+  finite family-response symmetry reduction and magnitude boundary.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -333,6 +361,11 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   H4-T9/T10/T15 and A46/A47/A50 source boundary for the direct source theorem.
 - `direct_one_constraint_multiplier_source_contract.schema.json`: strict
   conditional contract for one normalized four-to-one typed residual.
+- `closure_pressure_family_hessian_activation_source_lock.json`: pinned
+  CBF.T15 and FSB.04e/04f/04g theorem and packet provenance.
+- `closure_pressure_family_hessian_activation_contract.schema.json`:
+  machine-readable pressure, curvature, source-provenance and physical-typing
+  acceptance contract.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -373,8 +406,15 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   quotient, q79 classification, equivalence witness and value no-go certificate.
 - `direct_one_constraint_multiplier_source.packet.json`: generated exact
   family-index, action/repair, flow, descent and parameter-boundary certificate.
+- `closure_pressure_family_hessian_activation.packet.json`: generated exact
+  multiplier no-go, pressure activation, rank, symmetry and value-boundary
+  certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
+- `build_closure_pressure_family_hessian_activation.py`: deterministic CBF.T16
+  packet builder.
+- `verify_closure_pressure_family_hessian_activation.py`: independent CBF.T16
+  reconstruction and boundary verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
 
 ## Kernel workflow
@@ -443,13 +483,31 @@ promote a physical source: the four-copy premise is reverse-derived from A46,
 one overall physical scale is unselected, and the exact `U(3)` stabilizer
 forbids family splitting until selected nonlinear same-source tensors enter.
 
+`CBF.T16` closes the first nonlinear mechanism question and rejects the naive
+one. Higher residual terms alone cannot change the regular zero-pressure free
+Hessian. The exact missing activation datum is a residual second fundamental
+form paired with nonzero normal closure pressure. Composing CBF.T15 with the
+source-pinned FSB.04e/04f matrices gives an exact finite witness: the bordered
+rank changes `32 -> 56`, the free family stabilizer changes `U(3) -> U(1)`,
+and the CP-sensitive finite orientation survives while A47 gauge and A50
+shared-circle covariance are preserved. Its two nonzero singular levels prove
+that this first response still cannot provide three family magnitudes.
+
+This composition is deliberately conditional. No theorem yet says that one
+physical root emits the direct residual, the finite q79 response pair and the
+normal pressure. The pressure scale, Lorentz/Higgs left-right typing and nine
+charged values remain open, so physical acceptance stays `0/3` packets and
+`0/7` rows.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
 passes `71/71` checks and its independent verifier passes `47/47`. The
 provider-neutral packet passes `40/40` checks and its independent verifier
 passes `50/50`. The direct multiplier-source packet passes `57/57` checks and
-its independent verifier passes `68/68`. The canonical suite passes 68 unit tests. The
+its independent verifier passes `68/68`. The closure-pressure packet passes
+`54/54` checks and its independent verifier passes `59/59`. The canonical
+suite passes 73 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

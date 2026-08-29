@@ -44,6 +44,8 @@ def main() -> None:
     run(sys.executable, "verify_provider_neutral_projection_source_quotient.py")
     run(sys.executable, "build_direct_one_constraint_multiplier_source.py")
     run(sys.executable, "verify_direct_one_constraint_multiplier_source.py")
+    run(sys.executable, "build_closure_pressure_family_hessian_activation.py")
+    run(sys.executable, "verify_closure_pressure_family_hessian_activation.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

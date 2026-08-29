@@ -1,0 +1,320 @@
+{
+  "check_summary": {
+    "failed": [],
+    "passed": 54,
+    "total": 54
+  },
+  "checks": {
+    "A_and_B_do_not_commute": true,
+    "A_has_selected_cubic_polynomial": true,
+    "A_is_Hermitian": true,
+    "A_is_invertible": true,
+    "B_has_selected_cubic_polynomial": true,
+    "B_is_Hermitian": true,
+    "B_is_invertible": true,
+    "FSB04f_CP_quartet_is_exact": true,
+    "FSB04f_declares_full_M3_generation": true,
+    "FSB04g_retains_nine_charged_values": true,
+    "T15_linear_source_is_regular_four_to_one": true,
+    "T15_physical_source_was_not_promoted": true,
+    "dynamic_packet_routes_phase_to_u_e": true,
+    "dynamic_packet_routes_shift_to_d_nuD": true,
+    "family_response_is_not_promoted_to_Yukawa_mass": true,
+    "family_stabilizer_reduces_from_U3_to_scalar_U1": true,
+    "first_response_does_not_emit_three_positive_magnitudes": true,
+    "imported_A_matches_exact_selected_response": true,
+    "imported_B_matches_exact_selected_response": true,
+    "joint_AB_commutant_has_dimension_one": true,
+    "no_observed_values_enter_witness": true,
+    "normal_Nc_line_has_zero_shared_circle_weight": true,
+    "normal_derivative_is_identity_and_surjective": true,
+    "phase_and_shift_projectors_are_disjoint": true,
+    "phase_shift_inactive_projectors_partition_H16": true,
+    "physical_packet_acceptance_is_unchanged": true,
+    "physical_pressure_remains_unselected": true,
+    "physical_row_acceptance_is_unchanged": true,
+    "pressure_activated_bordered_Hessian_has_kernel_24": true,
+    "pressure_activated_bordered_Hessian_has_rank_56": true,
+    "pressure_changes_only_the_tangent_block": true,
+    "pure_multiplier_bordered_Hessian_has_kernel_48": true,
+    "pure_multiplier_bordered_Hessian_has_rank_32": true,
+    "reduced_and_bordered_tangent_Hessians_agree": true,
+    "routed_tangent_Hessian_commutes_with_shared_circle": true,
+    "routed_tangent_Hessian_has_complex_rank_24": true,
+    "routed_tangent_Hessian_is_Hermitian": true,
+    "routed_tangent_Hessian_obeys_selected_cubic_on_active_range": true,
+    "routed_tangent_Hessian_vanishes_on_Q_and_L": true,
+    "routed_tangent_singular_values_have_only_two_nonzero_levels": true,
+    "same_root_intertwiner_remains_open": true,
+    "schema_freezes_regular_normal_derivative": true,
+    "schema_preserves_physical_nonpromotion": true,
+    "source_hash::../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md": true,
+    "source_hash::../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md": true,
+    "source_hash::../mtt-q79-total-superconnection-branching/artifacts/triadic_dynamic_weyl_orbit.packet.json": true,
+    "source_hash::../mtt-q79-total-superconnection-branching/artifacts/triadic_family_response_algebra.packet.json": true,
+    "source_hash::../mtt-q79-total-superconnection-branching/artifacts/triadic_spectral_coordinate_minimality.packet.json": true,
+    "source_hash::../mtt-q79-total-superconnection-branching/theorems/TRIADIC_DYNAMIC_WEYL_ORBIT_COMPATIBILITY_THEOREM_v1.md": true,
+    "source_hash::../mtt-q79-total-superconnection-branching/theorems/TRIADIC_FAMILY_RESPONSE_ALGEBRA_THEOREM_v1.md": true,
+    "source_hash::../mtt-q79-total-superconnection-branching/theorems/TRIADIC_SPECTRAL_COORDINATE_MINIMALITY_THEOREM_v1.md": true,
+    "source_hash::MinimalOneConstraintMultiplierSourceAndThreeFamilyIndexTheorem_v1.md": true,
+    "source_hash::direct_one_constraint_multiplier_source.packet.json": true,
+    "zero_pressure_recovers_CBF_T15_Hessian": true
+  },
+  "claim_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_SM_02_closed": false,
+    "physical_Yukawa_values_derived": false,
+    "physical_action_selected": false,
+    "physical_pressure_selected": false,
+    "same_root_composition_proved": false
+  },
+  "claim_id": "CBF.T16",
+  "contract_schema_sha256": "1a444ab383609d8dae46da27fdcd5a05535a5985727424cd3222264e33955614",
+  "date": "2026-08-29",
+  "decision": "PRESSURE_ACTIVATION_MECHANISM_CLOSED_PHYSICAL_ACTION_AND_VALUES_OPEN",
+  "finite_instantiation": {
+    "A_H_shift": [
+      [
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "B_H_phase": [
+      [
+        [
+          "-4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "H16_order": [
+      "Q6",
+      "u3",
+      "d3",
+      "L2",
+      "e1",
+      "N1"
+    ],
+    "bordered_dimension_complex": 80,
+    "inactive_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      12,
+      13
+    ],
+    "neutral_normal_line": "N1=N^c at H16 index 15",
+    "neutral_shared_circle_weight_6Y": 0,
+    "nonlinear_residual": "Phi(n,k)=n+(1/2)n0 Re<k,H_resp k>",
+    "normal_dimension_complex": 16,
+    "normalized_pressure": 1,
+    "phase_response_slots": [
+      6,
+      7,
+      8,
+      14
+    ],
+    "pressured_bordered_kernel_dimension": 24,
+    "pressured_bordered_rank": 56,
+    "pure_multiplier_kernel_dimension": 48,
+    "pure_multiplier_rank": 32,
+    "routed_Hessian_formula": "H_resp=B tensor R_phase+A tensor R_shift",
+    "shift_response_slots": [
+      9,
+      10,
+      11,
+      15
+    ],
+    "tangent_Hessian_rank_complex": 24,
+    "tangent_dimension_complex": 48
+  },
+  "frontier_delta": {
+    "after": "zero-pressure activation is excluded and the exact missing datum is a selected normal pressure contracting residual curvature; the pinned A/B pair supplies a finite symmetry-breaking witness",
+    "before": "higher nonlinear residual terms were proposed without proving that they enter the free family Hessian",
+    "remaining": "one-root pressure/action selection, Lorentz-Higgs Yukawa typing, a sector-resolved positive spectral law and held-out prediction"
+  },
+  "general_theorem": {
+    "geometric_interpretation": "second fundamental form contracted with a normal closure pressure",
+    "loaded_action": "L_p=-p<n0,n>+<lambda,Phi(n,k)>",
+    "loaded_critical_point": "(n,k,lambda)=(0,0,p n0)",
+    "normal_derivative": "D_n Phi=I_N",
+    "pure_multiplier_critical_rule": "surjectivity forces lambda=0",
+    "reduced_action": "S_red(k)=p<n0,psi(k)>",
+    "regular_residual": "Phi(n,k)=n+psi(k), psi(0)=0, Dpsi(0)=0",
+    "repair_Hessian": "J*J at exact closure; D2psi is absent at quadratic order",
+    "spaces": "E=N direct_sum K",
+    "tangent_Hessian": "<u,H_p v>=p<n0,D2psi(0)[u,v]>",
+    "zero_pressure_Hessian": "[[0,J*],[J,0]] independent of D2psi and higher jets"
+  },
+  "parameter_ledger": {
+    "fitted_dimensionless_coefficients": 0,
+    "new_postprojection_family_matrices": 0,
+    "observed_construction_inputs": 0,
+    "physical_CKM_or_CP_parameters_derived": 0,
+    "strict_charged_magnitude_values_remaining": 9,
+    "unselected_physical_pressure_or_scale": 1
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "physical_typing_boundary": {
+    "Higgs_Yukawa_left_right_map_selected": false,
+    "Lorentz_fermion_pairing_selected": false,
+    "field_only_cyclic_action_selected": false,
+    "four_dimensional_BV_action_selected": false,
+    "held_out_prediction_emitted": false,
+    "pressure_vacuum_law_selected": false
+  },
+  "schema": "boe.mtt.closure-pressure-family-hessian-activation.v1",
+  "source_lock_sha256": "d6e1f46aed51489885aebc7afeda1f3cfd252b5279452af52f4c1071aa0b2840",
+  "source_provenance": {
+    "composition_tier": "CONDITIONAL",
+    "finite_response_source_pinned": true,
+    "linear_source_pinned": true,
+    "one_physical_root_for_both": false,
+    "same_root_intertwiner_status": "OPEN"
+  },
+  "symmetry_and_spectrum": {
+    "A_and_B_generate": "M3(C)",
+    "CP_sensitive_finite_orientation": true,
+    "common_family_stabilizer_after": "U(1)",
+    "complex_tangent_spectrum": {
+      "+2": 8,
+      "-2": 8,
+      "-4": 8,
+      "0": 24
+    },
+    "free_family_stabilizer_before": "U(3)",
+    "gauge_group_preserved": "(SU3 x SU2 x U1Y)/Z6",
+    "joint_AB_commutant_dimension": 1,
+    "nonzero_singular_magnitudes": {
+      "2": 16,
+      "4": 8
+    },
+    "physical_CKM_or_CP_identification": false,
+    "projector_quartet": [
+      "-1/8",
+      "0",
+      "0",
+      "-1/24"
+    ],
+    "shared_circle_preserved": true,
+    "three_distinct_positive_family_magnitudes": false
+  },
+  "theorem_sha256": "ab7119a4155f9c42d593b9fc1ca2599e7f2363c027cfbb8cd654fe22c3a3036a",
+  "tier": "EXACT_GENERAL + EXACT_SOURCE_PINNED_FINITE_WITNESS + CONDITIONAL_CROSS_REPOSITORY_COMPOSITION"
+}

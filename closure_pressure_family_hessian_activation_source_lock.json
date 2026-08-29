@@ -1,0 +1,93 @@
+{
+  "schema": "boe.mtt.closure-pressure-family-hessian-activation-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repository_head_before": "d0348cc7d31a1077abf9613b6344e999896c7ec3",
+  "local_sources": [
+    {
+      "path": "MinimalOneConstraintMultiplierSourceAndThreeFamilyIndexTheorem_v1.md",
+      "sha256": "bdd1dd7054ee345c9b0dc3f89ef30f5131fd16ffa8e011fcc5a862d26e70ac96",
+      "role": "CBF.T15 regular four-to-one residual, multiplier Hessian and 48-state kernel"
+    },
+    {
+      "path": "direct_one_constraint_multiplier_source.packet.json",
+      "sha256": "16425d98ec644395e18a61dece1c3e6610c092b2a7655a17ff3b61ff2ef0f4b7",
+      "role": "exact CBF.T15 source and no-flavor-splitting certificate"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+      "sha256": "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+      "role": "H4-T9 universal multiplier action and repair-normal separation"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "H4-T10 field-only cyclic-action comparison boundary"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/theorems/TRIADIC_DYNAMIC_WEYL_ORBIT_COMPATIBILITY_THEOREM_v1.md",
+      "sha256": "f6066a90c0a28c6991d24cbe0e7013b07b68981d00209db08341d34f0e568353",
+      "role": "FSB.04e exact selected finite A/B response orbit"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_dynamic_weyl_orbit.packet.json",
+      "sha256": "a265cf03d5b9e459906bebe17c8bca80152e644765bdfc5d8cb2e77fe931a074",
+      "role": "machine-readable selected response matrices and routing"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/theorems/TRIADIC_FAMILY_RESPONSE_ALGEBRA_THEOREM_v1.md",
+      "sha256": "75f3a7d78b4d21cb4aa6b971c5ac9c696c83bdc714e6abb7f8106ac28867b6d6",
+      "role": "FSB.04f M3(C), coefficient readout and CP-sensitive finite orientation"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_family_response_algebra.packet.json",
+      "sha256": "9b2c3484d3b0524620bd4a52a36a8becf5c8d270f062543f9e43cd3abfe0789f",
+      "role": "exact A/B matrices, projectors and CP quartet"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/theorems/TRIADIC_SPECTRAL_COORDINATE_MINIMALITY_THEOREM_v1.md",
+      "sha256": "f72e891a7299b3082aa0a813c1510798a3b3ab651d6f0476a27dc562447adaba",
+      "role": "FSB.04g exact nine-value finite-source minimality boundary"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/triadic_spectral_coordinate_minimality.packet.json",
+      "sha256": "0c04dc7f1d216099b03930b7f98957b1e12bcc6f618c40529e64da067b453caf",
+      "role": "machine-readable spectral-coordinate and routing no-go"
+    }
+  ],
+  "curated_authorities": [
+    {
+      "id": "A46",
+      "state": "established",
+      "sha256": "7413bbfac4fd741ab024a056d31f21a3faa6a959101253e8f41df8afd4358226",
+      "scope": "H_chiral=C3_family tensor H16 with exact representation and anomaly rows"
+    },
+    {
+      "id": "A47",
+      "state": "established",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1",
+      "scope": "faithful low-energy gauge group modulo Z6"
+    },
+    {
+      "id": "A50",
+      "state": "established",
+      "sha256": "327fa5b3468908fef396f4d76dc3e0d98f993d570510d08765dc1bb157be2fd1",
+      "scope": "shared hypercharge circle and selected neutral N^c line"
+    }
+  ],
+  "open_blockers": [
+    "B.ACTION.01",
+    "B.SM.02"
+  ],
+  "boundary": {
+    "direct_source_and_q79_response_same_root_is_not_proved": true,
+    "closure_pressure_is_not_physically_selected": true,
+    "family_response_hessian_is_not_retyped_as_a_yukawa_mass_matrix": true,
+    "finite_cp_quartet_is_not_retyped_as_observed_ckm_cp": true,
+    "charged_magnitude_values_remain_unsourced": 9,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

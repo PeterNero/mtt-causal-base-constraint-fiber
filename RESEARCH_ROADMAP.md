@@ -282,24 +282,41 @@ residual copy = 3 retained family copies`. This does not close physical
 `PN.01`: selection of the source class and its physical normalization remain
 open.
 
-The next direct-source frontier is therefore one nonlinear same-root object,
-not another free matrix:
+`CBF.T16` now closes the mechanism question behind the first two items, with a
+sharp correction. A regular nonlinear residual by itself cannot modify the
+zero-pressure multiplier or repair Hessian: surjectivity forces the multiplier
+to zero. The required quadratic datum is the pair
 
-1. construct `Phi(a)=J a+B2(a,a)+B3(a,a,a)+...` or an equivalent field-only
-   cyclic action with the present Hessian;
-2. prove its higher tensors are gauge and shared-circle invariant but break
-   the free `U(3)` family stabilizer through selected noncommuting data;
-3. derive its physical scale from the causal/action normalization;
-4. emit one held-out source-normalized interaction or threshold scalar; and
-5. externalize the same tensors through the CBF.T13/T14 BV contract.
+```text
+(residual curvature D2psi, nonzero normal closure pressure p n0).
+```
 
-Until item 4 succeeds, the result remains an exact structural source compiler
+The exact FSB.04e/04f finite composition preserves gauge/shared-circle
+covariance, raises the bordered rank `32 -> 56`, and breaks the free family
+stabilizer `U(3) -> U(1)`. Its two nonzero singular levels also prove that this
+first response cannot yield three positive family magnitudes. The result is
+conditional because CBF.T15 and the q79 response pair are not yet known to
+come from one physical source.
+
+The direct-source frontier is therefore no longer "add nonlinear terms." It is:
+
+1. construct one source-hashed constrained or cyclic action emitting `J`,
+   `D2psi`, the neutral pressure/order background and its physical scale;
+2. prove the same-root intertwiner to the selected response geometry;
+3. derive a gauge-invariant Lorentz/Higgs left-right Yukawa second variation;
+4. derive a sector-resolved spectral law or cross-sector relation reducing the
+   nine FSB.04g scalar coordinates;
+5. emit one held-out source-normalized mass, interaction or threshold scalar;
+6. externalize the same tensors through the CBF.T13/T14 BV contract.
+
+Until item 5 succeeds, the result remains an exact structural source compiler
 rather than true Standard Model value closure.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 
-**State:** abstract stabilizer/faithful-quotient descent closed; physical
-intertwiner and curvature identification open.
+**State:** abstract stabilizer/faithful-quotient descent and finite
+pressure-curvature activation closed; physical same-root intertwiner and
+curvature identification open.
 
 Test whether the antisymmetrized leakage form is the curvature of a natural
 connection on the retained bundle, rather than merely naming it curvature.
