@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:relative-product-supercharge-source:v1",
+  "title": "Relative product-supercharge single-operator source contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "tier",
+    "source_lock_sha256",
+    "contract_schema_sha256",
+    "theorem_sha256",
+    "composite_root_sha256",
+    "root_provenance",
+    "routed_internal_family",
+    "odd_supercharge",
+    "relative_product_operator",
+    "causal_and_scale",
+    "endpoint_classification",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.relative-product-supercharge-source.v1"
+    },
+    "claim_id": { "const": "CBF.T22" },
+    "date": { "const": "2026-08-29" },
+    "tier": {
+      "const": "EXACT_CANONICAL_SINGLE_OPERATOR_RELATIVE_SOURCE + ONE_UNIVERSAL_METROLOGY_PRIMITIVE_CONDITIONAL_PHYSICAL_SCALE"
+    },
+    "source_lock_sha256": { "$ref": "#/$defs/hash" },
+    "contract_schema_sha256": { "$ref": "#/$defs/hash" },
+    "theorem_sha256": { "$ref": "#/$defs/hash" },
+    "composite_root_sha256": { "$ref": "#/$defs/hash" },
+    "root_provenance": {
+      "type": "object",
+      "required": [
+        "deterministic_composite_root",
+        "single_operator_family_proved",
+        "target_response_excluded",
+        "upper_MTT_selection_proved",
+        "same_physical_root_proved"
+      ],
+      "properties": {
+        "deterministic_composite_root": { "const": true },
+        "single_operator_family_proved": { "const": true },
+        "target_response_excluded": { "const": true },
+        "upper_MTT_selection_proved": { "const": false },
+        "same_physical_root_proved": { "const": false }
+      }
+    },
+    "routed_internal_family": { "type": "object" },
+    "odd_supercharge": { "type": "object" },
+    "relative_product_operator": { "type": "object" },
+    "causal_and_scale": { "type": "object" },
+    "endpoint_classification": { "type": "object" },
+    "parameter_ledger": {
+      "type": "object",
+      "required": [
+        "new_observed_inputs",
+        "new_fitted_coefficients",
+        "new_dimensionless_shape_parameters",
+        "universal_dimensionful_primitives",
+        "sector_specific_scale_parameters"
+      ],
+      "properties": {
+        "new_observed_inputs": { "const": 0 },
+        "new_fitted_coefficients": { "const": 0 },
+        "new_dimensionless_shape_parameters": { "const": 0 },
+        "universal_dimensionful_primitives": { "const": 1 },
+        "sector_specific_scale_parameters": { "const": 0 }
+      }
+    },
+    "physical_boundary": {
+      "type": "object",
+      "required": [
+        "physically_selected",
+        "Lorentz_Higgs_Yukawa_identification",
+        "continuum_HYM_intertwiner",
+        "physical_BV4_pushforward",
+        "absolute_metrological_value_selected"
+      ],
+      "properties": {
+        "physically_selected": { "const": false },
+        "Lorentz_Higgs_Yukawa_identification": { "const": false },
+        "continuum_HYM_intertwiner": { "const": false },
+        "physical_BV4_pushforward": { "const": false },
+        "absolute_metrological_value_selected": { "const": false }
+      }
+    },
+    "physical_packets_accepted": { "const": 0 },
+    "physical_packets_total": { "const": 3 },
+    "physical_rows_accepted": { "const": 0 },
+    "physical_rows_total": { "const": 7 },
+    "frontier_delta": { "type": "string", "minLength": 1 },
+    "checks": {
+      "type": "object",
+      "additionalProperties": { "type": "boolean" }
+    },
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "failed"]
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

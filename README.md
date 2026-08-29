@@ -306,6 +306,9 @@ and `3 x 16` BV4 witness, independently reconstructs the closure-pressure
 family Hessian, reconstructs the affine zero-section action and its realified
 rank/projective-pressure boundaries, reconstructs the normal-frame quotient,
 finite trace and action-scale residual, and runs the unit tests.
+It also reconstructs the routed 48-dimensional relative Gram family, checks
+the canonical odd supercharge and an independent graded product-square
+witness, and verifies the one-universal-scale orbit.
 
 The complete independent `m4` table and SI(4) replay is intentionally separate
 from the routine suite because it evaluates 3,869,500 admissible quadruples:
@@ -370,6 +373,15 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `NormalFrameQuotientAndActionIntertwinerMinimalDataTheorem_v1.md`: unique
   invariant normal line, exact `GL(1,C)` factorization quotient, finite trace
   uniqueness and minimal physical Hessian-intertwiner exit.
+- `EquivariantFeshbachOneDimensionalResponseTheorem_v1.md`: exact response
+  module reduction and scalar relative-intertwiner criterion.
+- `WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md`: primitive
+  Weyl-Gram derivation of the normalized finite response line.
+- `CausalWeylGramAuxiliaryFeshbachLiftTheorem_v1.md`: order-zero causal lift
+  and exact nontrivial 96-to-48 auxiliary Schur synthesis.
+- `RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md`: canonical
+  odd closure-repair supercharge, graded causal product, neutral-relative
+  square and one-universal-metrology-scale theorem.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -420,6 +432,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   A46/A47/A50, A74/A86, FSB.04e/04f and BV-density boundary sources.
 - `normal_frame_action_intertwiner_contract.schema.json`: machine-readable
   normal-line quotient, finite trace and physical Hessian-intertwiner contract.
+- `relative_product_supercharge_source_lock.json`: pinned finite, causal,
+  continuum-SM, product-Dirac and metrology inputs for CBF.T22.
+- `relative_product_supercharge_contract.schema.json`: strict single-operator
+  provenance, scale and physical-boundary contract.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -661,6 +677,34 @@ physical endpoint packet. The finite and causal roots are still distinct;
 `mu^2`, physical background selection, Lorentz/Higgs/Yukawa typing,
 same-root BV4 insertion and continuum HYM error control remain open.
 
+`CBF.T22` removes that finite/causal separation at the mathematical operator
+tier. With
+
+```text
+Y(t)=-[P tensor I16]
+     +t[(I+Z) tensor R_phase+(I+X) tensor R_shift],
+D_F(t)=[[0,Y(t)^*],[Y(t),0]],
+```
+
+the target block of `D_F(t)^2` has first variation `H_derived`. The graded
+causal product
+
+```text
+D_Lambda(t)=D_Y tensor I96+Gamma_Y tensor Lambda D_F(t)
+```
+
+has no mixed square term, and its neutral-relative target derivative is
+exactly `Lambda^2 H_derived`. Thus `mu^2=Lambda^2`; there is no separate
+response-scale knob. The absolute scale still has the proved one-dimensional
+metrology orbit. At the adopted one-primitive tier it is shared as
+`Lambda=E0=1/L0`, with no numerical value selected and no sector-specific
+scale.
+
+The composite root is deterministic and excludes the target response, but an
+upper-MTT theorem has not selected it as the physical root. Physical
+Lorentz/Higgs/Yukawa identification, continuum HYM transport and BV
+pushforward remain open, so physical acceptance stays `0/3` and `0/7`.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -675,7 +719,9 @@ verifier passes `108/108`. The equivariant Feshbach packet passes `48/48`
 checks and its independent verifier passes `58/58`. The Weyl-Gram direct-source
 packet passes `61/61` checks and its independent verifier passes `79/79`. The
 causal auxiliary-lift packet passes `56/56` checks and its independent verifier
-passes `89/89`. The canonical suite passes 102 unit tests. The
+passes `89/89`. The relative product-supercharge packet passes `68/68` checks
+and its independent verifier passes `77/77`. The canonical suite passes 108
+unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

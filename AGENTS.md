@@ -20,6 +20,8 @@ paper, note, packet name or search hit.
    `6e3b0647-30a0-4529-af43-7c61b0004cca`;
    the causal Weyl-Gram auxiliary-lift handoff is
    `138975b0-174f-4006-adf1-bf9f57ca609e`;
+   the relative product-supercharge single-operator handoff is
+   `2bbbad39-fdc8-420b-8afa-c37184ceeb63`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

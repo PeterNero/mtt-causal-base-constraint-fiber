@@ -82,6 +82,11 @@
     "exact zeroth-order causal lift preserving the metric characteristic cone",
     "exact primitive-P nontrivial 96-to-48 auxiliary Schur reduction",
     "transported auxiliary automorphism and graph-synthesis intertwining",
+    "canonical routed 48-dimensional Weyl-Gram map and conjugate chiral responses",
+    "unique minimal odd 96-dimensional closure-repair supercharge lift",
+    "exact graded causal product-square and neutral-relative subtraction",
+    "single-operator derivation of the causal target response with mu squared equal to Lambda squared",
+    "one-dimensional absolute-scale orbit and one-universal-metrology-primitive completion",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -133,6 +138,9 @@
     "physical identification of the finite Gram and causal chart source roots",
     "selection of the dimensionful response coefficient by the causal auxiliary lift",
     "identification of the response endomorphism with a Lorentz-Higgs-Yukawa insertion",
+    "upper-MTT physical selection of the deterministic relative product-supercharge root",
+    "derivation of a numerical universal metrological scale without a rod, clock or energy primitive",
+    "interpretation of the auxiliary 96-dimensional odd lift as additional physical particle states",
     "that three structured source packets are three scalar physical parameters",
     "that every internal MTT direction is non-spatiotemporal",
     "a new globally original operator-theory identity"
@@ -160,7 +168,8 @@
     "NormalFrameQuotientAndActionIntertwinerMinimalDataTheorem_v1.md",
     "EquivariantFeshbachOneDimensionalResponseTheorem_v1.md",
     "WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md",
-    "CausalWeylGramAuxiliaryFeshbachLiftTheorem_v1.md"
+    "CausalWeylGramAuxiliaryFeshbachLiftTheorem_v1.md",
+    "RelativeProductSuperchargeSingleOperatorSourceTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -183,7 +192,8 @@
     "normal_frame_action_intertwiner_reduction.packet.json",
     "equivariant_feshbach_response.packet.json",
     "weyl_gram_closure_repair_source.packet.json",
-    "causal_weyl_gram_auxiliary_lift.packet.json"
+    "causal_weyl_gram_auxiliary_lift.packet.json",
+    "relative_product_supercharge.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -206,7 +216,8 @@
     "python build_normal_frame_action_intertwiner_reduction.py",
     "python build_equivariant_feshbach_response.py",
     "python build_weyl_gram_closure_repair_source.py",
-    "python build_causal_weyl_gram_auxiliary_lift.py"
+    "python build_causal_weyl_gram_auxiliary_lift.py",
+    "python build_relative_product_supercharge_source.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -224,7 +235,8 @@
     "normal_frame_action_intertwiner_contract.schema.json",
     "equivariant_feshbach_response_contract.schema.json",
     "weyl_gram_closure_repair_contract.schema.json",
-    "causal_weyl_gram_auxiliary_lift_contract.schema.json"
+    "causal_weyl_gram_auxiliary_lift_contract.schema.json",
+    "relative_product_supercharge_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

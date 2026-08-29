@@ -364,28 +364,43 @@ equicausal free-BV chart theorem supplies one conditional causal carrier.
 However, the finite Gram root and causal chart root are still two inputs, and
 the dimensionful response coefficient and physical field typing are open.
 
+CBF.T22 now realizes those two exact inputs as restrictions of one canonical
+relative product-supercharge family. The routed finite map `Y(t)` has
+`H_derived` as its target Gram derivative; its unique minimal odd lift
+`D_F(t)` is combined with the external q79 Dirac operator by the graded tensor
+sum. The neutral-relative product square has target derivative
+`Lambda^2 H_derived`, proving `mu^2=Lambda^2`. The result also proves that all
+absolute rescalings form one orbit. At the adopted one-universal-metrology-
+primitive tier, `Lambda=E0=1/L0` and no sector-specific response or clock
+scale remains.
+
+This closes mathematical single-operator provenance, not physical source
+selection. The deterministic composite root still needs an upper-MTT
+selection certificate, and its response must still be identified with the
+actual Lorentz/Higgs/Yukawa or other physical field second variation.
+
 The remaining order is now:
 
-1. prove that the finite Gram root and a causal action/background root are one
-   selected upper source, or construct a new single-root provider satisfying
-   both contracts;
-2. derive the dimensionful coefficient `mu^2` and the physical density/action
-   normalization from that source;
-3. type the response into a gauge-invariant Lorentz/Higgs left-right Yukawa or
+1. derive an upper-MTT selection rule for the deterministic CBF.T22 composite
+   root, without treating the categorical product itself as physical
+   selection;
+2. type the response into a gauge-invariant Lorentz/Higgs left-right Yukawa or
    another explicit physical field second variation;
-4. complete same-root BV4 insertion and, for the q79 provider route, continuum
+3. complete same-root BV4 insertion and, for the q79 provider route, continuum
    HYM synthesis, projection and certified finite-error bounds;
-5. use the now exact relative-intertwiner and Schur theorems to certify the
+4. use the now exact relative-intertwiner, product-square and Schur theorems to certify the
    complete physical residual and recover `c_action`;
-6. externalize the accepted action and density through CBF.T13/T14;
-7. derive a sector-resolved spectral law or cross-sector relation reducing the
+5. externalize the accepted action and density through CBF.T13/T14;
+6. derive a sector-resolved spectral law or cross-sector relation reducing the
    nine FSB.04g scalar coordinates;
-8. emit one held-out source-normalized mass, interaction or threshold scalar.
+7. emit one held-out source-normalized mass, interaction or threshold scalar.
 
 The next physical theorem must discharge item 1 or 2. Another normal-frame or
 finite-trace packet cannot do so: CBF.T18 proves those choices are already
-quotiented or unique, and proves the absolute scale nonidentifiable before the
-physical endpoint exists.
+quotiented or unique. CBF.T22 and the pinned metrology theorem also prove that
+searching for a second sector-specific absolute scale is the wrong target: the
+only admissible absolute extension at the current tier is the one shared
+metrological primitive.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

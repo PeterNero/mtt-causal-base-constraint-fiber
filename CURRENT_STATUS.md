@@ -596,3 +596,59 @@ theorem yet identifies them physically, selects the dimensionful coefficient
 the same-root BV4 interaction/density and continuum HYM error certificate.
 The pre-existing equicausal free-BV carrier is not by itself that insertion.
 Physical acceptance therefore remains `0/3` packets and `0/7` rows.
+
+`RelativeProductSuperchargeSingleOperatorSourceTheorem.v1` (`CBF.T22`) now
+removes the remaining *mathematical* separation between the finite Gram
+response and the causal operator. On the rank-48 carrier define
+
+```text
+C=P tensor I16,
+M=(I+Z) tensor R_phase+(I+X) tensor R_shift,
+Y(t)=-C+tM.
+```
+
+The target and source Gram derivatives are
+
+```text
+H_-=d[Y(t)Y(t)^*]/dt|0=H_derived,
+H_+=d[Y(t)^*Y(t)]/dt|0=C H_- C.
+```
+
+Both have rank 24 and squared Frobenius norm 192. The canonical odd lift
+
+```text
+D_F(t)=[[0,Y(t)^*],[Y(t),0]]
+```
+
+is self-adjoint, grading-odd and satisfies
+`D_F(t)^2=diag(Y(t)^*Y(t),Y(t)Y(t)^*)`. With the selected q79 causal Dirac
+carrier, the graded product
+
+```text
+D_Lambda(t)=D_Y tensor I96+Gamma_Y tensor Lambda D_F(t)
+```
+
+has an exact cross-term-free square. After the unique scalar neutral
+subtraction, its target-chirality first variation is
+
+```text
+Lambda^2 H_derived.
+```
+
+Therefore the previously free CBF.T21 coefficient is reduced exactly to
+`mu^2=Lambda^2`. The finite response shape, causal principal part and
+nontrivial auxiliary synthesis are now consequences of one deterministic
+composite-root operator family. The composite root excludes the target
+response and uses no observed value or fitted coefficient.
+
+The remaining scale freedom is precisely the one-dimensional absolute-scale
+orbit already proved by the metrology program. At the adopted
+one-universal-primitive tier, `Lambda=E0=1/L0`; there are zero sector-specific
+scale parameters, and the same primitive is compatible with the q79 clock
+rate `gamma=log(448)E0`. No numerical value of `E0` or `L0` is selected.
+
+This closes single-operator provenance and the relative causal-synthesis
+identity, not upper-MTT selection of the composite root. Physical
+Lorentz/Higgs/Yukawa identification, continuum HYM/Galerkin transport and the
+physical BV pushforward remain open. Acceptance therefore remains `0/3`
+packets and `0/7` rows.
