@@ -431,13 +431,34 @@ physical action. Its only real stationary point is `t=0`, so it also proves
 that an unshifted positive defect square cannot select a nonzero physical
 value. This removes repeated repair-functional searches from the frontier.
 
+CBF.T27 now closes the complete finite spectral family and removes a second
+class of repeated searches. The exact identities
+
+```text
+D_phys(t)=D0(I+tH_phys/2),
+R=H_phys^2/4,
+spec(H_phys)={-4^32,-2^32,+2^32}
+```
+
+reduce every scalar even spectral action to
+
+```text
+[f((t-1)^2)+f((t+1)^2)+f((2t-1)^2)]/3.
+```
+
+Different polynomial, repair, log-determinant and heat profiles do not share
+a stationary coordinate. Therefore neither another diagonalization nor a
+profile-free optimization can select the physical value. The next direct
+advance must derive the action profile or nonlinear repair law upstream.
+
 This splits the remaining work into two routes that must not be conflated.
 
 ### Direct finite-source route
 
-1. construct the missing signed value-selecting action/background source; the
-   normalized positive repair action and full quartic jet are closed by
-   CBF.T26;
+1. construct the missing signed value-selecting action/background source and
+   derive its scalar profile or nonlinear repair law; the normalized positive
+   repair action, full quartic jet and complete spectral family are closed by
+   CBF.T26-CBF.T27;
 2. derive the strict numerical Higgs/source coordinates or the smallest
    explicitly declared universal parameter set;
 3. extend the same source to the bosonic gauge, Higgs and gravitational action;
@@ -453,13 +474,16 @@ This splits the remaining work into two routes that must not be conflated.
 5. if they agree, state the resulting universality theorem without identifying
    the routes before the comparison is proved.
 
-The immediate direct target is the signed/background remainder of item 1,
-followed by the held-out scalar. A candidate must reproduce the CBF.T23 linear
-response and the CBF.T26 quartic repair invariants, while adding a selected
-ingredient capable of a nonzero stationary value. The immediate q79 target
+The immediate direct target is the profile-selecting signed/background
+remainder of item 1, followed by the held-out scalar. A candidate must
+reproduce the CBF.T23 linear response and the CBF.T26 quartic repair
+invariants, while deriving its profile before inspecting any stationary value.
+The CBF.T27 spectrum is an exact readout for that test, not another object to
+fit. The immediate q79 target
 remains item 1 of the provenance route. The finite physical typing,
-totalization, direct continuum synthesis and normalized repair quartic must not
-be reopened: CBF.T23-CBF.T26 have discharged them at their declared tiers.
+totalization, direct continuum synthesis, normalized repair quartic and full
+finite spectrum must not be reopened: CBF.T23-CBF.T27 have discharged them at
+their declared tiers.
 q79 HYM acceptance remains `0/3` packets and `0/7` rows because the direct
 route does not claim HYM provenance.
 
@@ -473,6 +497,8 @@ specific absolute scale is the wrong target: the only admissible absolute
 extension at the current tier is the shared metrological primitive. CBF.T26
 also rules out selecting a nonzero value by minimizing another copy of the
 same unshifted positive defect norm.
+CBF.T27 additionally rules out claiming a stationary coordinate that is
+independent of the scalar spectral profile.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

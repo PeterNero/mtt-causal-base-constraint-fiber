@@ -859,3 +859,48 @@ same-root signed variational action, a selected affine/background term or a
 selected target defect and physical density. `B.ACTION.01`, `B.SM.02`, the
 held-out observable and physical acceptance remain open at `0/3` packets and
 `0/7` rows.
+
+`CanonicalFiniteDiracSpectralActionClassificationAndProfileSelectionNoGoTheorem_v1.md`
+(`CBF.T27`) now closes the complete spectrum of that same finite family. The
+exact source has the stronger factorization
+
+```text
+[D0,D1]=0,
+D1=(1/2)D0 H_phys,
+R=D1^2=H_phys^2/4,
+D_phys(t)=D0(I96+t H_phys/2).
+```
+
+The response has exact spectrum
+
+```text
+spec(H_phys)={-4^32,-2^32,+2^32},
+```
+
+so
+
+```text
+spec(D_phys(t)^2)
+ ={(2t-1)^2^32,(t-1)^2^32,(t+1)^2^32}.
+```
+
+Every scalar even spectral action is therefore completely classified by
+
+```text
+S_f(t)=[f((t-1)^2)+f((t+1)^2)+f((2t-1)^2)]/3.
+```
+
+This closes matrix construction and spectral evaluation but proves a new
+selection no-go. The profiles `f(s)=s`, `f(s)=s^2`,
+`f(s)=(s-1)^2/2` and `f(s)=log(s)` have different stationary sets, and no
+coordinate is stationary for all one-atom heat profiles `exp(-tau s)`. The
+unique normalized trace selects the three-term average, not `f`. Accordingly
+the next direct action object must select its profile or nonlinear repair law
+from the upper source before a stationary value is interpreted physically.
+
+The closure point `t=0` is not a zero Dirac operator: its signed spectrum is
+`{-1^48,+1^48}`. It is the undeformed normalized involution and the unique
+CBF.T26 repair minimum. It does not by itself emit family hierarchy or a
+dimensionful Higgs/Yukawa magnitude. Strict values, signed physical action,
+held-out prediction, `B.ACTION.01` and `B.SM.02` remain open; physical
+acceptance remains `0/3` packets and `0/7` rows.

@@ -1,0 +1,311 @@
+{
+  "action_boundary": {
+    "A53_one_atom_heat_profile_is_conditional": true,
+    "A73_logdet_precedent_used_as_comparison_only": true,
+    "A74_normalized_trace_used": true,
+    "A74_selects_profile": false,
+    "A85_finite_spectral_action_is_at_declared_corpus_tier": true,
+    "BV_QME_selected": false,
+    "absolute_action_normalization_selected": false,
+    "signed_Lorentzian_action_selected": false
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 63,
+    "total": 63
+  },
+  "checks": {
+    "B_ACTION_01_remains_open": true,
+    "B_SM_02_remains_open": true,
+    "D0_and_D1_commute": true,
+    "D0_and_H_commute": true,
+    "D0_square_is_identity": true,
+    "D1_equals_D0_H_over_2": true,
+    "H_minimal_polynomial_vanishes": true,
+    "H_phys_is_self_adjoint": true,
+    "H_phys_matches_T23": true,
+    "R_equals_H_squared_over_4": true,
+    "T20_source_is_exact": true,
+    "T23_source_is_exact": true,
+    "T26_repair_action_is_exact": true,
+    "affine_factorization_matches_all_samples": true,
+    "all_scalar_even_spectral_functionals_are_now_reduced": true,
+    "baseline_is_Fourier_invariant": true,
+    "contract_schema_is_exact": true,
+    "each_H_eigenspace_has_rank_32": true,
+    "each_H_eigenspace_has_trace_32": true,
+    "each_signed_joint_eigenspace_has_rank_16": true,
+    "each_signed_joint_eigenspace_has_trace_16": true,
+    "exact_factorization_is_newly_closed": true,
+    "exact_full_spectrum_is_newly_closed": true,
+    "factor_direction_matches_D_at_one": true,
+    "full_square_spectrum_matches_all_samples": true,
+    "handoff_is_pinned": true,
+    "heat_derivative_bracket_is_positive_for_tau_positive": true,
+    "held_out_observable_remains_open": true,
+    "kernel_model_is_pinned": true,
+    "logdet_has_two_exact_stationary_roots": true,
+    "no_common_heat_profile_stationary_coordinate": true,
+    "no_common_polynomial_profile_stationary_coordinate": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "nonzero_physical_coordinate_remains_open": true,
+    "phase_and_shift_directions_are_Fourier_conjugate": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "projectors_are_idempotent": true,
+    "projectors_are_pairwise_orthogonal": true,
+    "projectors_are_self_adjoint": true,
+    "projectors_sum_to_identity": true,
+    "quadratic_and_quartic_profiles_disagree": true,
+    "quadratic_moment_has_unique_minimum_at_one_third": true,
+    "quadratic_moment_minimum_is_seven_over_eighteen": true,
+    "quartic_stationary_cubic_is_strictly_increasing": true,
+    "quartic_stationary_root_is_bracketed": true,
+    "repair_profile_selects_zero": true,
+    "signed_physical_action_remains_open": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "spectral_profile_remains_unselected": true,
+    "strict_top_level_contract": true,
+    "trace_moments_match_all_samples": true
+  },
+  "claim_id": "CBF.T27",
+  "coordinate_interpretation": {
+    "D_phys_at_closure_is_unitary_involution": true,
+    "D_phys_at_closure_is_zero": false,
+    "closure_basepoint": "t=0",
+    "closure_basepoint_alone_emits_family_hierarchy": false,
+    "closure_basepoint_has_equal_singular_magnitudes": true,
+    "lesson": "Selecting a deformation coordinate and deriving physical Higgs/Yukawa magnitudes are distinct tasks",
+    "nonzero_spectral_stationary_point_is_measured_Yukawa": false,
+    "t_is_defined_as": "deformation coordinate of the CBF.T20/CBF.T23 family"
+  },
+  "date": "2026-08-29",
+  "exact_factorization": {
+    "D1_identity": "D1=(1/2)D0 H_phys",
+    "D_identity": "D_phys(t)=D0(I96+t H_phys/2)",
+    "R_identity": "R=D1^2=H_phys^2/4",
+    "all_identities_exact": true,
+    "minimal_polynomial": "(H_phys+4I)(H_phys+2I)(H_phys-2I)=0",
+    "square_identity": "D_phys(t)^2=(I96+t H_phys/2)^2"
+  },
+  "finite_source": {
+    "D0_D1_commute": true,
+    "D0_square": "I96",
+    "H_phys_definition": "H_phys=D0D1+D1D0=2D0D1",
+    "H_phys_sha256": "2b78943ded404370d6c2f4216aab01b71c1bc06f4056a6a44a6ee407ad3d398f",
+    "carrier": "H_F",
+    "complex_dimension": 96,
+    "family": "D_phys(t)=D0+tD1",
+    "new_fitted_coefficients": 0,
+    "new_observed_inputs": 0
+  },
+  "frontier_delta": "The complete 96D spectral family is now exact: D_phys(t)=D0(I+tH_phys/2), with H_phys spectrum {-4,-2,2} at multiplicity 32 and D_phys(t)^2 branches (2t-1)^2, (t-1)^2 and (t+1)^2. Every scalar spectral action is therefore reduced to one explicit three-term formula. The same source yields incompatible stationary coordinates for the Dirac norm, quartic moment, defect repair and logdet profiles, and no coordinate is stationary for all heat profiles. Consequently the remaining action blocker is profile selection, not matrix construction or spectral computation.",
+  "full_spectrum": {
+    "D_phys_at_zero_spectrum": {
+      "-1": 48,
+      "1": 48
+    },
+    "D_phys_signed": {
+      "+(1+t)": 16,
+      "+(1-2t)": 16,
+      "+(1-t)": 16,
+      "-(1+t)": 16,
+      "-(1-2t)": 16,
+      "-(1-t)": 16
+    },
+    "D_phys_squared": {
+      "(2t-1)^2": 32,
+      "(t+1)^2": 32,
+      "(t-1)^2": 32
+    },
+    "phase_shift_lane_spectra_identical": true,
+    "reason": "fixed F3 Fourier conjugacy",
+    "singular_walls": [
+      "t=-1",
+      "t=1/2",
+      "t=1"
+    ]
+  },
+  "heat_profile_no_go": {
+    "A53_tau_int_selects_profile_under_current_authority": false,
+    "common_stationary_candidate_for_all_tau": "t=1/3 from the tau-linear term",
+    "common_stationary_coordinate_exists": false,
+    "derivative_at_candidate": "(4tau/9)[exp(-4tau/9)+exp(-tau/9)-2exp(-16tau/9)]",
+    "derivative_at_candidate_positive_for_all_tau": true,
+    "family": "f_tau(s)=exp(-tau s), tau>0",
+    "functional": "H_tau(t)=[exp(-tau(t-1)^2)+exp(-tau(t+1)^2)+exp(-tau(2t-1)^2)]/3"
+  },
+  "joint_spectrum": {
+    "H_phys": {
+      "-2": 32,
+      "-4": 32,
+      "2": 32
+    },
+    "R_given_H": {
+      "-2": 1,
+      "-4": 4,
+      "2": 1
+    },
+    "spectral_projector_ranks": {
+      "-2": 32,
+      "-4": 32,
+      "2": 32
+    },
+    "spectral_projectors_are_exact_orthogonal_resolution": true
+  },
+  "parameter_ledger": {
+    "compared_profiles_are_parameters_of_final_model": false,
+    "new_dimensionful_primitives": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0,
+    "new_sector_specific_parameters": 0,
+    "numerical_physical_h_selected": false,
+    "numerical_physical_t_selected": false,
+    "unselected_functional_choices_compared": 4
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_SM_02_closed": false,
+    "all_even_spectral_profiles_reduced_to_three_branches": true,
+    "exact_D0_H_factorization_closed": true,
+    "exact_full_finite_spectrum_closed": true,
+    "held_out_physical_observable_emitted": false,
+    "nonzero_physical_source_coordinate_selected": false,
+    "profile_independent_value_selection_ruled_out": true,
+    "selected_physical_action_profile": false,
+    "strict_Yukawa_magnitudes_emitted": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "profile_examples": {
+    "defect_repair": {
+      "action": "4t^2-(16/3)t^3+3t^4",
+      "physical_signed_action_claimed": false,
+      "profile": "f(s)=(s-1)^2/2",
+      "source": "CBF.T26",
+      "unique_global_minimizer": "t=0"
+    },
+    "dirac_norm": {
+      "action": "t^2-(2/3)t+1/2",
+      "minimum": "7/18",
+      "physical_selection_claimed": false,
+      "profile": "f(s)=s/2",
+      "unique_global_minimizer": "t=1/3"
+    },
+    "normalized_logdet": {
+      "action": "(2/3)log|(t-1)(t+1)(2t-1)|",
+      "domain": "t not in {-1,1/2,1}",
+      "logdet_stationary_type": "strict local maxima",
+      "minus_logdet_stationary_type": "strict chamberwise local minima",
+      "physical_selection_claimed": false,
+      "profile": "f(s)=log(s)",
+      "stationary_equation": "3t^2-t-1=0",
+      "stationary_points_approx": [
+        "-0.434258545910665",
+        "0.767591879243998"
+      ],
+      "stationary_points_exact": [
+        "(1-sqrt(13))/6",
+        "(1+sqrt(13))/6"
+      ]
+    },
+    "quartic_moment": {
+      "action": "6t^4-(32/3)t^3+12t^2-(8/3)t+1",
+      "physical_selection_claimed": false,
+      "profile": "f(s)=s^2",
+      "stationary_equation": "9t^3-12t^2+9t-1=0",
+      "unique_global_minimizer_approx": "0.132061614157470",
+      "unique_global_minimizer_interval": [
+        "0.132",
+        "0.133"
+      ]
+    }
+  },
+  "profile_selection_no_go": {
+    "conclusion": "D_phys(t) and tau96 alone cannot select a physical t; a same-root action/profile or nonlinear repair law is necessary",
+    "no_common_stationary_point_even_for_profiles": [
+      "f(s)=s",
+      "f(s)=s^2"
+    ],
+    "no_common_stationary_point_for_all_heat_profiles": true,
+    "no_go_scope": "spectral-profile-independent selection only; it does not forbid an upstream MTT theorem selecting one physical action",
+    "operator_and_trace_determine_scalar_profile": false,
+    "operator_and_trace_determine_spectral_arguments": true,
+    "profile_choice_changes_stationary_coordinate": true
+  },
+  "schema": "boe.mtt.finite-dirac-spectral-action-classification.v1",
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "handoff_id": "b5346b8d-1373-42c2-bee8-e0ddab69ef62",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "3a79dbe2d204175d6b0f1a51a117e4f4e6a4ef36",
+      "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+      "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 9,
+    "source_root_payload": {
+      "D_phys_squared_spectrum": {
+        "(2t-1)^2": 32,
+        "(t+1)^2": 32,
+        "(t-1)^2": 32
+      },
+      "H_phys_sha256": "2b78943ded404370d6c2f4216aab01b71c1bc06f4056a6a44a6ee407ad3d398f",
+      "H_phys_spectrum": {
+        "-2": 32,
+        "-4": 32,
+        "2": 32
+      },
+      "finite_source": "D_phys(t)=D0(I96+t H_phys/2)",
+      "observed_targets": [],
+      "profile_independent_stationary_coordinate": null,
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "3a79dbe2d204175d6b0f1a51a117e4f4e6a4ef36",
+        "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+        "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.finite-dirac-spectral-action-root.v1",
+      "selected_physical_profile": null,
+      "source_hashes": [
+        "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+        "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+        "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+        "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158",
+        "82d01b74e1ccb9f272202fed482a8259d7d52171894aaad57eca5a0ff87a56be",
+        "06907a775876de315ace9d001386a1bb6df1b2c00407475100f79b3867a6a1b6",
+        "665dfbc01a5203343eace537f303abd4f5dccf46e275b61492f2f6d31331a8af",
+        "a8fc8826918ce1872a8daced129a4348637ef4cbe6885892db5c04949a8163b5",
+        "ab32ac95992e7234b557e3abb6677108b41aefb4da15539a5f960f29c7228622"
+      ],
+      "theorem_sha256": "5b91050752dcc4c21376222df496bd26fbf37feaec15b0f1259536a512f641f3",
+      "universal_spectral_functional": "tau96 f(D_phys(t)^2)=[f((t-1)^2)+f((t+1)^2)+f((2t-1)^2)]/3"
+    },
+    "source_root_sha256": "d84d06fb6abe5650485a1a16d7e83d083327b80c204b2f565f1e0b62ebd3fb88"
+  },
+  "spectral_functional": {
+    "definition": "S_f(t)=tau96 f(D_phys(t)^2)",
+    "derivative": "S_f'(t)=(2/3)[(t-1)f'((t-1)^2)+(t+1)f'((t+1)^2)+2(2t-1)f'((2t-1)^2)]",
+    "exact_formula": "S_f(t)=[f((t-1)^2)+f((t+1)^2)+f((2t-1)^2)]/3",
+    "normalized_trace": "tau96=Tr/96",
+    "ordinary_odd_trace_moments": "zero by grading-symmetric spectrum",
+    "profile_f_selected_by_trace_theorem": false
+  },
+  "status": "exact full finite-Dirac spectral classification and profile-independent value-selection no-go; physical action open"
+}

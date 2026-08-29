@@ -1,0 +1,82 @@
+{
+  "schema": "boe.mtt.finite-dirac-spectral-action-classification-source-lock.v1",
+  "claim_id": "CBF.T27",
+  "date": "2026-08-29",
+  "handoff_id": "b5346b8d-1373-42c2-bee8-e0ddab69ef62",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "3a79dbe2d204175d6b0f1a51a117e4f4e6a4ef36",
+    "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+    "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "weyl_gram_closure_repair_source.packet.json",
+      "sha256": "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+      "role": "CBF.T20 primitive P, X, Z and F3 source matrices"
+    },
+    {
+      "path": "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
+      "sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+      "role": "CBF.T23 exact 96-dimensional physical Dirac-Yukawa family"
+    },
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "CBF.T23 exact H_phys response digest, rank and norm"
+    },
+    {
+      "path": "CanonicalNormalizedDiracSquareDefectRepairActionAndValueSelectionNoGoTheorem_v1.md",
+      "sha256": "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158",
+      "role": "CBF.T26 normalized positive defect-repair action and t=0 theorem"
+    },
+    {
+      "path": "direct_dirac_defect_repair_action.packet.json",
+      "sha256": "82d01b74e1ccb9f272202fed482a8259d7d52171894aaad57eca5a0ff87a56be",
+      "role": "CBF.T26 exact quartic coefficients and action boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_GaugeKineticActionDerivationAndFrozenProfileValidation_v1.md",
+      "sha256": "06907a775876de315ace9d001386a1bb6df1b2c00407475100f79b3867a6a1b6",
+      "role": "A73 finite normalized log-determinant action precedent and physical-selection boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_NormalizedDeterminantActionFromMTTHessian_or_IndependentGaugeProfileTest_v1.md",
+      "sha256": "665dfbc01a5203343eace537f303abd4f5dccf46e275b61492f2f6d31331a8af",
+      "role": "A74 normalized finite trace theorem and remaining physical action gate"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/candidate_data/selected_propertimemeasureandoverlapkineticmetricsource_or_strictspectralactionclosure/proper_time_atom_and_overlap_source_cutset.packet.json",
+      "sha256": "a8fc8826918ce1872a8daced129a4348637ef4cbe6885892db5c04949a8163b5",
+      "role": "A53 conditional one-atom proper-time profile and selected tau_int"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/candidate_data/selected_finitematchingcompletenessfromunifiedaction_or_explicitboundaryadoptionandheldoutvalidation/finite_projected_spectral_action_bare_completeness.packet.json",
+      "sha256": "ab32ac95992e7234b557e3abb6677108b41aefb4da15539a5f960f29c7228622",
+      "role": "A85 exact finite projected spectral-action form at its declared corpus tier"
+    }
+  ],
+  "boundary": {
+    "exact_full_spectrum_before": false,
+    "exact_full_spectrum_after": true,
+    "exact_D0_H_factorization_before": false,
+    "exact_D0_H_factorization_after": true,
+    "all_scalar_even_spectral_functionals_reduced_before": false,
+    "all_scalar_even_spectral_functionals_reduced_after": true,
+    "profile_independent_stationary_coordinate_exists": false,
+    "spectral_profile_selected_by_finite_operator_and_trace": false,
+    "signed_physical_action_selected": false,
+    "nonzero_physical_source_coordinate_selected": false,
+    "held_out_physical_observable_emitted": false,
+    "B_ACTION_01_closed": false,
+    "B_SM_02_closed": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

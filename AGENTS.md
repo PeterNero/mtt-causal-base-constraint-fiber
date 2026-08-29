@@ -30,6 +30,8 @@ paper, note, packet name or search hit.
    `c6ac82be-f43f-4464-8943-68814e47539e`;
    the normalized direct Dirac-square repair-action handoff is
    `d9291f60-aa25-4c70-84ff-a3b3c9ca10c0`;
+   the finite Dirac spectral-classification handoff is
+   `b5346b8d-1373-42c2-bee8-e0ddab69ef62`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

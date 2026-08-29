@@ -508,6 +508,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   bundle, identity-synthesis, causal-response and classical-BV certificate.
 - `direct_dirac_defect_repair_action.packet.json`: generated exact normalized
   quartic repair-action, continuum-scaling and nonzero-value no-go certificate.
+- `finite_dirac_spectral_action_classification.packet.json`: generated exact
+  `D0-H_phys` factorization, complete three-branch spectrum and spectral-profile
+  selection no-go certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `build_closure_pressure_family_hessian_activation.py`: deterministic CBF.T16
@@ -529,6 +532,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   defect-polynomial and action-boundary packet builder.
 - `verify_direct_dirac_defect_repair_action.py`: independent CBF.T26 matrix,
   polynomial, positivity and continuum-scaling reconstruction.
+- `build_finite_dirac_spectral_action_classification.py`: deterministic CBF.T27
+  full-spectrum and spectral-functional classifier.
+- `verify_finite_dirac_spectral_action_classification.py`: independent CBF.T27
+  factorization, projector, multiplicity and action-profile reconstruction.
 - `repo-manifest.json`: scope and reproducibility contract.
 
 ## Kernel workflow
@@ -872,6 +879,37 @@ action as required by H4-T9. The frontier is now the missing signed/background
 source, its physical density and a held-out observable, not another finite
 repair norm.
 
+`CBF.T27` closes the full finite spectral calculation and sharpens that action
+frontier. Exact multiplication gives
+
+```text
+D_phys(t)=D0(I96+t H_phys/2),
+R=D1^2=H_phys^2/4,
+spec(H_phys)={-4^32,-2^32,+2^32}.
+```
+
+Thus the complete squared spectrum is
+
+```text
+{(2t-1)^2^32,(t-1)^2^32,(t+1)^2^32},
+```
+
+and every normalized scalar spectral functional is exactly
+
+```text
+tau_96 f(D_phys(t)^2)
+ =[f((t-1)^2)+f((t+1)^2)+f((2t-1)^2)]/3.
+```
+
+The operator and unique normalized trace fix all spectral arguments, but not
+the profile `f`. The Dirac norm, quartic moment, closure-defect and
+log-determinant profiles have incompatible stationary coordinates, and no
+coordinate is stationary for every heat profile. The missing datum is a
+same-root action profile or nonlinear repair law; another diagonalization or
+profile-free value search cannot advance the physical frontier. The closure
+basepoint `t=0` is still a nonzero operator with spectrum
+`{-1^48,+1^48}`, but it does not emit family hierarchy.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -893,13 +931,16 @@ upper-totalization packet passes `69/69` checks and its independent verifier
 passes `86/86`. The direct finite-source continuum packet passes `67/67`
 checks and its independent verifier passes `102/102`. The direct Dirac defect-
 repair packet passes `50/50` checks and its independent verifier passes
-`87/87`. The canonical suite passes 134
+`87/87`. The finite Dirac spectral-classification packet passes `63/63`
+checks and its independent verifier passes `123/123`. The canonical suite
+passes 141
 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete
 operation and Stasheff tables from `m5` onward, the selected HYM endpoint and
 its finite comparison, numerical values, and full physical-action promotion
-are not. A direct finite-source causal continuum realization and its normalized
-quartic repair action are now closed and must not be reopened as an HYM-
-projector or signed-action prerequisite.
+are not. A direct finite-source causal continuum realization, its normalized
+quartic repair action and complete finite spectral family are now closed and
+must not be reopened as an HYM-projector, signed-action prerequisite or
+profile-free value search.
