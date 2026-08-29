@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/finite-dirac-operator-repair-semigroup.v1.schema.json",
+  "title": "MTT finite Dirac operator-space repair Hessian and semigroup packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "configuration_space",
+    "closure_functional",
+    "frechet_linearization",
+    "hessian_superoperator",
+    "tangent_normal_decomposition",
+    "repair_semigroup",
+    "selected_family_pullback",
+    "nonlinear_flow_boundary",
+    "typed_operator_comparison",
+    "action_profile_boundary",
+    "authority_reconciliation",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.finite-dirac-operator-repair-semigroup.v1"},
+    "claim_id": {"const": "CBF.T28"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "configuration_space": {"type": "object"},
+    "closure_functional": {"type": "object"},
+    "frechet_linearization": {"type": "object"},
+    "hessian_superoperator": {"type": "object"},
+    "tangent_normal_decomposition": {"type": "object"},
+    "repair_semigroup": {"type": "object"},
+    "selected_family_pullback": {"type": "object"},
+    "nonlinear_flow_boundary": {"type": "object"},
+    "typed_operator_comparison": {"type": "object"},
+    "action_profile_boundary": {"type": "object"},
+    "authority_reconciliation": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    },
+    "check_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

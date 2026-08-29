@@ -1,0 +1,81 @@
+{
+  "schema": "boe.mtt.finite-dirac-operator-repair-semigroup-source-lock.v1",
+  "claim_id": "CBF.T28",
+  "date": "2026-08-29",
+  "handoff_id": "23aae2ca-0eff-4cb1-b39f-a4bbf78cabf9",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "8781ab0e2753ab8e7118154ec36274a93b916e14",
+    "mtt-closure-dynamics": "aafecf2201ab5573b63968175592062d91d10a0a",
+    "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "CanonicalNormalizedDiracSquareDefectRepairActionAndValueSelectionNoGoTheorem_v1.md",
+      "sha256": "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158",
+      "role": "CBF.T26 normalized nonlinear Dirac-square closure functional"
+    },
+    {
+      "path": "direct_dirac_defect_repair_action.packet.json",
+      "sha256": "82d01b74e1ccb9f272202fed482a8259d7d52171894aaad57eca5a0ff87a56be",
+      "role": "CBF.T26 exact finite source, defect coefficients and scalar Hessian"
+    },
+    {
+      "path": "CanonicalFiniteDiracSpectralActionClassificationAndProfileSelectionNoGoTheorem_v1.md",
+      "sha256": "5b91050752dcc4c21376222df496bd26fbf37feaec15b0f1259536a512f641f3",
+      "role": "CBF.T27 exact factorization, spectrum and scalar-profile no-go"
+    },
+    {
+      "path": "finite_dirac_spectral_action_classification.packet.json",
+      "sha256": "54c268a9050872a73d37ca5be58b3cd3110dd8452ab74e4ed2b6680f93c9fdae",
+      "role": "CBF.T27 exact D0, D1, H_phys and R identities"
+    },
+    {
+      "path": "../20 Mathematical Language Discovery Program - Closure Dynamics/Q79_SHARED_CIRCLE_CLOSURE_DYNAMICS_SOURCE_THEOREM_v1.md",
+      "sha256": "ec1c9186d519be7749e9312836205fd1ca0d947490f29384613b938920c9ed17",
+      "role": "general Morse-Bott closure-Hessian-to-semigroup theorem and finite q79 precedent"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_ClosureShadowGaugeActionAxiomDerivation_or_ExplicitAdoptionAndHeldOutValidation_v1.md",
+      "sha256": "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440",
+      "role": "A84 fixed-point damping and heat-shadow action-tier authority"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_ProperTimeMeasureAndOverlapKineticMetricSource_or_StrictSpectralActionClosure_v1.md",
+      "sha256": "0d12e410e0534bbb36fa36aa16f903ac720ae603c77cc76d8fb23650c2713846",
+      "role": "A53 conditional one-atom proper-time profile and scale boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_FiniteMatchingCompletenessFromUnifiedAction_or_ExplicitBoundaryAdoptionAndHeldOutValidation_v1.md",
+      "sha256": "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36",
+      "role": "A85 finite spectral action at declared corpus tier and primitive-core boundary"
+    }
+  ],
+  "boundary": {
+    "full_operator_space_hessian_before": false,
+    "full_operator_space_hessian_after": true,
+    "tangent_normal_dimensions_before": false,
+    "tangent_normal_dimensions_after": true,
+    "same_root_repair_semigroup_before": false,
+    "same_root_repair_semigroup_after": true,
+    "A84_general_semigroup_mechanism_instantiated_before": false,
+    "A84_general_semigroup_mechanism_instantiated_after": true,
+    "repair_semigroup_profile_selected": true,
+    "repair_generator_equals_R_or_H_phys_squared": false,
+    "physical_spectral_action_profile_selected": false,
+    "repair_time_identified_with_tau_int": false,
+    "signed_physical_action_selected": false,
+    "nonzero_physical_source_coordinate_selected": false,
+    "held_out_physical_observable_emitted": false,
+    "B_ACTION_01_closed": false,
+    "B_SM_02_closed": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

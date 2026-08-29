@@ -1,0 +1,297 @@
+{
+  "action_profile_boundary": {
+    "absolute_repair_scale_selected": false,
+    "nonzero_Yukawa_or_mass_value_selected": false,
+    "repair_semigroup_is_physical_spectral_action": false,
+    "same_root_exponential_repair_profile_selected": true,
+    "scalar_profile_f_of_D_phys_squared_selected": false,
+    "signed_cyclic_or_BV_action_selected": false
+  },
+  "authority_reconciliation": {
+    "A53": "tau_int=log(448)/15 is not imported because no selected comparison map identifies it with 4s",
+    "A84": "general closure-Hessian-to-semigroup mechanism instantiated exactly with A_rep=4P_comm",
+    "A85": "finite spectral action acts on H_F while the repair semigroup acts on End_sa(H_F); primitive scalar profile remains open"
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 96,
+    "total": 96
+  },
+  "checks": {
+    "A_D1_equals_4D1": true,
+    "A_H_equals_4H": true,
+    "A_R_equals_4R": true,
+    "B_ACTION_01_remains_open": true,
+    "B_SM_02_remains_open": true,
+    "D0_is_self_adjoint": true,
+    "D0_minus_rank_is_48": true,
+    "D0_plus_rank_is_48": true,
+    "D0_square_is_identity": true,
+    "D1_J_squared_equals_4Pcomm": true,
+    "D1_Panti_idempotent": true,
+    "D1_Pcomm_idempotent": true,
+    "D1_commutes_with_D0": true,
+    "D1_is_normal": true,
+    "D1_projectors_orthogonal": true,
+    "D1_projectors_resolve": true,
+    "H_phys_J_squared_equals_4Pcomm": true,
+    "H_phys_Panti_idempotent": true,
+    "H_phys_Pcomm_idempotent": true,
+    "H_phys_is_normal": true,
+    "H_phys_matches_T23": true,
+    "H_phys_projectors_orthogonal": true,
+    "H_phys_projectors_resolve": true,
+    "J0_D1_equals_H_phys": true,
+    "R_J_squared_equals_4Pcomm": true,
+    "R_Panti_idempotent": true,
+    "R_Pcomm_idempotent": true,
+    "R_equals_H_squared_over_four": true,
+    "R_is_normal": true,
+    "R_projectors_orthogonal": true,
+    "R_projectors_resolve": true,
+    "T20_source_is_exact": true,
+    "T23_response_is_exact": true,
+    "T26_repair_action_is_exact": true,
+    "T27_spectral_classification_is_exact": true,
+    "anticommuting_cross_J_squared_equals_4Pcomm": true,
+    "anticommuting_cross_Panti_idempotent": true,
+    "anticommuting_cross_Pcomm_idempotent": true,
+    "anticommuting_cross_projectors_orthogonal": true,
+    "anticommuting_cross_projectors_resolve": true,
+    "anticommuting_sample_has_negative_parity": true,
+    "anticommuting_sample_is_nonzero": true,
+    "anticommuting_tangent_dimension_is_4608": true,
+    "commuting_rank_one_J_squared_equals_4Pcomm": true,
+    "commuting_rank_one_Panti_idempotent": true,
+    "commuting_rank_one_Pcomm_idempotent": true,
+    "commuting_rank_one_projectors_orthogonal": true,
+    "commuting_rank_one_projectors_resolve": true,
+    "commuting_sample_has_positive_parity": true,
+    "commuting_sample_is_nonzero": true,
+    "commuting_tangent_dimension_is_4608": true,
+    "contract_schema_is_exact": true,
+    "defect_derivative_kills_tangent_sample": true,
+    "full_affine_family_not_nonlinearly_invariant": true,
+    "full_operator_space_hessian_is_newly_closed": true,
+    "generic_split_J_squared_equals_4Pcomm": true,
+    "generic_split_Panti_idempotent": true,
+    "generic_split_Pcomm_idempotent": true,
+    "generic_split_projectors_orthogonal": true,
+    "generic_split_projectors_resolve": true,
+    "handoff_is_pinned": true,
+    "induced_scalar_linear_rate_is_4": true,
+    "kernel_model_is_pinned": true,
+    "material_projectors_are_orthogonal": true,
+    "material_projectors_resolve_identity": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "nonlinear_branch_ratio_difference_nonzero_at_sample": true,
+    "normalized_D1_norm_squared_is_2": true,
+    "operator_tangent_dimension_is_9216": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "physical_spectral_profile_remains_open": true,
+    "projected_full_gradient_matches_scalar_pullback": true,
+    "pullback_Hessian_equals_metric_times_eigenvalue": true,
+    "pullback_Hessian_is_8": true,
+    "repair_generator_is_not_material_R_or_H2": true,
+    "repair_hessian_is_positive_on_normal_sample": true,
+    "repair_semigroup_profile_is_selected": true,
+    "repair_supertrace_profile_has_equal_multiplicities": true,
+    "repair_time_to_tau_int_remains_open": true,
+    "same_root_repair_semigroup_is_newly_closed": true,
+    "signed_physical_action_remains_open": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "strict_top_level_contract": true,
+    "trace_H_squared_is_768": true,
+    "trace_R_is_192": true
+  },
+  "claim_id": "CBF.T28",
+  "closure_functional": {
+    "basepoint_defect": "F(D0)=0",
+    "defect_map": "F(D)=D^2-I96",
+    "definition": "C(D)=1/2 tau96((D^2-I96)^*(D^2-I96))",
+    "full_gradient_on_self_adjoint_D": "grad C(D)=2D(D^2-I96)",
+    "positive_repair_not_signed_action": true
+  },
+  "configuration_space": {
+    "D0_sha256": "2fcca7a21d905865c331db9785e061249342da3ed5b0c59539a31a1a2ea72fd1",
+    "D0_spectrum": {
+      "-1": 48,
+      "1": 48
+    },
+    "H_F_complex_dimension": 96,
+    "V_sa_real_dimension": 9216,
+    "basepoint": "D0",
+    "carrier": "V_sa=End_sa(H_F)",
+    "metric": "g(X,Y)=Re tau96(X^*Y)",
+    "normalized_trace": "tau96=Tr/96"
+  },
+  "date": "2026-08-29",
+  "frechet_linearization": {
+    "definition": "J0(X)=DF_D0[X]=D0X+XD0",
+    "metric_adjoint": "J0^*=J0",
+    "theta": "Ad_D0(X)=D0XD0",
+    "theta_is_orthogonal_involution": true
+  },
+  "frontier_delta": "The T26 closure functional now emits its complete typed Hessian A_rep=4P_comm on the 9216-real-dimensional self-adjoint operator tangent, with exact spectrum 0^4608,4^4608 and semigroup P_anti+exp(-4s)P_comm. This closes the exponential repair-profile source and the same-root A84 mechanism. It also proves that the generator is not R or H_phys^2 and cannot select the scalar physical spectral-action profile; signed action promotion remains open.",
+  "hessian_superoperator": {
+    "P_anti": "P_anti=(I-Ad_D0)/2",
+    "P_comm": "P_comm=(I+Ad_D0)/2",
+    "definition": "A_rep=J0^*J0=J0^2",
+    "exact_identity": "A_rep=2(I+Ad_D0)=4P_comm",
+    "materialized_9216_square_matrix": false,
+    "nullity": 4608,
+    "rank": 4608,
+    "spectrum": {
+      "0": 4608,
+      "4": 4608
+    }
+  },
+  "nonlinear_flow_boundary": {
+    "affine_family_invariant_only_at": [
+      "t=0"
+    ],
+    "branch_ratio": "r_h(t)=2t+(3/2)t^2 h+(1/4)t^3 h^2",
+    "decisive_difference": "r_-2(t)-r_+2(t)=-6t^2",
+    "full_gradient": "grad C(D)=2D(D^2-I96)",
+    "nonzero_physical_coordinate_selected": false,
+    "scalar_flow_is_constrained_projection": true
+  },
+  "parameter_ledger": {
+    "new_dimensionful_primitives": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0,
+    "new_sector_specific_parameters": 0,
+    "normalized_repair_scale_convention": 1,
+    "scale_is_physical_parameter": false
+  },
+  "physical_boundary": {
+    "A84_general_mechanism_instantiated": true,
+    "B_ACTION_01_closed": false,
+    "B_SM_02_closed": false,
+    "full_operator_space_repair_Hessian_closed": true,
+    "held_out_physical_observable_emitted": false,
+    "nonzero_physical_source_coordinate_selected": false,
+    "repair_time_to_tau_int_selected": false,
+    "same_root_repair_semigroup_closed": true,
+    "selected_physical_action_profile": false,
+    "signed_physical_action_selected": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "repair_semigroup": {
+    "contraction_for_nonnegative_s": true,
+    "entire_complexification": "T_z=P_anti+exp(-4z)P_comm",
+    "exact_solution": "T_s=P_anti+exp(-4s)P_comm",
+    "imaginary_boundary": "T_it=P_anti+exp(-4it)P_comm",
+    "linearized_equation": "d_s X=-A_rep X",
+    "physical_Lorentzian_time_identified": false,
+    "quarter_boundary": "T_(i*pi/8)=P_anti-iP_comm"
+  },
+  "schema": "boe.mtt.finite-dirac-operator-repair-semigroup.v1",
+  "selected_family_pullback": {
+    "D1_sha256": "0646f96f487fdb3de70596073ec295ad967d5845d4cfae06e9a777da3369ed5a",
+    "H_phys_sha256": "2b78943ded404370d6c2f4216aab01b71c1bc06f4056a6a44a6ee407ad3d398f",
+    "commuting_identities": [
+      "A_rep(D1)=4D1",
+      "A_rep(H_phys)=4H_phys",
+      "A_rep(R)=4R"
+    ],
+    "family": "D_phys(t)=D0+tD1",
+    "induced_metric_g_tt": "2",
+    "induced_metric_gradient": "d_s t=-2t(3t^2-4t+2)",
+    "linearized_scalar_rate": "d_s t=-4t",
+    "scalar_Hessian": "8",
+    "scalar_Hessian_interpretation": "g_tt times normal eigenvalue 4"
+  },
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "handoff_id": "23aae2ca-0eff-4cb1-b39f-a4bbf78cabf9",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "8781ab0e2753ab8e7118154ec36274a93b916e14",
+      "mtt-closure-dynamics": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 8,
+    "source_root_payload": {
+      "D0_sha256": "2fcca7a21d905865c331db9785e061249342da3ed5b0c59539a31a1a2ea72fd1",
+      "D1_sha256": "0646f96f487fdb3de70596073ec295ad967d5845d4cfae06e9a777da3369ed5a",
+      "H_phys_sha256": "2b78943ded404370d6c2f4216aab01b71c1bc06f4056a6a44a6ee407ad3d398f",
+      "configuration_space": "End_sa(H_F), dim_R=9216",
+      "metric": "g(X,Y)=Re (Tr/96)(X^*Y)",
+      "observed_targets": [],
+      "physical_spectral_profile": null,
+      "repair_hessian": "A_rep=J0^*J0=4P_comm",
+      "repair_hessian_spectrum": {
+        "0": 4608,
+        "4": 4608
+      },
+      "repair_semigroup": "exp(-sA_rep)=P_anti+exp(-4s)P_comm",
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "8781ab0e2753ab8e7118154ec36274a93b916e14",
+        "mtt-closure-dynamics": "aafecf2201ab5573b63968175592062d91d10a0a",
+        "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.finite-dirac-operator-repair-semigroup-root.v1",
+      "signed_physical_action": null,
+      "source_hashes": [
+        "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158",
+        "82d01b74e1ccb9f272202fed482a8259d7d52171894aaad57eca5a0ff87a56be",
+        "5b91050752dcc4c21376222df496bd26fbf37feaec15b0f1259536a512f641f3",
+        "54c268a9050872a73d37ca5be58b3cd3110dd8452ab74e4ed2b6680f93c9fdae",
+        "ec1c9186d519be7749e9312836205fd1ca0d947490f29384613b938920c9ed17",
+        "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440",
+        "0d12e410e0534bbb36fa36aa16f903ac720ae603c77cc76d8fb23650c2713846",
+        "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36"
+      ],
+      "theorem_sha256": "23ac40d68732a3c3b934a76ca4ca29ac10956340ba600a9f60fd277a29d04111"
+    },
+    "source_root_sha256": "b2bfecd872f6bc369987f707e6c41b0592e40cfe9fd7ebbfc43a91278dd9d69e"
+  },
+  "status": "exact full operator-space positive repair Hessian and semigroup; signed physical action and scalar spectral-action profile open",
+  "tangent_normal_decomposition": {
+    "finite_Morse_Bott": true,
+    "nearby_minimum_manifold": "unitary orbit of self-adjoint involutions",
+    "normal": "Ran(P_comm)={X:[D0,X]=0}",
+    "normal_real_dimension": 4608,
+    "tangent": "Ran(P_anti)={X:{D0,X}=0}",
+    "tangent_real_dimension": 4608
+  },
+  "typed_operator_comparison": {
+    "A_rep_spectrum": {
+      "0": 4608,
+      "4": 4608
+    },
+    "A_rep_type": "End_sa(H_F)->End_sa(H_F)",
+    "H_phys_squared_spectrum": {
+      "16": 32,
+      "4": 64
+    },
+    "H_phys_squared_type": "H_F->H_F",
+    "R_is_A_rep_eigenvector_not_A_rep": true,
+    "R_spectrum": {
+      "1": 64,
+      "4": 32
+    },
+    "R_type": "H_F->H_F",
+    "normalized_supertrace_profile": "(1+exp(-4s))/2",
+    "repair_semigroup_equals_exp_minus_sR": false
+  }
+}
