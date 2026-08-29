@@ -412,12 +412,32 @@ The order-zero Yukawa-Higgs term preserves the Lorentzian principal symbol and
 Green hyperbolicity. The graded square reproduces `h^2 H_phys`, and the
 classical fermion/Yukawa BV sublane closes.
 
+CBF.T26 now closes the normalized positive-repair part of the first direct
+action target. The exact defect
+
+```text
+K(t)=D_phys(t)^2-I96=tH_phys+t^2D1^2
+```
+
+has the normalized invariant quadratic representative
+
+```text
+S_rep(t)=1/2(Tr/96)(K(t)^*K(t))
+        =4t^2-(16/3)t^3+3t^4.
+```
+
+The complete quartic is exact and coefficient-bearing. It is not the signed
+physical action. Its only real stationary point is `t=0`, so it also proves
+that an unshifted positive defect square cannot select a nonzero physical
+value. This removes repeated repair-functional searches from the frontier.
+
 This splits the remaining work into two routes that must not be conflated.
 
 ### Direct finite-source route
 
-1. construct one selected coefficient-bearing action/background object that
-   emits the already fixed finite differential and its normalization;
+1. construct the missing signed value-selecting action/background source; the
+   normalized positive repair action and full quartic jet are closed by
+   CBF.T26;
 2. derive the strict numerical Higgs/source coordinates or the smallest
    explicitly declared universal parameter set;
 3. extend the same source to the bosonic gauge, Higgs and gravitational action;
@@ -433,12 +453,15 @@ This splits the remaining work into two routes that must not be conflated.
 5. if they agree, state the resulting universality theorem without identifying
    the routes before the comparison is proved.
 
-The immediate direct target is item 1 of the direct route, followed by the
-held-out scalar. The immediate q79 target remains item 1 of the provenance
-route. The finite physical typing, totalization and direct continuum synthesis
-must not be reopened: CBF.T23-CBF.T25 have discharged them at their declared
-tier. q79 HYM acceptance remains `0/3` packets and `0/7` rows because CBF.T25
-does not claim HYM provenance.
+The immediate direct target is the signed/background remainder of item 1,
+followed by the held-out scalar. A candidate must reproduce the CBF.T23 linear
+response and the CBF.T26 quartic repair invariants, while adding a selected
+ingredient capable of a nonzero stationary value. The immediate q79 target
+remains item 1 of the provenance route. The finite physical typing,
+totalization, direct continuum synthesis and normalized repair quartic must not
+be reopened: CBF.T23-CBF.T26 have discharged them at their declared tiers.
+q79 HYM acceptance remains `0/3` packets and `0/7` rows because the direct
+route does not claim HYM provenance.
 
 Primitive q79 background selection and the numerical-vacuum clause remain
 open. A binary root selector is not required for the current neutral endpoint;
@@ -447,7 +470,9 @@ Another normal-frame or finite-trace packet cannot discharge the value clause:
 CBF.T18 proves those choices are already quotiented or unique. CBF.T22-CBF.T25
 and the pinned metrology theorem also prove that searching for a second sector-
 specific absolute scale is the wrong target: the only admissible absolute
-extension at the current tier is the shared metrological primitive.
+extension at the current tier is the shared metrological primitive. CBF.T26
+also rules out selecting a nonzero value by minimizing another copy of the
+same unshifted positive defect norm.
 
 ## Step 5: Constraint curvature and gauge stabilizer
 

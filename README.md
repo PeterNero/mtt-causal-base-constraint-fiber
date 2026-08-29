@@ -506,6 +506,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   normal-frame quotient, trace, response-norm and scale-recovery certificate.
 - `direct_finite_source_continuum.packet.json`: generated exact associated-
   bundle, identity-synthesis, causal-response and classical-BV certificate.
+- `direct_dirac_defect_repair_action.packet.json`: generated exact normalized
+  quartic repair-action, continuum-scaling and nonzero-value no-go certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `build_closure_pressure_family_hessian_activation.py`: deterministic CBF.T16
@@ -523,6 +525,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   associated-bundle and graded-response packet builder.
 - `verify_direct_finite_source_continuum_realization.py`: independent CBF.T25
   reconstruction and route-boundary verifier.
+- `build_direct_dirac_defect_repair_action.py`: deterministic CBF.T26 exact
+  defect-polynomial and action-boundary packet builder.
+- `verify_direct_dirac_defect_repair_action.py`: independent CBF.T26 matrix,
+  polynomial, positivity and continuum-scaling reconstruction.
 - `repo-manifest.json`: scope and reproducibility contract.
 
 ## Kernel workflow
@@ -839,9 +845,32 @@ the positive repair square.
 This closes direct structural continuum realization, not physical value
 selection. The q79 HYM route remains open as a derivation/provenance and future
 universality question; its counters deliberately remain `0/3` and `0/7`.
-The next direct target is the selected coefficient-bearing action/background
-object and one held-out scalar prediction, while q79 work may independently
-construct the HYM-to-finite comparison.
+At the CBF.T25 tier, the next direct target was a coefficient-bearing
+action/background object and one held-out scalar prediction, while q79 work
+could independently construct the HYM-to-finite comparison.
+
+`CBF.T26` resolves the positive-repair portion of that action target. For the
+same exact finite family,
+
+```text
+K(t)=D_phys(t)^2-I96=tH_phys+t^2R
+```
+
+and the normalized invariant quadratic defect representative is
+
+```text
+S_rep(t)=1/2(Tr/96)(K(t)^*K(t))
+        =4t^2-(16/3)t^3+3t^4.
+```
+
+The exact rows `Tr(H_phys^2)=768`, `Tr(H_phys R)=-512` and
+`Tr(R^2)=576` fix the complete quartic without a fitted coefficient. Its
+completed-square form is strictly positive away from `t=0`, and its derivative
+has no other real root. Therefore this minimal unshifted repair action cannot
+select a nonzero physical value. It remains distinct from the signed physical
+action as required by H4-T9. The frontier is now the missing signed/background
+source, its physical density and a held-out observable, not another finite
+repair norm.
 
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
@@ -862,12 +891,15 @@ and its independent verifier passes `77/77`. The physical Yukawa-Hessian
 packet passes `90/90` checks and its independent verifier passes `91/91`. The
 upper-totalization packet passes `69/69` checks and its independent verifier
 passes `86/86`. The direct finite-source continuum packet passes `67/67`
-checks and its independent verifier passes `102/102`. The canonical suite passes 127
+checks and its independent verifier passes `102/102`. The direct Dirac defect-
+repair packet passes `50/50` checks and its independent verifier passes
+`87/87`. The canonical suite passes 134
 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete
 operation and Stasheff tables from `m5` onward, the selected HYM endpoint and
 its finite comparison, numerical values, and full physical-action promotion
-are not. A direct finite-source causal continuum realization is now closed and
-must not be reopened as an HYM-projector prerequisite.
+are not. A direct finite-source causal continuum realization and its normalized
+quartic repair action are now closed and must not be reopened as an HYM-
+projector or signed-action prerequisite.

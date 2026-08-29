@@ -64,6 +64,8 @@ def main() -> None:
     run(sys.executable, "verify_upper_totalization_supercharge_selection.py")
     run(sys.executable, "build_direct_finite_source_continuum_realization.py")
     run(sys.executable, "verify_direct_finite_source_continuum_realization.py")
+    run(sys.executable, "build_direct_dirac_defect_repair_action.py")
+    run(sys.executable, "verify_direct_dirac_defect_repair_action.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

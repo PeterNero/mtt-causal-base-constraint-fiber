@@ -1,0 +1,234 @@
+{
+  "action_boundary": {
+    "BV_QME_selected": false,
+    "H4_T10_cyclic_action_replaced": false,
+    "H4_T9_obeyed": true,
+    "Lorentzian_density_selected": false,
+    "Morse_sign_and_first_order_phase_recovered": false,
+    "absolute_action_normalization_selected": false,
+    "positive_repair_is_not_signed_action": true
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 50,
+    "total": 50
+  },
+  "checks": {
+    "B_ACTION_01_remains_open": true,
+    "B_SM_02_remains_open": true,
+    "D0_square_is_identity": true,
+    "D_family_is_affine_on_exact_samples": true,
+    "H_and_R_commute": true,
+    "H_phys_is_self_adjoint": true,
+    "H_phys_matches_T23": true,
+    "H_phys_rank_is_96": true,
+    "R_is_self_adjoint": true,
+    "T20_source_is_exact": true,
+    "T23_response_is_exact": true,
+    "T25_direct_continuum_is_exact": true,
+    "absolute_action_normalization_remains_open": true,
+    "basis_change_preserves_repair_value": true,
+    "contract_schema_is_exact": true,
+    "cubic_coefficient_is_minus_16_over_3": true,
+    "direct_continuum_defect_scales_by_h_squared": true,
+    "direct_continuum_repair_scales_by_h_fourth": true,
+    "exact_finite_repair_action_is_newly_closed": true,
+    "exact_polynomial_matches_all_samples": true,
+    "full_quartic_repair_jet_is_newly_closed": true,
+    "handoff_is_pinned": true,
+    "held_out_observable_remains_open": true,
+    "kernel_model_is_pinned": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "nonzero_physical_coordinate_remains_open": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "positivity_completion_remainder_is_44_over_27": true,
+    "quadratic_coefficient_is_4": true,
+    "quartic_coefficient_is_3": true,
+    "repair_Hessian_at_zero_is_8": true,
+    "signed_physical_action_remains_open": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "stationary_quadratic_discriminant_is_negative": true,
+    "strict_top_level_contract": true,
+    "trace_HR_is_minus_512": true,
+    "trace_H_squared_is_768": true,
+    "trace_R_squared_is_576": true
+  },
+  "claim_id": "CBF.T26",
+  "continuum_lift": {
+    "normalized_local_repair_density": "S_dir,rep(t,h)=h^4 S_rep(t)",
+    "numerical_h_selected": false,
+    "principal_symbol_changed": false,
+    "relative_defect": "K_dir,rel(t,h)=h^2 I tensor K(t)",
+    "scope": "CBF.T25 covariantly constant neutral frame",
+    "spacetime_integrated_physical_action_claimed": false
+  },
+  "date": "2026-08-29",
+  "defect_residual": {
+    "H_phys_R_commute": true,
+    "H_phys_definition": "H_phys=D0 D1+D1 D0",
+    "H_phys_rank": 96,
+    "H_phys_self_adjoint": true,
+    "H_phys_sha256": "2b78943ded404370d6c2f4216aab01b71c1bc06f4056a6a44a6ee407ad3d398f",
+    "R_definition": "R=D1^2",
+    "R_rank": 96,
+    "R_self_adjoint": true,
+    "R_sha256": "1e28587661b5a49853ea6cd9af0d705c8b2c0508eca45091c8f365c50b0011bd",
+    "definition": "K(t)=D_phys(t)^2-I96",
+    "exact_expansion": "K(t)=t H_phys+t^2 R"
+  },
+  "exact_coefficients": {
+    "Hessian_at_zero": "8",
+    "Tr_HR": "-512",
+    "Tr_H_squared": "768",
+    "Tr_R_squared": "576",
+    "coefficient_t2": "4",
+    "coefficient_t3": "-16/3",
+    "coefficient_t4": "3",
+    "sample_values": {
+      "-1": "37/3",
+      "-1/2": "89/48",
+      "-2": "320/3",
+      "0": "0",
+      "1": "5/3",
+      "1/2": "25/48",
+      "2": "64/3"
+    }
+  },
+  "finite_source": {
+    "D0_sha256": "2fcca7a21d905865c331db9785e061249342da3ed5b0c59539a31a1a2ea72fd1",
+    "D1_sha256": "0646f96f487fdb3de70596073ec295ad967d5845d4cfae06e9a777da3369ed5a",
+    "carrier": "H_F",
+    "complex_dimension": 96,
+    "family": "D_phys(t)=D0+tD1",
+    "neutral_identity": "D0^2=I96",
+    "new_fitted_coefficients": 0,
+    "new_observed_inputs": 0
+  },
+  "frontier_delta": "The direct 96D source now emits an exact normalized positive repair action with the complete polynomial 4 t^2-(16/3)t^3+3t^4, not only its first response. Its unique real stationary point is t=0, which proves that this minimal defect-square lane cannot select a nonzero physical Yukawa/value coordinate. A signed same-root action or additional selected background/density remains necessary.",
+  "normalized_repair_action": {
+    "definition": "S_rep(t)=1/2 tau_96(K(t)^*K(t))",
+    "exact_polynomial": "4 t^2-(16/3)t^3+3t^4",
+    "gradient_flow": "dt/ds=-dS_rep/dt in unit repair-time gauge",
+    "normalized_trace": "tau_96=Tr/96",
+    "physical_Lorentzian_action": false,
+    "signed_variational_action": false
+  },
+  "parameter_ledger": {
+    "conventional_positive_repair_scale": 1,
+    "conventional_scale_is_physical_parameter": false,
+    "new_dimensionful_primitives": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0,
+    "new_sector_specific_parameters": 0,
+    "numerical_physical_h_selected": false,
+    "numerical_physical_t_selected": false
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_SM_02_closed": false,
+    "exact_finite_repair_action_closed": true,
+    "full_quartic_repair_jet_closed": true,
+    "held_out_physical_observable_emitted": false,
+    "internal_coefficients_are_physical_observables": false,
+    "internal_nonlinear_coefficients_emitted": true,
+    "nonzero_physical_source_coordinate_selected": false,
+    "q79_HYM_provenance_closed": false,
+    "signed_physical_action_selected": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "positivity_and_stationarity": {
+    "completed_square": "t^2[3(t-8/9)^2+44/27]",
+    "derivative": "4t(3t^2-4t+2)",
+    "global_minimizer": "t=0",
+    "nonnegative_for_all_real_t": true,
+    "nonzero_value_selected": false,
+    "real_stationary_set": [
+      "t=0"
+    ],
+    "stationary_quadratic_discriminant": "-8",
+    "zero_set": [
+      "t=0"
+    ]
+  },
+  "schema": "boe.mtt.direct-dirac-defect-repair-action.v1",
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "handoff_id": "d9291f60-aa25-4c70-84ff-a3b3c9ca10c0",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "e1fd182b15c6897ba800208ae8f5136e1ee698bf",
+      "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+      "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 9,
+    "source_root_payload": {
+      "H_phys_sha256": "2b78943ded404370d6c2f4216aab01b71c1bc06f4056a6a44a6ee407ad3d398f",
+      "R_sha256": "1e28587661b5a49853ea6cd9af0d705c8b2c0508eca45091c8f365c50b0011bd",
+      "coefficients": {
+        "t2": "4",
+        "t3": "-16/3",
+        "t4": "3"
+      },
+      "defect": "K(t)=D_phys(t)^2-I96=t H_phys+t^2 R",
+      "finite_source": "D_phys(t)=D0+tD1 on H_F of complex dimension 96",
+      "held_out_observable": null,
+      "normalized_repair_action": "S_rep(t)=1/2 (Tr/96)(K(t)^*K(t))",
+      "observed_targets": [],
+      "physical_source_coordinate": null,
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "e1fd182b15c6897ba800208ae8f5136e1ee698bf",
+        "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+        "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.direct-dirac-defect-repair-root.v1",
+      "signed_physical_action": null,
+      "source_hashes": [
+        "77759a36b19a789f3c09313f22ca9b632e3f4a114dd2eb4555c2f711c718b05f",
+        "6a1ff46753065e4cb647ccfdcbe69e6915642af8ae671ff35c628613d1755bc5",
+        "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+        "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+        "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+        "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+        "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+        "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+        "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43"
+      ],
+      "theorem_sha256": "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158"
+    },
+    "source_root_sha256": "d6ac4839f551a48af1b17b2f8741c29fde243f41634f79d68f30453f20f6fc5e"
+  },
+  "status": "exact normalized direct finite-source positive repair action and nonzero-value-selection no-go; signed physical action and values open",
+  "uniqueness_scope": {
+    "basis_group": "U(96)",
+    "physical_absolute_scale_selected": false,
+    "quadratic_defect_class": "c tau_96(K^*K), c>0",
+    "remaining_scale_meaning": "repair-time/action-unit rescaling",
+    "standard_gradient_normalization": "c=1/2",
+    "trace_conditions": [
+      "positive",
+      "normalized by tau_96(I96)=1",
+      "invariant under every unitary basis change"
+    ],
+    "unique_trace": "Tr/96",
+    "unique_up_to_positive_scale": true
+  }
+}

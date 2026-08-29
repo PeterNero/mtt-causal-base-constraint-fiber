@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/direct-dirac-defect-repair-action.v1.schema.json",
+  "title": "MTT direct Dirac-square defect repair action packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "finite_source",
+    "defect_residual",
+    "normalized_repair_action",
+    "uniqueness_scope",
+    "exact_coefficients",
+    "positivity_and_stationarity",
+    "continuum_lift",
+    "action_boundary",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.direct-dirac-defect-repair-action.v1"},
+    "claim_id": {"const": "CBF.T26"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "finite_source": {"type": "object"},
+    "defect_residual": {"type": "object"},
+    "normalized_repair_action": {"type": "object"},
+    "uniqueness_scope": {"type": "object"},
+    "exact_coefficients": {"type": "object"},
+    "positivity_and_stationarity": {"type": "object"},
+    "continuum_lift": {"type": "object"},
+    "action_boundary": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    },
+    "check_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

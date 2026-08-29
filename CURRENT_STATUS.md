@@ -801,3 +801,61 @@ Accordingly `B.GEO.01` remains open as written, and q79 HYM acceptance remains
 `0/3` packets and `0/7` rows. Numerical `h` and `t`, the complete coefficient-
 bearing upper action, bosonic/gravitational completion, quantum BV/QME and a
 held-out scalar prediction remain open.
+
+`CanonicalNormalizedDiracSquareDefectRepairActionAndValueSelectionNoGoTheorem_v1.md`
+(`CBF.T26`) now closes the nonlinear positive-repair subclause of the direct
+route. The exact CBF.T23 family is affine,
+
+```text
+D_phys(t)=D0+tD1,    D0^2=I96,
+```
+
+so its Dirac-square defect is exactly
+
+```text
+K(t)=D_phys(t)^2-I96=tH_phys+t^2R,
+H_phys=D0D1+D1D0,
+R=D1^2.
+```
+
+Using the unique normalized unitary-invariant finite trace `tau_96=Tr/96`,
+the standard positive quadratic repair representative is
+
+```text
+S_rep(t)=1/2 tau_96(K(t)^*K(t))
+        =4t^2-(16/3)t^3+3t^4.
+```
+
+The exact trace rows are
+
+```text
+Tr(H_phys^2)=768,
+Tr(H_phys R)=-512,
+Tr(R^2)=576,
+S_rep''(0)=8.
+```
+
+Thus the direct source now emits its complete quartic repair jet with no
+observed values or fitted coefficients. In the CBF.T25 constant neutral frame,
+the relative continuum defect and normalized local cost scale exactly as
+
+```text
+K_dir,rel=h^2 I tensor K(t),
+S_dir,rep=h^4 S_rep(t).
+```
+
+The same calculation proves a no-go that changes the next target. Since
+
+```text
+S_rep(t)=t^2[3(t-8/9)^2+44/27],
+S_rep'(t)=4t(3t^2-4t+2),
+```
+
+the only real zero and stationary point is `t=0`. This minimal unshifted
+defect-square action cannot select a nonzero physical Yukawa or value
+coordinate. H4-T9 is obeyed: this is a positive repair action, not the signed
+Lorentzian, cyclic or BV action. The next direct source must therefore emit a
+same-root signed variational action, a selected affine/background term or a
+selected target defect and physical density. `B.ACTION.01`, `B.SM.02`, the
+held-out observable and physical acceptance remain open at `0/3` packets and
+`0/7` rows.

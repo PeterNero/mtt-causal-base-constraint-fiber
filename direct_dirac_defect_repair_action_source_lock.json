@@ -1,0 +1,79 @@
+{
+  "schema": "boe.mtt.direct-dirac-defect-repair-action-source-lock.v1",
+  "claim_id": "CBF.T26",
+  "date": "2026-08-29",
+  "handoff_id": "d9291f60-aa25-4c70-84ff-a3b3c9ca10c0",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "e1fd182b15c6897ba800208ae8f5136e1ee698bf",
+    "mtt-preprojection-repair-calculus": "7e2540d2d0fb5b18c511f658b26e2b4cbe8e97d1",
+    "mtt-q79-total-superconnection-branching": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md",
+      "sha256": "77759a36b19a789f3c09313f22ca9b632e3f4a114dd2eb4555c2f711c718b05f",
+      "role": "CBF.T17 separation of affine pressure action, repair curvature and physical normalization"
+    },
+    {
+      "path": "NormalFrameQuotientAndActionIntertwinerMinimalDataTheorem_v1.md",
+      "sha256": "6a1ff46753065e4cb647ccfdcbe69e6915642af8ae671ff35c628613d1755bc5",
+      "role": "CBF.T18 normalized finite trace and absolute-scale nonidentifiability boundary"
+    },
+    {
+      "path": "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
+      "sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+      "role": "CBF.T23 exact 96-dimensional physical Dirac-Yukawa family and first response"
+    },
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "CBF.T23 response digest, rank and norm packet"
+    },
+    {
+      "path": "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md",
+      "sha256": "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+      "role": "CBF.T25 exact associated-bundle and causal continuum realization"
+    },
+    {
+      "path": "direct_finite_source_continuum.packet.json",
+      "sha256": "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+      "role": "CBF.T25 exact continuum response and action boundary packet"
+    },
+    {
+      "path": "weyl_gram_closure_repair_source.packet.json",
+      "sha256": "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+      "role": "CBF.T20 primitive P, X and Z source matrices"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+      "sha256": "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+      "role": "H4-T9 exact distinction between signed variational action and positive repair normal square"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "H4-T10 signed cyclic Maurer-Cartan action and its physical-selection boundary"
+    }
+  ],
+  "boundary": {
+    "exact_direct_finite_repair_action_before": false,
+    "exact_direct_finite_repair_action_after": true,
+    "full_quartic_repair_jet_before": false,
+    "full_quartic_repair_jet_after": true,
+    "signed_physical_action_selected": false,
+    "absolute_action_normalization_selected": false,
+    "nonzero_physical_source_coordinate_selected": false,
+    "held_out_physical_observable_emitted": false,
+    "B_ACTION_01_closed": false,
+    "B_SM_02_closed": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}
