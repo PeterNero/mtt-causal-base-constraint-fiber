@@ -2,11 +2,12 @@
 
 This is a snapshot, not a substitute for live kernel queries.
 
-- Kernel model: `572272ade96f4bf2d89dd41c48701a125cd0736343167819855b2cf41f377b45`
-- Model generated: `2026-08-28T05:57:40+00:00`
+- Kernel model: `592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8`
+- Model generated: `2026-08-29T09:19:53+00:00`
 - Durable handoff: `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`
 - Current synthesis handoff: `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`
 - Endpoint-factorization handoff: `716be879-715b-4416-be42-2c096d3d9b0b`
+- Associated-matter BV4 handoff: `7a343059-b0e9-44fc-a725-733048697896`
 - Compression/transfer comparison handoff: `f95d6a17-1e97-4836-95b0-9f7000e8887d`
 - Weyl-Koszul/Hodge handoff: `8bc0d66f-972c-42de-8178-669b79374355`
 - Monodromy/C4 cohomology bridge handoff: `9cc3431e-a0eb-4a3d-8364-8adafc645c7e`
@@ -23,6 +24,8 @@ This is a snapshot, not a substitute for live kernel queries.
 | `A10` | recorded correction authority | Requires locality-compatible compression and separates compression from derivation of canonical noncommutativity. |
 | `A18` | conditional | Six conditional quantization and four finite-domain QFT results; continuum and full physical existence obligations remain. |
 | `A47` | established | Derives the faithful low-energy gauge group `(SU3 x SU2 x U1)/Z6` from selected native bundle tensors. |
+| `A46` | established | Supplies the exact 48-state three-family representation and anomaly table consumed by the associated-matter witness. |
+| `A50` | established | Supplies the unique anomaly-free shared hypercharge circle and exact `6Y` rows. |
 
 ## Relevant frontier results
 
@@ -32,6 +35,7 @@ This is a snapshot, not a substitute for live kernel queries.
 | Cohesive Maurer-Cartan repair | verified on pushed active branch, not yet selected paper authority | Supplies a serious repair-to-linearization prototype, not the selected physical action. |
 | Continuum recorder compiler | verified conditional compiler | Can consume a selected spectral sector; it does not select one. |
 | Operational ontology cutset | verified non-entailment result | Operational data do not select Many-Worlds or a unique one-history law. |
+| eta9 three-cycle campaign | exact non-detection result | Three full cycle covers, 4,251 endpoint projections and 5,830,406 comparisons give `Gram=-2 I3`; this route is retired and emits no physical endpoint row. |
 
 ## Open blockers that bound this repo
 
@@ -322,3 +326,27 @@ Physical acceptance remains `0/3` packets and `0/7` rows. The frontier change
 is that `B.OP.01` is now typed as deterministic execution after physical
 `GAS+SYN`, while the irreducible source work is construction of physical
 `GAS`, `SYN` and `BV4` from one root hash.
+
+`AssociatedMatterProductDiracBVExternalizationCompilerTheorem.v1` now resolves
+the universal charged/chiral matter part of `BV4`. Given one same-source
+graded first-order internal operator, normalized kernel/density and external
+causal Dirac packet, the product identity
+
+```text
+D_tot=D_Y tensor I + Gamma_Y tensor D_X,
+D_tot^2=D_Y^2 tensor I + I tensor D_X^2
+```
+
+forces the four-dimensional zero-mode fields, their inherited gauge and
+shared-circle action, characterwise chirality, free quadratic action,
+cotangent pairing, modewise causal operators and complement gap. The exact
+witness uses `D_+=[I16 0 0 0]`, has a 48-dimensional chiral kernel,
+32-dimensional unit-gap complement and a 160-dimensional product operator.
+It replays the A46/A50 anomaly and diagonal `Z6` rows exactly.
+
+This closes a compiler, not a physical source. The witness is not identified
+with the selected q79 bundle operator. The q79 endpoint must still emit its
+actual HYM metric, normalized zero modes, upper action and vertices; the full
+bosonic/gravitational stack, four-dimensional gauge background and quantum
+BV/QME pushforward remain open. Physical acceptance therefore stays `0/3`
+packets and `0/7` rows under `B.HS.01`, `B.GEO.01` and `B.ACTION.01`.

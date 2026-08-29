@@ -43,6 +43,12 @@
     "exact factorization of the seven endpoint rows through three same-source packet types",
     "exact Hessian/Feshbach/C4 execution and minimal-source independence witnesses",
     "machine-readable q79 physical endpoint three-packet contract",
+    "exact associated-matter product-Dirac zero-mode externalization compiler",
+    "exact equivariant characterwise-index and shared-circle representation transport",
+    "exact free quadratic-action and cotangent-pairing reduction",
+    "modewise causal-operator and classical complement-gap compiler",
+    "exact 3 x 16 = 48 charged/chiral finite witness",
+    "machine-readable q79 BV4 associated-matter instance contract",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -68,6 +74,10 @@
     "instantiation of the all-arity promotion theorem on a selected continuum HYM endpoint",
     "promotion of finite all-arity covariance to physical q79 holonomy",
     "physical acceptance of any GAS, SYN or BV4 packet",
+    "identification of the 3 x 16 finite witness with the selected q79 matter operator",
+    "selection of a physical four-dimensional gauge connection or spacetime by the BV4 compiler",
+    "derivation of Yukawa or other interaction values from the representation table",
+    "closure of the full bosonic, gravitational or quantum BV compactification",
     "that three structured source packets are three scalar physical parameters",
     "that every internal MTT direction is non-spatiotemporal",
     "a new globally original operator-theory identity"
@@ -86,7 +96,8 @@
     "SymmetricWeylTransferredM4AndArityFourStasheffTheorem_v1.md",
     "HigherJetFiltrationAndTransferredAritySupportTheorem_v1.md",
     "AllArityContractionMorphismSourcePromotionTheorem_v1.md",
-    "SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md"
+    "SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md",
+    "AssociatedMatterProductDiracBVExternalizationCompilerTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -100,7 +111,8 @@
     "q79_symmetric_response_transferred_m4.packet.json",
     "q79_higher_transfer_jet_filtration_and_m5_feasibility.packet.json",
     "q79_all_arity_source_promotion.packet.json",
-    "q79_seven_row_endpoint_factorization.packet.json"
+    "q79_seven_row_endpoint_factorization.packet.json",
+    "q79_bv4_associated_matter_externalization.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -114,7 +126,8 @@
     "python build_q79_symmetric_response_transferred_m4.py",
     "python build_q79_higher_transfer_jet_filtration_and_m5_feasibility.py",
     "python build_q79_all_arity_source_promotion.py",
-    "python build_q79_seven_row_endpoint_factorization.py"
+    "python build_q79_seven_row_endpoint_factorization.py",
+    "python build_q79_bv4_associated_matter_externalization.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -123,7 +136,8 @@
     "Q79_ETA9_ENDPOINT_UNLOCK_DECISION_PROGRAM_v1.md"
   ],
   "contracts": [
-    "q79_physical_endpoint_three_packet_contract.schema.json"
+    "q79_physical_endpoint_three_packet_contract.schema.json",
+    "q79_bv4_associated_matter_externalization_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

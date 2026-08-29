@@ -193,6 +193,25 @@ reduction, not a three-parameter claim: physical acceptance remains `0/3`
 typed components and `0/7` rows. The components may be stored together; the
 count describes distinct information, not files.
 
+The thirteenth theorem opens the `BV4` packet at the associated-matter lane.
+For a graded equivariant internal operator `D_X`, an external causal Dirac
+operator `D_Y` and normalized internal modes, it proves
+
+```text
+D_tot=D_Y tensor I + Gamma_Y tensor D_X,
+D_tot^2=D_Y^2 tensor I + I tensor D_X^2.
+```
+
+The internal kernel therefore externalizes exactly as massless
+four-dimensional fields, while nonzero internal eigenvalues label the massive
+mode operators. Gauge characters and chirality are inherited from the
+equivariant graded kernel; the free quadratic action and cotangent BV pairing
+reduce exactly; and an internal gap controls the classical complement. The
+exact witness has `ker(D_+)=3 tensor H16`, dimension 48, and replays the A46/A50
+anomaly, shared-circle and `Z6` rows. This is a universal compiler, not the
+selected q79 operator: the full physical `BV4` packet and all interaction
+values remain open.
+
 ## Run the proof
 
 ```powershell
@@ -203,7 +222,8 @@ The verifier uses only the Python standard library. It rebuilds the packets,
 independently checks the `m4` packet in routine mode, reconstructs the eight
 higher-jet invariant spaces, the exact `m5` witness and the all-arity recurrence,
 checks the all-arity source-promotion contract, executes the seven-row
-factorization/Feshbach witnesses, and runs the unit tests.
+factorization/Feshbach witnesses, executes the associated-matter product-Dirac
+and `3 x 16` BV4 witness, and runs the unit tests.
 
 The complete independent `m4` table and SI(4) replay is intentionally separate
 from the routine suite because it evaluates 3,869,500 admissible quadruples:
@@ -250,6 +270,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md`: exact
   factorization of the seven endpoint rows through `GAS`, `SYN` and `BV4`,
   exact minimality countermodels and the derived Feshbach/C4 rows.
+- `AssociatedMatterProductDiracBVExternalizationCompilerTheorem_v1.md`: exact
+  associated-matter zero-mode, representation, free-action, causal-mode and
+  complement-gap compiler with a `3 x 16 = 48` witness.
 - `closure_dynamics_transfer_source_lock.json`: commit, Git-blob and SHA-256
   provenance for the read-only source artifacts.
 - `q79_weyl_koszul_source_lock.json`: pinned q79 Weyl, completed-response,
@@ -274,6 +297,10 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   theorem.
 - `q79_physical_endpoint_three_packet_contract.schema.json`: machine-readable
   same-source input schema for the physical endpoint integration.
+- `q79_bv4_associated_matter_externalization_source_lock.json`: pinned H4-T16,
+  H4-T18, H4-T21, A46/A47/A50 and shared-circle inputs for the BV4 compiler.
+- `q79_bv4_associated_matter_externalization_contract.schema.json`:
+  machine-readable same-root `AMK+EXT4+DEN` instance and remaining-row schema.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
 - `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
@@ -308,6 +335,8 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   target-covariance and continuum endpoint-contract certificate.
 - `q79_seven_row_endpoint_factorization.packet.json`: generated dependency,
   minimality and exact Hessian/Feshbach/C4 certificate.
+- `q79_bv4_associated_matter_externalization.packet.json`: generated product-
+  Dirac, 48-state representation, action/pairing and complement certificate.
 - `build_constraint_compression_leakage.py`: deterministic packet builder.
 - `verify_constraint_compression_leakage.py`: independent packet verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
@@ -352,10 +381,18 @@ exist, the physical symmetry and rank-102/Feshbach rows are computations, not
 new source packets. This reduces source-type ambiguity but does not change the
 strict physical `0/7` count.
 
+The free associated-matter portion of `BV4` is now organized one level deeper.
+Once the selected endpoint exports the graded first-order matter operator,
+normalized harmonic basis, reduced Green and gap, `CBF.T13` computes the
+charged/chiral four-dimensional carrier and its free causal operators. It does
+not supply that endpoint instance, the nonlinear overlap values, the complete
+bosonic/gravity stack or the quantum pushforward.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
-its independent verifier passes `37/37`. The canonical suite passes 54 unit
-tests, including the five new dependency tests. The
+its independent verifier passes `37/37`. The associated-matter BV4 packet
+passes `71/71` checks and its independent verifier passes `47/47`. The
+canonical suite passes 58 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

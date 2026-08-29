@@ -8,7 +8,8 @@ paper, note, packet name or search hit.
 1. Call the MTT MCP `research_bootstrap` first, with this repository and the
    first applicable live blocker.
 2. Load the latest applicable handoff. The current endpoint-integration handoff is
-   `716be879-715b-4416-be42-2c096d3d9b0b`; the synthesis handoff is
+   `716be879-715b-4416-be42-2c096d3d9b0b`; the associated-matter BV4 handoff is
+   `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is
    `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`. Compare its model hash with the live
    kernel model.

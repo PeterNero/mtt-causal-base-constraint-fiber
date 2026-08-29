@@ -1,0 +1,396 @@
+{
+  "baseline": {
+    "physical_packets_accepted": 0,
+    "physical_packets_total": 3,
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7,
+    "source_claim_id": "CBF.T12",
+    "source_packet_sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+  },
+  "bv4_clause_cutset": [
+    {
+      "clause": "C1",
+      "compiler_state": "exact",
+      "physical_input": "selected normalized q79 kernel and complement"
+    },
+    {
+      "clause": "C2",
+      "compiler_state": "exact",
+      "physical_input": "selected density and BV grading"
+    },
+    {
+      "clause": "C3",
+      "compiler_state": "exact",
+      "physical_input": "selected equivariant first-order operator and real structure"
+    },
+    {
+      "clause": "C4",
+      "compiler_state": "exact_identity",
+      "physical_input": "HYM density, volume and scales"
+    },
+    {
+      "clause": "C5",
+      "compiler_state": "exact_free_reduction",
+      "physical_input": "selected upper quadratic action"
+    },
+    {
+      "clause": "C8",
+      "compiler_state": "conditional_green_hyperbolic",
+      "physical_input": "Y4, domains, gauge fixing and causal support prescription"
+    },
+    {
+      "clause": "C9",
+      "compiler_state": "classical_gap_bound",
+      "physical_input": "determinant orientation, anomaly and QME pushforward"
+    }
+  ],
+  "check_summary": {
+    "passed": 71,
+    "total": 71
+  },
+  "checks": {
+    "BV4_was_open_before_this_compiler": true,
+    "CBF_T12_builder_checks_all_pass": true,
+    "CBF_T12_packet_hash_matches": true,
+    "CBF_T12_theorem_hash_matches": true,
+    "DX_is_odd": true,
+    "DX_is_self_adjoint": true,
+    "DX_square_is_complement_projector": true,
+    "D_plus_cokernel_is_zero": true,
+    "D_plus_has_rank_16": true,
+    "D_plus_is_shared_circle_equivariant": true,
+    "D_plus_kernel_has_dimension_48": true,
+    "SU2_squared_U1_anomaly_vanishes": true,
+    "SU3_cubic_anomaly_vanishes": true,
+    "SU3_squared_U1_anomaly_vanishes": true,
+    "U1_cubic_anomaly_vanishes": true,
+    "adjacent_20 Mathematical Language Discovery Program - Closure Dynamics_shared_circle_sm_gauge_stack_reference.packet_hash_matches": true,
+    "adjacent_mtt-preprojection-repair-calculus_BV_COMPACTIFICATION_BRIDGE_CONTRACT_hash_matches": true,
+    "adjacent_mtt-preprojection-repair-calculus_PREPROJECTION_EQUIVARIANT_INDEX_FIRST_KERNEL_COMPILER_AND_POSITIVE_HESSIAN_CHIRALITY_NO_GO_THEOREM_v1_hash_matches": true,
+    "adjacent_mtt-preprojection-repair-calculus_PREPROJECTION_NORMALIZED_BHT_DERIVED_MATTER_LOCALIZATION_AND_INDEX_ORIENTATION_THEOREM_v1_hash_matches": true,
+    "adjacent_mtt-preprojection-repair-calculus_PREPROJECTION_NORMALIZED_ORIENTATION_BV_PRODUCT_REDUCTION_AND_NEUTRAL_TOPOLOGY_NO_GO_THEOREM_v1_hash_matches": true,
+    "adjacent_mtt-sm-parity-closure_mtt_selected_nativebundleautomorphismgaugegroup_or_parameterassumptionaudit_v1_hash_matches": true,
+    "adjacent_mtt-sm-parity-closure_mtt_selected_neutralalgebrasummandorequivalentaxiomrevision_v1_hash_matches": true,
+    "adjacent_mtt-sm-parity-closure_mtt_selected_typedfamilygaugecarrieranddiagonalsmrepresentationtheorem_v1_hash_matches": true,
+    "all_six_rows_descend_through_Z6": true,
+    "all_source_sections_repeat_root_hash": true,
+    "compiler_adds_no_physical_scalar_parameters": true,
+    "compiler_does_not_claim_physical_spacetime": true,
+    "compiler_does_not_select_q79_endpoint": true,
+    "complement_gap_is_exactly_one": true,
+    "compressed_operator_is_DY_tensor_P0": true,
+    "controlling_blockers_remain_open": true,
+    "external_grading_anticommutes_with_DY": true,
+    "fiber_pairing_reduces_exactly": true,
+    "finite_mass_minus_mode_square_is_two_I": true,
+    "finite_mass_plus_mode_square_is_two_I": true,
+    "four_dimensional_extension_is_not_imported": true,
+    "gravitational_U1_anomaly_vanishes": true,
+    "harmonic_projector_has_rank_48": true,
+    "harmonic_projector_is_idempotent": true,
+    "live_kernel_model_hash_is_locked": true,
+    "one_family_has_dimension_16": true,
+    "physical_packets_remain_zero_of_three": true,
+    "physical_rows_remain_zero_of_seven": true,
+    "product_Dirac_square_identity": true,
+    "product_complement_dimension_is_64": true,
+    "product_complement_normal_is_two_Q": true,
+    "product_operator_has_dimension_160": true,
+    "projector_and_complement_resolve_identity": true,
+    "quadratic_action_reduces_exactly": true,
+    "reduced_green_annihilates_kernel": true,
+    "reduced_green_is_DX": true,
+    "retained_product_dimension_is_96": true,
+    "schema_contains_no_observed_value_field": true,
+    "schema_has_no_proof_boolean_shortcut": true,
+    "schema_is_draft_2020_12": true,
+    "schema_requires_causal_and_gap_certificates": true,
+    "schema_requires_first_order_operator_and_kernel": true,
+    "schema_requires_root_hash": true,
+    "schema_retains_seven_physical_exit_groups": true,
+    "self_adjoint_DX_has_dimension_80": true,
+    "shared_circle_action_commutes_with_DX": true,
+    "shared_circle_action_commutes_with_kernel_projector": true,
+    "shared_circle_has_one_abelian_harmonic_mode": true,
+    "shared_circle_source_checks_all_pass": true,
+    "shared_circle_weights_match_A50": true,
+    "six_lifts_have_identical_descended_action": true,
+    "source_lock_schema_is_current": true,
+    "three_family_anomalies_also_vanish": true,
+    "three_packet_schema_hash_matches": true,
+    "weak_doublet_count_is_even": true,
+    "zero_mode_projector_reduces_product_operator": true
+  },
+  "claim_boundary": {
+    "does_not_claim": [
+      "that the exact finite witness is the selected q79 internal operator",
+      "a selected physical four-dimensional spacetime or gauge connection",
+      "Yukawa or other interaction values",
+      "the full bosonic, gravitational or quantum BV compactification",
+      "closure of B.HS.01, B.GEO.01 or B.ACTION.01"
+    ]
+  },
+  "claim_id": "CBF.T13",
+  "compiler": {
+    "derived_without_new_postprojection_choices": [
+      "four-dimensional zero-mode field carrier",
+      "gauge and shared-circle representation on the kernel",
+      "characterwise chirality index",
+      "free quadratic action",
+      "cotangent BV pairing",
+      "modewise causal operator family",
+      "internal complement gap bound"
+    ],
+    "inputs": [
+      "AMK",
+      "EXT4",
+      "DEN"
+    ],
+    "new_continuous_physical_parameters": 0,
+    "output": "free associated-matter subpacket of BV4",
+    "physical_instance_state": "open",
+    "same_root_source_required": true
+  },
+  "date": "2026-08-29",
+  "decision": "RETAINED_ASSOCIATED_MATTER_EXTERNALIZATION_COMPILER_ONLY",
+  "exact_internal_witness": {
+    "D_plus_definition": "[I16 0 0 0]",
+    "D_plus_rank": 16,
+    "characterwise_index": "3[H16]",
+    "cokernel_dimension": 0,
+    "complement_dimension": 32,
+    "kernel_dimension": 48,
+    "minus_dimension": 16,
+    "nonzero_spectrum": [
+      -1,
+      1
+    ],
+    "normal_inverse_norm": 1,
+    "one_family_dimension": 16,
+    "physical_q79_operator_claimed": false,
+    "plus_dimension": 64,
+    "reduced_green_norm": 1,
+    "self_adjoint_dimension": 80,
+    "self_adjoint_kernel_dimension": 48,
+    "spectral_gap_mu": 1,
+    "total_index_dimension": 48
+  },
+  "exact_product_witness": {
+    "D_Y": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "Gamma_Y": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "complement_product_dimension": 64,
+    "cotangent_pairing_sample": {
+      "eta": [
+        5,
+        7
+      ],
+      "psi": [
+        2,
+        -3
+      ],
+      "reduced_pairing": -11,
+      "upper_pairing": -11
+    },
+    "external_dimension": 2,
+    "internal_dimension": 80,
+    "massive_mode_normal_eigenvalue": 2,
+    "massless_mode_square": "D_Y^2",
+    "physical_spacetime_claimed": false,
+    "product_dimension": 160,
+    "product_operator_nonzero_entries": 224,
+    "product_square_nonzero_entries": 160,
+    "quadratic_sample": {
+      "psi": [
+        2,
+        -3
+      ],
+      "reduced_bilinear": -12,
+      "upper_bilinear": -12
+    },
+    "retained_product_dimension": 96
+  },
+  "frontier_delta": {
+    "BV4_dependency_graph_changed": true,
+    "blocker_states_changed": false,
+    "closed": [
+      "product-Dirac zero-mode externalization compiler",
+      "equivariant characterwise-index transport",
+      "free quadratic action and cotangent pairing reduction",
+      "modewise causal consequence under explicit EXT4 hypotheses",
+      "internal complement gap bound",
+      "exact 3x16=48 A46/A50 and shared-circle/Z6 witness"
+    ],
+    "open": [
+      "selected q79 AMK instance from the physical V3/W9 HYM endpoint",
+      "selected EXT4 causal base and complete field stack",
+      "physical density, normalization and nonlinear upper action",
+      "interaction overlap values and massive-mode BV/QME pushforward"
+    ],
+    "physical_acceptance_count_changed": false
+  },
+  "instance_contract": {
+    "remaining_physical_rows": [
+      "selected_endpoint_and_metric",
+      "full_upper_field_action",
+      "interaction_overlap_values",
+      "bosonic_and_gravitational_stack",
+      "four_dimensional_gauge_background",
+      "bv_pushforward_and_qme",
+      "normalization_and_parameter_values"
+    ],
+    "root_required_fields": [
+      "schema",
+      "source_root_sha256",
+      "internal_matter_operator",
+      "external_causal_base",
+      "representation_descent",
+      "density_and_pairing",
+      "compiler_certificates",
+      "remaining_physical_rows",
+      "parameter_ledger"
+    ],
+    "same_root_sections": [
+      "internal_matter_operator",
+      "external_causal_base",
+      "representation_descent",
+      "density_and_pairing"
+    ],
+    "schema_id": "https://boe.example/mtt/q79-bv4-associated-matter-externalization-contract.v1.schema.json"
+  },
+  "instance_schema_sha256": "157cfabe09d28d44a75a40531af0b875c72259b6b1d1e148659c4541c522c334",
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "representation_and_anomaly_witness": {
+    "gauge_group": "(SU3 x SU2 x U1Y)/Z6",
+    "one_family_anomalies": {
+      "SU2_squared_U1_twice_Dynkin": 0,
+      "SU3_cubic": 0,
+      "SU3_squared_U1_twice_Dynkin": 0,
+      "U1_cubic": 0,
+      "gravitational_U1": 0,
+      "weak_doublet_count": 4
+    },
+    "postprojection_charge_choices_added": 0,
+    "sectors": [
+      {
+        "color_dim": 3,
+        "complex_dimension": 6,
+        "name": "Q",
+        "six_Y": 1,
+        "triality": 1,
+        "weak_dim": 2,
+        "weak_parity": 1,
+        "z6_congruence": 0
+      },
+      {
+        "color_dim": 3,
+        "complex_dimension": 3,
+        "name": "u^c",
+        "six_Y": -4,
+        "triality": -1,
+        "weak_dim": 1,
+        "weak_parity": 0,
+        "z6_congruence": 0
+      },
+      {
+        "color_dim": 3,
+        "complex_dimension": 3,
+        "name": "d^c",
+        "six_Y": 2,
+        "triality": -1,
+        "weak_dim": 1,
+        "weak_parity": 0,
+        "z6_congruence": 0
+      },
+      {
+        "color_dim": 1,
+        "complex_dimension": 2,
+        "name": "L",
+        "six_Y": -3,
+        "triality": 0,
+        "weak_dim": 2,
+        "weak_parity": 1,
+        "z6_congruence": 0
+      },
+      {
+        "color_dim": 1,
+        "complex_dimension": 1,
+        "name": "e^c",
+        "six_Y": 6,
+        "triality": 0,
+        "weak_dim": 1,
+        "weak_parity": 0,
+        "z6_congruence": 0
+      },
+      {
+        "color_dim": 1,
+        "complex_dimension": 1,
+        "name": "N^c",
+        "six_Y": 0,
+        "triality": 0,
+        "weak_dim": 1,
+        "weak_parity": 0,
+        "z6_congruence": 0
+      }
+    ],
+    "shared_circle_weight_vector": [
+      1,
+      -4,
+      2,
+      -3,
+      6,
+      0
+    ],
+    "three_family_anomalies": {
+      "SU2_squared_U1_twice_Dynkin": 0,
+      "SU3_cubic": 0,
+      "SU3_squared_U1_twice_Dynkin": 0,
+      "U1_cubic": 0,
+      "gravitational_U1": 0,
+      "weak_doublet_count": 12
+    }
+  },
+  "schema": "boe.mtt.q79-bv4-associated-matter-externalization.packet.v1",
+  "shared_circle_input": {
+    "H1_split": {
+      "color": 8,
+      "shared_abelian": 1,
+      "weak": 3
+    },
+    "lift_torsor": "H1(S1,Z6)=Z6",
+    "matter_weights_6Y": {
+      "L": -3,
+      "N^c": 0,
+      "Q": 1,
+      "d^c": 2,
+      "e^c": 6,
+      "u^c": -4
+    },
+    "physical_four_dimensional_connection_claimed": false,
+    "source_schema": "MTTSharedCircleSMGaugeStackReference.v1",
+    "source_sha256": "033f063d9a7fed74f3bb98aba8bf9501acbc815b8c62879b57344c782095744e"
+  },
+  "source_lock_sha256": "250b5f7cf5b052d72b4d72baaf40b39f9b8d26e2f16cfd29ae3885d58619b524",
+  "theorem_sha256": "564ed4fc0aee62f342d9074d2e8ac429bab716d350ac8ee0ffd0421e60a0c8f6",
+  "tier": "EXACT_GENERAL_COMPILER + EXACT_FINITE_WITNESS; PHYSICAL_Q79_SOURCE_OPEN"
+}

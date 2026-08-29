@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/q79-bv4-associated-matter-externalization-contract.v1.schema.json",
+  "title": "q79 BV4 Associated-Matter Externalization Contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "source_root_sha256",
+    "internal_matter_operator",
+    "external_causal_base",
+    "representation_descent",
+    "density_and_pairing",
+    "compiler_certificates",
+    "remaining_physical_rows",
+    "parameter_ledger"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.q79-bv4-associated-matter-externalization-instance.v1"
+    },
+    "source_root_sha256": {
+      "$ref": "#/$defs/hash"
+    },
+    "internal_matter_operator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_root_sha256",
+        "graded_carrier_artifact",
+        "first_order_operator_artifact",
+        "domain_artifact",
+        "adjoint_and_grading_certificate",
+        "equivariance_certificate",
+        "normalized_kernel_basis_artifact",
+        "harmonic_projector_artifact",
+        "reduced_green_artifact",
+        "spectral_gap_certificate",
+        "characterwise_index_certificate",
+        "chirality_orientation_certificate"
+      ],
+      "properties": {
+        "source_root_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "graded_carrier_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "first_order_operator_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "domain_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "adjoint_and_grading_certificate": {
+          "$ref": "#/$defs/artifact"
+        },
+        "equivariance_certificate": {
+          "$ref": "#/$defs/artifact"
+        },
+        "normalized_kernel_basis_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "harmonic_projector_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "reduced_green_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "spectral_gap_certificate": {
+          "$ref": "#/$defs/artifact"
+        },
+        "characterwise_index_certificate": {
+          "$ref": "#/$defs/artifact"
+        },
+        "chirality_orientation_certificate": {
+          "$ref": "#/$defs/artifact"
+        }
+      }
+    },
+    "external_causal_base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_root_sha256",
+        "globally_hyperbolic_spin_base_artifact",
+        "external_dirac_artifact",
+        "chirality_anticommutation_certificate",
+        "domain_and_support_artifact",
+        "advanced_retarded_green_certificate"
+      ],
+      "properties": {
+        "source_root_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "globally_hyperbolic_spin_base_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "external_dirac_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "chirality_anticommutation_certificate": {
+          "$ref": "#/$defs/artifact"
+        },
+        "domain_and_support_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "advanced_retarded_green_certificate": {
+          "$ref": "#/$defs/artifact"
+        }
+      }
+    },
+    "representation_descent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_root_sha256",
+        "gauge_group_artifact",
+        "kernel_representation_artifact",
+        "shared_circle_connection_artifact",
+        "z6_descent_certificate",
+        "real_structure_and_statistics_artifact"
+      ],
+      "properties": {
+        "source_root_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "gauge_group_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "kernel_representation_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "shared_circle_connection_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "z6_descent_certificate": {
+          "$ref": "#/$defs/artifact"
+        },
+        "real_structure_and_statistics_artifact": {
+          "$ref": "#/$defs/artifact"
+        }
+      }
+    },
+    "density_and_pairing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_root_sha256",
+        "fiber_density_artifact",
+        "orthonormality_certificate",
+        "quadratic_action_reduction_certificate",
+        "cotangent_pairing_reduction_certificate"
+      ],
+      "properties": {
+        "source_root_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "fiber_density_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "orthonormality_certificate": {
+          "$ref": "#/$defs/artifact"
+        },
+        "quadratic_action_reduction_certificate": {
+          "$ref": "#/$defs/artifact"
+        },
+        "cotangent_pairing_reduction_certificate": {
+          "$ref": "#/$defs/artifact"
+        }
+      }
+    },
+    "compiler_certificates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product_dirac_square",
+        "zero_mode_reduction",
+        "equivariant_index_transport",
+        "modewise_causal_decomposition",
+        "complement_gap_bound"
+      ],
+      "properties": {
+        "product_dirac_square": {
+          "$ref": "#/$defs/artifact"
+        },
+        "zero_mode_reduction": {
+          "$ref": "#/$defs/artifact"
+        },
+        "equivariant_index_transport": {
+          "$ref": "#/$defs/artifact"
+        },
+        "modewise_causal_decomposition": {
+          "$ref": "#/$defs/artifact"
+        },
+        "complement_gap_bound": {
+          "$ref": "#/$defs/artifact"
+        }
+      }
+    },
+    "remaining_physical_rows": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "selected_endpoint_and_metric",
+        "full_upper_field_action",
+        "interaction_overlap_values",
+        "bosonic_and_gravitational_stack",
+        "four_dimensional_gauge_background",
+        "bv_pushforward_and_qme",
+        "normalization_and_parameter_values"
+      ],
+      "properties": {
+        "selected_endpoint_and_metric": {
+          "$ref": "#/$defs/artifact"
+        },
+        "full_upper_field_action": {
+          "$ref": "#/$defs/artifact"
+        },
+        "interaction_overlap_values": {
+          "$ref": "#/$defs/artifact"
+        },
+        "bosonic_and_gravitational_stack": {
+          "$ref": "#/$defs/artifact"
+        },
+        "four_dimensional_gauge_background": {
+          "$ref": "#/$defs/artifact"
+        },
+        "bv_pushforward_and_qme": {
+          "$ref": "#/$defs/artifact"
+        },
+        "normalization_and_parameter_values": {
+          "$ref": "#/$defs/artifact"
+        }
+      }
+    },
+    "parameter_ledger": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "kind",
+          "source_artifact",
+          "selected_before_observable_comparison"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "discrete",
+              "continuous_physical",
+              "regulator",
+              "normalization",
+              "derived"
+            ]
+          },
+          "source_artifact": {
+            "$ref": "#/$defs/artifact"
+          },
+          "selected_before_observable_comparison": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/hash"
+        }
+      }
+    }
+  }
+}

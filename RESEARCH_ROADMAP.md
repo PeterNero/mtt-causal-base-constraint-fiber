@@ -221,6 +221,33 @@ readout, certified 122-variable root selection and same-source endpoint
 compilation. Its success output is the `GAS` source required by this step; a
 certified obstruction is an equally valid branch decision.
 
+The associated-matter part of `BV4` now has an exact source-independent
+compiler. `CBF.T13` consumes
+
+```text
+AMK  = graded equivariant internal matter operator and normalized kernel,
+EXT4 = external causal Dirac packet,
+DEN  = product density and pairing normalization,
+```
+
+and emits the charged/chiral zero-mode carrier, free action, cotangent pairing,
+modewise causal family and complement-gap certificate. Its exact
+`3 x 16 = 48` witness proves the compiler is nonempty and compatible with the
+A46/A47/A50 representation data.
+
+This changes the best parallel work order. While the q79 worker selects the
+physical eta9/HYM root, this repository can:
+
+1. build the bosonic gauge/coframe/Higgs companion externalization compiler;
+2. prove the same-source action-density overlap reduction for retained
+   interactions and expose every normalization;
+3. bind those free operators to the accepted Lorentzian/BV domains; and
+4. prepare the massive-mode pushforward contract without asserting a QME
+   before the physical action and gap exist.
+
+The physical `AMK`, `EXT4`, density and action instances are still open. No
+q79 row is accepted merely because the universal compiler passes.
+
 ## Step 5: Constraint curvature and gauge stabilizer
 
 **State:** abstract stabilizer/faithful-quotient descent closed; physical
