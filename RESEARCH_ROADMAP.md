@@ -355,20 +355,32 @@ coordinate reduces the fixed-shape source space `4 -> 2 -> 1`. The resulting
 relative comparison is exactly `T_rel=I`. This is independent of eta9/HYM
 endpoint data and uses no observed or fitted coefficient.
 
+CBF.T21 now closes the next general and algebraic subclauses without waiting
+for eta9. `H_derived` may be inserted as a smooth order-zero endomorphism of
+any normally hyperbolic response operator, preserving its metric causal cone.
+The primitive coupling `C=P tensor I16` and complement `I48` give a nontrivial
+exact `96 -> 48` Schur reduction and graph synthesis. The existing q79
+equicausal free-BV chart theorem supplies one conditional causal carrier.
+However, the finite Gram root and causal chart root are still two inputs, and
+the dimensionful response coefficient and physical field typing are open.
+
 The remaining order is now:
 
-1. select the finite Weyl-Gram deformation from a Lorentzian causal-base and
-   continuum source, rather than merely from the pinned finite manifest;
-2. obtain same-root `GAS+SYN+BV4` data supplying `K_phys`, synthesis,
-   complement inverse or reducing certificate, and BV density;
-3. certify support and route multiplicity, recover `c_action` from the same
-   root, and use the relative-intertwiner theorem to prove the full residual
-   vanishes;
-4. externalize that action and density through the CBF.T13/T14 BV contract;
-5. derive a gauge-invariant Lorentz/Higgs left-right Yukawa second variation;
-6. derive a sector-resolved spectral law or cross-sector relation reducing the
+1. prove that the finite Gram root and a causal action/background root are one
+   selected upper source, or construct a new single-root provider satisfying
+   both contracts;
+2. derive the dimensionful coefficient `mu^2` and the physical density/action
+   normalization from that source;
+3. type the response into a gauge-invariant Lorentz/Higgs left-right Yukawa or
+   another explicit physical field second variation;
+4. complete same-root BV4 insertion and, for the q79 provider route, continuum
+   HYM synthesis, projection and certified finite-error bounds;
+5. use the now exact relative-intertwiner and Schur theorems to certify the
+   complete physical residual and recover `c_action`;
+6. externalize the accepted action and density through CBF.T13/T14;
+7. derive a sector-resolved spectral law or cross-sector relation reducing the
    nine FSB.04g scalar coordinates;
-7. emit one held-out source-normalized mass, interaction or threshold scalar.
+8. emit one held-out source-normalized mass, interaction or threshold scalar.
 
 The next physical theorem must discharge item 1 or 2. Another normal-frame or
 finite-trace packet cannot do so: CBF.T18 proves those choices are already

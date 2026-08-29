@@ -635,6 +635,32 @@ only an algebraic benchmark; causal-base selection, continuum SYN data, BV4
 density and the absolute action scale remain open. Physical acceptance stays
 `0/3` packets and `0/7` rows.
 
+`CBF.T21` supplies the first nontrivial causal auxiliary lift of that source.
+On a normally hyperbolic response bundle,
+
+```text
+L_mu=L0+mu^2 H_derived
+```
+
+has the same metric principal symbol because the response is order zero. The
+already closed q79 Green-hyperbolic/equicausal free-BV chart theorem provides
+one conditional causal carrier. The primitive involution gives
+
+```text
+C=P tensor I16,
+K_mu=[[L_mu+C^*C,C^*],[C,I48]],
+```
+
+whose auxiliary Schur complement and graph pullback are exactly `L_mu`. The
+normalized finite witness is `96 -> 48`, with upper rank 72 and kernel 24.
+The auxiliary action is transported by `g_aux=CgC^*`, so the coupling and
+synthesis are exact intertwiners.
+
+This closes causal-form and nontrivial algebraic-SYN subclauses, not a
+physical endpoint packet. The finite and causal roots are still distinct;
+`mu^2`, physical background selection, Lorentz/Higgs/Yukawa typing,
+same-root BV4 insertion and continuum HYM error control remain open.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -648,7 +674,8 @@ affine-action packet passes `60/60` checks and its independent verifier passes
 verifier passes `108/108`. The equivariant Feshbach packet passes `48/48`
 checks and its independent verifier passes `58/58`. The Weyl-Gram direct-source
 packet passes `61/61` checks and its independent verifier passes `79/79`. The
-canonical suite passes 96 unit tests. The
+causal auxiliary-lift packet passes `56/56` checks and its independent verifier
+passes `89/89`. The canonical suite passes 102 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

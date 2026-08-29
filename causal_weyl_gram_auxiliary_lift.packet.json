@@ -1,0 +1,205 @@
+{
+  "auxiliary_feshbach": {
+    "Schur_complement": "F_D(K_mu)=L_mu",
+    "complement": "D=I48",
+    "coupling": "C=P tensor I16",
+    "coupling_rank": 48,
+    "graph_synthesis": "U phi=(phi,-C phi), U^* K_mu U=L_mu",
+    "nontrivial_complement": true,
+    "normalized_relative_intertwiner": "T_rel=I6 at mu^2=1",
+    "upper_block": "K_mu=[[L_mu+C^*C,C^*],[C,I48]]",
+    "upper_dimension": 96,
+    "upper_kernel_at_normalized_internal_witness": 24,
+    "upper_rank_at_normalized_internal_witness": 72
+  },
+  "causal_lift": {
+    "algebraic_auxiliary_eliminated_before_Green_operators": true,
+    "characteristic_cone_unchanged": true,
+    "conditionally_Green_hyperbolic": true,
+    "covector_witnesses": [
+      {
+        "auxiliary_Schur_reduction_exact": true,
+        "characteristic": false,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "k_squared": "1",
+        "principal_rank_on_48_carrier": 48,
+        "response_changes_principal_symbol": false
+      },
+      {
+        "auxiliary_Schur_reduction_exact": true,
+        "characteristic": false,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "k_squared": "-1",
+        "principal_rank_on_48_carrier": 48,
+        "response_changes_principal_symbol": false
+      },
+      {
+        "auxiliary_Schur_reduction_exact": true,
+        "characteristic": false,
+        "covector": [
+          "2",
+          "1",
+          "1",
+          "0"
+        ],
+        "k_squared": "2",
+        "principal_rank_on_48_carrier": 48,
+        "response_changes_principal_symbol": false
+      },
+      {
+        "auxiliary_Schur_reduction_exact": true,
+        "characteristic": true,
+        "covector": [
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "k_squared": "0",
+        "principal_rank_on_48_carrier": 0,
+        "response_changes_principal_symbol": false
+      },
+      {
+        "auxiliary_Schur_reduction_exact": true,
+        "characteristic": false,
+        "covector": [
+          "3",
+          "1",
+          "2",
+          "1"
+        ],
+        "k_squared": "3",
+        "principal_rank_on_48_carrier": 48,
+        "response_changes_principal_symbol": false
+      }
+    ],
+    "operator": "L_mu=L0+mu^2 H_derived",
+    "physical_scale_selected": false,
+    "principal_symbol": "sigma_2(L_mu)=-g^-1(xi,xi) I48=sigma_2(L0)",
+    "response_order": 0
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 56,
+    "total": 56
+  },
+  "checks": {
+    "CBF_T19_cutset_is_exact": true,
+    "CBF_T20_source_is_exact": true,
+    "Lorentz_Higgs_Yukawa_typing_remains_open": true,
+    "Schur_complement_is_exact_Hderived": true,
+    "algebraic_auxiliary_is_eliminated_before_Green_operators": true,
+    "all_rational_relative_scale_checks_pass": true,
+    "all_rational_scale_Feshbach_checks_pass": true,
+    "complement_inverse_is_exact": true,
+    "composition_hash_is_exact_sha256": true,
+    "continuum_HYM_intertwiner_remains_open": true,
+    "contract_schema_is_exact": true,
+    "coupling_is_primitive_P_tensor_I16": true,
+    "coupling_is_unitary": true,
+    "coupling_rank_is_48": true,
+    "eta9_or_new_worker_result_is_not_used": true,
+    "finite_and_causal_roots_are_distinct_inputs": true,
+    "gauge_and_shared_phase_like_witnesses_preserve_upper_action": true,
+    "graph_synthesis_has_rank_48": true,
+    "graph_synthesis_intertwines_transported_representation": true,
+    "graph_synthesis_pullback_is_Hderived": true,
+    "kernel_model_is_pinned": true,
+    "no_fitted_coefficients_enter_composition": true,
+    "no_observed_values_enter_composition": true,
+    "normalized_relative_response_is_identity": true,
+    "normalized_upper_kernel_is_24": true,
+    "normalized_upper_rank_is_72": true,
+    "physical_BV4_insertion_remains_open": true,
+    "physical_packet_acceptance_is_unchanged": true,
+    "physical_response_scale_remains_open": true,
+    "physical_row_acceptance_is_unchanged": true,
+    "primitive_P_is_Hermitian_involution": true,
+    "primitive_coupling_intertwines_transported_representation": true,
+    "principal_symbol_witnesses_preserve_metric_cone": true,
+    "q79_chart_Green_hyperbolic_tier_is_closed": true,
+    "q79_chart_equicausal_tier_is_closed": true,
+    "q79_equicausal_certificate_checks_pass": true,
+    "q79_equicausal_certificate_is_v2": true,
+    "q79_physical_global_background_remains_open": true,
+    "rank_additivity_matches_invertible_complement": true,
+    "response_is_order_zero_in_locked_qft_certificate": true,
+    "same_physical_root_remains_open": true,
+    "source_hash_EquivariantFeshbachOneDimensionalResponseTheorem_v1.md": true,
+    "source_hash_WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md": true,
+    "source_hash_equivariant_feshbach_response.packet.json": true,
+    "source_hash_provider_neutral_physical_source_contract.schema.json": true,
+    "source_hash_q79_SM_GaugeFixed_Hyperbolic_BV_and_Equicausal_BRST_Algebra_Theorem_v2.md": true,
+    "source_hash_q79_physical_endpoint_three_packet_contract.schema.json": true,
+    "source_hash_q79_sm_gaugefixed_hyperbolic_bv_equicausal.certificate.json": true,
+    "source_hash_source_manifest.json": true,
+    "source_hash_weyl_gram_closure_repair_source.packet.json": true,
+    "source_lock_schema_is_exact": true,
+    "square_transform_is_exactly_invertible": true,
+    "transported_auxiliary_representation_is_unitary": true,
+    "upper_block_has_exact_square_factorization": true,
+    "upper_block_is_Hermitian": true,
+    "upper_block_is_nontrivially_coupled": true
+  },
+  "claim_id": "CBF.T21",
+  "contract_classification": {
+    "BV4": "Green-hyperbolic equicausal carrier exists; response insertion typing and same-root BV source open",
+    "GAS": "conditional chart action form constructed; physical source and scale open",
+    "SYN": "nontrivial exact algebraic Schur subclause constructed; continuum HYM synthesis open",
+    "newly_closed_subclauses": [
+      "smooth order-zero causal lift preserves the metric characteristic cone",
+      "primitive-P nonzero auxiliary coupling and invertible complement",
+      "exact 96-to-48 Schur reduction and graph synthesis",
+      "normalized finite relative response T_rel=I on the causal lift"
+    ],
+    "physical_packets_accepted": 0,
+    "physical_rows_accepted": 0
+  },
+  "contract_schema_sha256": "d0cbaff8d91db904d9bcdea52c367619afb1ed070377ea9efb7b2bc31b6cb239",
+  "date": "2026-08-29",
+  "frontier_delta": "The CBF.T20 finite Gram source now has an eta9-independent causal and nontrivial auxiliary realization. Its response is a smooth order-zero endomorphism of a normally hyperbolic chart operator, so the metric characteristic cone is unchanged. The primitive coupling C=P tensor I16 and D=I48 give an exact 96-to-48 Schur reduction and graph synthesis. The remaining physical obstruction is no longer existence of a causal or nontrivial synthesis form; it is identification of the finite and causal roots, selection of mu^2 and physical field/BV typing.",
+  "parameter_ledger": {
+    "fitted_coefficients": 0,
+    "new_dimensionless_shape_parameters": 0,
+    "observed_inputs": 0,
+    "unselected_dimensionful_response_scales": 1
+  },
+  "physical_boundary": {
+    "Lorentz_Higgs_Yukawa_typing": false,
+    "continuum_HYM_intertwiner": false,
+    "eta9_used": false,
+    "physical_BV4_insertion": false,
+    "physical_background_selected": false,
+    "physical_scale_selected": false,
+    "physically_selected": false,
+    "same_physical_root": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "schema": "boe.mtt.causal-weyl-gram-auxiliary-lift.v1",
+  "source_composition": {
+    "causal_carrier": "q79 gauge-fixed Green-hyperbolic free-BV equicausal chart v2",
+    "causal_root_sha256": "04c71f072bd633b2012b232b442dd2ff1625d28bf11fb387925d94022d596f8b",
+    "composition_sha256": "41adf575a91f54b83ca6044a43795f7ea3aaae8b92a1c708101a67f2e4936325",
+    "eta9_used": false,
+    "finite_root_sha256": "66ea67ad8c0c554dc07ec56dfda2836dfc3761dda848d2c074186b6d45a84770",
+    "finite_source": "CBF.T20",
+    "same_physical_root_proved": false,
+    "source_roots": 2
+  },
+  "source_lock_sha256": "879937956d520e00abf2d5df94b850871bd034515eef74886234f3386d9c2024",
+  "theorem_sha256": "35a4e97fddafd0123a467a49f44d162505151ba35072a4c5ce930d442422e083",
+  "tier": "EXACT_GENERAL_CAUSAL_LIFT + EXACT_SOURCE_PINNED_AUXILIARY_FESHBACH_WITNESS + CONDITIONAL_CHART_COMPOSITION"
+}

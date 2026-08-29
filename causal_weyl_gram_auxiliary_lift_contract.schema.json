@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:boe:mtt:causal-weyl-gram-auxiliary-lift:v1",
+  "title": "Causal Weyl-Gram auxiliary Feshbach lift contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "tier",
+    "source_lock_sha256",
+    "contract_schema_sha256",
+    "theorem_sha256",
+    "source_composition",
+    "causal_lift",
+    "auxiliary_feshbach",
+    "contract_classification",
+    "parameter_ledger",
+    "physical_boundary",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": { "const": "boe.mtt.causal-weyl-gram-auxiliary-lift.v1" },
+    "claim_id": { "const": "CBF.T21" },
+    "date": { "type": "string" },
+    "tier": { "const": "EXACT_GENERAL_CAUSAL_LIFT + EXACT_SOURCE_PINNED_AUXILIARY_FESHBACH_WITNESS + CONDITIONAL_CHART_COMPOSITION" },
+    "source_lock_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "contract_schema_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "theorem_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "source_composition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finite_source", "causal_carrier", "source_roots", "finite_root_sha256", "causal_root_sha256", "composition_sha256", "same_physical_root_proved", "eta9_used"],
+      "properties": {
+        "finite_source": { "const": "CBF.T20" },
+        "causal_carrier": { "const": "q79 gauge-fixed Green-hyperbolic free-BV equicausal chart v2" },
+        "source_roots": { "const": 2 },
+        "finite_root_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "causal_root_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "composition_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "same_physical_root_proved": { "const": false },
+        "eta9_used": { "const": false }
+      }
+    },
+    "causal_lift": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operator", "principal_symbol", "response_order", "characteristic_cone_unchanged", "conditionally_Green_hyperbolic", "covector_witnesses", "physical_scale_selected"],
+      "properties": {
+        "operator": { "const": "L_mu=L0+mu^2 H_derived" },
+        "principal_symbol": { "const": "sigma_2(L_mu)=-g^-1(xi,xi) I48=sigma_2(L0)" },
+        "response_order": { "const": 0 },
+        "characteristic_cone_unchanged": { "const": true },
+        "conditionally_Green_hyperbolic": { "const": true },
+        "covector_witnesses": { "type": "array", "minItems": 5 },
+        "algebraic_auxiliary_eliminated_before_Green_operators": { "const": true },
+        "physical_scale_selected": { "const": false }
+      }
+    },
+    "auxiliary_feshbach": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coupling", "complement", "upper_block", "nontrivial_complement", "coupling_rank", "upper_dimension", "upper_rank_at_normalized_internal_witness", "upper_kernel_at_normalized_internal_witness", "Schur_complement", "graph_synthesis", "normalized_relative_intertwiner"],
+      "properties": {
+        "coupling": { "const": "C=P tensor I16" },
+        "complement": { "const": "D=I48" },
+        "upper_block": { "const": "K_mu=[[L_mu+C^*C,C^*],[C,I48]]" },
+        "nontrivial_complement": { "const": true },
+        "coupling_rank": { "const": 48 },
+        "upper_dimension": { "const": 96 },
+        "upper_rank_at_normalized_internal_witness": { "const": 72 },
+        "upper_kernel_at_normalized_internal_witness": { "const": 24 },
+        "Schur_complement": { "const": "F_D(K_mu)=L_mu" },
+        "graph_synthesis": { "const": "U phi=(phi,-C phi), U^* K_mu U=L_mu" },
+        "normalized_relative_intertwiner": { "const": "T_rel=I6 at mu^2=1" }
+      }
+    },
+    "contract_classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["GAS", "SYN", "BV4", "newly_closed_subclauses", "physical_packets_accepted", "physical_rows_accepted"],
+      "properties": {
+        "GAS": { "const": "conditional chart action form constructed; physical source and scale open" },
+        "SYN": { "const": "nontrivial exact algebraic Schur subclause constructed; continuum HYM synthesis open" },
+        "BV4": { "const": "Green-hyperbolic equicausal carrier exists; response insertion typing and same-root BV source open" },
+        "newly_closed_subclauses": { "type": "array" },
+        "physical_packets_accepted": { "const": 0 },
+        "physical_rows_accepted": { "const": 0 }
+      }
+    },
+    "parameter_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observed_inputs", "fitted_coefficients", "new_dimensionless_shape_parameters", "unselected_dimensionful_response_scales"],
+      "properties": {
+        "observed_inputs": { "const": 0 },
+        "fitted_coefficients": { "const": 0 },
+        "new_dimensionless_shape_parameters": { "const": 0 },
+        "unselected_dimensionful_response_scales": { "const": 1 }
+      }
+    },
+    "physical_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["physically_selected", "eta9_used", "same_physical_root", "physical_background_selected", "physical_scale_selected", "Lorentz_Higgs_Yukawa_typing", "continuum_HYM_intertwiner", "physical_BV4_insertion"],
+      "properties": {
+        "physically_selected": { "const": false },
+        "eta9_used": { "const": false },
+        "same_physical_root": { "const": false },
+        "physical_background_selected": { "const": false },
+        "physical_scale_selected": { "const": false },
+        "Lorentz_Higgs_Yukawa_typing": { "const": false },
+        "continuum_HYM_intertwiner": { "const": false },
+        "physical_BV4_insertion": { "const": false }
+      }
+    },
+    "physical_packets_accepted": { "const": 0 },
+    "physical_packets_total": { "const": 3 },
+    "physical_rows_accepted": { "const": 0 },
+    "physical_rows_total": { "const": 7 },
+    "frontier_delta": { "type": "string" },
+    "checks": { "type": "object" },
+    "check_summary": { "type": "object" }
+  }
+}

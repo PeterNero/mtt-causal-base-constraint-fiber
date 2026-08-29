@@ -559,3 +559,40 @@ Lorentzian causal base, a same-root continuum synthesis and complement,
 physical BV4 density, and absolute action normalization. The finite
 `U=I48,Q=0` benchmark is not a physical SYN packet. Acceptance therefore
 remains `0/3` packets and `0/7` rows under the same three blockers.
+
+`CausalWeylGramAuxiliaryFeshbachLiftTheorem.v1` (`CBF.T21`) now replaces the
+trivial finite synthesis benchmark by an eta9-independent causal and
+nontrivial auxiliary realization. It composes CBF.T20 with the already closed
+q79 gauge-fixed Green-hyperbolic/equicausal chart carrier. On a normally
+hyperbolic response bundle,
+
+```text
+L_mu=L0+mu^2 H_derived
+```
+
+has the same principal symbol and metric characteristic cone as `L0` because
+the response is order zero. Five exact covector witnesses preserve the null
+versus non-null classification. This is an exact general causal-lift theorem
+and a conditional realization on each declared q79 chart; it does not select
+the physical global background.
+
+The primitive involution supplies a nonzero unitary coupling
+
+```text
+C=P tensor I16,
+K_mu=[[L_mu+C^*C,C^*],[C,I48]].
+```
+
+Eliminating the algebraic auxiliary gives the exact Schur complement
+`F_I(K_mu)=L_mu`, while `U phi=(phi,-C phi)` gives the graph synthesis
+`U^*K_mu U=L_mu`. At the normalized internal witness the upper dimension is
+96, rank is 72 and kernel dimension is 24. The auxiliary representation
+`g_aux=CgC^*` makes `C` and `U` exact intertwiners. This closes a nontrivial
+algebraic SYN subclause and a conditional quadratic chart-action form.
+
+The finite and causal certificates remain two distinct source roots. No
+theorem yet identifies them physically, selects the dimensionful coefficient
+`mu^2`, types `H_derived` as a Lorentz/Higgs left-right Yukawa map, or supplies
+the same-root BV4 interaction/density and continuum HYM error certificate.
+The pre-existing equicausal free-BV carrier is not by itself that insertion.
+Physical acceptance therefore remains `0/3` packets and `0/7` rows.

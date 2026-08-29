@@ -1,0 +1,81 @@
+{
+  "schema": "boe.mtt.causal-weyl-gram-auxiliary-lift-lock.v1",
+  "date": "2026-08-29",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repository_head_before": "68379be18ca7b88764400ab9aca71251c9ca3300",
+  "handoff_id": "138975b0-174f-4006-adf1-bf9f57ca609e",
+  "local_sources": [
+    {
+      "path": "WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md",
+      "sha256": "06faef972ba717fc1b0952b8b86c5e37e1e277af7ddd22141ac9500e8754cf41",
+      "role": "CBF.T20 primitive Weyl-Gram finite source theorem"
+    },
+    {
+      "path": "weyl_gram_closure_repair_source.packet.json",
+      "sha256": "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+      "role": "exact CBF.T20 primitive root, response and source-coordinate certificate"
+    },
+    {
+      "path": "EquivariantFeshbachOneDimensionalResponseTheorem_v1.md",
+      "sha256": "12e91abaf801ca43ce5683912ba3385b87ddef42d6f95ab131122648322d8a7b",
+      "role": "CBF.T19 Feshbach covariance and relative-intertwiner criterion"
+    },
+    {
+      "path": "equivariant_feshbach_response.packet.json",
+      "sha256": "8215e533f6258eb1f278f26a3c85bd1a18ff7c3f0673f05e4026199461b5ec88",
+      "role": "exact CBF.T19 comparison-algebra certificate"
+    },
+    {
+      "path": "provider_neutral_physical_source_contract.schema.json",
+      "sha256": "6cf6c787951393c662973315f775304ab5e702b3898021d97b6251d7d1a0e308",
+      "role": "provider-neutral physical-source boundary"
+    },
+    {
+      "path": "q79_physical_endpoint_three_packet_contract.schema.json",
+      "sha256": "8189fd8e91032cdd6ec50cef0ef82105808c35cc215cd54731d165fb9d489c9f",
+      "role": "GAS, SYN and BV4 endpoint acceptance contract"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_GaugeFixed_Hyperbolic_BV_and_Equicausal_BRST_Algebra_Theorem_v2.md",
+      "sha256": "369eabdbfb58188d4633c9b52d2c5b0fbf28335d8240a03ac812d99290367cfb",
+      "role": "closed Green-hyperbolic free-BV and equicausal chart theorem"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_gaugefixed_hyperbolic_bv_equicausal.certificate.json",
+      "sha256": "04c71f072bd633b2012b232b442dd2ff1625d28bf11fb387925d94022d596f8b",
+      "role": "54-check q79 chart causal/BV certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/source_manifest.json",
+      "sha256": "6efc3fa8ed9ce52a0ab892a440ce73fb41a406ebad66bf331696cd7daa4e313b",
+      "role": "QM/QFT source-manifest root"
+    }
+  ],
+  "external_primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/1310.0738",
+      "role": "Green-hyperbolic operators and advanced/retarded Green operators"
+    },
+    {
+      "url": "https://arxiv.org/abs/0806.1036",
+      "role": "normally hyperbolic vector-bundle wave equations on globally hyperbolic spacetimes"
+    },
+    {
+      "url": "https://arxiv.org/abs/2312.15203",
+      "role": "equicausal Peierls, star-product and time-slice domain"
+    }
+  ],
+  "boundary": {
+    "eta9_or_new_worker_result_used": false,
+    "finite_and_causal_roots_physically_identified": false,
+    "physical_global_background_selected": false,
+    "physical_response_scale_selected": false,
+    "Lorentz_Higgs_Yukawa_typing_supplied": false,
+    "continuum_HYM_intertwiner_supplied": false,
+    "physical_BV4_insertion_supplied": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}
