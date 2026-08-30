@@ -159,6 +159,10 @@
     "unique four-source closure-jet anchored local-formal q79 BV evolution",
     "formal pointed QJ1 and conditional action-jet QJ2 preservation",
     "normalized connected-QFT versus gravitational QJ0 classification",
+    "exact QJ1-preserving finite radial Stueckelberg-Petermann orbit",
+    "exact Ward, QME, split-Ward and perturbative-agreement nonselection cutset",
+    "source-preserving pointed quantum-projection implication theorem for QJ1 and action-jet QJ2",
+    "reduction of two scalar matching clauses to one typed same-root morphism certificate",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -257,6 +261,9 @@
     "global equality of the complete tree and quantum radial repair flows",
     "physical QJ1 from the existence of a local-formal anchored scheme",
     "a selected tangent metric, wave-function normalization or fixed-coupling interacting BV pushforward",
+    "existence of the selected source-preserving pointed quantum projection",
+    "physical QJ1 or QJ2 from the provider-contract implication without a selected morphism instance",
+    "selection of the physical Higgs vacuum by QME, ordinary Ward identities or perturbative agreement alone",
     "a new globally original operator-theory identity"
   ],
   "controlling_status": "CURRENT_STATUS.md",
@@ -300,7 +307,8 @@
     "PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md",
     "QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md",
     "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
-    "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md"
+    "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
+    "SourcePreservingPointedQuantumProjectionAndWardNonselectionTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -341,7 +349,8 @@
     "pointed_closure_germ_quantum_jet_matching.packet.json",
     "quantum_radial_anchor_tadpole.packet.json",
     "radial_closure_attractor_state_marginal.packet.json",
-    "renormalized_bv_anchored_repair_semiflow.packet.json"
+    "renormalized_bv_anchored_repair_semiflow.packet.json",
+    "source_preserving_pointed_quantum_projection.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -382,7 +391,8 @@
     "python build_pointed_closure_germ_quantum_jet_matching.py",
     "python build_quantum_radial_anchor_tadpole.py",
     "python build_radial_closure_attractor_state_marginal.py",
-    "python build_renormalized_bv_anchored_repair_semiflow.py"
+    "python build_renormalized_bv_anchored_repair_semiflow.py",
+    "python build_source_preserving_pointed_quantum_projection.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -418,7 +428,8 @@
     "pointed_closure_germ_quantum_jet_matching_contract.schema.json",
     "quantum_radial_anchor_tadpole_contract.schema.json",
     "radial_closure_attractor_state_marginal_contract.schema.json",
-    "renormalized_bv_anchored_repair_semiflow_contract.schema.json"
+    "renormalized_bv_anchored_repair_semiflow_contract.schema.json",
+    "source_preserving_pointed_quantum_projection_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

@@ -30,6 +30,8 @@ This is a snapshot, not a substitute for live kernel queries.
   `1e03a938-4acb-47b8-a43f-09171905c3bc`
 - Same-root state-repair heat-profile and radial-value handoff:
   `9bebcb6e-13e2-406c-be9a-993c1dbf964a`
+- Source-preserving pointed quantum-projection handoff:
+  `87b478d2-4073-4687-b5d0-60dc913db152`
 
 ## Controlling authorities
 
@@ -1357,3 +1359,56 @@ BV pushforward, gravitational QJ0 and endpoint acceptance remain open.
 T39 passes `68/68` builder checks, `183/183` independent checks and 10
 focused tests. The canonical suite passes 262 unit tests. Physical acceptance
 remains `0/3` packets and `0/7` rows.
+
+`SourcePreservingPointedQuantumProjectionAndWardNonselectionTheorem_v1.md`
+(`CBF.T40`) resolves the logical status of the T39 anchor without pretending
+that ordinary quantum identities choose a vacuum. For the complete
+nonconstant radial counterterm pair
+
+```text
+C_(a,b)(h)=a h^2+b h^4,
+```
+
+the first- and second-jet matrix at `H>0` has determinant `16H^3`. QJ1 has
+rank one and leaves exactly
+
+```text
+(a,b)=(-2H^2 t,t),
+C_t=t(h^2-H^2)^2 mod constants.
+```
+
+This direction preserves the tadpole but shifts the Hessian by `8H^2 t`.
+Therefore QJ1 alone cannot select the T39 representative, while QJ1 plus the
+same-source tangent action fixes all nonconstant finite scheme freedom.
+
+The q79 QME, gauge Ward, Action Ward, field-independence and Costello results
+do not supply that selector: all admit the invariant local counterterm orbit.
+Split Ward identities permit functions of the total radial field, and
+perturbative agreement compares splittings of one fixed total action rather
+than selecting between `S` and `S+C`. The nonselection statement is exact,
+not merely an absence of a proof.
+
+T40 defines the missing source-preserving pointed quantum projection. If it
+maps the upper fixed point to `H`, intertwines the repair vector field at that
+point, transports the tangent generator isometrically and commutes with the
+BV/state pushforward, then QJ1 and action-jet QJ2 follow from that one
+morphism. The provider-neutral schema already has the required fixed-point,
+Hessian, action and one-root data types. It does not yet have an accepted
+physical instance, so the implication is closed while existence is open.
+
+The T35 execution makes the remaining line visible numerically:
+
+```text
+delta m2/(kappa Lambda^2) per t = -3.49061903027703543707...,
+delta lambda/kappa per t       =  1,
+Delta Gamma''/(kappa Lambda^2) = 13.96247612110814174828... t.
+```
+
+No observed input, fit or new continuous parameter enters. Two apparent
+scalar matching clauses have been reduced to one typed structural certificate:
+construct a selected same-root state/action projection map with its tangent
+pairing. The physical morphism, physical wave-function metric, gravitational
+QJ0, fixed-coupling BV endpoint and continuum transfer remain open. T40 passes
+`74/74` builder checks, `130/130` independent checks and 11 focused tests. The
+canonical suite passes 273 unit tests; physical acceptance remains `0/3`
+packets and `0/7` rows.

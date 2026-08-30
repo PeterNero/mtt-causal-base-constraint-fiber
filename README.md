@@ -1264,3 +1264,39 @@ interacting BV endpoint, gravitational absolute-vacuum QJ0 and upper-action
 selection remain open. T39 passes `68/68` builder checks, `183/183`
 independent checks and 10 focused tests. The canonical suite passes 262 unit
 tests; physical acceptance remains `0/3` packets and `0/7` rows.
+
+The fortieth theorem decides which part of that remaining selection problem
+is genuinely numerical. For a finite invariant radial scheme displacement
+
+```text
+C(h)=c+a h^2+b h^4,
+```
+
+QJ1 leaves the exact nonconstant line
+
+```text
+(a,b)=(-2H^2 t,t).
+```
+
+Its Hessian shift is `8H^2 t`, so a source-preserving tangent-action map
+forces `t=0`. The QME, gauge and Action Ward identities, field independence,
+split Ward identities and perturbative agreement do not force this: each is
+compatible with invariant finite counterterms, and T35 explicitly has a
+nonzero unmatched quantum tadpole despite expansion around a classically
+on-shell background.
+
+The positive result is categorical and exact. One source-preserving pointed
+quantum projection that maps the upper fixed point to `H`, intertwines the
+repair vector field there and transports the selected tangent action
+isometrically implies both QJ1 and action-jet QJ2. The existing
+provider-neutral schema already types those data. Thus the T39 representative
+is the unique nonconstant scheme compatible with a completed same-source
+projection, and the two scalar matching clauses are one morphism obligation,
+not two knobs.
+
+No accepted physical instance of that morphism is present yet. The physical
+tangent metric, preferred state or Ward primitive, fixed-coupling BV
+pushforward, gravitational QJ0 and continuum endpoint remain open. T40 passes
+`74/74` builder checks, `130/130` independent checks and 11 focused tests. The
+canonical suite passes 273 unit tests; physical acceptance remains `0/3`
+packets and `0/7` rows.

@@ -92,6 +92,8 @@ def main() -> None:
     run(sys.executable, "verify_radial_closure_attractor_state_marginal.py")
     run(sys.executable, "build_renormalized_bv_anchored_repair_semiflow.py")
     run(sys.executable, "verify_renormalized_bv_anchored_repair_semiflow.py")
+    run(sys.executable, "build_source_preserving_pointed_quantum_projection.py")
+    run(sys.executable, "verify_source_preserving_pointed_quantum_projection.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

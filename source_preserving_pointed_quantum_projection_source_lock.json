@@ -1,0 +1,136 @@
+{
+  "schema": "boe.mtt.source-preserving-pointed-quantum-projection-source-lock.v1",
+  "claim_id": "CBF.T40",
+  "date": "2026-08-30",
+  "handoff_id": "87b478d2-4073-4687-b5d0-60dc913db152",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "38731bac6151835aa0b00f778109639de93a78c0",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "ProviderNeutralProjectionSourceQuotientAndQ79NecessityTheorem_v1.md",
+      "sha256": "0f4e684b6b175423e1a253023c2dbd1b6828a595fa0186feba9495b0ac66e94f",
+      "role": "CBF.T14 provider-neutral source object and source-preserving equivalence"
+    },
+    {
+      "path": "provider_neutral_physical_source_contract.schema.json",
+      "sha256": "6cf6c787951393c662973315f775304ab5e702b3898021d97b6251d7d1a0e308",
+      "role": "machine-readable same-root fixed-point, Hessian, action and normalization contract"
+    },
+    {
+      "path": "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md",
+      "sha256": "0ff31bf31252a7d5dbf2c534d366e5fcc31f532139716f1b22a8efb1694c42d4",
+      "role": "CBF.T35 one-loop determinant and closure-jet subtraction"
+    },
+    {
+      "path": "frozen_source_four_dimensional_fermion_pushforward.packet.json",
+      "sha256": "7494875dae5fb2b8fc1240c4f43fcc1251ed153fbdac1801a4feea0d3566a6bc",
+      "role": "CBF.T35 executable source point and matched determinant"
+    },
+    {
+      "path": "PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md",
+      "sha256": "ba5a3c10bc3fe374126903ba58b254c35f12bb7398bb1c2746d0ac2ac5d21e0d",
+      "role": "CBF.T36 pointed jet retraction and selection boundary"
+    },
+    {
+      "path": "pointed_closure_germ_quantum_jet_matching.packet.json",
+      "sha256": "417a56fac1fbbd6ff6995a4a05e8c1004d6d3a6ed96c4e07d788752a2580eed1",
+      "role": "CBF.T36 exact jet matrix and naturality witnesses"
+    },
+    {
+      "path": "QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md",
+      "sha256": "e5b04f4c0ce4d1c89728ea44b0d8714a983c521480e48bc98e23b8a1ef04c6d1",
+      "role": "CBF.T37 differentiated Ward identity and QME nonselection"
+    },
+    {
+      "path": "quantum_radial_anchor_tadpole.packet.json",
+      "sha256": "6a96cbedd5a35a886d17e32a6932881a9e4e5602f7707a2ece55b1e3457f15cb",
+      "role": "CBF.T37 exact bare tadpole obstruction"
+    },
+    {
+      "path": "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
+      "sha256": "bfde0358a25e06268c181a1d8d9ca5cc3813aceeb91774021f329411efb782df",
+      "role": "CBF.T38 unique radial state marginal and projection criterion"
+    },
+    {
+      "path": "radial_closure_attractor_state_marginal.packet.json",
+      "sha256": "43eabb2bb78a16bdf049e63c592df7aa29086228e4c8ca648b9582cc1114eabe",
+      "role": "CBF.T38 executable radial state and semiflow boundary"
+    },
+    {
+      "path": "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
+      "sha256": "eb25406a95a3316a0c7b98ef237ef94d0f0758fd50c4cfbf672f9c633de57c5a",
+      "role": "CBF.T39 local-formal anchor and global identity-flow no-go"
+    },
+    {
+      "path": "renormalized_bv_anchored_repair_semiflow.packet.json",
+      "sha256": "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+      "role": "CBF.T39 executable anchored scheme and physical boundary"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Renormalized_TimeOrdering_and_Local_QME_Anomaly_Cohomology_Theorem_v1.md",
+      "sha256": "a804a88680c518633253763da13a83b8cd8f723182d8375730de0f9b1898ee41",
+      "role": "q79 QME, Action Ward, field independence and SP freedom theorem"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_renormalized_timeordering_local_qme.certificate.json",
+      "sha256": "2eda00330756193f6a19361c4154f378621f445ed5ad399d0d953cc042617f35",
+      "role": "executable q79 local anomaly-zero and QME certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_FirstOrder_CostelloBV_and_GraphwiseCounterterm_Theorem_v1.md",
+      "sha256": "bc242a21f3533157bcca95a5ca48d095041c414ab2951f46b004afca91941c48",
+      "role": "Costello graphwise recursion and classical on-shell background scope"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_firstorder_costello_bv_graphwise_counterterm.certificate.json",
+      "sha256": "080e4f799bcf9c9c3d7504f3cedcb5739537a075f9390ebf1444ea5157ec02c5",
+      "role": "executable graphwise recursion and classical tadpole statement"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_NeutralHiggsInsertionFunctorAndRadialCoordinateNormalization_v1.md",
+      "sha256": "c2a794b2baa7442d755c16ef1a5cdebf415d3b28e5a8f58f4c1d8cb13d3f7cd5",
+      "role": "A35 dimensionless radial coordinate normalization"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_neutralhiggsinsertionfunctorandradialcoordinatenormalization_certificate.json",
+      "sha256": "fa46d7dcec0d9244e41b507b01f8d21bb96fb13af74ba3a5975f38a18ffe134d",
+      "role": "executable A35 rank-one radial insertion certificate"
+    }
+  ],
+  "external_primary_context": [
+    {
+      "url": "https://arxiv.org/abs/1502.02705",
+      "role": "generalized perturbative agreement as a renormalization condition for alternative splittings"
+    },
+    {
+      "url": "https://arxiv.org/abs/2010.15076",
+      "role": "VEV renormalization and comparison of tadpole schemes"
+    },
+    {
+      "url": "https://arxiv.org/abs/2203.07236",
+      "role": "gauge-invariant VEV tadpole scheme"
+    },
+    {
+      "url": "https://arxiv.org/abs/1907.02500",
+      "role": "tadpole-free pure MSbar scheme"
+    }
+  ],
+  "boundary": {
+    "same_source_contract_exists": true,
+    "accepted_physical_provider_instance_exists": false,
+    "QME_compatible_scheme_exists": true,
+    "QME_selects_finite_radial_representative": false,
+    "source_preserving_quantum_projection_constructed": false,
+    "physical_tangent_metric_selected": false,
+    "physical_QJ1_selected": false,
+    "physical_QJ2_selected": false,
+    "gravitational_QJ0_selected": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "new_continuous_parameters": 0
+  }
+}
