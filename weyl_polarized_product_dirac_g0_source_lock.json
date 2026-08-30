@@ -1,0 +1,152 @@
+{
+  "schema": "boe.mtt.weyl-polarized-product-dirac-g0-source-lock.v1",
+  "claim_id": "CBF.T43",
+  "date": "2026-08-30",
+  "handoff_id": "45511f30-5ca5-49a8-bca3-20f258e6ad20",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "authority_ids": ["A18", "A35", "A56", "A73", "A84", "A85"],
+  "blocker_ids": ["B.ACTION.01", "B.QFT.02", "B.OP.01", "B.GEO.01"],
+  "construction_sources": [
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "CBF.T23 typed 48-particle plus 48-antiparticle KO6 carrier and physical finite Dirac family"
+    },
+    {
+      "path": "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md",
+      "sha256": "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+      "role": "CBF.T25 direct product-Dirac and classical fermion action theorem"
+    },
+    {
+      "path": "direct_finite_source_continuum.packet.json",
+      "sha256": "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+      "role": "CBF.T25 exact direct causal operator and source root"
+    },
+    {
+      "path": "direct_finite_source_continuum_source_lock.json",
+      "sha256": "2375458907d1ca046bd9d2f8d8cad799fe67a271f1850ce2467faf7554f48e88",
+      "role": "CBF.T25 transitive source lock"
+    },
+    {
+      "path": "KO6PhysicalPolarizationFermionicDeterminantAndNeutralChamberValueSelectionTheorem_v1.md",
+      "sha256": "6f9ecbd1c149928f2b9464214d2a1cc6393c9c68f2d1b9934c33bacd1e1f1f91",
+      "role": "CBF.T30 physical polarization and finite Grassmann determinant theorem"
+    },
+    {
+      "path": "ko6_fermionic_determinant_value_selection.packet.json",
+      "sha256": "927f0db10e5ba7667779153c3a8d9f483c4fd5f0bc6367e1f9f5c79b5836341e",
+      "role": "CBF.T30 selected coordinate and three multiplicity-16 response branches"
+    },
+    {
+      "path": "ko6_fermionic_determinant_value_selection_source_lock.json",
+      "sha256": "a91e1cc29769ed5ca83c804987d9c107fa57decc9433ff7f0c4bc7325327df89",
+      "role": "CBF.T30 lock pinning the CBF.T25 direct source"
+    },
+    {
+      "path": "same_root_state_repair_heat_profile_radial_values.packet.json",
+      "sha256": "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+      "role": "CBF.T34 same-root radial anchor and finite source coordinate"
+    },
+    {
+      "path": "same_root_state_repair_heat_profile_radial_values_source_lock.json",
+      "sha256": "afa4690abc2cf278574df5ae96952b473df521075887fe67eebc64b6dc3281ec",
+      "role": "CBF.T34 lock pinning CBF.T25 and CBF.T30"
+    },
+    {
+      "path": "source_preserving_pointed_quantum_projection.packet.json",
+      "sha256": "bd5d3be8c65a2437e997af46f07a0426ca0e37456bfbab855918af01bdaa7017",
+      "role": "CBF.T40 source-preserving pointed projection implication and QJ boundary"
+    },
+    {
+      "path": "cotangent_lifted_local_formal_projection.packet.json",
+      "sha256": "e83845479af1101a13167ec97344cf5564c450e6a032536b626686ff7ff2cad0",
+      "role": "CBF.T41 exact G0/G1/G2 promotion criterion"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_continuum_sm_classical_bv_composition.certificate.json",
+      "sha256": "c1c4e83ba9b897bb88f277d301b6163acf7460d12c19d92c1d694f932e6563fc",
+      "role": "independent 48-left-Weyl internal and 96 off-shell component ledger"
+    }
+  ],
+  "comparison_sources": [
+    {
+      "path": "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md",
+      "sha256": "0ff31bf31252a7d5dbf2c534d366e5fcc31f532139716f1b22a8efb1694c42d4",
+      "role": "CBF.T35 comparison target only; not admitted to construction root"
+    },
+    {
+      "path": "frozen_source_four_dimensional_fermion_pushforward.packet.json",
+      "sha256": "7494875dae5fb2b8fc1240c4f43fcc1251ed153fbdac1801a4feea0d3566a6bc",
+      "role": "CBF.T35 q4 and remainder comparison only"
+    },
+    {
+      "path": "frozen_source_four_dimensional_fermion_pushforward_source_lock.json",
+      "sha256": "2206d939acf18ca9de534450b1edc419f5ac4d06bb1804a132174f9a8261f637",
+      "role": "CBF.T35 lineage comparison"
+    },
+    {
+      "path": "renormalized_bv_anchored_repair_semiflow.packet.json",
+      "sha256": "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+      "role": "CBF.T39 pointed remainder comparison only"
+    },
+    {
+      "path": "renormalized_bv_anchored_repair_semiflow_source_lock.json",
+      "sha256": "b8f08e6a7ae3ac27d58181e03adef6cd245d3ccfb41172627a400e2e893f83cd",
+      "role": "CBF.T39 lineage comparison"
+    },
+    {
+      "path": "source_preserving_pointed_quantum_projection_source_lock.json",
+      "sha256": "34e7e5dc403e4c30d1060af09b9d5f2b508992755934c0df52835c5727f593f2",
+      "role": "CBF.T40 lineage comparison"
+    },
+    {
+      "path": "cotangent_lifted_local_formal_projection_source_lock.json",
+      "sha256": "fbf6f90a0c2f415aea69ef98d33ba2598fb14607f9384c123d834affe0f149b1",
+      "role": "CBF.T41 lineage comparison"
+    },
+    {
+      "path": "shared_circle_morse_bott_rank_four.packet.json",
+      "sha256": "b3d7aff7b39353f8ff33745e098717853954e4378ffac5a6934ad67402f0b96e",
+      "role": "CBF.T42 finite rank-four normal-form comparison only"
+    }
+  ],
+  "analytic_rule": {
+    "name": "four-dimensional two-component Weyl Grassmann one-loop logarithm",
+    "formula": "V_W(m)=-m^4[log(m^2/mu^2)-c]/(32 pi^2)",
+    "derivation_factors": {
+      "squared_operator_exponent": "1/2",
+      "left_Weyl_spin_trace": 2,
+      "fermionic_sign": -1
+    },
+    "scope": "even local flat-background modulus; global determinant phase excluded"
+  },
+  "external_primary_context": [
+    {
+      "url": "https://arxiv.org/abs/hep-ph/0111209",
+      "role": "general four-dimensional one-loop effective potential in a two-component Weyl mass-eigenstate basis"
+    },
+    {
+      "url": "https://arxiv.org/abs/hep-th/0608221",
+      "role": "KO-dimension-six Lorentzian finite geometry and fermion-doubling reduction"
+    },
+    {
+      "url": "https://arxiv.org/abs/1605.03231",
+      "role": "Wick rotation, Pfaffian projection and remaining physical fermion-doubling boundary"
+    },
+    {
+      "url": "https://arxiv.org/abs/1903.04769",
+      "role": "invariant physical-subspace characterization for the fermion-doubling problem"
+    }
+  ],
+  "construction_guard": {
+    "rho_is_construction_input": false,
+    "T35_T39_T42_are_construction_inputs": false,
+    "KO6_completion_counts_as_independent_physical_fields": false,
+    "q79_projector_rank_counts_particles": false,
+    "global_Lorentzian_determinant_selected": false,
+    "q79_HYM_operator_selected": false,
+    "physical_G1_closed": false,
+    "physical_G2_closed": false,
+    "physical_acceptance_counters_move": false
+  }
+}

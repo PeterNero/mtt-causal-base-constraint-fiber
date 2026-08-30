@@ -1378,3 +1378,54 @@ Lorentzian BV domain, statistics and operator intertwiner. T42 passes `73/73`
 builder checks, `135/135` independent checks and 13 focused tests; the full
 canonical repository suite passes 298 tests. Physical `G0/G1/G2` remain `0/3`,
 so acceptance remains `0/3` packets and `0/7` rows.
+
+The forty-third theorem closes the corresponding direct local one-loop source
+calculation without relabelling the T42 normal form as physical. The selected
+continuum carrier contains 48 two-component left-Weyl fields. Its
+96-dimensional KO6 carrier is the particle/antiparticle real completion, while
+the separate continuum count `48 x 2=96` is the Weyl spin-component count.
+Using the KO6 completion as a second physical field copy would therefore
+double-count the determinant.
+
+The CBF.T30 positive chiral block has three response branches, each of
+multiplicity 16. The standard four-dimensional two-component Weyl Grassmann
+coefficient is `1/(32 pi^2)` per internal state, so the common branch factor is
+
+```text
+kappa_F=16/(32 pi^2)=1/(2 pi^2).
+```
+
+This selects the `pfaffian_half` candidate retained by T35 and rejects the
+doubled `1/pi^2` candidate. At the exact T30 coordinate,
+
+```text
+q4_*=(356+25sqrt(13))/27,
+V_F(h)=-h^4[q4_*log(h^2/mu^2)+L4_*-c q4_*]/(2 pi^2).
+```
+
+The normalized remainder is independently derived rather than copied. Starting
+with `f(x)=-x^4 log(x^2)`, the unique element of
+`span{1,x^2,x^4}` matching its value, slope and Hessian at `x=1` is
+
+```text
+I_H f=-1/2+2x^2-(3/2)x^4.
+```
+
+Thus `f-I_H f=rho`, with jets `(0,0,0,-16,-64,-48)`. The emitted action and
+the next three loop vertices are
+
+```text
+Delta V_cl=q4_* H^4 rho(h/H)/(2 pi^2),
+Delta V_cl'''(H)=-8q4_*H/pi^2,
+Delta V_cl''''(H)=-32q4_*/pi^2,
+Delta V_cl'''''(H)=-24q4_*/(pi^2 H).
+```
+
+This supplies an actual same-source direct/local one-loop `G0` instance from
+the CBF.T25 product Dirac action and its Weyl Berezin pushforward. It does not
+select the global Lorentzian determinant, identify the direct route with a q79
+HYM/Strominger normal operator, or close `G1/G2`. The scalar equality with T42
+is compatibility, not operator equivalence; q79 `rank(Q)=4` is not a particle
+count. Builder verification is `88/88`, independent verification is `149/149`,
+14 focused tests pass, and the full canonical repository suite passes 312
+tests. Physical acceptance remains `0/3` packets and `0/7` rows.

@@ -172,6 +172,11 @@
     "exact rank-four isotropic determinant lift of the complete T39 anchored remainder",
     "finite determinant-equivalent G0 action, pointed repair and Gaussian BV pushforward model",
     "explicit physical normal-block determinant equation required for G0 promotion",
+    "typed separation of 48 physical left-Weyl states from the 96-dimensional KO6 real completion",
+    "unique local determinant normalization kappa_F equal to 1 over 2 pi squared from the selected Weyl multiplicity",
+    "actual same-source direct product-Dirac local one-loop Berezin pushforward",
+    "source-derived anchored rho remainder with exact jets through order five",
+    "direct local one-loop G0 instance and explicit global q79 HYM promotion boundary",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -280,6 +285,9 @@
     "upstream selection of the T42 rank-four determinant profile from the physical q79 action",
     "parallel physical identification of the T34/A35 radial line with the q79 Reynolds complex line",
     "operator or correlator equivalence from scalar determinant equality alone",
+    "identification of the direct Weyl product-Dirac pushforward with a selected q79 HYM normal operator",
+    "global physical G0 promotion from the flat-background local one-loop pushforward",
+    "selection of a global determinant phase or integration cycle from the local even modulus",
     "a new globally original operator-theory identity"
   ],
   "controlling_status": "CURRENT_STATUS.md",
@@ -326,7 +334,8 @@
     "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
     "SourcePreservingPointedQuantumProjectionAndWardNonselectionTheorem_v1.md",
     "CotangentLiftedLocalFormalProjectionAssemblyAndSameRootGluingGateTheorem_v1.md",
-    "SharedCircleMorseBottRadialActionAndRankFourDeterminantLiftTheorem_v1.md"
+    "SharedCircleMorseBottRadialActionAndRankFourDeterminantLiftTheorem_v1.md",
+    "WeylPolarizedProductDiracOneLoopPushforwardAndDirectG0SourceTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -370,7 +379,8 @@
     "renormalized_bv_anchored_repair_semiflow.packet.json",
     "source_preserving_pointed_quantum_projection.packet.json",
     "cotangent_lifted_local_formal_projection.packet.json",
-    "shared_circle_morse_bott_rank_four.packet.json"
+    "shared_circle_morse_bott_rank_four.packet.json",
+    "weyl_polarized_product_dirac_g0.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -414,7 +424,8 @@
     "python build_renormalized_bv_anchored_repair_semiflow.py",
     "python build_source_preserving_pointed_quantum_projection.py",
     "python build_cotangent_lifted_local_formal_projection.py",
-    "python build_shared_circle_morse_bott_rank_four.py"
+    "python build_shared_circle_morse_bott_rank_four.py",
+    "python build_weyl_polarized_product_dirac_g0.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -453,7 +464,8 @@
     "renormalized_bv_anchored_repair_semiflow_contract.schema.json",
     "source_preserving_pointed_quantum_projection_contract.schema.json",
     "cotangent_lifted_local_formal_projection_contract.schema.json",
-    "shared_circle_morse_bott_rank_four_contract.schema.json"
+    "shared_circle_morse_bott_rank_four_contract.schema.json",
+    "weyl_polarized_product_dirac_g0_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

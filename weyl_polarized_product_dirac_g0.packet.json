@@ -1,0 +1,466 @@
+{
+  "T42_comparison": {
+    "T42_is_target_informed": true,
+    "T42_rank": 4,
+    "T43_uses_physical_Weyl_multiplicity": true,
+    "correlators_identified": false,
+    "future_target": "construct a selected q79/HYM universality intertwiner to the direct product-Dirac pushforward",
+    "normalized_scalar_remainder_matches": true,
+    "operators_identified": false,
+    "q79_rank_four_counts_physical_particles": false
+  },
+  "carrier_ledger": {
+    "KO6_chiral_dimensions": {
+      "minus": 48,
+      "plus": 48
+    },
+    "KO6_completion_is_not_an_independent_field_copy": true,
+    "KO6_description": "particle direct_sum antiparticle",
+    "KO6_real_completion_dimension": 96,
+    "branch_multiplicities": {
+      "-2": 16,
+      "-4": 16,
+      "2": 16
+    },
+    "branch_multiplicity_sum": 48,
+    "continuum_left_Weyl_component_dimension": 96,
+    "left_Weyl_spin_dimension": 2,
+    "off_shell_components_equal_Weyl_times_spin": 96,
+    "one_family_left_Weyl_internal_dimension": 16,
+    "particle_carrier_dimension": 48,
+    "q79_rank_is_not_particle_multiplicity": true,
+    "three_family_left_Weyl_internal_dimension": 48
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 88,
+    "total": 88
+  },
+  "checks": {
+    "B_ACTION_open": true,
+    "B_GEO_open": true,
+    "B_OP_open": true,
+    "B_QFT_open": true,
+    "Dirac_candidate_doubled": true,
+    "G1_open": true,
+    "G2_open": true,
+    "HYM_G0_open": true,
+    "KO6_chiral_halves_48": true,
+    "KO6_dimension_96": true,
+    "KO6_is_completion": true,
+    "QM_certificate_passes": true,
+    "QM_internal_Weyl_48": true,
+    "QM_offshell_96": true,
+    "QM_spin_dimension_2": true,
+    "T23_passes": true,
+    "T25_exact_square": true,
+    "T25_passes": true,
+    "T30_passes": true,
+    "T34_passes": true,
+    "T35_passes": true,
+    "T39_passes": true,
+    "T40_passes": true,
+    "T41_passes": true,
+    "T42_passes": true,
+    "T42_target_informed": true,
+    "all_lineage_edges": true,
+    "comparison_hashes_not_in_root": true,
+    "direct_local_G0_closed": true,
+    "direct_operator_root_present": true,
+    "global_G0_open": true,
+    "handoff_pinned": true,
+    "higher_vertices_retained": true,
+    "interpolant_exact": true,
+    "jet_matrix_determinant_16": true,
+    "kernel_model_pinned": true,
+    "multiplicities_all_16": true,
+    "multiplicity_sum_48": true,
+    "no_fitted_coefficients": true,
+    "no_new_continuous_parameters": true,
+    "no_observed_inputs": true,
+    "normalization_ambiguity_reduced": true,
+    "offshell_product_exact": true,
+    "operators_not_identified": true,
+    "particle_dimension_48": true,
+    "per_Weyl_coefficient": true,
+    "physical_gates_unchanged": true,
+    "physical_packets_unchanged": true,
+    "physical_rows_unchanged": true,
+    "q4_exact": true,
+    "q4_matches_T35": true,
+    "raw_value_slope_Hessian": true,
+    "remainder_is_rho": true,
+    "remainder_jets_exact": true,
+    "remainder_zero_two_jet": true,
+    "rho_matches_T35": true,
+    "rho_matches_T39": true,
+    "rho_matches_T42": true,
+    "rho_not_in_construction_root": true,
+    "schema_claim": true,
+    "selected_kappa_half": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "source_13_hash_matches": true,
+    "source_14_hash_matches": true,
+    "source_15_hash_matches": true,
+    "source_16_hash_matches": true,
+    "source_17_hash_matches": true,
+    "source_18_hash_matches": true,
+    "source_19_hash_matches": true,
+    "source_20_hash_matches": true,
+    "source_lock_schema": true,
+    "statistics_not_KO_chirality": true,
+    "theorem_claim": true,
+    "theorem_guard": true,
+    "theorem_kappa": true,
+    "theorem_no_rho_input": true,
+    "theorem_nonempty": true
+  },
+  "claim_id": "CBF.T43",
+  "date": "2026-08-30",
+  "determinant_exponent": {
+    "branch_multiplicity": 16,
+    "fermionic_sign": -1,
+    "global_phase_can_change_local_even_multiplicity": false,
+    "left_Weyl_spin_trace": 2,
+    "per_complex_Dirac_coefficient": "1/(16 pi^2)",
+    "per_left_Weyl_coefficient": "1/(32 pi^2)",
+    "rejected_candidate_times_pi_squared": "1",
+    "rejected_doubled_candidate": "1/pi^2",
+    "selected_kappa_F": "1/(2 pi^2)",
+    "selected_kappa_F_times_pi_squared": "1/2",
+    "selection_reason": "the source contains 48 two-component left-Weyl fields; the 96-dimensional KO6 space is their real completion",
+    "squared_operator_exponent": "1/2"
+  },
+  "emitted_action": {
+    "exact_amplitude": "(356+25sqrt(13)) H^4/(54 pi^2)",
+    "fifth_vertex_shift": "-24 q4_*/(pi^2 H)",
+    "fixed_point_preserved": true,
+    "formula": "Delta V_cl(h)=q4_* H^4 rho(h/H)/(2 pi^2)",
+    "fourth_vertex_shift": "-32 q4_*/pi^2",
+    "higher_vertices_nonzero": true,
+    "matches_T35_shape": true,
+    "matches_T39_shape_and_jets": true,
+    "radial_Hessian_preserved": true,
+    "third_vertex_shift": "-8 q4_* H/pi^2"
+  },
+  "exact_finite_trace": {
+    "L4_star": "sum_a sigma_a^4 log(sigma_a^2)",
+    "flat_one_loop_formula": "V_F(h)=-h^4[q4_*log(h^2/mu^2)+L4_*-c_scheme q4_*]/(2 pi^2)",
+    "observed_values_used": false,
+    "q4_matches_T35": true,
+    "q4_star": {
+      "exact_coefficients": {
+        "rational": "356/27",
+        "sqrt13": "25/27"
+      },
+      "expression": "(356+25sqrt(13))/27"
+    }
+  },
+  "frontier_delta": "CBF.T43 replaces the target-informed determinant construction on the direct route with the actual CBF.T25 product-Dirac Weyl Berezin pushforward. The independent 48-left-Weyl carrier ledger fixes kappa_F=1/(2 pi^2) and rejects the doubled 1/pi^2 candidate. Solving the three pointed jet equations on span{1,x^2,x^4} derives the complete rho remainder and its fifth jet without taking rho as input. This closes a same-source direct/local one-loop G0 instance only; global Lorentzian, q79 HYM, G1, G2 and physical acceptance remain open.",
+  "gate_ledger": {
+    "G0_direct_local_one_loop": {
+      "closed": true,
+      "scope": "fixed t_*, flat constant radial chart, local even one-loop modulus and pointed action two-jet",
+      "witness": "CBF.T25 Weyl Berezin pushforward followed by the unique R_H quotient"
+    },
+    "G0_global_physical": {
+      "closed": false,
+      "missing": "selected global determinant domain, cycle, phase and source transport"
+    },
+    "G0_q79_HYM": {
+      "closed": false,
+      "missing": "selected HYM/Strominger normal operator and its determinant/BV intertwiner"
+    },
+    "G1_physical_tangent_pairing": {
+      "closed": false,
+      "missing": "parallel physical line map, kinetic metric and Hessian transport"
+    },
+    "G2_selected_interacting_state_BV": {
+      "closed": false,
+      "missing": "fixed-coupling interacting QME-preserving BV and state pushforward"
+    },
+    "physical_gluing_gates_closed": 0,
+    "physical_gluing_gates_total": 3,
+    "physical_packets_accepted": 0,
+    "physical_packets_total": 3,
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7
+  },
+  "parameter_ledger": {
+    "absolute_SI_scale_selected": false,
+    "global_determinant_phase_selected": false,
+    "inherited_radial_scale_primitives": 1,
+    "local_determinant_normalization_candidates_after": 1,
+    "local_determinant_normalization_candidates_before": 2,
+    "new_continuous_physical_parameters": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_inputs": 0,
+    "selected_local_kappa_F": "1/(2 pi^2)",
+    "universal_four_dimensional_Weyl_coefficient_is_a_fit": false
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_GEO_01_closed": false,
+    "B_OP_01_closed": false,
+    "B_QFT_02_closed": false,
+    "RG_and_pole_transport_closed": false,
+    "Weyl_exponent_selected": true,
+    "determinant_line_orientation_closed": false,
+    "direct_and_q79_HYM_routes_identified": false,
+    "direct_local_flat_one_loop_pushforward_closed": true,
+    "global_Wick_or_direct_Lorentzian_determinant_closed": false,
+    "held_out_observable_closed": false,
+    "normalized_remainder_source_derived": true,
+    "physical_parallel_line_and_metric_closed": false,
+    "q79_HYM_normal_operator_closed": false,
+    "selected_external_BV_operator_domain_closed": false,
+    "selected_interacting_state_BV_closed": false
+  },
+  "pointed_renormalization": {
+    "allowed_even_local_basis": [
+      "1",
+      "x^2",
+      "x^4"
+    ],
+    "interpolation_coefficients_c0_c2_c4": [
+      "-1/2",
+      "2",
+      "-3/2"
+    ],
+    "interpolation_polynomial": "I_H f=-1/2+2x^2-(3/2)x^4",
+    "jet_matrix": [
+      [
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "0",
+        "2",
+        "4"
+      ],
+      [
+        "0",
+        "2",
+        "12"
+      ]
+    ],
+    "jet_matrix_determinant": "16",
+    "normalized_raw_seed": "f(x)=-x^4 log(x^2)",
+    "raw_jets_at_x1_through_order5": [
+      "0",
+      "-2",
+      "-14",
+      "-52",
+      "-100",
+      "-48"
+    ],
+    "raw_series_about_x1_through_order10": [
+      "0",
+      "-2",
+      "-7",
+      "-26/3",
+      "-25/6",
+      "-2/5",
+      "1/15",
+      "-2/105",
+      "1/140",
+      "-1/315",
+      "1/630"
+    ],
+    "remainder": "rho(x)=x^4(3/2-log(x^2))-2x^2+1/2",
+    "remainder_jets_at_x1_through_order5": [
+      "0",
+      "0",
+      "0",
+      "-16",
+      "-64",
+      "-48"
+    ],
+    "remainder_series_about_x1_through_order10": [
+      "0",
+      "0",
+      "0",
+      "-8/3",
+      "-8/3",
+      "-2/5",
+      "1/15",
+      "-2/105",
+      "1/140",
+      "-1/315",
+      "1/630"
+    ],
+    "rho_is_output_not_input": true,
+    "scheme_scale_and_L4_cancel": true,
+    "unique_zero_two_jet_representative": true
+  },
+  "product_dirac_pushforward": {
+    "Berezin_pushforward": "-log det D_W=-(1/2)Tr_spin log(D_W^*D_W)+phase",
+    "Galerkin_proxy_used": false,
+    "T42_rank_four_profile_used": false,
+    "branch_factors": {
+      "-2": {
+        "exact_coefficients": {
+          "rational": "5/6",
+          "sqrt13": "1/6"
+        },
+        "expression": "(5+sqrt(13))/6",
+        "multiplicity": 16
+      },
+      "-4": {
+        "exact_coefficients": {
+          "rational": "2/3",
+          "sqrt13": "1/3"
+        },
+        "expression": "(2+sqrt(13))/3",
+        "multiplicity": 16
+      },
+      "2": {
+        "exact_coefficients": {
+          "rational": "7/6",
+          "sqrt13": "-1/6"
+        },
+        "expression": "(7-sqrt(13))/6",
+        "multiplicity": 16
+      }
+    },
+    "exact_square": "D_dir(t,h)^2=D_Y^2 tensor I96+h^2 I tensor D_phys(t)^2",
+    "local_even_modulus_executed": true,
+    "neutral_frame": "D_Y tensor I96+Gamma_Y tensor h D_phys(t)",
+    "phase_executed": false,
+    "polarized_mass_squares": "m_a(h)^2=h^2 sigma_a^2",
+    "rho_used_as_input": false,
+    "source_coordinate": "(1-sqrt(13))/6",
+    "source_operator": "D_dir(t;A,H)=D_A+Y_t(H)"
+  },
+  "same_source_graph": {
+    "T35_T39_T42_used_only_as_output_comparisons": true,
+    "all_edges_verified": true,
+    "direct_operator_and_one_loop_action_share_root": true,
+    "nodes": [
+      "CBF.T23",
+      "CBF.T25",
+      "CBF.T30",
+      "CBF.T34",
+      "CBF.T35",
+      "CBF.T39",
+      "CBF.T40",
+      "CBF.T41",
+      "CBF.T43"
+    ],
+    "one_construction_root": "e196c06fa3fcb92965988878c984c11b38e92ecab7b79f5c9fc16621c71aa5ad",
+    "physical_q79_HYM_root_identified_with_direct_root": false,
+    "verified_edges": {
+      "T25_lock_pins_T23": true,
+      "T30_lock_pins_T25_packet": true,
+      "T30_lock_pins_T25_theorem": true,
+      "T34_lock_pins_T25": true,
+      "T34_lock_pins_T30": true,
+      "T35_lock_pins_T30": true,
+      "T35_lock_pins_T34": true,
+      "T39_lock_pins_T35": true,
+      "T40_lock_pins_T35": true,
+      "T40_lock_pins_T39": true,
+      "T41_lock_pins_T39": true,
+      "T41_lock_pins_T40": true
+    }
+  },
+  "schema": "boe.mtt.weyl-polarized-product-dirac-g0.v1",
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "comparison_sources": 8,
+    "comparison_sources_excluded_from_root": true,
+    "construction_root_payload": {
+      "KO6_completion_dimension": 96,
+      "T25_direct_source_root_sha256": "624ae0d4cce64f99d24b014b7c8341b56e298b87c07dbc6660262a94b745c6a7",
+      "analytic_rule": {
+        "derivation_factors": {
+          "fermionic_sign": -1,
+          "left_Weyl_spin_trace": 2,
+          "squared_operator_exponent": "1/2"
+        },
+        "formula": "V_W(m)=-m^4[log(m^2/mu^2)-c]/(32 pi^2)",
+        "name": "four-dimensional two-component Weyl Grassmann one-loop logarithm",
+        "scope": "even local flat-background modulus; global determinant phase excluded"
+      },
+      "branch_factors": {
+        "-2": {
+          "rational": "5/6",
+          "sqrt13": "1/6"
+        },
+        "-4": {
+          "rational": "2/3",
+          "sqrt13": "1/3"
+        },
+        "2": {
+          "rational": "7/6",
+          "sqrt13": "-1/6"
+        }
+      },
+      "branch_multiplicities": {
+        "-2": 16,
+        "-4": 16,
+        "2": 16
+      },
+      "construction_source_hashes": [
+        "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+        "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+        "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+        "2375458907d1ca046bd9d2f8d8cad799fe67a271f1850ce2467faf7554f48e88",
+        "6f9ecbd1c149928f2b9464214d2a1cc6393c9c68f2d1b9934c33bacd1e1f1f91",
+        "927f0db10e5ba7667779153c3a8d9f483c4fd5f0bc6367e1f9f5c79b5836341e",
+        "a91e1cc29769ed5ca83c804987d9c107fa57decc9433ff7f0c4bc7325327df89",
+        "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+        "afa4690abc2cf278574df5ae96952b473df521075887fe67eebc64b6dc3281ec",
+        "bd5d3be8c65a2437e997af46f07a0426ca0e37456bfbab855918af01bdaa7017",
+        "e83845479af1101a13167ec97344cf5564c450e6a032536b626686ff7ff2cad0",
+        "c1c4e83ba9b897bb88f277d301b6163acf7460d12c19d92c1d694f932e6563fc"
+      ],
+      "counterterm_basis": [
+        "1",
+        "x^2",
+        "x^4"
+      ],
+      "excluded": [
+        "rho",
+        "CBF.T35 output",
+        "CBF.T39 output",
+        "CBF.T42 rank-four profile",
+        "observed masses",
+        "fitted coefficients",
+        "q79 HYM endpoint"
+      ],
+      "left_Weyl_internal_dimension": 48,
+      "left_Weyl_spin_dimension": 2,
+      "physical_particle_dimension": 48,
+      "pointed_conditions": [
+        "Delta V(H)=0",
+        "Delta V'(H)=0",
+        "Delta V''(H)=0"
+      ],
+      "radial_anchor": "sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+      "schema": "boe.mtt.weyl-polarized-product-dirac-g0-derived-root.v1",
+      "source_coordinate": "(1-sqrt(13))/6"
+    },
+    "construction_root_sha256": "e196c06fa3fcb92965988878c984c11b38e92ecab7b79f5c9fc16621c71aa5ad",
+    "construction_sources": 12,
+    "contract_schema_sha256": "8f18cc29fb42220bce79727ef72901f5466fc0b804c72884f63e48d129b998c3",
+    "handoff_id": "45511f30-5ca5-49a8-bca3-20f258e6ad20",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "source_lock_sha256": "9e0dde052a968ed6317f265d39190350dd04d03d2219368868ccd25a2f8d0e79",
+    "theorem_sha256": "b6ae080d03388684de7d7d28a2530d71ae8846010f494967fa318f2411ad0c8f"
+  },
+  "status": "exact same-source direct product-Dirac flat-background local one-loop pushforward; Weyl normalization selected and normalized remainder source-derived; global Lorentzian, q79 HYM, G1 and G2 promotion open",
+  "title": "Weyl-Polarized Product-Dirac One-Loop Pushforward and Direct G0 Source"
+}

@@ -1504,3 +1504,56 @@ builder checks, `135/135` independent checks and 13 focused tests; the full
 canonical repository suite passes 298 tests. The finite model counters move,
 but the physical gates remain `0/3`; physical acceptance stays `0/3` packets
 and `0/7` rows. `B.ACTION.01` and `B.QFT.02` remain open.
+
+`WeylPolarizedProductDiracOneLoopPushforwardAndDirectG0SourceTheorem_v1.md`
+(`CBF.T43`) replaces T42's target-informed determinant right inverse on the
+direct route by an actual local one-loop pushforward. The independently
+certified carrier ledger is
+
+```text
+48 left-Weyl internal states,
+2 spin components per Weyl state,
+96 continuum off-shell components,
+96 KO6 finite dimensions = 48 particle + 48 antiparticle completion.
+```
+
+The last two occurrences of `96` have different types and are not multiplied.
+The T30 chiral spectrum partitions the 48 Weyl labels into three branches of
+multiplicity 16. Therefore the two-component Weyl coefficient
+`1/(32 pi^2)` fixes
+
+```text
+kappa_F=1/(2 pi^2),
+```
+
+eliminating T35's doubled `1/pi^2` candidate. The exact finite trace remains
+
+```text
+q4_*=(356+25sqrt(13))/27.
+```
+
+Starting only from `-x^4 log(x^2)`, the executable solves the nonsingular
+three-equation anchor system on `span{1,x^2,x^4}`. Its determinant is `16`, its
+unique interpolant is `-1/2+2x^2-(3/2)x^4`, and subtraction emits
+
+```text
+rho(x)=x^4(3/2-log(x^2))-2x^2+1/2
+```
+
+with complete jets `(0,0,0,-16,-64,-48)`. T35, T39 and T42 are excluded from
+the construction root and used only as comparisons, so neither `rho` nor the
+normalization is replayed as source data. The resulting action is
+
+```text
+Delta V_cl(h)=q4_* H^4 rho(h/H)/(2 pi^2).
+```
+
+This closes a same-source direct/local flat-background one-loop `G0` instance.
+It does not close a global physical `G0`, a q79 HYM `G0`, the physical tangent
+metric `G1`, or the interacting QME/state gate `G2`. The global determinant
+domain, Wick/Lorentzian prescription, cycle and phase remain open, as do the
+q79 HYM normal operator and direct/HYM universality intertwiner. Accordingly
+physical counters remain `0/3` gates, `0/3` packets and `0/7` rows, and
+`B.ACTION.01`, `B.QFT.02`, `B.OP.01` and `B.GEO.01` remain open. T43 passes
+`88/88` builder checks, `149/149` independent checks and 14 focused tests; the
+full canonical repository suite passes 312 tests.
