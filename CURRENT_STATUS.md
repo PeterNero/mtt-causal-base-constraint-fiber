@@ -1269,3 +1269,40 @@ nonempty formal state spaces and state transport but no preferred interacting
 state. T37 passes `44/44` builder checks, `103/103` independent checks and 10
 focused tests. The canonical suite passes 242 unit tests. Physical acceptance
 remains `0/3` packets and `0/7` rows.
+
+`RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md`
+(`CBF.T38`) closes the radial state-marginal problem at the selected
+finite/formal repair tier. The exact T34 fixed-source potential satisfies
+
+```text
+P_*(h)-P_*(H)=q4_*(h^2-H^2)^2,
+q4_*R_*=2q2_*.
+```
+
+Its negative-gradient repair law is a solvable logistic flow for `u=h^2`.
+Every initial point in the positive broken basin converges to `H`; `delta_H`
+is the unique invariant probability on that basin and the unique zero-defect
+state on the closed radial half-line. The latter statement is also proved
+directly by positivity and GNS support. No coefficient, observed value or
+state weight is fitted.
+
+Evaluation at `H` extends every existing normalized positive local formal q79
+state to a radial-anchored state whose homogeneous radial marginal is exactly
+`delta_H`. This does not select its gauge/matter correlations, a preferred
+global q79 state or the local Higgs fluctuation state.
+
+T38 also identifies the physical QJ1 certificate. If the selected upper
+repair semiflow and renormalized lower BV semiflow obey
+
+```text
+pi Phi_s=Psi_s pi,
+```
+
+then the upper attractor projects to a lower fixed point and a lower
+gradient-flow law forces `dGamma(H)=0`. The actual T35 bare determinant fails
+this test: its normalized tadpole is
+`-100.114483627430279588...`, so a same-source renormalized BV intertwiner or
+equivalent radial Ward primitive is still required. T38 passes `57/57`
+builder checks, `103/103` independent checks and 10 focused tests. The
+canonical suite passes 252 unit tests. Physical acceptance remains `0/3`
+packets and `0/7` rows.

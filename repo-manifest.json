@@ -152,6 +152,9 @@
     "exact differentiated action-measure-cycle radial Ward identity",
     "exact QME-compatible QJ1 normalization existence and nonselection theorem",
     "exact T35 tadpole obstruction and zero-source state-anchor reduction",
+    "exact T34 radial square completion and nonlinear positive-basin attractor",
+    "unique invariant radial state and formal local q79 state pullback",
+    "repair-semiflow projection criterion for QJ1 and exact T35 intertwining defect",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -225,6 +228,10 @@
     "proof that the selected interacting radial expectation equals the T34 point",
     "construction of a quantum-BV radial Ward primitive for QJ1",
     "physical promotion of the QME-compatible tadpole normalization",
+    "selection of the finite repair semiflow as the physical zero-source law",
+    "construction of a renormalized q79 BV repair-semiflow intertwiner",
+    "selection of a preferred or global q79 state by the radial marginal theorem",
+    "physical promotion of QJ1 from the finite-formal radial attractor alone",
     "identification of the three finite determinant branches with measured fermion generations",
     "derivation of a dimensionful mass from the finite determinant without a physical scale primitive",
     "identification of classical projective pressure normalization with a measured physical scale",
@@ -283,7 +290,8 @@
     "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md",
     "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md",
     "PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md",
-    "QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md"
+    "QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md",
+    "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -322,7 +330,8 @@
     "same_root_state_repair_heat_profile_radial_values.packet.json",
     "frozen_source_four_dimensional_fermion_pushforward.packet.json",
     "pointed_closure_germ_quantum_jet_matching.packet.json",
-    "quantum_radial_anchor_tadpole.packet.json"
+    "quantum_radial_anchor_tadpole.packet.json",
+    "radial_closure_attractor_state_marginal.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -361,7 +370,8 @@
     "python build_same_root_state_repair_heat_profile_radial_values.py",
     "python build_frozen_source_four_dimensional_fermion_pushforward.py",
     "python build_pointed_closure_germ_quantum_jet_matching.py",
-    "python build_quantum_radial_anchor_tadpole.py"
+    "python build_quantum_radial_anchor_tadpole.py",
+    "python build_radial_closure_attractor_state_marginal.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -395,7 +405,8 @@
     "same_root_state_repair_heat_profile_radial_values_contract.schema.json",
     "frozen_source_four_dimensional_fermion_pushforward_contract.schema.json",
     "pointed_closure_germ_quantum_jet_matching_contract.schema.json",
-    "quantum_radial_anchor_tadpole_contract.schema.json"
+    "quantum_radial_anchor_tadpole_contract.schema.json",
+    "radial_closure_attractor_state_marginal_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

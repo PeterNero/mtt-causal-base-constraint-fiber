@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/radial-closure-attractor-state-marginal.v1.schema.json",
+  "title": "MTT radial closure-attractor, state-marginal and quantum-projection packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "exact_radial_square_completion",
+    "nonlinear_repair_flow",
+    "invariant_radial_state",
+    "formal_q79_state_extension",
+    "repair_semiflow_projection_naturality",
+    "T35_quantum_intertwining_defect",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.radial-closure-attractor-state-marginal.v1"},
+    "claim_id": {"const": "CBF.T38"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "exact_radial_square_completion": {"type": "object"},
+    "nonlinear_repair_flow": {"type": "object"},
+    "invariant_radial_state": {"type": "object"},
+    "formal_q79_state_extension": {"type": "object"},
+    "repair_semiflow_projection_naturality": {"type": "object"},
+    "T35_quantum_intertwining_defect": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "check_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

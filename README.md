@@ -1199,3 +1199,30 @@ spaces and presentation transport but no preferred interacting state or
 radial BV Ward primitive. T37 passes `44/44` builder checks, `103/103`
 independent checks and 10 focused tests. The canonical repository suite passes
 242 unit tests; physical acceptance remains `0/3` packets and `0/7` rows.
+
+The thirty-eighth theorem proves that the selected T34 radial background has
+more structure than an imposed state anchor. Exact arithmetic gives
+
+```text
+P_*(h)-P_*(H)=q4_*(h^2-H^2)^2.
+```
+
+The associated negative-gradient repair flow is exactly solvable. On the
+positive broken basin it converges globally to `H`, making `delta_H` the
+unique invariant radial probability. On the closed half-line it is also the
+unique zero-defect state; the unstable fixed point at zero remains dynamically
+invariant but has positive closure cost.
+
+This fixes only the homogeneous radial marginal. Evaluation at `H` can be
+composed with every already-existing local formal positive q79 state, so a
+unique full gauge/matter state is not needed for that scalar result. It does
+not remove local Higgs fluctuations or select a preferred global q79 vacuum.
+
+For physical QJ1 the theorem isolates a stronger requirement than action
+pushforward: the selected upper and renormalized lower repair semiflows must
+intertwine through the physical projection. Such an intertwiner would force
+the projected attractor to obey `dGamma(H)=0`. The bare T35 fermion determinant
+has a nonzero tadpole at `H`, proving that the currently truncated lower flow
+does not yet intertwine. T38 passes `57/57` builder checks, `103/103`
+independent checks and 10 focused tests. The canonical repository suite passes
+252 unit tests; physical acceptance remains `0/3` packets and `0/7` rows.

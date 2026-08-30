@@ -1,0 +1,117 @@
+{
+  "schema": "boe.mtt.radial-closure-attractor-state-marginal-source-lock.v1",
+  "claim_id": "CBF.T38",
+  "date": "2026-08-30",
+  "handoff_id": "5067bb6f-4704-4da5-a085-be56da8cd4b0",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "9a9a6ede6a28fc59e2dbf9103cec11a4214d4989",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "mtt-preprojection-repair-calculus": "dd64c50ae6633a1f0d91be2b13f5d5fc9c6efc3d",
+    "mtt-protospinor-gr-response-proof": "a350d0d1a706845205d669542cf344750033c6f6",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md",
+      "sha256": "cbd7ce99a9b7a3082fd9b1e4ed54acba08af54749e04056cadf76da4c5f405f7",
+      "role": "CBF.T34 same-root heat profile and selected positive radial point"
+    },
+    {
+      "path": "same_root_state_repair_heat_profile_radial_values.packet.json",
+      "sha256": "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+      "role": "CBF.T34 exact radial value, source ratio and finite-state repair data"
+    },
+    {
+      "path": "PreprojectionFiniteSourceFreezeAndConditionalRadialBranchValueTheorem_v1.md",
+      "sha256": "eb79d77f6f02dd0a8f360a68ae6e2c134f088fd77d83534ffd192704501aa488",
+      "role": "CBF.T33 fixed-source tree potential and positive broken minimum"
+    },
+    {
+      "path": "preprojection_finite_source_freeze_radial_values.packet.json",
+      "sha256": "ed2eb30446ae20cd57dd89a4f6151042b234a5dcaba37c1074ccb440256a1fba",
+      "role": "CBF.T33 exact q2, q4, radial ratio and frozen-source packet"
+    },
+    {
+      "path": "PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md",
+      "sha256": "ba5a3c10bc3fe374126903ba58b254c35f12bb7398bb1c2746d0ac2ac5d21e0d",
+      "role": "CBF.T36 exact pointed-jet retraction and no-go for generic pushforward naturality"
+    },
+    {
+      "path": "QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md",
+      "sha256": "e5b04f4c0ce4d1c89728ea44b0d8714a983c521480e48bc98e23b8a1ef04c6d1",
+      "role": "CBF.T37 differentiated Ward identity, T35 obstruction and state-anchor reduction"
+    },
+    {
+      "path": "quantum_radial_anchor_tadpole.packet.json",
+      "sha256": "6a96cbedd5a35a886d17e32a6932881a9e4e5602f7707a2ece55b1e3457f15cb",
+      "role": "CBF.T37 executable T35 tadpole defect and physical-boundary packet"
+    },
+    {
+      "path": "RepairFixedPointGaugeDescentTheorem_v1.md",
+      "sha256": "7dec033396290d2ab8e228cfaa52b1bc965e8263bc8c221e05d94e76960474c2",
+      "role": "exact abstract fixed-point and repair descent with physical-source boundary"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/docs/STATE_TAXONOMY.md",
+      "sha256": "37b17765cb7f5ba272f299cda575d6a99a0b2ef7e731a600c88c2e9c13908489",
+      "role": "typed distinction between transient repair state and selected physical evolution"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+      "sha256": "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+      "role": "H4-T9 normal-square, variational-anchor and multiplier selection boundary"
+    },
+    {
+      "path": "../mtt-protospinor-gr-response-proof/proof_corpus/q79_Zero_Defect_Vacuum_Selection_NoGo_and_State_Boundary_Cutset_v1.md",
+      "sha256": "0a1f04cc9e4b43e9369c1e5988dc1c368a21b14ccaf14c90c22b14f1a2bae576",
+      "role": "exact no-go against selecting the physical flat vacuum from vacuum field equations alone"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Local_Formal_Physical_State_Space_Compatibility_and_Gluing_Theorem_v1.md",
+      "sha256": "4ab8a9f0c5f0813010482dc1b6b4d6a2c666759e8bab6fc05703f1c34f5f9db2",
+      "role": "nonempty local formal positive interacting state-space functor and preferred-state boundary"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_local_formal_state_space_gluing.certificate.json",
+      "sha256": "f2c2db986b1941fa8c3bf20631f918a16062d3bc7e68072e1141b41b633d4a15",
+      "role": "executable q79 local formal state-space and no-arbitrary-gluing certificate"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_closureshadowgaugeactionaxiomderivation_or_explicitadoptionandheldoutvalidation_v1.md",
+      "sha256": "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440",
+      "role": "A84 closure-Hessian heat-shadow action bridge at its declared tier"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_finitematchingcompletenessfromunifiedaction_or_explicitboundaryadoptionandheldoutvalidation_v1.md",
+      "sha256": "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36",
+      "role": "A85 bare source completeness with retained finite renormalization freedom"
+    }
+  ],
+  "boundary": {
+    "T34_square_completion_proved_before": false,
+    "T34_square_completion_proved_after": true,
+    "positive_basin_flow_solved_before": false,
+    "positive_basin_flow_solved_after": true,
+    "unique_invariant_radial_state_proved_before": false,
+    "unique_invariant_radial_state_proved_after": true,
+    "formal_q79_radial_state_extension_constructed_before": false,
+    "formal_q79_radial_state_extension_constructed_after": true,
+    "repair_semiflow_QJ1_naturality_criterion_before": false,
+    "repair_semiflow_QJ1_naturality_criterion_after": true,
+    "physical_q79_repair_semiflow_intertwiner_emitted": false,
+    "T35_bare_loop_preserves_T34_attractor": false,
+    "preferred_global_q79_state_selected": false,
+    "physical_QJ1_selected": false,
+    "physical_QJ2_selected": false,
+    "physical_QJ0_selected": false,
+    "repair_parameter_identified_with_physical_time": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "new_continuous_parameters": 0,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

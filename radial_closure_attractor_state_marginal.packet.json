@@ -1,0 +1,362 @@
+{
+  "T35_quantum_intertwining_defect": {
+    "QJ1_counterterm_affine_line_available": true,
+    "QJ1_counterterm_line_selected_by_current_upper_action": false,
+    "bare_truncated_projection_intertwines_T34_flow": false,
+    "both_declared_determinant_branches_fail_bare_QJ1": true,
+    "fixed_point_intertwining_defect_covector": "Dpi beta_up(H)-beta_low(H)=V_F'(H) before metric inversion",
+    "full_BV_bosonic_ghost_gravitational_completion_executed": false,
+    "lower_bare_tadpole_over_kappa_Lambda3": "-100.114483627430279588255506887696895827724576220833743543915782457764101035430506698860949",
+    "lower_complex_determinant_tadpole_over_Lambda3": "-10.1437179808726814804011243648157565482959414425440243875370507225660136927372742156780141",
+    "lower_pfaffian_tadpole_over_Lambda3": "-5.07185899043634074020056218240787827414797072127201219376852536128300684636863720795349066",
+    "mu_over_Lambda": "1",
+    "physical_promotion_certificate": "one same-source renormalized BV flow satisfying pi Phi_s=Psi_s pi, or one radial BV Ward primitive with Stokes and no cycle boundary",
+    "scheme": "MSbar",
+    "upper_T34_flow_at_H": "0"
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 57,
+    "total": 57
+  },
+  "checks": {
+    "H_is_positive": true,
+    "T33_and_T34_claims_are_locked": true,
+    "T35_bare_intertwining_defect_is_nonzero": true,
+    "T37_claim_is_locked": true,
+    "all_source_hashes_match": true,
+    "both_determinant_branches_fail_bare_QJ1": true,
+    "counterterm_line_is_not_overpromoted": true,
+    "finite_zero_defect_measure_is_unique": true,
+    "flow_samples_contract": true,
+    "flow_semigroup_composes": true,
+    "formal_local_radial_state_extension_exists": true,
+    "formal_radial_state_progress_is_recorded": true,
+    "generic_action_pushforward_remains_insufficient": true,
+    "global_positive_basin_converges": true,
+    "no_fitted_values_used": true,
+    "no_new_continuous_parameter": true,
+    "no_observed_values_used": true,
+    "physical_BV_intertwiner_is_not_overclaimed": true,
+    "physical_QJ0_remains_open": true,
+    "physical_QJ1_remains_open": true,
+    "physical_QJ2_remains_open": true,
+    "physical_packet_boundary_preserved": true,
+    "physical_row_boundary_preserved": true,
+    "positive_branch_is_stable": true,
+    "positive_radial_minimum_is_unique": true,
+    "preferred_q79_state_is_not_overclaimed": true,
+    "q4_R_equals_two_q2_exactly": true,
+    "q4_is_positive": true,
+    "q79_formal_positivity_is_preserved": true,
+    "q79_local_formal_state_space_is_nonempty": true,
+    "q79_state_certificate_passes": true,
+    "radial_marginal_does_not_require_unique_matter_state": true,
+    "repair_parameter_is_not_promoted_to_time": true,
+    "sample_measure_moves_toward_H": true,
+    "schema_required_keys_present": true,
+    "semiflow_naturality_implies_QJ1": true,
+    "semiflow_projection_witness_intertwines": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "source_13_hash_matches": true,
+    "source_14_hash_matches": true,
+    "source_15_hash_matches": true,
+    "square_completion_adds_no_coefficient": true,
+    "state_pullback_positive_witness": true,
+    "theorem_file_exists": true,
+    "unique_invariant_radial_state_is_delta_H": true,
+    "zero_branch_is_unstable": true
+  },
+  "claim_id": "CBF.T38",
+  "date": "2026-08-30",
+  "exact_radial_square_completion": {
+    "H_is_positive": true,
+    "H_over_Lambda": "sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+    "H_over_Lambda_decimal": "1.32110162937546849372411407910044955254271565318267186604317613706916198143243247326937712",
+    "H_squared_over_Lambda_squared": "15(3106+4sqrt(13))/(4393log(448))",
+    "H_squared_over_Lambda_squared_decimal": "1.74530951513851771853518336274233261059720386078982131392118789587799229973219349150080919",
+    "Lambda_normalization_for_execution": "1",
+    "R_star": {
+      "decimal": "0.710316914432473470788180488292711582923971132778370358490972413436127627542265431773461979",
+      "exact_coefficients": {
+        "rational": "3106/4393",
+        "sqrt13": "4/4393"
+      },
+      "expression": "(3106+4sqrt(13))/4393"
+    },
+    "c_over_Lambda_squared": "15/log(448)",
+    "c_over_Lambda_squared_decimal": "2.45708567496661546293750799274628893214805025701524862456771074074125259627070451622593397",
+    "completion_adds_only_the_existing_constant_minus_P_of_H": true,
+    "exact_completion": "P_*(h)-P_*(H)=q4_* (h^2-H^2)^2",
+    "minimum_over_Lambda4": "-50.3328040615244062153049798996260558295109107574976877239737508649679385089471573176735067",
+    "new_coefficient_introduced": false,
+    "positive_radial_minimum_is_unique": true,
+    "q2_star": {
+      "decimal": "5.86851709182132976437307375582349864875043219128174873757015101874238898276433681506820636",
+      "exact_coefficients": {
+        "rational": "14/3",
+        "sqrt13": "1/3"
+      },
+      "expression": "(14+sqrt(13))/3"
+    },
+    "q4_is_positive": true,
+    "q4_star": {
+      "decimal": "16.5236585883925826788140937661763851354178671980048576043615306076177471743453800418561288",
+      "exact_coefficients": {
+        "rational": "356/27",
+        "sqrt13": "25/27"
+      },
+      "expression": "(356+25sqrt(13))/27"
+    },
+    "ratio_identity": "q4_* R_*=2 q2_*",
+    "ratio_identity_exact": true,
+    "raw_tree_curvature_over_Lambda2": "230.711188473774900754214846201181220402617702070902302832347556441599672130502978231941580",
+    "tree_potential": "P_*(h)=q4_* h^4-4 c q2_* h^2"
+  },
+  "formal_q79_state_extension": {
+    "BRST_identity": "if ev_H Q=Q_H ev_H and omega_H Q_H=0, then Omega_H Q=0",
+    "base_fiber_algebra": "C_0((0,infinity)) tensor A_phys,H on the declared local formal tier",
+    "evaluation_map": "ev_H tensor id:A_base->A_phys,H",
+    "extended_state": "Omega_H=omega_H composed with (ev_H tensor id)",
+    "finite_density_matrix": [
+      [
+        "2/3",
+        "0"
+      ],
+      [
+        "0",
+        "1/3"
+      ]
+    ],
+    "finite_test_observable_expectation": "2/3",
+    "finite_test_square_expectation": "233/108",
+    "finite_test_square_is_positive": true,
+    "formal_local_radial_anchored_state_exists": true,
+    "full_interacting_state_is_unique": false,
+    "normalization_identity": "Omega_H(1)=omega_H(1)=1",
+    "positivity_identity": "Omega_H(a^*a)=omega_H(a(H)^*a(H))>=0",
+    "q79_local_formal_state_spaces_nonempty": true,
+    "q79_preferred_state_remains_open": true,
+    "q79_restriction_preserves_formal_positivity": true,
+    "radial_scalar_expectation_over_H": "1",
+    "single_global_cosmological_state_constructed": false
+  },
+  "frontier_delta": "CBF.T38 proves that the exact T34 tree potential is q4_*(h^2-H_T34^2)^2 up to its minimum, solves its nonlinear positive-basin repair flow, and proves delta_H is the unique invariant radial state. Pullback along evaluation at H extends every existing local formal positive q79 state to a radial-anchored state, so full preferred-state uniqueness is not required for the scalar marginal. The exact promotion condition is stronger than action pushforward: the physical renormalized BV projection must intertwine the upper and lower repair semiflows, which would force QJ1. The actual T35 bare determinant has a nonzero fixed-point intertwining defect, and no selected full BV intertwiner or radial Ward primitive is emitted. Thus the finite/formal radial-state blocker is closed while physical QJ1 and 0/3, 0/7 acceptance remain open.",
+  "invariant_radial_state": {
+    "GNS_null_ideal_criterion": "omega((h^2-H^2)^2)=0 implies pi_omega(h^2-H^2)Omega_omega=0",
+    "dimensionless_defect_values": [
+      "9/16",
+      "0",
+      "9"
+    ],
+    "every_initial_probability_converges_weakly_to_delta_H": true,
+    "finite_support_points_over_H": [
+      "1/2",
+      "1",
+      "2"
+    ],
+    "forced_radial_expectation": "omega(h)=H",
+    "forced_radial_variance": "omega((h-H)^2)=0",
+    "invariant_state_theorem": "the only repair-flow invariant Borel probability on (0,infinity) is delta_H",
+    "positive_radial_support_then_forces": "supp(nu_omega)={H}",
+    "proof_identity": "int f dnu=int f(Phi_s(h)) dnu -> f(H) for every bounded continuous f",
+    "radial_marginal_is_unique_without_selecting_matter_state": true,
+    "sample_evolved_mean_error": "0.00000000000000000000025373377784715033937515009287675692769345715125505390067544",
+    "sample_evolved_mean_over_H": "0.99999999999999999999974626622215284966062484990712324307230654284874494609932456",
+    "sample_initial_mean_error": "0.75",
+    "sample_initial_mean_over_H": "1.75",
+    "sample_mean_moves_toward_H": true,
+    "state_algebra": "unitized C_0((0,infinity)) radial algebra, or its finite-moment polynomial domain",
+    "state_measure": "Riesz probability measure nu_omega",
+    "unique_zero_defect_probability_weights": [
+      "0",
+      "1",
+      "0"
+    ]
+  },
+  "nonlinear_repair_flow": {
+    "Lyapunov_identity": "dP_*/ds_rep=-(partial_h P_*)^2<=0",
+    "all_sample_errors_contract": true,
+    "closed_solution": "u(s)=H^2/[1+(H^2/u0-1)exp(-8 q4_* H^2 s)]",
+    "fixed_points_on_closed_radial_half_line": [
+      "0",
+      "H"
+    ],
+    "flow_samples": [
+      {
+        "error_contracts": true,
+        "final_absolute_ratio_error": "0.000000000000000000068508120018730591642763188986392981067265732826142781297511042027979975",
+        "h0_over_H": "0.25",
+        "h_at_s_over_H": "0.999999999999999999931491879981269408357236811013607018932734267173857218702488957972020025",
+        "initial_absolute_ratio_error": "0.75"
+      },
+      {
+        "error_contracts": true,
+        "final_absolute_ratio_error": "0.000000000000000000013701624003746118329679044799318787071182555494181366804438605027445095",
+        "h0_over_H": "0.5",
+        "h_at_s_over_H": "0.999999999999999999986298375996253881670320955200681212928817444505818633195561394972554905",
+        "initial_absolute_ratio_error": "0.5"
+      },
+      {
+        "error_contracts": true,
+        "final_absolute_ratio_error": "0",
+        "h0_over_H": "1",
+        "h_at_s_over_H": "1",
+        "initial_absolute_ratio_error": "0"
+      },
+      {
+        "error_contracts": true,
+        "final_absolute_ratio_error": "0.00000000000000000000342540600093652958250776174686408667856629926218618540321085410980255",
+        "h0_over_H": "2",
+        "h_at_s_over_H": "1.00000000000000000000342540600093652958250776174686408667856629926218618540321085410980255",
+        "initial_absolute_ratio_error": "1"
+      },
+      {
+        "error_contracts": true,
+        "final_absolute_ratio_error": "0.00000000000000000000428175750117066197814020221776975771763120520071132206943050829665944",
+        "h0_over_H": "4",
+        "h_at_s_over_H": "1.00000000000000000000428175750117066197814020221776975771763120520071132206943050829665944",
+        "initial_absolute_ratio_error": "3"
+      }
+    ],
+    "global_positive_basin_converges_to_H": true,
+    "gradient_flow": "d h/ds_rep=4 q4_* h(H^2-h^2)",
+    "linear_convergence_rate_over_Lambda2": "230.711188473774900754214846201181220402617702070902302832347556441599672130502978231941580",
+    "logistic_equation": "d u/ds_rep=8 q4_* u(H^2-u)",
+    "positive_branch_is_strictly_stable": true,
+    "positive_branch_linearization": "-230.711188473774900754214846201181220402617702070902302832347556441599672130502978231941580",
+    "positive_open_basin": "(0,infinity)",
+    "repair_parameter": "s_rep",
+    "repair_parameter_is_physical_time": false,
+    "sample_repair_parameter": "0.2",
+    "semigroup_composition_residual": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "semigroup_composition_verified": true,
+    "squared_coordinate": "u=h^2",
+    "zero_branch_is_unstable": true,
+    "zero_branch_linearization": "115.355594236887450377107423100590610201308851035451151416173778220799836065251489115970790"
+  },
+  "parameter_ledger": {
+    "fitted_values_used": [],
+    "inherited_source_values": [
+      "t_*=(1-sqrt(13))/6",
+      "q2_*=(14+sqrt(13))/3",
+      "q4_*=(356+25sqrt(13))/27",
+      "f2/f0=15/log(448)",
+      "H=H_T34"
+    ],
+    "matter_gauge_state_family_remains_nonunique": true,
+    "new_continuous_parameters": 0,
+    "new_discrete_choices": 0,
+    "observed_values_used": [],
+    "renormalization_choice_removed": false,
+    "state_choice_removed_only_for_radial_marginal": true
+  },
+  "physical_boundary": {
+    "T34_positive_radial_attractor_closed": true,
+    "T34_unique_invariant_radial_state_closed": true,
+    "T35_bare_loop_preserves_T34_anchor": false,
+    "formal_local_q79_radial_state_extension_closed": true,
+    "formal_state_anchor_equality_is_constructible": true,
+    "global_interacting_cosmological_state_selected": false,
+    "physical_QJ0_selected": false,
+    "physical_QJ1_selected": false,
+    "physical_QJ2_selected": false,
+    "physical_endpoint_promoted": false,
+    "physical_renormalized_BV_semiflow_intertwiner_emitted": false,
+    "preferred_full_q79_state_selected": false,
+    "repair_parameter_identified_with_physical_time": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "repair_semiflow_projection_naturality": {
+    "QJ1_follows_from_physical_semiflow_intertwiner": true,
+    "attractor_state_descent": "pi_* delta_x*=delta_pi(x*)",
+    "finite_witness": [
+      {
+        "auxiliary_z": "1.7561908618411226474661448183147852707701571707741619441812635040048453818982578",
+        "h_over_H": "0.99999999999991619112928582629961028534425294149818240561008297368964661039963587",
+        "projection_commutator_residual": "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "auxiliary_z": "-2.6342862927616839711992172274721779061552357561612429162718952560072680728473867",
+        "h_over_H": "1.0000000000000230901990743168648334717366646153202045295767702860152672448826346",
+        "projection_commutator_residual": "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "auxiliary_z": "4.3904771546028066186653620457869631769253929269354048604531587600121134547456446",
+        "h_over_H": "1.0000000000000374023059385636583914304204988000554218000962783519883325806737118",
+        "projection_commutator_residual": "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ],
+    "finite_witness_intertwines": true,
+    "fixed_point_descent": "Psi_s(pi(x_*))=pi(x_*)",
+    "generic_action_pushforward_is_not_sufficient": true,
+    "gradient_flow_corollary": "if Psi is generated by -g^{-1}dGamma and g(H)>0, fixedness of H implies dGamma(H)=0",
+    "linearized_corollary": "Dpi_x* A_up=A_low Dpi_x*; QJ2 additionally needs the selected tangent metric",
+    "maximum_projection_commutator_residual": "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "physical_q79_BV_semiflow_intertwiner_present": false,
+    "state_pushforward_naturality": "pi_* (Phi_s)_* nu=(Psi_s)_* pi_* nu",
+    "surjectivity_required_for_global_lower_attractor": true,
+    "upper_lower_contract": "pi composed Phi_s=Psi_s composed pi for all s>=0"
+  },
+  "schema": "boe.mtt.radial-closure-attractor-state-marginal.v1",
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "handoff_id": "5067bb6f-4704-4da5-a085-be56da8cd4b0",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "9a9a6ede6a28fc59e2dbf9103cec11a4214d4989",
+      "mtt-preprojection-repair-calculus": "dd64c50ae6633a1f0d91be2b13f5d5fc9c6efc3d",
+      "mtt-protospinor-gr-response-proof": "a350d0d1a706845205d669542cf344750033c6f6",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 15,
+    "source_root_payload": {
+      "H_expression": "sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+      "flow": "d h/ds_rep=4 q4_* h(H^2-h^2)",
+      "observed_targets": [],
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "9a9a6ede6a28fc59e2dbf9103cec11a4214d4989",
+        "mtt-preprojection-repair-calculus": "dd64c50ae6633a1f0d91be2b13f5d5fc9c6efc3d",
+        "mtt-protospinor-gr-response-proof": "a350d0d1a706845205d669542cf344750033c6f6",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.radial-closure-attractor-state-marginal-root.v1",
+      "source_hashes": [
+        "cbd7ce99a9b7a3082fd9b1e4ed54acba08af54749e04056cadf76da4c5f405f7",
+        "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+        "eb79d77f6f02dd0a8f360a68ae6e2c134f088fd77d83534ffd192704501aa488",
+        "ed2eb30446ae20cd57dd89a4f6151042b234a5dcaba37c1074ccb440256a1fba",
+        "ba5a3c10bc3fe374126903ba58b254c35f12bb7398bb1c2746d0ac2ac5d21e0d",
+        "e5b04f4c0ce4d1c89728ea44b0d8714a983c521480e48bc98e23b8a1ef04c6d1",
+        "6a96cbedd5a35a886d17e32a6932881a9e4e5602f7707a2ece55b1e3457f15cb",
+        "7dec033396290d2ab8e228cfaa52b1bc965e8263bc8c221e05d94e76960474c2",
+        "37b17765cb7f5ba272f299cda575d6a99a0b2ef7e731a600c88c2e9c13908489",
+        "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+        "0a1f04cc9e4b43e9369c1e5988dc1c368a21b14ccaf14c90c22b14f1a2bae576",
+        "4ab8a9f0c5f0813010482dc1b6b4d6a2c666759e8bab6fc05703f1c34f5f9db2",
+        "f2c2db986b1941fa8c3bf20631f918a16062d3bc7e68072e1141b41b633d4a15",
+        "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440",
+        "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36"
+      ],
+      "square_completion": "P_*(h)-P_*(H)=q4_* (h^2-H^2)^2"
+    },
+    "source_root_sha256": "8d5142350f874e9f1cecfe8cdc3766014b612da3feeeb00fc71aaddb87b75594"
+  },
+  "status": "exact T34 radial square completion, nonlinear attractor, unique invariant radial state, formal local q79 state extension and repair-semiflow QJ1 criterion; physical renormalized BV intertwiner and QJ1 promotion remain open"
+}

@@ -88,6 +88,8 @@ def main() -> None:
     run(sys.executable, "verify_pointed_closure_germ_quantum_jet_matching.py")
     run(sys.executable, "build_quantum_radial_anchor_tadpole.py")
     run(sys.executable, "verify_quantum_radial_anchor_tadpole.py")
+    run(sys.executable, "build_radial_closure_attractor_state_marginal.py")
+    run(sys.executable, "verify_radial_closure_attractor_state_marginal.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 
