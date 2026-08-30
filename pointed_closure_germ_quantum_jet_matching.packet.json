@@ -1,0 +1,389 @@
+{
+  "check_summary": {
+    "failed": [],
+    "passed": 55,
+    "total": 55
+  },
+  "checks": {
+    "A84_retains_one_matching_clause": true,
+    "A85_retains_finite_counterterm_freedom": true,
+    "H4_T10_leaves_quantum_renormalization_open": true,
+    "H4_T8_excludes_counterterm_selection": true,
+    "H4_T9_separates_repair_and_signed_action": true,
+    "QJ0_recovers_T35_delta_Omega": true,
+    "QJ0_selection_remains_open": true,
+    "QJ1_selection_remains_open": true,
+    "QJ2_selection_remains_open": true,
+    "T34_is_locked": true,
+    "T35_is_locked": true,
+    "T35_matching_was_conditional": true,
+    "all_source_hashes_match": true,
+    "contract_schema_is_exact": true,
+    "even_gaussian_symmetry_does_not_protect_hessian": true,
+    "even_gaussian_symmetry_protects_tadpole": true,
+    "field_scaling_changes_numeric_hessian": true,
+    "first_jet_matching_executes": true,
+    "full_matching_selection_remains_open": true,
+    "generic_pushforward_no_go_newly_closed": true,
+    "jet_matrix_determinant_is_16H3": true,
+    "jet_remainder_first_vanishes": true,
+    "jet_remainder_second_vanishes": true,
+    "jet_remainder_value_vanishes": true,
+    "jet_retraction_is_idempotent": true,
+    "jet_retraction_is_natural_on_counterterms": true,
+    "jet_retraction_is_natural_on_remainders": true,
+    "jet_retraction_kills_counterterm_space": true,
+    "measure_normalization_changes_only_zero_jet": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "odd_gaussian_pushforward_shifts_hessian": true,
+    "odd_gaussian_pushforward_shifts_tadpole": true,
+    "physical_action_contract_rejects_repair_promotion": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "pointed_retraction_naturality_newly_closed": true,
+    "relative_T35_remainder_executes": true,
+    "relative_remainder_reduction_newly_closed": true,
+    "second_jet_matching_executes": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_lock_claim_is_T36": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "target_remainder_jet_vanishes": true,
+    "theorem_rejects_physical_promotion": true,
+    "theorem_states_naturality_boundary": true,
+    "theorem_states_three_certificates": true
+  },
+  "claim_id": "CBF.T36",
+  "date": "2026-08-30",
+  "frontier_delta": "CBF.T36 proves that T35's subtraction is the unique natural retraction once a pointed quantum two-jet and the even radial counterterm class are selected. Exact finite Gaussian witnesses prove that ordinary action descent and BV/Gaussian pushforward do not preserve the tadpole or Hessian, while measure normalization changes the value independently. The remaining physical selector is therefore exactly QJ1 tadpole protection, QJ2 normalized Hessian intertwining and QJ0 determinant-line/gravitational normalization. Given QJ1/QJ2 the relative T35 remainder is already unique; no current upper action proves those certificates, so physical acceptance remains unchanged.",
+  "gaussian_pushforward_no_go": {
+    "even_coupling": {
+      "effective_loop": "(1/2)log(1+g x^2)",
+      "finite_gaussian_pushforward_exact": true,
+      "fixed_point_preserved": true,
+      "g": "1",
+      "hessian_preserved": false,
+      "jet_at_zero": [
+        "0",
+        "0",
+        "1"
+      ],
+      "reflection_symmetry_preserved": true,
+      "upper_action": "S0(x)+(1/2)(1+g x^2)y^2"
+    },
+    "measure_normalization": {
+      "C": "7/5",
+      "effective_action_jet_shift": [
+        "7/5",
+        "0",
+        "0"
+      ],
+      "equations_and_hessian_unchanged": true,
+      "fiber_measure_multiplier": "exp(-C)",
+      "gravitational_vacuum_energy_unchanged": false,
+      "normalized_nongravitational_correlators_unchanged": true
+    },
+    "odd_coupling": {
+      "effective_loop": "(1/2)log(1+2g x)",
+      "finite_gaussian_pushforward_exact": true,
+      "fixed_point_preserved": false,
+      "g": "1",
+      "hessian_preserved": false,
+      "jet_at_zero": [
+        "0",
+        "1",
+        "-2"
+      ],
+      "upper_action": "S0(x)+(1/2)(1+2g x)y^2"
+    }
+  },
+  "matching_clause_classification": {
+    "QJ0": {
+      "condition": "Gamma(H)=S_base(H)",
+      "possible_source": "normalized partition function, determinant-line trivialization or gravitational action",
+      "role": "pointed determinant-line or gravitational vacuum normalization",
+      "selected_by_existing_sources": false
+    },
+    "QJ0_required_for_absolute_gravitational_action": true,
+    "QJ1": {
+      "condition": "d Gamma(H)=0",
+      "possible_source": "Ward identity, background equation or nonrenormalization theorem",
+      "role": "quantum fixed-point or tadpole protection",
+      "selected_by_existing_sources": false
+    },
+    "QJ1_QJ2_suffice_for_relative_nongravitational_action": true,
+    "QJ2": {
+      "condition": "I_H^* Hess Gamma(H) I_H=H_cl",
+      "possible_source": "selected kinetic metric plus Hessian Ward/nonrenormalization theorem",
+      "role": "normalized Hessian intertwining",
+      "selected_by_existing_sources": false
+    },
+    "certificate_count": 3,
+    "existing_upper_action_selects_full_rule": false,
+    "these_are_scalar_fit_parameters": false
+  },
+  "naturality": {
+    "conclusion": "R_K T=T R_H",
+    "hessian_is_tensorially_covariant": true,
+    "intertwining_conditions": [
+      "T(C_H)=C_K",
+      "j_K T=T_J j_H"
+    ],
+    "jet_transport": "diag(1,a^-1,a^-2)",
+    "numeric_hessian_equality_requires_selected_tangent_isometry": true,
+    "physical_wavefunction_normalization_selected": false,
+    "radial_scaling": "u=a h, (T_a f)(u)=f(u/a), K=aH"
+  },
+  "parameter_ledger": {
+    "counterterm_freedom_after_QJ0_QJ1_QJ2": 0,
+    "counterterm_freedom_after_QJ1_QJ2": 1,
+    "counterterm_freedom_modulo_constants_after_QJ1_QJ2": 0,
+    "new_continuous_physical_parameters": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0,
+    "physical_selection_certificates_currently_accepted": 0,
+    "typed_selection_certificates_required": 3
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "QME_Ward_execution_closed": false,
+    "bare_action_lane_available_at_declared_tier": true,
+    "classical_repair_germ_available": true,
+    "full_closure_jet_matching_selected": false,
+    "full_renormalized_QFT_vacuum_closed": false,
+    "generic_pushforward_jet_preservation_rejected": true,
+    "physical_QJ0_vacuum_normalization_closed": false,
+    "physical_QJ1_tadpole_protection_closed": false,
+    "physical_QJ2_tangent_Hessian_intertwiner_closed": false,
+    "pointed_jet_retraction_mathematics_closed": true,
+    "selected_external_BV_operator_domain_closed": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "pointed_jet_retraction": {
+    "action_germ_space": "A_H",
+    "counterterm_space": "C_even=span{1,h^2,h^4}",
+    "exact_witness": {
+      "jet_transport_diagonal": [
+        "1",
+        "1/2",
+        "1/4"
+      ],
+      "numeric_hessian_equality_requires_unit_scale": false,
+      "pure_counterterm_retracts_to_zero": true,
+      "radial_scale": "2",
+      "source_16H3": "54",
+      "source_counterterm_coefficients_1_h2_h4": [
+        "14735/256",
+        "-1633/32",
+        "31721/432"
+      ],
+      "source_jet": [
+        "10063/32",
+        "13411/16",
+        "3761/2"
+      ],
+      "source_jet_matrix_determinant": "54",
+      "source_point": "3/2",
+      "source_polynomial_coefficients_ascending": [
+        "5",
+        "7",
+        "11",
+        "13",
+        "17",
+        "19"
+      ],
+      "source_remainder_coefficients_ascending": [
+        "-13455/256",
+        "7",
+        "1985/32",
+        "13",
+        "-24377/432",
+        "19"
+      ],
+      "source_remainder_jet": [
+        "0",
+        "0",
+        "0"
+      ],
+      "source_retracted_twice_equals_source_remainder": true,
+      "target_counterterm_coefficients_1_u2_u4": [
+        "14735/256",
+        "-1633/128",
+        "31721/6912"
+      ],
+      "target_counterterm_equals_scaled_source": true,
+      "target_point": "3",
+      "target_remainder_equals_scaled_source": true,
+      "target_remainder_jet": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "idempotent": true,
+    "image": "ker j_H^2",
+    "jet_kernel": "m_H^3",
+    "jet_map": "j_H^2(f)=(f(H),f'(H),f''(H))",
+    "jet_matrix": "[[1,H^2,H^4],[0,2H,4H^3],[0,2,12H^2]]",
+    "jet_matrix_determinant": "16H^3",
+    "kernel": "C_even",
+    "physical_matching_condition_selected_by_this_algebra": false,
+    "retraction": "R_H=I-(j_H^2|C_even)^(-1)j_H^2",
+    "unique_for_positive_H": true
+  },
+  "schema": "boe.mtt.pointed-closure-germ-quantum-jet-matching.v1",
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "contract_schema_sha256": "d9b2b5bdd1e827b0df82e4531d2bca61b99f26896f2fabdde42ba79b55b55047",
+    "external_context": [
+      {
+        "role": "finite-dimensional BV integration and homological pushforward",
+        "url": "https://arxiv.org/abs/0812.0464"
+      },
+      {
+        "role": "BV-BFV pushforward compatible with cutting and gluing",
+        "url": "https://arxiv.org/abs/1507.01221"
+      },
+      {
+        "role": "BV effective renormalization with symmetry up to homotopy",
+        "url": "https://arxiv.org/abs/0706.1533"
+      },
+      {
+        "role": "finite local covariant renormalization ambiguities",
+        "url": "https://arxiv.org/abs/gr-qc/0103074"
+      }
+    ],
+    "handoff_id": "f34d2265-2c60-46e5-ac7a-df87d740b96c",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "3c226cabe721ffa3f24e1a3c4df6551106e8beaf",
+      "mtt-preprojection-repair-calculus": "dd64c50ae6633a1f0d91be2b13f5d5fc9c6efc3d",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 8,
+    "source_lock_sha256": "52c6f244c209fb488946018fecd4d69a0645ae11abaf0391fe060c5eedd2c28f",
+    "source_root_payload": {
+      "claim_id": "CBF.T36",
+      "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+      "repositories": {
+        "mtt-causal-base-constraint-fiber": "3c226cabe721ffa3f24e1a3c4df6551106e8beaf",
+        "mtt-preprojection-repair-calculus": "dd64c50ae6633a1f0d91be2b13f5d5fc9c6efc3d",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "sources": [
+        {
+          "path": "frozen_source_four_dimensional_fermion_pushforward.packet.json",
+          "sha256": "7494875dae5fb2b8fc1240c4f43fcc1251ed153fbdac1801a4feea0d3566a6bc"
+        },
+        {
+          "path": "same_root_state_repair_heat_profile_radial_values.packet.json",
+          "sha256": "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6"
+        },
+        {
+          "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_REPAIR_JET_TO_PERTURBATIVE_GRAPH_FUNCTOR_THEOREM_v1.md",
+          "sha256": "dd4acbb95e63cdd5c5203352f9ab2593628d98d3c6fa3ce9c4da2290f84995c9"
+        },
+        {
+          "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+          "sha256": "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516"
+        },
+        {
+          "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+          "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43"
+        },
+        {
+          "path": "../mtt-preprojection-repair-calculus/docs/PHYSICAL_ACTION_BRIDGE_CONTRACT.md",
+          "sha256": "ab7fa0936b4b8f650ee0996e974476684367305a5b45ffbaea5c1aadf74e4336"
+        },
+        {
+          "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_closureshadowgaugeactionaxiomderivation_or_explicitadoptionandheldoutvalidation_v1.md",
+          "sha256": "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440"
+        },
+        {
+          "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_finitematchingcompletenessfromunifiedaction_or_explicitboundaryadoptionandheldoutvalidation_v1.md",
+          "sha256": "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36"
+        }
+      ]
+    },
+    "source_root_sha256": "fc349de9055f9449f5a66039c662b19daba8bb2bf148c43788f3c9a7b3a348c2",
+    "theorem_sha256": "ba5a3c10bc3fe374126903ba58b254c35f12bb7398bb1c2746d0ac2ac5d21e0d"
+  },
+  "status": "exact pointed two-jet retraction and naturality theorem; exact no-go against automatic jet preservation by Gaussian/BV pushforward; T35 matching reduced to QJ0/QJ1/QJ2 with physical selection open",
+  "t35_reduction": {
+    "QJ0_solution": "delta_Omega=(1/2)kappa_F q4_* H^4",
+    "delta_Omega_after_QJ1_QJ2": "free additive constant",
+    "first_second_counterterms": {
+      "delta_lambda": "kappa_F[L_H+(3/2)q4_*]",
+      "delta_m2": "-2 kappa_F q4_* H^2"
+    },
+    "normalized_higher_jets": {
+      "fourth": -64,
+      "third": -16
+    },
+    "numerical_execution": {
+      "H_over_Lambda": "1.3211016293754684937241140791004495525427156531826718660431761370691619814324325",
+      "T35_delta_Omega_per_unit_kappa": "25.166402030762203107652489949813027914755455378748843861986875432483969254473580",
+      "delta_Omega_identity_residual": "6.319138628E-79",
+      "derived_QJ0_delta_Omega_per_unit_kappa": "25.1664020307622031076524899498130279147554553787488438619868754324839692544735806319138628",
+      "first_jet_residual": "2E-88",
+      "maximum_relative_formula_residual": "1.11E-87",
+      "q4_star": "16.523658588392582678814093766176385135417867198004857604361530607617747174345380",
+      "sample_records": [
+        {
+          "c_scheme": "-0.4",
+          "delta_Omega_over_Lambda4": "0",
+          "h_over_H": "0.31",
+          "mu_over_Lambda": "0.83",
+          "relative_correction": "1.22677346374357447316847775690823958099978978746206601321509474836467847613094489352879936",
+          "residual": "5E-89",
+          "universal_remainder": "1.22677346374357447316847775690823958099978978746206601321509474836467847613094489352879931"
+        },
+        {
+          "c_scheme": "0.2",
+          "delta_Omega_over_Lambda4": "1.7",
+          "h_over_H": "0.79",
+          "mu_over_Lambda": "1.37",
+          "relative_correction": "0.07032649991807407894023431756330937212571388498504351783871739756808388811393133588496358",
+          "residual": "1.0E-90",
+          "universal_remainder": "0.0703264999180740789402343175633093721257138849850435178387173975680838881139313358849635810"
+        },
+        {
+          "c_scheme": "1.5",
+          "delta_Omega_over_Lambda4": "-0.3",
+          "h_over_H": "1.00",
+          "mu_over_Lambda": "2.11",
+          "relative_correction": "0E-89",
+          "residual": "0E-170",
+          "universal_remainder": "0E-170"
+        },
+        {
+          "c_scheme": "-1.1",
+          "delta_Omega_over_Lambda4": "4.2",
+          "h_over_H": "1.62",
+          "mu_over_Lambda": "0.66",
+          "relative_correction": "-3.7987083696728998640425920181783640930564159090106838832110208077196176569034906044994117",
+          "residual": "1.11E-87",
+          "universal_remainder": "-3.79870836967289986404259201817836409305641590901068388321102080771961765690349060449941059"
+        }
+      ],
+      "second_jet_residual": "0E-88",
+      "test_kappa_F": "0.071"
+    },
+    "relative_remainder": "kappa_F q4_*[h^4(log(H^2/h^2)+3/2)-2H^2h^2+H^4/2]",
+    "relative_remainder_equals_T35": true,
+    "unique_absolute_action_given_QJ0_QJ1_QJ2": true,
+    "unique_relative_action_given_QJ1_QJ2": true
+  }
+}

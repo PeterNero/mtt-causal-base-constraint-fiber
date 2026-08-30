@@ -1153,3 +1153,26 @@ The external BV Laplacian/domain, determinant orientation, RG transport and
 pole map remain open. T35 passes `58/58` builder checks, `86/86` independent
 checks and 11 focused tests. The canonical repository suite now passes 222
 unit tests.
+
+The thirty-sixth theorem determines exactly how much of that matching rule
+follows from action/projection naturality. For `H>0`, the zero-through-second
+jet map on `span{1,h^2,h^4}` has determinant `16H^3`, so it defines a unique
+idempotent retraction onto action germs whose value, slope and Hessian vanish
+at `H`. This retraction is natural under every pointed field transformation
+that intertwines the jet and counterterm spaces.
+
+That algebra does not make the matching condition physical. Exact finite
+Gaussian pushforwards show that a natural fiber integral can shift both the
+tadpole and Hessian; reflection symmetry can protect the tadpole while still
+shifting the Hessian; and fiber-measure normalization shifts only the action
+value. The physical selector is therefore reduced to three typed
+certificates: `QJ1` tadpole protection, `QJ2` normalized Hessian
+intertwining, and `QJ0` determinant-line or gravitational vacuum
+normalization.
+
+Given `QJ1+QJ2`, the relative one-loop action is already unique: subtracting
+its value at `H` reproduces the complete T35 universal remainder, independent
+of `delta_Omega`. `QJ0` fixes that final constant for an absolute gravitational
+action. None of these certificates is currently selected by the physical q79
+BV action. T36 passes `55/55` builder checks, `80/80` independent checks and
+10 focused tests. The canonical repository suite now passes 232 unit tests.

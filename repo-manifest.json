@@ -143,6 +143,12 @@
     "unique value-slope-Hessian preserving closure-jet subtraction",
     "scheme-independent universal one-loop remainder after closure-jet matching",
     "exact conditional third- and fourth-radial-vertex shifts",
+    "exact pointed two-jet sequence for the even radial counterterm class",
+    "unique natural value-slope-Hessian jet retraction",
+    "exact radial-rescaling covariance and tangent-normalization boundary",
+    "finite Gaussian no-go against automatic tadpole and Hessian preservation",
+    "exact QJ0-QJ1-QJ2 quantum matching-certificate classification",
+    "unique relative T35 remainder conditional on QJ1 and QJ2",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -208,6 +214,10 @@
     "proof that the frozen T30 source coordinate is an RG fixed point",
     "selection of a physical external BV Laplacian, compact-resolvent domain or determinant-line orientation",
     "promotion of the T35 flat closure-jet-matched one-loop action to a global physical vacuum",
+    "derivation of QJ1 quantum tadpole protection from generic BV pushforward",
+    "derivation of QJ2 physical tangent normalization from classical repair covariance",
+    "selection of QJ0 determinant-line or gravitational vacuum normalization",
+    "automatic preservation of a pointed action two-jet by action descent or the QME",
     "identification of the three finite determinant branches with measured fermion generations",
     "derivation of a dimensionful mass from the finite determinant without a physical scale primitive",
     "identification of classical projective pressure normalization with a measured physical scale",
@@ -264,7 +274,8 @@
     "ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md",
     "PreprojectionFiniteSourceFreezeAndConditionalRadialBranchValueTheorem_v1.md",
     "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md",
-    "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md"
+    "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md",
+    "PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -301,7 +312,8 @@
     "product_dirac_joint_radial_source_modulus_action.packet.json",
     "preprojection_finite_source_freeze_radial_values.packet.json",
     "same_root_state_repair_heat_profile_radial_values.packet.json",
-    "frozen_source_four_dimensional_fermion_pushforward.packet.json"
+    "frozen_source_four_dimensional_fermion_pushforward.packet.json",
+    "pointed_closure_germ_quantum_jet_matching.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -338,7 +350,8 @@
     "python build_product_dirac_joint_radial_source_modulus_action.py",
     "python build_preprojection_finite_source_freeze_radial_values.py",
     "python build_same_root_state_repair_heat_profile_radial_values.py",
-    "python build_frozen_source_four_dimensional_fermion_pushforward.py"
+    "python build_frozen_source_four_dimensional_fermion_pushforward.py",
+    "python build_pointed_closure_germ_quantum_jet_matching.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -370,7 +383,8 @@
     "product_dirac_joint_radial_source_modulus_action_contract.schema.json",
     "preprojection_finite_source_freeze_radial_values_contract.schema.json",
     "same_root_state_repair_heat_profile_radial_values_contract.schema.json",
-    "frozen_source_four_dimensional_fermion_pushforward_contract.schema.json"
+    "frozen_source_four_dimensional_fermion_pushforward_contract.schema.json",
+    "pointed_closure_germ_quantum_jet_matching_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

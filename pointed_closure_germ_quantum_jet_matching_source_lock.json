@@ -1,0 +1,74 @@
+{
+  "schema": "boe.mtt.pointed-closure-germ-quantum-jet-matching-source-lock.v1",
+  "claim_id": "CBF.T36",
+  "date": "2026-08-30",
+  "handoff_id": "f34d2265-2c60-46e5-ac7a-df87d740b96c",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "3c226cabe721ffa3f24e1a3c4df6551106e8beaf",
+    "mtt-preprojection-repair-calculus": "dd64c50ae6633a1f0d91be2b13f5d5fc9c6efc3d",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "frozen_source_four_dimensional_fermion_pushforward.packet.json",
+      "sha256": "7494875dae5fb2b8fc1240c4f43fcc1251ed153fbdac1801a4feea0d3566a6bc",
+      "role": "CBF.T35 conditional value-slope-Hessian subtraction and fixed-source one-loop determinant"
+    },
+    {
+      "path": "same_root_state_repair_heat_profile_radial_values.packet.json",
+      "sha256": "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+      "role": "CBF.T34 selected internal pointed radial coordinate and repair heat profile"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_REPAIR_JET_TO_PERTURBATIVE_GRAPH_FUNCTOR_THEOREM_v1.md",
+      "sha256": "dd4acbb95e63cdd5c5203352f9ab2593628d98d3c6fa3ce9c4da2290f84995c9",
+      "role": "H4-T8 exact repair-jet covariance and explicit renormalization boundary"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+      "sha256": "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+      "role": "H4-T9 separation of repair Hessian, signed action and physical BV action"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "H4-T10 exact bare cyclic-action descent with QME and renormalization open"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/docs/PHYSICAL_ACTION_BRIDGE_CONTRACT.md",
+      "sha256": "ab7fa0936b4b8f650ee0996e974476684367305a5b45ffbaea5c1aadf74e4336",
+      "role": "current guard against promoting repair or cotangent data to a selected physical BV action"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_closureshadowgaugeactionaxiomderivation_or_explicitadoptionandheldoutvalidation_v1.md",
+      "sha256": "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440",
+      "role": "A84 fixed-point Hessian heat-shadow action tier and finite-matching boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_finitematchingcompletenessfromunifiedaction_or_explicitboundaryadoptionandheldoutvalidation_v1.md",
+      "sha256": "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36",
+      "role": "A85 bare-action completeness and explicit finite renormalization-scheme freedom"
+    }
+  ],
+  "boundary": {
+    "pointed_jet_retraction_naturality_before": false,
+    "pointed_jet_retraction_naturality_after": true,
+    "generic_gaussian_pushforward_jet_preservation_no_go_before": false,
+    "generic_gaussian_pushforward_jet_preservation_no_go_after": true,
+    "relative_T35_remainder_unique_given_first_second_matching_before": false,
+    "relative_T35_remainder_unique_given_first_second_matching_after": true,
+    "existing_upper_action_selects_tadpole_protection": false,
+    "existing_upper_action_selects_physical_tangent_normalization": false,
+    "existing_upper_action_selects_vacuum_energy_normalization": false,
+    "full_closure_jet_matching_selected_by_upper_MTT": false,
+    "selected_external_BV_operator_domain": false,
+    "full_renormalized_QFT_vacuum_selected": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

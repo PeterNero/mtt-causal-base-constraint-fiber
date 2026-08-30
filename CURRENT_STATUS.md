@@ -1199,3 +1199,38 @@ determinant and source RG flow remain open. T35 passes `58/58` builder checks,
 `86/86` independent checks and 11 focused tests. The canonical repository
 suite passes 222 unit tests. Physical acceptance remains `0/3` packets and
 `0/7` rows.
+
+`PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md`
+(`CBF.T36`) resolves the mathematical part of T35's scheme-selection
+question. The pointed two-jet map
+
+```text
+j_H^2 f=(f(H),f'(H),f''(H))
+```
+
+restricts to an isomorphism on `span{1,h^2,h^4}` because its determinant is
+`16H^3`. It therefore supplies the unique natural retraction
+
+```text
+R_H=I-(j_H^2|C_even)^(-1)j_H^2
+```
+
+onto germs vanishing through second order at `H`. The construction is
+idempotent and covariant under radial rescaling; numerical Hessian equality
+additionally requires a selected tangent isometry or wave-function
+normalization.
+
+Three exact finite Gaussian witnesses prove that ordinary action descent or
+BV pushforward does not select this retraction. A retained/eliminated coupling
+can shift the tadpole and Hessian; reflection symmetry removes the tadpole but
+not the Hessian shift; and fiber-measure normalization changes only the
+zero-jet. Existing A84/A85 and H4-T8/T9/T10 therefore do not derive the full
+quantum matching rule.
+
+The remaining selector is exactly `QJ1` quantum tadpole protection, `QJ2`
+normalized Hessian intertwining and `QJ0` determinant-line/gravitational
+vacuum normalization. Given `QJ1+QJ2`, the relative T35 correction is already
+unique and equals its universal remainder; `QJ0` fixes only the absolute
+constant. T36 passes `55/55` builder checks, `80/80` independent checks and 10
+focused tests. The canonical suite passes 232 unit tests. Physical acceptance
+remains `0/3` packets and `0/7` rows.

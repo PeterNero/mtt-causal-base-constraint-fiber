@@ -41,6 +41,8 @@ paper, note, packet name or search hit.
    `9bebcb6e-13e2-406c-be9a-993c1dbf964a`;
    the frozen-source four-dimensional fermion-pushforward and closure-jet
    renormalization handoff is `02dfc128-dc5e-4383-b220-ce6c91671a55`;
+   the pointed closure-germ and quantum jet-matching selection-boundary
+   handoff is `f34d2265-2c60-46e5-ac7a-df87d740b96c`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is
