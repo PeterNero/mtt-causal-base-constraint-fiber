@@ -137,6 +137,12 @@
     "unique positive Laplace measure for the selected exponential profile",
     "selected proper-time moment ratio at the internal checkpoint tier",
     "promoted nonzero cutoff-unit radial values at the declared same-root tier",
+    "exact finite-regulator source-freeze base change for Grassmann and Gaussian/BV pushforwards",
+    "exact fixed-source flat four-dimensional radial fermion determinant",
+    "complete three-coefficient gauge-even radial counterterm orbit",
+    "unique value-slope-Hessian preserving closure-jet subtraction",
+    "scheme-independent universal one-loop remainder after closure-jet matching",
+    "exact conditional third- and fourth-radial-vertex shifts",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -198,6 +204,10 @@
     "interpretation of the T34 cutoff-unit values as observed particle pole masses",
     "unconditional derivation of the additive physical-clock lift from upper MTT",
     "selection of an absolute SI cutoff scale by the T34 heat-profile theorem",
+    "selection of the closure-jet matching prescription by upper MTT",
+    "proof that the frozen T30 source coordinate is an RG fixed point",
+    "selection of a physical external BV Laplacian, compact-resolvent domain or determinant-line orientation",
+    "promotion of the T35 flat closure-jet-matched one-loop action to a global physical vacuum",
     "identification of the three finite determinant branches with measured fermion generations",
     "derivation of a dimensionful mass from the finite determinant without a physical scale primitive",
     "identification of classical projective pressure normalization with a measured physical scale",
@@ -253,7 +263,8 @@
     "FourDimensionalFermionDeterminantSchemeClassificationAndPhysicalValueBoundaryTheorem_v1.md",
     "ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md",
     "PreprojectionFiniteSourceFreezeAndConditionalRadialBranchValueTheorem_v1.md",
-    "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md"
+    "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md",
+    "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -289,7 +300,8 @@
     "four_dimensional_fermion_determinant_scheme_classification.packet.json",
     "product_dirac_joint_radial_source_modulus_action.packet.json",
     "preprojection_finite_source_freeze_radial_values.packet.json",
-    "same_root_state_repair_heat_profile_radial_values.packet.json"
+    "same_root_state_repair_heat_profile_radial_values.packet.json",
+    "frozen_source_four_dimensional_fermion_pushforward.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -325,7 +337,8 @@
     "python build_four_dimensional_fermion_determinant_scheme_classification.py",
     "python build_product_dirac_joint_radial_source_modulus_action.py",
     "python build_preprojection_finite_source_freeze_radial_values.py",
-    "python build_same_root_state_repair_heat_profile_radial_values.py"
+    "python build_same_root_state_repair_heat_profile_radial_values.py",
+    "python build_frozen_source_four_dimensional_fermion_pushforward.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -356,7 +369,8 @@
     "four_dimensional_fermion_determinant_scheme_classification_contract.schema.json",
     "product_dirac_joint_radial_source_modulus_action_contract.schema.json",
     "preprojection_finite_source_freeze_radial_values_contract.schema.json",
-    "same_root_state_repair_heat_profile_radial_values_contract.schema.json"
+    "same_root_state_repair_heat_profile_radial_values_contract.schema.json",
+    "frozen_source_four_dimensional_fermion_pushforward_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

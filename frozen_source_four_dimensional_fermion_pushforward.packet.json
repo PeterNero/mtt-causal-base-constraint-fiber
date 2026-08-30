@@ -1,0 +1,377 @@
+{
+  "check_summary": {
+    "failed": [],
+    "passed": 58,
+    "total": 58
+  },
+  "checks": {
+    "H_matches_T34": true,
+    "T30_source_is_exact": true,
+    "T31_boundary_is_exact": true,
+    "T32_radial_action_is_exact": true,
+    "T33_source_freeze_is_exact": true,
+    "T34_values_are_exact_at_declared_tier": true,
+    "absolute_scale_remains_open": true,
+    "base_change_newly_closed": true,
+    "conditional_matching_uniqueness_newly_closed": true,
+    "contract_schema_is_exact": true,
+    "counterterm_Hessian_condition_is_exact": true,
+    "counterterm_orbit_newly_closed": true,
+    "counterterm_slope_condition_is_exact": true,
+    "counterterm_value_condition_is_exact": true,
+    "determinant_orientation_remains_open": true,
+    "external_BV_operator_remains_open": true,
+    "external_BV_operator_remains_open_in_source": true,
+    "fixed_source_radial_determinant_newly_closed": true,
+    "full_QFT_vacuum_remains_open": true,
+    "global_determinant_remains_open": true,
+    "grassmann_base_change_is_exact": true,
+    "handoff_is_pinned": true,
+    "held_out_observable_remains_open": true,
+    "internal_projector_nonpromotion_is_preserved": true,
+    "kernel_model_is_pinned": true,
+    "matching_matrix_is_invertible": true,
+    "matching_rule_selection_remains_open": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "precision_transport_remains_open": true,
+    "q4_decimal_matches_exact": true,
+    "q4_star_is_exact": true,
+    "qft_regulator_certificate_passes": true,
+    "scheme_cancellation_is_numerically_exact": true,
+    "schur_base_change_is_exact": true,
+    "schur_high_block_is_invertible": true,
+    "sector_map_remains_open": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "t_RG_fixed_point_remains_open": true,
+    "t_star_matches_T30": true,
+    "theorem_is_nonempty": true,
+    "universal_remainder_first_jet_is_zero": true,
+    "universal_remainder_fourth_jet_is_minus64": true,
+    "universal_remainder_is_numerically_exact": true,
+    "universal_remainder_second_jet_is_zero": true,
+    "universal_remainder_third_jet_is_minus16": true,
+    "universal_remainder_value_jet_is_zero": true
+  },
+  "claim_id": "CBF.T35",
+  "closure_jet_matching": {
+    "T34_radial_coordinate_preserved_at_one_loop_in_this_scheme": true,
+    "T34_radial_curvature_preserved_at_one_loop_in_this_scheme": true,
+    "conditions": [
+      "Delta V(H)=0",
+      "Delta V'(H)=0",
+      "Delta V''(H)=0"
+    ],
+    "independent_of": [
+      "mu",
+      "c_scheme",
+      "L4_*"
+    ],
+    "interpretation": "preserve selected lower action germ through order two",
+    "jets_at_x_equal_one": {
+      "first": 0,
+      "fourth": -64,
+      "second": 0,
+      "third": -16,
+      "value": 0
+    },
+    "normalized_shape": "rho(x)=x^4(3/2-log(x^2))-2x^2+1/2",
+    "physical_scheme_promotion_claimed": false,
+    "selected_by_upper_MTT": false,
+    "unique_given_conditions": true,
+    "universal_remainder": "kappa_F q4_*[h^4(log(H^2/h^2)+3/2)-2H^2h^2+H^4/2]"
+  },
+  "date": "2026-08-30",
+  "fixed_source_four_dimensional_determinant": {
+    "L4_star": "sum_a sigma_a^4 log(sigma_a^2)",
+    "branch_factors": {
+      "-2": {
+        "exact_coefficients": {
+          "rational": "5/6",
+          "sqrt13": "1/6"
+        },
+        "expression": "(5+sqrt(13))/6",
+        "interval": {
+          "lower_decimal": "1.434258545910664882186536877912",
+          "lower_exact": "1792823182388331102733171097389686655469/1250000000000000000000000000000000000000",
+          "upper_decimal": "1.434258545910664882186536877912",
+          "upper_exact": "86055512754639892931192212674704959462513/60000000000000000000000000000000000000000"
+        }
+      },
+      "-4": {
+        "exact_coefficients": {
+          "rational": "2/3",
+          "sqrt13": "1/3"
+        },
+        "expression": "(2+sqrt(13))/3",
+        "interval": {
+          "lower_decimal": "1.868517091821329764373073755823",
+          "lower_exact": "1167823182388331102733171097389686655469/625000000000000000000000000000000000000",
+          "upper_decimal": "1.868517091821329764373073755823",
+          "upper_exact": "56055512754639892931192212674704959462513/30000000000000000000000000000000000000000"
+        }
+      },
+      "2": {
+        "exact_coefficients": {
+          "rational": "7/6",
+          "sqrt13": "-1/6"
+        },
+        "expression": "(7-sqrt(13))/6",
+        "interval": {
+          "lower_decimal": "0.565741454089335117813463122088",
+          "lower_exact": "33944487245360107068807787325295040537487/60000000000000000000000000000000000000000",
+          "upper_decimal": "0.565741454089335117813463122088",
+          "upper_exact": "707176817611668897266828902610313344531/1250000000000000000000000000000000000000"
+        }
+      }
+    },
+    "conditional_external_assumptions": [
+      "flat Euclidean four-dimensional spectral chart",
+      "constant radial field h",
+      "dimensionally regulated one-loop fermion determinant",
+      "fixed source t=t_*"
+    ],
+    "fixed_source_flat_radial_determinant_closed": true,
+    "flat_one_loop_formula": "V_F(h)=-kappa_F h^4[q4_* log(h^2/mu^2)+L4_*-c_scheme q4_*]",
+    "global_physical_determinant_closed": false,
+    "q4_star": {
+      "exact_coefficients": {
+        "rational": "356/27",
+        "sqrt13": "25/27"
+      },
+      "expression": "(356+25sqrt(13))/27",
+      "interval": {
+        "lower_decimal": "16.523658588392582678814093766176",
+        "lower_exact": "3717823182388331102733171097389686655469/225000000000000000000000000000000000000",
+        "upper_decimal": "16.523658588392582678814093766176",
+        "upper_exact": "178455512754639892931192212674704959462513/10800000000000000000000000000000000000000"
+      }
+    },
+    "source_coordinate": {
+      "exact_coefficients": {
+        "rational": "1/6",
+        "sqrt13": "-1/6"
+      },
+      "expression": "(1-sqrt(13))/6",
+      "interval": {
+        "lower_decimal": "-0.434258545910664882186536877912",
+        "lower_exact": "-26055512754639892931192212674704959462513/60000000000000000000000000000000000000000",
+        "upper_decimal": "-0.434258545910664882186536877912",
+        "upper_exact": "-542823182388331102733171097389686655469/1250000000000000000000000000000000000000"
+      }
+    },
+    "t_varied_in_lower_action": false
+  },
+  "frontier_delta": "CBF.T35 proves that fixed-source evaluation commutes with every finite Grassmann determinant and Gaussian/BV Schur pushforward, so the T30/T34 source coordinate is not re-extremized at one matching scale. It executes the complete flat four-dimensional fixed-source radial determinant and classifies the three gauge-even local counterterms. Requiring preservation of the selected value, slope and Hessian fixes all three uniquely and emits a mu-, scheme- and branch-log-independent remainder with exact third/fourth jets -16 and -64. The matching requirement, external BV operator/domain, determinant orientation and beta_t remain open, so this is not a physical renormalized vacuum or pole-mass promotion.",
+  "numerical_execution": {
+    "H_over_Lambda": "1.3211016293754684937241140791004495525427156531826718660431761370691619814324325",
+    "H_squared_over_Lambda_squared": "1.7453095151385177185351833627423326105972038607898213139211878958779922997321935",
+    "L4_star": "18.176066017544062361087042190541135501620313031067563880808957659162441858734842",
+    "MSbar_mu_equals_Lambda_per_unit_kappa": {
+      "delta_Omega_over_Lambda4": "25.166402030762203107652489949813027914755455378748843861986875432483969254473580",
+      "delta_lambda": "27.378618796640755205528363179817484496677926703979373100574185483012425714240522",
+      "delta_m2_over_Lambda2": "-57.677797118443725188553711550295305100654425517725575708086889110399918032625748",
+      "fourth_vertex_shift": "-1057.5141496571252914441020010352886486667435006723108866791379588875358191581043",
+      "third_vertex_shift_over_Lambda": "-349.27091654991031471190027512881164041203723941862506902745582141783249592994709"
+    },
+    "determinant_normalization_candidates": {
+      "complex_determinant": {
+        "delta_Omega_over_Lambda4": "2.5498896417757594062541426341643663278491832426327065612695927765039864147134620",
+        "delta_lambda": "2.7740340629679987264832734987851426367163488325242335364965740955075116245593030",
+        "delta_m2_over_Lambda2": "-5.8439826739233370178845151639232064424085070149092893649215566378862474670920958",
+        "fourth_vertex_shift": "-107.14858536178026106946328017798887527649891573576105395827498242645692811041242",
+        "kappa_F": "0.10132118364233777144387946320972763890435877467224654884560907009984499272331742",
+        "third_vertex_shift_over_Lambda": "-35.388542676681093797342628808970970549699138888892878418659675446885864347405505"
+      },
+      "pfaffian_half": {
+        "delta_Omega_over_Lambda4": "1.2749448208878797031270713170821831639245916213163532806347963882519932073567310",
+        "delta_lambda": "1.3870170314839993632416367493925713183581744162621167682482870477537558122796515",
+        "delta_m2_over_Lambda2": "-2.9219913369616685089422575819616032212042535074546446824607783189431237335460480",
+        "fourth_vertex_shift": "-53.574292680890130534731640088994437638249457867880526979137491213228464055206209",
+        "kappa_F": "0.050660591821168885721939731604863819452179387336123274422804535049922496361658711",
+        "third_vertex_shift_over_Lambda": "-17.694271338340546898671314404485485274849569444446439209329837723442932173702753"
+      }
+    },
+    "matching_matrix_determinant_over_Lambda3": "36.891699907424074453337877770633229741341092832540023371911594660725928485351042",
+    "maximum_scheme_residual": "4E-77",
+    "maximum_universal_formula_residual": "3.7E-77",
+    "q4_star": "16.523658588392582678814093766176385135417867198004857604361530607617747174345380",
+    "scheme_comparison_samples_h_over_H": [
+      "0.25",
+      "0.8",
+      "1.0",
+      "1.7"
+    ],
+    "sigma": {
+      "-2": "1.4342585459106648821865368779117493243752160956408743687850755093711944913821684",
+      "-4": "1.8685170918213297643730737558234986487504321912817487375701510187423889827643368",
+      "2": "0.5657414540893351178134631220882506756247839043591256312149244906288055086178316"
+    },
+    "sqrt13": "3.6055512754639892931192212674704959462512965738452462127104530562271669482930104"
+  },
+  "parameter_ledger": {
+    "closure_jet_matching_rule_selected": false,
+    "counterterm_coefficients_after_matching_rule": 0,
+    "inherited_universal_metrology_primitives": 1,
+    "new_continuous_physical_parameters": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0,
+    "unresolved_discrete_determinant_normalizations": 2
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "B_SM_02_closed": false,
+    "absolute_scale_closed": false,
+    "closure_jet_matching_rule_selected_by_upper_MTT": false,
+    "conditional_closure_jet_subtraction_unique": true,
+    "finite_regulator_source_freeze_base_change_closed": true,
+    "fixed_source_flat_4D_radial_determinant_closed": true,
+    "full_renormalized_QFT_vacuum_closed": false,
+    "global_physical_4D_determinant_closed": false,
+    "held_out_observable_closed": false,
+    "loop_RG_threshold_pole_transport_closed": false,
+    "radial_counterterm_orbit_closed": true,
+    "sector_generation_map_closed": false,
+    "selected_external_BV_operator_domain_closed": false,
+    "t_star_RG_invariance_closed": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "radial_counterterm_orbit": {
+    "L_H": "q4_* log(H^2/mu^2)+L4_*-c_scheme q4_*",
+    "allowed_class": "delta_Omega+delta_m2 h^2+delta_lambda h^4",
+    "coefficient_count": 3,
+    "matching_matrix_determinant": "16 H^3",
+    "matching_reference": "H=h_* from CBF.T34",
+    "solutions": {
+      "delta_Omega": "(1/2)kappa_F q4_* H^4",
+      "delta_lambda": "kappa_F[L_H+(3/2)q4_*]",
+      "delta_m2": "-2 kappa_F q4_* H^2"
+    },
+    "unique_for_positive_H": true
+  },
+  "regulator_and_RG_boundary": {
+    "determinant_line_orientation_selected": false,
+    "finite_regulator_base_change_closed": true,
+    "global_Wick_or_direct_Lorentzian_determinant": false,
+    "internal_projector_used_as_spacetime_cutoff": false,
+    "physical_integration_cycle_selected": false,
+    "required_RG_exit": "beta_t(t_*)=0 or an equivalent source-transport naturality theorem",
+    "selected_external_BV_Laplacian_and_domain": false,
+    "t_star_preserved_at_one_matching_scale": true,
+    "t_star_proved_RG_fixed": false
+  },
+  "schema": "boe.mtt.frozen-source-four-dimensional-fermion-pushforward.v1",
+  "source_freeze_base_change": {
+    "BV_scope": "finite-dimensional fiber integration over a fixed Lagrangian",
+    "continuum_regulator_selection_claimed": false,
+    "finite_regulator_base_change_closed": true,
+    "fixed_source_map": "i_s*:F(S x E)->F(E), F(s,phi)|->F(s_*,phi)",
+    "gaussian_identity": "i_s*[A-BC^-1B*]=A_*-B_*C_*^-1B_*^*",
+    "grassmann_identity": "i_s* det M(s)=det M(s_*)",
+    "no_lower_t_equation_generated": true,
+    "regulated_field_split": "E=L direct_sum H",
+    "source_space": "S",
+    "witness": {
+      "B_adjC_B_numerator": "4-3t+3t^2+t^3",
+      "C_determinant": "11+t-t^2",
+      "C_determinant_at_t_star": {
+        "rational": "97/9",
+        "sqrt13_coefficient": "-1/9"
+      },
+      "grassmann_base_change_exact": true,
+      "grassmann_determinant_polynomial": "-2+3t-t^2",
+      "grassmann_direct_at_t_star": {
+        "rational": "-17/9",
+        "sqrt13_coefficient": "-4/9"
+      },
+      "grassmann_matrix": "[[1+t,2],[3,4-t]]",
+      "grassmann_polynomial_at_t_star": {
+        "rational": "-17/9",
+        "sqrt13_coefficient": "-4/9"
+      },
+      "high_block_invertible": true,
+      "schur_base_change_exact": true,
+      "schur_blocks": {
+        "A": "2+t",
+        "B": "[1,t]",
+        "C": "[[3+t,1],[1,4-t]]"
+      },
+      "schur_direct_at_t_star": {
+        "rational": "149/87",
+        "sqrt13_coefficient": "-17/87"
+      },
+      "schur_formula_at_t_star": {
+        "rational": "149/87",
+        "sqrt13_coefficient": "-17/87"
+      }
+    }
+  },
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "contract_schema_sha256": "adebea24efd52449fc80b197279adf5cd95e6291ff3a93886b36f8c5c2355945",
+    "external_context": [
+      {
+        "role": "one-loop corrections remain in the generalized spectral-action class but do not select MTT matching data",
+        "url": "https://arxiv.org/abs/2107.08485"
+      }
+    ],
+    "handoff_id": "02dfc128-dc5e-4383-b220-ce6c91671a55",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "6bd7ea43facafef8ac413f9d573c876f7780febf",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 8,
+    "source_lock_sha256": "2206d939acf18ca9de534450b1edc419f5ac4d06bb1804a132174f9a8261f637",
+    "source_root_payload": {
+      "counterterm_class": "delta_Omega+delta_m2 h^2+delta_lambda h^4",
+      "excluded_from_root": [
+        "observed masses",
+        "fitted counterterms",
+        "selected external BV regulator",
+        "determinant-line orientation",
+        "RG fixed-point assertion"
+      ],
+      "matching_rule": "preserve value, first derivative and Hessian at h=H",
+      "one_loop_branch_multiplicity": 16,
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "6bd7ea43facafef8ac413f9d573c876f7780febf",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.frozen-source-four-dimensional-pushforward-root.v1",
+      "selected_radial_coordinate": "sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+      "selected_source_coordinate": "(1-sqrt(13))/6",
+      "source_hashes": [
+        "927f0db10e5ba7667779153c3a8d9f483c4fd5f0bc6367e1f9f5c79b5836341e",
+        "1e4a03a439daabde6b7f4decba676ee325f054475702b07e27adce129f8a5229",
+        "fe933ea2b3c67b357e504259424e8969935daac286f2732fc621b53efc643df9",
+        "ed2eb30446ae20cd57dd89a4f6151042b234a5dcaba37c1074ccb440256a1fba",
+        "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+        "639a701215ea3291fefcf8b539acceecc5e1157a6710524d37c0d6983b95fd58",
+        "330bd594db8083825a5e8151c740dafa363602b34ef8f9763247c49e0100d103",
+        "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36"
+      ],
+      "source_role": "frozen upstream coordinate; excluded from lower variational tangent"
+    },
+    "source_root_sha256": "7c94548b50b4da0acc86b6e063d39cf9f93363b31c89707350f1ecd40498738f",
+    "theorem_sha256": "0ff31bf31252a7d5dbf2c534d366e5fcc31f532139716f1b22a8efb1694c42d4"
+  },
+  "status": "exact finite-regulator source-freeze base change and exact flat fixed-source four-dimensional one-loop radial determinant; unique closure-jet subtraction conditional on matching conditions; physical external regulator and RG open"
+}

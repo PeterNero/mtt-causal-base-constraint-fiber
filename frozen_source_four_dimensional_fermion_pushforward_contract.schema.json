@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/frozen-source-four-dimensional-fermion-pushforward.v1.schema.json",
+  "title": "MTT frozen-source four-dimensional fermion pushforward and closure-jet renormalization packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "source_freeze_base_change",
+    "fixed_source_four_dimensional_determinant",
+    "radial_counterterm_orbit",
+    "closure_jet_matching",
+    "numerical_execution",
+    "regulator_and_RG_boundary",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.frozen-source-four-dimensional-fermion-pushforward.v1"},
+    "claim_id": {"const": "CBF.T35"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "source_freeze_base_change": {"type": "object"},
+    "fixed_source_four_dimensional_determinant": {"type": "object"},
+    "radial_counterterm_orbit": {"type": "object"},
+    "closure_jet_matching": {"type": "object"},
+    "numerical_execution": {"type": "object"},
+    "regulator_and_RG_boundary": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "check_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

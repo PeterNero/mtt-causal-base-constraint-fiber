@@ -1027,13 +1027,13 @@ The earlier T30 coordinate can be made stationary only at the diagnostic
 `ell=-1.6789685371002474...`, or `mu/h=1.0936101291040974...` in MSbar. That
 ratio is not independently selected.
 
-The scientific frontier must therefore not loop back to deriving the finite
-determinant or guessing another profile. It is one same-source completion:
-promote `t` from a Dirac-Yukawa family coordinate to a normalized dynamical
-field, then supply its bosonic action, global Wick/direct Lorentzian external
-measure, finite scalar counterterm rule, absolute scale and sector map. Until
-then `B.ACTION.01`, `B.QFT.02` and `B.SM.02` remain open and physical
-acceptance remains `0/3` packets and `0/7` rows.
+This exhausts the enlarged lane in which `t` is promoted and re-extremized.
+CBF.T33 subsequently selected the distinct frozen-source lane, and CBF.T35
+now carries that lane through a finite-regulator pushforward. The remaining
+physical exits are the external BV operator/domain, an upper-selected
+renormalization rule, source RG transport, absolute scale and sector map.
+`B.ACTION.01`, `B.QFT.02` and `B.SM.02` remain open and physical acceptance
+remains `0/3` packets and `0/7` rows.
 
 `ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md`
 (`CBF.T32`) executes the standard flat product-Dirac heat-kernel action on the
@@ -1157,3 +1157,45 @@ CBF.T28 is preserved because its generator acts on operator space, whereas
 CBF.T34 acts on the physical state carrier. The packet passes `74/74` builder
 checks and `106/106` independent checks; physical acceptance remains `0/3` and
 `0/7`.
+
+`FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md`
+(`CBF.T35`) closes the finite-regulator source-freeze base-change question.
+Evaluation at `t=t_*` commutes with finite Grassmann determinants and with
+finite Gaussian/BV Schur-complement pushforwards. A downstream effective
+action at one matching scale therefore varies only its lower fields; it does
+not manufacture a second `t` equation. This does not prove RG invariance:
+literal scale independence still requires `beta_t(t_*)=0` or an equivalent
+source-transport naturality theorem.
+
+At fixed source, the flat constant-radial one-loop determinant is exactly
+
+```text
+V_F(h)=-kappa_F h^4[
+ q4_* log(h^2/mu^2)+L4_*-c_scheme q4_*
+],
+q4_*=(356+25sqrt(13))/27.
+```
+
+The complete gauge-even local counterterm class is
+`delta_Omega+delta_m2 h^2+delta_lambda h^4`. If the renormalized lower action
+is required to preserve value, slope and Hessian at the T34 point `h=H`, its
+coefficient matrix has determinant `16H^3>0` and the unique solution is
+
+```text
+delta_Omega =(1/2)kappa_F q4_* H^4,
+delta_m2    =-2kappa_F q4_* H^2,
+delta_lambda=kappa_F[L_H+(3/2)q4_*].
+```
+
+After substitution, all dependence on `mu`, `c_scheme` and the branch-log
+moment cancels. The normalized residual has jets `(0,0,0,-16,-64)` through
+fourth order, so the T34 radial point and curvature survive this one-loop
+matching prescription while its higher vertices receive exact shifts.
+
+This is real progress but not a physical-vacuum promotion. Upper MTT has not
+yet selected the closure-jet matching rule; the external q79 BV
+Laplacian/domain, determinant-line orientation, global Wick/direct Lorentzian
+determinant and source RG flow remain open. T35 passes `58/58` builder checks,
+`86/86` independent checks and 11 focused tests. The canonical repository
+suite passes 222 unit tests. Physical acceptance remains `0/3` packets and
+`0/7` rows.

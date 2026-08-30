@@ -1,0 +1,80 @@
+{
+  "schema": "boe.mtt.frozen-source-four-dimensional-fermion-pushforward-source-lock.v1",
+  "claim_id": "CBF.T35",
+  "date": "2026-08-30",
+  "handoff_id": "02dfc128-dc5e-4383-b220-ce6c91671a55",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "6bd7ea43facafef8ac413f9d573c876f7780febf",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065"
+  },
+  "local_sources": [
+    {
+      "path": "ko6_fermionic_determinant_value_selection.packet.json",
+      "sha256": "927f0db10e5ba7667779153c3a8d9f483c4fd5f0bc6367e1f9f5c79b5836341e",
+      "role": "CBF.T30 finite chiral Grassmann determinant, neutral chamber and exact t_* source coordinate"
+    },
+    {
+      "path": "four_dimensional_fermion_determinant_scheme_classification.packet.json",
+      "sha256": "1e4a03a439daabde6b7f4decba676ee325f054475702b07e27adce129f8a5229",
+      "role": "CBF.T31 conditional flat four-dimensional determinant and complete t-field scheme obstruction"
+    },
+    {
+      "path": "product_dirac_joint_radial_source_modulus_action.packet.json",
+      "sha256": "fe933ea2b3c67b357e504259424e8969935daac286f2732fc621b53efc643df9",
+      "role": "CBF.T32 product-Dirac scalar action, radial equation and exact finite traces"
+    },
+    {
+      "path": "preprojection_finite_source_freeze_radial_values.packet.json",
+      "sha256": "ed2eb30446ae20cd57dd89a4f6151042b234a5dcaba37c1074ccb440256a1fba",
+      "role": "CBF.T33 no-double-variation theorem and fixed-source radial formulas"
+    },
+    {
+      "path": "same_root_state_repair_heat_profile_radial_values.packet.json",
+      "sha256": "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+      "role": "CBF.T34 same-root heat profile, selected moment ratio and promoted cutoff-unit values"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_gauge_compatible_finite_bv_regulator_criterion.certificate.json",
+      "sha256": "639a701215ea3291fefcf8b539acceecc5e1157a6710524d37c0d6983b95fd58",
+      "role": "exact finite Hodge-spectral regulator criterion and no-go against internal-projector promotion"
+    },
+    {
+      "path": "../mtt-qm-source-proof/reports/QFT02_GAUGE_COMPATIBLE_FINITE_BV_REGULATOR_ASSESSMENT_2026-07-24.md",
+      "sha256": "330bd594db8083825a5e8151c740dafa363602b34ef8f9763247c49e0100d103",
+      "role": "current boundary requiring one selected external BV Laplacian, compact-resolvent domain and determinant orientation"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_finitematchingcompletenessfromunifiedaction_or_explicitboundaryadoptionandheldoutvalidation_v1.md",
+      "sha256": "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36",
+      "role": "A85 separation between bare spectral-action completeness and renormalized scheme freedom"
+    }
+  ],
+  "boundary": {
+    "finite_regulator_source_freeze_pushforward_base_change_before": false,
+    "finite_regulator_source_freeze_pushforward_base_change_after": true,
+    "fixed_source_flat_4D_radial_determinant_before": false,
+    "fixed_source_flat_4D_radial_determinant_after": true,
+    "radial_counterterm_orbit_before": false,
+    "radial_counterterm_orbit_after": true,
+    "unique_zero_two_jet_subtraction_given_matching_conditions_before": false,
+    "unique_zero_two_jet_subtraction_given_matching_conditions_after": true,
+    "closure_jet_matching_conditions_selected_by_upper_MTT": false,
+    "selected_external_BV_operator_domain": false,
+    "global_Wick_or_direct_Lorentzian_determinant": false,
+    "determinant_line_orientation_selected": false,
+    "t_star_proved_RG_fixed": false,
+    "full_renormalized_QFT_vacuum_selected": false,
+    "absolute_dimensionful_scale_selected": false,
+    "sector_generation_map_selected": false,
+    "loop_RG_threshold_pole_transport_selected": false,
+    "held_out_observable_emitted": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

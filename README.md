@@ -998,9 +998,10 @@ near `-0.3447767608272924` and a metastable local minimum near
 `0.4374314344`, `0.7187157172` and `1.2812842828`, but the open chamber has no
 global minimum; its infimum lies at the singular wall `t -> -1`. None of these
 numbers is accepted as a physical vacuum or mass. The remaining exit is now a
-same-source theorem supplying a dynamical `t(x)` action, Wick/external measure,
-bosonic completion, scalar renormalization prescription, scale and physical
-sector map.
+choice between the enlarged dynamical-`t(x)` model and the later T33 frozen-
+source lane. T35 advances the latter. Either physical completion still needs
+the Wick/external measure, bosonic completion, renormalization prescription,
+scale and physical sector map.
 
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
@@ -1117,3 +1118,38 @@ They are not yet measured masses: the physical clock lift, four-dimensional
 determinant, absolute scale, sector map and renormalized precision transport
 remain open. T34 passes `74/74` builder checks and `106/106` independent
 checks. The canonical suite now passes 211 unit tests.
+
+The thirty-fifth theorem carries the frozen source through the next operation
+without reopening the T31 source-field no-go. Evaluation at `t=t_*` commutes
+exactly with every finite Grassmann determinant and finite Gaussian/BV Schur
+pushforward. Hence a downstream loop calculation at one matching scale does
+not create a new `t` equation of motion. Literal RG invariance remains a
+different question requiring `beta_t(t_*)=0` or an equivalent source-
+transport theorem.
+
+At fixed `t_*`, the complete flat constant-radial one-loop determinant is
+
+```text
+V_F(h)=-kappa_F h^4[q4_* log(h^2/mu^2)+L4_*-c_scheme q4_*],
+q4_*=(356+25sqrt(13))/27.
+```
+
+The full gauge-even local radial counterterm orbit has three coefficients:
+`delta_Omega+delta_m2 h^2+delta_lambda h^4`. Requiring the quantum correction
+to preserve the selected value, slope and Hessian at `h=H` gives a linear
+system with determinant `16H^3` and fixes all three coefficients uniquely.
+The corrected one-loop remainder becomes
+
+```text
+kappa_F q4_*[
+ h^4(log(H^2/h^2)+3/2)-2H^2h^2+H^4/2
+],
+```
+
+independent of `mu`, the subtraction constant and `L4_*`. Its normalized jets
+at `h=H` are `(0,0,0,-16,-64)` through fourth order. This is a unique
+closure-jet matching scheme, not yet an upper-MTT-selected physical scheme.
+The external BV Laplacian/domain, determinant orientation, RG transport and
+pole map remain open. T35 passes `58/58` builder checks, `86/86` independent
+checks and 11 focused tests. The canonical repository suite now passes 222
+unit tests.

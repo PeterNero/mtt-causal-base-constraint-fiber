@@ -82,6 +82,8 @@ def main() -> None:
     run(sys.executable, "verify_preprojection_finite_source_freeze_radial_values.py")
     run(sys.executable, "build_same_root_state_repair_heat_profile_radial_values.py")
     run(sys.executable, "verify_same_root_state_repair_heat_profile_radial_values.py")
+    run(sys.executable, "build_frozen_source_four_dimensional_fermion_pushforward.py")
+    run(sys.executable, "verify_frozen_source_four_dimensional_fermion_pushforward.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 
