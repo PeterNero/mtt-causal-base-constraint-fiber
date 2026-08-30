@@ -52,7 +52,9 @@ paper, note, packet name or search hit.
    Moller/BV transport and full-G2 cutset handoff is
    `679ecd00-572c-473c-9e8a-b7f7646c955d`; the selected gauge-physical
    future-state, broken-phase BRST and zero-mode handoff is
-   `f223a622-f094-44bb-8825-633f8c2cf51f`;
+   `f223a622-f094-44bb-8825-633f8c2cf51f`; the selected radial-Higgs
+   future-state and complete free-seed handoff is
+   `c458f2b0-f8e3-4e61-8f94-c5e65d8c207f`;
    the radial closure-attractor and state-marginal handoff is
    `5067bb6f-4704-4da5-a085-be56da8cd4b0`;
    the renormalized BV anchored repair-semiflow and global-intertwining

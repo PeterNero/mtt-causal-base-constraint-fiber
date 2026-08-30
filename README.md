@@ -1606,3 +1606,50 @@ absolute normalization is claimed. T47 passes `104/104` builder checks,
 `141/141` independent checks and 15 focused tests; the full canonical suite
 passes all 372 tests. Top-level gates remain `0/3`, packets `0/3` and rows
 `0/7`.
+
+The forty-eighth theorem closes that last free factor on the narrower T34
+stationary branch without substituting T38's background marginal. T23 already
+proves that `h` in `h D_phys(t)` is the neutral radial amplitude of the A51
+one-Higgs module. T34 freezes the same finite source at `t=t_*` and selects
+`H=H_*` and `f2/f0=15/log(448)`. Expanding the T32 fixed-source action gives
+
+```text
+P_*(h)-P_*(H_*)=q4_*(h^2-H_*^2)^2,
+P_*''(H_*)=16c q2_*,
+m_h^2=P_*''(H_*)/(2q2_*)=8c,
+m_h^2/Lambda^2=120/log(448)>0.
+```
+
+The unresolved common positive scalar-action coefficient cancels from the
+canonical mass. It still controls absolute field normalization and is not
+promoted. The free Euclidean covariance has the explicit reflection-positive
+factorization
+
+```text
+integral d^3p/(2omega)
+  |integral_0^infinity exp(-omega tau) f_hat(tau,p) d tau|^2 >=0.
+```
+
+The T45 future orientation therefore fixes its positive-frequency boundary
+value and the unique regular translation-invariant pure quasifree massive
+scalar ground state. This is a free Gaussian continuation, not a nonlinear
+Osterwalder-Schrader reconstruction. The scalar is gapped, so `p=0` adds no
+state coordinate.
+
+The corrected complete seed is now
+
+```text
+omega_0,H_*
+ =omega_gauge,H_*,phys^fut
+   tensor omega_h,rad^fut
+   tensor omega_Weyl,H_*^fut.
+```
+
+It has 27 gauge polarizations plus one radial Higgs mode; the three Goldstones
+remain inside the massive BRST complexes. This meets the premise of the T46
+canonical homotopy-gauge lift and removes the formal lift choice. It does not
+select the upper physical action, T39 interacting normalization, determinant
+holonomy, fixed-coupling continuum, physical `G1`, q79 HYM map, Higgs pole
+mass or top-level `G2`. T48 passes `101/101` builder checks, `200/200`
+independent checks and 15 focused tests; the full canonical suite passes all
+387 tests. Physical gates remain `0/3`, packets `0/3` and rows `0/7`.

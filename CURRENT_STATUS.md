@@ -1750,3 +1750,59 @@ angle or vector mass enters. T47 passes `104/104` builder checks, `141/141`
 independent checks and 15 focused tests; the full canonical suite passes all
 372 tests. Physical acceptance remains `0/3` gates, `0/3` packets and `0/7`
 rows.
+
+`SelectedRadialHiggsFutureStateAndCompleteFreeSeedTheorem_v1.md`
+(`CBF.T48`) discharges that final free-factor clause at the T34 selected
+internal-checkpoint and relative-action tier. The source is not a copied
+one-dimensional line: T23 constructs `h D_phys(t)` from the A51 one-Higgs
+incidence, and T34 selects the stationary value on the same totalized source.
+At `t_*=(1-sqrt(13))/6`,
+
+```text
+q2_*=(14+sqrt(13))/3,
+q4_*=(356+25sqrt(13))/27,
+H_*^2=2c q2_*/q4_*,
+c=(f2/f0)Lambda^2.
+```
+
+The exact fixed-source square completion is
+
+```text
+P_*(h)-P_*(H_*)=q4_*(h^2-H_*^2)^2.
+```
+
+Together with the kinetic coefficient `q2_*`, it gives the canonical radial
+mass
+
+```text
+m_h^2=8c,
+m_h^2/Lambda^2=120/log(448)>0.
+```
+
+This is a selected cutoff-unit tree curvature, not an observed or
+renormalized Higgs pole mass. The inherited common action amplitude and the
+dimensionful value of `Lambda` remain unresolved.
+
+The Gaussian Euclidean covariance is reflection positive by an explicit
+Fourier square. Its analytic future boundary value is the standard massive
+positive-frequency kernel. On the T45 future-oriented flat branch it selects
+the unique regular translation-invariant pure quasifree Hadamard radial state,
+with no `p=0` selector. T38's `delta_H` is retained only as a background
+marginal and is not used as this two-point function.
+
+The complete branch seed is now
+
+```text
+omega_gauge,H_*,phys^fut
+  tensor omega_h,rad^fut
+  tensor omega_Weyl,H_*^fut,
+```
+
+so the missing factor count moves from one to zero and the T46 canonical
+formal lift can be instantiated. This closes the homogeneous-flat free seed,
+not the interacting theory. Same-upper-action selection of the full BV map,
+the T39 normalization, determinant holonomy, fixed-coupling continuum,
+physical `G1`, q79 HYM/direct universality and top-level `G2` remain open.
+T48 passes `101/101` builder checks, `200/200` independent checks and 15
+focused tests; the full canonical suite passes all 387 tests. Physical
+acceptance remains `0/3` gates, `0/3` packets and `0/7` rows.

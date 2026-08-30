@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.selected-radial-higgs-future-state-contract.v1",
+  "title": "CBF.T48 selected radial-Higgs future-state contract",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "title",
+    "date",
+    "status",
+    "source_provenance",
+    "same_branch_source",
+    "exact_radial_action",
+    "canonical_radial_hessian",
+    "gaussian_reflection_positivity",
+    "future_positive_CCR_state",
+    "oscillator_witness",
+    "type_separation",
+    "complete_free_seed",
+    "canonical_formal_lift",
+    "G2_clause_ledger",
+    "parameter_ledger",
+    "physical_boundary",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.selected-radial-higgs-future-state.v1"
+    },
+    "claim_id": {
+      "const": "CBF.T48"
+    },
+    "date": {
+      "const": "2026-08-30"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "failed"]
+    }
+  },
+  "additionalProperties": true
+}

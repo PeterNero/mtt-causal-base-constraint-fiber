@@ -1,0 +1,394 @@
+{
+  "G2_clause_ledger": {
+    "G2a_flat_branch_free_Weyl_state": "closed by T45",
+    "G2a_flat_branch_free_gauge_physical_state": "closed by T47",
+    "G2a_flat_branch_free_radial_Higgs_state": "closed by T48",
+    "G2b_exact_background_Dirac_state_transport": "closed by T46",
+    "G2b_formal_state_pullback_and_canonical_lift": "closed by T46/T48",
+    "G2b_selected_complete_free_product_seed": "closed by T48 at the declared relative-action tier",
+    "G2b_selected_upper_action_and_full_BV_map": "open",
+    "G2c_selected_regulator_independent_continuum": "open 0/9",
+    "physical_T41_gate_count": "0/3",
+    "top_level_physical_G2": "open"
+  },
+  "canonical_formal_lift": {
+    "complete_seed_premise_now_met": true,
+    "fixed_coupling_positive_state": false,
+    "formal_lift_choice_removed": true,
+    "gauge_conditions": [
+      "p psi_n=0",
+      "h psi_n=0"
+    ],
+    "recursion": "psi_n=-h r_n",
+    "source": "T46 certified contraction and deformation theorem",
+    "upper_action_selected_full_BV_map": false
+  },
+  "canonical_radial_hessian": {
+    "absolute_field_normalization_selected": false,
+    "c_definition": "c=(f2/f0)Lambda^2",
+    "canonical_field": "phi=sqrt(2 A_H q2_*) eta",
+    "canonical_quadratic_action": "1/2 integral[(partial phi)^2-m_h^2 phi^2]",
+    "checkpoint_identity": "(m_h^2/Lambda^2) tau_int=8",
+    "f2_over_f0": "15/log(448)",
+    "kinetic_form_before_canonical_normalization": "A_H q2_* (partial eta)^2 with inherited A_H>0",
+    "mass_over_Lambda": "sqrt(120/log(448))",
+    "mass_over_Lambda_decimal": "4.433586065447802232784618009021",
+    "mass_squared": "m_h^2=8c",
+    "mass_squared_over_Lambda_squared": "120/log(448)",
+    "physical_pole_mass_claimed": false,
+    "strictly_positive": true
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 101,
+    "total": 101
+  },
+  "checks": {
+    "A51_absolute_normalization_is_open": true,
+    "A51_one_Higgs_projection_is_closed": true,
+    "Gaussian_continuation_is_only_free_quadratic": true,
+    "Goldstones_are_not_double_counted": true,
+    "OS_first_principal_minor_is_positive": true,
+    "OS_gram_has_rank_one": true,
+    "OS_gram_is_symmetric": true,
+    "OS_second_principal_minor_is_zero": true,
+    "OS_test_quadratic_form_is_nonnegative": true,
+    "OS_test_quadratic_form_matches_square": true,
+    "T23_identifies_physical_radial_operator": true,
+    "T23_neutral_frame_is_not_a_vacuum_assumption": true,
+    "T23_radial_square_is_exact": true,
+    "T23_uses_selected_one_Higgs_representation": true,
+    "T32_fixed_source_potential_exists": true,
+    "T34_H_formula_matches": true,
+    "T34_action_shadow_bridge_is_explicit": true,
+    "T34_radial_mass_formula_matches": true,
+    "T34_radial_mass_is_positive": true,
+    "T34_same_root_diagram_is_closed": true,
+    "T34_selected_moment_ratio_matches": true,
+    "T38_background_marginal_does_not_select_full_state": true,
+    "T38_is_comparison_not_construction": true,
+    "T39_upper_action_selection_remains_open": true,
+    "T40_physical_tangent_pairing_remains_open": true,
+    "T45_branch_inherits_T34_H": true,
+    "T45_future_state_is_selected": true,
+    "T46_formal_lift_is_canonical_after_seed": true,
+    "T47_Weyl_factor_is_selected": true,
+    "T47_broken_phase_gauge_count_is_twenty_seven": true,
+    "T47_gauge_factor_is_selected": true,
+    "T47_prior_missing_factor_count_is_one": true,
+    "absolute_scale_not_promoted": true,
+    "all_checks_pass_before_summary": true,
+    "all_contract_keys_present": true,
+    "canonical_mass_squared_is_eight_c": true,
+    "checkpoint_mass_identity_is_eight": true,
+    "comparison_source_01_hash_matches": true,
+    "comparison_source_02_hash_matches": true,
+    "comparison_source_03_hash_matches": true,
+    "comparison_source_04_hash_matches": true,
+    "comparison_source_05_hash_matches": true,
+    "comparison_source_06_hash_matches": true,
+    "construction_source_01_hash_matches": true,
+    "construction_source_02_hash_matches": true,
+    "construction_source_03_hash_matches": true,
+    "construction_source_04_hash_matches": true,
+    "construction_source_05_hash_matches": true,
+    "construction_source_06_hash_matches": true,
+    "construction_source_07_hash_matches": true,
+    "construction_source_08_hash_matches": true,
+    "construction_source_09_hash_matches": true,
+    "construction_source_10_hash_matches": true,
+    "construction_source_11_hash_matches": true,
+    "construction_source_12_hash_matches": true,
+    "construction_source_13_hash_matches": true,
+    "construction_source_14_hash_matches": true,
+    "contract_packet_schema_matches": true,
+    "contract_schema_claim_matches": true,
+    "fixed_coupling_continuum_not_promoted": true,
+    "frozen_t_is_not_a_second_scalar": true,
+    "future_and_past_sample_phases_are_conjugate": true,
+    "hessian_is_sixteen_c_q2": true,
+    "mass_decimal_matches_T34_interval": true,
+    "massive_radial_p_zero_has_positive_frequency": true,
+    "no_fitted_scalar_coefficient_used": true,
+    "no_new_state_coordinate_used": true,
+    "no_observed_Higgs_mass_used": true,
+    "no_observed_VEV_used": true,
+    "nonlinear_OS_reconstruction_not_claimed": true,
+    "one_radial_plus_twenty_seven_gauge_is_twenty_eight": true,
+    "oscillator_J_is_symplectic": true,
+    "oscillator_J_squared_is_minus_identity": true,
+    "oscillator_SJ_is_positive_diagonal": true,
+    "oscillator_covariance_saturates_purity": true,
+    "oscillator_evolution_commutes_with_J": true,
+    "oscillator_evolution_is_symplectic": true,
+    "oscillator_evolution_preserves_covariance": true,
+    "physical_counters_unchanged": true,
+    "potential_hessian_is_strictly_positive": true,
+    "q2_star_is_strictly_positive": true,
+    "q2_star_reconstructs_exactly": true,
+    "q4_star_is_strictly_positive": true,
+    "q4_star_reconstructs_exactly": true,
+    "quadratic_expansion_coefficient_is_eight_c_q2": true,
+    "quartic_coefficient_is_q4": true,
+    "radial_field_is_one_real_physical_mode": true,
+    "radial_ratio_is_strictly_positive": true,
+    "radial_ratio_reconstructs_exactly": true,
+    "selected_c_is_positive": true,
+    "selected_mass_is_positive": true,
+    "selected_mass_squared_is_positive": true,
+    "selected_tau_is_positive": true,
+    "source_lock_claim_matches": true,
+    "source_lock_schema_matches": true,
+    "square_completion_h2_coefficient_matches": true,
+    "stationarity_identity_is_exact": true,
+    "t_star_matches_exact_q13_value": true,
+    "theorem_file_exists": true,
+    "top_level_G2_not_promoted": true,
+    "upper_action_BV_map_not_promoted": true
+  },
+  "claim_id": "CBF.T48",
+  "complete_free_seed": {
+    "Weyl_factor": {
+      "selected": true,
+      "source": "T45"
+    },
+    "componentwise_Hadamard": true,
+    "formula": "omega_0,H_*=omega_gauge,H_*,phys^fut tensor omega_h,rad^fut tensor omega_Weyl,H_*^fut",
+    "full_product_seed_selected_at_declared_tier": true,
+    "gauge_physical_factor": {
+      "physical_polarizations": 27,
+      "selected": true,
+      "source": "T47"
+    },
+    "missing_selected_factors": 0,
+    "normalized": true,
+    "positive": true,
+    "pure": true,
+    "radial_Higgs_factor": {
+      "physical_polarizations": 1,
+      "selected": true,
+      "source": "T48"
+    },
+    "total_bosonic_physical_polarizations": 28
+  },
+  "date": "2026-08-30",
+  "exact_radial_action": {
+    "R_star_equals_2q2_over_q4": {
+      "expression": "(3106/4393)+(4/4393)sqrt(13)",
+      "rational": "3106/4393",
+      "sqrt13_coefficient": "4/4393"
+    },
+    "derivatives_at_H_star": {
+      "first": "0",
+      "fourth": "24q4_*",
+      "second": "16c q2_*",
+      "third": "24q4_* H_*"
+    },
+    "exact_square_completion": "P_*(h)-P_*(H_*)=q4_*(h^2-H_*^2)^2",
+    "expansion": "P_*(H_*+eta)-P_*(H_*)=8c q2_* eta^2+4q4_* H_* eta^3+q4_* eta^4",
+    "potential": "P_*(h)=q4_* h^4-4c q2_* h^2",
+    "q2_star": {
+      "expression": "(14/3)+(1/3)sqrt(13)",
+      "rational": "14/3",
+      "sqrt13_coefficient": "1/3"
+    },
+    "q4_star": {
+      "expression": "(356/27)+(25/27)sqrt(13)",
+      "rational": "356/27",
+      "sqrt13_coefficient": "25/27"
+    },
+    "stationary_branch": "H_*^2=R_* c=2c q2_*/q4_*",
+    "t_star": {
+      "expression": "(1/6)+(-1/6)sqrt(13)",
+      "rational": "1/6",
+      "sqrt13_coefficient": "-1/6"
+    }
+  },
+  "frontier_delta": "T48 discharges the final free-factor clause without reusing the T38 background marginal. T23 proves that the T34 scalar h is the A51 one-Higgs radial coordinate; the T34 stationary branch and T32 kinetic form give the exact canonical mass m_h^2=8c with m_h^2/Lambda^2=120/log(448). Its Gaussian Euclidean covariance has an explicit reflection-positive square, and the T45 future orientation selects the unique massive scalar Hadamard ground state. Tensoring it with the T47 gauge state and T45 Weyl state closes the complete homogeneous-flat free product seed and meets the premise of the T46 canonical formal lift. The frontier moves to same-upper-action selection of the interacting BV map, determinant holonomy and fixed-coupling continuum. Physical endpoint counters remain unchanged.",
+  "future_positive_CCR_state": {
+    "Hadamard_on_static_flat_branch": true,
+    "complex_structure": "J_h^fut(q,p)=(-Omega_h^(-1)p,Omega_h q)",
+    "frequency": "Omega_h=sqrt(-Delta+m_h^2)",
+    "new_state_parameter_count": 0,
+    "normalized": true,
+    "p_zero_selector_required": false,
+    "positive": true,
+    "pure": true,
+    "selected_class": "regular spatially translation-invariant pure quasifree future ground states",
+    "strict_gap": "Omega_h>=m_h>0",
+    "two_point_kernel": "Lambda_h^+(x,x')=integral d^3p/((2pi)^3 2omega) exp(-iomega Delta t+i p.Delta x)"
+  },
+  "gaussian_reflection_positivity": {
+    "Euclidean_operator": "-Delta_E+m_h^2",
+    "Euclidean_two_point": "integral d^3p/((2pi)^3 2omega) exp(i p.x-omega|tau|)",
+    "OS_square": "integral d^3p/((2pi)^3 2omega)|integral_0^infinity exp(-omega tau)f_hat(tau,p)d tau|^2",
+    "analytic_half_plane": "exp(-omega z) for Re z>0",
+    "finite_exact_witness": {
+      "OS_gram": [
+        [
+          "1/40",
+          "1/60",
+          "1/100"
+        ],
+        [
+          "1/60",
+          "1/90",
+          "1/150"
+        ],
+        [
+          "1/100",
+          "1/150",
+          "1/250"
+        ]
+      ],
+      "OS_gram_rank": 1,
+      "factorization": "integral d^3p/(2omega)|integral_0^infinity exp(-omega tau) f_hat(tau,p) d tau|^2",
+      "frequency": "5",
+      "future_phase_sample": {
+        "imaginary": "-4/5",
+        "real": "3/5"
+      },
+      "past_phase_sample": {
+        "imaginary": "4/5",
+        "real": "3/5"
+      },
+      "positive_laplace_factors": [
+        "1/2",
+        "1/3",
+        "1/5"
+      ],
+      "test_coefficients": [
+        "2",
+        "-3",
+        "5"
+      ],
+      "test_quadratic_form": "1/10"
+    },
+    "future_boundary_value": "exp(-iomega(t-t'))/(2omega)",
+    "nonlinear_interacting_reconstruction_claimed": false,
+    "past_boundary_value_rejected_by_future_orientation": true,
+    "proved_nonnegative": true
+  },
+  "oscillator_witness": {
+    "frequency": "5",
+    "future_complex_structure": [
+      [
+        "0",
+        "-1/5"
+      ],
+      [
+        "5",
+        "0"
+      ]
+    ],
+    "positive_metric_SJ": [
+      [
+        "5",
+        "0"
+      ],
+      [
+        "0",
+        "1/5"
+      ]
+    ],
+    "pure_covariance_one_half_SJ": [
+      [
+        "5/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/10"
+      ]
+    ],
+    "rational_time_evolution_cos_3_5_sin_4_5": [
+      [
+        "3/5",
+        "4/25"
+      ],
+      [
+        "-4",
+        "3/5"
+      ]
+    ],
+    "symplectic_form": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "-1",
+        "0"
+      ]
+    ]
+  },
+  "parameter_ledger": {
+    "inherited_future_time_orientation": 1,
+    "inherited_unresolved_absolute_scale": "Lambda",
+    "inherited_unresolved_scalar_action_amplitude": "A_H>0",
+    "new_continuous_state_selectors": 0,
+    "new_discrete_state_selectors": 0,
+    "new_fitted_parameters": 0,
+    "new_observed_inputs": 0,
+    "selected_dimensionless_H_over_Lambda": "sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+    "selected_dimensionless_m_h_over_Lambda": "sqrt(120/log(448))"
+  },
+  "physical_boundary": {
+    "closed": [
+      "same typed T23/A51 and T34 one-Higgs radial source chain",
+      "exact fixed-source square completion and radial derivatives",
+      "positive canonically normalized radial Hessian and cutoff-unit mass",
+      "explicit Gaussian reflection positivity and future boundary value",
+      "unique future-positive pure quasifree Hadamard radial state",
+      "complete corrected homogeneous-flat gauge-radial-Weyl free seed",
+      "instantiation of the T46 canonical formal lift from the full seed"
+    ],
+    "open": [
+      "absolute scalar and gauge action normalization and SI scale",
+      "nonlinear upper-action-selected Lorentzian/BV map",
+      "interacting tadpole selection, RG transport and Higgs pole mass",
+      "determinant-line connection and relative holonomy",
+      "compact cosmological harmonic sectors",
+      "selected fixed-coupling regulator-independent continuum state",
+      "physical G1 upper tangent metric and q79 HYM/direct universality",
+      "top-level physical G2 and q79 endpoint rows"
+    ],
+    "physical_gates_accepted": 0,
+    "physical_gates_total": 3,
+    "physical_packets_accepted": 0,
+    "physical_packets_total": 3,
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7
+  },
+  "same_branch_source": {
+    "finite_source": "the T23 physical A51 one-Higgs incidence D_phys(t)",
+    "flat_branch": "T45 homogeneous flat R^(1,3) branch with selected future orientation",
+    "frozen_coordinate": "t=t_*=(1-sqrt(13))/6 selected before radial variation",
+    "literal_T23_h_equals_Lambda_imposed": false,
+    "radial_coordinate": "h in D_AC(t,h)=D_Y tensor I96+Gamma_Y tensor h D_phys(t)",
+    "same_symbol_used_without_source_map": false,
+    "stationary_background": "H=H_* selected by T34 on the same totalized source"
+  },
+  "schema": "boe.mtt.selected-radial-higgs-future-state.v1",
+  "source_provenance": {
+    "comparison_root": "038f0ff1e3feabf0474e3e99fa98ef67690f4490bc6bd65d4bd9cbee8d99f8dd",
+    "construction_root": "3653b2bc8437fd93d692ca353e7bea4be34a40a5f65b330bfe5c2ff2a637e98b",
+    "contract": "selected_radial_higgs_future_state_contract.schema.json",
+    "contract_sha256": "782a3e45cc1424044767b5d41b8d4927fb57dc3841703d6fbb14704d49ca7a43",
+    "handoff_id": "c458f2b0-f8e3-4e61-8f94-c5e65d8c207f",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "source_lock": "selected_radial_higgs_future_state_source_lock.json",
+    "source_lock_sha256": "6bd57206941892832d484b515c288f18ce25139b0d31c00e03180e6d949b0d15"
+  },
+  "status": "exact selected radial-Higgs Gaussian future state and complete homogeneous-flat free product seed at the T34 relative-action tier; upper-action-selected interacting BV map and full G2 remain open",
+  "title": "Selected radial-Higgs future state and complete free-seed theorem",
+  "type_separation": {
+    "Goldstones_counted_as_radial_particles": false,
+    "T38_delta_H": "background radial evaluation marginal",
+    "T38_used_as_fluctuation_covariance": false,
+    "T39_role": "interacting tadpole/Hessian-preserving formal normalization; not used to select the free tree state",
+    "T40_G1_role": "upper-to-lower tangent isometry remains open",
+    "T48_omega_h_rad": "local fluctuation two-point state",
+    "source_modulus_t_varied_as_particle": false
+  }
+}

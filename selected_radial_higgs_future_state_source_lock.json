@@ -1,0 +1,145 @@
+{
+  "schema": "boe.mtt.selected-radial-higgs-future-state-source-lock.v1",
+  "claim_id": "CBF.T48",
+  "date": "2026-08-30",
+  "handoff_id": "c458f2b0-f8e3-4e61-8f94-c5e65d8c207f",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "construction_sources": [
+    {
+      "path": "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
+      "sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+      "role": "T23 exact A51 one-Higgs incidence and physical identification of h as the neutral radial amplitude in h D_phys(t)"
+    },
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "machine-readable T23 one-Higgs representation and Lorentzian product operator"
+    },
+    {
+      "path": "ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md",
+      "sha256": "b0c668b916696412cf7a8bbcd9124eaf9d72f5512653e48d25ebb5f6d904a098",
+      "role": "T32 product spectral action, fixed-source kinetic coefficient and radial potential"
+    },
+    {
+      "path": "product_dirac_joint_radial_source_modulus_action.packet.json",
+      "sha256": "fe933ea2b3c67b357e504259424e8969935daac286f2732fc621b53efc643df9",
+      "role": "machine-readable T32 exact q2, q4, metric and potential identities"
+    },
+    {
+      "path": "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md",
+      "sha256": "cbd7ce99a9b7a3082fd9b1e4ed54acba08af54749e04056cadf76da4c5f405f7",
+      "role": "T34 same-root heat profile, selected internal checkpoint, stationary H_star branch and positive radial curvature"
+    },
+    {
+      "path": "same_root_state_repair_heat_profile_radial_values.packet.json",
+      "sha256": "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+      "role": "machine-readable T34 selected H_star/Lambda and m_h/Lambda values"
+    },
+    {
+      "path": "FutureConeSpectralPolarizationAndFreeInitialStateSelectionTheorem_v1.md",
+      "sha256": "96591454eec98296320ed9d7ec80d92fdb1f277652e023c15fe41e750136515b",
+      "role": "T45 homogeneous flat branch, future orientation and selected Weyl CAR state"
+    },
+    {
+      "path": "future_cone_spectral_polarization.packet.json",
+      "sha256": "7e90cd06fb1fcb5c773133efc9c86c656769d9ce69e24ae0d5a90f697531e7aa",
+      "role": "machine-readable T45 branch and state selection"
+    },
+    {
+      "path": "SelectedFutureStateMollerBVTransportAndFullG2CutsetTheorem_v1.md",
+      "sha256": "6f8a57dc373650b098a5f6de94211788fc6a39cb78a189840d2ca3f38240949b",
+      "role": "T46 three-factor seed contract and canonical homotopy-gauge formal lift"
+    },
+    {
+      "path": "selected_future_state_moller_bv_transport.packet.json",
+      "sha256": "2e3aa0b46aa09690c1a12e85320e12cc0de694457b40de6e92d7e3b77525cecd",
+      "role": "machine-readable T46 free-seed and formal-lift criteria"
+    },
+    {
+      "path": "SelectedGaugePhysicalFutureStateBRSTAndZeroModeTheorem_v1.md",
+      "sha256": "969c888a51a35210eae36faa933addb849491e07044e2cbc315f40851db90683",
+      "role": "T47 selected rank-27 gauge state and corrected broken-phase 27 plus 1 bosonic factorization"
+    },
+    {
+      "path": "selected_gauge_physical_future_state.packet.json",
+      "sha256": "9a2e95707774f30e159852055814c40a77d98f01eb8cf372b45b421b977c3199",
+      "role": "machine-readable T47 gauge state, BRST quotient and one-factor cutset"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure_v1.md",
+      "sha256": "423e3ae86dd8b5abee19e38d53f0bb003fb53fc0e5adc872076cab546934e893",
+      "role": "A51 exact rank-four one-Higgs module and open absolute spectral-action normalization"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure_certificate.json",
+      "sha256": "20b357f3552391b54e8ee1878052c0797012c5900ba9244039c51a2f534bb14f",
+      "role": "machine-readable A51 one-Higgs and normalization boundary"
+    }
+  ],
+  "comparison_sources": [
+    {
+      "path": "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
+      "sha256": "bfde0358a25e06268c181a1d8d9ca5cc3813aceeb91774021f329411efb782df",
+      "role": "T38 background radial marginal, explicitly not used as a fluctuation covariance"
+    },
+    {
+      "path": "radial_closure_attractor_state_marginal.packet.json",
+      "sha256": "43eabb2bb78a16bdf049e63c592df7aa29086228e4c8ca648b9582cc1114eabe",
+      "role": "machine-readable T38 type boundary"
+    },
+    {
+      "path": "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
+      "sha256": "eb25406a95a3316a0c7b98ef237ef94d0f0758fd50c4cfbf672f9c633de57c5a",
+      "role": "T39 interacting tadpole and upper-action selection boundary"
+    },
+    {
+      "path": "renormalized_bv_anchored_repair_semiflow.packet.json",
+      "sha256": "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+      "role": "machine-readable T39 formal normalization boundary"
+    },
+    {
+      "path": "CotangentLiftedLocalFormalProjectionAssemblyAndSameRootGluingGateTheorem_v1.md",
+      "sha256": "b5454c186a8b09d391a1a844501e53507e1fb158652f5a2124a89ba258b06cda",
+      "role": "T40 upper-to-lower tangent-isometry gate, preserved as open outside the direct branch"
+    },
+    {
+      "path": "cotangent_lifted_local_formal_projection.packet.json",
+      "sha256": "e83845479af1101a13167ec97344cf5564c450e6a032536b626686ff7ff2cad0",
+      "role": "machine-readable T40 G1 and G2 promotion boundary"
+    }
+  ],
+  "selection_rule": {
+    "radial_line": "the T23 A51 one-Higgs neutral radial amplitude h in h D_phys(t), with t frozen at the T30/T34 selected t_star",
+    "background": "the T34 positive stationary branch H_star on the T45 homogeneous flat future-oriented spacetime",
+    "quadratic_action": "the T32 fixed-source scalar action expanded at H_star, with the T34 selected moment ratio and one inherited positive common scalar-action normalization",
+    "euclidean_to_lorentzian_bridge": "direct Gaussian reflection-positivity factorization followed by the T45 future boundary value",
+    "state": "the unique regular spatially translation-invariant pure quasifree scalar ground state of Omega_h=sqrt(-Delta+m_h^2)",
+    "seed": "the tensor product of the T47 gauge state, the T48 radial scalar state and the T45 Weyl state",
+    "excluded_inputs": [
+      "the T38 background probability marginal as a two-point function",
+      "an observed Higgs mass or vacuum expectation value",
+      "a fitted scalar coefficient",
+      "a thermal, squeezed or density-matrix state coordinate",
+      "a second source-modulus scalar",
+      "a duplicated Goldstone mode",
+      "absolute scalar-action normalization",
+      "a nonlinear Osterwalder-Schrader reconstruction",
+      "an upper-action-selected full BV map",
+      "a fixed-coupling continuum completion"
+    ]
+  },
+  "external_primary_context": [
+    {
+      "url": "https://doi.org/10.1007/BF01608978",
+      "role": "corrected Osterwalder-Schrader reconstruction and analytic continuation framework"
+    },
+    {
+      "url": "https://arxiv.org/abs/1108.2982",
+      "role": "Hadamard property of static ground states, including the Klein-Gordon setting"
+    },
+    {
+      "url": "https://arxiv.org/abs/1602.00930",
+      "role": "pure regular Hadamard states for Klein-Gordon equations"
+    }
+  ]
+}
