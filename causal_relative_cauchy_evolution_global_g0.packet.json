@@ -1,0 +1,463 @@
+{
+  "T43_local_shadow": {
+    "anchored_action": "Delta V_cl(h)=q4_* H^4 rho(h/H)/(2 pi^2)",
+    "direct_source_root_matches": true,
+    "full_global_scalar_equality_claimed": false,
+    "future_test": "compare local jets of log Z_omega at H after state and interacting transport are selected",
+    "local_one_loop_shadow_retained": true,
+    "q4_star": "(356+25sqrt(13))/27",
+    "selected_kappa_F": "1/(2 pi^2)",
+    "smooth_state_dependent_contributions_excluded": false,
+    "universal_short_distance_coefficient_replayed_as_fit": false
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 80,
+    "total": 80
+  },
+  "checks": {
+    "B_ACTION_open": true,
+    "B_QFT_open": true,
+    "G1_open": true,
+    "G2_open": true,
+    "Hadamard_space_nonempty": true,
+    "Moller_left_inverse": true,
+    "Moller_right_inverse": true,
+    "QFT_causal_factorization_present": true,
+    "QFT_relative_S_matrix_present": true,
+    "T25_causal_support": true,
+    "T25_globally_hyperbolic": true,
+    "T25_passes": true,
+    "T25_zero_order_perturbation": true,
+    "T39_passes": true,
+    "T41_passes": true,
+    "T43_direct_root_matches": true,
+    "T43_kappa_retained": true,
+    "T43_not_globalized": true,
+    "T43_passes": true,
+    "adjoint_reversal": true,
+    "binary_root_no_state_selector": true,
+    "binary_root_passes": true,
+    "boundary_rank_one": true,
+    "common_phase_cancels": true,
+    "common_source_legs_unitary": true,
+    "comparison_hashes_not_in_root": true,
+    "comparison_source_01_hash_matches": true,
+    "comparison_source_02_hash_matches": true,
+    "construction_source_01_hash_matches": true,
+    "construction_source_02_hash_matches": true,
+    "construction_source_03_hash_matches": true,
+    "construction_source_04_hash_matches": true,
+    "construction_source_05_hash_matches": true,
+    "construction_source_06_hash_matches": true,
+    "construction_source_07_hash_matches": true,
+    "construction_source_08_hash_matches": true,
+    "construction_source_09_hash_matches": true,
+    "construction_source_10_hash_matches": true,
+    "construction_source_11_hash_matches": true,
+    "contour_forward_normalized": true,
+    "contour_is_cycle": true,
+    "contour_primitive": true,
+    "contour_return_coefficient": true,
+    "equal_source_all_states_one": true,
+    "equal_source_return_identity": true,
+    "free_CAR_passes": true,
+    "global_operator_G0_closed": true,
+    "global_scalar_G0_open": true,
+    "handoff_pinned": true,
+    "internal_circle_not_time": true,
+    "internal_return_not_contour_selection": true,
+    "kernel_model_pinned": true,
+    "no_fitted_coefficients": true,
+    "no_new_continuous_parameters": true,
+    "no_new_state_selector": true,
+    "no_observed_inputs": true,
+    "omega0_exact": true,
+    "omega1_exact": true,
+    "omega_mix_exact": true,
+    "ordered_relative_composition": true,
+    "physical_gates_unchanged": true,
+    "physical_packets_unchanged": true,
+    "physical_rows_unchanged": true,
+    "preferred_state_not_selected": true,
+    "prior_CTP_is_conditional": true,
+    "relative_phase_retained": true,
+    "resolvent_left_exact": true,
+    "resolvent_right_exact": true,
+    "rotation_unitary": true,
+    "schema_claim": true,
+    "shared_return_passes": true,
+    "source_lock_schema": true,
+    "theorem_claim": true,
+    "theorem_guard": true,
+    "theorem_nonempty": true,
+    "theorem_relative_evolution": true,
+    "theorem_state_cutset": true,
+    "three_state_values_distinct": true,
+    "u_unitary": true,
+    "unequal_contour_recovered": true
+  },
+  "claim_id": "CBF.T44",
+  "date": "2026-08-30",
+  "frontier_delta": "CBF.T44 replaces the vague search for a global Lorentzian determinant cycle by the exact state-free object already selected by the T25 causal family: relative Moller/Cauchy evolution and its local-formal relative S-matrix. The unique primitive two-leg return chain is (1,-1), equal-source return is exact and a common central determinant phase cancels. An exact M2(C) witness proves that unequal-source scalarization still depends on a selected state. Thus direct global operator evolution closes, while physical scalar G0 is retyped as interlocked with G2; physical counters and B.ACTION.01/B.QFT.02 remain open.",
+  "gate_ledger": {
+    "G0_direct_global_operator_relative": {
+      "closed": true,
+      "scope": "compact-support, representation-independent causal and local-formal relative evolution",
+      "source": "CBF.T25 plus renormalized relative S-matrix"
+    },
+    "G0_direct_local_one_loop": {
+      "closed": true,
+      "source": "CBF.T43"
+    },
+    "G0_global_scalar_physical": {
+      "closed": false,
+      "interlocked_with": "G2",
+      "missing": "selected state/initial functional, relative phase and fixed-coupling interacting removal"
+    },
+    "G0_q79_HYM": {
+      "closed": false,
+      "missing": "selected HYM/Strominger normal operator and its determinant/BV intertwiner"
+    },
+    "G1_physical_tangent_pairing": {
+      "closed": false,
+      "missing": "parallel physical line map, kinetic metric and Hessian transport"
+    },
+    "G2_selected_interacting_state_BV": {
+      "closed": false,
+      "missing": "fixed-coupling interacting QME-preserving BV and state pushforward"
+    },
+    "physical_gluing_gates_closed": 0,
+    "physical_gluing_gates_total": 3,
+    "physical_packets_accepted": 0,
+    "physical_packets_total": 3,
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7
+  },
+  "minimal_return_chain": {
+    "boundary_matrix": [
+      [
+        "-1",
+        "-1"
+      ],
+      [
+        "1",
+        "1"
+      ]
+    ],
+    "boundary_of_cycle": [
+      "0",
+      "0"
+    ],
+    "conditional_on_return_requirement": true,
+    "extra_contour_parameter": false,
+    "forward_normalization": "coefficient(e_plus)=1",
+    "integral_kernel_rank": 1,
+    "physical_time_orientation_derived_here": false,
+    "primitive_gcd": 1,
+    "primitive_kernel_generator": [
+      "1",
+      "-1"
+    ],
+    "unique_normalized_cycle": [
+      "1",
+      "-1"
+    ]
+  },
+  "moller_relative_evolution": {
+    "M_h": "1-E_h V",
+    "M_h_inverse": "1+E_H V",
+    "acts_on": "solution quotient and representation-independent even CAR observable algebra",
+    "causal_support": true,
+    "finite_resolvent_witness": {
+      "D_H": [
+        [
+          "2",
+          "1"
+        ],
+        [
+          "0",
+          "3"
+        ]
+      ],
+      "D_h": [
+        [
+          "3",
+          "1"
+        ],
+        [
+          "1",
+          "4"
+        ]
+      ],
+      "E_H": [
+        [
+          "1/2",
+          "-1/6"
+        ],
+        [
+          "0",
+          "1/3"
+        ]
+      ],
+      "E_h": [
+        [
+          "4/11",
+          "-1/11"
+        ],
+        [
+          "-1/11",
+          "3/11"
+        ]
+      ],
+      "M_h": [
+        [
+          "8/11",
+          "1/11"
+        ],
+        [
+          "-2/11",
+          "8/11"
+        ]
+      ],
+      "M_h_inverse": [
+        [
+          "4/3",
+          "-1/6"
+        ],
+        [
+          "1/3",
+          "4/3"
+        ]
+      ],
+      "V": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "relative_Cauchy_evolution": "rce_h=(M_h^-)^{-1} M_h^+",
+    "resolvent_identity": "E_h=E_H-E_h V E_H=E_H-E_H V E_h",
+    "state_free": true
+  },
+  "operator_valued_global_G0": {
+    "adjoint_reversal": "C_H[V_plus,V_minus]^*=C_H[V_minus,V_plus]",
+    "anchor_identity": "C_H[0,0]=1",
+    "causal_factorization": true,
+    "contour_element": "C_H[V_plus,V_minus]=S_H[V_minus]^{-1} star S_H[V_plus]",
+    "equal_source_identity": "C_H[V,V]=1",
+    "finite_equal_source_operator": [
+      [
+        {
+          "imag": "0",
+          "real": "1"
+        },
+        {
+          "imag": "0",
+          "real": "0"
+        }
+      ],
+      [
+        {
+          "imag": "0",
+          "real": "0"
+        },
+        {
+          "imag": "0",
+          "real": "1"
+        }
+      ]
+    ],
+    "finite_unequal_source_operator": [
+      [
+        {
+          "imag": "4/5",
+          "real": "3/5"
+        },
+        {
+          "imag": "0",
+          "real": "0"
+        }
+      ],
+      [
+        {
+          "imag": "0",
+          "real": "0"
+        },
+        {
+          "imag": "-4/5",
+          "real": "3/5"
+        }
+      ]
+    ],
+    "formal_perturbative_tier": true,
+    "nonperturbative_cutoff_removal": false,
+    "path_integral_cycle_required": false,
+    "preferred_state_required": false,
+    "relative_S_matrix": "S_H[V]=S(H)^{-1} star S(H+V)",
+    "relative_evolution_ordered_composition": "R(U1,U0) R(U2,U1)=R(U2,U0)"
+  },
+  "parameter_ledger": {
+    "inherited_time_orientation": 1,
+    "new_binary_root_selectors": 0,
+    "new_continuous_physical_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_inputs": 0,
+    "new_preferred_state_selectors": 0,
+    "normalized_return_cycle_candidates_after": 1,
+    "time_orientation_is_a_fitted_parameter": false
+  },
+  "phase_ledger": {
+    "common_central_phase_cancels": true,
+    "common_phase": {
+      "imag": "15/17",
+      "real": "8/17"
+    },
+    "common_torsor_is_not_a_physical_exit": "quotiented_not_a_physical_exit",
+    "global_determinant_line_trivialized": false,
+    "internal_family_holonomy_identified_with_analytic_determinant_line": false,
+    "relative_eta_or_spectral_flow_computed": false,
+    "relative_source_phase_is_retained": true
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "G1_closed": false,
+    "G2_closed": false,
+    "common_central_phase_cancelled": true,
+    "global_scalar_determinant_closed": false,
+    "global_state_free_direct_causal_evolution_closed": true,
+    "interacting_QME_cutoff_removal_closed": false,
+    "internal_circle_time_identification_claimed": false,
+    "minimal_return_chain_closed_conditional_on_return": true,
+    "physical_time_orientation_derived": false,
+    "preferred_Hadamard_or_cosmological_state_selected": false,
+    "q79_HYM_normal_operator_closed": false,
+    "relative_determinant_phase_closed": false
+  },
+  "schema": "boe.mtt.causal-relative-cauchy-evolution-global-g0.v1",
+  "selected_domain": {
+    "advanced_map": "E_t^+",
+    "base": true,
+    "global_Wick_rotation_required": false,
+    "operator": "D_dir(t;A,H)=D_A+Y_t(H)",
+    "perturbation_class": "compactly supported smooth order-zero Higgs/Yukawa endomorphisms",
+    "preferred_state_required_for_domain": false,
+    "principal_symbol": "sigma_Ddir(x,xi)=i Clifford_g(xi) tensor I96",
+    "retarded_map": "E_t^-",
+    "test_domain": "C_c^infinity(Y4,S_Y tensor E_F)",
+    "time_orientation": "inherited from the selected T25 causal source"
+  },
+  "shared_circle_and_root_boundary": {
+    "binary_root_free_CAR_equivalence": "closed_exact",
+    "binary_root_preferred_state_selected": false,
+    "direct_root_neutral_transport_scope": "T24/T25 direct Yukawa perturbations only",
+    "internal_double_return_exact": "CLOSED_IDENTITY_ROOT_INDEPENDENT",
+    "internal_double_return_selects_CTP_contour": false,
+    "internal_double_return_selects_zero_defect": "OPEN",
+    "internal_shared_circle_identified_with_physical_time": false,
+    "new_binary_root_selector": false,
+    "prior_CTP_theorem_used_as_construction_source": false
+  },
+  "source_provenance": {
+    "all_comparison_hashes_match": true,
+    "all_construction_hashes_match": true,
+    "comparison_sources": 2,
+    "comparison_sources_excluded_from_root": true,
+    "construction_root_payload": {
+      "T25_direct_source_root_sha256": "624ae0d4cce64f99d24b014b7c8341b56e298b87c07dbc6660262a94b745c6a7",
+      "T43_construction_root_sha256": "e196c06fa3fcb92965988878c984c11b38e92ecab7b79f5c9fc16621c71aa5ad",
+      "construction_source_hashes": [
+        "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+        "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+        "eb25406a95a3316a0c7b98ef237ef94d0f0758fd50c4cfbf672f9c633de57c5a",
+        "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+        "b5454c186a8b09d391a1a844501e53507e1fb158652f5a2124a89ba258b06cda",
+        "e83845479af1101a13167ec97344cf5564c450e6a032536b626686ff7ff2cad0",
+        "b6ae080d03388684de7d7d28a2530d71ae8846010f494967fa318f2411ad0c8f",
+        "57fca3a1ea01eeaeb3b6edbe2e59865f0acd56032b8bf79be90fda255a4161a7",
+        "a08510eb3ac77607094bf9e5469523b6c0e4841680ff2e729f592fbbeb66e36d",
+        "90b3b1becb069bbccef91c88a45e007a1f77bd34080921bb1fa74bd02f17040f",
+        "a804a88680c518633253763da13a83b8cd8f723182d8375730de0f9b1898ee41"
+      ],
+      "domain": "compactly supported zero-order perturbations of the T25 Green-hyperbolic product-Dirac family on the selected time-oriented globally hyperbolic Y4",
+      "excluded_inputs": [
+        "preferred Hadamard or cosmological state",
+        "observed masses or couplings",
+        "fitted determinant phase",
+        "identification of the shared internal circle with physical time",
+        "q79 HYM endpoint",
+        "interacting cutoff removal"
+      ],
+      "global_object": "representation-independent relative Moller/Cauchy evolution and renormalized relative S-matrix",
+      "normalized_primitive_cycle": [
+        "1",
+        "-1"
+      ],
+      "return_boundary_matrix": [
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "scalarization": "Z_omega[V_plus,V_minus]=omega(S_H[V_minus]^{-1} star S_H[V_plus])",
+      "schema": "boe.mtt.causal-relative-evolution-derived-root.v1"
+    },
+    "construction_root_sha256": "731ecde6a2bab60d07de8b970f6e61ee2a52140b4794bfc8ad8252a3a7b52725",
+    "construction_sources": 11,
+    "contract_schema_sha256": "c1135acc9150531dc032a012d4fb33f3972e5d924305889755c1e97831672b4f",
+    "handoff_id": "a9ef2144-5598-4502-86e1-5149e7817b81",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "source_lock_sha256": "781ac3093fff3b3f7eb2e7e5dfbc95185d80371e813271fe1f38d8423f13aa13",
+    "theorem_sha256": "c4d399386994aca5322ade19c933ba7c45d64316292d266ab123b67b84ad072c"
+  },
+  "state_scalarization_cutset": {
+    "Hadamard_state_space_nonempty": true,
+    "equal_source_values": {
+      "omega_0": {
+        "imag": "0",
+        "real": "1"
+      },
+      "omega_1": {
+        "imag": "0",
+        "real": "1"
+      },
+      "omega_mix": {
+        "imag": "0",
+        "real": "1"
+      }
+    },
+    "equal_source_values_are_all_one": true,
+    "formula": "Z_omega[V_plus,V_minus]=omega(C_H[V_plus,V_minus])",
+    "global_scalar_G0_requires_G2_data": true,
+    "preferred_state_selected": false,
+    "return_identity_selects_state": false,
+    "state_values": {
+      "omega_0": {
+        "imag": "4/5",
+        "real": "3/5"
+      },
+      "omega_1": {
+        "imag": "-4/5",
+        "real": "3/5"
+      },
+      "omega_mix": {
+        "imag": "0",
+        "real": "3/5"
+      }
+    },
+    "unequal_source_values_are_distinct": true
+  },
+  "status": "exact state-free global causal evolution and unique minimal return chain for the direct route; common phase cancelled and scalar state dependence isolated; global scalar G0, G1, G2 and q79 HYM open",
+  "title": "Causal Relative Cauchy Evolution and State-Separated Global G0"
+}

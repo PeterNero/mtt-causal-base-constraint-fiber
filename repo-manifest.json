@@ -177,6 +177,10 @@
     "actual same-source direct product-Dirac local one-loop Berezin pushforward",
     "source-derived anchored rho remainder with exact jets through order five",
     "direct local one-loop G0 instance and explicit global q79 HYM promotion boundary",
+    "exact global state-free Moller and relative Cauchy evolution for the direct product-Dirac family",
+    "unique primitive two-leg return chain with coefficients one and minus one",
+    "operator-valued closed-time-path return with exact common central phase cancellation",
+    "exact state-scalarization cutset interlocking global scalar G0 with G2",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -288,6 +292,9 @@
     "identification of the direct Weyl product-Dirac pushforward with a selected q79 HYM normal operator",
     "global physical G0 promotion from the flat-background local one-loop pushforward",
     "selection of a global determinant phase or integration cycle from the local even modulus",
+    "selection of a preferred Hadamard or cosmological state by equal-source return",
+    "identification of the internal shared circle with the Lorentzian return contour",
+    "nonperturbative scalar determinant or interacting cutoff removal from relative Cauchy evolution alone",
     "a new globally original operator-theory identity"
   ],
   "controlling_status": "CURRENT_STATUS.md",
@@ -335,7 +342,8 @@
     "SourcePreservingPointedQuantumProjectionAndWardNonselectionTheorem_v1.md",
     "CotangentLiftedLocalFormalProjectionAssemblyAndSameRootGluingGateTheorem_v1.md",
     "SharedCircleMorseBottRadialActionAndRankFourDeterminantLiftTheorem_v1.md",
-    "WeylPolarizedProductDiracOneLoopPushforwardAndDirectG0SourceTheorem_v1.md"
+    "WeylPolarizedProductDiracOneLoopPushforwardAndDirectG0SourceTheorem_v1.md",
+    "CausalRelativeCauchyEvolutionAndStateSeparatedGlobalG0Theorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -380,7 +388,8 @@
     "source_preserving_pointed_quantum_projection.packet.json",
     "cotangent_lifted_local_formal_projection.packet.json",
     "shared_circle_morse_bott_rank_four.packet.json",
-    "weyl_polarized_product_dirac_g0.packet.json"
+    "weyl_polarized_product_dirac_g0.packet.json",
+    "causal_relative_cauchy_evolution_global_g0.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -425,7 +434,8 @@
     "python build_source_preserving_pointed_quantum_projection.py",
     "python build_cotangent_lifted_local_formal_projection.py",
     "python build_shared_circle_morse_bott_rank_four.py",
-    "python build_weyl_polarized_product_dirac_g0.py"
+    "python build_weyl_polarized_product_dirac_g0.py",
+    "python build_causal_relative_cauchy_evolution_global_g0.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -465,7 +475,8 @@
     "source_preserving_pointed_quantum_projection_contract.schema.json",
     "cotangent_lifted_local_formal_projection_contract.schema.json",
     "shared_circle_morse_bott_rank_four_contract.schema.json",
-    "weyl_polarized_product_dirac_g0_contract.schema.json"
+    "weyl_polarized_product_dirac_g0_contract.schema.json",
+    "causal_relative_cauchy_evolution_global_g0_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

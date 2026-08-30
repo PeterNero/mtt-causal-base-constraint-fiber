@@ -1429,3 +1429,49 @@ is compatibility, not operator equivalence; q79 `rank(Q)=4` is not a particle
 count. Builder verification is `88/88`, independent verification is `149/149`,
 14 focused tests pass, and the full canonical repository suite passes 312
 tests. Physical acceptance remains `0/3` packets and `0/7` rows.
+
+The forty-fourth theorem closes the state-free global causal-evolution layer
+of the direct route. For a compactly supported order-zero perturbation
+`D_h=D_H+V` of the T25 Green-hyperbolic product Dirac operator, the advanced
+and retarded Moller maps are
+
+```text
+M_h=1-E_h V,
+M_h^(-1)=1+E_H V.
+```
+
+The two resolvent identities prove both inverse equations exactly. Their
+advanced/retarded comparison gives relative Cauchy evolution on the solution
+quotient and hence on the representation-independent even CAR algebra. At the
+local-formal interacting tier the corresponding doubled element is
+
+```text
+C_H[V_plus,V_minus]
+  =S_H[V_minus]^(-1) star S_H[V_plus].
+```
+
+It obeys `C_H[V,V]=1` before a state is chosen. The unique primitive integral
+two-leg return chain with one normalized forward leg is `(1,-1)`, and a common
+central determinant phase cancels exactly. No Lorentzian path-integral cycle
+or vacuum is needed to define this operator-valued evolution.
+
+Scalarization remains separate:
+
+```text
+Z_omega[V_plus,V_minus]=omega(C_H[V_plus,V_minus]).
+```
+
+An exact `M_2(C)` witness gives the three unequal-source values
+`(3+4i)/5`, `(3-4i)/5` and `3/5` for three positive normalized states, while
+all give one at equal sources. Thus return normalization cannot select the
+state. T43 remains the anchored local one-loop shadow; its complete rho
+potential is not promoted to the full global in-in action for every state.
+
+This removes the direct global domain/cycle/common-phase ambiguity at the
+state-free operator tier. The remaining scalar `G0` obligation is now
+interlocked with `G2`: select the state or initial functional, relative phase
+and fixed-coupling interacting transport. The internal shared circle is not
+identified with physical time or with the CTP contour. Physical gate counters
+remain `0/3`, packets `0/3` and rows `0/7`. T44 passes `80/80` builder checks,
+`95/95` independent checks and 15 focused tests; the full canonical repository
+suite passes 327 tests.

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.causal-relative-cauchy-evolution-global-g0-contract.v1",
+  "title": "CBF.T44 causal relative evolution and state-separated global G0 contract",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "title",
+    "date",
+    "status",
+    "source_provenance",
+    "selected_domain",
+    "moller_relative_evolution",
+    "minimal_return_chain",
+    "operator_valued_global_G0",
+    "phase_ledger",
+    "state_scalarization_cutset",
+    "T43_local_shadow",
+    "shared_circle_and_root_boundary",
+    "gate_ledger",
+    "parameter_ledger",
+    "physical_boundary",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.causal-relative-cauchy-evolution-global-g0.v1"
+    },
+    "claim_id": {
+      "const": "CBF.T44"
+    },
+    "date": {
+      "const": "2026-08-30"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "failed"]
+    }
+  },
+  "additionalProperties": true
+}

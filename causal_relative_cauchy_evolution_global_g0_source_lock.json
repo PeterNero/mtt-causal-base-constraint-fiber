@@ -1,0 +1,117 @@
+{
+  "schema": "boe.mtt.causal-relative-cauchy-evolution-global-g0-source-lock.v1",
+  "claim_id": "CBF.T44",
+  "date": "2026-08-30",
+  "handoff_id": "a9ef2144-5598-4502-86e1-5149e7817b81",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "construction_sources": [
+    {
+      "path": "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md",
+      "sha256": "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+      "role": "T25 globally hyperbolic direct product-Dirac family, test domain and Green maps"
+    },
+    {
+      "path": "direct_finite_source_continuum.packet.json",
+      "sha256": "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+      "role": "machine-readable T25 causal operator and direct source root"
+    },
+    {
+      "path": "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
+      "sha256": "eb25406a95a3316a0c7b98ef237ef94d0f0758fd50c4cfbf672f9c633de57c5a",
+      "role": "T39 local-formal QME, determinant/cycle typing and common-phase boundary"
+    },
+    {
+      "path": "renormalized_bv_anchored_repair_semiflow.packet.json",
+      "sha256": "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+      "role": "machine-readable T39 local-formal and state-selection boundary"
+    },
+    {
+      "path": "CotangentLiftedLocalFormalProjectionAssemblyAndSameRootGluingGateTheorem_v1.md",
+      "sha256": "b5454c186a8b09d391a1a844501e53507e1fb158652f5a2124a89ba258b06cda",
+      "role": "T41 typed G0, G1 and G2 promotion gates"
+    },
+    {
+      "path": "cotangent_lifted_local_formal_projection.packet.json",
+      "sha256": "e83845479af1101a13167ec97344cf5564c450e6a032536b626686ff7ff2cad0",
+      "role": "machine-readable physical gate counters and independence witnesses"
+    },
+    {
+      "path": "WeylPolarizedProductDiracOneLoopPushforwardAndDirectG0SourceTheorem_v1.md",
+      "sha256": "b6ae080d03388684de7d7d28a2530d71ae8846010f494967fa318f2411ad0c8f",
+      "role": "T43 selected local one-loop normalization and anchored radial shadow"
+    },
+    {
+      "path": "weyl_polarized_product_dirac_g0.packet.json",
+      "sha256": "57fca3a1ea01eeaeb3b6edbe2e59865f0acd56032b8bf79be90fda255a4161a7",
+      "role": "machine-readable T43 local G0 packet and direct-root lineage"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/framed_q79_free_dirac_car_net.certificate.json",
+      "sha256": "a08510eb3ac77607094bf9e5469523b6c0e4841680ff2e729f592fbbeb66e36d",
+      "role": "representation-independent free Dirac CAR net and nonempty Hadamard state space"
+    },
+    {
+      "path": "../mtt-q79-total-superconnection-branching/artifacts/binary_root_car_net_equivalence.packet.json",
+      "sha256": "90b3b1becb069bbccef91c88a45e007a1f77bd34080921bb1fa74bd02f17040f",
+      "role": "binary-root natural equivalence of the free CAR, even-observable and corresponding-state tiers"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Renormalized_TimeOrdering_and_Local_QME_Anomaly_Cohomology_Theorem_v1.md",
+      "sha256": "a804a88680c518633253763da13a83b8cd8f723182d8375730de0f9b1898ee41",
+      "role": "renormalized time ordering, relative S-matrix, causal factorization and local QME"
+    }
+  ],
+  "comparison_sources": [
+    {
+      "path": "../mtt-q79-mirror-zero-zero/MTT_SHARED_CIRCLE_DOUBLE_TRAVERSAL_CLOSED_TIME_PATH_THEOREM_2026-07-16.md",
+      "sha256": "f62a0c0ca2357202c119a8aeaa238ba614a124893eedeaa981a26ea310a0fa98",
+      "role": "prior conditional CTP return theorem; not construction authority for contour selection"
+    },
+    {
+      "path": "../mtt-protospinor-gr-response-proof/certificates/q79_shared_circle_double_return_cln_nil_flat_endpoint_certificate.json",
+      "sha256": "f9bd4bf51399259f1f58b244ffc4101b586494c9798f2b07a1c097768c72e0be",
+      "role": "internal shared-circle double-return certificate; type-separated from Lorentzian time contour"
+    }
+  ],
+  "analytic_rule": {
+    "domain": "compactly supported zero-order perturbations of the T25 Green-hyperbolic product-Dirac family on the selected time-oriented globally hyperbolic Y4",
+    "global_object": "representation-independent relative Moller/Cauchy evolution and renormalized relative S-matrix",
+    "return_rule": "the unique primitive integral two-leg 1-cycle with one normalized forward leg",
+    "scalarization": "Z_omega[V_plus,V_minus]=omega(S_H[V_minus]^{-1} star S_H[V_plus])",
+    "local_shadow": "T43 is retained as the anchored flat local one-loop reference; no global scalar equality is inferred",
+    "excluded_inputs": [
+      "preferred Hadamard or cosmological state",
+      "observed masses or couplings",
+      "fitted determinant phase",
+      "identification of the shared internal circle with physical time",
+      "q79 HYM endpoint",
+      "interacting cutoff removal"
+    ]
+  },
+  "external_primary_context": [
+    {
+      "url": "https://arxiv.org/abs/math-ph/0112041",
+      "role": "locally covariant QFT and relative Cauchy evolution"
+    },
+    {
+      "url": "https://arxiv.org/abs/0911.1304",
+      "role": "representation-independent locally covariant Dirac field and relative Cauchy evolution"
+    },
+    {
+      "url": "https://arxiv.org/abs/math-ph/9903028",
+      "role": "local perturbative interacting QFT on globally hyperbolic spacetimes"
+    },
+    {
+      "url": "https://arxiv.org/abs/1610.01940",
+      "role": "closed-time-path unitarity and Schwinger-Keldysh BRST structure"
+    },
+    {
+      "url": "https://arxiv.org/abs/hep-th/9405012",
+      "role": "determinant lines, eta invariants and global phase holonomy"
+    },
+    {
+      "url": "https://arxiv.org/abs/2201.12104",
+      "role": "global Lorentzian Dirac propagation and Hadamard covariances"
+    }
+  ]
+}
