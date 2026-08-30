@@ -76,6 +76,8 @@ def main() -> None:
     run(sys.executable, "verify_ko6_fermionic_determinant_value_selection.py")
     run(sys.executable, "build_four_dimensional_fermion_determinant_scheme_classification.py")
     run(sys.executable, "verify_four_dimensional_fermion_determinant_scheme_classification.py")
+    run(sys.executable, "build_product_dirac_joint_radial_source_modulus_action.py")
+    run(sys.executable, "verify_product_dirac_joint_radial_source_modulus_action.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

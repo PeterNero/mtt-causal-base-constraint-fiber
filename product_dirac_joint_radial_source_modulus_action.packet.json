@@ -1,0 +1,348 @@
+{
+  "A53_T23_compatibility": {
+    "A53_and_T23_stationary_combination_compatible": false,
+    "A53_conditional_ratios": {
+      "f2_over_f0": "15/log(448)",
+      "h0_over_Lambda_interval": {
+        "lower_decimal": "2.216793032723901116392309004510",
+        "lower_exact": "221679303272390111639230900451/100000000000000000000000000000",
+        "upper_decimal": "2.216793032723901116392309004511",
+        "upper_exact": "2216793032723901116392309004511/1000000000000000000000000000000"
+      },
+      "h0_squared_over_Lambda_squared": "30/log(448)",
+      "mass_over_Lambda_interval": {
+        "lower_decimal": "4.433586065447802232784618009020",
+        "lower_exact": "221679303272390111639230900451/50000000000000000000000000000",
+        "upper_decimal": "4.433586065447802232784618009022",
+        "upper_exact": "2216793032723901116392309004511/500000000000000000000000000000"
+      },
+      "mass_squared_over_Lambda_squared": "120/log(448)",
+      "mass_squared_over_Lambda_squared_interval": {
+        "lower_decimal": "19.656685399732923703500063941970",
+        "lower_exact": "2388176435674170054034254151165500327573919318059870972977226180314385804808534717895378634194498172670828162578425148539021512190382659670461923701721541480846040221278859721279028329187384765383920948819881816817593214547531239256963760348036355435257644352722000056760000/121494361185971787393281935280255718645464847706828210640201115219483179621653002292021119472862731609674225484382881906967233591926252409153570817347187577399753848548863765834492490889415294226621346252351963369967370989296069614274959733660553543798843771843690603185347",
+        "upper_decimal": "19.656685399732923703500063941970",
+        "upper_exact": "37315256807408907094285221111960942618342489344685483952769159067412278200133354967115291159289033947981690040287892945922211127974729057350967557839399085638219378457482183144984817643552886959123764825310653387774893977305175613390058755438068053675900693011281250886875/1898349393530809178020030238753995603835388245419190791253142425304424656235421513741711286697661772777156726574628820635589048542932471388993649439553501629878719202109005723444087912812045878683412631511014932987664793405379388035549004478774045121802860546333967541248"
+      }
+    },
+    "A53_one_atom_premise_selected_by_MTT": false,
+    "T23_one_primitive_identification": "h=Lambda=E0=1/L0",
+    "exact_exit_options": [
+      "retain A53 moments and use h0/Lambda=sqrt(30/log(448))",
+      "retain h=Lambda and replace the A53 one-atom ratio by f2/f0=1/2",
+      "retain both inputs but add a selected action term so h=Lambda is not the bare tree stationary point"
+    ],
+    "rho_interval": {
+      "lower_decimal": "4.914171349933230925875015985493",
+      "lower_exact": "597044108918542513508563537791375081893479829514967743244306545078596451202133679473844658548624543167707040644606287134755378047595664917615480925430385370211510055319714930319757082296846191345980237204970454204398303636882809814240940087009088858814411088180500014190000/121494361185971787393281935280255718645464847706828210640201115219483179621653002292021119472862731609674225484382881906967233591926252409153570817347187577399753848548863765834492490889415294226621346252351963369967370989296069614274959733660553543798843771843690603185347",
+      "upper_decimal": "4.914171349933230925875015985493",
+      "upper_exact": "37315256807408907094285221111960942618342489344685483952769159067412278200133354967115291159289033947981690040287892945922211127974729057350967557839399085638219378457482183144984817643552886959123764825310653387774893977305175613390058755438068053675900693011281250886875/7593397574123236712080120955015982415341552981676763165012569701217698624941686054966845146790647091108626906298515282542356194171729885555974597758214006519514876808436022893776351651248183514733650526044059731950659173621517552142196017915096180487211442185335870164992"
+    },
+    "stationarity_with_h_equals_Lambda_requires": "f2/f0=1/2, equivalently tau_int=2",
+    "tau_int_exact": "log(448)/15",
+    "tau_interval": {
+      "lower_decimal": "0.406986215494332344107249698146",
+      "lower_exact": "15186795148246473424160241910031964830683105963353526330025139402435397249883372109933690293581294182217253812597030565084712388343459771111949195516428013039029753616872045787552703302496367029467301052088119463901318347243035104284392035830192360974422884370671740329984/37315256807408907094285221111960942618342489344685483952769159067412278200133354967115291159289033947981690040287892945922211127974729057350967557839399085638219378457482183144984817643552886959123764825310653387774893977305175613390058755438068053675900693011281250886875",
+      "upper_decimal": "0.406986215494332344107249698146",
+      "upper_exact": "121494361185971787393281935280255718645464847706828210640201115219483179621653002292021119472862731609674225484382881906967233591926252409153570817347187577399753848548863765834492490889415294226621346252351963369967370989296069614274959733660553543798843771843690603185347/298522054459271256754281768895687540946739914757483871622153272539298225601066839736922329274312271583853520322303143567377689023797832458807740462715192685105755027659857465159878541148423095672990118602485227102199151818441404907120470043504544429407205544090250007095000"
+    }
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 70,
+    "total": 70
+  },
+  "checks": {
+    "A51_absolute_normalization_remains_open": true,
+    "A51_standard_bosonic_operator_content_is_available": true,
+    "A52_strict_moments_remain_open": true,
+    "A53_h_over_Lambda_is_certified": true,
+    "A53_mass_over_Lambda_is_certified": true,
+    "A53_point_measure_is_conditional": true,
+    "A53_ratio_is_certified": true,
+    "A53_tau_is_available": true,
+    "D0_D1_commute": true,
+    "D0_square_is_identity": true,
+    "T20_source_is_exact": true,
+    "T23_h_equals_Lambda_conflicts_with_A53_stationarity": true,
+    "T23_source_is_exact": true,
+    "T25_source_is_exact": true,
+    "T26_coefficients_match_bridge": true,
+    "T26_source_is_exact": true,
+    "T27_source_is_exact": true,
+    "T31_source_is_exact": true,
+    "Tr_D1_squared_is_192": true,
+    "absolute_scale_remains_unselected": true,
+    "broken_branch_stationary_factorization_is_exact": true,
+    "cauchy_equality_only_at_zero": true,
+    "cauchy_gap_factorization_is_exact": true,
+    "cauchy_quadratic_is_positive": true,
+    "chamber_cubic_endpoints_are_positive": true,
+    "chamber_cubic_has_only_an_interior_maximum": true,
+    "contract_schema_is_exact": true,
+    "fixed_radial_rho_one_bridge_is_six_times_T26": true,
+    "generalized_mass_squared_is_4h_squared_twice": true,
+    "handoff_is_pinned": true,
+    "joint_kinetic_metric_is_newly_closed_conditionally": true,
+    "joint_tree_vacuum_is_newly_closed_conditionally": true,
+    "kernel_model_is_pinned": true,
+    "kinetic_metric_determinant_is_14h_squared": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "nonzero_tree_hierarchy_is_not_selected": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "q2_is_strictly_positive": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "source_13_hash_matches": true,
+    "source_14_hash_matches": true,
+    "source_15_hash_matches": true,
+    "source_16_hash_matches": true,
+    "source_17_hash_matches": true,
+    "source_18_hash_matches": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "strict_top_level_contract": true,
+    "t_field_promotion_remains_unselected": true,
+    "tau_interval_excludes_two": true,
+    "tau_interval_is_positive": true,
+    "trace_q2_matches_branches": true,
+    "trace_q4_matches_branches": true,
+    "unique_broken_stationary_point_in_neutral_chamber": true,
+    "vacuum_hessian_coefficients_are_exact": true,
+    "vacuum_hessian_is_8h_squared_times_metric": true,
+    "vacuum_metric_coefficients_are_exact": true
+  },
+  "claim_id": "CBF.T32",
+  "conditional_action_scope": {
+    "A51_one_Higgs_module_selected": true,
+    "adopted_heat_kernel_expansion": "Tr f(D/Lambda)~2f4 Lambda^4 a0+2f2 Lambda^2 a2+f0 a4",
+    "background": "flat Euclidean four-dimensional product chart",
+    "global_Wick_or_Lorentzian_action_selected": false,
+    "overall_positive_factor_suppressed_below": "32 f0/(8pi^2)",
+    "product_Dirac_scalar": "Phi(x)=h(x)D_phys(t(x))",
+    "requires": [
+      "f0>0",
+      "f2>0",
+      "h is a radial amplitude"
+    ],
+    "scalar_action": "f0/(8pi^2) Tr[(partial Phi)^2+Phi^4-4(f2 Lambda^2/f0)Phi^2]",
+    "t_field_promotion_selected_by_MTT": false,
+    "t_field_role": "conditional spacetime source-modulus extension of the CBF finite family",
+    "t_is_an_A51_inner_fluctuation": false
+  },
+  "date": "2026-08-30",
+  "exact_trace_data": {
+    "Tr_D1_squared": "192",
+    "Tr_D_D1": "16 q2'(t)",
+    "Tr_D_fourth": "32 q4(t)",
+    "Tr_D_squared": "32 q2(t)",
+    "branch_factors": {
+      "-2": "1-t",
+      "-4": "1-2t",
+      "2": "1+t"
+    },
+    "matrix_reconstruction_exact": true,
+    "q2": "3-4t+6t^2",
+    "q2_coefficients_ascending": [
+      "3",
+      "-4",
+      "6"
+    ],
+    "q4": "3-8t+36t^2-32t^3+18t^4",
+    "q4_coefficients_ascending": [
+      "3",
+      "-8",
+      "36",
+      "-32",
+      "18"
+    ]
+  },
+  "field_space_geometry": {
+    "conditional_t_kinetic_term_closed": true,
+    "coordinates": [
+      "h",
+      "t"
+    ],
+    "determinant": "14h^2",
+    "h_zero_interpretation": "radial origin where t is not an independent coordinate",
+    "kinetic_trace": "32[q2(dh)^2+h q2'(dh)(dt)+6h^2(dt)^2]",
+    "metric": [
+      [
+        "q2(t)",
+        "h q2'(t)/2"
+      ],
+      [
+        "h q2'(t)/2",
+        "6h^2"
+      ]
+    ],
+    "positive_definite_domain": "h>0",
+    "selected_t_dynamicality_closed": false
+  },
+  "fixed_radial_bridge": {
+    "S_rep": "4t^2-(16/3)t^3+3t^4",
+    "fixed_h_potential": "U_rho(t)=q4(t)-2rho q2(t)",
+    "meaning": "the positive repair profile is the fixed-radial spectral potential at the t=0 radial stationarity ratio",
+    "rho_definition": "rho=2f2 Lambda^2/(f0 h^2)=2c/h^2",
+    "rho_one_identity": "U_1(t)-U_1(0)=6S_rep(t)",
+    "source": "CBF.T26",
+    "warning": "substituting a fixed h before varying h can create spurious nonzero t extrema"
+  },
+  "frontier_delta": "The standard flat product-Dirac heat-kernel tier has now been executed on the complete CBF finite family with both h and t varied. It gives an exact positive field metric with det g=14h^2, a unique broken tree vacuum t=0 and h^2=2f2 Lambda^2/f0, and two degenerate conditional scalar curvature masses m^2=4h^2. This proves that the bare standard spectral action cannot generate a nonzero family hierarchy from the one-coordinate source family. Under A53's conditional one-atom premise it emits exact ratios h/Lambda=sqrt(30/log448) and m/Lambda=2sqrt(30/log448), which are incompatible with simultaneously imposing the T23 h=Lambda normalization at a stationary tree vacuum. MTT promotion of t as a physical field, selected moments, Lorentzian/QFT completion, absolute scale and accepted physical values remain open.",
+  "parameter_ledger": {
+    "absolute_dimensionful_scale_selected": false,
+    "conditional_A53_premise": "zero-new-scale minimal one-atom proper-time support",
+    "conditional_A53_premises": 1,
+    "conditional_structural_extension": "promote t to a spacetime source modulus",
+    "conditional_structural_extensions": 1,
+    "dimensionless_conditional_ratios_emitted": 3,
+    "new_accepted_physical_parameters": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "B_SM_02_closed": false,
+    "conditional_joint_heat_kernel_action_closed": true,
+    "conditional_joint_tree_vacuum_closed": true,
+    "conditional_t_kinetic_metric_closed": true,
+    "conditional_tree_scalar_curvature_spectrum_closed": true,
+    "measured_mass_prediction_closed": false,
+    "renormalized_quantum_vacuum_closed": false,
+    "selected_Lorentzian_or_global_Wick_action_closed": false,
+    "selected_absolute_scale_closed": false,
+    "selected_source_modulus_field_closed": false,
+    "selected_spectral_moments_closed": false,
+    "standard_tree_action_nonzero_hierarchy_no_go_closed": true
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "scalar_spectrum": {
+    "dimensionless_mass_ratio": "m/h0=2",
+    "exact_relation": "Hess(P)|0=8h0^2 g|0",
+    "generalized_mass_squared_spectrum": {
+      "4h0^2": 2
+    },
+    "interpretation": "conditional tree-level radial/source-modulus curvature masses, not pole masses",
+    "mass_convention": "M^2=(1/2)g^{-1}Hess(P)",
+    "vacuum_metric": [
+      [
+        "3",
+        "-2h0"
+      ],
+      [
+        "-2h0",
+        "6h0^2"
+      ]
+    ],
+    "vacuum_potential_Hessian": [
+      [
+        "24h0^2",
+        "-16h0^3"
+      ],
+      [
+        "-16h0^3",
+        "48h0^4"
+      ]
+    ]
+  },
+  "schema": "boe.mtt.product-dirac-joint-radial-source-modulus-action.v1",
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "handoff_id": "cfe21291-1890-4355-a0c7-297aa4d0947d",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "60a8a2b74e50ee1657122b85db60a3eaf39703aa",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 18,
+    "source_root_payload": {
+      "conditional_scalar_action": "f0/(8pi^2) Tr[(partial Phi)^2+Phi^4-4(f2 Lambda^2/f0)Phi^2]",
+      "finite_family": "Phi(x)=h(x)D_phys(t(x))",
+      "observed_targets": [],
+      "q2_coefficients_ascending": [
+        "3",
+        "-4",
+        "6"
+      ],
+      "q4_coefficients_ascending": [
+        "3",
+        "-8",
+        "36",
+        "-32",
+        "18"
+      ],
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "60a8a2b74e50ee1657122b85db60a3eaf39703aa",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.product-dirac-joint-radial-source-modulus-action-root.v1",
+      "selected_t_field_promotion": false,
+      "source_hashes": [
+        "06faef972ba717fc1b0952b8b86c5e37e1e277af7ddd22141ac9500e8754cf41",
+        "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+        "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+        "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+        "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+        "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+        "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158",
+        "82d01b74e1ccb9f272202fed482a8259d7d52171894aaad57eca5a0ff87a56be",
+        "5b91050752dcc4c21376222df496bd26fbf37feaec15b0f1259536a512f641f3",
+        "54c268a9050872a73d37ca5be58b3cd3110dd8452ab74e4ed2b6680f93c9fdae",
+        "e3ff862d3781def7fbb9c921a5e4d19bd78911801faee086840f7cdbe5d7b1db",
+        "1e4a03a439daabde6b7f4decba676ee325f054475702b07e27adce129f8a5229",
+        "423e3ae86dd8b5abee19e38d53f0bb003fb53fc0e5adc872076cab546934e893",
+        "20b357f3552391b54e8ee1878052c0797012c5900ba9244039c51a2f534bb14f",
+        "cd5c4a0af557470a6687a71241228432e4c9d94b216c69a37aec6fbf6823f99e",
+        "85e04c71f609471fdbfa97e62a8559d5f53425908bc2928593459c8b4688bb11",
+        "0d12e410e0534bbb36fa36aa16f903ac720ae603c77cc76d8fb23650c2713846",
+        "04a3d5233ffe58eda198b9cd45f5ae5b73b885d05c52572550399fceac1b4c45"
+      ],
+      "theorem_sha256": "b0c668b916696412cf7a8bbcd9124eaf9d72f5512653e48d25ebb5f6d904a098"
+    },
+    "source_root_sha256": "7b5a0a92d5c0c63073ea56ba7e660e83fa71b4599437a39a9de35e00fc9ceade"
+  },
+  "status": "exact conditional joint radial/source-modulus heat-kernel action, unique zero-hierarchy tree vacuum and A53/T23 compatibility cutset; source-modulus field promotion and physical values remain open",
+  "tree_potential": {
+    "broken_branch_reduced_potential": "P_min(t)=-4c^2 q2(t)^2/q4(t)",
+    "c_definition": "c=f2 Lambda^2/f0>0",
+    "h_zero_ridge_radial_curvature": "-8c q2(t)<0",
+    "normalized_potential": "P(h,t)=h^4 q4(t)-4c h^2 q2(t)",
+    "radial_stationary_branches": [
+      "h=0",
+      "h^2=2c q2(t)/q4(t)"
+    ],
+    "stationary_numerator": "q2 q4'-2q4 q2'=8t(6t^3-11t^2-18t+14)"
+  },
+  "vacuum_selection": {
+    "cauchy_identity": "3q4-q2^2=2t^2(9t^2-24t+28)",
+    "chamber_cubic_endpoint_values": {
+      "t=-1": 15,
+      "t=1/2": 3
+    },
+    "chamber_cubic_interior_critical_type": "one strict maximum",
+    "equality_condition": "t=0 only",
+    "fixed_h_nonzero_candidates_survive_joint_h_equation": false,
+    "global_minimum_value": "-12c^2",
+    "inner_quadratic_discriminant": -432,
+    "neutral_chamber": "-1<t<1/2",
+    "nonzero_family_hierarchy_at_tree_level": false,
+    "ratio_bound": "q2(t)^2/q4(t)<=3",
+    "unique_broken_stationary_coordinate_in_chamber": "t0=0",
+    "unique_radial_vacuum_for_h>=0": "h0^2=2c"
+  }
+}

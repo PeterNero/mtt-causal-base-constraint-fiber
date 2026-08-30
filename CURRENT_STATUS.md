@@ -24,6 +24,8 @@ This is a snapshot, not a substitute for live kernel queries.
 - Direct finite-source causal continuum handoff: `c6ac82be-f43f-4464-8943-68814e47539e`
 - Four-dimensional determinant scheme-classification handoff:
   `ec8fc7e0-33c8-4cf1-9ae0-6b941d4da986`
+- Joint radial/source-modulus heat-kernel action handoff:
+  `cfe21291-1890-4355-a0c7-297aa4d0947d`
 
 ## Controlling authorities
 
@@ -36,6 +38,9 @@ This is a snapshot, not a substitute for live kernel queries.
 | `A47` | established | Derives the faithful low-energy gauge group `(SU3 x SU2 x U1)/Z6` from selected native bundle tensors. |
 | `A46` | established | Supplies the exact 48-state three-family representation and anomaly table consumed by the associated-matter witness. |
 | `A50` | established | Supplies the unique anomaly-free shared hypercharge circle and exact `6Y` rows. |
+| `A51` | established/profile boundary | Selects the rank-four one-Higgs module and standard product-triple bosonic operator content; absolute moments and normalization remain open. |
+| `A52` | no-go/profile exit | Proves universal spectral normalization fails accepted SM running and only `f0 K_i`, `f2 Lambda^2`, and `f4 Lambda^4` are identifiable. |
+| `A53` | conditional/no-go | Supplies exact `tau_int=log(448)/15` and a conditional one-atom moment sequence; the point-support premise is not selected. |
 
 ## Relevant frontier results
 
@@ -1025,3 +1030,52 @@ field, then supply its bosonic action, global Wick/direct Lorentzian external
 measure, finite scalar counterterm rule, absolute scale and sector map. Until
 then `B.ACTION.01`, `B.QFT.02` and `B.SM.02` remain open and physical
 acceptance remains `0/3` packets and `0/7` rows.
+
+`ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md`
+(`CBF.T32`) executes the standard flat product-Dirac heat-kernel action on the
+complete finite family after making one explicit extension:
+
+```text
+Phi(x)=h(x)D_phys(t(x)).
+```
+
+The resulting two-coordinate field metric is exact,
+
+```text
+g=[[q2,hq2'/2],[hq2'/2,6h^2]],
+det g=14h^2,
+```
+
+so the source coordinate has a positive kinetic term whenever `h>0` under
+this extension. The joint tree potential is
+
+```text
+P(h,t)=h^4q4(t)-4(f2 Lambda^2/f0)h^2q2(t).
+```
+
+The identity
+
+```text
+3q4-q2^2=2t^2(9t^2-24t+28)
+```
+
+proves that its unique broken minimum is `t=0` and
+`h0^2=2f2 Lambda^2/f0`. Thus the bare standard spectral action cannot emit a
+nonzero family hierarchy from this one-coordinate source. The generalized
+tree curvature spectrum is exactly two copies of `m^2=4h0^2`, and the fixed-
+radial `rho=1` slice reproduces `6S_rep` from CBF.T26.
+
+Under A53's explicitly conditional one-atom premise, the same calculation
+emits
+
+```text
+h0/Lambda=sqrt(30/log(448))=2.2167930327...,
+m/Lambda=2sqrt(30/log(448))=4.4335860654....
+```
+
+These are exact conditional ratios, not accepted physical values. They also
+prove a cutset: A53's moment ratio, literal T23 `h=Lambda`, and bare tree
+stationarity cannot all hold simultaneously. The packet passes `70/70`
+builder checks and `131/131` independent checks. MTT promotion of `t(x)`,
+selected moments, absolute scale, Lorentzian/QFT completion and physical
+values remain open; acceptance remains `0/3` and `0/7`.

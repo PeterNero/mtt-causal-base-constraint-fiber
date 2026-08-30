@@ -1030,8 +1030,33 @@ semigroup packet passes `96/96` checks and its independent verifier passes
 independent verifier passes `179/179`. The KO6 determinant value-selection
 packet passes `107/107` checks and its independent verifier passes `131/131`.
 The four-dimensional determinant scheme-classification packet passes `70/70`
-checks and its independent verifier passes `106/106`. The canonical suite
-passes 176 unit tests. The
+checks and its independent verifier passes `106/106`. Before CBF.T32, the
+canonical suite passed 176 unit tests.
+
+The thirty-second theorem executes the standard flat product-Dirac heat-kernel
+action on the joint ansatz `Phi(x)=h(x)D_phys(t(x))`. Exact finite traces give
+
+```text
+g(h,t)=[[q2,hq2'/2],[hq2'/2,6h^2]],
+det g=14h^2,
+P(h,t)=h^4q4-4(f2 Lambda^2/f0)h^2q2.
+```
+
+The identity `3q4-q2^2=2t^2(9t^2-24t+28)` proves that the
+unique broken tree minimum is `t=0`; the bare standard spectral action cannot
+generate a nonzero family hierarchy on this source family. At that point the
+potential Hessian is exactly `8h0^2` times the field metric, yielding two
+conditional generalized curvature masses `m^2=4h0^2`. The `rho=1` fixed-
+radial slice is exactly six times the CBF.T26 repair action.
+
+Under A53's conditional one-atom premise, the exact ratios are
+`h0/Lambda=sqrt(30/log448)` and `m/Lambda=2sqrt(30/log448)`. They conflict with
+simultaneously imposing T23's literal `h=Lambda` at the bare stationary point.
+This is a compatibility cutset, not a physical mass prediction: A51 does not
+select `t` as an inner-fluctuation field, A53's point measure remains
+conditional, and the absolute scale and Lorentzian/QFT completion remain open.
+The joint-action packet passes `70/70` builder checks and `131/131` independent
+checks. The canonical suite now passes 187 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete

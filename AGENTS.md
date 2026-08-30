@@ -32,6 +32,9 @@ paper, note, packet name or search hit.
    `d9291f60-aa25-4c70-84ff-a3b3c9ca10c0`;
    the finite Dirac spectral-classification handoff is
    `b5346b8d-1373-42c2-bee8-e0ddab69ef62`;
+   the four-dimensional determinant scheme-classification handoff is
+   `ec8fc7e0-33c8-4cf1-9ae0-6b941d4da986`; the joint radial/source-modulus
+   heat-kernel action handoff is `cfe21291-1890-4355-a0c7-297aa4d0947d`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

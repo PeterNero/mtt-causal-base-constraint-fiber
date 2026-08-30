@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/product-dirac-joint-radial-source-modulus-action.v1.schema.json",
+  "title": "MTT product-Dirac joint radial/source-modulus action packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "conditional_action_scope",
+    "exact_trace_data",
+    "field_space_geometry",
+    "tree_potential",
+    "vacuum_selection",
+    "scalar_spectrum",
+    "fixed_radial_bridge",
+    "A53_T23_compatibility",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.product-dirac-joint-radial-source-modulus-action.v1"},
+    "claim_id": {"const": "CBF.T32"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "conditional_action_scope": {"type": "object"},
+    "exact_trace_data": {"type": "object"},
+    "field_space_geometry": {"type": "object"},
+    "tree_potential": {"type": "object"},
+    "vacuum_selection": {"type": "object"},
+    "scalar_spectrum": {"type": "object"},
+    "fixed_radial_bridge": {"type": "object"},
+    "A53_T23_compatibility": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    },
+    "check_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "boe.mtt.product-dirac-joint-radial-source-modulus-action-source-lock.v1",
+  "claim_id": "CBF.T32",
+  "date": "2026-08-30",
+  "handoff_id": "cfe21291-1890-4355-a0c7-297aa4d0947d",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "60a8a2b74e50ee1657122b85db60a3eaf39703aa",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "WeylGramClosureRepairRelativeResponseSourceTheorem_v1.md",
+      "sha256": "06faef972ba717fc1b0952b8b86c5e37e1e277af7ddd22141ac9500e8754cf41",
+      "role": "CBF.T20 exact primitive Weyl-Gram finite source"
+    },
+    {
+      "path": "weyl_gram_closure_repair_source.packet.json",
+      "sha256": "bcebda1f01ce9fb66f56758a2cb5705063bd644dbfb49f069f38add323486e88",
+      "role": "CBF.T20 machine-readable primitive matrices"
+    },
+    {
+      "path": "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
+      "sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+      "role": "CBF.T23 product-Dirac and one-universal-scale identification"
+    },
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "CBF.T23 exact 96-dimensional physical finite operator packet"
+    },
+    {
+      "path": "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md",
+      "sha256": "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+      "role": "CBF.T25 direct causal continuum Dirac-Yukawa realization"
+    },
+    {
+      "path": "direct_finite_source_continuum.packet.json",
+      "sha256": "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+      "role": "CBF.T25 exact continuum square and source-coordinate boundary"
+    },
+    {
+      "path": "CanonicalNormalizedDiracSquareDefectRepairActionAndValueSelectionNoGoTheorem_v1.md",
+      "sha256": "5ccf1a2c3189d6bf5a1b5c10d87f0df423924b5162b74169fbe9415bf55cc158",
+      "role": "CBF.T26 normalized positive repair polynomial"
+    },
+    {
+      "path": "direct_dirac_defect_repair_action.packet.json",
+      "sha256": "82d01b74e1ccb9f272202fed482a8259d7d52171894aaad57eca5a0ff87a56be",
+      "role": "CBF.T26 exact repair-action coefficients"
+    },
+    {
+      "path": "CanonicalFiniteDiracSpectralActionClassificationAndProfileSelectionNoGoTheorem_v1.md",
+      "sha256": "5b91050752dcc4c21376222df496bd26fbf37feaec15b0f1259536a512f641f3",
+      "role": "CBF.T27 full finite Dirac spectrum and trace moments"
+    },
+    {
+      "path": "finite_dirac_spectral_action_classification.packet.json",
+      "sha256": "54c268a9050872a73d37ca5be58b3cd3110dd8452ab74e4ed2b6680f93c9fdae",
+      "role": "CBF.T27 exact spectral family packet"
+    },
+    {
+      "path": "FourDimensionalFermionDeterminantSchemeClassificationAndPhysicalValueBoundaryTheorem_v1.md",
+      "sha256": "e3ff862d3781def7fbb9c921a5e4d19bd78911801faee086840f7cdbe5d7b1db",
+      "role": "CBF.T31 four-dimensional determinant and dynamicality boundary"
+    },
+    {
+      "path": "four_dimensional_fermion_determinant_scheme_classification.packet.json",
+      "sha256": "1e4a03a439daabde6b7f4decba676ee325f054475702b07e27adce129f8a5229",
+      "role": "CBF.T31 exact one-loop scheme-classification packet"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_FiniteSpectralActionAndHiggsInnerFluctuation_or_DirectGenerativeSMActionClosure_v1.md",
+      "sha256": "423e3ae86dd8b5abee19e38d53f0bb003fb53fc0e5adc872076cab546934e893",
+      "role": "A51 selected one-Higgs module and standard product-triple heat-kernel tier"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure_certificate.json",
+      "sha256": "20b357f3552391b54e8ee1878052c0797012c5900ba9244039c51a2f534bb14f",
+      "role": "A51 machine-readable action-tier boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_SpectralCutoffMomentsAndSpacetimeProductTriple_or_BosonicActionNormalization_v1.md",
+      "sha256": "cd5c4a0af557470a6687a71241228432e4c9d94b216c69a37aec6fbf6823f99e",
+      "role": "A52 product-triple normalization and spectral-moment identifiability no-go"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_spectralcutoffmomentsandspacetimeproducttriple_or_bosonicactionnormalization_certificate.json",
+      "sha256": "85e04c71f609471fdbfa97e62a8559d5f53425908bc2928593459c8b4688bb11",
+      "role": "A52 machine-readable profile and strict-source boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_ProperTimeMeasureAndOverlapKineticMetricSource_or_StrictSpectralActionClosure_v1.md",
+      "sha256": "0d12e410e0534bbb36fa36aa16f903ac720ae603c77cc76d8fb23650c2713846",
+      "role": "A53 exact tau_int and conditional one-atom moment law"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_propertimemeasureandoverlapkineticmetricsource_or_strictspectralactionclosure_certificate.json",
+      "sha256": "04a3d5233ffe58eda198b9cd45f5ae5b73b885d05c52572550399fceac1b4c45",
+      "role": "A53 machine-readable conditionality and no-go boundary"
+    }
+  ],
+  "external_context": [
+    {
+      "url": "https://arxiv.org/abs/hep-th/9606001",
+      "role": "primary spectral-action asymptotic expansion"
+    },
+    {
+      "url": "https://arxiv.org/abs/hep-th/0306138",
+      "role": "primary heat-kernel coefficient conventions and scalar endomorphisms"
+    },
+    {
+      "url": "https://arxiv.org/abs/1201.6637",
+      "role": "Dirac-type spectral action with scalar fields and boundary accounting"
+    }
+  ],
+  "boundary": {
+    "standard_flat_product_triple_heat_kernel_adopted_conditionally": true,
+    "t_promoted_to_spacetime_source_modulus_by_MTT": false,
+    "A51_single_Higgs_module_selected": true,
+    "A51_absolute_normalization_selected": false,
+    "A53_tau_int_exact": true,
+    "A53_one_atom_measure_selected_by_MTT": false,
+    "joint_h_t_kinetic_metric_before": false,
+    "joint_h_t_kinetic_metric_after": true,
+    "joint_tree_vacuum_before": false,
+    "joint_tree_vacuum_after": true,
+    "nonzero_t_tree_vacuum_selected": false,
+    "absolute_scale_selected": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}
