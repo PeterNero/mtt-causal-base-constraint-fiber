@@ -48,7 +48,9 @@ paper, note, packet name or search hit.
    the state-free global causal-evolution handoff is
    `a9ef2144-5598-4502-86e1-5149e7817b81`; the future-cone spectral
    polarization and flat-branch free initial-state handoff is
-   `383b5f8f-2fb9-47fa-acdc-92bf070f241b`;
+   `383b5f8f-2fb9-47fa-acdc-92bf070f241b`; the selected future-state
+   Moller/BV transport and full-G2 cutset handoff is
+   `679ecd00-572c-473c-9e8a-b7f7646c955d`;
    the radial closure-attractor and state-marginal handoff is
    `5067bb6f-4704-4da5-a085-be56da8cd4b0`;
    the renormalized BV anchored repair-semiflow and global-intertwining

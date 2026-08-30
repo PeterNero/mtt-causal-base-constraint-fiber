@@ -186,6 +186,12 @@
     "Calderon and oriented half-line closure-repair selection of the same free CAR state",
     "positive-Hessian state-polarization nonselection theorem",
     "flat-branch T44 scalarization with no continuous state selector",
+    "exact retarded transport of the T45 state through compact direct Dirac-Yukawa background perturbations",
+    "exact preservation of normalization, positivity, purity, quasifree character and Hadamard class under Moller transport",
+    "local-formal BV state pullback preserving square-cone positivity and BRST cohomology",
+    "canonical homotopy-gauge interacting BRST lift given a free physical seed",
+    "exact two-factor gauge-physical and Higgs-fluctuation full-seed cutset",
+    "typed separation of formal positivity, finite-regulator Cstar positivity and selected continuum positivity",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -303,7 +309,7 @@
     "promotion of the T45 flat-branch free ground state to a natural state on every globally hyperbolic background",
     "selection of a generic cosmological state from time orientation alone",
     "selection of a quantum polarization by the positive closure Hessian without an oriented first-order charge",
-    "fixed-coupling interacting BV state transport or determinant-line trivialization from the T45 free initial state",
+    "selection of the gauge-physical and Higgs-fluctuation seed factors, upper-action BV map, fixed-coupling regulator-independent state or determinant-line trivialization from the T45 free Weyl state",
     "a new globally original operator-theory identity"
   ],
   "controlling_status": "CURRENT_STATUS.md",
@@ -353,7 +359,8 @@
     "SharedCircleMorseBottRadialActionAndRankFourDeterminantLiftTheorem_v1.md",
     "WeylPolarizedProductDiracOneLoopPushforwardAndDirectG0SourceTheorem_v1.md",
     "CausalRelativeCauchyEvolutionAndStateSeparatedGlobalG0Theorem_v1.md",
-    "FutureConeSpectralPolarizationAndFreeInitialStateSelectionTheorem_v1.md"
+    "FutureConeSpectralPolarizationAndFreeInitialStateSelectionTheorem_v1.md",
+    "SelectedFutureStateMollerBVTransportAndFullG2CutsetTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -400,7 +407,8 @@
     "shared_circle_morse_bott_rank_four.packet.json",
     "weyl_polarized_product_dirac_g0.packet.json",
     "causal_relative_cauchy_evolution_global_g0.packet.json",
-    "future_cone_spectral_polarization.packet.json"
+    "future_cone_spectral_polarization.packet.json",
+    "selected_future_state_moller_bv_transport.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -447,7 +455,8 @@
     "python build_shared_circle_morse_bott_rank_four.py",
     "python build_weyl_polarized_product_dirac_g0.py",
     "python build_causal_relative_cauchy_evolution_global_g0.py",
-    "python build_future_cone_spectral_polarization.py"
+    "python build_future_cone_spectral_polarization.py",
+    "python build_selected_future_state_moller_bv_transport.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -489,7 +498,8 @@
     "shared_circle_morse_bott_rank_four_contract.schema.json",
     "weyl_polarized_product_dirac_g0_contract.schema.json",
     "causal_relative_cauchy_evolution_global_g0_contract.schema.json",
-    "future_cone_spectral_polarization_contract.schema.json"
+    "future_cone_spectral_polarization_contract.schema.json",
+    "selected_future_state_moller_bv_transport_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

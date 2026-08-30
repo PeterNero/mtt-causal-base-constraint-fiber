@@ -1,0 +1,628 @@
+{
+  "G2_clause_ledger": {
+    "G2a_flat_branch_free_Weyl_initial_state": "closed by T45",
+    "G2b_canonical_formal_BRST_lift_given_seed": "closed by T46",
+    "G2b_exact_quadratic_background_Dirac_state_transport": "closed by T46",
+    "G2b_local_formal_positive_state_existence": "closed by the inherited q79 theorem",
+    "G2b_local_formal_state_pullback_rule": "closed algebraically by T46",
+    "G2b_selected_full_gauge_Higgs_Weyl_seed": "open",
+    "G2b_selected_upper_action_and_BV_map": "open",
+    "G2c_fixed_coupling_finite_auxiliary_regulator": "closed 5/5 in the inherited q79 theorem",
+    "G2c_selected_regulator_independent_continuum": "open 0/9",
+    "physical_T41_gate_count": "0/3",
+    "top_level_physical_G2": "open"
+  },
+  "canonical_BRST_lift": {
+    "does_not_select_free_seed": true,
+    "existence_condition": "p r_n=0 at every order; the certified q79 deformation-stability theorem supplies existence for every free physical vector",
+    "free_contraction": "Q0 h+h Q0=I-i p with h^2=0, p h=0 and h i=0",
+    "gauge_conditions": [
+      "p psi_n=0",
+      "h psi_n=0"
+    ],
+    "interacting_charge": "Q_I=Q0+sum_(n>=1) lambda^n delta_n",
+    "recursive_lift": "psi_n=-h r_n",
+    "recursive_source": "r_n=sum_(k=1)^n delta_k psi_(n-k)",
+    "result": "once a free physical vector and one certified contraction/presentation are fixed, the formal lift is canonical; presentation changes transport it rather than creating a physical parameter",
+    "uniqueness": "any two lifts with the same physical projection and homotopy gauge differ by a Q0-closed vector annihilated by p and h, hence vanish by the contraction identity"
+  },
+  "canonical_lift_witness": {
+    "Q0": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "basis": [
+      "epsilon_1",
+      "epsilon_2",
+      "x",
+      "y",
+      "c",
+      "bar_c"
+    ],
+    "closure_identity": "(Q0+lambda delta_Q1)psi(lambda)=0",
+    "delta_Q1": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "first_order_correction": [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "formal_lift": "psi(lambda)=epsilon_1+lambda x",
+    "free_vector": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "homotopy": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ]
+    ],
+    "normalization_identity": "<psi(lambda),psi(lambda)>_J=1",
+    "physical_projector": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "scope_guard": "finite exact homological-lift witness; q79 hermiticity and positivity are imported from the certified interacting charge, not inferred from this toy perturbation"
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 60,
+    "total": 60
+  },
+  "checks": {
+    "T38_does_not_select_cosmological_state": true,
+    "T38_does_not_select_full_state": true,
+    "T39_anchor_not_selected_by_upper_action": true,
+    "T44_Moller_map_acts_on_even_CAR": true,
+    "T44_Moller_map_is_causal": true,
+    "T44_relative_element_is_formal": true,
+    "T45_future_state_is_Hadamard": true,
+    "T45_future_state_is_positive": true,
+    "T45_future_state_is_selected": true,
+    "all_checks_pass_before_summary": true,
+    "all_contract_keys_present": true,
+    "canonical_first_order_lift_is_closed": true,
+    "canonical_lift_has_fixed_physical_projection": true,
+    "canonical_lift_norm_is_one_formally": true,
+    "canonical_lift_obeys_homotopy_gauge": true,
+    "comparison_source_01_hash_matches": true,
+    "comparison_source_02_hash_matches": true,
+    "comparison_source_03_hash_matches": true,
+    "comparison_source_04_hash_matches": true,
+    "comparison_source_05_hash_matches": true,
+    "construction_source_01_hash_matches": true,
+    "construction_source_02_hash_matches": true,
+    "construction_source_03_hash_matches": true,
+    "construction_source_04_hash_matches": true,
+    "construction_source_05_hash_matches": true,
+    "construction_source_06_hash_matches": true,
+    "construction_source_07_hash_matches": true,
+    "construction_source_08_hash_matches": true,
+    "construction_source_09_hash_matches": true,
+    "continuum_Cstar_rows_are_open": true,
+    "contract_schema_claim_matches": true,
+    "fixed_regulator_Cstar_is_closed": true,
+    "formal_charge_is_nilpotent_to_all_orders_in_witness": true,
+    "formal_deformation_supplies_lifts": true,
+    "formal_positivity_not_promoted_to_fixed_coupling": true,
+    "formal_state_transport_certificate_passes": true,
+    "formal_state_transport_is_unital_star_pullback": true,
+    "formal_state_transport_preserves_positivity": true,
+    "free_BRST_charge_is_nilpotent": true,
+    "free_quartet_contraction_identity": true,
+    "full_G2_not_claimed_closed": true,
+    "inverse_transport_returns_source": true,
+    "local_formal_state_certificate_passes": true,
+    "local_formal_state_requires_three_factors": true,
+    "no_fitted_state_used": true,
+    "no_observed_values_used": true,
+    "perturbation_anticommutes_with_free_charge": true,
+    "perturbation_squares_to_zero": true,
+    "physical_counters_unchanged": true,
+    "positive_square_expectations_are_nonnegative": true,
+    "quadratic_background_not_called_full_SM_interaction": true,
+    "second_transport_is_orthogonal": true,
+    "source_is_rank_one_projection": true,
+    "source_lock_claim_matches": true,
+    "source_lock_schema_matches": true,
+    "state_expectations_obey_pullback": true,
+    "state_transport_composes_exactly": true,
+    "theorem_file_exists": true,
+    "transport_unitary_is_orthogonal": true,
+    "transported_is_rank_one_projection": true
+  },
+  "claim_id": "CBF.T46",
+  "date": "2026-08-30",
+  "exact_direct_state_transport": {
+    "Hadamard_preserved": true,
+    "advanced_comparison": "the advanced transport defines the corresponding out-state; its comparison with the in-state is relative Cauchy evolution",
+    "domain": "T44 compactly supported smooth order-zero Dirac-Yukawa background perturbations of the T45 homogeneous flat direct branch",
+    "new_state_parameter_count": 0,
+    "nonlinear_full_SM_interaction": false,
+    "normalization_proof": "omega_h^in(1)=omega_fut(1)=1 because alpha_h^ret is unital",
+    "positivity_proof": "omega_h^in(A^*A)=omega_fut(B^*B)>=0 with B=(alpha_h^ret)^(-1)(A)",
+    "purity_preserved": true,
+    "quasifree_covariance": "P_h^in=M_h^ret P_fut (M_h^ret)^(-1) on the transported one-particle solution space",
+    "retarded_algebra_map": "alpha_h^ret:A_H^even -> A_h^even, induced by the retarded Moller isomorphism",
+    "selected_in_state": "omega_h^in=omega_fut composed with (alpha_h^ret)^(-1)",
+    "state_orbit_composition": "T_k<-h^* T_h<-H^* omega_fut=T_k<-H^* omega_fut",
+    "unique_meaning": "the unique pullback of omega_fut along the specified retarded Moller isomorphism, not the unique state of the perturbed theory"
+  },
+  "exact_transport_witness": {
+    "composite_transport_unitary": [
+      [
+        "-33/65",
+        "-56/65"
+      ],
+      [
+        "56/65",
+        "-33/65"
+      ]
+    ],
+    "direct_composite_projection": [
+      [
+        "1089/4225",
+        "-1848/4225"
+      ],
+      [
+        "-1848/4225",
+        "3136/4225"
+      ]
+    ],
+    "expectation_rows": [
+      {
+        "observable": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "source_after_pullback": "9/25",
+        "transported_state": "9/25"
+      },
+      {
+        "observable": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "source_after_pullback": "12/25",
+        "transported_state": "12/25"
+      },
+      {
+        "observable": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "source_after_pullback": "12/25",
+        "transported_state": "12/25"
+      },
+      {
+        "observable": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "source_after_pullback": "16/25",
+        "transported_state": "16/25"
+      }
+    ],
+    "inverse_transport": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "positive_square_rows": [
+      {
+        "positive_square_expectation": "9/25",
+        "root": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "positive_square_expectation": "16/25",
+        "root": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "positive_square_expectation": "49/25",
+        "root": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "positive_square_expectation": "37/25",
+        "root": [
+          [
+            "1",
+            "-1"
+          ],
+          [
+            "2",
+            "0"
+          ]
+        ]
+      }
+    ],
+    "second_transport_unitary": [
+      [
+        "5/13",
+        "-12/13"
+      ],
+      [
+        "12/13",
+        "5/13"
+      ]
+    ],
+    "sequential_transport_projection": [
+      [
+        "1089/4225",
+        "-1848/4225"
+      ],
+      [
+        "-1848/4225",
+        "3136/4225"
+      ]
+    ],
+    "source_future_projection": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "transport_unitary": [
+      [
+        "3/5",
+        "-4/5"
+      ],
+      [
+        "4/5",
+        "3/5"
+      ]
+    ],
+    "transported_projection": [
+      [
+        "9/25",
+        "12/25"
+      ],
+      [
+        "12/25",
+        "16/25"
+      ]
+    ]
+  },
+  "fixed_coupling_boundary": {
+    "T46_proves_nonperturbative_SM_state": false,
+    "T46_proves_regulator_removal": false,
+    "finite_auxiliary_regulator_Cstar_rows": "5/5",
+    "formal_square_cone_is_numeric_positive_cone": false,
+    "required_exit": "one selected regulator family plus uniform locality, energy, Ward, state and convergence estimates, or one common positive Borel/Cstar completion",
+    "selected_continuum_Cstar_rows": "0/9"
+  },
+  "formal_BV_state_pullback": {
+    "BRST_descent": "closed and exact representatives are preserved by the intertwining identity, so omega_V is defined on H0",
+    "closed_as_algebraic_transport_theorem": true,
+    "domain": "bounded H1-zero q79 charts over the formal perturbative ring",
+    "formal_positivity": "omega_V(A^* star_V A)=omega_0(I_V(A)^* star_0 I_V(A)) in the formal square cone",
+    "instantiated_as_selected_full_SM_state": false,
+    "map": "I_V:A_phys,V -> A_phys,0 is a unital star-isomorphism satisfying I_V s_hat_V=s_hat_0 I_V",
+    "normalization": "omega_V(1)=1",
+    "presentation_covariance": "Hadamard, renormalization and gauge-fixing changes transport the state cone by the certified presentation groupoid",
+    "reason_not_instantiated": "T45 selects only the Weyl factor; the full free physical seed also needs gauge-physical and Higgs-fluctuation factors, and T39's normalization is not yet selected by the upper action",
+    "state": "omega_V=omega_0 composed with I_V"
+  },
+  "frontier_delta": "The state problem is no longer one undifferentiated G2 box. T45 plus the T44 retarded Moller map now select an exact positive Hadamard in-state orbit for the complete compact-background direct Dirac-Yukawa family, with no new state parameter. At the nonlinear q79 BV tier, state pullback and the canonical formal BRST lift are also no longer blockers once a full free seed and one selected map are supplied. The remaining selected-state obstruction is reduced exactly to two missing free factors (gauge physical and Higgs fluctuation), upper-action selection of the full BV map, determinant holonomy and the fixed-coupling continuum estimates. The physical counters do not move because those are required by top-level G2.",
+  "full_seed_factorization": {
+    "Higgs_fluctuation_factor": {
+      "selected": false,
+      "status": "nonempty Hadamard state space exists; no same-source preferred factor is supplied by T38 or T45"
+    },
+    "Weyl_factor": {
+      "source": "P_fut",
+      "status": "selected on the homogeneous flat direct branch by T45"
+    },
+    "formal_lift_choice_after_full_seed": {
+      "selected": true,
+      "status": "removed by the canonical homotopy gauge in this theorem"
+    },
+    "full_product_seed_selected": false,
+    "gauge_physical_factor": {
+      "selected": false,
+      "status": "positive BRST quotient and compatible Hadamard states exist; no same-source preferred factor is supplied by T45"
+    },
+    "missing_selected_factors": 2,
+    "radial_background_marginal": {
+      "is_Higgs_fluctuation_state": false,
+      "source": "delta_H",
+      "status": "selected at the T38 finite/formal repair tier"
+    },
+    "required_free_state": "omega_0=omega_gauge,phys tensor omega_Higgs tensor omega_Weyl"
+  },
+  "parameter_ledger": {
+    "inherited_future_time_orientation": 1,
+    "inherited_unresolved_radial_scale": "H",
+    "new_continuous_state_selectors": 0,
+    "new_discrete_state_selectors": 0,
+    "new_fitted_parameters": 0,
+    "new_observed_inputs": 0,
+    "presentation_choices": "retarded/advanced boundary role, Hadamard representative, gauge fixing and renormalization prescription are typed maps or equivalent presentations; only the retarded map is used for the selected in-state"
+  },
+  "physical_boundary": {
+    "closed": [
+      "exact retarded transport of the T45 state through every T44 compact order-zero direct Dirac-Yukawa background perturbation",
+      "normalization, positivity, purity, quasifree character and Hadamard preservation under that transport",
+      "functorial composition and uniqueness of the transported state relative to the selected seed and map",
+      "formal BV state-pullback preservation of normalization, square-cone positivity and BRST cohomology",
+      "canonical formal BRST lift given a free physical seed and certified contraction",
+      "exact identification of the two missing full-product seed factors"
+    ],
+    "open": [
+      "same-source selection of the gauge-physical and Higgs-fluctuation free factors",
+      "upper-action selection of the full interacting BV map and anchored normalization",
+      "one global cosmological interacting state",
+      "source-dependent determinant-line connection and holonomy",
+      "selected fixed-coupling regulator-independent Cstar continuum state",
+      "physical G1 tangent metric and q79 HYM universality"
+    ],
+    "physical_packets_accepted": 0,
+    "physical_packets_total": 3,
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7
+  },
+  "schema": "boe.mtt.selected-future-state-moller-bv-transport.v1",
+  "source_provenance": {
+    "comparison_root": "093955db90d1127e7e40af3065c86a83bf048ea9be36ad5ee563a869e1bdbb63",
+    "construction_root": "832764ffa7c3b7f9c983d2d6f8d1c736efdaf8810ad2dc07c22abcd04b0d0eb0",
+    "contract": "selected_future_state_moller_bv_transport_contract.schema.json",
+    "contract_sha256": "7b0d30343fcbda3f92d34fde1e30bbe8878f0e76025870015579d26c58a0badd",
+    "handoff_id": "679ecd00-572c-473c-9e8a-b7f7646c955d",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "source_lock": "selected_future_state_moller_bv_transport_source_lock.json",
+    "source_lock_sha256": "580a0121b95e8760fb35ddd6df69758c23f95d68c800be7148a4952b28fd59de"
+  },
+  "status": "exact selected in-state transport for compactly supported direct Dirac-Yukawa background perturbations; local-formal BV state-pullback and canonical-lift criterion closed; full selected SM G2 and fixed-coupling continuum remain open",
+  "title": "Selected future-state Moller/BV transport and full G2 cutset"
+}

@@ -104,6 +104,8 @@ def main() -> None:
     run(sys.executable, "verify_causal_relative_cauchy_evolution_global_g0.py")
     run(sys.executable, "build_future_cone_spectral_polarization.py")
     run(sys.executable, "verify_future_cone_spectral_polarization.py")
+    run(sys.executable, "build_selected_future_state_moller_bv_transport.py")
+    run(sys.executable, "verify_selected_future_state_moller_bv_transport.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

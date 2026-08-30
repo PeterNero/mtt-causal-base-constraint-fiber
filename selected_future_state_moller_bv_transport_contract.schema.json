@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.selected-future-state-moller-bv-transport-contract.v1",
+  "title": "CBF.T46 selected future-state Moller/BV transport contract",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "title",
+    "date",
+    "status",
+    "source_provenance",
+    "exact_direct_state_transport",
+    "exact_transport_witness",
+    "formal_BV_state_pullback",
+    "canonical_BRST_lift",
+    "canonical_lift_witness",
+    "full_seed_factorization",
+    "G2_clause_ledger",
+    "fixed_coupling_boundary",
+    "parameter_ledger",
+    "physical_boundary",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.selected-future-state-moller-bv-transport.v1"
+    },
+    "claim_id": {
+      "const": "CBF.T46"
+    },
+    "date": {
+      "const": "2026-08-30"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "failed"]
+    }
+  },
+  "additionalProperties": true
+}

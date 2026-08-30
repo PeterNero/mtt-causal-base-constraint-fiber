@@ -1,0 +1,118 @@
+{
+  "schema": "boe.mtt.selected-future-state-moller-bv-transport-source-lock.v1",
+  "claim_id": "CBF.T46",
+  "date": "2026-08-30",
+  "handoff_id": "679ecd00-572c-473c-9e8a-b7f7646c955d",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "construction_sources": [
+    {
+      "path": "FutureConeSpectralPolarizationAndFreeInitialStateSelectionTheorem_v1.md",
+      "sha256": "96591454eec98296320ed9d7ec80d92fdb1f277652e023c15fe41e750136515b",
+      "role": "T45 selected future-positive pure quasifree CAR state on the homogeneous flat direct branch"
+    },
+    {
+      "path": "future_cone_spectral_polarization.packet.json",
+      "sha256": "7e90cd06fb1fcb5c773133efc9c86c656769d9ce69e24ae0d5a90f697531e7aa",
+      "role": "machine-readable T45 covariance, branch and G2a boundary"
+    },
+    {
+      "path": "CausalRelativeCauchyEvolutionAndStateSeparatedGlobalG0Theorem_v1.md",
+      "sha256": "c4d399386994aca5322ade19c933ba7c45d64316292d266ab123b67b84ad072c",
+      "role": "T44 exact advanced and retarded Moller maps, CAR automorphism and relative S-matrix"
+    },
+    {
+      "path": "causal_relative_cauchy_evolution_global_g0.packet.json",
+      "sha256": "1257e4a9bbd8d29a3c81a1294e6b992132d282812dce7dd2498308375b783797",
+      "role": "machine-readable T44 state-free causal evolution and scalarization cutset"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Local_Formal_BRST_Physical_State_and_Positivity_Theorem_v1.md",
+      "sha256": "f4ac137d61201a639c22613ad4998fdc555b619513a16c4f02cb7b46ae5b1583",
+      "role": "local formal q79 BRST physical state existence, quartet contraction and deformation-stable positivity"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_local_formal_physical_state.certificate.json",
+      "sha256": "9cc6e595fd0b96e5c1f37809c151f271c5010308fa814cc63b14412671e410dd",
+      "role": "machine-readable free gauge-Higgs-Weyl factorization, interacting charge and formal positivity boundary"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_equicausal_formal_state_transport.certificate.json",
+      "sha256": "fdf58a379f5a99b0a2d341137b2c1f9e31f7ac377485ddd147890f6603846ff0",
+      "role": "unital formal star-isomorphism state transport and BRST presentation-groupoid covariance"
+    },
+    {
+      "path": "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
+      "sha256": "eb25406a95a3316a0c7b98ef237ef94d0f0758fd50c4cfbf672f9c633de57c5a",
+      "role": "T39 all-orders local-formal QME-compatible anchored normalization and its upper-selection boundary"
+    },
+    {
+      "path": "renormalized_bv_anchored_repair_semiflow.packet.json",
+      "sha256": "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+      "role": "machine-readable T39 formal BV evolution and fixed-coupling boundary"
+    }
+  ],
+  "comparison_sources": [
+    {
+      "path": "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
+      "sha256": "bfde0358a25e06268c181a1d8d9ca5cc3813aceeb91774021f329411efb782df",
+      "role": "T38 exact radial marginal, which is not a Higgs-fluctuation or full gauge-matter state"
+    },
+    {
+      "path": "radial_closure_attractor_state_marginal.packet.json",
+      "sha256": "43eabb2bb78a16bdf049e63c592df7aa29086228e4c8ca648b9582cc1114eabe",
+      "role": "machine-readable T38 marginal/full-state distinction"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Local_Formal_Physical_State_Space_Compatibility_and_Gluing_Theorem_v1.md",
+      "sha256": "4ab8a9f0c5f0813010482dc1b6b4d6a2c666759e8bab6fc05703f1c34f5f9db2",
+      "role": "local formal state-space functor and preferred/global-state boundary"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_FixedCoupling_RegulatedCstar_Landing_and_ContinuumPromotion_Criterion_Theorem_v1.md",
+      "sha256": "d50dce1c400e4fc80c0003e5d662bec69d72ba7baf2d4aa7629c1d0caa719c9b",
+      "role": "finite-regulator Cstar landing and explicit continuum-promotion cutset"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_fixed_coupling_regulated_cstar_promotion_criterion.certificate.json",
+      "sha256": "8e5eddc1fa7dc29cba871d7adb3b624249ff26d2db48fd9b747c7f2ad028137d",
+      "role": "machine-readable 5/5 finite-regulator and 0/9 continuum acceptance boundary"
+    }
+  ],
+  "transport_rule": {
+    "exact_direct_map": "alpha_h^ret is the CAR star-isomorphism induced by the retarded T44 Moller map",
+    "exact_direct_state": "omega_h^in=omega_fut composed with (alpha_h^ret)^(-1)",
+    "formal_BV_map": "I_V:A_phys,V to A_phys,0 is a unital star-isomorphism intertwining the interacting and free quantum BRST differentials",
+    "formal_BV_state": "omega_V=omega_0 composed with I_V",
+    "canonical_lift_gauge": "at each positive formal order impose p psi_n=0 and h psi_n=0 in the certified free BRST contraction",
+    "excluded_promotions": [
+      "calling a quadratic external-background Dirac theory a nonlinear interacting Standard Model",
+      "replacing the missing Higgs-fluctuation state by the T38 radial delta_H marginal",
+      "inferring a gauge physical seed from the T45 Weyl covariance",
+      "promoting square-cone formal positivity to fixed-coupling Cstar positivity",
+      "claiming a selected cosmological state or determinant-line holonomy",
+      "changing the physical 0/3 gate or 0/7 row counters"
+    ]
+  },
+  "external_primary_context": [
+    {
+      "url": "https://arxiv.org/abs/2109.01375",
+      "role": "Dirac Moller star-isomorphisms and preservation of Hadamard singular structure under state pullback"
+    },
+    {
+      "url": "https://arxiv.org/abs/hep-th/9807215",
+      "role": "deformation stability of BRST positivity and physical-state lifts"
+    },
+    {
+      "url": "https://arxiv.org/abs/1110.5232",
+      "role": "renormalized quantum BV algebra and anomalous Master Ward identity in pAQFT"
+    },
+    {
+      "url": "https://arxiv.org/abs/math-ph/9903028",
+      "role": "local causal perturbative interacting algebras and relative S-matrices"
+    },
+    {
+      "url": "https://arxiv.org/abs/2103.05740",
+      "role": "fixed-coupling Cstar interaction benchmark including Fermi fields, not a q79 continuum theorem"
+    }
+  ]
+}

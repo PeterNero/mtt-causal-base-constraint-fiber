@@ -1529,3 +1529,40 @@ continuous state parameter enters. T45 passes `58/58` builder checks,
 `96/96` independent checks and 15 focused tests; the full canonical suite
 passes all 342 tests. Physical gates remain `0/3`, packets `0/3` and rows
 `0/7`.
+
+The forty-sixth theorem transports that selected state rather than choosing a
+second one. For every compactly supported smooth order-zero perturbation in
+the T44 direct Dirac-Yukawa background family, the retarded Moller
+star-isomorphism gives
+
+```text
+omega_h^in=omega_fut composed with (alpha_h^ret)^(-1).
+```
+
+Unitality and the star law prove normalization and positivity; conjugation of
+the T45 basis projection proves purity and quasifree character; standard
+Dirac Moller microlocal transport preserves the Hadamard class. The state
+orbit composes exactly and is unique relative to the selected seed and map.
+No new state parameter appears. This is an exact background-Dirac result, not
+a claim that the nonlinear interacting Standard Model is complete.
+
+For the local-formal BV theory, T46 proves the parallel pullback theorem on
+BRST cohomology and gives a unique homotopy-gauge lift of every chosen free
+physical vector:
+
+```text
+psi_n=-h sum_(k=1)^n delta_k psi_(n-k),
+p psi_n=h psi_n=0.
+```
+
+The q79 deformation theorem supplies existence; the free contraction proves
+uniqueness. This removes the formal-lift choice but not the free-state choice.
+The full seed is
+`omega_gauge,phys tensor omega_Higgs tensor omega_Weyl`: T45 selects the Weyl
+factor, while the gauge physical and Higgs fluctuation factors remain
+unselected. T38's radial `delta_H` cannot replace the latter. The finite
+auxiliary-regulator Cstar tier remains `5/5`, selected continuum promotion
+remains `0/9`, and determinant holonomy remains open. T46 passes `60/60`
+builder checks, `111/111` independent checks and 15 focused tests; the full
+canonical suite passes all 357 tests. Physical gates remain `0/3`, packets
+`0/3` and rows `0/7`.

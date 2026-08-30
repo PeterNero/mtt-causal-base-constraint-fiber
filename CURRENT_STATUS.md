@@ -34,6 +34,8 @@ This is a snapshot, not a substitute for live kernel queries.
   `87b478d2-4073-4687-b5d0-60dc913db152`
 - Cotangent-lifted projection-assembly handoff:
   `34db0cee-9f0d-41fd-8d71-ff4ceaef11c7`
+- Selected future-state Moller/BV transport handoff:
+  `679ecd00-572c-473c-9e8a-b7f7646c955d`
 
 ## Controlling authorities
 
@@ -1657,3 +1659,46 @@ unresolved absolute scale `H` is inherited. Physical acceptance remains
 `0/3` gates, `0/3` packets and `0/7` rows. T45 passes `58/58` builder checks,
 `96/96` independent checks and 15 focused tests; the full canonical suite
 passes all 342 tests.
+
+`SelectedFutureStateMollerBVTransportAndFullG2CutsetTheorem_v1.md`
+(`CBF.T46`) splits the remaining state problem at its actual mathematical
+boundaries. The T44 retarded Moller map is a star-isomorphism of the even CAR
+algebras, so the selected T45 state has the exact transported in-state
+
+```text
+omega_h^in=omega_fut composed with (alpha_h^ret)^(-1).
+```
+
+This state is normalized, positive, pure, quasifree and Hadamard, composes
+under successive background transports, and is unique relative to the T45
+seed and specified retarded map. It adds no density matrix, temperature or
+continuous state coordinate. The closed domain is the compactly supported
+order-zero direct Dirac-Yukawa background family, which remains a linear CAR
+theory and is not relabelled as the nonlinear interacting Standard Model.
+
+At the local-formal q79 BV tier, a unital star-isomorphism intertwining the
+interacting and free quantum BRST differentials pulls any free physical state
+to a normalized square-cone-positive state on interacting cohomology. T46
+also removes the formal-lift ambiguity once the free physical vector and the
+certified quartet contraction are fixed: the recursive homotopy gauge
+
+```text
+psi_n=-h r_n,
+p psi_n=0,
+h psi_n=0
+```
+
+has a unique solution at every order covered by the existing deformation
+theorem. This is presentation-covariant and introduces no physical knob.
+
+The full free q79 seed nevertheless has three factors,
+`omega_gauge,phys tensor omega_Higgs tensor omega_Weyl`. T45 selects only the
+Weyl factor. T38's `delta_H` is a radial background marginal, not a Higgs
+fluctuation state, and no same-source theorem yet selects the gauge physical
+factor. Thus exactly two free factors remain. Upper-action selection of the
+full BV map, determinant holonomy and the fixed-coupling continuum also
+remain open. The inherited Cstar ledger stays `5/5` at finite auxiliary
+regulator and `0/9` for selected continuum promotion. Top-level physical
+acceptance remains `0/3` gates, `0/3` packets and `0/7` rows. T46 passes
+`60/60` builder checks, `111/111` independent checks and 15 focused tests;
+the full canonical suite passes all 357 tests.
