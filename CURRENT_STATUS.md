@@ -1609,3 +1609,51 @@ select the contour. Physical counters remain `0/3` gates, `0/3` packets and
 `0/7` rows; `B.ACTION.01` and `B.QFT.02` remain open. T44 passes `80/80`
 builder checks, `95/95` independent checks and 15 focused tests; the full
 canonical repository suite passes 327 tests.
+
+`FutureConeSpectralPolarizationAndFreeInitialStateSelectionTheorem_v1.md`
+(`CBF.T45`) factors the T44 scalar-state blocker on the homogeneous flat
+direct branch. At `t_*=(1-sqrt(13))/6`, the three physical Weyl mass moduli
+are exactly
+
+```text
+(2+sqrt(13))/3 > (5+sqrt(13))/6
+  > (7-sqrt(13))/6 > 0.
+```
+
+For inherited `H>0`, the future-oriented one-particle Hamiltonian therefore
+has gap `H(7-sqrt(13))/6`. Its future spectral projector
+
+```text
+P_fut=1_(0,infinity)(K_H)=(I+K_H|K_H|^-1)/2
+```
+
+is the unique pure quasifree covariance in the future-positive stationary
+ground-state class. The independently defined positive-half-line problem
+`(partial_s+K_H)u=0` has decaying boundary space exactly `Ran(P_fut)`, so its
+Calderon projector agrees with positive energy. Charge conjugation exchanges
+the exact 48/48 future/past reduced-Weyl sectors. This 96-dimensional witness
+is the `48 x 2` continuum Weyl count and is not the separate KO6 completion.
+
+The same proof establishes that the positive Hessian semigroup
+`exp(-s|K_H|)` damps all 96 modes and does not select a polarization. The
+oriented first-order charge and one-sided boundary are essential. The
+auxiliary half-line is not the internal shared circle or physical time.
+
+The T44 scalar is consequently selected at the local-formal initial-state
+tier on this branch:
+
+```text
+Z_fut[V_plus,V_minus]=omega_fut(C_H[V_plus,V_minus]),
+Z_fut[V,V]=1.
+```
+
+This closes `G2a`, the free initial-state subclause, only on the declared flat
+branch. `G2b` interacting QME/BV state pushforward, `G2c` fixed-coupling
+positive continuum state, determinant-line holonomy, a generic cosmological
+state, `G1` and q79 HYM universality remain open. Binary-root equivalence
+transports `P_fut` and adds no arrow or vacuum selector. No observed input,
+fit, thermal coordinate or continuous state selector is introduced; the
+unresolved absolute scale `H` is inherited. Physical acceptance remains
+`0/3` gates, `0/3` packets and `0/7` rows. T45 passes `58/58` builder checks,
+`96/96` independent checks and 15 focused tests; the full canonical suite
+passes all 342 tests.

@@ -45,6 +45,10 @@ paper, note, packet name or search hit.
    handoff is `f34d2265-2c60-46e5-ac7a-df87d740b96c`;
    the quantum radial-anchor Ward and tadpole-selection handoff is
    `3689d483-4adb-4990-9648-32e19012f716`;
+   the state-free global causal-evolution handoff is
+   `a9ef2144-5598-4502-86e1-5149e7817b81`; the future-cone spectral
+   polarization and flat-branch free initial-state handoff is
+   `383b5f8f-2fb9-47fa-acdc-92bf070f241b`;
    the radial closure-attractor and state-marginal handoff is
    `5067bb6f-4704-4da5-a085-be56da8cd4b0`;
    the renormalized BV anchored repair-semiflow and global-intertwining

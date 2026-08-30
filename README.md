@@ -1475,3 +1475,57 @@ identified with physical time or with the CTP contour. Physical gate counters
 remain `0/3`, packets `0/3` and rows `0/7`. T44 passes `80/80` builder checks,
 `95/95` independent checks and 15 focused tests; the full canonical repository
 suite passes 327 tests.
+
+The forty-fifth theorem discharges T44's state cutset on the narrower
+homogeneous flat direct branch. At
+
+```text
+t_*=(1-sqrt(13))/6,
+```
+
+the three physical Weyl mass moduli are
+
+```text
+(2+sqrt(13))/3,
+(5+sqrt(13))/6,
+(7-sqrt(13))/6,
+```
+
+in strict descending order. Hence the time-oriented one-particle Hamiltonian
+is gapped by `H(7-sqrt(13))/6` for every inherited `H>0`, and its future
+spectral projector is unambiguous:
+
+```text
+P_fut=1_(0,infinity)(K_H)=(I+K_H|K_H|^-1)/2.
+```
+
+This projector defines the unique pure quasifree ground-state covariance in
+the selected future-positive, time-translation-invariant class. The same
+projector is obtained independently as the decaying boundary-data projector
+for `(partial_s+K_H)u=0` on the positive half-line. The exact finite witness
+has 48 future and 48 past reduced-Weyl energy modes. This `96` is `48 x 2`
+and is not the separately typed KO6 `96`.
+
+The comparison also proves a useful no-go. Replacing the oriented first-order
+charge by `|K_H|` or `K_H^2` damps all 96 modes and cannot select a quantum
+polarization. Closure repair reaches the free state only before squaring and
+only with a supplied orientation and one-sided boundary condition.
+
+The selected state now gives the local-formal scalar
+
+```text
+Z_fut[V_plus,V_minus]
+  =omega_fut(C_H[V_plus,V_minus]),
+Z_fut[V,V]=1.
+```
+
+This closes only the flat-branch free initial-state subclause of `G2`.
+Generic cosmological state selection, source-dependent determinant-line
+holonomy, interacting QME-preserving state transport and fixed-coupling
+cutoff removal remain open. The auxiliary half-line is not physical time or
+the internal shared circle, and binary-root equivalence transports rather
+than selects the state. No observed input, fit, thermal coordinate or new
+continuous state parameter enters. T45 passes `58/58` builder checks,
+`96/96` independent checks and 15 focused tests; the full canonical suite
+passes all 342 tests. Physical gates remain `0/3`, packets `0/3` and rows
+`0/7`.

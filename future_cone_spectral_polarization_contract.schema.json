@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.future-cone-spectral-polarization-contract.v1",
+  "title": "CBF.T45 future-cone spectral polarization and free initial-state contract",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "title",
+    "date",
+    "status",
+    "source_provenance",
+    "flat_direct_branch",
+    "exact_gap",
+    "future_spectral_polarization",
+    "half_line_calderon_equivalence",
+    "quasifree_initial_state",
+    "T44_scalarization",
+    "time_reversal_and_binary_root",
+    "positive_hessian_nonselection",
+    "gate_ledger",
+    "parameter_ledger",
+    "physical_boundary",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.future-cone-spectral-polarization.v1"
+    },
+    "claim_id": {
+      "const": "CBF.T45"
+    },
+    "date": {
+      "const": "2026-08-30"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "failed"]
+    }
+  },
+  "additionalProperties": true
+}
