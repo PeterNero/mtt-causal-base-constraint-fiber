@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/four-dimensional-fermion-determinant-scheme-classification.v1.schema.json",
+  "title": "MTT four-dimensional fermion determinant scheme-classification packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "four_dimensional_shape",
+    "renormalization_orbit",
+    "MSbar_same_scale_candidate",
+    "T30_coordinate_scheme_diagnostic",
+    "dynamicality_and_global_boundary",
+    "authority_reconciliation",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.four-dimensional-fermion-determinant-scheme-classification.v1"},
+    "claim_id": {"const": "CBF.T31"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "four_dimensional_shape": {"type": "object"},
+    "renormalization_orbit": {"type": "object"},
+    "MSbar_same_scale_candidate": {"type": "object"},
+    "T30_coordinate_scheme_diagnostic": {"type": "object"},
+    "dynamicality_and_global_boundary": {"type": "object"},
+    "authority_reconciliation": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    },
+    "check_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

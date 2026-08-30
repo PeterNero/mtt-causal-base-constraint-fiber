@@ -1,0 +1,495 @@
+{
+  "MSbar_same_scale_candidate": {
+    "MTT_selected_physical_vacuum": false,
+    "c_scheme": "3/2",
+    "conventional_candidate_only": true,
+    "ell": "-3/2",
+    "fitted_coefficients_used": false,
+    "global_minimum_in_open_neutral_chamber": false,
+    "infimum_location": "t approaches -1 from above; singular wall not attained",
+    "local_minimum_is_metastable": true,
+    "log_series_terms": 32,
+    "mu_over_h": "1",
+    "observed_values_used": false,
+    "outer_scans": [
+      {
+        "ambiguous_cells": 0,
+        "cells": 512,
+        "interval": [
+          "-1023/1024",
+          "-7/20"
+        ],
+        "minimum_absolute_margin": {
+          "exact_rational_bounds_sha256": "bca8f473a012fb613a58a45c3a5d9fe428591fa98a83357466856e19941c125f",
+          "lower_decimal": "0.123744960248385613213075",
+          "upper_decimal": "0.123744960248385613213075"
+        },
+        "negative_cells": 512,
+        "positive_cells": 0
+      },
+      {
+        "ambiguous_cells": 0,
+        "cells": 1024,
+        "interval": [
+          "-17/50",
+          "27/100"
+        ],
+        "minimum_absolute_margin": {
+          "exact_rational_bounds_sha256": "c19e09d43e1446cd2e70bf8296a0db55f54e559311924efc6da5018b736661d0",
+          "lower_decimal": "0.058130981896033101998852",
+          "upper_decimal": "0.058130981896033101998852"
+        },
+        "negative_cells": 0,
+        "positive_cells": 1024
+      },
+      {
+        "ambiguous_cells": 0,
+        "cells": 512,
+        "interval": [
+          "29/100",
+          "511/1024"
+        ],
+        "minimum_absolute_margin": {
+          "exact_rational_bounds_sha256": "835a848153da991e03dfa7192b96edb13e79429edeb582bfafe3b666503b0944",
+          "lower_decimal": "0.042732160054556543939550",
+          "upper_decimal": "0.042732160054556543939550"
+        },
+        "negative_cells": 512,
+        "positive_cells": 0
+      }
+    ],
+    "proof_method": "exact rational interval logarithms from the atanh series with geometric remainder",
+    "root_certificates": {
+      "exact_root_count_in_neutral_chamber": 2,
+      "left_wall_sign": "g<0 term by term on (-1,-1023/1024]",
+      "local_maximum": {
+        "box": [
+          "-344776761/1000000000",
+          "-8619419/25000000"
+        ],
+        "gprime_on_wide_box": {
+          "exact_rational_bounds_sha256": "f0d18cc97fe080911a6329db88bfa3169b1d35ea0b5dc96e0682f5082340640f",
+          "lower_decimal": "23.648257584329853006060426",
+          "upper_decimal": "25.227687561673762733912124"
+        },
+        "left_g": {
+          "exact_rational_bounds_sha256": "06d306de3c623a4e2efe6e8e6613a0c6b7bfbab06c039e2da3ced8edd1c06447",
+          "lower_decimal": "-0.000000004214105763140481",
+          "upper_decimal": "-0.000000004214105763140481"
+        },
+        "right_g": {
+          "exact_rational_bounds_sha256": "e4746f0e28abf01ef2fccfdb3399fd26fdc1f984fbda6fb3d2b8452ac31c5f54",
+          "lower_decimal": "0.000000020186132023922437",
+          "upper_decimal": "0.000000020186132023922437"
+        }
+      },
+      "local_minimum": {
+        "box": [
+          "140642141/500000000",
+          "281284283/1000000000"
+        ],
+        "gprime_on_wide_box": {
+          "exact_rational_bounds_sha256": "4f426ab3323f1ee8bde1b92b028eadb448c6daae6642178a2469ea9f50bdd855",
+          "lower_decimal": "-6.179731244244871229902398",
+          "upper_decimal": "-4.570685708492254040658682"
+        },
+        "left_g": {
+          "exact_rational_bounds_sha256": "7fb508bfc27e09b7627707a0a6113672404a2358920ac69ce2164bd903624609",
+          "lower_decimal": "0.000000004211790352060908",
+          "upper_decimal": "0.000000004211790352060908"
+        },
+        "right_g": {
+          "exact_rational_bounds_sha256": "f09546289ad6a00a095a72400ee15791ca7c2973bbd55d3e0bfeb91069b66125",
+          "lower_decimal": "-0.000000001091107451290620",
+          "upper_decimal": "-0.000000001091107451290620"
+        }
+      },
+      "right_wall_g_limit": {
+        "exact_rational_bounds_sha256": "c1b81c19cb542b85a68894ea3de27eabb1f948231bcc95c76922365b1becbaa2",
+        "lower_decimal": "-0.339823725129904094294103",
+        "upper_decimal": "-0.339823725129904094294103"
+      },
+      "right_wall_gprime": {
+        "exact_rational_bounds_sha256": "5779561369377dc9f0a55d211f65242738a45545e838ce5004b5ed843e66ea44",
+        "lower_decimal": "1.915452159387566694105841",
+        "upper_decimal": "1.936985018817193816736840"
+      }
+    },
+    "scheme": "MSbar",
+    "stationary_equation": "g(t)=sum_a r_a^3 r_a'[log(r_a^2)-1]=0",
+    "stationary_points": {
+      "local_maximum": {
+        "V": "2.358663442969574016140196929089211869",
+        "V_second_derivative": "-32.533650448206879938951774561161008247",
+        "branch_factors": {
+          "-2": "1.344776760827292430950849481226950543",
+          "-4": "1.689553521654584861901698962453901085",
+          "2": "0.655223239172707569049150518773049457"
+        },
+        "branch_ratios": {
+          "r_+2_over_r_-2": "0.487235694621627136685198862928432884",
+          "r_+2_over_r_-4": "0.387808513181071336422148023935793040",
+          "r_-2_over_r_-4": "0.795936171060357112140716007978597680"
+        },
+        "certified_interval": [
+          "-344776761/1000000000",
+          "-8619419/25000000"
+        ],
+        "decimal": "-0.344776760827292430950849481226950542708125474286",
+        "type": "local maximum"
+      },
+      "local_minimum": {
+        "V": "1.132876443911305656927258276004973657",
+        "V_second_derivative": "7.070530392842679766013206861503160311",
+        "branch_factors": {
+          "-2": "0.718715717205756832240365781106113936",
+          "-4": "0.437431434411513664480731562212227872",
+          "2": "1.281284282794243167759634218893886064"
+        },
+        "branch_ratios": {
+          "r_+2_over_r_-2": "1.782741426298086562062574742302111190",
+          "r_+2_over_r_-4": "2.929108843121856793820726338431829983",
+          "r_-2_over_r_-4": "1.643036281040618931273575446143943328"
+        },
+        "certified_interval": [
+          "140642141/500000000",
+          "281284283/1000000000"
+        ],
+        "decimal": "0.281284282794243167759634218893886064103754667776",
+        "type": "local minimum"
+      }
+    },
+    "wall_and_stationary_values": {
+      "V_left_wall_limit": "-18.218633514050673302460385422703604777",
+      "V_local_maximum": "2.358663442969574016140196929089211869",
+      "V_local_minimum": "1.132876443911305656927258276004973657",
+      "V_right_wall_limit": "1.222936392658276265383257073701912354",
+      "left_wall_exact_interval": {
+        "exact_rational_bounds_sha256": "7837791ee9f50791057bbd8b113837b21040c431a754302c2fdde674001bcb32",
+        "lower_decimal": "-18.218633514050673302460385",
+        "upper_decimal": "-18.218633514050673302460385"
+      },
+      "local_maximum_exact_interval": {
+        "exact_rational_bounds_sha256": "477634686f48aec17ff8b55d998468afd95c001048d7f82e768a53080136dbaa",
+        "lower_decimal": "2.358663434037906165475696",
+        "upper_decimal": "2.358663451901241891602554"
+      },
+      "local_minimum_exact_interval": {
+        "exact_rational_bounds_sha256": "5a2d12452c76c1670585f2e66ea29afd3e06a810caf45e40ea1b31c0258a095a",
+        "lower_decimal": "1.132876440735586459845232",
+        "upper_decimal": "1.132876447087024864185415"
+      },
+      "right_wall_exact_interval": {
+        "exact_rational_bounds_sha256": "c47692359dd3162835ea115765cb4edb829a89a0a21361ab9b8af739279c6a30",
+        "lower_decimal": "1.222936392658276265383257",
+        "upper_decimal": "1.222936392658276265383257"
+      }
+    }
+  },
+  "T30_coordinate_scheme_diagnostic": {
+    "MSbar_mu_over_h_decimal": "1.093610129104097356532400918517551308035252969181",
+    "MSbar_mu_over_h_expression": "exp[-(ell_*+3/2)/2]",
+    "coordinate": "(1-sqrt(13))/6",
+    "coordinate_decimal": "-0.434258545910664882186536877911749324375216095641",
+    "independently_selected": false,
+    "role": "diagnostic scale required to preserve the finite T30 coordinate, not a derivation",
+    "stationary_ell_decimal": "-1.678968537100247435314745381817178201037696806993",
+    "stationary_ell_expression": "-1/2-A(t_*)/B(t_*)",
+    "stationary_ell_rational_enclosure": {
+      "exact_rational_bounds_sha256": "6c810cd4aebe9e81e2ead00906a9a744ff5b7294c0ce0337622a6d8931e9c979",
+      "lower_decimal": "-1.678968537100247435314745381817178214",
+      "upper_decimal": "-1.678968537100247435314745381817174738"
+    }
+  },
+  "authority_reconciliation": {
+    "A18": "full Lorentzian and constructive four-dimensional QFT remains open",
+    "A73": "same-action determinant identity is respected without importing physical routing or counterterm selection",
+    "A84": "proper-time gauge tier supplies no proven intertwiner to this scalar source coordinate",
+    "A85": "profile-tier scheme agreement supplies neither scalar subtraction, Wick class nor mu/h",
+    "B_ACTION_01": "advanced by an exact conditional shape and obstruction classification, but remains open",
+    "B_QFT_02": "global Wick, external measure and finite renormalization selection remain open",
+    "B_SM_02": "no physical mass or held-out Standard Model row is accepted",
+    "CBF_T30": "finite chiral determinant and neutral chamber remain exact; its zero-mode coordinate is not promoted to the 4D vacuum",
+    "QM_orbitwise_measure": "7/7 finite orbitwise Berezin measure does not close its own 0/4 full-domain contract"
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 70,
+    "total": 70
+  },
+  "checks": {
+    "A_is_nonzero_at_B_root_box": true,
+    "B_derivative_has_negative_discriminant": true,
+    "B_derivative_leading_coefficient_is_positive": true,
+    "B_has_one_real_root_in_certified_box": true,
+    "B_polynomial_is_derived_exactly": true,
+    "Q4_polynomial_is_derived_exactly": true,
+    "T30_coordinate_ell_is_enclosed": true,
+    "T30_coordinate_is_in_neutral_chamber": true,
+    "T30_diagnostic_scale_is_positive": true,
+    "T30_diagnostic_stationarity_residual_is_small": true,
+    "T30_packet_is_exact": true,
+    "absolute_scale_remains_open": true,
+    "all_outer_scan_cells_exclude_zero": true,
+    "bosonic_completion_remains_open": true,
+    "branch_multiplicity_is_inherited": true,
+    "candidate_has_no_global_open_chamber_minimum": true,
+    "candidate_is_newly_executed": true,
+    "candidate_is_not_promoted_to_mass": true,
+    "candidate_is_not_promoted_to_vacuum": true,
+    "conditional_shape_is_newly_closed": true,
+    "contract_schema_is_exact": true,
+    "counterterm_orbit_is_newly_classified": true,
+    "exactly_two_stationary_roots_certified": true,
+    "external_measure_remains_open": true,
+    "four_dimensional_wall_is_finite": true,
+    "global_Wick_remains_open": true,
+    "handoff_is_pinned": true,
+    "kernel_model_is_pinned": true,
+    "left_wall_is_below_local_minimum": true,
+    "left_wall_is_below_right_wall": true,
+    "left_wall_summands_are_strictly_negative": true,
+    "maximum_box_has_negative_left_sign": true,
+    "maximum_box_has_positive_right_sign": true,
+    "maximum_curvature_is_negative": true,
+    "maximum_decimal_is_inside_certified_box": true,
+    "maximum_wide_box_is_strictly_increasing": true,
+    "minimum_box_has_negative_right_sign": true,
+    "minimum_box_has_positive_left_sign": true,
+    "minimum_curvature_is_positive": true,
+    "minimum_decimal_is_inside_certified_box": true,
+    "minimum_wide_box_is_strictly_decreasing": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "outer_scan_cell_count_is_2048": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "right_wall_gprime_is_positive": true,
+    "right_wall_limit_g_is_negative": true,
+    "right_wall_tiny_branch_monotonic_bound": true,
+    "scalar_counterterm_rule_remains_open": true,
+    "scale_orbit_is_newly_classified": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "source_13_hash_matches": true,
+    "source_14_hash_matches": true,
+    "source_15_hash_matches": true,
+    "source_dynamicality_remains_open": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "strict_top_level_contract": true
+  },
+  "claim_id": "CBF.T31",
+  "date": "2026-08-30",
+  "dynamicality_and_global_boundary": {
+    "T25_role_of_t": "coordinate in a finite Dirac-Yukawa source family",
+    "canonical_normalization_for_t_selected": false,
+    "equation_of_motion_for_t_selected": false,
+    "extremizing_profile_is_physical_equation_of_motion": false,
+    "four_dimensional_kinetic_term_for_t_selected": false,
+    "full_domain_chiral_measure": false,
+    "selected_Cauchy_normal_or_global_Wick_rotation": false,
+    "selected_bosonic_gauge_Higgs_gravity_completion": false,
+    "selected_external_spectral_measure": false
+  },
+  "four_dimensional_shape": {
+    "A_definition": "A=sum_a r_a^3 r_a' log(r_a^2)",
+    "B_coefficients_ascending": [
+      "-2",
+      "18",
+      "-24",
+      "18"
+    ],
+    "B_definition": "B=sum_a r_a^3 r_a'",
+    "Q4_coefficients_ascending": [
+      "3",
+      "-8",
+      "36",
+      "-32",
+      "18"
+    ],
+    "assumptions": [
+      "flat Euclidean four-dimensional spectral chart",
+      "constant common scale h",
+      "dimensional regularization",
+      "fermion-only one-loop truncation"
+    ],
+    "branch_factors": {
+      "-2": "1-t",
+      "-4": "1-2t",
+      "2": "1+t"
+    },
+    "chiral_multiplicity_each": 16,
+    "conditional_pushforward_closed": true,
+    "derivative": "V_ell'=-(4/3)[A+(ell+1/2)B]",
+    "ell_definition": "ell=log(h^2/mu^2)-c_scheme",
+    "normalized_formula": "V_ell(t)=-(1/3)sum_a r_a(t)^4[log(r_a(t)^2)+ell]",
+    "selected_global_Lorentzian_determinant": false,
+    "zero_branch_limit": "r^4 log(r^2)->0"
+  },
+  "frontier_delta": "The T30 finite branch spectrum now has an exact conditional flat four-dimensional fermion one-loop pushforward. Its complete subtraction-scale and quartic local-counterterm orbit is classified, proving that no stationary source coordinate is selected by the current data. Under the explicit conventional MSbar mu=h choice, exactly two stationary points are interval-certified; the positive-curvature point is only metastable and the chamber infimum lies at a singular wall. The calculation therefore narrows B.ACTION.01 to a dynamical source-field action plus same-source Wick, external measure, bosonic completion and renormalization rule, without accepting a physical q79 row.",
+  "parameter_ledger": {
+    "accepted_new_physical_parameters": 0,
+    "candidate_choices_selected_by_MTT": 0,
+    "candidate_convention_choice_count": 4,
+    "candidate_convention_choices": [
+      "flat Euclidean chart",
+      "MSbar c=3/2",
+      "mu/h=1",
+      "fermion-only one-loop truncation"
+    ],
+    "inherited_optional_common_scale_h": 1,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0,
+    "unresolved_nonconstant_local_counterterm_coefficients": 4,
+    "unresolved_scale_orbit_dimension": 1
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "B_SM_02_closed": false,
+    "MSbar_same_scale_candidate_certified": true,
+    "absolute_SI_scale_closed": false,
+    "candidate_global_neutral_chamber_vacuum_exists": false,
+    "conditional_flat_4D_one_loop_shape_closed": true,
+    "finite_local_counterterm_nonuniqueness_classified": true,
+    "held_out_physical_observable_emitted": false,
+    "renormalization_scale_orbit_classified": true,
+    "renormalized_physical_vacuum_closed": false,
+    "sector_generation_mass_map_closed": false,
+    "selected_four_dimensional_determinant_closed": false,
+    "source_coordinate_dynamicality_closed": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "renormalization_orbit": {
+    "A_on_B_root_interval": {
+      "exact_rational_bounds_sha256": "543d6ca89ea8cc1461c2c1873bb314ec5a1be3be71f447a1b85bc121183fa768",
+      "lower_decimal": "1.033227940201892074977291",
+      "upper_decimal": "1.034626109432447751709263"
+    },
+    "B_derivative": "18-48t+54t^2",
+    "B_derivative_discriminant": -1584,
+    "B_unique_root_interval": [
+      "33/250",
+      "1321/10000"
+    ],
+    "Q4": "3-8t+36t^2-32t^3+18t^4",
+    "c0_affects_stationarity": false,
+    "c1_can_set_slope_at_any_regular_point": true,
+    "c2_can_set_curvature_after_slope_fix": true,
+    "general_finite_local_source_potential": "c0+c1 t+c2 t^2+c3 t^3+c4 t^4",
+    "scale_change": "Delta V=-(Delta ell/3)Q4(t)",
+    "scheme_independent_stationary_coordinate": false,
+    "selected_scalar_counterterm_rule": false,
+    "stationarity_scale_solution": "ell(t0)=-1/2-A(t0)/B(t0) for B(t0)!=0"
+  },
+  "schema": "boe.mtt.four-dimensional-fermion-determinant-scheme-classification.v1",
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "external_context": [
+      {
+        "role": "four-dimensional MSbar effective-potential convention",
+        "url": "https://arxiv.org/abs/hep-ph/0111209"
+      },
+      {
+        "role": "renormalization-prescription dependence and local RG freedom",
+        "url": "https://arxiv.org/abs/gr-qc/0209029"
+      },
+      {
+        "role": "analytic Cauchy Wick rotation requires additional analytic geometric data",
+        "url": "https://arxiv.org/abs/1706.08942"
+      },
+      {
+        "role": "Wick rotation and physical fermion projection in almost-commutative geometry",
+        "url": "https://arxiv.org/abs/1605.03231"
+      }
+    ],
+    "handoff_id": "ec8fc7e0-33c8-4cf1-9ae0-6b941d4da986",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "9d7c4f8c54c3a6481831079edf6332caa79aaea0",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 15,
+    "source_root_payload": {
+      "B_coefficients_ascending": [
+        "-2",
+        "18",
+        "-24",
+        "18"
+      ],
+      "Q4_coefficients_ascending": [
+        "3",
+        "-8",
+        "36",
+        "-32",
+        "18"
+      ],
+      "accepted_physical_rows": 0,
+      "branch_slopes": {
+        "-2": -1,
+        "-4": -2,
+        "2": 1
+      },
+      "candidate_convention": {
+        "ell": "-3/2",
+        "mu_over_h": "1",
+        "scheme": "MSbar"
+      },
+      "certified_root_boxes": {
+        "local_maximum": [
+          "-344776761/1000000000",
+          "-8619419/25000000"
+        ],
+        "local_minimum": [
+          "140642141/500000000",
+          "281284283/1000000000"
+        ]
+      },
+      "chiral_multiplicity_each": 16,
+      "normalized_shape": "V_ell=-(1/3)sum r_a^4(log(r_a^2)+ell)",
+      "observed_targets": [],
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "9d7c4f8c54c3a6481831079edf6332caa79aaea0",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.four-dimensional-fermion-determinant-scheme-classification-root.v1",
+      "selected_physical_vacuum": null,
+      "source_hashes": [
+        "6f9ecbd1c149928f2b9464214d2a1cc6393c9c68f2d1b9934c33bacd1e1f1f91",
+        "927f0db10e5ba7667779153c3a8d9f483c4fd5f0bc6367e1f9f5c79b5836341e",
+        "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+        "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+        "7287df306cc3832fb1cccbed43f8794eaa44576799f46fe526f882df2463a1a3",
+        "d98adb6ccc23d3e87883a193c8d44240d306df143bbd8025c0be024945dc6c37",
+        "06907a775876de315ace9d001386a1bb6df1b2c00407475100f79b3867a6a1b6",
+        "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440",
+        "835bbbeb2a36cc238c58f7cfb3b7b826e223476225bd59f6a78423a54caa6d36",
+        "497a9f7608286ac22cf379557d871902620a6131ca8617a86626014e389cbd9a",
+        "8ec03e109a9740e55e35652cd27d971f1c16c9f7f6a981da0c2d8ef28db0a1db",
+        "f069fd40cf7ad24f2edb14e9de146c33fb8c40083ddddd10cc5a987945bf550d",
+        "4fc6ac2b25d88986a2874b3e182dbb901ffccdb42663cad53d5af351df268b19",
+        "21c3ea062b385fe453c93eac24f70ac0ad71529dfb9f9de4882eff6ef1aea5e9",
+        "c29ed179c39e743a8be7a021d9edd937e5709f16c6f2e54203552a00d7f6b83e"
+      ],
+      "theorem_sha256": "e3ff862d3781def7fbb9c921a5e4d19bd78911801faee086840f7cdbe5d7b1db"
+    },
+    "source_root_sha256": "1d889bbcde52091e53223f03908ecd4db5de75f348cfa5294b407cc386b25241"
+  },
+  "status": "conditional flat four-dimensional one-loop shape and complete scheme-orbit classification; conventional MSbar same-scale candidate certified but no selected physical vacuum or mass"
+}

@@ -22,6 +22,8 @@ This is a snapshot, not a substitute for live kernel queries.
 - Symmetric response `m4` handoff: `fa4ebaf3-e925-4c58-8a53-02c3c505cd19`
 - Higher-jet support and `m5` handoff: `a6af7d98-09bf-40a6-8231-347acdd1365e`
 - Direct finite-source causal continuum handoff: `c6ac82be-f43f-4464-8943-68814e47539e`
+- Four-dimensional determinant scheme-classification handoff:
+  `ec8fc7e0-33c8-4cf1-9ae0-6b941d4da986`
 
 ## Controlling authorities
 
@@ -982,3 +984,44 @@ bosonic action, absolute scale and measured-sector identification remain open.
 Physical q79 acceptance consequently remains `0/3` packets and `0/7` rows;
 the finite determinant profile, chamber coordinate and three dimensionless
 values must nevertheless no longer be reported as open.
+
+`FourDimensionalFermionDeterminantSchemeClassificationAndPhysicalValueBoundaryTheorem_v1.md`
+(`CBF.T31`) closes the conditional flat four-dimensional fermion one-loop
+shape and, more importantly, classifies its full current ambiguity. Exact
+expansion gives
+
+```text
+V_ell(t)=-(1/3) sum_a r_a(t)^4[log r_a(t)^2+ell],
+B(t)=-2+18t-24t^2+18t^3,
+Q4(t)=3-8t+36t^2-32t^3+18t^4.
+```
+
+At every point where `B(t)` is nonzero, the subtraction scale can impose
+stationarity through `ell=-1/2-A/B`. The one exceptional zero of `B` does not
+restore selection because `A` is nonzero there and an allowed finite local
+linear counterterm can still set the slope. A quadratic counterterm can then
+set the curvature. This proves that no stationary coordinate is invariant
+under the unresolved scalar renormalization orbit.
+
+Under the explicit conventional diagnostic `MSbar, mu=h`, exact rational
+logarithm intervals certify exactly two roots in `(-1,1/2)`:
+
+```text
+local maximum: [-0.344776761,-0.344776760],
+local minimum: [ 0.281284282, 0.281284283].
+```
+
+The local minimum is metastable. Four-dimensional integration changes the
+zero-branch behavior to `r^4 log(r^2)->0`, and the chamber infimum occurs at
+the excluded wall `t -> -1`; there is no global minimum in the open chamber.
+The earlier T30 coordinate can be made stationary only at the diagnostic
+`ell=-1.6789685371002474...`, or `mu/h=1.0936101291040974...` in MSbar. That
+ratio is not independently selected.
+
+The scientific frontier must therefore not loop back to deriving the finite
+determinant or guessing another profile. It is one same-source completion:
+promote `t` from a Dirac-Yukawa family coordinate to a normalized dynamical
+field, then supply its bosonic action, global Wick/direct Lorentzian external
+measure, finite scalar counterterm rule, absolute scale and sector map. Until
+then `B.ACTION.01`, `B.QFT.02` and `B.SM.02` remain open and physical
+acceptance remains `0/3` packets and `0/7` rows.

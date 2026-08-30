@@ -548,6 +548,12 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   chiral determinant, neutral chamber and finite value packet builder.
 - `verify_ko6_fermionic_determinant_value_selection.py`: independent CBF.T30
   `96D` source reconstruction, determinant and value-boundary verifier.
+- `build_four_dimensional_fermion_determinant_scheme_classification.py`:
+  deterministic CBF.T31 rational-interval one-loop, scheme-orbit and candidate
+  packet builder.
+- `verify_four_dimensional_fermion_determinant_scheme_classification.py`:
+  independent CBF.T31 root-count, stability, wall and physical-boundary
+  verifier.
 - `repo-manifest.json`: scope and reproducibility contract.
 
 ## Kernel workflow
@@ -972,6 +978,30 @@ the same stationary coordinate mode by mode; the external spectral measure,
 renormalization, bosonic action, sector map and common dimensionful scale must
 still be selected before phenomenological promotion.
 
+`CBF.T31` performs that flat four-dimensional one-loop pushforward
+conditionally and classifies why it is not yet a physical selection. With
+
+```text
+V_ell(t)=-(1/3) sum_a r_a(t)^4[log r_a(t)^2+ell],
+ell=log(h^2/mu^2)-c_scheme,
+```
+
+the subtraction scale moves the stationary coordinate, while the unresolved
+finite local source potential `c0+c1 t+c2 t^2+c3 t^3+c4 t^4` can set both
+slope and curvature at any regular point. Thus the current source does not
+select a scheme-independent four-dimensional vacuum.
+
+For a reproducible diagnostic only, MSbar with `mu=h` has exactly two
+interval-certified stationary points in the neutral chamber: a local maximum
+near `-0.3447767608272924` and a metastable local minimum near
+`0.2812842827942432`. The latter emits branch factors approximately
+`0.4374314344`, `0.7187157172` and `1.2812842828`, but the open chamber has no
+global minimum; its infimum lies at the singular wall `t -> -1`. None of these
+numbers is accepted as a physical vacuum or mass. The remaining exit is now a
+same-source theorem supplying a dynamical `t(x)` action, Wick/external measure,
+bosonic completion, scalar renormalization prescription, scale and physical
+sector map.
+
 The source-promotion packet passes `39/39` checks and its independent verifier
 passes `20/20`. The endpoint-factorization packet passes `50/50` checks and
 its independent verifier passes `37/37`. The associated-matter BV4 packet
@@ -999,7 +1029,9 @@ semigroup packet passes `96/96` checks and its independent verifier passes
 `113/113`. The signed cubic-action packet passes `148/148` checks and its
 independent verifier passes `179/179`. The KO6 determinant value-selection
 packet passes `107/107` checks and its independent verifier passes `131/131`.
-The canonical suite passes 166 unit tests. The
+The four-dimensional determinant scheme-classification packet passes `70/70`
+checks and its independent verifier passes `106/106`. The canonical suite
+passes 176 unit tests. The
 finite `P/G/h` package, q79 harmonic strain globalization, full
 signed-direction DGA covariance, universal harmonic first-jet quotient and
 all-arity response nontruncation and covariance are closed at their declared tiers. Complete
