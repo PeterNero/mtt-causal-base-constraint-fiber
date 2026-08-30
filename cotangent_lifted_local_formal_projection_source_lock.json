@@ -1,0 +1,107 @@
+{
+  "schema": "boe.mtt.cotangent-lifted-local-formal-projection-source-lock.v1",
+  "claim_id": "CBF.T41",
+  "date": "2026-08-30",
+  "handoff_id": "34db0cee-9f0d-41fd-8d71-ff4ceaef11c7",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "4895982cf1a379ad0804d90403c2dab703de5df6",
+    "mtt-preprojection-repair-calculus": "a2691a3fbc5620bcac8b1b0b85255d6702e4edd3",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
+      "sha256": "bfde0358a25e06268c181a1d8d9ca5cc3813aceeb91774021f329411efb782df",
+      "role": "CBF.T38 radial evaluation, invariant marginal and projection-naturality boundary"
+    },
+    {
+      "path": "radial_closure_attractor_state_marginal.packet.json",
+      "sha256": "43eabb2bb78a16bdf049e63c592df7aa29086228e4c8ca648b9582cc1114eabe",
+      "role": "CBF.T38 executable state and radial-marginal component"
+    },
+    {
+      "path": "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
+      "sha256": "eb25406a95a3316a0c7b98ef237ef94d0f0758fd50c4cfbf672f9c633de57c5a",
+      "role": "CBF.T39 anchored local-formal action two-jet retraction"
+    },
+    {
+      "path": "renormalized_bv_anchored_repair_semiflow.packet.json",
+      "sha256": "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+      "role": "CBF.T39 executable action-jet component and physical boundary"
+    },
+    {
+      "path": "SourcePreservingPointedQuantumProjectionAndWardNonselectionTheorem_v1.md",
+      "sha256": "47b5b1e2651b562490cf7f1a21e30b6b149c9ac5c6f4f80bfcdda0708cb223a2",
+      "role": "CBF.T40 SP0-SP5 projection contract and QJ1-QJ2 implication"
+    },
+    {
+      "path": "source_preserving_pointed_quantum_projection.packet.json",
+      "sha256": "bd5d3be8c65a2437e997af46f07a0426ca0e37456bfbab855918af01bdaa7017",
+      "role": "CBF.T40 executable clause and acceptance ledger"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1.md",
+      "sha256": "ce8cd73313df474d9619e9111caac25c3931f9d01a114c3b00e0549893fd24d6",
+      "role": "H4-T15 cotangent-lift theorem, projection no-go and BV compactification gate"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/docs/BV_COMPACTIFICATION_BRIDGE_CONTRACT.md",
+      "sha256": "37676d5e4e79e38f9975ee50899d12e8a3d5cf8102738048a383cc57926cc8b5",
+      "role": "typed C0-C10 q79 BV compactification contract"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/certificates/h4_cotangent_reduction_q79_bv_gate.json",
+      "sha256": "589ec30a375ba5acf85bc2ba1f6b98bdb8ea0dab9899abd723286e0171cb45bf",
+      "role": "H4-T15 exact cotangent contraction and direct-identification no-go certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_FiniteShell_BV_Pushforward_and_Gapped_Regulator_Comparison_Theorem_v1.md",
+      "sha256": "51e71daa83ee6a786a12dee4d7939ea239a0046d8599d136e38ec271d045031c",
+      "role": "q79 free finite-shell Hodge cycle and BV pushforward theorem"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_finite_shell_bv_pushforward_regulator_comparison.certificate.json",
+      "sha256": "f8d8c12ea50bf69f544d9a9ab8af1fa4ab83d9e4ff31f06330d86e6c5feb0e74",
+      "role": "q79 exact free finite-shell and gapped-comparison certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Local_Formal_Physical_State_Space_Compatibility_and_Gluing_Theorem_v1.md",
+      "sha256": "4ab8a9f0c5f0813010482dc1b6b4d6a2c666759e8bab6fc05703f1c34f5f9db2",
+      "role": "q79 nonempty local-formal physical state-space functor and gluing boundary"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_local_formal_physical_state.certificate.json",
+      "sha256": "9cc6e595fd0b96e5c1f37809c151f271c5010308fa814cc63b14412671e410dd",
+      "role": "q79 local-formal positive-state existence and preferred-state boundary certificate"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_NeutralHiggsInsertionFunctorAndRadialCoordinateNormalization_v1.md",
+      "sha256": "c2a794b2baa7442d755c16ef1a5cdebf415d3b28e5a8f58f4c1d8cb13d3f7cd5",
+      "role": "A35 dimensionless normalized rank-one Higgs line"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_neutralhiggsinsertionfunctorandradialcoordinatenormalization_certificate.json",
+      "sha256": "fa46d7dcec0d9244e41b507b01f8d21bb96fb13af74ba3a5975f38a18ffe134d",
+      "role": "A35 executable internal-line normalization and physical-action boundary"
+    }
+  ],
+  "boundary": {
+    "radial_state_component_closed": true,
+    "action_two_jet_component_closed": true,
+    "internal_rank_one_line_component_closed": true,
+    "abstract_cotangent_component_closed": true,
+    "free_finite_shell_BV_component_closed": true,
+    "same_root_source_action_gate_closed": false,
+    "physical_tangent_pairing_gate_closed": false,
+    "selected_interacting_state_BV_gate_closed": false,
+    "physical_projection_constructed": false,
+    "physical_QJ1_selected": false,
+    "physical_QJ2_selected": false,
+    "gravitational_QJ0_selected": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "new_continuous_parameters": 0
+  }
+}

@@ -163,6 +163,10 @@
     "exact Ward, QME, split-Ward and perturbative-agreement nonselection cutset",
     "source-preserving pointed quantum-projection implication theorem for QJ1 and action-jet QJ2",
     "reduction of two scalar matching clauses to one typed same-root morphism certificate",
+    "exact four-component local-formal projection assembly",
+    "necessary-and-sufficient three-gate promotion criterion for the T40 SP0-SP5 object",
+    "exact independence of same-root, physical tangent-pairing and selected interacting-state BV gates",
+    "exact cotangent, free-shell, action-jet and radial-state finite assembly witness",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -264,6 +268,10 @@
     "existence of the selected source-preserving pointed quantum projection",
     "physical QJ1 or QJ2 from the provider-contract implication without a selected morphism instance",
     "selection of the physical Higgs vacuum by QME, ordinary Ward identities or perturbative agreement alone",
+    "promotion of the four-component local-formal product to a same-root physical fiber product",
+    "identification of the A35 internal unit line with the physical kinetic or wave-function metric",
+    "selection of a preferred interacting state by the exact radial marginal",
+    "promotion of the free finite-shell BV pushforward to a fixed-coupling interacting endpoint",
     "a new globally original operator-theory identity"
   ],
   "controlling_status": "CURRENT_STATUS.md",
@@ -308,7 +316,8 @@
     "QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md",
     "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
     "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
-    "SourcePreservingPointedQuantumProjectionAndWardNonselectionTheorem_v1.md"
+    "SourcePreservingPointedQuantumProjectionAndWardNonselectionTheorem_v1.md",
+    "CotangentLiftedLocalFormalProjectionAssemblyAndSameRootGluingGateTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -350,7 +359,8 @@
     "quantum_radial_anchor_tadpole.packet.json",
     "radial_closure_attractor_state_marginal.packet.json",
     "renormalized_bv_anchored_repair_semiflow.packet.json",
-    "source_preserving_pointed_quantum_projection.packet.json"
+    "source_preserving_pointed_quantum_projection.packet.json",
+    "cotangent_lifted_local_formal_projection.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -392,7 +402,8 @@
     "python build_quantum_radial_anchor_tadpole.py",
     "python build_radial_closure_attractor_state_marginal.py",
     "python build_renormalized_bv_anchored_repair_semiflow.py",
-    "python build_source_preserving_pointed_quantum_projection.py"
+    "python build_source_preserving_pointed_quantum_projection.py",
+    "python build_cotangent_lifted_local_formal_projection.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -429,7 +440,8 @@
     "quantum_radial_anchor_tadpole_contract.schema.json",
     "radial_closure_attractor_state_marginal_contract.schema.json",
     "renormalized_bv_anchored_repair_semiflow_contract.schema.json",
-    "source_preserving_pointed_quantum_projection_contract.schema.json"
+    "source_preserving_pointed_quantum_projection_contract.schema.json",
+    "cotangent_lifted_local_formal_projection_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

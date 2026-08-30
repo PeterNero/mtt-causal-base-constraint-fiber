@@ -1300,3 +1300,33 @@ pushforward, gravitational QJ0 and continuum endpoint remain open. T40 passes
 `74/74` builder checks, `130/130` independent checks and 11 focused tests. The
 canonical suite passes 273 unit tests; physical acceptance remains `0/3`
 packets and `0/7` rows.
+
+The forty-first theorem resolves whether the pieces already surrounding that
+morphism can simply be attached. They cannot be attached by name alone. T38
+supplies radial evaluation and positive state pullback, T39 supplies the
+anchored action two-jet retraction, A35 supplies a dimensionless unit Higgs
+line, and H4-T15 plus the q79 finite-shell theorem supply an exact cotangent
+retract and free BV integration cycle. Together they form a verified
+four-component product, not yet a fiber product over one physical source.
+
+The exact promotion criterion has three independent gates:
+
+```text
+G0  one root and one upper field/action object whose BV pushforward emits the anchor and whose pointed repair square commutes,
+G1  one physical tangent metric transported isometrically by the same map,
+G2  one selected interacting BV and normalized-state pushforward.
+```
+
+Exact countermodels prove independence. Numerically identical components can
+have different root hashes; the internal A35 unit line can coexist with a
+physical metric-isometry defect of `3`; and two positive matter states can
+share the same `delta_H` radial marginal while disagreeing on `sigma_z`.
+The executable also reconstructs the cotangent contraction and a
+nondegenerate Lagrangian free-shell action with determinant `-1`.
+
+T41 therefore closes the maximal local-formal assembly and turns the former
+single vague existence request into three typed obligations. It does not
+promote a physical projection. Builder verification is `103/103`, independent
+verification is `126/126`, and 12 focused tests pass. The full canonical suite
+passes all 285 tests. The physical counters remain `0/3` packets and `0/7`
+rows; `G0` is the next constructive target.

@@ -1,0 +1,924 @@
+{
+  "SP_clause_ledger": {
+    "SP0": {
+      "component_support": "separate pinned hashes",
+      "missing_gate": "G0",
+      "physical_satisfied": false
+    },
+    "SP1": {
+      "component_support": "radial evaluation at H",
+      "missing_gate": "G0",
+      "physical_satisfied": false
+    },
+    "SP2": {
+      "component_support": "T39 anchored QJ1 scheme",
+      "missing_gate": "G0",
+      "physical_satisfied": false
+    },
+    "SP3": {
+      "component_support": "T39 action-Hessian preservation",
+      "missing_gate": "G0+G1",
+      "physical_satisfied": false
+    },
+    "SP4": {
+      "component_support": "A35 internal unit line",
+      "missing_gate": "G1",
+      "physical_satisfied": false
+    },
+    "SP5": {
+      "component_support": "cotangent retract, local-formal state existence and free shell pushforward",
+      "missing_gate": "G2",
+      "physical_satisfied": false
+    }
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 103,
+    "total": 103
+  },
+  "checks": {
+    "A35_action_weight_open": true,
+    "A35_certificate_passes": true,
+    "A35_rank_one": true,
+    "A35_unit_magnitude": true,
+    "G0_hashes_distinct": true,
+    "G0_maps_SP0_to_SP3": true,
+    "G0_nonimplication": true,
+    "G0_open": true,
+    "G1_defect_three": true,
+    "G1_maps_SP4": true,
+    "G1_nonimplication": true,
+    "G1_open": true,
+    "G2_maps_SP5": true,
+    "G2_nonimplication": true,
+    "G2_open": true,
+    "G2_two_states": true,
+    "H4_certificate_passes": true,
+    "H4_cotangent_closed": true,
+    "H4_direct_identification_open": true,
+    "T38_builder_closed": true,
+    "T39_builder_closed": true,
+    "T40_builder_closed": true,
+    "action_QJ1_component_closed": true,
+    "action_QJ2_component_closed": true,
+    "action_not_derived_from_upper": true,
+    "all_component_certificates": true,
+    "component_counter_4_of_4": true,
+    "cotangent_contraction": true,
+    "cotangent_pi": true,
+    "cotangent_symplectic_differential": true,
+    "cotangent_symplectic_inclusion": true,
+    "discarded_pairing_killed": true,
+    "discarded_pairing_nonzero": true,
+    "domains_not_identified": true,
+    "evaluation_not_BV_projection": true,
+    "finite_shell_certificate_passes": true,
+    "fixed_coupling_open": true,
+    "four_components": true,
+    "free_shell_closed": true,
+    "gluing_counter_0_of_3": true,
+    "gravity_QJ0_open": true,
+    "jet_C_idempotent": true,
+    "jet_C_right_inverse": true,
+    "jet_R_idempotent": true,
+    "jet_R_kernel": true,
+    "jet_det_54": true,
+    "no_physical_SP_clause": true,
+    "packet_counter_unchanged": true,
+    "physical_QJ1_open": true,
+    "physical_QJ2_open": true,
+    "physical_projection_open": true,
+    "preferred_state_not_promoted": true,
+    "primal_contraction": true,
+    "primal_pi": true,
+    "primal_side_conditions": true,
+    "product_not_fiber_product": true,
+    "promotion_existence_open": true,
+    "promotion_necessary": true,
+    "promotion_sufficient": true,
+    "radial_component_positive": true,
+    "radial_component_unique_marginal": true,
+    "radial_does_not_select_full_state": true,
+    "radial_variance_zero": true,
+    "row_counter_unchanged": true,
+    "schema_claim_id": true,
+    "schema_requires_all_fields": true,
+    "shell_Delta_identity": true,
+    "shell_Lagrangian": true,
+    "shell_Q2": true,
+    "shell_Q_symplectic": true,
+    "shell_contraction": true,
+    "shell_det_minus_one": true,
+    "shell_nondegenerate": true,
+    "six_SP_clauses": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "source_13_hash_matches": true,
+    "source_14_hash_matches": true,
+    "source_15_hash_matches": true,
+    "state_certificate_passes": true,
+    "state_expectations_distinct": true,
+    "theorem_component_product_boundary": true,
+    "theorem_if_and_only_if": true,
+    "theorem_metric_witness": true,
+    "theorem_physical_counters": true,
+    "theorem_state_witness": true,
+    "theorem_three_gates": true,
+    "two_states_normalized": true,
+    "two_states_positive": true,
+    "zero_fits": true,
+    "zero_new_parameters": true,
+    "zero_new_selectors": true,
+    "zero_observed_inputs": true
+  },
+  "claim_id": "CBF.T41",
+  "component_packets_assembled": 4,
+  "component_packets_total": 4,
+  "component_product": {
+    "all_component_certificates_pass": true,
+    "component_count": 4,
+    "component_domains_identified_by_one_map": false,
+    "component_product_is_physical_fiber_product": false,
+    "notation": "P_sep=P_state x P_jet x P_line x P_BV^free",
+    "observable_evaluation_is_covariant_BV_field_projection": false,
+    "status": "MAXIMAL_LOCAL_FORMAL_COMPONENT_PRODUCT_CLOSED_PHYSICAL_FIBER_PRODUCT_OPEN"
+  },
+  "date": "2026-08-30",
+  "exact_finite_witness": {
+    "action_jet_retraction": {
+      "C_H_idempotent": true,
+      "R_H_idempotent": true,
+      "anchor_H": "3/2",
+      "counterterm_projection_C_H": [
+        [
+          "1",
+          "9/16",
+          "0",
+          "-27/64",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/2",
+          "1",
+          "9/8",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/27",
+          "0",
+          "1/4",
+          "1"
+        ]
+      ],
+      "jet_C_H_equals_jet": true,
+      "jet_R_H_zero": true,
+      "jet_matrix": [
+        [
+          "1",
+          "3/2",
+          "9/4",
+          "27/8",
+          "81/16"
+        ],
+        [
+          "0",
+          "1",
+          "3",
+          "27/4",
+          "27/2"
+        ],
+        [
+          "0",
+          "0",
+          "2",
+          "9",
+          "27"
+        ]
+      ],
+      "polynomial_basis": [
+        "1",
+        "h",
+        "h^2",
+        "h^3",
+        "h^4"
+      ],
+      "remainder_retraction_R_H": [
+        [
+          "0",
+          "-9/16",
+          "0",
+          "27/64",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/2",
+          "0",
+          "-9/8",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1/27",
+          "0",
+          "-1/4",
+          "0"
+        ]
+      ],
+      "restricted_even_determinant": "54",
+      "restricted_even_jet_matrix": [
+        [
+          "1",
+          "9/4",
+          "81/16"
+        ],
+        [
+          "0",
+          "3",
+          "27/2"
+        ],
+        [
+          "0",
+          "2",
+          "27"
+        ]
+      ],
+      "symbolic_determinant": "16 H^3"
+    },
+    "cotangent_contraction": {
+      "cotangent_contraction_identity": true,
+      "cotangent_differential": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "cotangent_differential_is_symplectic": true,
+      "cotangent_homotopy": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "cotangent_inclusion": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "cotangent_inclusion_is_symplectic": true,
+      "cotangent_projection": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "cotangent_projection_after_inclusion": true,
+      "discarded_pairing_after_projection": "0",
+      "discarded_pairing_before_projection": "1",
+      "homotopy": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "inclusion": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "primal_contraction_identity": true,
+      "primal_projection_after_inclusion": true,
+      "primal_side_conditions": true,
+      "projection": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "upper_differential": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "upper_primal_basis": [
+        "r1",
+        "r2",
+        "u",
+        "v"
+      ]
+    },
+    "free_shell_BV": {
+      "Delta": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "Delta_is_identity": true,
+      "Hodge_contraction_identity": true,
+      "L_shell_basis": [
+        "e0",
+        "f1"
+      ],
+      "L_shell_is_lagrangian": true,
+      "Q": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "Q_preserves_odd_pairing": true,
+      "Q_squared_zero": true,
+      "basis": [
+        "e0",
+        "e1",
+        "f0",
+        "f1"
+      ],
+      "h": [
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "restricted_quadratic_determinant": "-1",
+      "restricted_quadratic_form": [
+        [
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "restricted_quadratic_is_nondegenerate": true
+    },
+    "radial_and_matter_states": {
+      "anchor_H": "3/2",
+      "both_radial_marginals": "delta_H",
+      "both_states_normalized": true,
+      "both_states_positive": true,
+      "full_state_selected_by_radial_marginal": false,
+      "matter_algebra": "M_2(C)",
+      "omega_0_density": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "omega_0_sigma_z": "1",
+      "omega_1_density": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "omega_1_sigma_z": "-1",
+      "radial_moments_n_0_to_4": [
+        "1",
+        "3/2",
+        "9/4",
+        "27/8",
+        "81/16"
+      ],
+      "radial_variance": "0",
+      "test_observable": "sigma_z=diag(1,-1)"
+    }
+  },
+  "frontier_delta": "All known state, action-jet, internal-line, cotangent and free-shell pieces are now one typed component product. Promotion is proved equivalent to three independent gluing gates: same-root source/action, physical tangent pairing, and selected interacting state/BV pushforward.",
+  "independent_gluing_gates": {
+    "G0_same_root": {
+      "component_matrices_identical": true,
+      "root_alpha_sha256": "e930ba2919d86114cc726fd745c9e86068b5d2cc2a81f3667808a74c2d85f424",
+      "root_beta_sha256": "435031c787f182a1065f222054cfda7e6b6bec06ffecb126aef3bba2f3e4271e",
+      "root_hashes_distinct": true,
+      "same_root_follows_from_numeric_component_equality": false
+    },
+    "G1_physical_tangent_pairing": {
+      "Dp": "1",
+      "g_lower": "4",
+      "g_up": "1",
+      "internal_A35_unit_line_unchanged": true,
+      "isometry_defect": "3",
+      "physical_isometry_follows_from_internal_unit_line": false
+    },
+    "G2_selected_interacting_state_BV": {
+      "distinguishing_expectations": [
+        "1",
+        "-1"
+      ],
+      "free_shell_pushforward_shared": true,
+      "preferred_interacting_state_follows": false,
+      "same_radial_marginal": "delta_H",
+      "two_positive_normalized_matter_states": true
+    }
+  },
+  "parameter_ledger": {
+    "new_fits": 0,
+    "new_observed_inputs": 0,
+    "new_physical_continuous_parameters": 0,
+    "new_physical_discrete_selectors": 0,
+    "proof_coordinate_H": "3/2",
+    "proof_coordinate_metric_scale_lambda": "2",
+    "proof_coordinates_are_physical_inputs": false
+  },
+  "physical_boundary": {
+    "acceptance_counters_change": false,
+    "complete_q79_BV_compactification_closed": false,
+    "fixed_coupling_interacting_endpoint_closed": false,
+    "gravitational_QJ0_selected": false,
+    "physical_QJ1_selected": false,
+    "physical_QJ2_selected": false,
+    "physical_tangent_pairing_gate_closed": false,
+    "same_root_source_action_gate_closed": false,
+    "selected_interacting_state_BV_gate_closed": false,
+    "selected_physical_projection_constructed": false
+  },
+  "physical_gluing_gates_closed": 0,
+  "physical_gluing_gates_total": 3,
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "promotion_criterion": {
+    "G0": "one root, upper field-only action and one projection/contraction whose BV pushforward emits the anchored lower action and whose pointed repair/tangent-generator squares commute",
+    "G0_implies_SP": [
+      "SP0",
+      "SP1",
+      "SP2",
+      "SP3"
+    ],
+    "G1": "Dp is an isometry for the selected physical tangent pairings and transports the action Hessian",
+    "G1_implies_SP": [
+      "SP4"
+    ],
+    "G2": "the same map supplies the selected interacting QME-preserving BV and normalized-state pushforwards",
+    "G2_implies_SP": [
+      "SP5"
+    ],
+    "T40_then_implies": [
+      "physical QJ1",
+      "physical action-jet QJ2"
+    ],
+    "existence_proved": false,
+    "necessary": true,
+    "sufficient": true,
+    "theorem": "components extend to SP0-SP5 if and only if G0, G1 and G2 hold"
+  },
+  "schema": "boe.mtt.cotangent-lifted-local-formal-projection.v1",
+  "source_provenance": {
+    "contract_schema_sha256": "b5da62d2b6ef4126f302b015cf8583ca5dfcfe255cc2ddd937c10b9c2112990b",
+    "handoff_id": "34db0cee-9f0d-41fd-8d71-ff4ceaef11c7",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "source_bundle_sha256": "fd0de3fb4f728151ff6d3c7d35ff1b4befd827f6025eb0b8a0e9e6b09a18ed32",
+    "source_lock_sha256": "fbf6f90a0c2f415aea69ef98d33ba2598fb14607f9384c123d834affe0f149b1",
+    "theorem_sha256": "b5454c186a8b09d391a1a844501e53507e1fb158652f5a2124a89ba258b06cda"
+  },
+  "status": "EXACT_MAXIMAL_LOCAL_FORMAL_COMPONENT_ASSEMBLY_AND_THREE_INDEPENDENT_PHYSICAL_GLUING_GATES",
+  "typed_components": {
+    "P_BV_free": {
+      "abstract_cotangent_retract_closed": true,
+      "direct_internal_to_4d_BV_identification_closed": false,
+      "fixed_coupling_interacting_endpoint": "open",
+      "free_finite_shell_pushforward": "closed_up_to_the_transported_determinant_line_scalar",
+      "sources": [
+        "H4-T15",
+        "q79 free finite-shell BV pushforward"
+      ]
+    },
+    "P_jet": {
+      "derived_from_selected_upper_action": false,
+      "identities": [
+        "j_H^2 C_H=j_H^2",
+        "j_H^2 R_H=0",
+        "C_H^2=C_H",
+        "R_H^2=R_H"
+      ],
+      "local_formal_QJ1": "closed_constructively",
+      "local_formal_action_QJ2": "closed_constructively",
+      "map": "R_H=I-C_H",
+      "source": "CBF.T39"
+    },
+    "P_line": {
+      "carrier": "H:h0",
+      "dimensionless_insertion_magnitude": 1.0,
+      "dimensionless_radial_normalization_closed": true,
+      "physical_action_weight_closed": false,
+      "physical_tangent_metric_selected": false,
+      "rank": 1,
+      "source": "A35"
+    },
+    "P_state": {
+      "algebra_map": "ev_H tensor id:A_base->A_phys,H",
+      "positive_normalized": true,
+      "preferred_full_state_selected": false,
+      "radial_marginal_unique": true,
+      "source": "CBF.T38 plus q79 local-formal physical-state theorem",
+      "state_map": "Omega_H=omega_H composed with (ev_H tensor id)"
+    }
+  }
+}

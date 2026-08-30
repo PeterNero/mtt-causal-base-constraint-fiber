@@ -32,6 +32,8 @@ This is a snapshot, not a substitute for live kernel queries.
   `9bebcb6e-13e2-406c-be9a-993c1dbf964a`
 - Source-preserving pointed quantum-projection handoff:
   `87b478d2-4073-4687-b5d0-60dc913db152`
+- Cotangent-lifted projection-assembly handoff:
+  `34db0cee-9f0d-41fd-8d71-ff4ceaef11c7`
 
 ## Controlling authorities
 
@@ -1412,3 +1414,43 @@ QJ0, fixed-coupling BV endpoint and continuum transfer remain open. T40 passes
 `74/74` builder checks, `130/130` independent checks and 11 focused tests. The
 canonical suite passes 273 unit tests; physical acceptance remains `0/3`
 packets and `0/7` rows.
+
+`CotangentLiftedLocalFormalProjectionAssemblyAndSameRootGluingGateTheorem_v1.md`
+(`CBF.T41`) now assembles every available projection component without
+mistaking their conjunction for a physical source map. The exact component
+product is
+
+```text
+T38 radial state/evaluation
+  x T39 anchored action two-jet
+  x A35 normalized rank-one internal Higgs line
+  x H4-T15 cotangent contraction and q79 free finite-shell BV pushforward.
+```
+
+All four components are closed at their declared tiers. The new theorem
+proves that promotion to the T40 `SP0-SP5` object is equivalent to three and
+only three typed gluing gates:
+
+```text
+G0 same-root upper field/action source, derived action pushforward and pointed repair/tangent intertwining,
+G1 physical tangent-pairing isometry and Hessian transport,
+G2 selected interacting QME-preserving BV and state pushforward.
+```
+
+These gates are independent. Identical component matrices can carry distinct
+root hashes; an exact metric rescaling leaves all component data unchanged
+while producing isometry defect `3`; and two positive normalized `M_2(C)`
+states share radial marginal `delta_H` while giving `sigma_z` expectations
+`+1` and `-1`. Thus neither source identity, physical wave-function
+normalization nor a preferred interacting state can be inferred by stacking
+the existing certificates.
+
+The finite witness independently verifies the primal and cotangent
+contractions, retained odd pairing, failure of plain projection on a
+discarded field-dual pair, a Lagrangian free BV shell with quadratic
+determinant `-1`, the exact `H=3/2` two-jet determinant `54`, and zero radial
+variance. T41 passes `103/103` builder checks, `126/126` independent checks
+and 12 focused tests. The canonical suite passes all 285 tests. Component
+assembly is `4/4`; the actual physical gluing gates remain `0/3`, so physical
+acceptance stays `0/3` packets and `0/7` rows. The next constructive target is
+`G0`, not another radial counterterm calculation.
