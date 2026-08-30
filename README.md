@@ -1066,3 +1066,29 @@ promotion are not. A direct finite-source causal continuum realization, its
 normalized quartic repair action, complete finite spectral family and finite
 Grassmann-Gaussian value selector are now closed and must not be reopened as
 an HYM-projector, signed-action prerequisite or profile-free value search.
+
+The thirty-third theorem resolves the role ambiguity left by T32. Pulling an
+action family back along an upstream selected source varies only the lower
+fields; imposing a second source equation defines a different enlarged model.
+Therefore a conditional preprojection reading of the T30 coordinate can be
+evaluated without contradicting T32's joint-field no-go.
+
+At `t_*=(1-sqrt(13))/6`, exact `Q(sqrt(13))` arithmetic gives
+`R_*=2q2_*/q4_*=(3106+4sqrt(13))/4393`. Under A53's conditional one-atom
+moments, the lower radial equation emits
+
+```text
+h_*/Lambda=1.32110162937546849372...,
+(m_-4,m_-2,m_+2)/Lambda
+ =(2.46850097452107062662...,
+   1.89480130194826956017...,
+   0.74740195680266742727...).
+```
+
+The T23 `h=Lambda` branch retains the original T30 values; it and the A53
+radial-stationary branch require disjoint moment ratios and cannot be imposed
+together. These are exact conditional finite spectral values, not accepted SM
+masses: the preprojection source map, same-root A53 composition, absolute
+scale, sector assignment and precision transport remain open. T33 passes
+`61/61` builder checks and `96/96` independent checks. The canonical suite now
+passes 198 unit tests.

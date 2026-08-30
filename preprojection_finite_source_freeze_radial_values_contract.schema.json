@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/preprojection-finite-source-freeze-radial-values.v1.schema.json",
+  "title": "MTT preprojection finite source-freeze and radial-value packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "typed_source_freeze",
+    "selected_finite_source",
+    "fixed_source_radial_action",
+    "T23_metrology_branch",
+    "A53_radial_stationary_branch",
+    "branch_comparison",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.preprojection-finite-source-freeze-radial-values.v1"},
+    "claim_id": {"const": "CBF.T33"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "typed_source_freeze": {"type": "object"},
+    "selected_finite_source": {"type": "object"},
+    "fixed_source_radial_action": {"type": "object"},
+    "T23_metrology_branch": {"type": "object"},
+    "A53_radial_stationary_branch": {"type": "object"},
+    "branch_comparison": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "check_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

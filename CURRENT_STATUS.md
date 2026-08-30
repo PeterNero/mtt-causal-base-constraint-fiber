@@ -26,6 +26,8 @@ This is a snapshot, not a substitute for live kernel queries.
   `ec8fc7e0-33c8-4cf1-9ae0-6b941d4da986`
 - Joint radial/source-modulus heat-kernel action handoff:
   `cfe21291-1890-4355-a0c7-297aa4d0947d`
+- Preprojection finite-source freeze and radial-value handoff:
+  `1e03a938-4acb-47b8-a43f-09171905c3bc`
 
 ## Controlling authorities
 
@@ -1079,3 +1081,44 @@ stationarity cannot all hold simultaneously. The packet passes `70/70`
 builder checks and `131/131` independent checks. MTT promotion of `t(x)`,
 selected moments, absolute scale, Lorentzian/QFT completion and physical
 values remain open; acceptance remains `0/3` and `0/7`.
+
+`PreprojectionFiniteSourceFreezeAndConditionalRadialBranchValueTheorem_v1.md`
+(`CBF.T33`) proves that CBF.T30 and CBF.T32 are two differently typed
+variational problems, not contradictory value selectors. If an upper law
+selects `t_*`, pulling the action back to the lower field space varies `h` but
+does not impose a second `t` equation. Jointly varying `t(x)` is the enlarged
+source-modulus model already classified by CBF.T32.
+
+At the exact T30 coordinate,
+
+```text
+t_*=(1-sqrt(13))/6,
+q2_*=(14+sqrt(13))/3,
+q4_*=(356+25sqrt(13))/27,
+R_*=2q2_*/q4_*=(3106+4sqrt(13))/4393.
+```
+
+The fixed-source radial minimum is `h_*^2=R_*(f2/f0)Lambda^2`. The T23
+metrology branch `h=Lambda` reproduces the existing T30 values but is not
+automatically radially stationary. Under A53's explicitly conditional one-
+atom premise, radial stationarity instead gives
+
+```text
+h_*/Lambda = 1.32110162937546849372...,
+(m_-4,m_-2,m_+2)/Lambda
+ = (2.46850097452107062662...,
+    1.89480130194826956017...,
+    0.74740195680266742727...),
+m_h/Lambda = sqrt(120/log(448))
+           = 4.43358606544780223278....
+```
+
+These are the first exact nonzero branch values after composing the T30
+coordinate with a lower radial stationary equation, but they remain
+conditional spectral values rather than accepted particle masses. The T23
+stationary moment requirement and A53 moment intervals are disjoint, so the
+two branches cannot be simultaneous predictions. Physical promotion of T30
+as the preprojection selector, a same-root T30/A53 map, normalization-branch
+selection, absolute scale, the nine-value sector map and precision transport
+remain open. The packet passes `61/61` builder checks and `96/96` independent
+checks; acceptance remains `0/3` and `0/7`.

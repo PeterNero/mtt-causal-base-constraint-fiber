@@ -1,0 +1,93 @@
+{
+  "schema": "boe.mtt.preprojection-finite-source-freeze-radial-values-source-lock.v1",
+  "claim_id": "CBF.T33",
+  "date": "2026-08-30",
+  "handoff_id": "1e03a938-4acb-47b8-a43f-09171905c3bc",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "cc1a503d352ed0df092fb96305740486756c252e",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "KO6PhysicalPolarizationFermionicDeterminantAndNeutralChamberValueSelectionTheorem_v1.md",
+      "sha256": "6f9ecbd1c149928f2b9464214d2a1cc6393c9c68f2d1b9934c33bacd1e1f1f91",
+      "role": "CBF.T30 finite internal Grassmann-Gaussian source coordinate and branch factors"
+    },
+    {
+      "path": "ko6_fermionic_determinant_value_selection.packet.json",
+      "sha256": "927f0db10e5ba7667779153c3a8d9f483c4fd5f0bc6367e1f9f5c79b5836341e",
+      "role": "CBF.T30 exact selected coordinate and Q(sqrt(13)) value packet"
+    },
+    {
+      "path": "ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md",
+      "sha256": "b0c668b916696412cf7a8bbcd9124eaf9d72f5512653e48d25ebb5f6d904a098",
+      "role": "CBF.T32 joint action, no-double-role boundary and exact q2/q4 potential"
+    },
+    {
+      "path": "product_dirac_joint_radial_source_modulus_action.packet.json",
+      "sha256": "fe933ea2b3c67b357e504259424e8969935daac286f2732fc621b53efc643df9",
+      "role": "CBF.T32 machine-readable joint action and compatibility cutset"
+    },
+    {
+      "path": "PhysicalYukawaIncidenceKO6HessianCompressionTheorem_v1.md",
+      "sha256": "841f6acae3fec4331695d2b706f914dfb991c251f96f493b79ab5bd74b3fb01a",
+      "role": "CBF.T23 one-universal-metrology normalization h=Lambda"
+    },
+    {
+      "path": "physical_yukawa_hessian.packet.json",
+      "sha256": "11c47dfa3cb0bceb44160b720abc178ff39e64ceec378931feaa59af47bd9e42",
+      "role": "CBF.T23 exact physical finite operator and scale packet"
+    },
+    {
+      "path": "DirectFiniteSourceCausalContinuumDiracYukawaRealizationTheorem_v1.md",
+      "sha256": "a54172682bef88fd7516ca4fbf5cfd4e6a2c410e76f447627c42cf46a58cc48d",
+      "role": "CBF.T25 direct continuum family accepting fixed source coordinate t"
+    },
+    {
+      "path": "direct_finite_source_continuum.packet.json",
+      "sha256": "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+      "role": "CBF.T25 source-coordinate and physical mapping boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_FiniteSpectralActionAndHiggsInnerFluctuation_or_DirectGenerativeSMActionClosure_v1.md",
+      "sha256": "423e3ae86dd8b5abee19e38d53f0bb003fb53fc0e5adc872076cab546934e893",
+      "role": "A51 selected one-Higgs module excluding an automatic t inner fluctuation"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure_certificate.json",
+      "sha256": "20b357f3552391b54e8ee1878052c0797012c5900ba9244039c51a2f534bb14f",
+      "role": "A51 machine-readable one-Higgs and normalization boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_ProperTimeMeasureAndOverlapKineticMetricSource_or_StrictSpectralActionClosure_v1.md",
+      "sha256": "0d12e410e0534bbb36fa36aa16f903ac720ae603c77cc76d8fb23650c2713846",
+      "role": "A53 exact tau_int and conditional one-atom moment ratio"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_propertimemeasureandoverlapkineticmetricsource_or_strictspectralactionclosure_certificate.json",
+      "sha256": "04a3d5233ffe58eda198b9cd45f5ae5b73b885d05c52572550399fceac1b4c45",
+      "role": "A53 machine-readable conditionality boundary"
+    }
+  ],
+  "boundary": {
+    "T30_finite_internal_coordinate_selected": true,
+    "T30_coordinate_proved_to_be_preprojection_physical_source": false,
+    "T25_continuum_family_accepts_fixed_t": true,
+    "A51_t_is_selected_inner_fluctuation": false,
+    "A53_point_measure_selected_by_MTT": false,
+    "same_root_T30_A53_composition_proved": false,
+    "no_double_variation_typing_before": false,
+    "no_double_variation_typing_after": true,
+    "fixed_source_radial_values_before": false,
+    "fixed_source_radial_values_after": true,
+    "absolute_scale_selected": false,
+    "sector_generation_map_selected": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}

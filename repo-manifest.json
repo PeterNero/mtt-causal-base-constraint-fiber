@@ -127,6 +127,11 @@
     "exact two-mode generalized scalar curvature spectrum at the joint tree vacuum",
     "exact fixed-radial bridge from the spectral potential to the normalized Dirac-square repair action",
     "conditional A53 scale ratios and exact incompatibility with simultaneous T23 h-equals-Lambda stationarity",
+    "exact source-freeze versus field-variation pullback theorem",
+    "exact Q(sqrt13) radial evaluation at the finite T30 source coordinate",
+    "two-branch classification of T23 metrology and conditional A53 radial-stationary values",
+    "certified nonzero finite branch values in cutoff units under the conditional A53 composition",
+    "exact fixed-source normalization incompatibility and no-added-hierarchy result",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -182,6 +187,9 @@
     "interpretation of the conditional joint tree curvature masses as measured pole masses",
     "selection of the A53 one-atom proper-time measure by MTT",
     "simultaneous validity of A53 one-atom moments, literal h=Lambda and bare tree stationarity",
+    "physical promotion of the T30 determinant coordinate as the selected preprojection source",
+    "same-root identification of the T30 finite selector and A53 proper-time measure",
+    "interpretation of the T33 conditional cutoff-unit branch values as nine measured charged masses",
     "identification of the three finite determinant branches with measured fermion generations",
     "derivation of a dimensionful mass from the finite determinant without a physical scale primitive",
     "identification of classical projective pressure normalization with a measured physical scale",
@@ -235,7 +243,8 @@
     "CanonicalDiracDefectCubicVariationalActionAndKODoublingCancellationTheorem_v1.md",
     "KO6PhysicalPolarizationFermionicDeterminantAndNeutralChamberValueSelectionTheorem_v1.md",
     "FourDimensionalFermionDeterminantSchemeClassificationAndPhysicalValueBoundaryTheorem_v1.md",
-    "ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md"
+    "ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md",
+    "PreprojectionFiniteSourceFreezeAndConditionalRadialBranchValueTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -269,7 +278,8 @@
     "finite_dirac_cubic_variational_action.packet.json",
     "ko6_fermionic_determinant_value_selection.packet.json",
     "four_dimensional_fermion_determinant_scheme_classification.packet.json",
-    "product_dirac_joint_radial_source_modulus_action.packet.json"
+    "product_dirac_joint_radial_source_modulus_action.packet.json",
+    "preprojection_finite_source_freeze_radial_values.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -303,7 +313,8 @@
     "python build_finite_dirac_cubic_variational_action.py",
     "python build_ko6_fermionic_determinant_value_selection.py",
     "python build_four_dimensional_fermion_determinant_scheme_classification.py",
-    "python build_product_dirac_joint_radial_source_modulus_action.py"
+    "python build_product_dirac_joint_radial_source_modulus_action.py",
+    "python build_preprojection_finite_source_freeze_radial_values.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -332,7 +343,8 @@
     "finite_dirac_cubic_variational_action_contract.schema.json",
     "ko6_fermionic_determinant_value_selection_contract.schema.json",
     "four_dimensional_fermion_determinant_scheme_classification_contract.schema.json",
-    "product_dirac_joint_radial_source_modulus_action_contract.schema.json"
+    "product_dirac_joint_radial_source_modulus_action_contract.schema.json",
+    "preprojection_finite_source_freeze_radial_values_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

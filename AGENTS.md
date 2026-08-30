@@ -35,6 +35,8 @@ paper, note, packet name or search hit.
    the four-dimensional determinant scheme-classification handoff is
    `ec8fc7e0-33c8-4cf1-9ae0-6b941d4da986`; the joint radial/source-modulus
    heat-kernel action handoff is `cfe21291-1890-4355-a0c7-297aa4d0947d`;
+   the preprojection finite-source freeze and radial-value handoff is
+   `1e03a938-4acb-47b8-a43f-09171905c3bc`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

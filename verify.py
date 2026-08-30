@@ -78,6 +78,8 @@ def main() -> None:
     run(sys.executable, "verify_four_dimensional_fermion_determinant_scheme_classification.py")
     run(sys.executable, "build_product_dirac_joint_radial_source_modulus_action.py")
     run(sys.executable, "verify_product_dirac_joint_radial_source_modulus_action.py")
+    run(sys.executable, "build_preprojection_finite_source_freeze_radial_values.py")
+    run(sys.executable, "verify_preprojection_finite_source_freeze_radial_values.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 
