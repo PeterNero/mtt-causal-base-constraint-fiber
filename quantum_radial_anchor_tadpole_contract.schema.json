@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boe.example/mtt/quantum-radial-anchor-tadpole.v1.schema.json",
+  "title": "MTT quantum radial-anchor Ward identity and tadpole-selection packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "differentiated_pushforward_identity",
+    "QJ1_mechanisms",
+    "QME_normalization_orbit",
+    "T35_tadpole_execution",
+    "state_anchor_reduction",
+    "parameter_ledger",
+    "physical_boundary",
+    "physical_packets_accepted",
+    "physical_packets_total",
+    "physical_rows_accepted",
+    "physical_rows_total",
+    "frontier_delta",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.quantum-radial-anchor-tadpole.v1"},
+    "claim_id": {"const": "CBF.T37"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "differentiated_pushforward_identity": {"type": "object"},
+    "QJ1_mechanisms": {"type": "object"},
+    "QME_normalization_orbit": {"type": "object"},
+    "T35_tadpole_execution": {"type": "object"},
+    "state_anchor_reduction": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "physical_packets_accepted": {"const": 0},
+    "physical_packets_total": {"const": 3},
+    "physical_rows_accepted": {"const": 0},
+    "physical_rows_total": {"const": 7},
+    "frontier_delta": {"type": "string"},
+    "checks": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "check_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "total", "failed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "failed": {"type": "array", "maxItems": 0}
+      }
+    }
+  }
+}

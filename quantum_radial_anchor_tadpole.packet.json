@@ -1,0 +1,266 @@
+{
+  "QJ1_mechanisms": {
+    "centered_involution": {
+      "condition": "measure-preserving involution fixes H and makes insertion odd",
+      "ordinary_h_to_minus_h_centers_nonzero_branch": false,
+      "sufficient": true
+    },
+    "pointwise_horizontal_stationarity": {
+      "condition": "D_H S=0 pointwise, A_H=0 and B_H=0",
+      "present_in_current_MTT": false,
+      "sufficient": true
+    },
+    "quantum_BV_exact_insertion": {
+      "condition": "D_H S-hbar A_H=s_q Psi_H and <s_q X>=0",
+      "formal_QME_Stokes_available": true,
+      "radial_primitive_Psi_H_emitted": false,
+      "sufficient": true
+    },
+    "zero_source_state_anchor": {
+      "condition": "H_T34=phi(J=0) for one selected interacting state",
+      "exact_witness": {
+        "Gamma_of_phi": "(phi-H)^2/(2 sigma^2)",
+        "H": "5/3",
+        "H_T34_state_anchor_equality_proved": false,
+        "Legendre_identity": "dGamma/dphi=J",
+        "QJ1_follows_if_H_T34_equals_zero_source_expectation": true,
+        "W_of_J": "H J+(sigma^2/2)J^2",
+        "phi_of_J": "H+sigma^2 J",
+        "preferred_interacting_q79_state_selected": false,
+        "recovered_dGamma_dphi": "2/5",
+        "sigma_squared": "7/4",
+        "test_J": "2/5",
+        "test_phi": "71/30",
+        "zero_source_Gamma_prime_at_H": "0"
+      },
+      "same_source_equality_closed": false,
+      "sufficient": true
+    }
+  },
+  "QME_normalization_orbit": {
+    "QJ1_compatible_formal_QME_scheme_exists": true,
+    "QJ1_is_a_normalization_condition_at_this_tier": true,
+    "QME_uniquely_selects_QJ1": false,
+    "additive_constant_dimension": 1,
+    "anomaly_free_formal_QME_scheme_exists": true,
+    "counterterm_class": "c+a h^2+b h^4",
+    "first_solution": {
+      "a": "7/9",
+      "b": "0",
+      "shift": "7/3"
+    },
+    "gauge_invariant_counterterms_are_BRST_closed": true,
+    "nonconstant_kernel_dimension": 1,
+    "second_solution": {
+      "a": "-11/90",
+      "b": "1/5",
+      "shift": "7/3"
+    },
+    "tadpole_map_rank": 1,
+    "target_tadpole_shift": "7/3",
+    "test_point_H": "3/2"
+  },
+  "T35_tadpole_execution": {
+    "H_over_Lambda": "1.32110162937546849372411407910044955254271565318267186604317613706916198143243247326937712",
+    "H_squared_over_Lambda_squared": "1.74530951513851771853518336274233261059720386078982131392118789587799229973219349150080919",
+    "L4_star": "18.1760660175440623610870421905411355016203130310675638808089576591624418587348442604456421",
+    "L_H": "2.5931309140518811873072225305529067935511259069720866940318895715858049527224536385905694",
+    "QJ1_counterterm_line_right_side_over_kappa_Lambda2": "37.8905306758110426301454836733130084000059570050290485022275323697027195700878268556652079",
+    "QJ1_line_reconstructed_from_T35_pair": "37.8905306758110426301454836733130084000059570050290485022275323697027195700878268556652078",
+    "T35_delta_lambda_over_kappa": "27.3786187966407552055283631798174844966779267039793731005741854830124257142405237013747626",
+    "T35_delta_m2_over_kappa_Lambda2": "-57.6777971184437251885537115502953051006544255177255757080868891103999180326257445579853952",
+    "bare_tadpole_complex_over_Lambda3": "-10.1437179808726814804011243648157565482959414425440243875370507225660136927372742156780141",
+    "bare_tadpole_is_zero_at_mu_equals_Lambda": false,
+    "bare_tadpole_over_kappa_Lambda3": "-100.114483627430279588255506887696895827724576220833743543915782457764101035430506698860949",
+    "bare_tadpole_pfaffian_over_Lambda3": "-5.07185899043634074020056218240787827414797072127201219376852536128300684636863720795349066",
+    "both_determinant_branches_have_nonzero_tadpole": true,
+    "c_scheme": "1.5",
+    "locked_input_residuals": {
+      "H": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000002673062288",
+      "H2": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000849919081",
+      "L4": "0.0000000000000000000000000000000000000000000000000000000000000000000000000000022604456421",
+      "q4": "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000418561288"
+    },
+    "maximum_locked_input_residual": "0.0000000000000000000000000000000000000000000000000000000000000000000000000000022604456421",
+    "mu_over_Lambda": "1",
+    "mu_tad_formula": "exp[(L4_*/q4_*-c_scheme+1/2)/2]",
+    "mu_tad_over_H": "1.05127241877369275682425083137814802300627732362810806189081615428444376168038559526648685",
+    "mu_tad_over_Lambda": "1.38883770535941535495668312689210727781135198066465494034549016075916515462744111181273885",
+    "mu_tad_selected_by_current_upper_action": false,
+    "q4_star": "16.5236585883925826788140937661763851354178671980048576043615306076177471743453800418561288",
+    "scheme": "MSbar",
+    "sqrt13": "3.60555127546398929311922126747049594625129657384524621271045305622716694829301044520461908",
+    "two_L_H_plus_q4": "21.7099204164963450534285388272821987225201190119490309924253097507893570797902873190372676"
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 44,
+    "total": 44
+  },
+  "checks": {
+    "Legendre_anchor_exact": true,
+    "QME_compatibility_closed": true,
+    "QME_first_solution_hits_target": true,
+    "QME_orbit_has_nonconstant_kernel": true,
+    "QME_second_solution_hits_target": true,
+    "QME_selection_rejected": true,
+    "T34_point_is_positive": true,
+    "T35_bare_tadpole_nonzero": true,
+    "T35_both_determinant_branches_nonzero": true,
+    "T35_locked_inputs_match": true,
+    "T35_pair_lies_on_QJ1_line": true,
+    "T36_QJ1_was_open": true,
+    "T36_generic_pushforward_preservation_rejected": true,
+    "action_naturality_alone_not_enough": true,
+    "all_source_hashes_match": true,
+    "bare_tadpole_zero_scale_positive": true,
+    "bare_tadpole_zero_scale_unselected": true,
+    "centered_involution_cancels_insertion": true,
+    "differentiated_pushforward_identity_nontrivial": true,
+    "measure_term_enters_identity": true,
+    "no_fitted_coefficients": true,
+    "no_observed_inputs": true,
+    "physical_QJ1_stays_open": true,
+    "physical_acceptance_unchanged": true,
+    "preferred_state_still_open": true,
+    "q79_QME_finite_normalization_explicit": true,
+    "q79_formal_QME_source_present": true,
+    "q79_full_quantum_Ward_row_open": true,
+    "q79_preferred_state_explicitly_open": true,
+    "q79_state_spaces_nonempty": true,
+    "q79_state_transport_present": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "state_anchor_reduces_QJ1": true
+  },
+  "claim_id": "CBF.T37",
+  "date": "2026-08-30",
+  "differentiated_pushforward_identity": {
+    "action_term": "D_H S",
+    "cycle_boundary_term": "B_H/Z(H)",
+    "exact_finite_witness": {
+      "action_naturality_alone_sufficient": false,
+      "action_radial_derivatives": [
+        "3",
+        "-1"
+      ],
+      "centered_involution_expectation": "0",
+      "centered_involution_insertions": [
+        "3",
+        "-3"
+      ],
+      "covariant_insertions": [
+        "5/2",
+        "-1/2"
+      ],
+      "cycle_boundary_term_in_witness": "0",
+      "effective_action_radial_derivative": "1",
+      "fiber_probabilities_at_reference": [
+        "1/2",
+        "1/2"
+      ],
+      "hbar": "1",
+      "identity": "Gamma'(H)=<D_H S-hbar A_H>_H+B_H/Z(H)",
+      "log_density_radial_derivatives": [
+        "1/2",
+        "-1/2"
+      ],
+      "measure_cycle_state_data_required": true,
+      "reference_point": "2"
+    },
+    "formula": "Gamma'(H)=<D_H S-hbar A_H>_H+B_H/Z(H)",
+    "measure_and_determinant_term": "-hbar A_H",
+    "projection_contract_must_include": [
+      "action",
+      "cycle transport",
+      "measure or determinant half-density",
+      "state or expectation functional",
+      "radial anchor"
+    ]
+  },
+  "frontier_delta": "CBF.T37 derives the exact differentiated pushforward Ward identity and proves that the anomaly-free q79 formal QME permits a QJ1-preserving normalization but cannot select it because gauge-invariant h^2 and h^4 counterterms shift the tadpole arbitrarily. The actual T35 fermion determinant has a nonzero tadpole at H_T34 in MSbar at mu=Lambda. Physical QJ1 is now reduced to one same-source state-anchor equality omega_q79(h)=H_T34 at zero source, or one explicit quantum-BV radial Ward primitive. Neither is currently emitted, so acceptance stays 0/3 packets and 0/7 rows.",
+  "parameter_ledger": {
+    "QJ1_nonconstant_counterterm_freedom_before_QJ2": 1,
+    "additive_constant_freedom_before_QJ0": 1,
+    "bare_tadpole_zero_scale_is_counted_as_prediction": false,
+    "new_continuous_physical_parameters": 0,
+    "new_fitted_coefficients": 0,
+    "new_formal_normalization_conditions_classified": 1,
+    "new_observed_construction_inputs": 0,
+    "selected_interacting_state_data_still_missing": 1
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "H_T34_state_anchor_equality_closed": false,
+    "QJ1_reduced_to_same_source_state_anchor": true,
+    "QJ1_sufficient_mechanisms_classified": true,
+    "QME_or_gauge_naturality_selects_QJ1": false,
+    "T35_bare_tadpole_obstruction_executed": true,
+    "differentiated_pushforward_identity_closed": true,
+    "formal_QME_compatible_QJ1_scheme_exists": true,
+    "full_closure_jet_matching_selected": false,
+    "physical_QJ0_vacuum_normalization_closed": false,
+    "physical_QJ1_tadpole_protection_closed": false,
+    "physical_QJ2_tangent_Hessian_intertwiner_closed": false,
+    "radial_BV_Ward_primitive_closed": false,
+    "selected_interacting_q79_state_closed": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "schema": "boe.mtt.quantum-radial-anchor-tadpole.v1",
+  "source_provenance": {
+    "contract_schema_sha256": "855b3943254036ae8ad2e9cf50642b54f1daf41522fd42dba07f54e22e9c9980",
+    "handoff_id": "3689d483-4adb-4990-9648-32e19012f716",
+    "source_lock_sha256": "89501b998bf229e313d2e5cfb3fdea13dd94e1aaeb258ca1000717b0906e85ad",
+    "source_root_payload": {
+      "claim_id": "CBF.T37",
+      "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+      "repositories": {
+        "mtt-causal-base-constraint-fiber": "a3f3cd83dc5024e6d93dd33e75d54648ec127c5f",
+        "mtt-preprojection-repair-calculus": "dd64c50ae6633a1f0d91be2b13f5d5fc9c6efc3d",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065"
+      },
+      "source_hashes": [
+        "ba5a3c10bc3fe374126903ba58b254c35f12bb7398bb1c2746d0ac2ac5d21e0d",
+        "417a56fac1fbbd6ff6995a4a05e8c1004d6d3a6ed96c4e07d788752a2580eed1",
+        "0ff31bf31252a7d5dbf2c534d366e5fcc31f532139716f1b22a8efb1694c42d4",
+        "7494875dae5fb2b8fc1240c4f43fcc1251ed153fbdac1801a4feea0d3566a6bc",
+        "cbd7ce99a9b7a3082fd9b1e4ed54acba08af54749e04056cadf76da4c5f405f7",
+        "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+        "77759a36b19a789f3c09313f22ca9b632e3f4a114dd2eb4555c2f711c718b05f",
+        "a804a88680c518633253763da13a83b8cd8f723182d8375730de0f9b1898ee41",
+        "4ab8a9f0c5f0813010482dc1b6b4d6a2c666759e8bab6fc05703f1c34f5f9db2",
+        "36d6b065c272f18c46654c9152d4e03c7b162948348350169f35d519464c2327",
+        "3e81856320cb2cc931b3ae8acdc77f18d20f9f87e6b962a17f50d9bbd31960e4",
+        "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43"
+      ]
+    },
+    "source_root_sha256": "86a4f0aa61ab620a19df0953363c8aacb8016c37c4add763df517a65fbbb7de7",
+    "theorem_sha256": "e5b04f4c0ce4d1c89728ea44b0d8714a983c521480e48bc98e23b8a1ef04c6d1"
+  },
+  "state_anchor_reduction": {
+    "QJ1_is_a_typed_state_or_Ward_certificate": true,
+    "QJ1_is_independent_scalar_fit_parameter": false,
+    "alternative_exit": "emit Psi_H with D_H S-hbar A_H=s_q Psi_H and certify BV Stokes",
+    "current_H_T34_anchor_equality_closed": false,
+    "current_q79_preferred_interacting_state_selected": false,
+    "current_q79_state_space_nonempty": true,
+    "current_q79_state_transport_closed": true,
+    "identity": "dGamma/dphi=J",
+    "physical_QJ1_exit": "select omega_q79 and prove omega_q79(h)=H_T34 at J=0"
+  },
+  "status": "exact quantum radial Ward reduction and QME-compatible QJ1 normalization existence; selected interacting state and physical QJ1 open"
+}

@@ -1176,3 +1176,26 @@ of `delta_Omega`. `QJ0` fixes that final constant for an absolute gravitational
 action. None of these certificates is currently selected by the physical q79
 BV action. T36 passes `55/55` builder checks, `80/80` independent checks and
 10 focused tests. The canonical repository suite now passes 232 unit tests.
+
+The thirty-seventh theorem attacks `QJ1` directly. Differentiating a
+transported quantum pushforward shows that the effective radial tadpole
+contains the action derivative, the transported measure or determinant
+density, and any cycle-boundary term. A classical action fixed point or a
+commuting action map therefore cannot protect the quantum fixed point by
+itself.
+
+The existing q79 anomaly calculation is still valuable: it proves that a
+formal QME-compatible tadpole normalization exists. It does not make that
+normalization unique, because the gauge-invariant local counterterms
+`c+a h^2+b h^4` preserve the QME while shifting the radial tadpole arbitrarily.
+The T35 loop confirms the issue numerically and exactly: its bare tadpole at
+the T34 point is nonzero in the displayed MSbar scheme.
+
+The remaining physical statement is now a state-anchor theorem rather than
+an unspecified matching choice. If one selected interacting q79 state has
+zero-source radial expectation `H_T34`, the Legendre effective action obeys
+`Gamma'(H_T34)=0` identically. The corpus has nonempty formal physical state
+spaces and presentation transport but no preferred interacting state or
+radial BV Ward primitive. T37 passes `44/44` builder checks, `103/103`
+independent checks and 10 focused tests. The canonical repository suite passes
+242 unit tests; physical acceptance remains `0/3` packets and `0/7` rows.

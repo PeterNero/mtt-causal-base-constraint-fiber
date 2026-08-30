@@ -86,6 +86,8 @@ def main() -> None:
     run(sys.executable, "verify_frozen_source_four_dimensional_fermion_pushforward.py")
     run(sys.executable, "build_pointed_closure_germ_quantum_jet_matching.py")
     run(sys.executable, "verify_pointed_closure_germ_quantum_jet_matching.py")
+    run(sys.executable, "build_quantum_radial_anchor_tadpole.py")
+    run(sys.executable, "verify_quantum_radial_anchor_tadpole.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

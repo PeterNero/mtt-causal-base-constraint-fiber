@@ -1234,3 +1234,38 @@ unique and equals its universal remainder; `QJ0` fixes only the absolute
 constant. T36 passes `55/55` builder checks, `80/80` independent checks and 10
 focused tests. The canonical suite passes 232 unit tests. Physical acceptance
 remains `0/3` packets and `0/7` rows.
+
+`QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md`
+(`CBF.T37`) resolves the formal-compatibility part of QJ1 and identifies its
+remaining physical source exactly. For a transported regulated pushforward,
+
+```text
+Gamma'(H)=<D_H S-hbar A_H>_H+B_H/Z(H).
+```
+
+The three terms are the action insertion, measure/determinant transport and
+cycle-boundary contribution. QJ1 follows from pointwise horizontal
+stationarity, a quantum-BV-exact radial insertion with Stokes, a centered
+measure-preserving involution, or a selected zero-source state anchor.
+
+The q79 anomaly-free formal QME makes a QJ1-preserving local normalization
+possible, but does not select it. Gauge-invariant counterterms
+`c+a h^2+b h^4` remain QME compatible and shift the tadpole by
+`2aH+4bH^3`, an arbitrary scalar for `H>0`. The existing QME and Ward results
+therefore close compatibility, not physical selection.
+
+The actual T35 determinant has nonzero bare tadpole at the T34 point in MSbar
+at `mu=Lambda`:
+
+```text
+V_F'(H)/(kappa_F Lambda^3)
+=-100.1144836274302795882555068876969....
+```
+
+Physical QJ1 is now reduced to one same-source equality: a selected
+interacting q79 state must satisfy `omega_q79(h)=H_T34` at zero source, or an
+explicit radial Ward primitive must be emitted. Current q79 work supplies
+nonempty formal state spaces and state transport but no preferred interacting
+state. T37 passes `44/44` builder checks, `103/103` independent checks and 10
+focused tests. The canonical suite passes 242 unit tests. Physical acceptance
+remains `0/3` packets and `0/7` rows.

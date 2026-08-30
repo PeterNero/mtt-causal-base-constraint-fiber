@@ -1,0 +1,98 @@
+{
+  "schema": "boe.mtt.quantum-radial-anchor-tadpole-source-lock.v1",
+  "claim_id": "CBF.T37",
+  "date": "2026-08-30",
+  "handoff_id": "3689d483-4adb-4990-9648-32e19012f716",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "a3f3cd83dc5024e6d93dd33e75d54648ec127c5f",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "mtt-preprojection-repair-calculus": "dd64c50ae6633a1f0d91be2b13f5d5fc9c6efc3d"
+  },
+  "local_sources": [
+    {
+      "path": "PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md",
+      "sha256": "ba5a3c10bc3fe374126903ba58b254c35f12bb7398bb1c2746d0ac2ac5d21e0d",
+      "role": "CBF.T36 pointed-jet retraction and exact QJ0-QJ1-QJ2 selection boundary"
+    },
+    {
+      "path": "pointed_closure_germ_quantum_jet_matching.packet.json",
+      "sha256": "417a56fac1fbbd6ff6995a4a05e8c1004d6d3a6ed96c4e07d788752a2580eed1",
+      "role": "CBF.T36 executable quantum jet-matching boundary"
+    },
+    {
+      "path": "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md",
+      "sha256": "0ff31bf31252a7d5dbf2c534d366e5fcc31f532139716f1b22a8efb1694c42d4",
+      "role": "CBF.T35 fixed-source four-dimensional determinant and counterterm orbit"
+    },
+    {
+      "path": "frozen_source_four_dimensional_fermion_pushforward.packet.json",
+      "sha256": "7494875dae5fb2b8fc1240c4f43fcc1251ed153fbdac1801a4feea0d3566a6bc",
+      "role": "CBF.T35 exact source values and numerical closure-jet execution"
+    },
+    {
+      "path": "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md",
+      "sha256": "cbd7ce99a9b7a3082fd9b1e4ed54acba08af54749e04056cadf76da4c5f405f7",
+      "role": "CBF.T34 selected finite radial point and same-root heat profile"
+    },
+    {
+      "path": "same_root_state_repair_heat_profile_radial_values.packet.json",
+      "sha256": "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+      "role": "CBF.T34 executable radial coordinate and curvature data"
+    },
+    {
+      "path": "AffineZeroSectionActionAndProjectiveClosurePressureUniquenessTheorem_v1.md",
+      "sha256": "77759a36b19a789f3c09313f22ca9b632e3f4a114dd2eb4555c2f711c718b05f",
+      "role": "CBF.T17 classical constraint-graph action and normal-pressure boundary"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Renormalized_TimeOrdering_and_Local_QME_Anomaly_Cohomology_Theorem_v1.md",
+      "sha256": "a804a88680c518633253763da13a83b8cd8f723182d8375730de0f9b1898ee41",
+      "role": "q79 anomaly-free formal local QME scheme and finite-normalization freedom"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Local_Formal_Physical_State_Space_Compatibility_and_Gluing_Theorem_v1.md",
+      "sha256": "4ab8a9f0c5f0813010482dc1b6b4d6a2c666759e8bab6fc05703f1c34f5f9db2",
+      "role": "nonempty formal physical state-space functor with preferred-state boundary"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Equicausal_Formal_State_Transport_and_Local_QuasiEquivalence_Cutset_Theorem_v1.md",
+      "sha256": "36d6b065c272f18c46654c9152d4e03c7b162948348350169f35d519464c2327",
+      "role": "formal state-cone and renormalization-presentation transport"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_UniformGauss_GhostZeroBRST_WardDefect_and_ChiralMeasureReduction_Theorem_v1.md",
+      "sha256": "3e81856320cb2cc931b3ae8acdc77f18d20f9f87e6b962a17f50d9bbd31960e4",
+      "role": "exact compact-gauge and ghost-zero BRST closure with quantum Ward boundary"
+    },
+    {
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+      "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+      "role": "formal cyclic upper action and classical critical-point descent"
+    }
+  ],
+  "boundary": {
+    "differentiated_pushforward_Ward_identity_before": false,
+    "differentiated_pushforward_Ward_identity_after": true,
+    "QJ1_sufficient_mechanisms_classified_before": false,
+    "QJ1_sufficient_mechanisms_classified_after": true,
+    "QME_compatible_tadpole_normalization_exists_before": false,
+    "QME_compatible_tadpole_normalization_exists_after": true,
+    "T35_bare_tadpole_obstruction_executed_before": false,
+    "T35_bare_tadpole_obstruction_executed_after": true,
+    "QJ1_reduced_to_selected_state_anchor_before": false,
+    "QJ1_reduced_to_selected_state_anchor_after": true,
+    "selected_interacting_q79_state_exists": false,
+    "T34_point_equals_selected_interacting_radial_expectation": false,
+    "radial_Ward_primitive_emitted": false,
+    "physical_QJ1_selected": false,
+    "physical_QJ2_selected": false,
+    "physical_QJ0_selected": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}
