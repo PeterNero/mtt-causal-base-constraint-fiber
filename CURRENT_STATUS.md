@@ -1454,3 +1454,53 @@ and 12 focused tests. The canonical suite passes all 285 tests. Component
 assembly is `4/4`; the actual physical gluing gates remain `0/3`, so physical
 acceptance stays `0/3` packets and `0/7` rows. The next constructive target is
 `G0`, not another radial counterterm calculation.
+
+`SharedCircleMorseBottRadialActionAndRankFourDeterminantLiftTheorem_v1.md`
+(`CBF.T42`) constructs the first genuinely coupled `G0`-shaped finite object.
+The exact q79 Reynolds carrier has `rank(P)=2`, `rank(Q)=4`, and a shared
+quarter-turn `J_DE`. The norm on the complex line `(Ran(P),J_DE)` is used as
+the radial map, without selecting a phase. The single action
+
+```text
+S_up(w)=q4_*(||Pw||^2-H^2)^2
+       +(kappa/2)exp[rho(||Pw||/H)/2]||Qw||^2,
+kappa=8q4_*H^2,
+```
+
+has one shared-circle vacuum orbit. Its Hessian is `kappa(I-T_*)`, where
+`T_*` is the circle-tangent projector, so the circle is the only zero mode.
+In the corresponding one-coefficient invariant action class, equality of the
+radial and q79-normal stiffnesses uniquely gives `alpha=4`. On the invariant
+zero section `Qw=0`, both the action and negative-gradient repair law reduce
+exactly to T38, and the fixed-point and tangent-generator squares commute.
+
+The selected normal rank four then gives the unique isotropic determinant
+lift
+
+```text
+a(x)=exp(rho(x)/2),
+rho(x)=x^4(3/2-log(x^2))-2x^2+1/2.
+```
+
+Normalized Gaussian/BV integration over `Ran(Q)` emits exactly `rho`, including
+the T39 jets `(0,0,0,-16,-64,-48)`. This closes a finite/local-formal,
+determinant-equivalent `G0` model and proves there is no algebraic conflict
+between the shared circle, the q79 rank-four normal sector and the anchored
+quantum action.
+
+The physical gate is not promoted. The lift is a constructive right inverse
+because it consumes `rho`; the finite `Q` directions have not been identified
+with the physical eliminated modes, and scalar determinant equality does not
+give operator equivalence. The remaining source exit is now the explicit
+same-root equation
+
+```text
+(1/2) log det[K_phys(h)K_phys(H)^-1]=rho(h/H),
+```
+
+plus the parallel T34/A35-to-`Ran(P)` line map, physical density, Lorentzian
+domain, statistics and interacting BV/state pushforward. T42 passes `73/73`
+builder checks, `135/135` independent checks and 13 focused tests; the full
+canonical repository suite passes 298 tests. The finite model counters move,
+but the physical gates remain `0/3`; physical acceptance stays `0/3` packets
+and `0/7` rows. `B.ACTION.01` and `B.QFT.02` remain open.

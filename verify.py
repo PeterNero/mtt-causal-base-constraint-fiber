@@ -96,6 +96,8 @@ def main() -> None:
     run(sys.executable, "verify_source_preserving_pointed_quantum_projection.py")
     run(sys.executable, "build_cotangent_lifted_local_formal_projection.py")
     run(sys.executable, "verify_cotangent_lifted_local_formal_projection.py")
+    run(sys.executable, "build_shared_circle_morse_bott_rank_four.py")
+    run(sys.executable, "verify_shared_circle_morse_bott_rank_four.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

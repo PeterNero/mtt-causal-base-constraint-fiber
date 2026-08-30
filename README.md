@@ -1330,3 +1330,51 @@ promote a physical projection. Builder verification is `103/103`, independent
 verification is `126/126`, and 12 focused tests pass. The full canonical suite
 passes all 285 tests. The physical counters remain `0/3` packets and `0/7`
 rows; `G0` is the next constructive target.
+
+The forty-second theorem constructs that target at the strongest finite tier
+currently justified. On the exact q79 Reynolds carrier, `P` has rank two,
+`Q=I-P` has rank four, and the shared quarter-turn `J_DE` makes `Ran(P)` one
+complex line. Its orbit norm is therefore a phase-independent radial
+coordinate. Coupling it to the T34 action gives
+
+```text
+S_up(w)=q4_*(||Pw||^2-H^2)^2
+       +(kappa/2)a(||Pw||/H)||Qw||^2,
+kappa=8q4_*H^2.
+```
+
+The minima form exactly one shared-circle orbit. The circle tangent is the
+only Hessian zero mode, while the radial direction and all four q79 strain
+directions have stiffness `kappa`. In the natural one-coefficient extension,
+equal stiffness uniquely forces `alpha=4`; no new continuous coefficient is
+left. On `Qw=0`, the action and its gradient reduce exactly to the T38 radial
+action and logistic repair law, and the pointed tangent square commutes.
+
+The q79 normal rank also gives a precise determinant lift of the full T39
+quantum remainder. With
+
+```text
+rho(x)=x^4(3/2-log(x^2))-2x^2+1/2,
+a(x)=exp(rho(x)/2),
+```
+
+the normalized rank-four Gaussian/BV pushforward has half-log determinant
+exactly `rho`. It reproduces all T39 jets `(0,0,0,-16,-64,-48)`, not merely
+the fixed point and Hessian. Thus a one-action, one-root, `G0`-shaped finite
+model now exists and the complete anchored remainder has an exact q79-rank-four
+normal form.
+
+This is a determinant-equivalent right inverse, not yet a physical source
+derivation: the profile `a` is reconstructed from `rho`, and determinant
+equality does not prove operator or correlator equivalence. The remaining
+physical calculation is explicit:
+
+```text
+(1/2)log det[K_phys(h)K_phys(H)^-1]=rho(h/H),
+```
+
+on the same selected q79/HYM source, with the physical line map, density,
+Lorentzian BV domain, statistics and operator intertwiner. T42 passes `73/73`
+builder checks, `135/135` independent checks and 13 focused tests; the full
+canonical repository suite passes 298 tests. Physical `G0/G1/G2` remain `0/3`,
+so acceptance remains `0/3` packets and `0/7` rows.

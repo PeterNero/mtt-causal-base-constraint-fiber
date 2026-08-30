@@ -1,0 +1,651 @@
+{
+  "automorphism_transfer": {
+    "J_commutes_with_P": true,
+    "J_commutes_with_Q": true,
+    "J_is_skew": true,
+    "J_squared_is_minus_identity": true,
+    "action_depends_only_on_invariant_norms": true,
+    "all_six_sheet_permutations_commute_with_J": true,
+    "all_six_sheet_permutations_commute_with_P": true,
+    "all_six_sheet_permutations_commute_with_Q": true,
+    "group": "S3_sheet x U(1)_shared",
+    "physical_parallel_Higgs_line_map_present": false,
+    "shared_circle_action": "exp(theta J_DE)",
+    "sheet_action": "rho(g)=diag(Pi_g,Pi_g)",
+    "universal_shared_line_source_present": true
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 73,
+    "total": 73
+  },
+  "checks": {
+    "B_ACTION_open": true,
+    "B_QFT_open": true,
+    "Hessian_rank_five": true,
+    "J_P_commutes": true,
+    "J_Q_commutes": true,
+    "J_skew": true,
+    "J_source_match": true,
+    "J_squared": true,
+    "P_E_T_split": true,
+    "P_Q_zero": true,
+    "P_idempotent": true,
+    "P_plus_Q": true,
+    "P_source_match": true,
+    "Q_idempotent": true,
+    "Q_source_match": true,
+    "S3_J_commutes": true,
+    "S3_P_commutes": true,
+    "S3_Q_commutes": true,
+    "T41_gate_count_source": true,
+    "a_cubic": true,
+    "a_first_zero": true,
+    "a_quartic": true,
+    "a_quintic": true,
+    "a_second_zero": true,
+    "a_value_one": true,
+    "constructed_root_hash": true,
+    "finite_G0_closed": true,
+    "finite_G1_closed": true,
+    "finite_G2_closed": true,
+    "full_remainder_emitted": true,
+    "log_a_half_rho": true,
+    "normalized_Hessian_formula": true,
+    "operator_nonpromotion_guard": true,
+    "packet_claim": true,
+    "packet_count_unchanged": true,
+    "packet_schema": true,
+    "physical_G0_open": true,
+    "physical_G1_open": true,
+    "physical_G2_open": true,
+    "physical_gate_count_zero": true,
+    "physical_line_map_open": true,
+    "q79_action_boundary_retained": true,
+    "rank_E_one": true,
+    "rank_P_two": true,
+    "rank_Q_four": true,
+    "rank_T_one": true,
+    "rank_four_half_log": true,
+    "rho_exact_jets": true,
+    "rho_higher_nonzero": true,
+    "rho_source_formula": true,
+    "rho_zero_two_jet": true,
+    "row_count_unchanged": true,
+    "schema_closed": true,
+    "schema_required": true,
+    "shared_line_input": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_lock_claim": true,
+    "target_informed_guard": true,
+    "theorem_action_formula": true,
+    "theorem_full_pushforward": true,
+    "theorem_operator_equation": true,
+    "theorem_physical_counters": true,
+    "theorem_shared_circle": true,
+    "theorem_target_informed": true,
+    "unique_alpha_four": true,
+    "zero_fits": true,
+    "zero_new_parameters": true,
+    "zero_observed_inputs": true
+  },
+  "claim_id": "CBF.T42",
+  "date": "2026-08-30",
+  "determinant_lift": {
+    "a_jets_at_x1_through_order5": [
+      "1",
+      "0",
+      "0",
+      "-8",
+      "-32",
+      "-24"
+    ],
+    "a_series_about_x1_through_order10": [
+      "1",
+      "0",
+      "0",
+      "-4/3",
+      "-4/3",
+      "-1/5",
+      "83/90",
+      "557/315",
+      "2921/2520",
+      "-989/5670",
+      "-22607/18900"
+    ],
+    "determinant_equivalence_implies_operator_equivalence": false,
+    "determinant_lift_is_target_informed": true,
+    "effective_action": "Gamma_rel(h)=P_rel(h)+epsilon rho(h/H)",
+    "first_nonconstant_a_coefficients": {
+      "(x-1)^3": "-4/3",
+      "(x-1)^4": "-4/3",
+      "(x-1)^5": "-1/5"
+    },
+    "full_T39_remainder_emitted": true,
+    "half_log_determinant": "(1/2)log det(K_Q(h)K_Q(H)^-1)=rho(h/H)",
+    "isotropic_rank_m_unique_profile": "a_m(x)=exp(2rho(x)/m)",
+    "log_a": "log a(x)=rho(x)/2",
+    "log_a_series_about_x1_through_order10": [
+      "0",
+      "0",
+      "0",
+      "-4/3",
+      "-4/3",
+      "-1/5",
+      "1/30",
+      "-1/105",
+      "1/280",
+      "-1/630",
+      "1/1260"
+    ],
+    "minimal_nonconstant_contact_order": 3,
+    "normal_block": "K_Q(h)=kappa a(h/H) I_RanQ",
+    "normalized_determinant_ratio": "det(K_Q(h)K_Q(H)^-1)=a(h/H)^4=exp(2rho(h/H))",
+    "normalized_partition_ratio": "Z_Q(h)/Z_Q(H)=a(h/H)^(-2)=exp(-rho(h/H))",
+    "rank": 4,
+    "rank_four_profile_is_unique": true,
+    "rho": "rho(x)=x^4(3/2-log(x^2))-2x^2+1/2",
+    "rho_jets_at_x1_through_order5": [
+      "0",
+      "0",
+      "0",
+      "-16",
+      "-64",
+      "-48"
+    ],
+    "rho_series_about_x1_through_order10": [
+      "0",
+      "0",
+      "0",
+      "-8/3",
+      "-8/3",
+      "-2/5",
+      "1/15",
+      "-2/105",
+      "1/140",
+      "-1/315",
+      "1/630"
+    ]
+  },
+  "frontier_delta": "A single q79 P/Q/J action now realizes the shared-circle vacuum, the exact T38 radial restriction and pointed tangent square. The selected q79 normal rank four gives a unique isotropic determinant lift a=exp(rho/2), whose normalized finite BV/Gaussian pushforward emits the complete T39 anchored remainder. This closes a finite determinant-equivalent G0 model and reduces physical G0 to one explicit same-source normal-block determinant and operator intertwiner. Because the lift consumes rho, B.ACTION.01 and B.QFT.02 remain open.",
+  "gate_ledger": {
+    "G0_finite_determinant_equivalent_model": {
+      "closed": true,
+      "scope": "one constructed P/Q/J action, radial map and normalized rank-four pushforward"
+    },
+    "G0_selected_physical_source": {
+      "closed": false,
+      "missing": "derive K_phys and its determinant identity from the upstream q79/HYM action"
+    },
+    "G1_finite_Euclidean_tangent_isometry": {
+      "closed": true,
+      "scope": "declared finite Euclidean carrier metric only"
+    },
+    "G1_physical_tangent_pairing": {
+      "closed": false,
+      "missing": "parallel A35/q79 line map and physical wave-function metric"
+    },
+    "G2_finite_normalized_Gaussian_BV_pushforward": {
+      "closed": true,
+      "scope": "positive rank-four local Gaussian determinant model"
+    },
+    "G2_selected_interacting_state_BV": {
+      "closed": false,
+      "missing": "physical statistics, Lorentzian domain, state, QME pushforward and continuum limit"
+    },
+    "physical_gluing_gates_closed": 0,
+    "physical_gluing_gates_total": 3,
+    "physical_packets_accepted": 0,
+    "physical_packets_total": 3,
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7
+  },
+  "parameter_ledger": {
+    "candidate_coefficients_after_equal_stiffness": 0,
+    "candidate_coefficients_before_equal_stiffness": 1,
+    "determinant_profile_selected_upstream": false,
+    "new_continuous_physical_parameters": 0,
+    "new_discrete_physical_selectors": 0,
+    "new_fitted_parameters": 0,
+    "new_observed_inputs": 0,
+    "normal_rank_selected_by_q79": 4,
+    "remaining_structural_source_morphisms": 1
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "Lorentzian_domain_and_statistics_emitted": false,
+    "T34_radial_line_equals_q79_RanP_parallel_line": false,
+    "actual_operator_intertwiner_emitted": false,
+    "actual_physical_q79_normal_block_emitted": false,
+    "constructed_root_is_selected_upstream_root": false,
+    "finite_model_source_root_is_internally_single": true,
+    "next_operator_equation": "(1/2) log det(K_phys(h) K_phys(H)^-1)=rho(h/H)",
+    "physical_G0_closed": false,
+    "physical_G1_closed": false,
+    "physical_G2_closed": false,
+    "physical_density_and_BV_cycle_emitted": false,
+    "scalar_determinant_equation_is_sufficient_for_operator_equivalence": false,
+    "selected_interacting_state_emitted": false
+  },
+  "pointed_intertwiner": {
+    "action_pushforward_closed_in_model": true,
+    "fixed_point_square_closed_in_model": true,
+    "lower_action_zero_jet_relative": "0",
+    "lower_effective_hessian": "kappa",
+    "lower_effective_tadpole": "0",
+    "lower_fixed_point": "h=H",
+    "nonlinear_quantum_vertices_retained": true,
+    "one_constructed_root_for_model": "997a8ffd4fc88b8079909061c54b691c0196e6275bc9920f75bf4b51e668bc61",
+    "rho_zero_two_jet": true,
+    "tangent_generator_square_closed_in_model": true,
+    "upper_action_zero_jet_relative": "0",
+    "upper_fixed_point": "w_* in M_H",
+    "upper_radial_hessian": "kappa",
+    "upper_radial_tadpole": "0"
+  },
+  "q79_carrier": {
+    "J_DE": [
+      [
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "J_matches_q79_source": true,
+    "P": [
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ]
+    ],
+    "P_Q_orthogonal": true,
+    "P_matches_q79_source": true,
+    "P_plus_Q_is_identity": true,
+    "Q": [
+      [
+        "2/3",
+        "-1/3",
+        "-1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1/3",
+        "2/3",
+        "-1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1/3",
+        "-1/3",
+        "2/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "2/3",
+        "-1/3",
+        "-1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1/3",
+        "2/3",
+        "-1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1/3",
+        "-1/3",
+        "2/3"
+      ]
+    ],
+    "Q_matches_q79_source": true,
+    "carrier": "W_fin=R3_D direct_sum R3_E",
+    "circle_tangent_projector_T": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/3",
+        "1/3",
+        "1/3"
+      ]
+    ],
+    "complex_dimension_of_RanP": 1,
+    "dimension": 6,
+    "physical_Higgs_line_identification_selected": false,
+    "radial_basepoint_projector_E": [
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "rank_E": 1,
+    "rank_P": 2,
+    "rank_Q": 4,
+    "rank_T": 1
+  },
+  "radial_projection": {
+    "action_restriction": "S_up|Qw=0=q4_*(h^2-H^2)^2",
+    "domain": "{w: ||Pw||>0}",
+    "fixed_point_map": "p(w_*)=H",
+    "global_off_zero_section_intertwining_claimed": false,
+    "lower_hessian": "P_rel''(H)=kappa",
+    "map": "p(w)=||Pw||",
+    "pointed_tangent_square": "Dp Hess(S_up)(w_*)=kappa Dp",
+    "pointed_vector_field_square": "Dp X_up(w_*)=X_rad(H)=0",
+    "projected_repair_on_zero_section": "Dp(-grad S_up)=4 q4_* h(H^2-h^2)",
+    "zero_section": "Qw=0",
+    "zero_section_is_gradient_invariant": true
+  },
+  "radial_source": {
+    "H_over_Lambda": "sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+    "H_squared_over_Lambda_squared": "15(3106+4sqrt(13))/(4393log(448))",
+    "T38_source_copy_exact": true,
+    "T39_remainder": "rho(x)=x^4(3/2-log(x^2))-2x^2+1/2",
+    "q4_star": {
+      "decimal": "16.5236585883925826788140937661763851354178671980048576043615306076177471743453800418561288",
+      "exact_coefficients": {
+        "rational": "356/27",
+        "sqrt13": "25/27"
+      },
+      "expression": "(356+25sqrt(13))/27"
+    },
+    "relative_tree_action": "P_*(h)-P_*(H)=q4_* (h^2-H^2)^2",
+    "tree_repair": "dh/ds=4 q4_* h(H^2-h^2)"
+  },
+  "schema": "boe.mtt.shared-circle-morse-bott-rank-four.v1",
+  "shared_circle_vacuum": {
+    "circle_generator": "J_DE",
+    "circle_tangent": "J_DE w_*",
+    "circle_tangent_is_only_Hessian_zero_mode": true,
+    "minimum_set": "M_H={w in Ran(P): ||w||=H}",
+    "minimum_set_is_one_shared_circle_orbit": true,
+    "normal_rank": 5,
+    "profile_a_is_strictly_positive": true,
+    "q79_strain_normal_rank": 4,
+    "radial_normal_rank": 1,
+    "shared_circle_is_declared_physical_gauge_orbit": false
+  },
+  "source_provenance": {
+    "constructed_source_root_sha256": "997a8ffd4fc88b8079909061c54b691c0196e6275bc9920f75bf4b51e668bc61",
+    "contract_schema_sha256": "7f3cc984cbda30e8630f5c58feffee70bfcf4b729392ad3ba01623d2c8953466",
+    "handoff_id": "56e43cb1-2703-48cb-847d-1dd392dda323",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "source_hashes_match": true,
+    "source_lock_sha256": "0452cfd78b9b70f03ef5f6297964572cb69efc981b6df520b80087d94a68e266",
+    "source_root_payload": {
+      "carrier": "W_fin=R3_D direct_sum R3_E with exact P,Q,J_DE",
+      "determinant_lift": "K_Q(h)=kappa exp(rho(h/H)/2) I_RanQ",
+      "normalization": "K_Q(H)=kappa I_RanQ",
+      "radial_map": "r(w)=sqrt(<w,Pw>)",
+      "rank": 4,
+      "schema": "boe.mtt.shared-circle-morse-bott-rank-four-derived-root.v1",
+      "source_hashes": [
+        "43eabb2bb78a16bdf049e63c592df7aa29086228e4c8ca648b9582cc1114eabe",
+        "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+        "e83845479af1101a13167ec97344cf5564c450e6a032536b626686ff7ff2cad0",
+        "0dadeab858d7b2a62c36593e8cb7688c0175266342fc02b8c5ee121cf3ce30fe",
+        "6a39eef5e86082040a705b7259ceced756f3b9b569e444a3075a3f239123b1ff",
+        "f74b950287a85c854cbe4a793a82a0d26ab65805001629505dda2a34ab17b845"
+      ],
+      "upper_action": "S_up=q4_*(r^2-H^2)^2+4 q4_* H^2 exp(rho(r/H)/2)||Qw||^2"
+    },
+    "theorem_sha256": "47b6efea2ba6764b00810a9fbed5844de75bc609a26ef16ccaf9e4dfd81a720a"
+  },
+  "status": "exact finite/local-formal determinant-equivalent G0 construction; selected physical q79 source and interacting BV promotion open",
+  "title": "Shared-Circle Morse-Bott Radial Action and Rank-Four Determinant Lift",
+  "upper_action": {
+    "Q_hessian_over_q4_H2": "2 alpha",
+    "action": "S_up(w)=q4_*(r(w)^2-H^2)^2+(kappa/2)a(r(w)/H)||Qw||^2",
+    "action_is_a_cotangent_multiplier_only": false,
+    "common_stiffness": "kappa=8 q4_* H^2",
+    "equal_stiffness_family": "S_alpha=q4_*(r^2-H^2)^2+alpha q4_* H^2 a(r/H)||Qw||^2",
+    "field_only_action_nonzero_on_zero_section": true,
+    "normal_stiffness_profile": "a(x)=exp(rho(x)/2)",
+    "normalized_vacuum_hessian": [
+      [
+        "8",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "8",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "8",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "16/3",
+        "-8/3",
+        "-8/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-8/3",
+        "16/3",
+        "-8/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-8/3",
+        "-8/3",
+        "16/3"
+      ]
+    ],
+    "normalized_vacuum_hessian_formula": "Hess/(q4_* H^2)=8(I-T_*)",
+    "radial_coordinate": "r(w)=sqrt(<w,Pw>)",
+    "radial_hessian_over_q4_H2": "8",
+    "unique_alpha": "4",
+    "uniqueness_equation": "2 alpha=8"
+  }
+}

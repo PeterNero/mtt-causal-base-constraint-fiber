@@ -167,6 +167,11 @@
     "necessary-and-sufficient three-gate promotion criterion for the T40 SP0-SP5 object",
     "exact independence of same-root, physical tangent-pairing and selected interacting-state BV gates",
     "exact cotangent, free-shell, action-jet and radial-state finite assembly witness",
+    "exact q79 shared-circle Morse-Bott radial action with one circle zero mode",
+    "unique equal-stiffness coefficient alpha equal to four on the finite P/Q carrier",
+    "exact rank-four isotropic determinant lift of the complete T39 anchored remainder",
+    "finite determinant-equivalent G0 action, pointed repair and Gaussian BV pushforward model",
+    "explicit physical normal-block determinant equation required for G0 promotion",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -272,6 +277,9 @@
     "identification of the A35 internal unit line with the physical kinetic or wave-function metric",
     "selection of a preferred interacting state by the exact radial marginal",
     "promotion of the free finite-shell BV pushforward to a fixed-coupling interacting endpoint",
+    "upstream selection of the T42 rank-four determinant profile from the physical q79 action",
+    "parallel physical identification of the T34/A35 radial line with the q79 Reynolds complex line",
+    "operator or correlator equivalence from scalar determinant equality alone",
     "a new globally original operator-theory identity"
   ],
   "controlling_status": "CURRENT_STATUS.md",
@@ -317,7 +325,8 @@
     "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
     "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
     "SourcePreservingPointedQuantumProjectionAndWardNonselectionTheorem_v1.md",
-    "CotangentLiftedLocalFormalProjectionAssemblyAndSameRootGluingGateTheorem_v1.md"
+    "CotangentLiftedLocalFormalProjectionAssemblyAndSameRootGluingGateTheorem_v1.md",
+    "SharedCircleMorseBottRadialActionAndRankFourDeterminantLiftTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -360,7 +369,8 @@
     "radial_closure_attractor_state_marginal.packet.json",
     "renormalized_bv_anchored_repair_semiflow.packet.json",
     "source_preserving_pointed_quantum_projection.packet.json",
-    "cotangent_lifted_local_formal_projection.packet.json"
+    "cotangent_lifted_local_formal_projection.packet.json",
+    "shared_circle_morse_bott_rank_four.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -403,7 +413,8 @@
     "python build_radial_closure_attractor_state_marginal.py",
     "python build_renormalized_bv_anchored_repair_semiflow.py",
     "python build_source_preserving_pointed_quantum_projection.py",
-    "python build_cotangent_lifted_local_formal_projection.py"
+    "python build_cotangent_lifted_local_formal_projection.py",
+    "python build_shared_circle_morse_bott_rank_four.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -441,7 +452,8 @@
     "radial_closure_attractor_state_marginal_contract.schema.json",
     "renormalized_bv_anchored_repair_semiflow_contract.schema.json",
     "source_preserving_pointed_quantum_projection_contract.schema.json",
-    "cotangent_lifted_local_formal_projection_contract.schema.json"
+    "cotangent_lifted_local_formal_projection_contract.schema.json",
+    "shared_circle_morse_bott_rank_four_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],
