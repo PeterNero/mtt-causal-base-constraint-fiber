@@ -37,6 +37,8 @@ paper, note, packet name or search hit.
    heat-kernel action handoff is `cfe21291-1890-4355-a0c7-297aa4d0947d`;
    the preprojection finite-source freeze and radial-value handoff is
    `1e03a938-4acb-47b8-a43f-09171905c3bc`;
+   the same-root state-repair heat-profile and radial-value handoff is
+   `9bebcb6e-13e2-406c-be9a-993c1dbf964a`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

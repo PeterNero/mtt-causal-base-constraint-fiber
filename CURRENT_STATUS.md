@@ -28,6 +28,8 @@ This is a snapshot, not a substitute for live kernel queries.
   `cfe21291-1890-4355-a0c7-297aa4d0947d`
 - Preprojection finite-source freeze and radial-value handoff:
   `1e03a938-4acb-47b8-a43f-09171905c3bc`
+- Same-root state-repair heat-profile and radial-value handoff:
+  `9bebcb6e-13e2-406c-be9a-993c1dbf964a`
 
 ## Controlling authorities
 
@@ -1122,3 +1124,36 @@ as the preprojection selector, a same-root T30/A53 map, normalization-branch
 selection, absolute scale, the nine-value sector map and precision transport
 remain open. The packet passes `61/61` builder checks and `96/96` independent
 checks; acceptance remains `0/3` and `0/7`.
+
+`SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md`
+(`CBF.T34`) closes the direct-source same-root diagram left open by CBF.T33.
+The finite readout of the T24 total differential gives the CBF.T30
+Grassmann determinant and `t_*`; the total-charge readout gives
+`K=B_tot^2/Lambda^2` on the physical state carrier. The canonical quadratic
+closure functional has the unique contraction semigroup `exp(-sK)`.
+
+With A84's regime-local closure-shadow action bridge, the scalar action
+profile is therefore `exp(-s x)`. Its positive Laplace measure is
+uniquely `delta_s`: an exponential tilt has mean `s` and zero variance, so
+the earlier A53 minimal-support premise is no longer needed. At the selected
+internal checkpoint `s=log(448)/15`, this derives
+
+```text
+f2/f0=15/log(448),
+h_*/Lambda=1.32110162937546849372...,
+(m_-4,m_-2,m_+2)/Lambda
+ =(2.46850097452107062662...,
+   1.89480130194826956017...,
+   0.74740195680266742727...),
+m_h/Lambda=4.43358606544780223278....
+```
+
+These values are now selected at the finite direct-source, T24 totalization,
+quadratic state-repair and internal-checkpoint tier. They remain cutoff-unit
+mass-operator and radial-curvature coordinates, not observed particle pole
+masses. The additive physical-clock lift, full four-dimensional determinant,
+absolute scale, nine-value sector map and precision transport remain open.
+CBF.T28 is preserved because its generator acts on operator space, whereas
+CBF.T34 acts on the physical state carrier. The packet passes `74/74` builder
+checks and `106/106` independent checks; physical acceptance remains `0/3` and
+`0/7`.

@@ -1090,5 +1090,30 @@ radial-stationary branch require disjoint moment ratios and cannot be imposed
 together. These are exact conditional finite spectral values, not accepted SM
 masses: the preprojection source map, same-root A53 composition, absolute
 scale, sector assignment and precision transport remain open. T33 passes
-`61/61` builder checks and `96/96` independent checks. The canonical suite now
-passes 198 unit tests.
+`61/61` builder checks and `96/96` independent checks. T33 increased the
+canonical suite to 198 unit tests.
+
+The thirty-fourth theorem binds the finite determinant selector and scalar
+heat profile to one totalized closure-charge source. On the physical state
+carrier, the canonical quadratic closure functional has generator
+`K=B_tot^2/Lambda^2` and unique semigroup `exp(-sK)`. A84's regime-local
+action-shadow rule turns that propagator into the scalar action profile;
+`exp(-s x)` has the unique positive Laplace measure `delta_s`, so A53's
+minimal-support premise is replaced by a theorem at the declared finite
+direct-source/internal-checkpoint tier.
+
+At `s=log(448)/15`, the selected moment ratio is `f2/f0=15/log(448)` and the
+CBF.T33 nonzero values are promoted at that tier:
+
+```text
+h_*/Lambda=1.32110162937546849372...,
+(m_-4,m_-2,m_+2)/Lambda
+ =(2.46850097452107062662...,
+   1.89480130194826956017...,
+   0.74740195680266742727...).
+```
+
+They are not yet measured masses: the physical clock lift, four-dimensional
+determinant, absolute scale, sector map and renormalized precision transport
+remain open. T34 passes `74/74` builder checks and `106/106` independent
+checks. The canonical suite now passes 211 unit tests.

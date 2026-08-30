@@ -1,0 +1,383 @@
+{
+  "action_shadow_bridge": {
+    "authority": "A84",
+    "bridge_closed_at_regime_local_action_tier": true,
+    "full_matching_completeness_closed": false,
+    "full_nonlinear_physical_action_closed": false,
+    "profile_identification": "chi_s(x)=exp(-s x)",
+    "rule": "the selected repair kernel enters the coherently reduced regime-local action through its finite overlap or trace",
+    "semigroup_alone_would_select_action_profile": false,
+    "uninserted_scalar_trace": "Tr exp(-sK)=Tr chi_s(K)"
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 74,
+    "total": 74
+  },
+  "checks": {
+    "A53_measure_was_not_selected": true,
+    "A53_minimal_support_was_not_promoted": true,
+    "A84_action_shadow_bridge_is_explicit": true,
+    "A84_branch_order_is_448": true,
+    "A84_fixed_point_semigroup_is_proved": true,
+    "A84_gap_is_15": true,
+    "T24_finite_charge_is_Dphys": true,
+    "T24_finite_factor_is_qF": true,
+    "T24_source_is_exact": true,
+    "T24_square_contains_same_Dphys_squared": true,
+    "T24_total_charge_contains_same_Dphys": true,
+    "T25_source_is_exact": true,
+    "T28_boundary_is_exact": true,
+    "T28_operator_space_nogo_is_preserved": true,
+    "T30_coordinate_matches_exact_q13": true,
+    "T30_determinant_is_on_same_Dphys": true,
+    "T30_selector_is_exact": true,
+    "T32_action_is_exact_at_declared_tier": true,
+    "T33_freeze_is_exact": true,
+    "T33_no_double_variation_is_closed": true,
+    "T33_preprojection_map_was_open": true,
+    "T33_same_root_map_was_open": true,
+    "absolute_scale_remains_open": true,
+    "clock_certificate_passes": true,
+    "clock_lift_remains_conditional": true,
+    "contract_schema_is_exact": true,
+    "full_four_dimensional_determinant_remains_open": true,
+    "full_upper_source_remains_open": true,
+    "h_value_matches_T33": true,
+    "handoff_is_pinned": true,
+    "kernel_model_is_pinned": true,
+    "minus2_value_matches_T33": true,
+    "minus4_value_matches_T33": true,
+    "moment_ratio_is_positive": true,
+    "nine_yukawa_values_remain_open": true,
+    "no_fitted_coefficients_used": true,
+    "no_observed_values_used": true,
+    "one_atom_measure_is_newly_closed_at_declared_tier": true,
+    "physical_clock_upper_derivation_remains_open": true,
+    "physical_packet_acceptance_unchanged": true,
+    "physical_row_acceptance_unchanged": true,
+    "plus2_value_matches_T33": true,
+    "point_measure_has_zero_variance": true,
+    "positive_laplace_measure_is_unique": true,
+    "precision_transport_remains_open": true,
+    "promoted_values_are_strictly_positive": true,
+    "promoted_values_have_strict_order": true,
+    "radial_mass_is_positive": true,
+    "radial_moment_ratio_is_newly_closed_at_declared_tier": true,
+    "rank_one_Hankel_identity_is_symbolically_zero": true,
+    "same_root_diagram_is_newly_closed": true,
+    "sector_map_remains_open": true,
+    "selected_gap_identity_is_certified": true,
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "source_lock_schema_is_exact": true,
+    "source_root_is_nonempty": true,
+    "state_generator_is_positive_square": true,
+    "state_heat_profile_is_newly_closed": true,
+    "state_semigroup_has_composition": true,
+    "state_semigroup_is_contracting": true,
+    "state_semigroup_is_unique_by_spectral_theorem": true,
+    "tau_interval_contains_A84_value": true,
+    "theorem_is_nonempty": true
+  },
+  "claim_id": "CBF.T34",
+  "date": "2026-08-30",
+  "frontier_delta": "CBF.T34 closes the same-composite-root map from the T24 finite differential to the T30 determinant selector and from the same total charge to a state-space heat profile. The canonical quadratic closure functional uniquely generates exp(-s B_tot^2/Lambda^2), whose only positive Laplace measure is delta_s. At tau_int=log(448)/15 this derives f2/f0=15/log(448), removing A53's minimal-support premise and promoting the T33 nonzero cutoff-unit radial values at the declared finite direct-source/internal-checkpoint tier. The T28 operator-space no-go is preserved. Full upper source selection, physical clock lift, 4D determinant, absolute scale, nine-value particle map and precision transport remain open, so physical endpoint acceptance stays 0/3 and 0/7.",
+  "heat_profile_selection": {
+    "full_nonlinear_Lorentzian_BV_action_claimed": false,
+    "overall_positive_trace_amplitude_relevant_to_ratio": false,
+    "profile": "chi_s(x)=exp(-s x)",
+    "selection_routes": [
+      "spectral functional calculus of the selected generator K",
+      "continuous semigroup law plus infinitesimal generator -x"
+    ],
+    "shape_parameters_remaining": 0,
+    "spectral_coordinate": "x in spec(K), x>=0"
+  },
+  "parameter_ledger": {
+    "absolute_dimensionful_scale_selected": false,
+    "conditional_physical_clock_hypotheses": 2,
+    "inherited_internal_checkpoint_parameters": 0,
+    "inherited_universal_metrology_primitives": 1,
+    "new_continuous_profile_parameters": 0,
+    "new_fitted_coefficients": 0,
+    "new_observed_construction_inputs": 0,
+    "new_sector_specific_scales": 0
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "B_SM_02_closed": false,
+    "absolute_scale_closed": false,
+    "additive_physical_clock_lift_closed_unconditionally": false,
+    "cutoff_unit_radial_values_closed_at_declared_tier": true,
+    "full_four_dimensional_determinant_closed": false,
+    "full_upper_physical_source_closed": false,
+    "held_out_observable_closed": false,
+    "loop_RG_threshold_pole_transport_closed": false,
+    "nine_charged_Yukawa_values_closed": false,
+    "one_atom_measure_closed_at_declared_tier": true,
+    "radial_moment_ratio_closed_at_declared_tier": true,
+    "renormalized_QFT_vacuum_closed": false,
+    "same_root_direct_source_diagram_closed": true,
+    "sector_generation_map_closed": false,
+    "state_space_heat_profile_closed": true
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "positive_laplace_measure": {
+    "A53_one_atom_measure_promoted_at_declared_tier": true,
+    "minimal_support_axiom_used": false,
+    "proof_device": "positive exponential tilt at x0>0",
+    "tilted_mean": "E[u]=s",
+    "tilted_variance": "Var(u)=0",
+    "transform": "int exp(-u x)dmu(u)=A exp(-s x)",
+    "unique_measure": "mu=A delta_s"
+  },
+  "promoted_radial_values": {
+    "R_star": {
+      "exact_coefficients": {
+        "rational": "3106/4393",
+        "sqrt13": "4/4393"
+      },
+      "expression": "(3106+4sqrt(13))/4393",
+      "interval": {
+        "lower_decimal": "0.710316914432473470788180488293",
+        "lower_exact": "487565969547164993308199513292169059966407/686406250000000000000000000000000000000000",
+        "upper_decimal": "0.710316914432473470788180488293",
+        "upper_exact": "7801055512754639892931192212674704959462513/10982500000000000000000000000000000000000000"
+      }
+    },
+    "branch_values_over_Lambda": {
+      "-2": {
+        "expression": "(5+sqrt(13))/6 sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+        "interval": {
+          "lower_decimal": "1.894801301948269560173742413384",
+          "lower_exact": "23685016274353369502171780167297423364292372234812250045794939135979/12500000000000000000000000000000000000000000000000000000000000000000",
+          "upper_decimal": "1.894801301948269560173742413385",
+          "upper_exact": "113688078116896173610424544803113687661359347721659367900984136926240813/60000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "-4": {
+        "expression": "(2+sqrt(13))/3 sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+        "interval": {
+          "lower_decimal": "2.468500974521070626623370747668",
+          "lower_exact": "15428131090756691416396067172922423364292372234812250045794939135979/6250000000000000000000000000000000000000000000000000000000000000000",
+          "upper_decimal": "2.468500974521070626623370747669",
+          "upper_exact": "74055029235632118798701122430083687661359347721659367900984136926240813/30000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "2": {
+        "expression": "(7-sqrt(13))/6 sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+        "interval": {
+          "lower_decimal": "0.747401956802667427274485744816",
+          "lower_exact": "149480391360533485454897148963241226171317640570906081038968560110739/200000000000000000000000000000000000000000000000000000000000000000000",
+          "upper_decimal": "0.747401956802667427274485744817",
+          "upper_exact": "934252446003334284093107181020964840388374445416041824323116399746631/1250000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      }
+    },
+    "h_over_Lambda": "sqrt(15(3106+4sqrt(13))/(4393log(448)))",
+    "h_over_Lambda_interval": {
+      "lower_decimal": "1.321101629375468493724114079100",
+      "lower_exact": "13211016293754684937241140791/10000000000000000000000000000",
+      "upper_decimal": "1.321101629375468493724114079101",
+      "upper_exact": "1321101629375468493724114079101/1000000000000000000000000000000"
+    },
+    "h_squared_over_Lambda_squared": "15(3106+4sqrt(13))/(4393log(448))",
+    "h_squared_over_Lambda_squared_interval": {
+      "lower_decimal": "1.745309515138517718535183362742",
+      "lower_exact": "1265645173162140689250489681991682872329863972486230319005413057403636049517473759778655880990372788511156294110065445801949890315369708197543200185056915918428037282324039743906705733276891694562558518395277688288913468492882658379400180826008454774746338646664173170412007960274714309534662509828832280101371/725169468328769106003651551204026320665118309750130882258700406466290228366741357430501056853649429295243033359910326382210675501809819067135375816041025852604780783526030602324627054996197537415146160443725781364492745592360915510203665910286428964549348763192028287762539906250000000000000000000000000000000",
+      "upper_decimal": "1.745309515138517718535183362742",
+      "upper_exact": "20250322770594251028007834911866925957277826155623636923836667651343123711301675345501231117444848287076522786615182794281978566109648151267400627774130848635227443279697886318441716147564725505980806779150770489644051668743002085575582658347601384963133611382729539782286971890221894209462681959048656396839389/11602711493260305696058424819264421130641892956002094116139206503460643498910896291989339384296108755213981912824131351724720264694403265129529185374551001961818731763290242981690265323107224410513018003795323270420607217293678819673275515374266963784459083659193209612107776000000000000000000000000000000000000"
+    },
+    "identified_with_observed_particle_pole_masses": false,
+    "promotion_tier": "finite direct-source, T24 totalization, quadratic state repair and selected internal checkpoint",
+    "radial_curvature_mass_interval": {
+      "lower_decimal": "4.433586065447802232784618009020",
+      "lower_exact": "221679303272390111639230900451/50000000000000000000000000000",
+      "upper_decimal": "4.433586065447802232784618009021",
+      "upper_exact": "4433586065447802232784618009021/1000000000000000000000000000000"
+    },
+    "radial_curvature_mass_over_Lambda": "sqrt(120/log(448))",
+    "radial_curvature_mass_squared_interval": {
+      "lower_decimal": "19.656685399732923703500063941970",
+      "lower_exact": "2388176435674170054034254151165500327573919318059870972977226180314385804808534717895378634194498172670828162578425148539021512190382659670461923701721541480846040221278859721279028329187384765383920948819881816817593214547531239256963760348036355435257644352722000056760000/121494361185971787393281935280255718645464847706828210640201115219483179621653002292021119472862731609674225484382881906967233591926252409153570817347187577399753848548863765834492490889415294226621346252351963369967370989296069614274959733660553543798843771843690603185347",
+      "upper_decimal": "19.656685399732923703500063941970",
+      "upper_exact": "37315256807408907094285221111960942618342489344685483952769159067412278200133354967115291159289033947981690040287892945922211127974729057350967557839399085638219378457482183144984817643552886959123764825310653387774893977305175613390058755438068053675900693011281250886875/1898349393530809178020030238753995603835388245419190791253142425304424656235421513741711286697661772777156726574628820635589048542932471388993649439553501629878719202109005723444087912812045878683412631511014932987664793405379388035549004478774045121802860546333967541248"
+    },
+    "radial_curvature_mass_squared_over_Lambda_squared": "120/log(448)",
+    "relative_family_ratios_changed": false
+  },
+  "same_root_commuting_diagram": {
+    "commutes_by_factor_functoriality": true,
+    "comparison_matrix_inserted": false,
+    "finite_factor_readout": "R_tot->q_F(t)->D_phys(t)->B_F(t)->W0(t)->t_*",
+    "full_upper_physical_source_selected": false,
+    "lower_evaluation": "freeze t=t_* before varying h",
+    "root": "R_tot=(q_Y,q_F(t),Gamma_Y,h,totalize)",
+    "same_root_closed_at_declared_tier": true,
+    "selected_coordinate": {
+      "exact_coefficients": {
+        "rational": "1/6",
+        "sqrt13": "-1/6"
+      },
+      "expression": "(1-sqrt(13))/6",
+      "interval": {
+        "lower_decimal": "-0.434258545910664882186536877912",
+        "lower_exact": "-26055512754639892931192212674704959462513/60000000000000000000000000000000000000000",
+        "upper_decimal": "-0.434258545910664882186536877912",
+        "upper_exact": "-542823182388331102733171097389686655469/1250000000000000000000000000000000000000"
+      }
+    },
+    "shared_finite_factor": "q_F(t)=T(t) direct_sum conjugate(T(t)^*)",
+    "total_charge_readout": "R_tot->B_tot(t,h)->K(t,h)=B_tot(t,h)^2/Lambda^2->exp(-sK)"
+  },
+  "schema": "boe.mtt.same-root-state-repair-heat-profile-radial-values.v1",
+  "selected_internal_checkpoint": {
+    "A84_fixed_point_gradient_flow_tier": true,
+    "additive_physical_clock_lift_unconditional": false,
+    "branch_order": 448,
+    "compact_phase_identified_with_Lorentzian_time": false,
+    "gap": 15,
+    "identity": "exp(-15 tau_int)=1/448",
+    "tau_int": "log(448)/15",
+    "tau_interval": {
+      "lower_decimal": "0.406986215494332344107249698146",
+      "lower_exact": "15186795148246473424160241910031964830683105963353526330025139402435397249883372109933690293581294182217253812597030565084712388343459771111949195516428013039029753616872045787552703302496367029467301052088119463901318347243035104284392035830192360974422884370671740329984/37315256807408907094285221111960942618342489344685483952769159067412278200133354967115291159289033947981690040287892945922211127974729057350967557839399085638219378457482183144984817643552886959123764825310653387774893977305175613390058755438068053675900693011281250886875",
+      "upper_decimal": "0.406986215494332344107249698146",
+      "upper_exact": "121494361185971787393281935280255718645464847706828210640201115219483179621653002292021119472862731609674225484382881906967233591926252409153570817347187577399753848548863765834492490889415294226621346252351963369967370989296069614274959733660553543798843771843690603185347/298522054459271256754281768895687540946739914757483871622153272539298225601066839736922329274312271583853520322303143567377689023797832458807740462715192685105755027659857465159878541148423095672990118602485227102199151818441404907120470043504544429407205544090250007095000"
+    }
+  },
+  "source_provenance": {
+    "all_source_hashes_match": true,
+    "contract_schema_sha256": "e53dcd87001f779e8621d1724c39ef8cb389ca9fd79d0196215a5c57d28b9930",
+    "handoff_id": "9bebcb6e-13e2-406c-be9a-993c1dbf964a",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "repository_heads": {
+      "mtt-causal-base-constraint-fiber": "a3437bfbd7d2368bfb53857c6814e330c4e95e9a",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "source_count": 12,
+    "source_lock_sha256": "afa4690abc2cf278574df5ae96952b473df521075887fe67eebc64b6dc3281ec",
+    "source_root_payload": {
+      "excluded_from_root": [
+        "observed masses",
+        "observed mixings",
+        "target radial values",
+        "fitted profile coefficients",
+        "sector-specific scales"
+      ],
+      "finite_charge": "D_phys(t)=q_F(t)+q_F(t)^*",
+      "finite_determinant_root_sha256": "ed0ee7b1c055dcf973c6082737254eae7cc366bbfac2961a9ab6f32ed9da8390",
+      "finite_factor": "q_F(t)=T(t) direct_sum conjugate(T(t)^*)",
+      "internal_checkpoint": "tau_int=log(448)/15",
+      "profile_amplitude_role": "common positive trace amplitude; cancels from f2/f0",
+      "repository_heads": {
+        "mtt-causal-base-constraint-fiber": "a3437bfbd7d2368bfb53857c6814e330c4e95e9a",
+        "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+      },
+      "schema": "boe.mtt.same-root-state-repair-heat-profile-source.v1",
+      "semigroup_rule": "T_s=exp(-sK)",
+      "source_hashes": [
+        "9cffb9e688968f4debe4f5f10a618788155d9df663ae900843e663aff3b8f7f5",
+        "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+        "5e60a90ed8fbafd40d26f3aeaed9a7c8d9f5724d5aa9e00b952cc507f136d03e",
+        "927f0db10e5ba7667779153c3a8d9f483c4fd5f0bc6367e1f9f5c79b5836341e",
+        "fe933ea2b3c67b357e504259424e8969935daac286f2732fc621b53efc643df9",
+        "ed2eb30446ae20cd57dd89a4f6151042b234a5dcaba37c1074ccb440256a1fba",
+        "0d12e410e0534bbb36fa36aa16f903ac720ae603c77cc76d8fb23650c2713846",
+        "a8fc8826918ce1872a8daced129a4348637ef4cbe6885892db5c04949a8163b5",
+        "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440",
+        "219da4cbda25453fe84eb0bd94fc31c9ae72e45033b21f4787838cf873bfedab",
+        "4f3af9f99588796201c394c6ab6b3f570c7fb7a3755ad69bdb2b278abeee8959",
+        "e7f20a52b7daafd04a5e80a90a127e2c05fee207b6cdb8bdde5f41c062c34e67"
+      ],
+      "state_functional_rule": "J_B(Psi)=1/2||B_tot Psi/Lambda||^2",
+      "state_generator_rule": "K=B_tot^2/Lambda^2",
+      "total_charge": "B_tot=q_tot+q_tot^*=D_Y tensor I+Gamma_Y tensor h D_phys(t)",
+      "total_square": "B_tot^2=D_Y^2 tensor I+h^2 I tensor D_phys(t)^2",
+      "totalization_root_sha256": "c01b0561190e897c2dfd48a520d622a791c8b040bad1651d6dcfdeecef18fbcc"
+    },
+    "source_root_sha256": "d85570e7922eba0378158d4b62da76c83aaae0d40ccf6a7689c85a2e9c8a1a81",
+    "theorem_sha256": "cbd7ce99a9b7a3082fd9b1e4ed54acba08af54749e04056cadf76da4c5f405f7"
+  },
+  "spectral_moments": {
+    "at_tau_f2_over_f0": "15/log(448)",
+    "at_tau_f2_over_f0_interval": {
+      "lower_decimal": "2.457085674966615462937507992746",
+      "lower_exact": "298522054459271256754281768895687540946739914757483871622153272539298225601066839736922329274312271583853520322303143567377689023797832458807740462715192685105755027659857465159878541148423095672990118602485227102199151818441404907120470043504544429407205544090250007095000/121494361185971787393281935280255718645464847706828210640201115219483179621653002292021119472862731609674225484382881906967233591926252409153570817347187577399753848548863765834492490889415294226621346252351963369967370989296069614274959733660553543798843771843690603185347",
+      "upper_decimal": "2.457085674966615462937507992746",
+      "upper_exact": "37315256807408907094285221111960942618342489344685483952769159067412278200133354967115291159289033947981690040287892945922211127974729057350967557839399085638219378457482183144984817643552886959123764825310653387774893977305175613390058755438068053675900693011281250886875/15186795148246473424160241910031964830683105963353526330025139402435397249883372109933690293581294182217253812597030565084712388343459771111949195516428013039029753616872045787552703302496367029467301052088119463901318347243035104284392035830192360974422884370671740329984"
+    },
+    "at_tau_f4_over_f0": "225/log(448)^2",
+    "at_tau_f4_over_f0_interval": {
+      "lower_decimal": "6.037270014126148289435603145665",
+      "lower_exact": "89115416998584114029829221171645320257449094631106722693055044367910729128722240116564197663007067382633827498696804956344579782002966210423252919781864203686951850783866637883482190371633605309692910706063812364581162149526959655049794033959379759962061201735957597821070947515041285924900381066256340226123628139133660722342847437892305270508932712960869998708846697643886984098822958709146866332831933399719433007252854633401556360443758116535790720012275846015040537248575551459804819455659877424085293901821989988391733140647550339025000000/14760879799987367981334794545688106659298758684922699650403916074427574068914498557563998833559738288565647093981470912785720017203298024169967054373297392703768555307408933188135564069298434923892243391995886778767925682435949055859691877233329507481051625782603901797560513270174684439084641587141419906225598464387026612863016716653209070159908903704435582549966089551894942884571669851557250522325087152335780172458194335101607445441794614323854657641226414972791889582638467393647208492310902692838233337932500792350252750328653422835510409",
+      "upper_decimal": "6.037270014126148289435603145665",
+      "upper_exact": "1392428390602876781716081580806958129022642103611042542078985068248605142636285001821315588484485427853653554667137577442884059093796347037863326871591628182608622668497916216929409224556775082963951729782247068196580658586358744610153031780615308749407206277124337465954233554922520092576568454160255316033181689673963448786606991217067269851702073640013593729825729650685734126544108729830419786450498959370616140738325853646899318131933720570871730000191810093985008394508992991559450303994685584751332717215968593568620830322617974047265625/230638746874802624708356164776376666551543104451917182037561188662930838666318645374970574978463864143208114744277956310211541964516077964593771082603527891784125310469576354278316187809655409467341736099703495219814222978364189458173103964202662557891897074514691317187677938934162460835150402000366589215824016013398793940745057207246726684616353005529851424010765007199343279026805146911196493546755007158789512094406654042778724260574488062432680951551217473518244563025472038025959048589841592433573919852700041161780986971087013209440256"
+    },
+    "f0": "A",
+    "f2": "A/s",
+    "f2_over_f0": "1/s",
+    "f4": "A/s^2",
+    "f4_over_f0": "1/s^2",
+    "profile": "chi_s(x)=A exp(-s x)",
+    "rank_one_Hankel_identity": "f0 f4-f2^2=0"
+  },
+  "state_space_quadratic_repair": {
+    "carrier": "selected physical state Hilbert carrier H",
+    "closure_charge": "B_tot=q_tot+q_tot^*=D_Y tensor I+Gamma_Y tensor h D_phys(t)",
+    "contraction_for_nonnegative_s": true,
+    "finite_witness": {
+      "all_weights_in_unit_interval": true,
+      "composition_residual": "2E-80",
+      "composition_split": "tau_int/3 + 2 tau_int/3",
+      "heat_weights": [
+        "1",
+        "0.66565336594087576180674896281399034865016925948571634730077802799734525625636081",
+        "0.19633265049137537536291588401764629605341350537612277431050255568927358179203649",
+        "0.0022321428571428571428571428571428571428571428571428571428571428571428571428571428"
+      ],
+      "selected_gap_residual": "1E-82",
+      "witness_spectrum": [
+        "0",
+        "1",
+        "4",
+        "15"
+      ]
+    },
+    "fixed_space": "ker K=Fix(T_s) for s>0",
+    "gradient": "grad J_B=K Psi",
+    "new_clock_normalization_added": false,
+    "positive_generator": "K=B_tot^2/Lambda^2>=0",
+    "quadratic_functional": "J_B(Psi)=1/2||B_tot Psi/Lambda||^2",
+    "repair_equation": "d_s Psi=-K Psi",
+    "semigroup_law": "T_s T_r=T_(s+r)",
+    "unique_solution": "T_s=exp(-sK)"
+  },
+  "status": "exact same-root state-space heat profile, unique positive proper-time measure and promoted cutoff-unit radial values at the selected finite direct-source and internal-checkpoint tier; full physical promotion open",
+  "typed_no_go_reconciliation": {
+    "CBF_T28_carrier": "V_sa=End_sa(H_F)",
+    "CBF_T28_generator_type": "End_sa(H_F)->End_sa(H_F)",
+    "CBF_T34_carrier": "H_state",
+    "CBF_T34_generator_type": "K:H_state->H_state",
+    "T28_no_go_preserved": true,
+    "generators_identified": false,
+    "trace_substitution_across_carriers_used": false
+  }
+}

@@ -132,6 +132,11 @@
     "two-branch classification of T23 metrology and conditional A53 radial-stationary values",
     "certified nonzero finite branch values in cutoff units under the conditional A53 composition",
     "exact fixed-source normalization incompatibility and no-added-hierarchy result",
+    "exact same-root factor and total-charge readouts from the selected T24 total differential",
+    "exact state-space quadratic closure-repair heat semigroup",
+    "unique positive Laplace measure for the selected exponential profile",
+    "selected proper-time moment ratio at the internal checkpoint tier",
+    "promoted nonzero cutoff-unit radial values at the declared same-root tier",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -185,11 +190,14 @@
     "promotion of the conventional MSbar same-scale local minimum to a physical vacuum",
     "promotion of the finite source coordinate t to an A51-selected inner-fluctuation field",
     "interpretation of the conditional joint tree curvature masses as measured pole masses",
-    "selection of the A53 one-atom proper-time measure by MTT",
+    "selection of the A53 one-atom proper-time measure beyond the T34 finite direct-source and internal-checkpoint tier",
     "simultaneous validity of A53 one-atom moments, literal h=Lambda and bare tree stationarity",
-    "physical promotion of the T30 determinant coordinate as the selected preprojection source",
-    "same-root identification of the T30 finite selector and A53 proper-time measure",
+    "unconditional upper-MTT or q79 physical promotion of the T30 determinant coordinate beyond the T34 direct-source tier",
+    "promotion of the T34 same-root selector and proper-time diagram to a full renormalized physical source",
     "interpretation of the T33 conditional cutoff-unit branch values as nine measured charged masses",
+    "interpretation of the T34 cutoff-unit values as observed particle pole masses",
+    "unconditional derivation of the additive physical-clock lift from upper MTT",
+    "selection of an absolute SI cutoff scale by the T34 heat-profile theorem",
     "identification of the three finite determinant branches with measured fermion generations",
     "derivation of a dimensionful mass from the finite determinant without a physical scale primitive",
     "identification of classical projective pressure normalization with a measured physical scale",
@@ -244,7 +252,8 @@
     "KO6PhysicalPolarizationFermionicDeterminantAndNeutralChamberValueSelectionTheorem_v1.md",
     "FourDimensionalFermionDeterminantSchemeClassificationAndPhysicalValueBoundaryTheorem_v1.md",
     "ProductDiracJointRadialSourceModulusHeatKernelActionAndNonzeroVacuumNoGoTheorem_v1.md",
-    "PreprojectionFiniteSourceFreezeAndConditionalRadialBranchValueTheorem_v1.md"
+    "PreprojectionFiniteSourceFreezeAndConditionalRadialBranchValueTheorem_v1.md",
+    "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -279,7 +288,8 @@
     "ko6_fermionic_determinant_value_selection.packet.json",
     "four_dimensional_fermion_determinant_scheme_classification.packet.json",
     "product_dirac_joint_radial_source_modulus_action.packet.json",
-    "preprojection_finite_source_freeze_radial_values.packet.json"
+    "preprojection_finite_source_freeze_radial_values.packet.json",
+    "same_root_state_repair_heat_profile_radial_values.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -314,7 +324,8 @@
     "python build_ko6_fermionic_determinant_value_selection.py",
     "python build_four_dimensional_fermion_determinant_scheme_classification.py",
     "python build_product_dirac_joint_radial_source_modulus_action.py",
-    "python build_preprojection_finite_source_freeze_radial_values.py"
+    "python build_preprojection_finite_source_freeze_radial_values.py",
+    "python build_same_root_state_repair_heat_profile_radial_values.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -344,7 +355,8 @@
     "ko6_fermionic_determinant_value_selection_contract.schema.json",
     "four_dimensional_fermion_determinant_scheme_classification_contract.schema.json",
     "product_dirac_joint_radial_source_modulus_action_contract.schema.json",
-    "preprojection_finite_source_freeze_radial_values_contract.schema.json"
+    "preprojection_finite_source_freeze_radial_values_contract.schema.json",
+    "same_root_state_repair_heat_profile_radial_values_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

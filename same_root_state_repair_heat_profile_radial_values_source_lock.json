@@ -1,0 +1,99 @@
+{
+  "schema": "boe.mtt.same-root-state-repair-heat-profile-radial-values-source-lock.v1",
+  "claim_id": "CBF.T34",
+  "date": "2026-08-30",
+  "handoff_id": "9bebcb6e-13e2-406c-be9a-993c1dbf964a",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "a3437bfbd7d2368bfb53857c6814e330c4e95e9a",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065"
+  },
+  "local_sources": [
+    {
+      "path": "upper_totalization_supercharge.packet.json",
+      "sha256": "9cffb9e688968f4debe4f5f10a618788155d9df663ae900843e663aff3b8f7f5",
+      "role": "CBF.T24 selected total differential, physical closure charge and exact product square"
+    },
+    {
+      "path": "direct_finite_source_continuum.packet.json",
+      "sha256": "d95838bf83f5f76633922bb2c720029d3e48a9da064d1b6a1e26d096916e938c",
+      "role": "CBF.T25 physical first-order finite-source continuum action"
+    },
+    {
+      "path": "finite_dirac_operator_repair_semigroup.packet.json",
+      "sha256": "5e60a90ed8fbafd40d26f3aeaed9a7c8d9f5724d5aa9e00b952cc507f136d03e",
+      "role": "CBF.T28 typed no-go separating operator-space repair from a scalar state-space profile"
+    },
+    {
+      "path": "ko6_fermionic_determinant_value_selection.packet.json",
+      "sha256": "927f0db10e5ba7667779153c3a8d9f483c4fd5f0bc6367e1f9f5c79b5836341e",
+      "role": "CBF.T30 finite-factor Grassmann determinant and selected source coordinate"
+    },
+    {
+      "path": "product_dirac_joint_radial_source_modulus_action.packet.json",
+      "sha256": "fe933ea2b3c67b357e504259424e8969935daac286f2732fc621b53efc643df9",
+      "role": "CBF.T32 product-Dirac heat-kernel action and exact radial potential"
+    },
+    {
+      "path": "preprojection_finite_source_freeze_radial_values.packet.json",
+      "sha256": "ed2eb30446ae20cd57dd89a4f6151042b234a5dcaba37c1074ccb440256a1fba",
+      "role": "CBF.T33 source-freeze theorem and conditional radial values"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_propertimemeasureandoverlapkineticmetricsource_or_strictspectralactionclosure_v1.md",
+      "sha256": "0d12e410e0534bbb36fa36aa16f903ac720ae603c77cc76d8fb23650c2713846",
+      "role": "A53 proper-time candidate and explicit minimal-support selection boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/candidate_data/selected_propertimemeasureandoverlapkineticmetricsource_or_strictspectralactionclosure/proper_time_atom_and_overlap_source_cutset.packet.json",
+      "sha256": "a8fc8826918ce1872a8daced129a4348637ef4cbe6885892db5c04949a8163b5",
+      "role": "A53 one-atom moment formulas and pre-CBF.T34 epistemic status"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_closureshadowgaugeactionaxiomderivation_or_explicitadoptionandheldoutvalidation_v1.md",
+      "sha256": "0fffd8badfa99bbcd3074186a523eb8b54b12b40c7979bf8d51ae9c24fa9c440",
+      "role": "A84 fixed-point Hessian-to-semigroup action-tier derivation"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/candidate_data/selected_closureshadowgaugeactionaxiomderivation_or_explicitadoptionandheldoutvalidation/fixed_point_semigroup_to_damped_overlap_derivation.packet.json",
+      "sha256": "219da4cbda25453fe84eb0bd94fc31c9ae72e45033b21f4787838cf873bfedab",
+      "role": "A84 selected-time identity and heat-semigroup uniqueness packet"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/One_Anchor_Additive_Physical_Clock_Lift_and_q79_Rate_Theorem_v1.md",
+      "sha256": "4f3af9f99588796201c394c6ab6b3f570c7fb7a3755ad69bdb2b278abeee8959",
+      "role": "conditional additive physical-clock lift for the shared internal checkpoint"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/one_anchor_physical_clock_lift.certificate.json",
+      "sha256": "e7f20a52b7daafd04a5e80a90a127e2c05fee207b6cdb8bdde5f41c062c34e67",
+      "role": "machine certificate for gap 15, branch order 448 and the clock-lift boundary"
+    }
+  ],
+  "boundary": {
+    "same_root_finite_selector_and_product_charge_before": false,
+    "same_root_finite_selector_and_product_charge_after": true,
+    "state_space_heat_profile_before": false,
+    "state_space_heat_profile_after": true,
+    "one_atom_measure_selected_before": false,
+    "one_atom_measure_selected_after_at_declared_tier": true,
+    "radial_moment_ratio_selected_before": false,
+    "radial_moment_ratio_selected_after_at_declared_tier": true,
+    "full_upper_physical_source_selected": false,
+    "additive_physical_clock_lift_unconditional": false,
+    "full_four_dimensional_fermion_determinant_selected": false,
+    "renormalized_interacting_QFT_selected": false,
+    "absolute_dimensionful_scale_selected": false,
+    "sector_generation_map_selected": false,
+    "nine_charged_yukawa_values_selected": false,
+    "loop_RG_threshold_pole_transport_selected": false,
+    "held_out_observable_emitted": false,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_packet_acceptance_after": 0,
+    "physical_row_acceptance_before": 0,
+    "physical_row_acceptance_after": 0
+  }
+}
