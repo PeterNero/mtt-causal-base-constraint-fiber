@@ -1,0 +1,133 @@
+{
+  "schema": "boe.mtt.selected-gauge-physical-future-state-source-lock.v1",
+  "claim_id": "CBF.T47",
+  "date": "2026-08-30",
+  "handoff_id": "f223a622-f094-44bb-8825-633f8c2cf51f",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "construction_sources": [
+    {
+      "path": "FutureConeSpectralPolarizationAndFreeInitialStateSelectionTheorem_v1.md",
+      "sha256": "96591454eec98296320ed9d7ec80d92fdb1f277652e023c15fe41e750136515b",
+      "role": "T45 homogeneous flat H>0 branch, selected future orientation and spectral-state selection rule"
+    },
+    {
+      "path": "future_cone_spectral_polarization.packet.json",
+      "sha256": "7e90cd06fb1fcb5c773133efc9c86c656769d9ce69e24ae0d5a90f697531e7aa",
+      "role": "machine-readable T45 branch and free-state boundary"
+    },
+    {
+      "path": "SelectedFutureStateMollerBVTransportAndFullG2CutsetTheorem_v1.md",
+      "sha256": "6f8a57dc373650b098a5f6de94211788fc6a39cb78a189840d2ca3f38240949b",
+      "role": "T46 full-seed cutset and canonical formal BRST lift"
+    },
+    {
+      "path": "selected_future_state_moller_bv_transport.packet.json",
+      "sha256": "2e3aa0b46aa09690c1a12e85320e12cc0de694457b40de6e92d7e3b77525cecd",
+      "role": "machine-readable T46 state-factor and G2 ledger"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_GaugeFixed_Hyperbolic_BV_and_Microcausal_BRST_Algebra_Theorem_v1.md",
+      "sha256": "dc0f0e46ce3cbf7ee307478b0e232ee88bd43c38f5a46f38feebbe2de4bc1667",
+      "role": "q79 background Feynman-'t Hooft gauge, gauge-Higgs BRST differential and normally hyperbolic quadratic blocks"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_GaugeFixed_Hyperbolic_BV_and_Equicausal_BRST_Algebra_Theorem_v2.md",
+      "sha256": "369eabdbfb58188d4633c9b52d2c5b0fbf28335d8240a03ac812d99290367cfb",
+      "role": "current equicausal free physical algebra and compatible Hadamard presentation"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_gaugefixed_hyperbolic_bv_equicausal.certificate.json",
+      "sha256": "04c71f072bd633b2012b232b442dd2ff1625d28bf11fb387925d94022d596f8b",
+      "role": "machine-readable gauge-fixed BRST and hyperbolicity certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Local_Formal_BRST_Physical_State_and_Positivity_Theorem_v1.md",
+      "sha256": "f4ac137d61201a639c22613ad4998fdc555b619513a16c4f02cb7b46ae5b1583",
+      "role": "symmetric-phase one-mode quartet, positive physical quotient and nonselected free-state existence"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_local_formal_physical_state.certificate.json",
+      "sha256": "9cc6e595fd0b96e5c1f37809c151f271c5010308fa814cc63b14412671e410dd",
+      "role": "machine-readable exact six-direction quartet and state-existence boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_nativebundleautomorphismgaugegroup_or_parameterassumptionaudit_v1.md",
+      "sha256": "21934c068f22a25419b09627a5512aa563556bbf8d95eb23e9d6885c01658de1",
+      "role": "A47 selected faithful gauge group (SU3 x SU2 x U1)/Z6"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_nativebundleautomorphismgaugegroup_or_parameterassumptionaudit_certificate.json",
+      "sha256": "6b9ff3544393e1664e8f9ae9debac116b74488b4ea1d3e577d8c5b2af8e6cba8",
+      "role": "machine-readable A47 gauge-group closure"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/mtt_selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure_v1.md",
+      "sha256": "423e3ae86dd8b5abee19e38d53f0bb003fb53fc0e5adc872076cab546934e893",
+      "role": "A51 one-Higgs projection, raw gauge trace metric 10:6:6 and absolute-normalization boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure_certificate.json",
+      "sha256": "20b357f3552391b54e8ee1878052c0797012c5900ba9244039c51a2f534bb14f",
+      "role": "machine-readable A51 structural closure and open absolute normalization"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/candidate_data/selected_finitespectralactionandhiggsinnerfluctuation_or_directgenerativesmactionclosure/finite_inner_fluctuation_and_spectral_traces.packet.json",
+      "sha256": "4f2b6f68fd5b6c26fb88e9ad137165a205e39c4a4766cf5347d083e3407cc03a",
+      "role": "executed A51 gauge trace coefficients, one-Higgs representation and coupling-ratio statement"
+    }
+  ],
+  "comparison_sources": [
+    {
+      "path": "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
+      "sha256": "bfde0358a25e06268c181a1d8d9ca5cc3813aceeb91774021f329411efb782df",
+      "role": "T38 radial background marginal, distinguished from a radial Higgs fluctuation covariance"
+    },
+    {
+      "path": "radial_closure_attractor_state_marginal.packet.json",
+      "sha256": "43eabb2bb78a16bdf049e63c592df7aa29086228e4c8ca648b9582cc1114eabe",
+      "role": "machine-readable T38 full-state boundary"
+    },
+    {
+      "path": "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
+      "sha256": "eb25406a95a3316a0c7b98ef237ef94d0f0758fd50c4cfbf672f9c633de57c5a",
+      "role": "T39 upper-action selection boundary for the formal BV map"
+    },
+    {
+      "path": "renormalized_bv_anchored_repair_semiflow.packet.json",
+      "sha256": "3629d7ff90f4499c4c225873a4f0ac598ea3d92861c6731cb55c02b1f491def2",
+      "role": "machine-readable T39 normalization and fixed-coupling boundary"
+    }
+  ],
+  "selection_rule": {
+    "branch": "the T45 homogeneous flat direct branch realized on R^(1,3), with selected future orientation and the same constant single-Higgs radial background H>0",
+    "gauge_source": "A47 faithful Lie algebra su3+su2+u1 with the A51 raw quadratic trace metric diag(6 I8,6 I3,10)",
+    "mass_source": "the q79 background gauge-Higgs Hessian with mass form R_H^dagger R_H, evaluated in the gauge representative Hbar=(0,H/sqrt(2))",
+    "physical_reduction": "BRST cohomology gives two polarizations for each of nine unbroken generators and three for each of three broken generators",
+    "future_state": "the pure quasifree CCR ground state determined by the positive-frequency complex structure of the physical gauge Hamiltonian",
+    "zero_mode_rule": "on spatial R^3 the massless p=0 singleton has zero spectral measure, no L2 harmonic one-form, and locally integrable d^3p/(2|p|) covariance",
+    "excluded_inputs": [
+      "measured W, Z or photon data",
+      "a fitted Weinberg angle",
+      "a density matrix or temperature",
+      "a compact-space harmonic zero-mode prescription",
+      "absolute spectral-action normalization",
+      "a radial Higgs fluctuation covariance",
+      "a selected fixed-coupling interacting completion",
+      "a q79 HYM endpoint"
+    ]
+  },
+  "external_primary_context": [
+    {
+      "url": "https://arxiv.org/abs/1407.8079",
+      "role": "BRST physical phase space, positivity and Hadamard states for linear gauge theories"
+    },
+    {
+      "url": "https://arxiv.org/abs/1403.7153",
+      "role": "Hadamard states for linearized Yang-Mills fields, including R^d Cauchy surfaces and low-energy control"
+    },
+    {
+      "url": "https://arxiv.org/abs/1205.3484",
+      "role": "subsidiary-condition quantization of linear bosonic and fermionic gauge theories"
+    }
+  ]
+}

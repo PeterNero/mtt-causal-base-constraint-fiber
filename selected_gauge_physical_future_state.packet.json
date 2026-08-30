@@ -1,0 +1,1853 @@
+{
+  "BRST_mode_reduction": {
+    "Goldstone_directions_counted_as_independent_Higgs_particles": false,
+    "broken_generators": 3,
+    "broken_longitudinal_Goldstone_mixing": {
+      "gauge_orbit_input": [
+        "3",
+        "4"
+      ],
+      "gauge_orbit_output": [
+        "5",
+        "0"
+      ],
+      "mixing_matrix_rows_x_ell": [
+        [
+          "3/5",
+          "4/5"
+        ],
+        [
+          "4/5",
+          "-3/5"
+        ]
+      ],
+      "physical_longitudinal_input": [
+        "4",
+        "-3"
+      ],
+      "physical_longitudinal_output": [
+        "0",
+        "5"
+      ],
+      "sample_energy": "5",
+      "sample_m": "4",
+      "sample_r": "3",
+      "scope": "exact mode-coordinate witness; the q79 BRST differential and mass form are inherited from the hash-locked continuum theorem",
+      "zero_momentum_m_positive_matrix": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ]
+    },
+    "massive_complex": {
+      "Krein_form": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "Q0": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "basis": [
+        "epsilon_1",
+        "epsilon_2",
+        "epsilon_3",
+        "x",
+        "y",
+        "c",
+        "bar_c"
+      ],
+      "closed_ghost_zero_Gram": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "ghost_numbers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "homotopy": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "physical_cohomology_dimension": 3,
+      "physical_projector": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "massive_physical_polarizations": 9,
+    "massless_complex": {
+      "Krein_form": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "Q0": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "basis": [
+        "epsilon_1",
+        "epsilon_2",
+        "x",
+        "y",
+        "c",
+        "bar_c"
+      ],
+      "closed_ghost_zero_Gram": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "ghost_numbers": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "homotopy": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "physical_cohomology_dimension": 2,
+      "physical_projector": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "massless_physical_polarizations": 18,
+    "positive_ghost_zero_quotient": true,
+    "total_physical_gauge_polarizations": 27,
+    "unbroken_generators": 9
+  },
+  "G2_clause_ledger": {
+    "G2a_flat_branch_free_Weyl_state": "closed by T45",
+    "G2a_flat_branch_free_gauge_physical_state": "closed by T47",
+    "G2a_flat_branch_free_radial_Higgs_state": "open",
+    "G2b_exact_background_Dirac_state_transport": "closed by T46",
+    "G2b_formal_state_pullback_and_canonical_lift": "closed by T46",
+    "G2b_selected_complete_free_product_seed": "open by one radial Higgs factor",
+    "G2b_selected_upper_action_and_full_BV_map": "open",
+    "G2c_selected_regulator_independent_continuum": "open 0/9",
+    "physical_T41_gate_count": "0/3",
+    "top_level_physical_G2": "open"
+  },
+  "broken_phase_seed_factorization": {
+    "H_gt_zero_branch": "18 massless gauge plus 9 massive gauge plus 1 radial Higgs equals 28",
+    "Weyl_factor": {
+      "selected": true,
+      "source": "T45"
+    },
+    "formal_lift_after_full_seed": {
+      "selected": true,
+      "source": "T46 canonical homotopy gauge"
+    },
+    "full_product_seed_selected": false,
+    "gauge_physical_factor": {
+      "physical_polarizations": 27,
+      "selected": true,
+      "source": "T47"
+    },
+    "missing_selected_factors": 1,
+    "radial_Higgs_factor": {
+      "physical_polarizations": 1,
+      "reason": "T38 selects a background marginal, not the radial fluctuation two-point covariance",
+      "selected": false
+    },
+    "required_free_state": "omega_0,H=omega_gauge,H,phys tensor omega_h,rad tensor omega_Weyl",
+    "symmetric_phase_reference": "24 massless gauge plus 4 Higgs equals 28"
+  },
+  "check_summary": {
+    "failed": [],
+    "passed": 104,
+    "total": 104
+  },
+  "checks": {
+    "A47_faithful_global_group_is_closed": true,
+    "A51_absolute_action_normalization_is_open": true,
+    "A51_one_Higgs_projection_is_closed": true,
+    "A51_raw_gauge_traces_are_10_6_6": true,
+    "A51_relative_coupling_relation_is_registered": true,
+    "Goldstones_are_not_double_counted_as_radial_Higgs": true,
+    "T38_does_not_select_full_state": true,
+    "T39_upper_action_selection_remains_open": true,
+    "T45_branch_has_positive_H": true,
+    "T45_future_orientation_is_selected": true,
+    "T46_prior_missing_factor_count_is_two": true,
+    "W1_has_generalized_eigenvalue_one_sixth": true,
+    "W2_has_generalized_eigenvalue_one_sixth": true,
+    "Z_has_generalized_eigenvalue_four_fifteenths": true,
+    "absolute_action_normalization_not_promoted": true,
+    "all_checks_pass_before_summary": true,
+    "all_contract_keys_present": true,
+    "broken_and_unbroken_are_complementary": true,
+    "broken_generator_count_is_three": true,
+    "broken_mixing_is_orthogonal": true,
+    "broken_mixing_sends_complement_to_physical_axis": true,
+    "broken_mixing_sends_orbit_to_contractible_axis": true,
+    "broken_phase_gauge_count_is_twenty_seven": true,
+    "broken_phase_total_bosonic_count_is_twenty_eight": true,
+    "broken_projector_has_rank_three": true,
+    "broken_projector_is_K_self_adjoint": true,
+    "broken_projector_is_idempotent": true,
+    "compact_harmonic_mode_problem_is_not_claimed_closed": true,
+    "compact_zero_modes_not_claimed_closed": true,
+    "comparison_source_01_hash_matches": true,
+    "comparison_source_02_hash_matches": true,
+    "comparison_source_03_hash_matches": true,
+    "comparison_source_04_hash_matches": true,
+    "construction_source_01_hash_matches": true,
+    "construction_source_02_hash_matches": true,
+    "construction_source_03_hash_matches": true,
+    "construction_source_04_hash_matches": true,
+    "construction_source_05_hash_matches": true,
+    "construction_source_06_hash_matches": true,
+    "construction_source_07_hash_matches": true,
+    "construction_source_08_hash_matches": true,
+    "construction_source_09_hash_matches": true,
+    "construction_source_10_hash_matches": true,
+    "construction_source_11_hash_matches": true,
+    "construction_source_12_hash_matches": true,
+    "construction_source_13_hash_matches": true,
+    "construction_source_14_hash_matches": true,
+    "contract_schema_claim_matches": true,
+    "full_G2_not_claimed_closed": true,
+    "future_complex_structure_is_symplectic": true,
+    "future_complex_structure_squares_to_minus_identity": true,
+    "future_covariance_metric_is_positive": true,
+    "gauge_kinetic_metric_has_rank_twelve": true,
+    "mass_form_has_rank_three": true,
+    "mass_operator_is_K_self_adjoint": true,
+    "mass_operator_matches_spectral_decomposition": true,
+    "massive_BRST_charge_has_rank_two": true,
+    "massive_BRST_charge_is_Krein_hermitian": true,
+    "massive_BRST_charge_is_nilpotent": true,
+    "massive_BRST_closed_ghost_zero_Gram_is_positive_semidefinite": true,
+    "massive_BRST_contraction_identity": true,
+    "massive_BRST_null_ghost_zero_direction_is_exact": true,
+    "massive_BRST_physical_projector_has_expected_rank": true,
+    "massive_BRST_physical_projector_is_idempotent": true,
+    "massive_physical_gauge_count_is_nine": true,
+    "massive_zero_momentum_physical_axis_survives": true,
+    "massive_zero_momentum_rotation_is_regular": true,
+    "massless_BRST_charge_has_rank_two": true,
+    "massless_BRST_charge_is_Krein_hermitian": true,
+    "massless_BRST_charge_is_nilpotent": true,
+    "massless_BRST_closed_ghost_zero_Gram_is_positive_semidefinite": true,
+    "massless_BRST_contraction_identity": true,
+    "massless_BRST_null_ghost_zero_direction_is_exact": true,
+    "massless_BRST_physical_projector_has_expected_rank": true,
+    "massless_BRST_physical_projector_is_idempotent": true,
+    "massless_IR_ball_integral_scales_as_epsilon_squared": true,
+    "massless_covariance_IR_power_is_integrable_in_three_dimensions": true,
+    "massless_physical_gauge_count_is_eighteen": true,
+    "no_fitted_state_parameter_used": true,
+    "no_observed_mass_or_mixing_input_used": true,
+    "opposite_orientation_fails_positive_metric": true,
+    "photon_and_Z_are_K_orthogonal": true,
+    "photon_is_massless": true,
+    "physical_counters_unchanged": true,
+    "q79_background_BRST_contains_Higgs_orbit_map": true,
+    "q79_gauge_fixed_certificate_passes": true,
+    "q79_local_state_certificate_passes": true,
+    "q79_old_symmetric_phase_gauge_count_is_twenty_four": true,
+    "source_lock_claim_matches": true,
+    "source_lock_schema_matches": true,
+    "symmetric_phase_total_bosonic_count_is_twenty_eight": true,
+    "theorem_file_exists": true,
+    "transverse_sample_1_annihilates_momentum": true,
+    "transverse_sample_1_has_rank_two": true,
+    "transverse_sample_1_is_idempotent": true,
+    "transverse_sample_1_is_symmetric": true,
+    "transverse_sample_2_annihilates_momentum": true,
+    "transverse_sample_2_has_rank_two": true,
+    "transverse_sample_2_is_idempotent": true,
+    "transverse_sample_2_is_symmetric": true,
+    "unbroken_generator_count_is_nine": true,
+    "unbroken_projector_has_rank_nine": true,
+    "unbroken_projector_is_idempotent": true,
+    "zero_singleton_has_no_L2_spectral_weight": true
+  },
+  "claim_id": "CBF.T47",
+  "date": "2026-08-30",
+  "electroweak_mass_reduction": {
+    "absolute_mass_prediction": false,
+    "broken_dimension": 3,
+    "generalized_operator": "A_H=K_G^(-1) M_H",
+    "mass_form": "M_H=R_H^dagger R_H up to one common positive H^2 factor",
+    "measured_weak_angle_used": false,
+    "raw_Z_direction": "-5 W_3+3 B",
+    "raw_photon_direction": "W_3+B",
+    "spectrum": {
+      "charged_broken": {
+        "eigenvalue": "1/6",
+        "multiplicity": 2
+      },
+      "massless": {
+        "eigenvalue": "0",
+        "multiplicity": 9
+      },
+      "neutral_broken": {
+        "eigenvalue": "4/15",
+        "multiplicity": 1
+      }
+    },
+    "unbroken_algebra": "su3+u1_em",
+    "unbroken_dimension": 9
+  },
+  "frontier_delta": "T47 changes the free-state frontier rather than restating existence. On the same H>0 branch used by T45, the older symmetric-phase 24-gauge-plus-4-Higgs split is replaced by the exact BRST-cohomological 18-massless-gauge plus 9-massive-gauge plus 1-radial-Higgs split. The A47/A51 gauge source and selected future orientation now determine a unique pure quasifree Hadamard physical gauge ground state for every inherited positive common action scale. The R3 massless p=0 sector adds no selector. T45 and T47 therefore select two of the three corrected free factors; only the radial Higgs covariance remains. Absolute normalization, upper-action selection, determinant holonomy, fixed-coupling continuum, G1 and top-level G2 remain open, so physical counters do not move.",
+  "future_positive_CCR_state": {
+    "BRST_descended": true,
+    "Hadamard_on_static_flat_branch": true,
+    "complex_structure": "J_fut(q,p)=(-Omega^(-1)p,Omega q)",
+    "depends_on_inherited_absolute_action_scale": true,
+    "energy_phase_space": "Dom(Omega^(1/2)) direct_sum Dom(Omega^(-1/2))",
+    "new_state_parameter_count": 0,
+    "normalized": true,
+    "physical_frequency": "Omega_G,H=sqrt(-Delta+c_G H^2 A_H) on BRST cohomology, with inherited c_G>0",
+    "positive": true,
+    "pure": true,
+    "state": "the pure quasifree CCR state defined by J_fut on the physical Weyl algebra",
+    "unique_class": "regular spatially translation-invariant, stabilizer-invariant pure quasifree future ground states"
+  },
+  "generalized_mass_witness": {
+    "Z_vector": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-5",
+      "3"
+    ],
+    "absolute_common_mass_factor_selected": false,
+    "basis": [
+      "G_1",
+      "G_2",
+      "G_3",
+      "G_4",
+      "G_5",
+      "G_6",
+      "G_7",
+      "G_8",
+      "W_1",
+      "W_2",
+      "W_3",
+      "B"
+    ],
+    "broken_projector": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "5/8",
+        "-5/8"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-3/8",
+        "3/8"
+      ]
+    ],
+    "generalized_mass_operator": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "-1/6"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/10",
+        "1/10"
+      ]
+    ],
+    "generalized_spectrum": {
+      "0": 9,
+      "1/6": 2,
+      "4/15": 1
+    },
+    "kinetic_trace_metric": [
+      [
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10"
+      ]
+    ],
+    "mass_form_up_to_common_positive_H_squared_factor": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "1"
+      ]
+    ],
+    "photon_Z_K_pairing": "0",
+    "photon_vector": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "1"
+    ],
+    "unbroken_projector": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3/8",
+        "5/8"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3/8",
+        "5/8"
+      ]
+    ]
+  },
+  "massless_IR_zero_mode": {
+    "ball_integral_without_Fourier_normalization": "pi epsilon^2",
+    "compact_Cauchy_harmonic_modes_covered": false,
+    "global_compact_harmonic_sector": "outside the declared R3 branch and still open",
+    "new_zero_mode_state_parameter": false,
+    "projector_formula": "Pi_T(p)=I-p p^T/|p|^2 for p!=0",
+    "proof": "Fourier support of an L2 zero eigenvector would lie in the measure-zero singleton {0}; d^3p/(2|p|) has radial behavior r dr",
+    "radial_covariance_integrand_power": 1,
+    "samples": [
+      {
+        "momentum": [
+          "3",
+          "4",
+          "0"
+        ],
+        "projector": [
+          [
+            "16/25",
+            "-12/25",
+            "0"
+          ],
+          [
+            "-12/25",
+            "9/25",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "rank": 2,
+        "trace": "2"
+      },
+      {
+        "momentum": [
+          "1",
+          "2",
+          "2"
+        ],
+        "projector": [
+          [
+            "8/9",
+            "-2/9",
+            "-2/9"
+          ],
+          [
+            "-2/9",
+            "5/9",
+            "-4/9"
+          ],
+          [
+            "-2/9",
+            "-4/9",
+            "5/9"
+          ]
+        ],
+        "rank": 2,
+        "trace": "2"
+      }
+    ],
+    "spatial_dimension": 3,
+    "value_of_projector_at_p_zero_affects_distribution": false,
+    "zero_spectral_projection_on_L2_R3": 0
+  },
+  "oscillator_witness": {
+    "frequency": "5",
+    "future_complex_structure": [
+      [
+        "0",
+        "-1/5"
+      ],
+      [
+        "5",
+        "0"
+      ]
+    ],
+    "past_metric_minus_SJ": [
+      [
+        "-5",
+        "0"
+      ],
+      [
+        "0",
+        "-1/5"
+      ]
+    ],
+    "positive_metric_SJ": [
+      [
+        "5",
+        "0"
+      ],
+      [
+        "0",
+        "1/5"
+      ]
+    ],
+    "symplectic_form": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "-1",
+        "0"
+      ]
+    ]
+  },
+  "parameter_ledger": {
+    "gauge_fixing_xi": "xi=1 is a BRST presentation choice, not a physical parameter",
+    "inherited_future_time_orientation": 1,
+    "inherited_unresolved_common_gauge_action_scale": "c_G>0",
+    "inherited_unresolved_radial_scale": "H>0",
+    "new_continuous_state_selectors": 0,
+    "new_discrete_state_selectors": 0,
+    "new_fitted_parameters": 0,
+    "new_observed_inputs": 0,
+    "relative_gauge_trace_coefficients": "10:6:6 from A51"
+  },
+  "physical_boundary": {
+    "closed": [
+      "exact A51-metric generalized gauge-mass rank and stabilizer on the same H>0 branch",
+      "massless rank-two and massive rank-three positive BRST cohomology complexes",
+      "27 physical gauge polarizations with Goldstone directions counted exactly once",
+      "flat R3 massless zero-mode and infrared covariance lemma",
+      "unique future-positive pure quasifree Hadamard gauge state in the declared ground-state class",
+      "correction of the T46 symmetric-phase factorization on the H>0 branch",
+      "reduction of missing selected free-state factors from two to one"
+    ],
+    "open": [
+      "same-source radial Higgs Hessian covariance and future state",
+      "absolute gauge and Higgs action normalization",
+      "compact-cosmology harmonic gauge modes and holonomies",
+      "upper-action selection of the full interacting BV map",
+      "source-dependent determinant-line connection and holonomy",
+      "selected fixed-coupling regulator-independent continuum state",
+      "physical G1 tangent metric and q79 HYM universality"
+    ],
+    "physical_packets_accepted": 0,
+    "physical_packets_total": 3,
+    "physical_rows_accepted": 0,
+    "physical_rows_total": 7
+  },
+  "schema": "boe.mtt.selected-gauge-physical-future-state.v1",
+  "selected_gauge_source": {
+    "Lie_algebra_dimension": 12,
+    "absolute_common_action_coefficient_selected": false,
+    "background_gauge": "Hbar=(0,H/sqrt(2)); background Feynman-'t Hooft xi=1 for the contraction",
+    "branch": "T45 homogeneous flat direct branch on R^(1,3), future oriented, with the same constant single-Higgs radial background H>0",
+    "faithful_group": "(SU3 x SU2 x U1)/Z6",
+    "raw_gauge_trace_metric": "diag(6 I8,6 I3,10)",
+    "single_Higgs_representation": "complex SU2 doublet with Y=+1/2"
+  },
+  "source_provenance": {
+    "comparison_root": "3e445bfb40674624a693940c2de4e7bd53bec6dede64807031cf301c3ae2a0c9",
+    "construction_root": "28672e57e5e638e2b35ca18ce20e46ad3a0141b4cc8d2524c103daeb49772a99",
+    "contract": "selected_gauge_physical_future_state_contract.schema.json",
+    "contract_sha256": "d43f7f65071e6288a4e8bb4849a15e9655a37555e26655c273ed24bfbc17d2e6",
+    "handoff_id": "f223a622-f094-44bb-8825-633f8c2cf51f",
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "source_lock": "selected_gauge_physical_future_state_source_lock.json",
+    "source_lock_sha256": "e7f726fd77db1b494392a24bb06a18de5093caca027af4873251e35c933a23af"
+  },
+  "status": "exact same-source future-positive free physical gauge state on the homogeneous flat H>0 branch; radial Higgs state and full G2 remain open",
+  "title": "Selected gauge-physical future state, BRST, and zero-mode theorem"
+}

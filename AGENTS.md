@@ -50,7 +50,9 @@ paper, note, packet name or search hit.
    polarization and flat-branch free initial-state handoff is
    `383b5f8f-2fb9-47fa-acdc-92bf070f241b`; the selected future-state
    Moller/BV transport and full-G2 cutset handoff is
-   `679ecd00-572c-473c-9e8a-b7f7646c955d`;
+   `679ecd00-572c-473c-9e8a-b7f7646c955d`; the selected gauge-physical
+   future-state, broken-phase BRST and zero-mode handoff is
+   `f223a622-f094-44bb-8825-633f8c2cf51f`;
    the radial closure-attractor and state-marginal handoff is
    `5067bb6f-4704-4da5-a085-be56da8cd4b0`;
    the renormalized BV anchored repair-semiflow and global-intertwining

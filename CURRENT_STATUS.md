@@ -1702,3 +1702,51 @@ regulator and `0/9` for selected continuum promotion. Top-level physical
 acceptance remains `0/3` gates, `0/3` packets and `0/7` rows. T46 passes
 `60/60` builder checks, `111/111` independent checks and 15 focused tests;
 the full canonical suite passes all 357 tests.
+
+`SelectedGaugePhysicalFutureStateBRSTAndZeroModeTheorem_v1.md`
+(`CBF.T47`) resolves the next selected free-state factor and corrects the
+mode ledger on the `H>0` branch. In the raw A51 trace metric
+`K_G=diag(6 I8,6 I3,10)`, the one-Higgs gauge-mass form has generalized
+spectrum
+
+```text
+0 with multiplicity 9,
+1/6 with multiplicity 2,
+4/15 with multiplicity 1.
+```
+
+The unbroken algebra is exactly `su3+u1_em`; the other three electroweak
+directions are broken. The massless six-direction BRST complex has positive
+rank-two physical cohomology, while the broken seven-direction complex mixes
+one Goldstone coordinate with the gauge-longitudinal coordinate and has
+positive rank-three physical cohomology. Hence
+
+```text
+18 massless gauge + 9 massive gauge + 1 radial Higgs = 28,
+```
+
+which replaces the symmetric-phase `24 gauge + 4 Higgs` decomposition on
+this branch without changing the total degree count.
+
+The same future orientation as T45 selects the unique regular stationary
+pure quasifree ground-state complex structure
+
+```text
+J_fut(q,p)=(-Omega_G,H^(-1)p,Omega_G,H q)
+```
+
+on the rank-27 physical gauge cohomology. The massless `p=0` point adds no
+coordinate on spatial `R^3`: it has zero `L2` spectral projection and the
+vacuum covariance is locally integrable. Compact harmonic sectors remain a
+separate open global problem.
+
+The corrected free product is now
+`omega_gauge,H,phys tensor omega_h,rad tensor omega_Weyl`. T45 selects the
+Weyl factor and T47 the gauge factor, leaving exactly the radial Higgs
+fluctuation covariance open. The absolute common gauge-action coefficient,
+upper-action BV selection, determinant holonomy, fixed-coupling continuum,
+`G1`, q79 HYM universality and top-level `G2` remain open. No measured weak
+angle or vector mass enters. T47 passes `104/104` builder checks, `141/141`
+independent checks and 15 focused tests; the full canonical suite passes all
+372 tests. Physical acceptance remains `0/3` gates, `0/3` packets and `0/7`
+rows.

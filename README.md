@@ -1566,3 +1566,43 @@ remains `0/9`, and determinant holonomy remains open. T46 passes `60/60`
 builder checks, `111/111` independent checks and 15 focused tests; the full
 canonical suite passes all 357 tests. Physical gates remain `0/3`, packets
 `0/3` and rows `0/7`.
+
+The forty-seventh theorem corrects that factorization on the same `H>0`
+branch used by T45. The older local q79 state-existence theorem counted a
+symmetric-phase split,
+
+```text
+12 x 2 massless gauge + 4 Higgs = 28.
+```
+
+At nonzero constant single-Higgs background, the exact A51 trace-metric mass
+pencil instead has generalized spectrum
+
+```text
+0^9, (1/6)^2, (4/15)^1.
+```
+
+Its stabilizer is `su3+u1_em`. BRST cohomology therefore reorganizes the
+same 28 bosonic modes as
+
+```text
+9 x 2 massless gauge + 3 x 3 massive gauge + 1 radial Higgs
+  = 18 + 9 + 1
+  = 28.
+```
+
+The three Goldstone coordinates supply the three massive longitudinal modes
+and are not counted again as Higgs particles. The selected future orientation
+then fixes the pure quasifree physical gauge CCR ground state. On spatial
+`R^3`, the massless `p=0` singleton has no `L2` spectral weight and
+`d^3p/(2|p|)` is locally integrable, so it adds no state selector. Compact
+harmonic modes are explicitly outside this theorem.
+
+T45 now selects the Weyl factor and T47 the corrected gauge-physical factor;
+only the radial Higgs fluctuation covariance remains missing from the free
+product seed. The common gauge-action scale and `H` remain inherited
+unresolved scales, so no measured mass, mixing angle, fitted state, or
+absolute normalization is claimed. T47 passes `104/104` builder checks,
+`141/141` independent checks and 15 focused tests; the full canonical suite
+passes all 372 tests. Top-level gates remain `0/3`, packets `0/3` and rows
+`0/7`.
