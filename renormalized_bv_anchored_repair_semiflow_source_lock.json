@@ -1,0 +1,201 @@
+{
+  "schema": "boe.mtt.renormalized-bv-anchored-repair-semiflow-source-lock.v1",
+  "claim_id": "CBF.T39",
+  "date": "2026-08-30",
+  "handoff_id": "2446113d-ed17-4ea3-8a3e-30ce17582254",
+  "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "074336061a201a02eebcb595c6d329b396e92639",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+    "20 Mathematical Language Discovery Program - Closure Dynamics": "aafecf2201ab5573b63968175592062d91d10a0a",
+    "beq-papers": "acc186524ca2eaf04c7761aee4c03187ec70e1f1",
+    "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+  },
+  "local_sources": [
+    {
+      "path": "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md",
+      "sha256": "0ff31bf31252a7d5dbf2c534d366e5fcc31f532139716f1b22a8efb1694c42d4",
+      "role": "CBF.T35 fixed-source one-loop determinant and unique closure-jet subtraction"
+    },
+    {
+      "path": "frozen_source_four_dimensional_fermion_pushforward.packet.json",
+      "sha256": "7494875dae5fb2b8fc1240c4f43fcc1251ed153fbdac1801a4feea0d3566a6bc",
+      "role": "CBF.T35 executable logarithmic determinant, counterterm orbit and matched remainder"
+    },
+    {
+      "path": "PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md",
+      "sha256": "ba5a3c10bc3fe374126903ba58b254c35f12bb7398bb1c2746d0ac2ac5d21e0d",
+      "role": "CBF.T36 pointed two-jet retraction and physical selection boundary"
+    },
+    {
+      "path": "pointed_closure_germ_quantum_jet_matching.packet.json",
+      "sha256": "417a56fac1fbbd6ff6995a4a05e8c1004d6d3a6ed96c4e07d788752a2580eed1",
+      "role": "CBF.T36 exact jet matrix and finite naturality witnesses"
+    },
+    {
+      "path": "QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md",
+      "sha256": "e5b04f4c0ce4d1c89728ea44b0d8714a983c521480e48bc98e23b8a1ef04c6d1",
+      "role": "CBF.T37 differentiated action-measure-cycle Ward identity"
+    },
+    {
+      "path": "quantum_radial_anchor_tadpole.packet.json",
+      "sha256": "6a96cbedd5a35a886d17e32a6932881a9e4e5602f7707a2ece55b1e3457f15cb",
+      "role": "CBF.T37 exact T35 tadpole obstruction and QME-compatible counterterm orbit"
+    },
+    {
+      "path": "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
+      "sha256": "bfde0358a25e06268c181a1d8d9ca5cc3813aceeb91774021f329411efb782df",
+      "role": "CBF.T38 radial attractor, state marginal and global-semiflow sufficient condition"
+    },
+    {
+      "path": "radial_closure_attractor_state_marginal.packet.json",
+      "sha256": "43eabb2bb78a16bdf049e63c592df7aa29086228e4c8ca648b9582cc1114eabe",
+      "role": "CBF.T38 executable radial flow and T35 intertwining defect"
+    },
+    {
+      "path": "SameRootStateRepairHeatProfileAndRadialValuePromotionTheorem_v1.md",
+      "sha256": "cbd7ce99a9b7a3082fd9b1e4ed54acba08af54749e04056cadf76da4c5f405f7",
+      "role": "CBF.T34 same-root radial coordinate H and heat-profile source"
+    },
+    {
+      "path": "same_root_state_repair_heat_profile_radial_values.packet.json",
+      "sha256": "43b26294760ac42bb5788d57c3c1648f0691af14666e6e19758e20aaef4020f6",
+      "role": "CBF.T34 exact H and q4 source values"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_Renormalized_TimeOrdering_and_Local_QME_Anomaly_Cohomology_Theorem_v1.md",
+      "sha256": "a804a88680c518633253763da13a83b8cd8f723182d8375730de0f9b1898ee41",
+      "role": "q79 all-orders local formal QME normalization and SP freedom"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_renormalized_timeordering_local_qme.certificate.json",
+      "sha256": "2eda00330756193f6a19361c4154f378621f445ed5ad399d0d953cc042617f35",
+      "role": "executable q79 local anomaly-zero and renormalized-QME certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_FirstOrder_CostelloBV_and_GraphwiseCounterterm_Theorem_v1.md",
+      "sha256": "bc242a21f3533157bcca95a5ca48d095041c414ab2951f46b004afca91941c48",
+      "role": "q79 graphwise local counterterm recursion and exact RG composition"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_firstorder_costello_bv_graphwise_counterterm.certificate.json",
+      "sha256": "080e4f799bcf9c9c3d7504f3cedcb5739537a075f9390ebf1444ea5157ec02c5",
+      "role": "executable graphwise counterterm and QME primitive certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_LorentzianSpectralPresentation_SP_QME_and_RenormalizedCauchyBridge_Theorem_v1.md",
+      "sha256": "3d186643539e13d155d016e2b0e8fe5714d660b7e05724866baa430f08f09a04",
+      "role": "q79 Lorentzian SP comparison, QME restoration and Cauchy transport"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_lorentzian_spectral_sp_qme_cauchy_bridge.certificate.json",
+      "sha256": "818bfd8cb73fd31520825cc69c90c32268e31b73568fab2b0c2415b324219126",
+      "role": "executable Lorentzian local formal bridge certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_FiniteShell_BV_Pushforward_and_Gapped_Regulator_Comparison_Theorem_v1.md",
+      "sha256": "51e71daa83ee6a786a12dee4d7939ea239a0046d8599d136e38ec271d045031c",
+      "role": "finite-shell BV cycle, QME pushforward and gapped comparison theorem"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_finite_shell_bv_pushforward_regulator_comparison.certificate.json",
+      "sha256": "f8d8c12ea50bf69f544d9a9ab8af1fa4ab83d9e4ff31f06330d86e6c5feb0e74",
+      "role": "executable finite-shell Hodge-cycle and determinant comparison"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_DiffeomorphismTransported_RegulatorOrbit_Naturality_and_ReducedQuotient_Theorem_v1.md",
+      "sha256": "524ef742ecdfcc0de679daa049ce8b8e0b3b768273f75c5c74bfad1972180010",
+      "role": "zero-flux and determinant transport on the diffeomorphism presentation orbit"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_diffeomorphism_transported_regulator_orbit.certificate.json",
+      "sha256": "7ca197d562ec400ded2b7d96c426b4dc2cddbe30e6b5f8397a3c0e84298ea33c",
+      "role": "executable transported-cycle, zero-spectral-flow and determinant certificate"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_SM_DeterminantPhase_TorsorNoGo_and_NormalizedObservable_Quotient_Theorem_v1.md",
+      "sha256": "5572e76558b6d4cae6735fa054911b842dcb215901012def819b21bf86d44aa6",
+      "role": "common determinant-phase quotient and remaining relative-phase cutset"
+    },
+    {
+      "path": "../mtt-qm-source-proof/certificates/q79_sm_determinant_phase_torsor_quotient.certificate.json",
+      "sha256": "5b1f87db93754cb3791181924c36bfa74c3b2d825acd5451bd5f4f106179c637",
+      "role": "executable normalized-observable phase quotient"
+    },
+    {
+      "path": "../mtt-qm-source-proof/proof_corpus/q79_UniformGauss_GhostZeroBRST_WardDefect_and_ChiralMeasureReduction_Theorem_v1.md",
+      "sha256": "3e81856320cb2cc931b3ae8acdc77f18d20f9f87e6b962a17f50d9bbd31960e4",
+      "role": "separation of algebraic Ward closure from chiral measure Jacobian"
+    },
+    {
+      "path": "../20 Mathematical Language Discovery Program - Closure Dynamics/LOCAL_CLOSURE_REPAIR_DESCENT_AND_CONDITIONAL_ACTUALIZATION_FUNCTOR_THEOREM_v1.md",
+      "sha256": "3b41b8312a9b3aabeb4471ca7efb87c96ba90bc64b7b2a76f617436df66b7b29",
+      "role": "classical nonlinear repair descent and flow-intertwining theorem"
+    },
+    {
+      "path": "../20 Mathematical Language Discovery Program - Closure Dynamics/local_closure_repair_descent_and_conditional_actualization_functor.packet.json",
+      "sha256": "b83aadb5b7d611f11db0d5c307b897cc7230e0f7ebf06681beae4abbe789cafc",
+      "role": "executable classical repair-descent witnesses"
+    },
+    {
+      "path": "../../beq-papers/research/q79-fmo-same-source-repair-descent/FMO_Q79_UPPER_MAURER_CARTAN_TO_YANG_MILLS_RESTRICTION_THEOREM.md",
+      "sha256": "887011b04a4e908aebe1ccdaef46f58cbaa506a490705ffc5024e900ec78ddb4",
+      "role": "same-source upper-action to gradient-repair specialization at structural tier"
+    },
+    {
+      "path": "../../beq-papers/research/q79-fmo-same-source-repair-descent/results/fmo_q79_upper_action_yang_mills_restriction_certificate.json",
+      "sha256": "df6fedd2cc84a033d5379c4c0076d6ae8066597f2e75347b074b8cbd52b5964c",
+      "role": "executable same-action repair-law shape and physical-embedding boundary"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/proof_corpus/MTT_Selected_NeutralHiggsInsertionFunctorAndRadialCoordinateNormalization_v1.md",
+      "sha256": "c2a794b2baa7442d755c16ef1a5cdebf415d3b28e5a8f58f4c1d8cb13d3f7cd5",
+      "role": "A35 same-source neutral Higgs insertion and radial normalization"
+    },
+    {
+      "path": "../mtt-sm-parity-closure/certificates/selected_neutralhiggsinsertionfunctorandradialcoordinatenormalization_certificate.json",
+      "sha256": "fa46d7dcec0d9244e41b507b01f8d21bb96fb13af74ba3a5975f38a18ffe134d",
+      "role": "executable A35 radial normalization certificate"
+    }
+  ],
+  "external_primary_context": [
+    {
+      "url": "https://arxiv.org/abs/0706.1533",
+      "role": "Costello graphwise BV renormalization and effective-action composition"
+    },
+    {
+      "url": "https://arxiv.org/abs/1110.5232",
+      "role": "renormalized BV algebra and anomalous Master Ward identity"
+    },
+    {
+      "url": "https://arxiv.org/abs/1507.01221",
+      "role": "BV-BFV pushforward, boundary states, cutting and gluing"
+    },
+    {
+      "url": "https://arxiv.org/abs/1711.01213",
+      "role": "BV exact RG canonical maps and Polchinski-form flow"
+    },
+    {
+      "url": "https://arxiv.org/abs/0901.2038",
+      "role": "Stueckelberg-Petermann renormalization group and normalized comparison"
+    }
+  ],
+  "boundary": {
+    "full_BV_generator_terms_typed_before": true,
+    "full_BV_generator_terms_executed_on_physical_q79_endpoint": false,
+    "global_identity_radial_intertwining_decided_before": false,
+    "pointed_all_orders_anchor_prescription_constructed_before": false,
+    "local_formal_q79_QME_scheme_exists": true,
+    "finite_shell_free_BV_pushforward_exists": true,
+    "physical_fixed_coupling_interacting_BV_pushforward_exists": false,
+    "upper_MTT_selects_anchor_prescription": false,
+    "physical_QJ1_selected": false,
+    "physical_QJ2_selected": false,
+    "gravitational_QJ0_selected": false,
+    "physical_packet_acceptance_before": 0,
+    "physical_row_acceptance_before": 0,
+    "observed_values_used": false,
+    "fitted_coefficients_used": false,
+    "new_continuous_parameters": 0
+  }
+}

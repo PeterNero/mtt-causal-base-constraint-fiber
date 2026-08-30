@@ -47,6 +47,8 @@ paper, note, packet name or search hit.
    `3689d483-4adb-4990-9648-32e19012f716`;
    the radial closure-attractor and state-marginal handoff is
    `5067bb6f-4704-4da5-a085-be56da8cd4b0`;
+   the renormalized BV anchored repair-semiflow and global-intertwining
+   no-go handoff is `2446113d-ed17-4ea3-8a3e-30ce17582254`;
    the associated-matter BV4 handoff is
    `7a343059-b0e9-44fc-a725-733048697896`; the synthesis handoff is
    `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`; the founding handoff is

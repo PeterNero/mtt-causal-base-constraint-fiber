@@ -155,6 +155,10 @@
     "exact T34 radial square completion and nonlinear positive-basin attractor",
     "unique invariant radial state and formal local q79 state pullback",
     "repair-semiflow projection criterion for QJ1 and exact T35 intertwining defect",
+    "exact T35 no-go for global identity radial repair-flow equality in the allowed local orbit",
+    "unique four-source closure-jet anchored local-formal q79 BV evolution",
+    "formal pointed QJ1 and conditional action-jet QJ2 preservation",
+    "normalized connected-QFT versus gravitational QJ0 classification",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -249,6 +253,10 @@
     "interpretation of the auxiliary 96-dimensional odd lift as additional physical particle states",
     "that three structured source packets are three scalar physical parameters",
     "that every internal MTT direction is non-spatiotemporal",
+    "upper-MTT selection of the closure-jet anchored Stueckelberg-Petermann normalization",
+    "global equality of the complete tree and quantum radial repair flows",
+    "physical QJ1 from the existence of a local-formal anchored scheme",
+    "a selected tangent metric, wave-function normalization or fixed-coupling interacting BV pushforward",
     "a new globally original operator-theory identity"
   ],
   "controlling_status": "CURRENT_STATUS.md",
@@ -291,7 +299,8 @@
     "FrozenSourceFourDimensionalFermionPushforwardAndClosureJetRenormalizationTheorem_v1.md",
     "PointedClosureGermNaturalityAndQuantumJetMatchingSelectionBoundaryTheorem_v1.md",
     "QuantumRadialAnchorWardIdentityAndTadpoleSelectionBoundaryTheorem_v1.md",
-    "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md"
+    "RadialClosureAttractorStateMarginalAndQuantumProjectionBoundaryTheorem_v1.md",
+    "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -331,7 +340,8 @@
     "frozen_source_four_dimensional_fermion_pushforward.packet.json",
     "pointed_closure_germ_quantum_jet_matching.packet.json",
     "quantum_radial_anchor_tadpole.packet.json",
-    "radial_closure_attractor_state_marginal.packet.json"
+    "radial_closure_attractor_state_marginal.packet.json",
+    "renormalized_bv_anchored_repair_semiflow.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -371,7 +381,8 @@
     "python build_frozen_source_four_dimensional_fermion_pushforward.py",
     "python build_pointed_closure_germ_quantum_jet_matching.py",
     "python build_quantum_radial_anchor_tadpole.py",
-    "python build_radial_closure_attractor_state_marginal.py"
+    "python build_radial_closure_attractor_state_marginal.py",
+    "python build_renormalized_bv_anchored_repair_semiflow.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -406,7 +417,8 @@
     "frozen_source_four_dimensional_fermion_pushforward_contract.schema.json",
     "pointed_closure_germ_quantum_jet_matching_contract.schema.json",
     "quantum_radial_anchor_tadpole_contract.schema.json",
-    "radial_closure_attractor_state_marginal_contract.schema.json"
+    "radial_closure_attractor_state_marginal_contract.schema.json",
+    "renormalized_bv_anchored_repair_semiflow_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

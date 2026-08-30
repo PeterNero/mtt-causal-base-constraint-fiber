@@ -1306,3 +1306,54 @@ equivalent radial Ward primitive is still required. T38 passes `57/57`
 builder checks, `103/103` independent checks and 10 focused tests. The
 canonical suite passes 252 unit tests. Physical acceptance remains `0/3`
 packets and `0/7` rows.
+
+`RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md`
+(`CBF.T39`) resolves the literal full-flow target raised by T38. In the
+declared T35 radial identification, the logarithmic determinant contributes
+
+```text
+d^5/dh^5[-kappa_F q4_* h^4 log(h^2/mu^2)]
+=-48 kappa_F q4_*/h != 0.
+```
+
+All allowed local renormalizable radial counterterms lie in
+`span{1,h^2,h^4}` and have zero fifth derivative. Thus identity projection,
+one common positive radial metric and equality of the complete tree and
+quantum repair flows are mutually inconsistent on every open positive
+interval. The result is scoped: it does not exclude a sourced nonidentity
+projection, nonlinear field redefinition or different selected quantum
+metric.
+
+T39 replaces that impossible global target by pointed repair naturality. The
+map
+
+```text
+j_H^2 f=(f(H),f'(H),f''(H))
+```
+
+is an isomorphism on `span{1,h^2,h^4}` with determinant `16H^3`. It defines
+the unique retraction `R_H` that removes the value, slope and Hessian of the
+sum of the action, measure, determinant and cycle contributions. Applied
+coefficientwise to the local-formal q79 BV generator,
+
+```text
+partial_s Gamma_s^H=R_H beta_s^BV(Gamma_s^H),
+```
+
+it preserves `j_H^2 Gamma_s^H` at every perturbative bidegree. Existing q79
+QME, Costello recursion, Lorentzian Stueckelberg-Petermann and zero-anomaly
+results establish formal existence and compatibility. The three anchor
+conditions uniquely fix the three finite coefficients; they introduce no
+physical fit or free coefficient.
+
+Consequently local-formal pointed QJ1 is closed constructively and the
+action-jet part of QJ2 is preserved. T35's exact remainder has jets
+`(0,0,0,-16,-64,-48)`, proving agreement of the fixed point and tangent
+linearization while retaining nonlinear quantum corrections. Upper MTT has
+not selected this normalization as the physical q79 law. The physical
+tangent metric or wave-function normalization, fixed-coupling interacting
+BV pushforward, gravitational QJ0 and endpoint acceptance remain open.
+
+T39 passes `68/68` builder checks, `183/183` independent checks and 10
+focused tests. The canonical suite passes 262 unit tests. Physical acceptance
+remains `0/3` packets and `0/7` rows.

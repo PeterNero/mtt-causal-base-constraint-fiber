@@ -1226,3 +1226,41 @@ has a nonzero tadpole at `H`, proving that the currently truncated lower flow
 does not yet intertwine. T38 passes `57/57` builder checks, `103/103`
 independent checks and 10 focused tests. The canonical repository suite passes
 252 unit tests; physical acceptance remains `0/3` packets and `0/7` rows.
+
+The thirty-ninth theorem tests the strongest T38 repair-flow target rather
+than assuming it. In the T35 one-loop radial action, the fermion determinant
+contains
+
+```text
+-kappa_F q4_* h^4 log(h^2/mu^2).
+```
+
+Its fifth derivative is `-48 kappa_F q4_*/h`, while every allowed local
+counterterm in `span{1,h^2,h^4}` has zero fifth derivative. Therefore, with
+the identity radial projection and one common positive radial metric, the
+complete tree and quantum repair flows cannot agree on an open positive
+interval. This is a bounded no-go, not a failure of the fixed point: a
+nonidentity projection, selected field redefinition or selected quantum
+metric lies outside its assumptions.
+
+The correct local target is pointed repair naturality. For `H>0`, the
+two-jet map on `span{1,h^2,h^4}` has determinant `16H^3`; hence every full
+local BV scale generator
+
+```text
+beta_BV=beta_action+beta_measure+beta_determinant+beta_cycle
+```
+
+has a unique coefficientwise subtraction preserving its value, tadpole and
+Hessian at `H`. The resulting anchored formal flow preserves QJ1 and the
+action-jet part of QJ2 at every perturbative bidegree. T35 itself realizes
+this sharply: its normalized matched remainder has jets
+`(0,0,0,-16,-64,-48)` through fifth order, so fixed-point and tangent-flow
+agreement coexist with genuine nonlinear quantum corrections.
+
+This is a unique local-formal QME-compatible normalization, not yet a
+physical MTT selection theorem. The selected tangent metric, fixed-coupling
+interacting BV endpoint, gravitational absolute-vacuum QJ0 and upper-action
+selection remain open. T39 passes `68/68` builder checks, `183/183`
+independent checks and 10 focused tests. The canonical suite passes 262 unit
+tests; physical acceptance remains `0/3` packets and `0/7` rows.

@@ -1,0 +1,439 @@
+{
+  "schema": "boe.mtt.renormalized-bv-anchored-repair-semiflow.v1",
+  "claim_id": "CBF.T39",
+  "date": "2026-08-30",
+  "status": "GLOBAL_IDENTITY_RADIAL_INTERTWINING_EXCLUDED_FOR_T35_LOGARITHMIC_QUANTUM_ACTION_IN_ALLOWED_LOCAL_ORBIT_POINTED_QJ1_AND_ACTION_JET_QJ2_ANCHORED_FORMAL_BV_FLOW_CONSTRUCTED_UNIQUELY_PHYSICAL_UPPER_SELECTION_FIXED_COUPLING_COMPLETION_AND_GRAVITATIONAL_QJ0_OPEN",
+  "source_provenance": {
+    "source_lock": "renormalized_bv_anchored_repair_semiflow_source_lock.json",
+    "source_lock_sha256": "b8f08e6a7ae3ac27d58181e03adef6cd245d3ccfb41172627a400e2e893f83cd",
+    "schema": "renormalized_bv_anchored_repair_semiflow_contract.schema.json",
+    "schema_sha256": "0b187aef9c2f07ceb8c63d9149f1e5fe64b86cd1aee22c7250114768d76426b0",
+    "theorem": "RenormalizedBVAnchoredRepairSemiflowAndGlobalIntertwiningNoGoTheorem_v1.md",
+    "theorem_sha256": "eb25406a95a3316a0c7b98ef237ef94d0f0758fd50c4cfbf672f9c633de57c5a",
+    "repositories": {
+      "mtt-causal-base-constraint-fiber": "074336061a201a02eebcb595c6d329b396e92639",
+      "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "20 Mathematical Language Discovery Program - Closure Dynamics": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "beq-papers": "acc186524ca2eaf04c7761aee4c03187ec70e1f1",
+      "mtt-sm-parity-closure": "774bd880893043d5bcede64ae49020303e3d5d66"
+    },
+    "kernel_model_sha256": "592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8",
+    "source_inventory_hash": "e644fa2ce12eb9037ea837bcee38e59aca87dd17ec79702cd2a05693d37d96ad"
+  },
+  "quantum_bv_generator": {
+    "semidensity_pushforward": "Psi_s(h,phi_IR)=integral_(L_s(h)) exp[-S_s(h,phi_IR,chi)/hbar] rho_s^(1/2)",
+    "effective_action": "Gamma_s=-hbar log Psi_s",
+    "radial_Ward_identity": "partial_h Gamma_s=<partial_h S_s-hbar partial_h log rho_s^(1/2)>+B_s/Psi_s",
+    "raw_scale_generator": "beta_s^BV=beta_s^action+beta_s^measure+beta_s^determinant+beta_s^cycle",
+    "action_term_included": true,
+    "measure_term_included": true,
+    "determinant_term_included": true,
+    "cycle_boundary_term_included": true,
+    "terms_must_cancel_only_in_total": true,
+    "individual_termwise_vanishing_required": false,
+    "repair_parameter_identified_with_RG_scale": false,
+    "RG_scale_identified_with_Lorentzian_time": false,
+    "scope": "local formal q79 charts and finite/gapped shell presentations; a fixed-coupling nonperturbative integral is not asserted"
+  },
+  "q79_source_coverage": {
+    "local_formal_QME_scheme": true,
+    "SP_renormalization_freedom": true,
+    "graphwise_local_counterterm_recursion": true,
+    "exact_RG_composition": true,
+    "Lorentzian_QME_and_Ward_bridge": true,
+    "active_local_domain_boundary_gluing": true,
+    "finite_shell_free_BV_pushforward": true,
+    "diffeomorphism_orbit_zero_BFV_flux": true,
+    "diffeomorphism_orbit_determinant_transport": true,
+    "common_determinant_phase_drops_from_positive_source_derivatives": true,
+    "radial_background_change_is_a_diffeomorphism_presentation_orbit": false,
+    "QME_is_a_radial_stationarity_identity": false,
+    "physical_fixed_coupling_interacting_BV_pushforward": false,
+    "uniform_interacting_cutoff_removal": false,
+    "selected_global_interacting_state": false
+  },
+  "global_intertwining_no_go": {
+    "scope": "identity radial projection, common radial metric at the T34/T35 tier, and the allowed local counterterm class span{1,h^2,h^4}",
+    "fermion_log_term": "-kappa_F q4_* h^4 log(h^2/mu^2)",
+    "fifth_derivative": "-48 kappa_F q4_*/h",
+    "q4_star_exact_coefficients": {
+      "rational": "356/27",
+      "sqrt13": "25/27"
+    },
+    "q4_star_positive": true,
+    "H_positive": true,
+    "fifth_derivative_at_H_per_kappa_in_Lambda_minus_one_units": "-600.359271843292819897635151785554697068873903937370253865311439935410037632957172131565691",
+    "fifth_derivative_at_H_is_nonzero": true,
+    "allowed_counterterm_fifth_derivative": "0",
+    "global_same_metric_gradient_equality_would_force_fifth_derivative_zero": true,
+    "global_identity_radial_repair_intertwining_possible": false,
+    "bare_tadpole_over_kappa_Lambda3": "-100.114483627430279588255506887696895827724576220833743543915782457764101035430506698860949",
+    "bare_tadpole_is_nonzero": true,
+    "nonlinear_field_redefinition_or_unsourced_metric_escape_excluded": false,
+    "no_go_is_universal_beyond_declared_scope": false,
+    "correct_replacement": "pointed fixed-point and tangent-flow intertwining through the first jet of the repair vector field"
+  },
+  "pointed_anchor_retraction": {
+    "jet_map": "j_H^2 f=(f(H),f'(H),f''(H))",
+    "local_counterterm_space": "C_even=span{1,h^2,h^4}",
+    "determinant": "det(j_H^2|C_even)=16 H^3",
+    "H_positive_makes_map_invertible": true,
+    "counterterm_formula": {
+      "a0": "b0-(5/8)H b1+(1/8)H^2 b2",
+      "a2": "(3 b1-H b2)/(4H)",
+      "a4": "(H b2-b1)/(8H^3)"
+    },
+    "C_H": "C_H[f]=a0+a2 h^2+a4 h^4",
+    "R_H": "R_H=I-C_H",
+    "identities": [
+      "j_H^2 C_H=j_H^2",
+      "j_H^2 R_H=0",
+      "C_H^2=C_H",
+      "R_H^2=R_H"
+    ],
+    "four_term_linearity": "R_H beta_BV=sum_X R_H beta_BV^X for X=action,measure,determinant,cycle",
+    "witness": {
+      "rational_anchor_H": "3/2",
+      "components": {
+        "action_insertion": {
+          "polynomial_coefficients_ascending": [
+            "2",
+            "0",
+            "3",
+            "0",
+            "5",
+            "0",
+            "7"
+          ],
+          "counterterm_coefficients_ascending": [
+            "5231/64",
+            "0",
+            "-1653/16",
+            "0",
+            "209/4"
+          ],
+          "remainder_coefficients_ascending": [
+            "-5103/64",
+            "0",
+            "1701/16",
+            "0",
+            "-189/4",
+            "0",
+            "7"
+          ],
+          "remainder_jet_0_1_2": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "measure_density": {
+          "polynomial_coefficients_ascending": [
+            "1",
+            "0",
+            "-2",
+            "0",
+            "4",
+            "0",
+            "-3"
+          ],
+          "counterterm_coefficients_ascending": [
+            "-2123/64",
+            "0",
+            "697/16",
+            "0",
+            "-65/4"
+          ],
+          "remainder_coefficients_ascending": [
+            "2187/64",
+            "0",
+            "-729/16",
+            "0",
+            "81/4",
+            "0",
+            "-3"
+          ],
+          "remainder_jet_0_1_2": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "determinant_density": {
+          "polynomial_coefficients_ascending": [
+            "0",
+            "0",
+            "5",
+            "0",
+            "-1",
+            "0",
+            "2"
+          ],
+          "counterterm_coefficients_ascending": [
+            "729/32",
+            "0",
+            "-203/8",
+            "0",
+            "25/2"
+          ],
+          "remainder_coefficients_ascending": [
+            "-729/32",
+            "0",
+            "243/8",
+            "0",
+            "-27/2",
+            "0",
+            "2"
+          ],
+          "remainder_jet_0_1_2": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "cycle_boundary": {
+          "polynomial_coefficients_ascending": [
+            "3",
+            "0",
+            "1",
+            "0",
+            "-4",
+            "0",
+            "1"
+          ],
+          "counterterm_coefficients_ascending": [
+            "921/64",
+            "0",
+            "-227/16",
+            "0",
+            "11/4"
+          ],
+          "remainder_coefficients_ascending": [
+            "-729/64",
+            "0",
+            "243/16",
+            "0",
+            "-27/4",
+            "0",
+            "1"
+          ],
+          "remainder_jet_0_1_2": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "total_polynomial_coefficients_ascending": [
+        "6",
+        "0",
+        "7",
+        "0",
+        "4",
+        "0",
+        "7"
+      ],
+      "total_jet_0_1_2": [
+        "7791/64",
+        "6303/16",
+        "9481/8"
+      ],
+      "total_counterterm_coefficients_ascending": [
+        "5487/64",
+        "0",
+        "-1589/16",
+        "0",
+        "205/4"
+      ],
+      "total_remainder_coefficients_ascending": [
+        "-5103/64",
+        "0",
+        "1701/16",
+        "0",
+        "-189/4",
+        "0",
+        "7"
+      ],
+      "total_remainder_jet_0_1_2": [
+        "0",
+        "0",
+        "0"
+      ],
+      "counterterm_is_linear_over_four_BV_terms": true,
+      "retraction_is_linear_over_four_BV_terms": true,
+      "retraction_is_idempotent": true,
+      "matching_matrix_determinant": "16 H^3",
+      "matching_matrix_determinant_at_witness": "54"
+    }
+  },
+  "anchored_formal_bv_flow": {
+    "raw_evolution": "partial_s Gamma_s=beta_s^BV(Gamma_s)",
+    "anchored_evolution": "partial_s Gamma_s^H=R_H beta_s^BV(Gamma_s^H)",
+    "initial_condition": "j_H^2 Gamma_0^H=j_H^2 P_*",
+    "jet_conservation": "partial_s j_H^2 Gamma_s^H=0",
+    "QJ1_formal_consequence": "partial_h Gamma_s^H(H)=0 at every formal order",
+    "QJ2_formal_action_jet_consequence": "partial_h^2 Gamma_s^H(H)=partial_h^2 P_*(H)",
+    "QJ2_metric_requirement_remaining": "the physical tangent metric or wave-function normalization at H",
+    "QJ0_formal_action_jet_consequence": "Gamma_s^H(H)=P_*(H)",
+    "formal_existence": "Costello graph recursion plus zero q79 anomaly gives an anchored coefficientwise solution at every finite perturbative bidegree",
+    "formal_uniqueness": "for each raw coefficient and H>0, the three local coefficients are uniquely fixed by the three anchor equations",
+    "composition": "the unique normalized anchored SP comparisons obey the scale cocycle; equivalently the extended (s,Gamma) evolution is a formal semiflow",
+    "new_free_counterterm_coefficients": 0,
+    "finite_normalization_conditions": 3,
+    "upper_MTT_selects_this_normalization": false,
+    "physical_fixed_coupling_flow_claimed": false
+  },
+  "T35_pointed_execution": {
+    "normalized_matched_remainder": "rho(x)=x^4(3/2-log(x^2))-2x^2+1/2",
+    "action_jets_at_x_equal_one": {
+      "value": 0,
+      "first": 0,
+      "second": 0,
+      "third": -16,
+      "fourth": -64,
+      "fifth": -48
+    },
+    "repair_vector_field_difference_at_H": 0,
+    "repair_vector_field_linearization_difference_at_H": 0,
+    "repair_vector_field_quadratic_jet_difference_is_nonzero": true,
+    "global_repair_vector_fields_equal": false,
+    "fifth_h_derivative_per_kappa_Lambda_inverse": "-600.359271843292819897635151785554697068873903937370253865311439935410037632957172131565691",
+    "pointed_fixed_point_intertwining": true,
+    "pointed_tangent_intertwining_given_common_metric_at_H": true,
+    "nonlinear_quantum_corrections_retained": true
+  },
+  "qme_and_ward_compatibility": {
+    "radial_counterterms": "a0+a2 h^2+a4 h^4",
+    "ghost_number": 0,
+    "antifield_degree": 0,
+    "Higgs_radius_is_BRST_invariant": true,
+    "BV_laplacian_of_radial_counterterms": 0,
+    "self_BV_bracket_of_radial_counterterms": 0,
+    "local_gauge_anomaly_class": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "formal_QME_compatible_scheme_exists": true,
+    "QME_selects_anchor_coefficients": false,
+    "Ward_identity_selects_anchor_coefficients": false,
+    "why_not": "the radial potential terms are nontrivial ghost-zero gauge-invariant finite normalization directions, not gauge-anomaly representatives",
+    "cycle_boundary_scope": "zero or canceled on the declared boundaryless local bridge and exact on transported diffeomorphism orbits; arbitrary physical boundaries remain open"
+  },
+  "QJ_classification": {
+    "QJ1_local_formal_anchor_scheme": "closed_constructively",
+    "QJ1_selected_physical_q79_law": "open",
+    "QJ2_local_formal_action_Hessian": "closed_constructively",
+    "QJ2_physical_normalized_Hessian": "open_tangent_metric_or_wavefunction",
+    "QJ0_normalized_connected_QFT_common_phase": "quotiented_not_a_physical_exit",
+    "QJ0_gravitational_absolute_vacuum": "open",
+    "global_tree_quantum_repair_flow_identity": "excluded_in_declared_T35_scope",
+    "correct_quantum_naturality_level": "pointed first-jet repair-vector intertwining, not equality of the full nonlinear tree and quantum repair flows"
+  },
+  "parameter_ledger": {
+    "new_physical_continuous_parameters": 0,
+    "new_physical_discrete_selectors": 0,
+    "new_fits": 0,
+    "new_observed_inputs": 0,
+    "finite_anchor_normalization_conditions": 3,
+    "free_coefficients_after_anchor_conditions": 0,
+    "anchor_H_source": "CBF.T34 same-root finite/formal radial coordinate",
+    "anchor_conditions_are_a_physical_prediction": false,
+    "repair_parameter_is_physical_time": false
+  },
+  "physical_boundary": {
+    "physical_QJ1_selected": false,
+    "physical_QJ2_selected": false,
+    "gravitational_QJ0_selected": false,
+    "full_global_intertwiner_required_for_QJ1": false,
+    "pointed_anchor_scheme_available_without_observed_input": true,
+    "pointed_anchor_scheme_selected_by_upper_action": false,
+    "physical_interacting_q79_BV_endpoint_executed": false,
+    "full_loop_content_executed": false,
+    "RG_beta_functions_and_matching_executed": false,
+    "fixed_coupling_nonperturbative_completion": false,
+    "acceptance_counters_change": false
+  },
+  "physical_packets_accepted": 0,
+  "physical_packets_total": 3,
+  "physical_rows_accepted": 0,
+  "physical_rows_total": 7,
+  "frontier_delta": "T39 proves that literal identity-projection equality of the full T34 tree and T35 quantum radial repair flows is impossible within the allowed local renormalizable counterterm orbit, because the fermion logarithm has nonzero fifth derivative. It replaces that impossible target with the unique all-orders local-formal q79 BV normalization that preserves the selected value, tadpole and Hessian at H. This closes formal pointed QJ1 and the action-jet part of QJ2, but the upper physical action has not selected the normalization. Physical QJ1, metric-normalized QJ2, gravitational QJ0 and acceptance remain open.",
+  "checks": {
+    "source_01_hash_matches": true,
+    "source_02_hash_matches": true,
+    "source_03_hash_matches": true,
+    "source_04_hash_matches": true,
+    "source_05_hash_matches": true,
+    "source_06_hash_matches": true,
+    "source_07_hash_matches": true,
+    "source_08_hash_matches": true,
+    "source_09_hash_matches": true,
+    "source_10_hash_matches": true,
+    "source_11_hash_matches": true,
+    "source_12_hash_matches": true,
+    "source_13_hash_matches": true,
+    "source_14_hash_matches": true,
+    "source_15_hash_matches": true,
+    "source_16_hash_matches": true,
+    "source_17_hash_matches": true,
+    "source_18_hash_matches": true,
+    "source_19_hash_matches": true,
+    "source_20_hash_matches": true,
+    "source_21_hash_matches": true,
+    "source_22_hash_matches": true,
+    "source_23_hash_matches": true,
+    "source_24_hash_matches": true,
+    "source_25_hash_matches": true,
+    "source_26_hash_matches": true,
+    "source_27_hash_matches": true,
+    "source_28_hash_matches": true,
+    "source_29_hash_matches": true,
+    "schema_id_matches": true,
+    "theorem_exists": true,
+    "T38_predecessor_is_green": true,
+    "q79_local_formal_QME_source_is_green": true,
+    "q79_Costello_counterterm_source_is_green": true,
+    "q79_Lorentzian_bridge_source_is_green": true,
+    "q79_finite_shell_source_is_green": true,
+    "q79_diffeomorphism_transport_source_is_green": true,
+    "q79_determinant_phase_source_is_green": true,
+    "all_four_BV_generator_terms_included": true,
+    "global_intertwining_no_go_has_nonzero_fifth_derivative": true,
+    "quartic_counterterm_cannot_cancel_fifth_derivative": true,
+    "no_go_scope_is_not_overstated": true,
+    "anchor_retraction_is_linear": true,
+    "anchor_counterterm_is_linear": true,
+    "anchor_retraction_is_idempotent": true,
+    "anchor_remainder_has_zero_two_jet": true,
+    "anchor_matrix_is_invertible": true,
+    "q79_exact_RG_composition_is_sourced": true,
+    "q79_QME_scheme_is_sourced": true,
+    "q79_finite_shell_pushforward_is_sourced": true,
+    "radial_change_not_misclassified_as_diffeomorphism": true,
+    "QME_not_misclassified_as_radial_stationarity": true,
+    "anchored_flow_preserves_QJ1_formally": true,
+    "anchored_flow_has_no_free_counterterm_coefficients": true,
+    "anchored_flow_not_physically_promoted": true,
+    "T35_pointed_fixed_point_intertwining_closes": true,
+    "T35_pointed_tangent_intertwining_is_typed": true,
+    "T35_full_nonlinear_flow_equality_is_rejected": true,
+    "T35_fifth_normalized_jet_is_exact": true,
+    "radial_counterterms_are_QME_compatible": true,
+    "QME_does_not_select_anchor": true,
+    "normalized_QJ0_is_retyped": true,
+    "gravitational_QJ0_remains_open": true,
+    "physical_QJ1_remains_open": true,
+    "physical_QJ2_remains_open": true,
+    "physical_acceptance_unchanged": true,
+    "no_observed_input_or_fit": true,
+    "no_new_physical_parameter": true
+  },
+  "check_summary": {
+    "passed": 68,
+    "total": 68,
+    "failed": []
+  }
+}
