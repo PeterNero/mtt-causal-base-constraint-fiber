@@ -1,8 +1,8 @@
 # q79 Hermitian-Metric Hodge-Coefficient and First-Variation Compiler Theorem
 
-**Identifier:** CBF.T52  
-**Date:** 2026-08-31  
-**Tier:** exact supplied-metric compiler  
+**Identifier:** CBF.T52
+**Date:** 2026-08-31
+**Tier:** exact supplied-metric compiler
 **Physical status:** this theorem does not select the physical q79 metric,
 Fu-Yau conformal factor, common visible-hidden HYM connection, gauge
 projectors, rank-102 differential, chirality, action or quantum pushforward.
@@ -322,4 +322,3 @@ The generated artifact is
 ```text
 q79_hermitian_metric_hodge_compiler.packet.json.
 ```
-
