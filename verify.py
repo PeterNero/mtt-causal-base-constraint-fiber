@@ -112,6 +112,8 @@ def main() -> None:
     run(sys.executable, "verify_selected_radial_higgs_future_state.py")
     run(sys.executable, "build_common_action_quantum_torsor.py")
     run(sys.executable, "verify_common_action_quantum_torsor.py")
+    run(sys.executable, "build_normalized_orientation_coframe_bv_bridge.py")
+    run(sys.executable, "verify_normalized_orientation_coframe_bv_bridge.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

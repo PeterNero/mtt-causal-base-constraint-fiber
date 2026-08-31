@@ -1698,3 +1698,55 @@ real slice, same-upper full BV action, determinant holonomy and fixed-coupling
 continuum remain open. T49 passes `58/58` builder checks, `116/116`
 independent checks and 15 focused tests; the full canonical suite passes all
 402 tests. Physical counters remain `0/3` gates, `0/3` packets and `0/7` rows.
+
+The fiftieth theorem composes the normalization result with the exact q79
+unit/orientation retract and the selected-branch response/coframe density.
+H4-T16 supplies
+
+```text
+A_or=span{1,nu},
+tau(1)=0,
+tau(nu)=1,
+nu^2=0.
+```
+
+Its cyclic pairing is `[[0,1],[1,0]]`; the normalized Hodge metric on this
+two-profile sector is the identity. The only unital, degree-preserving,
+trace-compatible antilinear involution is
+
+```text
+J_A(1)=1,
+J_A(nu)=nu.
+```
+
+After the declared `A_QG` and binary `A_causal` inputs, the q79 response
+theorem gives `mu_response=dV_g_e`. The product density and retained BV lift
+are therefore
+
+```text
+mu_10=mu_response tensor nu,
+field profile=1,
+antifield profile=nu.
+```
+
+Fiber integration is exact because `tau(nu)=tau(1*nu)=1`. It preserves both
+the external density and field-dual pairing, so
+
+```text
+Red(mu_10)=mu_response,
+alpha_upper=alpha_lower.
+```
+
+Before normalization, a temporary orientation scale gives a rank-two
+`(f0,s)` amplitude Jacobian. The equation `tau(s nu)=s=1` removes that tangent
+and leaves T49's rank-one common action orbit. T50 consequently adds zero
+continuous density or action primitives.
+
+This is exact only on the retained orientation profile. H4-T17 forbids
+silently deleting all 86 other bare topology modes, and H4-T18 forbids using
+an ungraded positive Hessian to select chirality. The independently selected
+upper action, full q79 Hodge/field real slice, associated-matter operator,
+Lorentzian full BV domain and QME pushforward remain open. The global H4-T15
+decision stays `AUXILIARY_COTANGENT_REDUCTION_ONLY`, and physical counters do
+not move. T50 passes `75/75` builder checks, `155/155` independent checks and
+15 focused tests; the full canonical suite passes all 417 tests.

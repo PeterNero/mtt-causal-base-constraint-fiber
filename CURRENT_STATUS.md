@@ -1848,3 +1848,53 @@ fixed-coupling continuum and strict source selection of `alpha` remain open.
 T49 passes `58/58` builder checks, `116/116` independent checks and 15 focused
 tests; the full canonical suite passes all 402 tests. Physical acceptance
 remains `0/3` gates, `0/3` packets and `0/7` rows.
+
+`NormalizedOrientationCoframeDensityAndOnePrimitiveBVProfileBridgeTheorem_v1.md`
+(`CBF.T50`) composes three hash-locked results without promoting their open
+premises: H4-T16's exact q79 unit/orientation right inverse, the selected-branch
+q79 response/coframe density after `A_QG/A_causal`, and T49's one action
+primitive `alpha=f0/hbar`.
+
+On `A_or=span{1,nu}`, the exact data are
+
+```text
+tau(1)=0,
+tau(nu)=1,
+nu^2=0,
+G_A=[[0,1],[1,0]],
+M_A=I2.
+```
+
+Trace compatibility uniquely fixes the retained antilinear real involution to
+`J_A(1)=1`, `J_A(nu)=nu`. This is a real-structure theorem for the retained
+orientation profile, not for the full physical q79 field carrier.
+
+The selected-branch density satisfies `mu_response=dV_g_e`. Therefore
+
+```text
+mu_10=mu_response tensor nu,
+Red(mu_10)=mu_response,
+tau(1*nu)=1,
+alpha_upper=alpha_lower.
+```
+
+The field/unit and antifield/orientation lift preserves the odd symplectic
+pairing exactly. A temporary orientation scale raises the pre-normalization
+amplitude Jacobian rank from one to two, but `tau(s nu)=s=1` removes that
+direction. The post-normalization rank is one, and T50 adds zero continuous
+normalization primitives.
+
+The H4-T15 audit advances only the retained profile parts of C1, C2, C4 and
+C7, plus the selected gravitational coframe portion of C0/C8 and the exact C10
+ledger. No complete bridge clause is claimed closed. H4-T17's 86-mode index
+obstruction and H4-T18's positive-Hessian chirality no-go are preserved. The
+global decision remains `AUXILIARY_COTANGENT_REDUCTION_ONLY`.
+
+Primitive `A_QG/A_causal` selection, the full q79 Hodge/real field carrier,
+visible-hidden HYM endpoint, complement-mode disposition, associated chiral
+operator, independently selected upper field action, complete Lorentzian BV
+domain, determinant orientation, interacting pushforward, QME transport and
+strict `alpha` source remain open. `B.GEO.01`, `B.ACTION.01` and `B.QFT.02`
+remain open; physical acceptance stays `0/3` gates, `0/3` packets and `0/7`
+rows. T50 passes `75/75` builder checks, `155/155` independent checks and 15
+focused tests; the full canonical suite passes all 417 tests.

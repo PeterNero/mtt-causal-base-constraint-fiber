@@ -371,7 +371,8 @@
     "SelectedFutureStateMollerBVTransportAndFullG2CutsetTheorem_v1.md",
     "SelectedGaugePhysicalFutureStateBRSTAndZeroModeTheorem_v1.md",
     "SelectedRadialHiggsFutureStateAndCompleteFreeSeedTheorem_v1.md",
-    "CommonActionQuantumTorsorAndOnePrimitiveBVNormalizationTheorem_v1.md"
+    "CommonActionQuantumTorsorAndOnePrimitiveBVNormalizationTheorem_v1.md",
+    "NormalizedOrientationCoframeDensityAndOnePrimitiveBVProfileBridgeTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -422,7 +423,8 @@
     "selected_future_state_moller_bv_transport.packet.json",
     "selected_gauge_physical_future_state.packet.json",
     "selected_radial_higgs_future_state.packet.json",
-    "common_action_quantum_torsor.packet.json"
+    "common_action_quantum_torsor.packet.json",
+    "normalized_orientation_coframe_bv_bridge.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -473,7 +475,8 @@
     "python build_selected_future_state_moller_bv_transport.py",
     "python build_selected_gauge_physical_future_state.py",
     "python build_selected_radial_higgs_future_state.py",
-    "python build_common_action_quantum_torsor.py"
+    "python build_common_action_quantum_torsor.py",
+    "python build_normalized_orientation_coframe_bv_bridge.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -519,7 +522,8 @@
     "selected_future_state_moller_bv_transport_contract.schema.json",
     "selected_gauge_physical_future_state_contract.schema.json",
     "selected_radial_higgs_future_state_contract.schema.json",
-    "common_action_quantum_torsor_contract.schema.json"
+    "common_action_quantum_torsor_contract.schema.json",
+    "normalized_orientation_coframe_bv_bridge_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

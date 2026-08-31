@@ -56,7 +56,9 @@ paper, note, packet name or search hit.
    future-state and complete free-seed handoff is
    `c458f2b0-f8e3-4e61-8f94-c5e65d8c207f`; the common action-quantum torsor
    and one-primitive BV-normalization handoff is
-   `faa91fff-1f6b-4519-ae7a-b0ff0df467ab`;
+   `faa91fff-1f6b-4519-ae7a-b0ff0df467ab`; the normalized orientation,
+   coframe-density and one-primitive BV-profile bridge handoff is
+   `5c231909-d8b5-4929-be65-b442cbdd014d`;
    the radial closure-attractor and state-marginal handoff is
    `5067bb6f-4704-4da5-a085-be56da8cd4b0`;
    the renormalized BV anchored repair-semiflow and global-intertwining

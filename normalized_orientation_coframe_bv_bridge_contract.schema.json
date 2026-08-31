@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.normalized-orientation-coframe-bv-bridge.v1",
+  "title": "CBF.T50 normalized orientation/coframe BV profile bridge",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "normalized_orientation_frobenius",
+    "unique_profile_real_structure",
+    "coframe_product_density",
+    "exact_bv_profile_retract",
+    "normalization_rank_reduction",
+    "bridge_clause_audit",
+    "parameter_ledger",
+    "physical_boundary",
+    "frontier_delta",
+    "exact_payload_sha256",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.normalized-orientation-coframe-bv-bridge.v1"
+    },
+    "claim_id": {
+      "const": "CBF.T50"
+    },
+    "date": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "source_provenance": {
+      "type": "object"
+    },
+    "normalized_orientation_frobenius": {
+      "type": "object"
+    },
+    "unique_profile_real_structure": {
+      "type": "object"
+    },
+    "coframe_product_density": {
+      "type": "object"
+    },
+    "exact_bv_profile_retract": {
+      "type": "object"
+    },
+    "normalization_rank_reduction": {
+      "type": "object"
+    },
+    "bridge_clause_audit": {
+      "type": "object"
+    },
+    "parameter_ledger": {
+      "type": "object"
+    },
+    "physical_boundary": {
+      "type": "object"
+    },
+    "frontier_delta": {
+      "type": "string"
+    },
+    "exact_payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checks": {
+      "type": "object"
+    },
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "all_passed"]
+    }
+  },
+  "additionalProperties": false
+}

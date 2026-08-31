@@ -1,0 +1,564 @@
+{
+  "bridge_clause_audit": {
+    "C0_base_and_source": {
+      "closed": false,
+      "open": "complete externalized upper field source",
+      "state": "PARTIAL_EXTERNAL_BASE_AFTER_DECLARED_INPUTS"
+    },
+    "C10_provenance_and_parameters": {
+      "closed": false,
+      "open": "strict alpha, A_QG and A_causal source selection",
+      "state": "EXACT_LEDGER"
+    },
+    "C1_primal_contraction": {
+      "closed": false,
+      "open": "86-mode disposition and coupled bundle complex",
+      "state": "EXACT_ON_UNIT_ORIENTATION_PROFILE"
+    },
+    "C2_cotangent_lift": {
+      "closed": false,
+      "open": "coisotropic reduction or BV pushforward for eliminated modes",
+      "state": "EXACT_ON_RETAINED_PROFILE_PAIRING"
+    },
+    "C3_representation_and_phase": {
+      "closed": false,
+      "open": "charged matter, Higgs and first-order chiral operator",
+      "state": "OPEN"
+    },
+    "C4_density_and_normalization": {
+      "closed": false,
+      "open": "full-carrier physical Hodge density and endpoint normalization",
+      "state": "EXACT_ON_SELECTED_BRANCH_NORMALIZED_PROFILE"
+    },
+    "C5_field_only_action": {
+      "closed": false,
+      "open": "independently selected upper action",
+      "state": "RIGHT_INVERSE_ONLY"
+    },
+    "C6_BV_differential_and_action": {
+      "closed": false,
+      "open": "full Koszul-Tate, BRST and antifield action",
+      "state": "OPEN"
+    },
+    "C7_reality_statistics_grading": {
+      "closed": false,
+      "open": "full field reality, statistics, ghost and chirality comparison",
+      "state": "EXACT_ON_INTERNAL_ORIENTATION_PROFILE"
+    },
+    "C8_gauge_fixing_and_domain": {
+      "closed": false,
+      "open": "full Lorentzian hyperbolic and Dirac BV domains",
+      "state": "GRAVITATIONAL_TT_PRINCIPAL_SYMBOL_ONLY"
+    },
+    "C9_BV_pushforward": {
+      "closed": false,
+      "open": "UV Lagrangian, determinant orientation, anomaly and QME transport",
+      "state": "OPEN"
+    },
+    "global_decision": "AUXILIARY_COTANGENT_REDUCTION_ONLY",
+    "global_decision_changed": false
+  },
+  "check_summary": {
+    "all_passed": true,
+    "passed": 75,
+    "total": 75
+  },
+  "checks": {
+    "H4_T15_certificate_passes": true,
+    "H4_T15_decision_is_auxiliary": true,
+    "H4_T15_density_was_missing": true,
+    "H4_T15_field_action_mismatch_is_preserved": true,
+    "H4_T15_real_slice_was_missing": true,
+    "H4_T15_theorem_preserves_direct_identification_no_go": true,
+    "H4_T16_certificate_passes": true,
+    "H4_T16_complement_dimension_is_86": true,
+    "H4_T16_full_dimension_is_88": true,
+    "H4_T16_hodge_metric_matches_recomputation": true,
+    "H4_T16_orientation_dimension_is_two": true,
+    "H4_T16_pairing_matches_recomputation": true,
+    "H4_T16_physical_hodge_is_open": true,
+    "H4_T16_reduction_is_identity": true,
+    "H4_T16_source_selection_is_open": true,
+    "H4_T16_trace_is_normalized": true,
+    "H4_T17_all_86_lift_is_impossible": true,
+    "H4_T17_certificate_passes": true,
+    "H4_T17_minimum_complement_is_two": true,
+    "H4_T18_certificate_passes": true,
+    "H4_T18_endpoint_is_open": true,
+    "H4_T18_hessian_does_not_select_chirality": true,
+    "RCE_A_QG_is_declared_not_derived": true,
+    "RCE_A_causal_is_declared_binary_input": true,
+    "RCE_all_checks_pass": true,
+    "RCE_coframe_volume_is_exact": true,
+    "RCE_metric_reconstruction_is_exact_after_inputs": true,
+    "RCE_packet_schema_is_exact": true,
+    "RCE_primitive_selection_is_open": true,
+    "RCE_theorem_preserves_declared_inputs": true,
+    "RCE_time_orientation_origin_is_open": true,
+    "T49_alpha_value_is_open": true,
+    "T49_one_primitive_before_composition": true,
+    "T49_packet_passes": true,
+    "T49_shared_primitive_is_alpha": true,
+    "T49_theorem_preserves_alpha_open": true,
+    "all_action_samples_reduce_exactly": true,
+    "all_source_hashes_match": true,
+    "all_source_paths_exist": true,
+    "all_source_paths_were_clean_when_locked": true,
+    "coframe_and_response_volumes_agree": true,
+    "contract_claim_is_T50": true,
+    "contract_schema_is_exact": true,
+    "lifted_field_dual_pairing_is_identity": true,
+    "lifted_odd_symplectic_determinant_is_one": true,
+    "lifted_odd_symplectic_form_has_full_rank": true,
+    "normalization_removes_orientation_tangent": true,
+    "normalized_fiber_factor_is_one": true,
+    "normalized_hodge_metric_is_identity": true,
+    "normalized_hodge_metric_is_positive": true,
+    "orientation_pairing_is_hyperbolic": true,
+    "orientation_pairing_is_nondegenerate": true,
+    "orientation_product_is_associative_and_cyclic": true,
+    "post_normalization_amplitude_rank_is_one": true,
+    "post_normalization_direction_is_common": true,
+    "pre_normalization_amplitude_rank_is_two": true,
+    "product_volume_reduces_to_external_volume": true,
+    "real_involution_commutes_with_star": true,
+    "real_involution_fixes_unit_and_orientation": true,
+    "real_involution_trace_equation_has_unique_solution": true,
+    "source_lock_claim_is_T50": true,
+    "source_lock_preserves_86_mode_boundary": true,
+    "source_lock_preserves_alpha_boundary": true,
+    "source_lock_preserves_chirality_boundary": true,
+    "source_lock_preserves_full_real_slice_boundary": true,
+    "source_lock_preserves_response_condition": true,
+    "source_lock_preserves_upper_action_boundary": true,
+    "source_lock_schema_is_exact": true,
+    "source_theorems_preserve_declared_boundaries": true,
+    "theorem_preserves_auxiliary_decision": true,
+    "theorem_preserves_blockers": true,
+    "theorem_states_alpha_identity": true,
+    "theorem_states_exact_reduction": true,
+    "theorem_states_product_density": true,
+    "theorem_states_unique_real_structure": true
+  },
+  "claim_id": "CBF.T50",
+  "coframe_product_density": {
+    "binary_A_causal_origin_proved": false,
+    "declared_inputs": [
+      "A_QG",
+      "A_causal"
+    ],
+    "exact_witness": {
+      "coframe_volume_density": "120",
+      "det_Q_WW": "24",
+      "internal_fiber_factor": "1",
+      "lapse": "5",
+      "reduced_product_volume_density": "120",
+      "response_volume_density": "120"
+    },
+    "fiber_reduction": "Red(mu_10)=mu_response*tau(nu)=mu_response",
+    "numeric_Newton_or_Lambda_needed": false,
+    "primitive_A_QG_selection_proved": false,
+    "product_density": "mu_10=mu_response tensor nu",
+    "response_density": "mu_response=dV_g_e=N|det Q_WW| d4x",
+    "time_orientation_reversal_preserves_density": true
+  },
+  "date": "2026-08-31",
+  "exact_bv_profile_retract": {
+    "action_sample_rows": [
+      {
+        "lower": "25/3",
+        "reduced": "25/3",
+        "residual": "0",
+        "sample": [
+          "2",
+          "3",
+          "1",
+          "5/2"
+        ],
+        "upper_orientation_coefficient": "25/3"
+      },
+      {
+        "lower": "-14/3",
+        "reduced": "-14/3",
+        "residual": "0",
+        "sample": [
+          "-1/2",
+          "7/3",
+          "2",
+          "-4"
+        ],
+        "upper_orientation_coefficient": "-14/3"
+      },
+      {
+        "lower": "-1076/405",
+        "reduced": "-1076/405",
+        "residual": "0",
+        "sample": [
+          "5/4",
+          "-3/2",
+          "-1/3",
+          "9/5"
+        ],
+        "upper_orientation_coefficient": "-1076/405"
+      }
+    ],
+    "antifield_profile": "nu",
+    "external_pair_count_in_witness": 3,
+    "fiber_degree_shift": -6,
+    "field_profile": "1",
+    "independent_upper_action_source_proved": false,
+    "internal_field_antifield_pairing": "tau(1*nu)=1",
+    "lifted_field_dual_pairing": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "lifted_odd_symplectic_matrix": [
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "odd_symplectic_determinant": "1",
+    "odd_symplectic_rank": 6,
+    "reduction_after_lift": "IDENTITY"
+  },
+  "exact_payload_sha256": "731c2933afea1b74fcc21028ac62981272b294eeacb40cf5a8ea4949f84e02cc",
+  "frontier_delta": "H4-T16's normalized q79 unit/orientation right inverse now composes exactly with the selected-branch q79 coframe density and T49 action quantum. The retained internal real involution is unique, fiber integration preserves the external pairing and alpha exactly, and the temporary orientation scale is removed by tau(nu)=1, leaving one common amplitude and zero new primitives. This advances the profile density, pairing and reality rows only. The global H4-T15 decision, all physical acceptance counters and B.GEO.01/B.ACTION.01/B.QFT.02 remain open.",
+  "normalization_rank_reduction": {
+    "action_quantum_transport": "alpha_upper=alpha_lower=f0/hbar",
+    "amplitude_order": [
+      "A_H",
+      "g_1^-2",
+      "g_2^-2",
+      "g_3^-2",
+      "S_BV_product"
+    ],
+    "new_continuous_normalization_primitives": 0,
+    "normalization_constraint": "tau(nu_s)=s=1",
+    "normalized_tangent": [
+      1,
+      0
+    ],
+    "post_normalization_jacobian": [
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "post_normalization_rank": 1,
+    "pre_normalization_jacobian": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "pre_normalization_log_coordinates": [
+      "log f0",
+      "log s"
+    ],
+    "pre_normalization_rank": 2,
+    "temporary_unnormalized_orientation": "nu_s=s nu, s>0"
+  },
+  "normalized_orientation_frobenius": {
+    "all_basis_cyclicity_rows": [
+      {
+        "left": "0",
+        "right": "0",
+        "triple": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "left": "1",
+        "right": "1",
+        "triple": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "left": "1",
+        "right": "1",
+        "triple": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "left": "0",
+        "right": "0",
+        "triple": [
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "left": "1",
+        "right": "1",
+        "triple": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "left": "0",
+        "right": "0",
+        "triple": [
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "left": "0",
+        "right": "0",
+        "triple": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "left": "0",
+        "right": "0",
+        "triple": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "basis": [
+      "1",
+      "nu=u*t*v"
+    ],
+    "cyclic_pairing_matrix": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "degrees": [
+      0,
+      6
+    ],
+    "full_q79_topology_dimension": 88,
+    "hodge_star": {
+      "star(1)": "nu",
+      "star(nu)": "1"
+    },
+    "multiplication_table": {
+      "1*1": "1",
+      "1*nu": "nu",
+      "nu*1": "nu",
+      "nu*nu": "0"
+    },
+    "normalized_hodge_metric": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "pairing_determinant": "-1",
+    "retained_dimension": 2,
+    "trace": {
+      "tau(1)": "0",
+      "tau(nu)": "1"
+    },
+    "unresolved_complement_dimension": 86
+  },
+  "parameter_ledger": {
+    "binary_orientation_is_continuous_amplitude": false,
+    "continuous_action_parameters_added": 0,
+    "continuous_density_parameters_added": 0,
+    "inherited_binary_causal_orientation": 1,
+    "inherited_shared_primitive": "alpha=f0/hbar",
+    "observed_inputs_added": 0,
+    "origin_of_A_causal": "open",
+    "primitive_selection_of_A_QG": "open",
+    "shared_action_primitives_after_T50": 1,
+    "shared_action_primitives_before_T50": 1,
+    "strict_source_value_for_alpha": "open"
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_GEO_01_closed": false,
+    "B_QFT_02_closed": false,
+    "closed": [
+      "normalized unit/orientation Frobenius profile",
+      "unique trace-compatible real involution on that profile",
+      "selected-branch coframe density times normalized fiber factor",
+      "pairing-preserving field/dual orientation-profile lift",
+      "action coefficient preservation alpha_upper=alpha_lower",
+      "zero new density or action normalization primitives"
+    ],
+    "open": [
+      "primitive selection of A_QG and origin of A_causal",
+      "full q79 Hodge star, metric real slice and trace density",
+      "selected visible-hidden HYM endpoint and connections",
+      "physical disposition of the 86 complement modes",
+      "associated chiral first-order operator and harmonic representatives",
+      "independently selected upper field-only action",
+      "complete Lorentzian BV differential and analytic domains",
+      "determinant orientation, interacting pushforward and QME transport",
+      "strict source value for alpha"
+    ],
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    }
+  },
+  "schema": "boe.mtt.normalized-orientation-coframe-bv-bridge.v1",
+  "source_provenance": {
+    "contract_schema": "normalized_orientation_coframe_bv_bridge_contract.schema.json",
+    "contract_schema_sha256": "42b3c67d7ccc4d59b3e5f954405639fc3d97e1d0f4212618a85764cb4c31f28f",
+    "handoff_id": "5c231909-d8b5-4929-be65-b442cbdd014d",
+    "model_state_sha256": "5fdba232d862a95c164603f3156f0cfb8f8abed50af0756edc1618457b5d1f45",
+    "source_hashes_match": {
+      "H4_T15_CERT": true,
+      "H4_T15_THEOREM": true,
+      "H4_T16_CERT": true,
+      "H4_T16_THEOREM": true,
+      "H4_T17_CERT": true,
+      "H4_T17_THEOREM": true,
+      "H4_T18_CERT": true,
+      "H4_T18_THEOREM": true,
+      "Q79_RCE_PACKET": true,
+      "Q79_RCE_THEOREM": true,
+      "T49_PACKET": true,
+      "T49_THEOREM": true
+    },
+    "source_lock": "normalized_orientation_coframe_bv_bridge_source_lock.json",
+    "source_lock_sha256": "c7a0f0a8d3b1ea7daa2d96412187c6d3ac6f00e5cfdc666c73a31e79d625c1b5",
+    "theorem": "NormalizedOrientationCoframeDensityAndOnePrimitiveBVProfileBridgeTheorem_v1.md",
+    "theorem_sha256": "23a611005123be23191733c4d12e5c3833e7ef074a01c2ce175e365c74f7d747"
+  },
+  "status": "exact normalized orientation/coframe BV profile bridge and one-primitive transport after declared q79 branch inputs; full physical action and BV compactification remain open",
+  "unique_profile_real_structure": {
+    "class": "unital degree-preserving trace-compatible antilinear algebra involutions",
+    "fixed_locus": "span_R{1,nu}",
+    "full_physical_field_real_slice_selected": false,
+    "general_form": "J(1)=1, J(nu)=lambda nu",
+    "hodge_compatible": true,
+    "matrix_on_basis": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "normalized_trace_value": "tau(nu)=1",
+    "positive_profile_metric": true,
+    "trace_equation": "lambda*tau(nu)=conjugate(tau(nu))",
+    "unique_solution": "lambda=1"
+  }
+}

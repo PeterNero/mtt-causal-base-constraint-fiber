@@ -1,0 +1,121 @@
+{
+  "schema": "boe.mtt.normalized-orientation-coframe-bv-bridge-source-lock.v1",
+  "claim_id": "CBF.T50",
+  "date": "2026-08-31",
+  "model_state_sha256": "5fdba232d862a95c164603f3156f0cfb8f8abed50af0756edc1618457b5d1f45",
+  "handoff_id": "5c231909-d8b5-4929-be65-b442cbdd014d",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "fe03a5772e26e40fb0d9723b70626d0118ae256f",
+    "mtt-preprojection-repair-calculus": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+    "18 Theta-Closure & Execution Program": "78e988e9e4b88013074df804b7ff4999970d77ae"
+  },
+  "sources": [
+    {
+      "id": "H4_T15_THEOREM",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "68902f65a4f8b552f5994954e6fb16e47996dfef",
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_COTANGENT_REDUCTION_AND_Q79_BV_COMPACTIFICATION_GATE_THEOREM_v1.md",
+      "sha256": "ce8cd73313df474d9619e9111caac25c3931f9d01a114c3b00e0549893fd24d6"
+    },
+    {
+      "id": "H4_T15_CERT",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "643e5be1b8e70f5e36ca4afc51bf8aaa59275d18",
+      "path": "../mtt-preprojection-repair-calculus/certificates/h4_cotangent_reduction_q79_bv_gate.json",
+      "sha256": "589ec30a375ba5acf85bc2ba1f6b98bdb8ea0dab9899abd723286e0171cb45bf"
+    },
+    {
+      "id": "H4_T16_THEOREM",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "686794dccfa76a6d27f486a7e24d55c210b2f3ac",
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_NORMALIZED_ORIENTATION_BV_PRODUCT_REDUCTION_AND_NEUTRAL_TOPOLOGY_NO_GO_THEOREM_v1.md",
+      "sha256": "f74b950287a85c854cbe4a793a82a0d26ab65805001629505dda2a34ab17b845"
+    },
+    {
+      "id": "H4_T16_CERT",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "6345043cb1ba6fcd0d7eb26fb4cc93a9e313f642",
+      "path": "../mtt-preprojection-repair-calculus/certificates/h4_normalized_orientation_bv_reduction.json",
+      "sha256": "7e6982ac8f231cf3e75d728aa81e37add58005ac90635d9259978645b2703d25"
+    },
+    {
+      "id": "H4_T17_THEOREM",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "7a0043f685593222d790495a77e97c2f5e1add34",
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_Q79_TOPOLOGY_MODE_LIFTING_INDEX_OBSTRUCTION_AND_SHARP_CYCLIC_WITNESS_THEOREM_v1.md",
+      "sha256": "f20ff433864f5586f0663f77ff74306896ece789a79c56f4352ab5c52f0194c1"
+    },
+    {
+      "id": "H4_T17_CERT",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "8783f658d9aacf73a79f9b595783f929599bbf38",
+      "path": "../mtt-preprojection-repair-calculus/certificates/h4_q79_topology_mode_lifting_obstruction.json",
+      "sha256": "b10309a1fc977845e91b4a2bc73f082e742a4afc13815ae3250579e383c5ab14"
+    },
+    {
+      "id": "H4_T18_THEOREM",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "2a7cbbd39b788a33081f68e86130c542768e62b8",
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_EQUIVARIANT_INDEX_FIRST_KERNEL_COMPILER_AND_POSITIVE_HESSIAN_CHIRALITY_NO_GO_THEOREM_v1.md",
+      "sha256": "31c3b3e8a9045977392a86c8087926e01c22e6f49be1b0bcb8f6d7aa062c5f3b"
+    },
+    {
+      "id": "H4_T18_CERT",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "bfcb6f884b21b86d03e1970e85140f4fda959d16",
+      "path": "../mtt-preprojection-repair-calculus/certificates/h4_equivariant_index_first_kernel_compiler.json",
+      "sha256": "067776f0a55800da494cdf6f8b1e050dba62e44e34344c205e7c77a957b26107"
+    },
+    {
+      "id": "Q79_RCE_THEOREM",
+      "repository": "18 Theta-Closure & Execution Program",
+      "repository_head": "78e988e9e4b88013074df804b7ff4999970d77ae",
+      "git_blob": "fe8ee59405722eeb5049a1f6cde0a77d79c90cef",
+      "path": "../18 Theta-Closure & Execution Program/research_frontier/MTT_Q79_RESPONSE_CHRONOLOGY_EQUIVALENCE_v1.md",
+      "sha256": "54af4c6b272cbf6b0f9438d444e2a9841e8af1c5fd2d22b1c472fc629994154b"
+    },
+    {
+      "id": "Q79_RCE_PACKET",
+      "repository": "18 Theta-Closure & Execution Program",
+      "repository_head": "78e988e9e4b88013074df804b7ff4999970d77ae",
+      "git_blob": "cd08ef0d378770c72843f0afd5af8e04ab76485f",
+      "path": "../18 Theta-Closure & Execution Program/research_frontier/q79_response_chronology_equivalence.packet.json",
+      "sha256": "5b83e37737589947578185d3f495725fc0023f36ad073da9367ccc0cb70726fb"
+    },
+    {
+      "id": "T49_THEOREM",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "fe03a5772e26e40fb0d9723b70626d0118ae256f",
+      "git_blob": "5472d46bc50f89ebf3127a7899b2b9637dd7206e",
+      "path": "CommonActionQuantumTorsorAndOnePrimitiveBVNormalizationTheorem_v1.md",
+      "sha256": "8a29fb2d063dfa5fb534fc30ee7090960515f4242f8a22a2ead29ecdc5c33a38"
+    },
+    {
+      "id": "T49_PACKET",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "fe03a5772e26e40fb0d9723b70626d0118ae256f",
+      "git_blob": "3695a1572bb14639690dcac345fd687791d1ffb5",
+      "path": "common_action_quantum_torsor.packet.json",
+      "sha256": "a0a607d79ffe47b148940904105e57ab98600fb72a48664b964306f1d59a831b"
+    }
+  ],
+  "guards": {
+    "q79_response_result_is_conditional_on_A_QG_and_A_causal": true,
+    "normalized_orientation_retract_is_not_a_selected_upper_action": true,
+    "orientation_profile_real_slice_is_not_the_full_physical_real_slice": true,
+    "other_86_topology_modes_are_not_deleted_or_declared_massive": true,
+    "positive_hessian_is_not_used_to_select_chirality": true,
+    "alpha_value_remains_unselected": true,
+    "global_H4_T15_decision_must_remain_auxiliary": true,
+    "B_ACTION_01_B_GEO_01_and_B_QFT_02_must_remain_open": true,
+    "physical_acceptance_counters_must_not_move": true
+  }
+}
