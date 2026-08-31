@@ -1,0 +1,71 @@
+{
+  "boundary": {
+    "carrier": "boundary",
+    "certified_intervals": 1940,
+    "complete": false,
+    "missing_ranges": {
+      "0": [],
+      "1": [],
+      "2": [
+        [
+          128,
+          192
+        ],
+        [
+          256,
+          386
+        ],
+        [
+          387,
+          448
+        ]
+      ],
+      "3": []
+    },
+    "shards": 33,
+    "target_intervals": 2195
+  },
+  "branch": {
+    "carrier": "branch",
+    "certified_intervals": 378,
+    "complete": false,
+    "missing_ranges": {
+      "0": [],
+      "1": [
+        [
+          144,
+          336
+        ],
+        [
+          337,
+          857
+        ]
+      ],
+      "2": [
+        [
+          1,
+          678
+        ]
+      ],
+      "3": [
+        [
+          1,
+          429
+        ]
+      ]
+    },
+    "shards": 19,
+    "target_intervals": 2195
+  },
+  "complete": false,
+  "guardrails": {
+    "claims_affine_Deligne_rejection": false,
+    "complete_coverage_is_required_before_assembly": true,
+    "overlap_is_rejected": true,
+    "packet_interval_ranges_are_authoritative": true,
+    "partial_atomic_checkpoints_count_only_their_certified_prefix": true
+  },
+  "result_index_path": "C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-causal-base-constraint-fiber\\q79_b89_accelerated_source_isotopy_result_index.json",
+  "result_index_sha256": "c4f99c7a335ab425db33f2693a9c9b21f95803f05a117a3e9c075cfdc87b5c40",
+  "schema": "mtt.cbf.q79-b89-flexible-result-coverage.v1"
+}

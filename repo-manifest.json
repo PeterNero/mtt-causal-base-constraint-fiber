@@ -387,7 +387,8 @@
     "CommonActionQuantumTorsorAndOnePrimitiveBVNormalizationTheorem_v1.md",
     "NormalizedOrientationCoframeDensityAndOnePrimitiveBVProfileBridgeTheorem_v1.md",
     "Q79OrientedHodgeStarAndConjugatePairedRealCarrierCompilerTheorem_v1.md",
-    "Q79HermitianMetricHodgeCoefficientAndFirstVariationCompilerTheorem_v1.md"
+    "Q79HermitianMetricHodgeCoefficientAndFirstVariationCompilerTheorem_v1.md",
+    "Q79B89DownstreamPromotionReadinessTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -454,7 +455,8 @@
     "q79_b89_recursive_boundary_isotopy_pilot.packet.json",
     "q79_b89_recursive_boundary_isotopy_pilot_verification.packet.json",
     "q79_b89_accelerated_source_isotopy_result_index.json",
-    "q79_b89_accelerated_source_isotopy_coverage_report.json"
+    "q79_b89_accelerated_source_isotopy_coverage_report.json",
+    "q79_b89_downstream_promotion_readiness.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -509,7 +511,8 @@
     "python build_normalized_orientation_coframe_bv_bridge.py",
     "python build_q79_oriented_hodge_real_carrier.py",
     "python build_q79_hermitian_metric_hodge_compiler.py",
-    "python build_q79_b89_accelerated_source_isotopy_equivalence.py"
+    "python build_q79_b89_accelerated_source_isotopy_equivalence.py",
+    "python build_q79_b89_downstream_promotion_readiness.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -563,6 +566,18 @@
     "q79_b89_accelerated_source_isotopy_contract.schema.json",
     "q79_b89_accelerated_adaptive_source_isotopy_contract.schema.json",
     "q79_b89_recursive_boundary_isotopy_contract.schema.json"
+  ],
+  "campaigns": [
+    "q79_b89_accelerated_source_isotopy_campaign.json",
+    "q79_b89_accelerated_source_isotopy_preflight_result_index.json",
+    "q79_b89_accelerated_source_isotopy_preflight_coverage_report.json",
+    "q79_b89_recursive_replacement_campaign.json",
+    "q79_b89_recursive_replacement_campaign_status.json"
+  ],
+  "campaign_tools": [
+    "q79_b89_recursive_replacement_ingest.py",
+    "verify_q79_b89_source_isotopy_frontier_freeze.py",
+    "tests/test_q79_b89_recursive_replacement_ingest.py"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

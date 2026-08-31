@@ -29,6 +29,32 @@ def local_hash(entry: dict) -> bool:
     return path.is_file() and sha256(path) == entry["sha256"]
 
 
+def interval_union(rows: list[dict], carrier: str) -> tuple[dict[int, set[int]], bool]:
+    covered: dict[int, set[int]] = {}
+    overlap = False
+    for row in rows:
+        if row["carrier"] != carrier:
+            continue
+        edge = int(row["edge"])
+        target = covered.setdefault(edge, set())
+        for interval in range(int(row["interval_start"]), int(row["interval_stop"])):
+            overlap = overlap or interval in target
+            target.add(interval)
+    return covered, overlap
+
+
+def missing_union(coverage: dict, carrier: str) -> dict[int, set[int]]:
+    output = {
+        int(edge): {
+            interval
+            for start, stop in ranges
+            for interval in range(int(start), int(stop))
+        }
+        for edge, ranges in coverage[carrier]["missing_ranges"].items()
+    }
+    return {edge: intervals for edge, intervals in output.items() if intervals}
+
+
 def main() -> None:
     checks = {}
     branch_lock = load("q79_b89_accelerated_adaptive_source_isotopy_source_lock.json")
@@ -43,6 +69,8 @@ def main() -> None:
         "q79_b89_recursive_boundary_isotopy_pilot_verification.packet.json"
     )
     result_index = load("q79_b89_accelerated_source_isotopy_result_index.json")
+    campaign = load("q79_b89_recursive_replacement_campaign.json")
+    coverage = load(campaign["source_locks"]["preflight_coverage"]["path"])
 
     checks["branch_worker_and_verifier_hashes"] = all(
         local_hash(branch_lock[key])
@@ -119,7 +147,51 @@ def main() -> None:
         ]
     )
 
-    require(all(checks.values()), "B89 source-isotopy frontier freeze")
+    campaign_jobs = campaign["jobs"]
+    checks["replacement_campaign_source_locks_and_job_counts"] = (
+        campaign["schema"] == "mtt.cbf.q79-b89-recursive-replacement-campaign.v1"
+        and campaign["dispatch"]["active_job_count"] == len(campaign_jobs) == 218
+        and campaign["dispatch"]["branch_job_count"]
+        == sum(row["carrier"] == "branch" for row in campaign_jobs)
+        == 153
+        and campaign["dispatch"]["boundary_job_count"]
+        == sum(row["carrier"] == "boundary" for row in campaign_jobs)
+        == 65
+        and campaign["source_locks"]["branch"]["sha256"]
+        == sha256(ROOT / campaign["source_locks"]["branch"]["path"])
+        and campaign["source_locks"]["boundary"]["sha256"]
+        == sha256(ROOT / campaign["source_locks"]["boundary"]["path"])
+        and campaign["source_locks"]["result_index"]["sha256"]
+        == sha256(ROOT / campaign["source_locks"]["result_index"]["path"])
+        and campaign["source_locks"]["preflight_coverage"]["sha256"]
+        == sha256(ROOT / campaign["source_locks"]["preflight_coverage"]["path"])
+    )
+
+    branch_requested, branch_overlap = interval_union(campaign_jobs, "branch")
+    boundary_requested, boundary_overlap = interval_union(campaign_jobs, "boundary")
+    checks["replacement_campaign_exact_missing_interval_union"] = (
+        not branch_overlap
+        and not boundary_overlap
+        and branch_requested == missing_union(coverage, "branch")
+        and boundary_requested == missing_union(coverage, "boundary")
+        and sum(map(len, branch_requested.values())) == 1817
+        and sum(map(len, boundary_requested.values())) == 255
+    )
+    checks["replacement_campaign_nonpromotion_guardrail"] = (
+        campaign["guardrails"]["process_success_is_not_theorem_promotion"]
+        and campaign["guardrails"][
+            "no_job_counts_as_coverage_before_result_download_and_independent_verification"
+        ]
+        and campaign["guardrails"][
+            "complete_branch_and_boundary_coverage_are_required_before_joint_assembly"
+        ]
+        and campaign["guardrails"][
+            "this_manifest_does_not_claim_B89_rejection_or_beta_C"
+        ]
+    )
+
+    failed = [name for name, passed in checks.items() if not passed]
+    require(not failed, f"B89 source-isotopy frontier freeze failed: {failed}")
     print(
         json.dumps(
             {

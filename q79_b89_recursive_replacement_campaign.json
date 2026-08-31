@@ -1,0 +1,2295 @@
+{
+  "schema": "mtt.cbf.q79-b89-recursive-replacement-campaign.v1",
+  "created_at": "2026-08-31T22:18:42.328Z",
+  "purpose": "Represent every interval missing from the independently verified B89 branch and boundary result index by one immutable isolated calculation capsule. Submission is not certification; only downloaded, hash-matched, requester-verified packet ranges may enter the result index.",
+  "requester_repository": "mtt-causal-base-constraint-fiber",
+  "requester_git_head": "352191cb01332353e8ddab58e21777a95f0a4b44",
+  "source_locks": {
+    "branch": {
+      "path": "q79_b89_accelerated_adaptive_source_isotopy_source_lock.json",
+      "sha256": "034cd0d020feabac8b78fc2a4d5893fa63627c0872091409307a262358fedbca"
+    },
+    "boundary": {
+      "path": "q79_b89_recursive_boundary_isotopy_source_lock.json",
+      "sha256": "62bc721956b07bc22f409ab73f06faf625ddcbca951cd759e7f756ba83065292"
+    },
+    "result_index": {
+      "path": "q79_b89_accelerated_source_isotopy_preflight_result_index.json",
+      "sha256": "c4f99c7a335ab425db33f2693a9c9b21f95803f05a117a3e9c075cfdc87b5c40"
+    },
+    "preflight_coverage": {
+      "path": "q79_b89_accelerated_source_isotopy_preflight_coverage_report.json",
+      "sha256": "a6b15e56ad853013d86c809bc6d15dec6a87236d1e4e7a66c4bc8b64ce3678f8"
+    }
+  },
+  "exact_requested_coverage": {
+    "branch": {
+      "target_intervals": 2195,
+      "already_independently_verified": 378,
+      "submitted_missing": 1817,
+      "submitted_ranges": {
+        "1": [
+          [
+            144,
+            336
+          ],
+          [
+            337,
+            857
+          ]
+        ],
+        "2": [
+          [
+            1,
+            678
+          ]
+        ],
+        "3": [
+          [
+            1,
+            429
+          ]
+        ]
+      }
+    },
+    "boundary": {
+      "target_intervals": 2195,
+      "already_independently_verified": 1940,
+      "submitted_missing": 255,
+      "submitted_ranges": {
+        "2": [
+          [
+            128,
+            192
+          ],
+          [
+            256,
+            386
+          ],
+          [
+            387,
+            448
+          ]
+        ]
+      }
+    }
+  },
+  "dispatch": {
+    "active_job_count": 218,
+    "branch_job_count": 153,
+    "boundary_job_count": 65,
+    "branch_max_cells_per_job": 12,
+    "boundary_max_cells_per_job": 4,
+    "requirements": [
+      "numpy",
+      "python 3.14",
+      "python flint 0.9.0"
+    ],
+    "scheduling": "automatic isolated capsules"
+  },
+  "cancelled_pre_dispatch_corrections": [
+    {
+      "id": "41c1c128-04a9-42fa-83b6-7044b9311d25",
+      "reason": "edge-2 stop 679 included nonexistent interval 678; cancelled before agent claim"
+    },
+    {
+      "id": "5a1e621b-4fed-4fe0-ba2a-e38608094fcb",
+      "reason": "edge-3 stop 430 included nonexistent interval 429; cancelled before agent claim"
+    }
+  ],
+  "independent_comparison_campaign": {
+    "path": "../mtt-preprojection-repair-calculus/experiments/q79_eta9_selected_component_scout/kernel_b89_source_isotopy_gap_repair_campaign.json",
+    "observed_sha256": "da8efaac35a2bd4978947c5dce5c851917cc03aaa541b9b6a608f73c156d8882",
+    "scope": "Same frozen source and guide hashes but a distinct worker/schema. Its results are comparison evidence only unless separately adapted and independently verified; this campaign no longer depends on its edge-1 432:456 jobs."
+  },
+  "jobs": [
+    {
+      "id": "51b7fee5-b3db-4838-99fd-a4cfb55fcc31",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 128,
+      "interval_stop": 132,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i128-132.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 1
+    },
+    {
+      "id": "b9dc53d4-1e1b-41e8-a7f9-00524c89f3e5",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 132,
+      "interval_stop": 136,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i132-136.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 2
+    },
+    {
+      "id": "27379669-78e2-41dd-96f7-f733d97c3cf5",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 136,
+      "interval_stop": 140,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i136-140.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 3
+    },
+    {
+      "id": "4f9f178d-3727-413d-b787-d9a9b553b9db",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 140,
+      "interval_stop": 144,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i140-144.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 4
+    },
+    {
+      "id": "b397ba63-c534-4922-87de-e584fdaf075c",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 144,
+      "interval_stop": 148,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i144-148.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 5
+    },
+    {
+      "id": "a0bfe894-a59e-4ace-9e42-db57dfdb3739",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 148,
+      "interval_stop": 152,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i148-152.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 6
+    },
+    {
+      "id": "cb46c903-a80b-4c32-bdb9-aff5abc9dc67",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 152,
+      "interval_stop": 156,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i152-156.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 7
+    },
+    {
+      "id": "0029010b-c76d-4a00-8c7e-78ce793ca182",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 156,
+      "interval_stop": 160,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i156-160.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 8
+    },
+    {
+      "id": "4878e371-7c56-4ee4-8687-95c4bf8774b6",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 160,
+      "interval_stop": 164,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i160-164.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 9
+    },
+    {
+      "id": "27aca6ac-3d34-49fb-b93f-a7557227f5df",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 164,
+      "interval_stop": 168,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i164-168.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 10
+    },
+    {
+      "id": "3f5a4616-4cc8-4655-9d27-7859ef2278b9",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 168,
+      "interval_stop": 172,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i168-172.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 11
+    },
+    {
+      "id": "5f140191-7cb2-4cff-8de6-fcf28237ed5a",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 172,
+      "interval_stop": 176,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i172-176.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 12
+    },
+    {
+      "id": "3eda8952-c1b8-4cc5-92b0-8dc3ac793896",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 176,
+      "interval_stop": 180,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i176-180.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 13
+    },
+    {
+      "id": "85f41ea7-92f6-415e-b672-84426161913e",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 180,
+      "interval_stop": 184,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i180-184.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 14
+    },
+    {
+      "id": "e6c13196-4bc3-4ec6-823e-e55e917e1c8a",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 184,
+      "interval_stop": 188,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i184-188.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 15
+    },
+    {
+      "id": "97d93966-663f-4c32-a3fc-68ee5e7a4556",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 188,
+      "interval_stop": 192,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i188-192.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 16
+    },
+    {
+      "id": "12d16abb-371c-4a23-be1e-e66a81b1ac8d",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 256,
+      "interval_stop": 260,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i256-260.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 17
+    },
+    {
+      "id": "38b5af62-814b-4d9f-a80b-49447003a2f4",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 260,
+      "interval_stop": 264,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i260-264.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 18
+    },
+    {
+      "id": "39fa26d6-5536-43f8-b159-459d7c6fd500",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 264,
+      "interval_stop": 268,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i264-268.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 19
+    },
+    {
+      "id": "41e050dc-7168-435a-9698-9fca0a2b4ead",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 268,
+      "interval_stop": 272,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i268-272.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 20
+    },
+    {
+      "id": "9a32a4ab-9c59-4f5f-b8a7-a424c8c04622",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 272,
+      "interval_stop": 276,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i272-276.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 21
+    },
+    {
+      "id": "20b4ee96-706f-4bed-bc1b-2b89be21ad9b",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 276,
+      "interval_stop": 280,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i276-280.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 22
+    },
+    {
+      "id": "937e1d7f-c4a6-4186-a633-bb526e2904db",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 280,
+      "interval_stop": 284,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i280-284.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 23
+    },
+    {
+      "id": "53c2dcd7-b396-4e2d-a37e-d534af7a293b",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 284,
+      "interval_stop": 288,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i284-288.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 24
+    },
+    {
+      "id": "f2061804-4758-4bb5-8c0f-64b599f5116e",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 288,
+      "interval_stop": 292,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i288-292.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 25
+    },
+    {
+      "id": "f47deda6-2f4e-4a09-9833-505bd5144383",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 292,
+      "interval_stop": 296,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i292-296.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 26
+    },
+    {
+      "id": "13f8572f-b56a-4e2a-a79e-664f3fdc8eff",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 296,
+      "interval_stop": 300,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i296-300.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 27
+    },
+    {
+      "id": "008ebc84-37de-440e-bc5c-417de21a798b",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 300,
+      "interval_stop": 304,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i300-304.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 28
+    },
+    {
+      "id": "9d88177c-ef50-4d6a-ae99-1f2ab68ba022",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 304,
+      "interval_stop": 308,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i304-308.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 29
+    },
+    {
+      "id": "f6a4ac8f-7373-437c-aa3c-77febd5f4eab",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 308,
+      "interval_stop": 312,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i308-312.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 30
+    },
+    {
+      "id": "51953890-80ec-4c04-9a62-8078cb1b5d67",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 312,
+      "interval_stop": 316,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i312-316.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 31
+    },
+    {
+      "id": "6cd3218e-0ab8-4626-aea9-499370fda751",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 316,
+      "interval_stop": 320,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i316-320.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 32
+    },
+    {
+      "id": "5832650a-8232-45b7-8866-45be22b55dcd",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 320,
+      "interval_stop": 324,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i320-324.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 33
+    },
+    {
+      "id": "b41ccd3d-9ad0-442b-b52b-281b97695d60",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 324,
+      "interval_stop": 328,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i324-328.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 34
+    },
+    {
+      "id": "17760908-0876-4bcc-bb52-2ba425f4ed75",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 328,
+      "interval_stop": 332,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i328-332.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 35
+    },
+    {
+      "id": "8c66b73b-4228-40b6-8011-af555dbceb51",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 332,
+      "interval_stop": 336,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i332-336.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 36
+    },
+    {
+      "id": "173afd38-7ec2-43a1-b731-3086d00f9f8d",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 336,
+      "interval_stop": 340,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i336-340.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 37
+    },
+    {
+      "id": "cc1301f4-b4e7-45f1-93e0-1495dfca20a7",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 340,
+      "interval_stop": 344,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i340-344.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 38
+    },
+    {
+      "id": "a80e8e75-5c04-4c4d-a5e8-8dc632884a30",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 344,
+      "interval_stop": 348,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i344-348.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 39
+    },
+    {
+      "id": "b505e5ea-fbee-4e6e-b854-e82ede7e50f0",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 348,
+      "interval_stop": 352,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i348-352.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 40
+    },
+    {
+      "id": "80ab176d-c6e2-4103-83bf-78688f1f434d",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 352,
+      "interval_stop": 356,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i352-356.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 41
+    },
+    {
+      "id": "b065b0a6-07eb-409f-b5ea-748fca1c4ad5",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 356,
+      "interval_stop": 360,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i356-360.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 42
+    },
+    {
+      "id": "460eae92-65f5-4575-96f8-27628f7cb073",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 360,
+      "interval_stop": 364,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i360-364.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 43
+    },
+    {
+      "id": "9d8a4ff3-0dfb-4b5b-ba63-1edbef8ce460",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 364,
+      "interval_stop": 368,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i364-368.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 44
+    },
+    {
+      "id": "8f0e7917-4e29-4290-9f10-44cab450e3d4",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 368,
+      "interval_stop": 372,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i368-372.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 45
+    },
+    {
+      "id": "e6fe42d9-c216-433b-b1f7-8e9227c3b37d",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 372,
+      "interval_stop": 376,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i372-376.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 46
+    },
+    {
+      "id": "05472aae-c7f3-4130-b456-531b00960006",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 376,
+      "interval_stop": 380,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i376-380.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 47
+    },
+    {
+      "id": "71607ad0-a872-4185-8dc4-00204ebf57a1",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 380,
+      "interval_stop": 384,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i380-384.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 48
+    },
+    {
+      "id": "b218a133-d792-45b4-b3ed-bd08869e192a",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 384,
+      "interval_stop": 386,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i384-386.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 49
+    },
+    {
+      "id": "f4a892e8-c59b-4369-b746-c8e2110dac70",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 387,
+      "interval_stop": 391,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i387-391.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 50
+    },
+    {
+      "id": "7ea9ac67-e70a-48d5-bebc-6ae536f3f558",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 391,
+      "interval_stop": 395,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i391-395.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 51
+    },
+    {
+      "id": "69c6cd8f-ac8f-4273-a8e7-1e2c5f26555c",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 395,
+      "interval_stop": 399,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i395-399.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 52
+    },
+    {
+      "id": "35e8f005-5e3a-480d-ad51-5b48213342cb",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 399,
+      "interval_stop": 403,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i399-403.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 53
+    },
+    {
+      "id": "2d4fb541-0cf8-4ed2-a3b2-806237f292b7",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 403,
+      "interval_stop": 407,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i403-407.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 54
+    },
+    {
+      "id": "43508223-6f03-403a-b5a5-2aa14a6177d9",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 407,
+      "interval_stop": 411,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i407-411.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 55
+    },
+    {
+      "id": "0d5b8f27-2094-47f1-b7ce-822c033b5ae8",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 411,
+      "interval_stop": 415,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i411-415.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 56
+    },
+    {
+      "id": "a08b8fbc-d3c7-4a63-b6e7-5a17b9fcce08",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 415,
+      "interval_stop": 419,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i415-419.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 57
+    },
+    {
+      "id": "155e28c4-58a7-4ca8-a598-6c5c6d097f7e",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 419,
+      "interval_stop": 423,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i419-423.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 58
+    },
+    {
+      "id": "959b3674-d6be-43d8-a5a3-8383f7e871d4",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 423,
+      "interval_stop": 427,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i423-427.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 59
+    },
+    {
+      "id": "2d27802f-2d9d-453c-bf13-f237f8bb62e3",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 427,
+      "interval_stop": 431,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i427-431.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 60
+    },
+    {
+      "id": "5713e346-9dab-4398-9308-b7bf5665e9c1",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 431,
+      "interval_stop": 435,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i431-435.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 61
+    },
+    {
+      "id": "23258fd1-e3f9-4df4-a6ca-d35b7c9afef3",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 435,
+      "interval_stop": 439,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i435-439.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 62
+    },
+    {
+      "id": "b7799bae-6805-4c9a-a8fb-9dc5ca823b4a",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 439,
+      "interval_stop": 443,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i439-443.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 63
+    },
+    {
+      "id": "d6f19c69-a547-46b5-85d2-3367aecdf9b6",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 443,
+      "interval_stop": 447,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i443-447.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 64
+    },
+    {
+      "id": "82d58265-95c0-4090-a05f-fe33edbfb075",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_start": 447,
+      "interval_stop": 448,
+      "output": "outputs/t53-v2-recursive-boundary-e2-i447-448.json",
+      "input_capsule_sha256": "d9c47b53891f4447a771ff34317e7c2b2143f0bfd715d314761e0a534bbb88d7",
+      "submission_order": 65
+    },
+    {
+      "id": "815fe287-7665-4731-bf05-4c98ce4aac12",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 144,
+      "interval_stop": 156,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i144-156.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 66
+    },
+    {
+      "id": "083c5e2e-f3fc-4791-a93c-78a4add27863",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 156,
+      "interval_stop": 168,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i156-168.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 67
+    },
+    {
+      "id": "0e66aa33-1129-4870-a404-97b7615b1a6e",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 168,
+      "interval_stop": 180,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i168-180.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 68
+    },
+    {
+      "id": "ed48fcf0-fd30-44fa-8f18-d6b9d999529e",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 180,
+      "interval_stop": 192,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i180-192.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 69
+    },
+    {
+      "id": "ce82e4d5-656a-4100-8169-e7b6adbd4437",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 192,
+      "interval_stop": 204,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i192-204.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 70
+    },
+    {
+      "id": "c12fe5bf-5da9-4987-8524-1d64d6320c49",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 204,
+      "interval_stop": 216,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i204-216.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 71
+    },
+    {
+      "id": "31b47c35-b167-4d40-a3e8-7075e06a3048",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 216,
+      "interval_stop": 228,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i216-228.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 72
+    },
+    {
+      "id": "d54dc744-ad5f-4729-aa13-10e48368ce30",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 228,
+      "interval_stop": 240,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i228-240.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 73
+    },
+    {
+      "id": "1fdb9c1e-2e31-4273-8fba-c03e0b3af6c2",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 240,
+      "interval_stop": 252,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i240-252.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 74
+    },
+    {
+      "id": "572e0f3e-0868-486f-8114-abf21138d05c",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 252,
+      "interval_stop": 264,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i252-264.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 75
+    },
+    {
+      "id": "aef8b50a-db97-42e0-8c05-68b56942e302",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 264,
+      "interval_stop": 276,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i264-276.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 76
+    },
+    {
+      "id": "e90b003c-cc17-412a-8fea-c9e3f50ad631",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 276,
+      "interval_stop": 288,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i276-288.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 77
+    },
+    {
+      "id": "91bd4d82-b558-476e-bdb5-454f35f6149a",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 288,
+      "interval_stop": 300,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i288-300.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 78
+    },
+    {
+      "id": "3607076c-3b32-405c-a903-3f01defb4f04",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 300,
+      "interval_stop": 312,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i300-312.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 79
+    },
+    {
+      "id": "ac93cd97-27f8-4cac-8274-15fd3a8c8e85",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 312,
+      "interval_stop": 324,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i312-324.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 80
+    },
+    {
+      "id": "f4c5567a-69c5-4b8b-8414-8543173f9d4a",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 324,
+      "interval_stop": 336,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i324-336.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 81
+    },
+    {
+      "id": "5314b9de-915c-4b71-8c02-7585a2679feb",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 337,
+      "interval_stop": 349,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i337-349.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 82
+    },
+    {
+      "id": "2839ee26-bb95-4516-9cd3-b04094c67529",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 349,
+      "interval_stop": 361,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i349-361.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 83
+    },
+    {
+      "id": "f2fddd37-4c14-4995-a1f8-538713de7b68",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 361,
+      "interval_stop": 373,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i361-373.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 84
+    },
+    {
+      "id": "265183b7-f0c9-487d-974b-1f49bb17c0bc",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 373,
+      "interval_stop": 385,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i373-385.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 85
+    },
+    {
+      "id": "c34db180-b376-4c2f-b10c-b6f49f0dfe94",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 385,
+      "interval_stop": 397,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i385-397.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 86
+    },
+    {
+      "id": "b796b64a-0711-4b8a-a720-bff520410097",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 397,
+      "interval_stop": 409,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i397-409.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 87
+    },
+    {
+      "id": "90535de5-2767-46d3-b338-78b980eeaf3c",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 409,
+      "interval_stop": 421,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i409-421.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 88
+    },
+    {
+      "id": "2d75a4b5-cd26-40c0-8b22-bf388dd236cc",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 421,
+      "interval_stop": 432,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i421-432.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 89
+    },
+    {
+      "id": "7a544040-75b8-48cf-a0a2-bb5c3ee6779b",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 432,
+      "interval_stop": 444,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i432-444.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 215
+    },
+    {
+      "id": "4db1068a-df89-410b-85cf-e3a369349090",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 444,
+      "interval_stop": 456,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i444-456.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 216
+    },
+    {
+      "id": "4ccf6147-042c-459b-80c9-75e8c849bc89",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 456,
+      "interval_stop": 468,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i456-468.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 90
+    },
+    {
+      "id": "9a2e7a1c-fb00-4d2f-b9cb-77d0a742870c",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 468,
+      "interval_stop": 480,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i468-480.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 91
+    },
+    {
+      "id": "3a3ecfc9-f4b1-40e5-8c1f-5f233e3be37d",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 480,
+      "interval_stop": 492,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i480-492.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 92
+    },
+    {
+      "id": "3f9125bd-3b51-4f35-883d-51767b297b0c",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 492,
+      "interval_stop": 504,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i492-504.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 93
+    },
+    {
+      "id": "522b672d-3ebb-424d-8da6-81a2ca008a69",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 504,
+      "interval_stop": 516,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i504-516.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 94
+    },
+    {
+      "id": "0e5d8aa9-ce09-474a-a16b-b4d256d15998",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 516,
+      "interval_stop": 528,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i516-528.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 95
+    },
+    {
+      "id": "4af56f17-a93e-4001-8b2c-ed1134aa5c7c",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 528,
+      "interval_stop": 540,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i528-540.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 96
+    },
+    {
+      "id": "77cf07b4-2e46-4878-a97d-c75099eda09f",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 540,
+      "interval_stop": 552,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i540-552.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 97
+    },
+    {
+      "id": "57ac43d6-ea79-4ec5-8b52-a9aec9ed3bac",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 552,
+      "interval_stop": 564,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i552-564.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 98
+    },
+    {
+      "id": "9ad4a142-a5fa-4ff9-afbe-6a5d5e6d09f2",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 564,
+      "interval_stop": 576,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i564-576.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 99
+    },
+    {
+      "id": "738312b9-b8ed-4e43-a38c-7ca713dce4f8",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 576,
+      "interval_stop": 588,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i576-588.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 100
+    },
+    {
+      "id": "8d2ec0e8-cdae-40c8-ad0b-03e8ed7f83f3",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 588,
+      "interval_stop": 600,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i588-600.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 101
+    },
+    {
+      "id": "6656514d-8ab9-4345-99d2-da0127a9cbaa",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 600,
+      "interval_stop": 612,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i600-612.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 102
+    },
+    {
+      "id": "15543958-e8a1-47d3-9822-e1123d0d830f",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 612,
+      "interval_stop": 624,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i612-624.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 103
+    },
+    {
+      "id": "03c2f89e-9c98-4f52-83f8-6b82d67ee813",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 624,
+      "interval_stop": 636,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i624-636.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 104
+    },
+    {
+      "id": "6018ce02-2b4a-46fc-b7b6-1eae371e1724",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 636,
+      "interval_stop": 648,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i636-648.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 105
+    },
+    {
+      "id": "60dec3d2-a3cc-41fe-a24a-5a2b6e2c1118",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 648,
+      "interval_stop": 660,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i648-660.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 106
+    },
+    {
+      "id": "6c8bb994-fc97-49cd-b4f8-2f0ec533d1e5",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 660,
+      "interval_stop": 672,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i660-672.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 107
+    },
+    {
+      "id": "e9ac4347-198d-4f9d-a785-f86950efb811",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 672,
+      "interval_stop": 684,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i672-684.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 108
+    },
+    {
+      "id": "be4cdf92-ae72-4dc2-8841-d582f222e6ed",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 684,
+      "interval_stop": 696,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i684-696.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 109
+    },
+    {
+      "id": "bc49378c-0107-416c-89c7-f6a19ce366c7",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 696,
+      "interval_stop": 708,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i696-708.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 110
+    },
+    {
+      "id": "fa9ae9bf-f547-4a66-b8ae-db6a827cdc14",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 708,
+      "interval_stop": 720,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i708-720.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 111
+    },
+    {
+      "id": "49eeeabd-07c1-4b40-b0f5-30046e2bd4cc",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 720,
+      "interval_stop": 732,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i720-732.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 112
+    },
+    {
+      "id": "e56a7b5c-5801-4f43-a9ad-651a1bd2df5c",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 732,
+      "interval_stop": 744,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i732-744.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 113
+    },
+    {
+      "id": "1734da0c-58e2-4c62-9cb4-42f54c3c8781",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 744,
+      "interval_stop": 756,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i744-756.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 114
+    },
+    {
+      "id": "529b281a-5f3d-46b3-8208-834ed5d03048",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 756,
+      "interval_stop": 768,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i756-768.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 115
+    },
+    {
+      "id": "e9cef182-083b-4847-a828-def8e27a3743",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 768,
+      "interval_stop": 780,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i768-780.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 116
+    },
+    {
+      "id": "53000de6-6676-4c6f-8612-fbda3fefecae",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 780,
+      "interval_stop": 792,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i780-792.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 117
+    },
+    {
+      "id": "4ee932a6-48af-490a-87d6-6a7a3a6b9614",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 792,
+      "interval_stop": 804,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i792-804.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 118
+    },
+    {
+      "id": "9d4abbf2-4241-4754-9d7b-8ac550ade7d5",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 804,
+      "interval_stop": 816,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i804-816.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 119
+    },
+    {
+      "id": "ca620c27-2cae-4456-8c7f-d3bf04677d76",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 816,
+      "interval_stop": 828,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i816-828.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 120
+    },
+    {
+      "id": "487e06ec-e7cc-47da-bed1-292d214a190f",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 828,
+      "interval_stop": 840,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i828-840.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 121
+    },
+    {
+      "id": "9cd63cf6-92b3-471a-b3d7-7dd7606c1583",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 840,
+      "interval_stop": 852,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i840-852.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 122
+    },
+    {
+      "id": "b347cc49-7a37-4985-a138-709386135e91",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_start": 852,
+      "interval_stop": 857,
+      "output": "outputs/t53-v2-adaptive-branch-e1-i852-857.json",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "submission_order": 123
+    },
+    {
+      "id": "95e8c49c-7ca0-4e4b-9d8f-185c1f9f55a3",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 1,
+      "interval_stop": 13,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i1-13.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 124
+    },
+    {
+      "id": "f8240a86-bff0-429e-b8b1-e99ca3d629a5",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 13,
+      "interval_stop": 25,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i13-25.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 125
+    },
+    {
+      "id": "1d2afa54-9804-4aeb-a10c-f027dbd21c03",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 25,
+      "interval_stop": 37,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i25-37.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 126
+    },
+    {
+      "id": "68ef2b64-2be4-4d0d-8d26-b5d4de98d964",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 37,
+      "interval_stop": 49,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i37-49.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 127
+    },
+    {
+      "id": "1fdc6b55-ef2b-4e9b-b18d-15cf74040f87",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 49,
+      "interval_stop": 61,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i49-61.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 128
+    },
+    {
+      "id": "0d2555c4-9d2e-4b66-b62c-5476c6ea195e",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 61,
+      "interval_stop": 73,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i61-73.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 129
+    },
+    {
+      "id": "03edd5a3-20db-485b-b0e8-cc90b3e2e8f6",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 73,
+      "interval_stop": 85,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i73-85.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 130
+    },
+    {
+      "id": "d3266e4b-6750-4cbc-8bda-5babc9cc505f",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 85,
+      "interval_stop": 97,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i85-97.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 131
+    },
+    {
+      "id": "a6db52d4-040d-4cc8-8ec5-3155690cf4f9",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 97,
+      "interval_stop": 109,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i97-109.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 132
+    },
+    {
+      "id": "35a00d0d-333f-47d5-b679-d38e4325ed99",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 109,
+      "interval_stop": 121,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i109-121.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 133
+    },
+    {
+      "id": "b57f0f6e-3a21-405f-85c6-25b02b8c228a",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 121,
+      "interval_stop": 133,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i121-133.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 134
+    },
+    {
+      "id": "0ef89094-4998-4797-b118-97ba4130c8bb",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 133,
+      "interval_stop": 145,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i133-145.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 135
+    },
+    {
+      "id": "cd086454-67b6-4b0f-974d-28f6d6c1fa47",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 145,
+      "interval_stop": 157,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i145-157.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 136
+    },
+    {
+      "id": "beb67de1-e72b-4cc7-a37b-9e111d40f5e3",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 157,
+      "interval_stop": 169,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i157-169.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 137
+    },
+    {
+      "id": "f3ee8a5c-6ba1-4b10-b0be-445edbfe773f",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 169,
+      "interval_stop": 181,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i169-181.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 138
+    },
+    {
+      "id": "beca2d8a-0a6a-4dad-98a0-bf4bb9f6fae4",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 181,
+      "interval_stop": 193,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i181-193.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 139
+    },
+    {
+      "id": "fa502fb8-e527-4b83-b716-09d0144a6bbf",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 193,
+      "interval_stop": 205,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i193-205.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 140
+    },
+    {
+      "id": "18c09292-add3-46dc-8d61-b21e96ddb595",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 205,
+      "interval_stop": 217,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i205-217.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 141
+    },
+    {
+      "id": "e89ef7cb-f996-4a7a-9aa5-fe0001a246d9",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 217,
+      "interval_stop": 229,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i217-229.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 142
+    },
+    {
+      "id": "064ef551-d249-4d9a-9802-4643548e0e01",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 229,
+      "interval_stop": 241,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i229-241.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 143
+    },
+    {
+      "id": "fbf3af9c-43a2-410f-a2eb-1827d56a74fd",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 241,
+      "interval_stop": 253,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i241-253.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 144
+    },
+    {
+      "id": "e8d3ea79-833b-4637-b415-b77c056cebe3",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 253,
+      "interval_stop": 265,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i253-265.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 145
+    },
+    {
+      "id": "9b3591ec-0c36-46d9-900f-1a897c48944c",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 265,
+      "interval_stop": 277,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i265-277.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 146
+    },
+    {
+      "id": "6ee4b769-3dc9-40a1-803c-b08e44876571",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 277,
+      "interval_stop": 289,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i277-289.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 147
+    },
+    {
+      "id": "f6fec99b-13c5-4c76-96c6-4a045a25e9bf",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 289,
+      "interval_stop": 301,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i289-301.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 148
+    },
+    {
+      "id": "f494eba3-2f06-4f2d-aa20-ad78addd3a60",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 301,
+      "interval_stop": 313,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i301-313.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 149
+    },
+    {
+      "id": "12e5ce05-c323-4023-a2b0-2c19061ef2fe",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 313,
+      "interval_stop": 325,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i313-325.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 150
+    },
+    {
+      "id": "dfe63b4b-5af1-424f-ba2e-e46d6813aa46",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 325,
+      "interval_stop": 337,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i325-337.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 151
+    },
+    {
+      "id": "adbc4709-db73-4b6d-b431-bffbb340d0ab",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 337,
+      "interval_stop": 349,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i337-349.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 152
+    },
+    {
+      "id": "f8de695c-b4a2-42d7-a6bb-3d9c6e2cd59b",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 349,
+      "interval_stop": 361,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i349-361.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 153
+    },
+    {
+      "id": "62c4f92d-5981-4075-aebe-d75d18a251c9",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 361,
+      "interval_stop": 373,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i361-373.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 154
+    },
+    {
+      "id": "ef7106ee-45ec-4b9b-942b-2ee08ff5b15a",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 373,
+      "interval_stop": 385,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i373-385.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 155
+    },
+    {
+      "id": "a92bd2d7-091f-40b1-82a3-49e3510458c8",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 385,
+      "interval_stop": 397,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i385-397.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 156
+    },
+    {
+      "id": "dace25e9-2a22-49f3-8354-a6bf858173d6",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 397,
+      "interval_stop": 409,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i397-409.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 157
+    },
+    {
+      "id": "ba8cdd6b-5ce8-4ed6-9da2-b3d010216f6d",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 409,
+      "interval_stop": 421,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i409-421.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 158
+    },
+    {
+      "id": "24625b12-2326-4e23-9b64-14b2563812a2",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 421,
+      "interval_stop": 433,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i421-433.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 159
+    },
+    {
+      "id": "38e4c22e-725b-4c31-a381-dff6c08ba3c5",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 433,
+      "interval_stop": 445,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i433-445.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 160
+    },
+    {
+      "id": "61432d52-0164-4685-a84a-55fd94dff879",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 445,
+      "interval_stop": 457,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i445-457.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 161
+    },
+    {
+      "id": "63f773a3-753a-4e25-8fe2-6a62c471977e",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 457,
+      "interval_stop": 469,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i457-469.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 162
+    },
+    {
+      "id": "32d01436-2add-42a3-906b-209df86054b4",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 469,
+      "interval_stop": 481,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i469-481.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 163
+    },
+    {
+      "id": "3ecf8293-4b0b-4b32-8870-efbaf494b265",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 481,
+      "interval_stop": 493,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i481-493.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 164
+    },
+    {
+      "id": "37ac3be9-5161-494a-9674-914b8cbff621",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 493,
+      "interval_stop": 505,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i493-505.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 165
+    },
+    {
+      "id": "8e7c2018-fb01-4766-9b84-792a7f17873f",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 505,
+      "interval_stop": 517,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i505-517.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 166
+    },
+    {
+      "id": "e5bc2c69-67ea-402a-99a6-83d8e71c49b1",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 517,
+      "interval_stop": 529,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i517-529.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 167
+    },
+    {
+      "id": "4f45470d-05e1-4e16-8254-ce2d453f563a",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 529,
+      "interval_stop": 541,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i529-541.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 168
+    },
+    {
+      "id": "2b935af8-b722-4058-a38f-9134e78ddc87",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 541,
+      "interval_stop": 553,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i541-553.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 169
+    },
+    {
+      "id": "4084df10-6124-45f2-a9d3-0750fdbcb8f8",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 553,
+      "interval_stop": 565,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i553-565.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 170
+    },
+    {
+      "id": "6e0aeaf2-2652-49af-b0d8-074d7b2c0edc",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 565,
+      "interval_stop": 577,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i565-577.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 171
+    },
+    {
+      "id": "d84ce41f-ab61-415c-99c7-71a7a545d758",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 577,
+      "interval_stop": 589,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i577-589.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 172
+    },
+    {
+      "id": "01df91b4-1d27-4657-9932-e20afc169441",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 589,
+      "interval_stop": 601,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i589-601.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 173
+    },
+    {
+      "id": "4a3214d0-b5a3-4d81-aedd-5785b13b919b",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 601,
+      "interval_stop": 613,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i601-613.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 174
+    },
+    {
+      "id": "fa78e7cb-30fc-41d3-8170-63e819108cf4",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 613,
+      "interval_stop": 625,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i613-625.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 175
+    },
+    {
+      "id": "66fdf4b2-a016-478a-8b40-c1a7ed45a79f",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 625,
+      "interval_stop": 637,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i625-637.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 176
+    },
+    {
+      "id": "9e03aeba-b0db-484e-8691-3013a0b099f6",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 637,
+      "interval_stop": 649,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i637-649.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 177
+    },
+    {
+      "id": "d75a09a6-fff0-465a-b8ce-1975b90ec2f7",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 649,
+      "interval_stop": 661,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i649-661.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 178
+    },
+    {
+      "id": "860103b5-7c0d-4cfe-93e1-279ec6ab4a98",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 661,
+      "interval_stop": 673,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i661-673.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 179
+    },
+    {
+      "id": "e03b0299-e0c7-4901-9b4d-dd93037a7084",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_start": 673,
+      "interval_stop": 678,
+      "output": "outputs/t53-v2-adaptive-branch-e2-i673-678.json",
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "submission_order": 217
+    },
+    {
+      "id": "1b0db3a0-e33a-4f12-baf7-ef91e20e4226",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 1,
+      "interval_stop": 13,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i1-13.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 180
+    },
+    {
+      "id": "694b019c-213b-4b64-b37a-86e9344c36d4",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 13,
+      "interval_stop": 25,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i13-25.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 181
+    },
+    {
+      "id": "afa41679-3d16-403b-aa24-db09cc833566",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 25,
+      "interval_stop": 37,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i25-37.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 182
+    },
+    {
+      "id": "c8ca341a-d543-4d7f-ab75-e5cf1e99034c",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 37,
+      "interval_stop": 49,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i37-49.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 183
+    },
+    {
+      "id": "1422ffa4-1396-4897-8c3d-e4708a1cd49b",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 49,
+      "interval_stop": 61,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i49-61.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 184
+    },
+    {
+      "id": "b31a6e47-6e82-403e-8168-c51d24e8cee8",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 61,
+      "interval_stop": 73,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i61-73.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 185
+    },
+    {
+      "id": "ecdcbb66-e1ac-4283-bf51-455b2029e6c0",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 73,
+      "interval_stop": 85,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i73-85.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 186
+    },
+    {
+      "id": "e14db405-c5dc-498d-a36d-796679500f30",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 85,
+      "interval_stop": 97,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i85-97.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 187
+    },
+    {
+      "id": "92d97580-82aa-4180-bb4b-87318d41b361",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 97,
+      "interval_stop": 109,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i97-109.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 188
+    },
+    {
+      "id": "84150ea9-f7c1-4ea4-b7d3-9e16c1806091",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 109,
+      "interval_stop": 121,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i109-121.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 189
+    },
+    {
+      "id": "4fc5aeba-2539-48f6-afb6-2717223d36ac",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 121,
+      "interval_stop": 133,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i121-133.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 190
+    },
+    {
+      "id": "2bbe8c48-60e0-44ba-86b1-6507e6815e3b",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 133,
+      "interval_stop": 145,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i133-145.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 191
+    },
+    {
+      "id": "a9dc4674-f16b-4783-bc04-379dc863e75c",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 145,
+      "interval_stop": 157,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i145-157.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 192
+    },
+    {
+      "id": "1b7127e9-f327-48c0-ab55-dda2d76b6883",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 157,
+      "interval_stop": 169,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i157-169.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 193
+    },
+    {
+      "id": "e2bedc8d-4497-49fd-823a-7de85dadd01b",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 169,
+      "interval_stop": 181,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i169-181.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 194
+    },
+    {
+      "id": "3799eeeb-fa29-4f9b-b91d-295ffa9b0c24",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 181,
+      "interval_stop": 193,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i181-193.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 195
+    },
+    {
+      "id": "7fb9e703-0b50-499d-904a-5c798671dd73",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 193,
+      "interval_stop": 205,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i193-205.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 196
+    },
+    {
+      "id": "9ded0bfb-6764-412d-983c-82e05e1c4a1b",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 205,
+      "interval_stop": 217,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i205-217.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 197
+    },
+    {
+      "id": "2b577ae4-9730-4431-99a0-1ec6278b62a8",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 217,
+      "interval_stop": 229,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i217-229.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 198
+    },
+    {
+      "id": "3547cb5d-fccf-47ca-bc8d-c839a594f986",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 229,
+      "interval_stop": 241,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i229-241.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 199
+    },
+    {
+      "id": "6ebb6a0b-ad4d-4a6f-afbb-b3d19230b5a6",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 241,
+      "interval_stop": 253,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i241-253.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 200
+    },
+    {
+      "id": "e3c358cd-3f48-486f-b776-d88a212d2636",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 253,
+      "interval_stop": 265,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i253-265.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 201
+    },
+    {
+      "id": "baeda2d5-1a28-4ea2-96fb-885ad9ca1639",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 265,
+      "interval_stop": 277,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i265-277.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 202
+    },
+    {
+      "id": "609a0a59-65fb-4f32-a927-a64fd0e68eea",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 277,
+      "interval_stop": 289,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i277-289.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 203
+    },
+    {
+      "id": "365952ef-ba36-4628-9eac-44d1c287a776",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 289,
+      "interval_stop": 301,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i289-301.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 204
+    },
+    {
+      "id": "4b671f57-749e-48b8-aa26-e34a2371c97c",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 301,
+      "interval_stop": 313,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i301-313.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 205
+    },
+    {
+      "id": "994bfb7e-b9d7-4660-9145-4e20ae9f24e2",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 313,
+      "interval_stop": 325,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i313-325.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 206
+    },
+    {
+      "id": "b7205964-9bf4-4950-a024-7c1803df52cd",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 325,
+      "interval_stop": 337,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i325-337.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 207
+    },
+    {
+      "id": "c1601da7-0da6-4736-b19d-03e69ef1d81f",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 337,
+      "interval_stop": 349,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i337-349.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 208
+    },
+    {
+      "id": "3d3346ed-1a2b-4d51-bf4c-9b965f8f1edc",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 349,
+      "interval_stop": 361,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i349-361.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 209
+    },
+    {
+      "id": "04eb7b56-f9ec-449c-be93-ca221fdedfd7",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 361,
+      "interval_stop": 373,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i361-373.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 210
+    },
+    {
+      "id": "feefb54e-b191-431f-bb39-f239ebe90a32",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 373,
+      "interval_stop": 385,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i373-385.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 211
+    },
+    {
+      "id": "73ed8bd0-0e75-4d95-971f-96d969318e2e",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 385,
+      "interval_stop": 397,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i385-397.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 212
+    },
+    {
+      "id": "0778d56b-fbc2-4954-926b-4be9555d43f0",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 397,
+      "interval_stop": 409,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i397-409.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 213
+    },
+    {
+      "id": "43f40fc6-1a59-4c6a-a655-928c4c8fa9da",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 409,
+      "interval_stop": 421,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i409-421.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 214
+    },
+    {
+      "id": "18c6d112-8ad2-4234-9d60-cce399189bac",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_start": 421,
+      "interval_stop": 429,
+      "output": "outputs/t53-v2-adaptive-branch-e3-i421-429.json",
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "submission_order": 218
+    }
+  ],
+  "guardrails": {
+    "process_success_is_not_theorem_promotion": true,
+    "no_job_counts_as_coverage_before_result_download_and_independent_verification": true,
+    "packet_declared_atomic_prefix_is_authoritative": true,
+    "overlap_or_out_of_domain_interval_is_rejected": true,
+    "complete_branch_and_boundary_coverage_are_required_before_joint_assembly": true,
+    "this_manifest_does_not_claim_B89_rejection_or_beta_C": true
+  }
+}

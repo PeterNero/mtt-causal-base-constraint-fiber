@@ -2036,10 +2036,40 @@ The packet and requester-side verifier are hash locked and pass 10/10 checks.
 The finalizer now treats packet-declared ranges as authoritative, accepts only
 locally hash-matched packets with requester-side verification, rejects overlap,
 accounts for atomic certified prefixes and requires exact coverage before any
-assembly. Its current preflight records branch coverage `378/2195` and boundary
-coverage `1940/2195`. The exact missing branch ranges are edge 1 `[144,336)` and
-`[337,857)`, edge 2 `[1,679)`, and edge 3 `[1,430)`. The exact missing boundary
-ranges are edge 2 `[128,192)`, `[256,386)`, and `[387,448)`.
+assembly. Its immutable preflight snapshot records branch coverage `378/2195`
+and boundary coverage `1940/2195`. The exact missing preflight branch ranges are
+edge 1 `[144,336)` and `[337,857)`, edge 2 `[1,678)`, and edge 3 `[1,429)`.
+The exact missing preflight boundary ranges were edge 2 `[128,192)`,
+`[256,386)`, and `[387,448)`.
+
+At frozen source commit `352191c`, every one of those gaps is represented by
+an immutable isolated capsule in
+`q79_b89_recursive_replacement_campaign.json`: 153 branch jobs request exactly
+1,817 intervals and 65 boundary jobs request exactly 255 intervals. Two
+off-by-one tail submissions were cancelled before worker claim and replaced by
+the exact half-open ranges. Job submission is not added to certified coverage;
+each packet must be downloaded, hash checked, independently verified and then
+accepted by the finalizer.
+
+The first 69 completed replacement capsules have now passed that full gate:
+the stored input and result capsules, result manifest and packet payload were
+hash checked, and every packet independently passed its carrier verifier at
+`10/10`. The 65 boundary packets certify all 255 formerly missing boundary
+intervals. Four branch packets additionally certify 48 intervals. The active
+finalizer state is therefore
+
+```text
+boundary carrier: 2195/2195, complete
+branch carrier:     426/2195, incomplete
+```
+
+No process-only success is counted. The cumulative campaign report records the
+69 independently verified packet rows, zero successful capsules awaiting
+verification and the exact carrier deltas. At the CBF.T54 snapshot the
+remaining branch campaign comprised 12 running and 137 queued jobs. The durable
+ingester is path-parameterized, validates archive-member paths, writes
+atomically and keeps every failed scientific audit out of the result index.
+Four focused tamper/path tests cover those safety boundaries.
 
 `Q79_B89_AFFINE_DELIGNE_LOGICAL_AUDIT_v1.md` also fixes the logical endpoint.
 On a certified same source, `[n] != 0` in `coker(M-I)` implies a nonzero
@@ -2049,10 +2079,36 @@ pointwise analytic normal value is nonzero, and the converse is unavailable:
 witness `w(M-I)=0`, `w n=1` would be a sufficient exact integral obstruction
 after the full same-source carrier is assembled.
 
-Until complete branch and boundary coverage, joint-isotopy assembly and the
-affine obstruction replay pass, H4-T123, H4-T124, H4-T125 and H4-T126 remain
-open. B89 is not yet rejected, no replacement graph-Prym member is selected,
+The downstream decision chain is already implemented rather than hypothetical.
+Once branch coverage is complete, the existing exact assemblers produce the
+252-strand branch aggregate and the joint 288-strand same-source isotopy. The
+already independently replayed rectangle operator then tests a rank-164
+mod-two action. Its conditional packet has `rank(M-I)=42` and a left-cokernel
+witness with pairing one against the affine translation. Full same-source
+isotopy would promote that existing conditional computation to the integral
+nonzero-cokernel implication audited above and therefore reject B89.
+
+Until complete branch coverage, joint-isotopy assembly and the affine
+obstruction replay pass, H4-T123, H4-T125 and H4-T126 remain open. The complete
+boundary component needed by H4-T124 is now requester-certified, but its formal
+theorem certificate is intentionally emitted only by the final joint promotion
+chain. B89 is not yet rejected, no replacement graph-Prym member is selected,
 `beta_C=0` is not proved on a physical root, and no HYM or Hull-Strominger
-endpoint is emitted. The portable frontier freeze passes 9/9 checks and the
+endpoint is emitted. The portable frontier freeze passes 12/12 checks. The last
 complete canonical replay passes every builder and independent verifier plus
-all 472 tests.
+all 476 tests, including the four focused ingestion safety tests.
+
+`Q79B89DownstreamPromotionReadinessTheorem_v1.md` (`CBF.T54`) closes the
+downstream-readiness audit without promoting the candidate decision. It
+independently binds the compact capsule attestations to the exact campaign
+ranges, recomputes current coverage as branch `426/2195` and boundary
+`2195/2195`, and hash-locks H4-T113, H4-T116, H4-T118, H4-T119, H4-T120 and
+H4-T122 to the common-grid Artin word, segmented 24,999-letter rectangle and
+conditional rank-164 affine replay.
+
+The static replay is already exact: `rank(M)=164`, `rank(M-I)=42`, left
+nullity 122, and the left-cokernel witness pairs to one with the affine
+translation. T54 therefore proves that complete branch isotopy plus the
+deterministic joint assembly is the only missing premise for the existing B89
+rejection replay. Its current decision is
+`STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING`; it does not call B89 rejected.
