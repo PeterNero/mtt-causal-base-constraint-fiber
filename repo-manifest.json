@@ -202,6 +202,11 @@
     "canonical conjugate-paired complex-bundle realification and exact Hodge-contraction covariance",
     "determinant-one Hermitian equal-volume Hodge-shape no-go with eight source fields",
     "exact supplied-Hermitian-metric full Hodge coefficient compiler and rank-eight first response",
+    "hash-locked exact-source B89 pair-sweep equivalence on two distinct-edge cells",
+    "recursive dyadic repair of failed B89 source-isotopy cells with exact 252-label endpoint binding",
+    "hash-locked adaptive B89 source-isotopy pilots on all three nontrivial branch edges",
+    "exact interval affine-segment boundary homotopy criterion beyond the conservative Rouche sufficient bound",
+    "overlap-rejecting hash-verified mixed-packet B89 coverage finalizer with atomic-prefix accounting",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -325,6 +330,7 @@
     "selection of the physical q79 Fu-Yau metric or conformal factor by the Hodge sign compiler",
     "selection of physical q79 metric coefficients by the supplied-metric Hodge compiler or its non-diagonal witness",
     "selection of Majorana reality, chirality or particle spectrum by conjugate-paired realification",
+    "full B89 source isotopy, affine Deligne rejection or replacement graph-Prym selection from the T53A acceleration checkpoint",
     "a new globally original operator-theory identity"
   ],
   "controlling_status": "CURRENT_STATUS.md",
@@ -435,7 +441,20 @@
     "common_action_quantum_torsor.packet.json",
     "normalized_orientation_coframe_bv_bridge.packet.json",
     "q79_oriented_hodge_real_carrier.packet.json",
-    "q79_hermitian_metric_hodge_compiler.packet.json"
+    "q79_hermitian_metric_hodge_compiler.packet.json",
+    "q79_b89_accelerated_source_isotopy_benchmark.packet.json",
+    "q79_b89_accelerated_source_isotopy_benchmark_edge1.packet.json",
+    "q79_b89_accelerated_source_isotopy_equivalence.packet.json",
+    "q79_b89_accelerated_adaptive_source_isotopy_pilot.packet.json",
+    "q79_b89_accelerated_adaptive_source_isotopy_edge2_pilot.packet.json",
+    "q79_b89_accelerated_adaptive_source_isotopy_edge3_pilot.packet.json",
+    "q79_b89_accelerated_adaptive_source_isotopy_pilot_verification.packet.json",
+    "q79_b89_accelerated_adaptive_source_isotopy_cross_edge_verification.packet.json",
+    "q79_b89_boundary_direct_homotopy_cell_pilot.packet.json",
+    "q79_b89_recursive_boundary_isotopy_pilot.packet.json",
+    "q79_b89_recursive_boundary_isotopy_pilot_verification.packet.json",
+    "q79_b89_accelerated_source_isotopy_result_index.json",
+    "q79_b89_accelerated_source_isotopy_coverage_report.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -489,13 +508,15 @@
     "python build_common_action_quantum_torsor.py",
     "python build_normalized_orientation_coframe_bv_bridge.py",
     "python build_q79_oriented_hodge_real_carrier.py",
-    "python build_q79_hermitian_metric_hodge_compiler.py"
+    "python build_q79_hermitian_metric_hodge_compiler.py",
+    "python build_q79_b89_accelerated_source_isotopy_equivalence.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
     "CONSTRAINT_REDUCTION_REFERENCE_SYSTEM_v0.md",
     "PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md",
-    "Q79_ETA9_ENDPOINT_UNLOCK_DECISION_PROGRAM_v1.md"
+    "Q79_ETA9_ENDPOINT_UNLOCK_DECISION_PROGRAM_v1.md",
+    "Q79_B89_AFFINE_DELIGNE_LOGICAL_AUDIT_v1.md"
   ],
   "contracts": [
     "q79_physical_endpoint_three_packet_contract.schema.json",
@@ -538,7 +559,10 @@
     "common_action_quantum_torsor_contract.schema.json",
     "normalized_orientation_coframe_bv_bridge_contract.schema.json",
     "q79_oriented_hodge_real_carrier_contract.schema.json",
-    "q79_hermitian_metric_hodge_compiler_contract.schema.json"
+    "q79_hermitian_metric_hodge_compiler_contract.schema.json",
+    "q79_b89_accelerated_source_isotopy_contract.schema.json",
+    "q79_b89_accelerated_adaptive_source_isotopy_contract.schema.json",
+    "q79_b89_recursive_boundary_isotopy_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

@@ -1,0 +1,92 @@
+{
+  "schema": "mtt.cbf.q79-b89-source-isotopy-result-index.v2",
+  "purpose": "List only retrieved result packets that passed an independent requester-side verifier. Packet-declared interval ranges are authoritative.",
+  "jobs": [
+    {
+      "id": "6ca28a8e-9c50-44d0-935f-51665e4bf6de",
+      "carrier": "branch",
+      "edge": 1,
+      "interval_range": [
+        336,
+        337
+      ],
+      "assigned_agent": "pinero-t53-10",
+      "packet_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_adaptive_source_isotopy_pilot.packet.json",
+      "packet_sha256": "2d31fb2fb1c2bb5b088fbf7a21e7c1894fc65cb115cbb922e4b4df94ce93d7b9",
+      "independent_verification": {
+        "passed": true,
+        "packet_sha256": "2d31fb2fb1c2bb5b088fbf7a21e7c1894fc65cb115cbb922e4b4df94ce93d7b9",
+        "verifier": "python verify_q79_b89_accelerated_adaptive_source_isotopy.py",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5",
+        "passed_checks": 10,
+        "total_checks": 10
+      }
+    },
+    {
+      "id": "local-boundary-edge2-interval386",
+      "carrier": "boundary",
+      "edge": 2,
+      "interval_range": [
+        386,
+        387
+      ],
+      "assigned_agent": "local-requester",
+      "packet_path": "mtt-causal-base-constraint-fiber/q79_b89_recursive_boundary_isotopy_pilot.packet.json",
+      "packet_sha256": "fb2ad26a5ba58d004f71611bee1c2afd12127728e3da3093b7c6197199fe84f0",
+      "independent_verification": {
+        "passed": true,
+        "packet_sha256": "fb2ad26a5ba58d004f71611bee1c2afd12127728e3da3093b7c6197199fe84f0",
+        "verifier": "python verify_q79_b89_recursive_boundary_isotopy.py",
+        "verifier_sha256": "5d62816d8545dd75ba864f5b313bfdc53b371ccfd36500a693728b4100b00377",
+        "passed_checks": 10,
+        "total_checks": 10
+      }
+    },
+    {
+      "id": "2bd3cb5e-6808-43b0-8a2a-110edbc432af",
+      "carrier": "branch",
+      "edge": 2,
+      "interval_range": [
+        0,
+        1
+      ],
+      "assigned_agent": "pinero-t53-07",
+      "packet_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_adaptive_source_isotopy_edge2_pilot.packet.json",
+      "packet_sha256": "6a9450d1be6a27e109fdc86dcb3758708b9eaed3cd0e6ff7ccd38cc82958924b",
+      "independent_verification": {
+        "passed": true,
+        "packet_sha256": "6a9450d1be6a27e109fdc86dcb3758708b9eaed3cd0e6ff7ccd38cc82958924b",
+        "verifier": "python verify_q79_b89_accelerated_adaptive_source_isotopy.py",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5",
+        "passed_checks": 10,
+        "total_checks": 10
+      }
+    },
+    {
+      "id": "eebe0af7-8386-4b20-9bd7-5282a381c01e",
+      "carrier": "branch",
+      "edge": 3,
+      "interval_range": [
+        0,
+        1
+      ],
+      "assigned_agent": "pinero-t53-11",
+      "packet_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_adaptive_source_isotopy_edge3_pilot.packet.json",
+      "packet_sha256": "667ea27efa7ceb29006b8ba02dd6755a079fedc09b64598f117349d9594f684d",
+      "independent_verification": {
+        "passed": true,
+        "packet_sha256": "667ea27efa7ceb29006b8ba02dd6755a079fedc09b64598f117349d9594f684d",
+        "verifier": "python verify_q79_b89_accelerated_adaptive_source_isotopy.py",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5",
+        "passed_checks": 10,
+        "total_checks": 10
+      }
+    }
+  ],
+  "guardrails": {
+    "failed_or_unretrieved_jobs_are_absent": true,
+    "process_success_without_independent_verification_is_rejected": true,
+    "partial_checkpoints_contribute_only_their_certified_prefix": true,
+    "this_index_does_not_assert_complete_coverage": true
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "all_jobs_observed": false,
+  "campaign_set": "adaptive",
+  "coverage": {
+    "carrier": "branch",
+    "certified_intervals": 378,
+    "complete": false,
+    "missing_ranges": {
+      "0": [],
+      "1": [
+        [
+          144,
+          336
+        ],
+        [
+          337,
+          857
+        ]
+      ],
+      "2": [
+        [
+          1,
+          678
+        ]
+      ],
+      "3": [
+        [
+          1,
+          429
+        ]
+      ]
+    },
+    "shards": 19,
+    "target_intervals": 2195
+  },
+  "jobs": [
+    {
+      "assigned_agent": "pinero-beq-4",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 6835.8338424999965,
+      "id": "919adeb7-9677-45d7-8464-fdd03e7f8e16",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        0,
+        24
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i0-24.json",
+      "result_capsule_sha256": "36f7f147827f5fb8ae425a609fa3b2bdbbc208900ac09c54a3daaf79f0314a39",
+      "result_manifest_sha256": "eb88eb53ea584696510b4cd7172b1925575f0bf5538546dfa1e7f5de5321dea5",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/919adeb7-9677-45d7-8464-fdd03e7f8e16/taylor-family/shard.json",
+      "retrieved_payload_sha256": "3b25ae1e0ef6cfbb106342958318f750aef50d6e8a7c58d9973ae41719b73795",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 6457.958400200005,
+      "id": "36d24d4c-a471-4981-a863-cdc6e97d624c",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        24,
+        48
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i24-48.json",
+      "result_capsule_sha256": "722569aa2acb0b20075c175d0952ea4320496c0d62bcc1212a82689ab5f1e5fc",
+      "result_manifest_sha256": "d1c72da5951c1c8ae4ff12a63b3b8de08eefd8acf5093ac00f55194b505973ba",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/36d24d4c-a471-4981-a863-cdc6e97d624c/taylor-family/shard.json",
+      "retrieved_payload_sha256": "4490306731abfa5ff7c42a87a21657b375b5e38cc6073069f3e4b4a1548dd454",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-8",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 6863.613136,
+      "id": "4bfbc458-afd6-4c59-b059-d9b5ba54feac",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        48,
+        72
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i48-72.json",
+      "result_capsule_sha256": "13f13118a130f42d86e2beb476c1c0241417c0c52a9d78e737e837fb6e78af3a",
+      "result_manifest_sha256": "4ee6bb200b0633543121a40bcf31c1da00a36152a151a34ddd09646336bb0cf3",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/4bfbc458-afd6-4c59-b059-d9b5ba54feac/taylor-family/shard.json",
+      "retrieved_payload_sha256": "7ec3ef1e473e551d11bc5cab045e39be4f295bdf7cec043d4a45680bc91db2c0",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-5",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 6536.9144099999685,
+      "id": "5213317f-f67f-4d1e-a7d0-14cc8787c73e",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        72,
+        96
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i72-96.json",
+      "result_capsule_sha256": "4eb8ffa5c062941dbef9fc453b03dfc3245b1e94623d2448d748341552e7d175",
+      "result_manifest_sha256": "57a7b620c152e462f04f1476ca986221521ce81ef124c5e8e236482e30d0b16c",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/5213317f-f67f-4d1e-a7d0-14cc8787c73e/taylor-family/shard.json",
+      "retrieved_payload_sha256": "f49257374663b157d01acdea0230bfd39e5fe38dcba4daddce499a96008e7b69",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-3",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 6828.402305399999,
+      "id": "6952b3af-aaf9-42de-abe6-8b035def52bf",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        96,
+        120
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i96-120.json",
+      "result_capsule_sha256": "bcefc1a21c59aae8cd1a08582001265251514c495cc360cbb16143cbaa243ce3",
+      "result_manifest_sha256": "7e4a48158936cff6f63bce22b6a6d304d8d2c2f9d4a3dcdaacf8ca5467607356",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/6952b3af-aaf9-42de-abe6-8b035def52bf/taylor-family/shard.json",
+      "retrieved_payload_sha256": "d9bd94335f2e3f4eb643767f2c151004eaa5a13b551d3b99c2115b8fd6c2f9d3",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-6",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 6909.559457299998,
+      "id": "cf15254b-fdbc-4f79-86db-24c3aab201c5",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        120,
+        144
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i120-144.json",
+      "result_capsule_sha256": "851818baf99a49c9e0fb3cf585f532065ac42f0a97648291a604cb9713d7fa6b",
+      "result_manifest_sha256": "d53611429fc55ee37049792110daee5b02f937c271b3fa01e2db67aec17d4f7b",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/cf15254b-fdbc-4f79-86db-24c3aab201c5/taylor-family/shard.json",
+      "retrieved_payload_sha256": "da252212bb9e78426efba8fc788828ee4ad0bfa74579b3bc13c81446bf9ab566",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-7",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 6959.841772000014,
+      "id": "3fe61536-89b4-451b-8f39-327c695fff8a",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        144,
+        168
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i144-168.json",
+      "result_capsule_sha256": "a12769cbc45bdfa3742e021db692ca16e0e7be2ad18699699a2333bcef19cf9c",
+      "result_manifest_sha256": "5fe14bc4f3f695cf821d922a42249c5241935a182d28f39629af40c417f9b51c",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/3fe61536-89b4-451b-8f39-327c695fff8a/taylor-family/shard.json",
+      "retrieved_payload_sha256": "4accfe81c31d3bb8295463e44aac830d7bf87dc7a7b750ab1deaf72db60bf0da",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-2",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 6918.027662799985,
+      "id": "496a3db4-9a8a-47cb-8253-2374763c0a89",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        168,
+        192
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i168-192.json",
+      "result_capsule_sha256": "ed24d0ae86ac7ddcb2a50639afbec8ff26a6331fd1a2938d494cfdaf663eb942",
+      "result_manifest_sha256": "5e27a7bc2c03a36aafc380fe935df65263db788cd3a802abfd993b79cbb81516",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/496a3db4-9a8a-47cb-8253-2374763c0a89/taylor-family/shard.json",
+      "retrieved_payload_sha256": "aac13a57b8ec61ded72be16f7dd69c67f3856f96d181a990f6cf0d23cbe9722a",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-9",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 0,
+      "elapsed_seconds": 7195.3579024999635,
+      "id": "549d1b74-49e3-4d4d-bea1-05118f6d54f1",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        192,
+        216
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i192-216.json",
+      "result_capsule_sha256": "749310f977abac75e22fcf4bfe4881cc631ef925e3c3ab17adf5becc09d12be4",
+      "result_manifest_sha256": "6f5bd5f73416053f999cb6f20a6c169cef47880dca6b36c20ae60f899344a6a7",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/549d1b74-49e3-4d4d-bea1-05118f6d54f1/taylor-family/shard.json",
+      "retrieved_payload_sha256": "69989d22e878047817f7374a4754f09f8e00319aad14b58695574e9f1959ecba",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-10",
+      "certified_branch_tubes": 3780,
+      "certified_intervals": 15,
+      "certified_pairs": 474390,
+      "certified_subcells": 15,
+      "edge": 0,
+      "elapsed_seconds": 4597.984506400011,
+      "id": "af464375-5fef-4607-9d6d-40a608d0313d",
+      "input_capsule_sha256": "2dd13434306fb6d807ec42958055bc1b931d03197ce874b8770de77763b3c343",
+      "interval_range": [
+        216,
+        231
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e0-i216-231.json",
+      "result_capsule_sha256": "5e20b91d3fc3818830c1503de9f9f53333567539611c92930a047e6fe99a4bea",
+      "result_manifest_sha256": "6eeb31eb486ac8bf0c0a3e6a5f253ba1bee21f67c7a6dc81b55935fb8a320dd2",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/af464375-5fef-4607-9d6d-40a608d0313d/taylor-family/shard.json",
+      "retrieved_payload_sha256": "d41e43cc27913f85739582eba8c8c985c820b44d4e252026852f1995d2309d07",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-11",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 1,
+      "elapsed_seconds": 7155.828161099984,
+      "id": "dc2983bf-9d40-43f3-897f-c53e2c58d155",
+      "input_capsule_sha256": "a4fb749690611f777661becd15992b980789e9d23b582ffd93667494916f9ff5",
+      "interval_range": [
+        0,
+        24
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e1-i0-24.json",
+      "result_capsule_sha256": "266e2a95b7866819a0d95ba6e23516e41b9751cc59ce809cdf1aa211ee5b548f",
+      "result_manifest_sha256": "0427a279a4c7c401fb69dd04926e179cc117fbb4efe7d0224bbe07884f0ca859",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/dc2983bf-9d40-43f3-897f-c53e2c58d155/taylor-family/shard.json",
+      "retrieved_payload_sha256": "87ae86785708915c4d4536f7ecce50c222252ce08def0a0d50c227fb81b53ee8",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-12",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 1,
+      "elapsed_seconds": 7215.003850500041,
+      "id": "b07d0882-3766-4431-9b52-810d0d78e126",
+      "input_capsule_sha256": "a4fb749690611f777661becd15992b980789e9d23b582ffd93667494916f9ff5",
+      "interval_range": [
+        24,
+        48
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e1-i24-48.json",
+      "result_capsule_sha256": "e5a89a0d2f0ebf1a16d9778ec90bce99b9b21a79142f248774dc9777b7e5f6b7",
+      "result_manifest_sha256": "a8c05eadb6972a565353729cbdaff76739b7f51592d276633e61f61b7b2203be",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/b07d0882-3766-4431-9b52-810d0d78e126/taylor-family/shard.json",
+      "retrieved_payload_sha256": "cfaf7582e4ee8fce2415800863319d4667ec889b33fb29da4410e99f6a7ec452",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-13",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 1,
+      "elapsed_seconds": 6779.949539099995,
+      "id": "fc9b42e1-dd3a-43a4-a1c6-86ab1a1b1a55",
+      "input_capsule_sha256": "a4fb749690611f777661becd15992b980789e9d23b582ffd93667494916f9ff5",
+      "interval_range": [
+        48,
+        72
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e1-i48-72.json",
+      "result_capsule_sha256": "f5e94e13b8ac0815047fa314b70d710701faf2f6345cf94ed85edc63437cdeaa",
+      "result_manifest_sha256": "3d2a3274bf12cc650c57a22222e5774922e7a04083824396dec3a6dc8abbe278",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/fc9b42e1-dd3a-43a4-a1c6-86ab1a1b1a55/taylor-family/shard.json",
+      "retrieved_payload_sha256": "f5233f1021172d0d3ea9cba85bc6cde4323b95516b10d7bba6ff288d24d9a3fb",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-14",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 1,
+      "elapsed_seconds": 7314.733116700023,
+      "id": "4ecb6f5b-5c6f-41ed-91e0-ecb5d50aa1c9",
+      "input_capsule_sha256": "a4fb749690611f777661becd15992b980789e9d23b582ffd93667494916f9ff5",
+      "interval_range": [
+        72,
+        96
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e1-i72-96.json",
+      "result_capsule_sha256": "3f27a3aa16798d56bffe71ff3a0779ab10d62072fda6b631b03f4d3f2fc7f520",
+      "result_manifest_sha256": "37679a3d22e6a4ab80a0297dfa283d7a3bf8b66756a3474217b87182499d1ac4",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/4ecb6f5b-5c6f-41ed-91e0-ecb5d50aa1c9/taylor-family/shard.json",
+      "retrieved_payload_sha256": "728bf38b98b3be3d63aadf91bda7c67220756f4aecf2dc6fc910d83982fcd7eb",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-15",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 1,
+      "elapsed_seconds": 7225.731280700013,
+      "id": "4b2a4a81-8cc4-4206-a6bf-9f0112d1d709",
+      "input_capsule_sha256": "a4fb749690611f777661becd15992b980789e9d23b582ffd93667494916f9ff5",
+      "interval_range": [
+        96,
+        120
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e1-i96-120.json",
+      "result_capsule_sha256": "b4304dbe98e82e3c21cc9eb7b2fa0a772e9b4e91b17babb8b6f3d83c8ea83f5d",
+      "result_manifest_sha256": "ddf3766c43a8b74dc56be6143bc5a8466875170b5d60d31267fe3eb94509c6bd",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/4b2a4a81-8cc4-4206-a6bf-9f0112d1d709/taylor-family/shard.json",
+      "retrieved_payload_sha256": "c32e11ec08e311afa07f601e87ddf482c2007d4173eb8f4c7af41307a17b9d19",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-16",
+      "certified_branch_tubes": 6048,
+      "certified_intervals": 24,
+      "certified_pairs": 759024,
+      "certified_subcells": 24,
+      "edge": 1,
+      "elapsed_seconds": 7209.139616300003,
+      "id": "a067e775-d34d-4aab-aa35-ccff184c22ca",
+      "input_capsule_sha256": "a4fb749690611f777661becd15992b980789e9d23b582ffd93667494916f9ff5",
+      "interval_range": [
+        120,
+        144
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/adaptive-taylor-family-e1-i120-144.json",
+      "result_capsule_sha256": "6a6a2ec4a508c90ff3b7e35b88a4b3b42e330151251890497904cb7eebed51d5",
+      "result_manifest_sha256": "4a76a50ad23b15c4834990b38bfe975dd6c16235515d8e391e7f0fda048cfa5a",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/a067e775-d34d-4aab-aa35-ccff184c22ca/taylor-family/shard.json",
+      "retrieved_payload_sha256": "b445646a4fd2ec1cd640b72fc4f6e58f2ceca05af24bc04d6d1ac6a94c709558",
+      "scientific_tier": "CERTIFIED_ADAPTIVE_DYADIC_COMPLETE_SOURCE_TUBES_AND_GUIDE_ISOTOPY",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-t53-10",
+      "checkpoint_complete": true,
+      "edge": 1,
+      "id": "6ca28a8e-9c50-44d0-935f-51665e4bf6de",
+      "independent_verification": {
+        "packet_sha256": "2d31fb2fb1c2bb5b088fbf7a21e7c1894fc65cb115cbb922e4b4df94ce93d7b9",
+        "passed": true,
+        "passed_checks": 10,
+        "total_checks": 10,
+        "verifier": "python verify_q79_b89_accelerated_adaptive_source_isotopy.py",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+      },
+      "interval_range": [
+        336,
+        337
+      ],
+      "observed_state": "succeeded",
+      "packet_schema": "mtt.preprojection.q79-eta9-b89-adaptive-family-taylor-krawczyk.v1",
+      "retrieved_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_adaptive_source_isotopy_pilot.packet.json",
+      "retrieved_payload_sha256": "2d31fb2fb1c2bb5b088fbf7a21e7c1894fc65cb115cbb922e4b4df94ce93d7b9"
+    },
+    {
+      "assigned_agent": "pinero-t53-07",
+      "checkpoint_complete": true,
+      "edge": 2,
+      "id": "2bd3cb5e-6808-43b0-8a2a-110edbc432af",
+      "independent_verification": {
+        "packet_sha256": "6a9450d1be6a27e109fdc86dcb3758708b9eaed3cd0e6ff7ccd38cc82958924b",
+        "passed": true,
+        "passed_checks": 10,
+        "total_checks": 10,
+        "verifier": "python verify_q79_b89_accelerated_adaptive_source_isotopy.py",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+      },
+      "interval_range": [
+        0,
+        1
+      ],
+      "observed_state": "succeeded",
+      "packet_schema": "mtt.preprojection.q79-eta9-b89-adaptive-family-taylor-krawczyk.v1",
+      "retrieved_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_adaptive_source_isotopy_edge2_pilot.packet.json",
+      "retrieved_payload_sha256": "6a9450d1be6a27e109fdc86dcb3758708b9eaed3cd0e6ff7ccd38cc82958924b"
+    },
+    {
+      "assigned_agent": "pinero-t53-11",
+      "checkpoint_complete": true,
+      "edge": 3,
+      "id": "eebe0af7-8386-4b20-9bd7-5282a381c01e",
+      "independent_verification": {
+        "packet_sha256": "667ea27efa7ceb29006b8ba02dd6755a079fedc09b64598f117349d9594f684d",
+        "passed": true,
+        "passed_checks": 10,
+        "total_checks": 10,
+        "verifier": "python verify_q79_b89_accelerated_adaptive_source_isotopy.py",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+      },
+      "interval_range": [
+        0,
+        1
+      ],
+      "observed_state": "succeeded",
+      "packet_schema": "mtt.preprojection.q79-eta9-b89-adaptive-family-taylor-krawczyk.v1",
+      "retrieved_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_adaptive_source_isotopy_edge3_pilot.packet.json",
+      "retrieved_payload_sha256": "667ea27efa7ceb29006b8ba02dd6755a079fedc09b64598f117349d9594f684d"
+    }
+  ],
+  "schema": "mtt.cbf.q79-b89-mixed-exact-source-campaign.v1",
+  "source_campaign_sha256": "51dd8c17fe8375d7a7911e43150cd2aff2d1cae0922831245b27725592ac34c5",
+  "upstream_campaign_sha256": "dd41d400b8b65f38ece5a8f22757c72a22d00b285190903fd9a2652555d2e834"
+}

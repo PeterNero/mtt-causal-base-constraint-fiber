@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mtt.cbf.q79-b89-recursive-boundary-isotopy.v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "tier",
+    "source_sha256",
+    "guide_payload_sha256",
+    "guide_metadata_sha256",
+    "edge",
+    "interval_range",
+    "requested_interval_range",
+    "checkpoint",
+    "precision_bits",
+    "predictor_degree",
+    "taylor_order",
+    "separation_max_depth",
+    "recursive_dyadic_policy",
+    "logical_rows",
+    "attempts",
+    "counts",
+    "checks",
+    "guardrails",
+    "failures"
+  ],
+  "properties": {
+    "schema": {
+      "const": "mtt.preprojection.q79-eta9-b89-adaptive-boundary-taylor-krawczyk.v1"
+    },
+    "tier": {
+      "const": "CERTIFIED_RECURSIVE_DYADIC_COMPLETE_BOUNDARY_TUBES_AND_GUIDE_ISOTOPY"
+    },
+    "interval_range": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "requested_interval_range": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "checkpoint": {
+      "type": "object",
+      "required": [
+        "complete_requested_range",
+        "certified_interval_count",
+        "next_interval",
+        "atomic_replace"
+      ]
+    },
+    "precision_bits": {
+      "const": 512
+    },
+    "predictor_degree": {
+      "const": 12
+    },
+    "taylor_order": {
+      "const": 14
+    },
+    "separation_max_depth": {
+      "const": 24
+    },
+    "logical_rows": {
+      "type": "array",
+      "minItems": 1
+    },
+    "attempts": {
+      "type": "array",
+      "minItems": 1
+    },
+    "failures": {
+      "const": []
+    }
+  },
+  "additionalProperties": true
+}

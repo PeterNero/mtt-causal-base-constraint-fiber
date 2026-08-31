@@ -1,0 +1,63 @@
+{
+  "baseline_certifier_sha256": "e3f7ed8b4aaf6f35dd6a26716cbd32388e38a64a1bc34a3f11592b1cf3db4f37",
+  "benchmarks": [
+    {
+      "accelerated_exact_root_projection_sha256": "ae7f9428d96e545532cb0f3354488747781170bafd5e4a1becb27ae38dc92d8b",
+      "accelerated_packet": "q79_b89_accelerated_source_isotopy_benchmark.packet.json",
+      "accelerated_packet_sha256": "013cce9eeb5cbc295a1fe541456fb68455cf706e710115c83262a46bb6be8a43",
+      "accelerated_seconds": 84.88250690000132,
+      "checks": {
+        "all_accelerated_scientific_checks_pass": true,
+        "benchmark_is_faster_than_original_shard_mean": true,
+        "both_sweep_lower_bounds_are_strictly_positive": true,
+        "exact_root_projection_matches": true,
+        "guide_metadata_hash_matches": true,
+        "guide_payload_hash_matches": true,
+        "guide_sweep_is_a_complete_pair_partition": true,
+        "numerical_policy_matches": true,
+        "source_hash_matches": true,
+        "source_sweep_is_a_complete_pair_partition": true
+      },
+      "edge": 0,
+      "interval": 0,
+      "name": "edge0_interval0",
+      "original_seconds_per_interval": 284.82641010416654,
+      "speedup": 3.3555372067382017,
+      "upstream_exact_root_projection_sha256": "ae7f9428d96e545532cb0f3354488747781170bafd5e4a1becb27ae38dc92d8b",
+      "upstream_packet": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/919adeb7-9677-45d7-8464-fdd03e7f8e16/taylor-family/shard.json",
+      "upstream_packet_sha256": "3b25ae1e0ef6cfbb106342958318f750aef50d6e8a7c58d9973ae41719b73795"
+    },
+    {
+      "accelerated_exact_root_projection_sha256": "2d3b7f2faae325e3ccc13f203dbc6d311de4b2139d64210f68be08868fbba4d1",
+      "accelerated_packet": "q79_b89_accelerated_source_isotopy_benchmark_edge1.packet.json",
+      "accelerated_packet_sha256": "ed8cde786759bcee60da636d7cb173537e7adf50dfa68ba33546cae938ba0e1d",
+      "accelerated_seconds": 80.94686090003233,
+      "checks": {
+        "all_accelerated_scientific_checks_pass": true,
+        "benchmark_is_faster_than_original_shard_mean": true,
+        "both_sweep_lower_bounds_are_strictly_positive": true,
+        "exact_root_projection_matches": true,
+        "guide_metadata_hash_matches": true,
+        "guide_payload_hash_matches": true,
+        "guide_sweep_is_a_complete_pair_partition": true,
+        "numerical_policy_matches": true,
+        "source_hash_matches": true,
+        "source_sweep_is_a_complete_pair_partition": true
+      },
+      "edge": 1,
+      "interval": 143,
+      "name": "edge1_interval143",
+      "original_seconds_per_interval": 300.38081734583346,
+      "speedup": 3.7108396052170254,
+      "upstream_exact_root_projection_sha256": "2d3b7f2faae325e3ccc13f203dbc6d311de4b2139d64210f68be08868fbba4d1",
+      "upstream_packet": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/a067e775-d34d-4aab-aa35-ccff184c22ca/taylor-family/shard.json",
+      "upstream_packet_sha256": "b445646a4fd2ec1cd640b72fc4f6e58f2ceca05af24bc04d6d1ac6a94c709558"
+    }
+  ],
+  "schema": "mtt.cbf.q79-b89-accelerated-source-isotopy-source-lock.v1",
+  "upstream_campaign": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_adaptive_taylor_family_campaign.json",
+  "upstream_campaign_sha256": "dd41d400b8b65f38ece5a8f22757c72a22d00b285190903fd9a2652555d2e834",
+  "upstream_repository": "mtt-preprojection-repair-calculus",
+  "worker": "q79_b89_accelerated_source_isotopy_worker.py",
+  "worker_sha256": "2b65f4e27ee5b15b6454b02b612def6ad3bdd1f4dcdcd166e67adec4262fd1f0"
+}

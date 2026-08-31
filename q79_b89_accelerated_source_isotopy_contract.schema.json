@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mtt.cbf.q79-b89-accelerated-source-isotopy-equivalence.v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "theorem_id",
+    "tier",
+    "source_lock_sha256",
+    "source_lock_file_sha256",
+    "benchmarks",
+    "checks",
+    "check_summary",
+    "boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "mtt.cbf.q79-b89-accelerated-source-isotopy-equivalence.v1"
+    },
+    "theorem_id": {"const": "CBF.T53A"},
+    "benchmarks": {"type": "array", "minItems": 2, "maxItems": 2},
+    "checks": {"type": "object"},
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "all_passed"]
+    },
+    "boundary": {"type": "object"}
+  },
+  "additionalProperties": true
+}

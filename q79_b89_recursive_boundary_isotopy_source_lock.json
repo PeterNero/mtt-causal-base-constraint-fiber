@@ -1,0 +1,63 @@
+{
+  "schema": "mtt.cbf.q79-b89-recursive-boundary-source-lock.v1",
+  "theorem_target": "CBF.T53",
+  "recursive_worker": {
+    "path": "q79_b89_recursive_boundary_isotopy_worker.py",
+    "sha256": "2de0b9664945c162b4155abd8c6e9f92d9085dcf1a55f08acf492fb69dda3d32"
+  },
+  "direct_affine_cell_worker": {
+    "path": "q79_b89_boundary_direct_homotopy_cell_worker.py",
+    "sha256": "d9898fc573154e1d60b1df9b47f3534ae3845f0320adeb7389ecd38638ca6ba9"
+  },
+  "independent_verifier": {
+    "path": "verify_q79_b89_recursive_boundary_isotopy.py",
+    "sha256": "5d62816d8545dd75ba864f5b313bfdc53b371ccfd36500a693728b4100b00377"
+  },
+  "baseline_cell_worker": {
+    "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+    "sha256": "8523ae6944e3e275daeb0b98a0bfcea52708b978154b018a039aba0c0a0e32ae"
+  },
+  "source": {
+    "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_branch_forms/q79_eta9_b89_branch_form_worker_input.json",
+    "sha256": "fe3e25938206cdc63ba2ec325987a4c3d21540d84771266eb42625c4756204fd"
+  },
+  "guides": {
+    "payload_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge2-guides.npz",
+    "payload_sha256": "b2ef6df8d86edf3a10db54aec9350fd651f1d375df249d7808ab3cc1b3fb567f",
+    "metadata_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge2-guides.json",
+    "metadata_sha256": "3e8d5faae934f5519bfa81c18970b41f950c27997c062a37b68c3e5a93c9dd6e"
+  },
+  "selected_policy": {
+    "precision_bits": 512,
+    "predictor_degree": 12,
+    "taylor_order": 14,
+    "separation_max_depth": 24,
+    "maximum_outer_dyadic_depth": 12,
+    "maximum_inner_alignment_depth": 8,
+    "boundary_carrier_size": 36
+  },
+  "pilot": {
+    "edge": 2,
+    "interval_range": [
+      386,
+      387
+    ],
+    "packet_path": "q79_b89_recursive_boundary_isotopy_pilot.packet.json",
+    "packet_sha256": "fb2ad26a5ba58d004f71611bee1c2afd12127728e3da3093b7c6197199fe84f0",
+    "certified_subcells": 53,
+    "maximum_outer_dyadic_depth": 11,
+    "failed_parent_attempts": 52,
+    "certified_boundary_tubes": 1908,
+    "same_parameter_pair_certificates": 33390,
+    "guide_homotopy_pair_certificates": 33390,
+    "direct_affine_segment_pairs": 38,
+    "minimum_direct_alignment_margin": 0.000161534401470015
+  },
+  "guardrails": {
+    "a_failed_Rouche_bound_is_not_called_a_homotopy_collision": true,
+    "the_direct_affine_test_is_used_only_as_a_certified_fallback": true,
+    "only_the_declared_pilot_interval_is_promoted_here": true,
+    "claims_complete_boundary_or_joint_isotopy": false,
+    "claims_affine_Deligne_rejection_or_graph_Prym_selection": false
+  }
+}

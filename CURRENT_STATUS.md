@@ -2,12 +2,13 @@
 
 This is a snapshot, not a substitute for live kernel queries.
 
-- Kernel model: `592ef16dc03ce2195113b53cc75f8bb638bd27c279590ed3f5575d11dee05db8`
-- Model generated: `2026-08-29T09:19:53+00:00`
+- Kernel model: `5fdba232d862a95c164603f3156f0cfb8f8abed50af0756edc1618457b5d1f45`
+- Model generated: `2026-08-31T01:25:25+00:00`
 - Durable handoff: `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`
 - Current synthesis handoff: `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`
 - Endpoint-factorization handoff: `716be879-715b-4416-be42-2c096d3d9b0b`
 - Associated-matter BV4 handoff: `7a343059-b0e9-44fc-a725-733048697896`
+- Accelerated q79 B89 same-source isotopy handoff: `8a175974-2390-48a7-8963-21601cf63157`
 - Provider-neutral source/q79 classification handoff: `f8fdd194-ed79-45af-a124-5c6219a6dce1`
 - Direct one-constraint multiplier-source handoff: `b8d489d8-41ea-4481-9c15-b31904f215af`
 - Closure-pressure family-Hessian handoff: `c90aa36c-e4b7-4dbe-9eaf-b599b414d474`
@@ -1987,3 +1988,71 @@ continuous parameters and zero selectors, preserves the one shared action
 primitive, and leaves physical acceptance at `0/3` gates, `0/3` packets and
 `0/7` rows. It passes `42/42` builder checks, `96/96` independent checks and
 18 focused tests; the full canonical suite passes all 453 tests.
+
+`CBF.T53A` is an algorithm-equivalence and certified-repair checkpoint for the
+live B89 same-source isotopy campaign. It does not promote the drafted H4-T126
+branch rejection. The exact source, guide hashes, 512-bit precision, degree-12
+predictor, order-14 Taylor policy, all 252 Krawczyk root tubes and Krawczyk
+margins were replayed on two baseline cells on distinct edges.
+
+For each source cell, the earlier implementation constructed an Arb difference
+for all `252 choose 2 = 31,626` strand pairs twice. The replacement sorts the
+certified rectangular enclosures and proves most pairs disjoint by strict real
+order, the remaining ordered pairs by strict imaginary order, and delegates
+every unresolved pair to the original Arb polynomial subdivision. The pair
+partition is exact and exhaustive. In both hash-locked witnesses all 31,626
+source pairs and all 31,626 guide-homotopy pairs were discharged by the sweep
+with zero fallback. Wall time fell from about 285 seconds per interval to
+77-85 seconds while the exact root projection remained unchanged.
+
+The coarse 77-job replacement campaign terminated without usable result
+payloads because several coarse cells failed before packet emission. It is not
+counted as coverage. The corrected adaptive worker recursively bisects only a
+failed cell, retains every passing child and verifies unique identity matching
+for all 252 endpoint labels across every internal dyadic boundary. Hash-locked
+pilots now pass independently on edge 1 interval 336 and on the first cells of
+edges 2 and 3. The edge-1 witness required one split and certified two leaves,
+504 root tubes, 63,252 source pairs and 63,252 guide pairs. The cross-edge
+witnesses establish that the same immutable algorithm and source lock operate
+on every branch edge; they are pilot certificates, not extrapolated coverage.
+
+One omitted boundary cell exposed a different issue. Source and guide tubes
+remained pairwise separated, but the old Rouche sufficient inequality for the
+straight source-to-guide homotopy was too conservative. For complex endpoints
+`P` and `G`, the affine segment `(1-u)P+uG` can contain zero only when
+
+```text
+Im(conjugate(P) G)=0 and Re(conjugate(P) G)<=0.
+```
+
+The new interval worker first tries the old Rouche certificate and then proves
+the complementary exact affine-segment condition by interval arithmetic. It
+rejects an actual zero-crossing segment in focused tests. On boundary edge 2
+interval 386 it certifies a nonuniform 53-leaf cover through outer depth 11,
+with 1,908 root tubes, 33,390 source pairs, 33,390 guide pairs and 38 direct
+affine-segment certificates. The minimum direct alignment margin is strict.
+The packet and requester-side verifier are hash locked and pass 10/10 checks.
+
+The finalizer now treats packet-declared ranges as authoritative, accepts only
+locally hash-matched packets with requester-side verification, rejects overlap,
+accounts for atomic certified prefixes and requires exact coverage before any
+assembly. Its current preflight records branch coverage `378/2195` and boundary
+coverage `1940/2195`. The exact missing branch ranges are edge 1 `[144,336)` and
+`[337,857)`, edge 2 `[1,679)`, and edge 3 `[1,430)`. The exact missing boundary
+ranges are edge 2 `[128,192)`, `[256,386)`, and `[387,448)`.
+
+`Q79_B89_AFFINE_DELIGNE_LOGICAL_AUDIT_v1.md` also fixes the logical endpoint.
+On a certified same source, `[n] != 0` in `coker(M-I)` implies a nonzero
+B-handle Deligne-Leray transgression and rejects B89. It does not imply that a
+pointwise analytic normal value is nonzero, and the converse is unavailable:
+`[n]=0` would still require the period calculation. A mod-2 left-cokernel
+witness `w(M-I)=0`, `w n=1` would be a sufficient exact integral obstruction
+after the full same-source carrier is assembled.
+
+Until complete branch and boundary coverage, joint-isotopy assembly and the
+affine obstruction replay pass, H4-T123, H4-T124, H4-T125 and H4-T126 remain
+open. B89 is not yet rejected, no replacement graph-Prym member is selected,
+`beta_C=0` is not proved on a physical root, and no HYM or Hull-Strominger
+endpoint is emitted. The portable frontier freeze passes 9/9 checks and the
+complete canonical replay passes every builder and independent verifier plus
+all 472 tests.

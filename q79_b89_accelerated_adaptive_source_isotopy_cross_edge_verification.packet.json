@@ -1,0 +1,45 @@
+{
+  "schema": "mtt.cbf.q79-b89-accelerated-adaptive-cross-edge-verification.v1",
+  "theorem_target": "CBF.T53",
+  "worker_sha256": "7ac51455878cdbfe2ec18b34b0b43d26a54f038e2726185826735be3727de56d",
+  "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5",
+  "pilots": [
+    {
+      "job_id": "2bd3cb5e-6808-43b0-8a2a-110edbc432af",
+      "edge": 2,
+      "interval_range": [
+        0,
+        1
+      ],
+      "packet_path": "q79_b89_accelerated_adaptive_source_isotopy_edge2_pilot.packet.json",
+      "packet_sha256": "6a9450d1be6a27e109fdc86dcb3758708b9eaed3cd0e6ff7ccd38cc82958924b",
+      "independent_checks_passed": 10,
+      "independent_checks_total": 10,
+      "certified_subcells": 1,
+      "elapsed_seconds": 187.9
+    },
+    {
+      "job_id": "eebe0af7-8386-4b20-9bd7-5282a381c01e",
+      "edge": 3,
+      "interval_range": [
+        0,
+        1
+      ],
+      "packet_path": "q79_b89_accelerated_adaptive_source_isotopy_edge3_pilot.packet.json",
+      "packet_sha256": "667ea27efa7ceb29006b8ba02dd6755a079fedc09b64598f117349d9594f684d",
+      "independent_checks_passed": 10,
+      "independent_checks_total": 10,
+      "certified_subcells": 1,
+      "elapsed_seconds": 196.3
+    }
+  ],
+  "checks": {
+    "edge_2_process_and_capsule_hashes_verified": true,
+    "edge_2_independent_scientific_verifier_passed": true,
+    "edge_3_process_and_capsule_hashes_verified": true,
+    "edge_3_independent_scientific_verifier_passed": true,
+    "same_worker_and_selected_policy_used_on_both_edges": true,
+    "no_full_campaign_or_theorem_promotion_claimed": true
+  },
+  "all_passed": true
+}

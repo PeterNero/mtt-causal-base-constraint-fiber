@@ -63,6 +63,8 @@ paper, note, packet name or search hit.
    handoff is `e0e3a984-cc12-4140-86d5-432002b346f5`;
    the q79 Hermitian-metric Hodge-coefficient and eight-shape response
    compiler handoff is `fca40699-fbf5-4374-b01a-ebfcf606869d`;
+   the accelerated q79 B89 same-source isotopy and affine-Deligne branch
+   decision handoff is `8a175974-2390-48a7-8963-21601cf63157`;
    the radial closure-attractor and state-marginal handoff is
    `5067bb6f-4704-4da5-a085-be56da8cd4b0`;
    the renormalized BV anchored repair-semiflow and global-intertwining

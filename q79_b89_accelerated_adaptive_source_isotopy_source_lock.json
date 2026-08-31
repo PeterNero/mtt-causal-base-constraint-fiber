@@ -1,0 +1,98 @@
+{
+  "schema": "mtt.cbf.q79-b89-accelerated-adaptive-source-lock.v1",
+  "theorem_target": "CBF.T53",
+  "adaptive_worker": {
+    "path": "q79_b89_accelerated_adaptive_source_isotopy_worker.py",
+    "sha256": "7ac51455878cdbfe2ec18b34b0b43d26a54f038e2726185826735be3727de56d"
+  },
+  "accelerated_cell_worker": {
+    "path": "q79_b89_accelerated_source_isotopy_worker.py",
+    "sha256": "2b65f4e27ee5b15b6454b02b612def6ad3bdd1f4dcdcd166e67adec4262fd1f0"
+  },
+  "independent_verifier": {
+    "path": "verify_q79_b89_accelerated_adaptive_source_isotopy.py",
+    "sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+  },
+  "baseline_certifier": {
+    "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_taylor_flint.py",
+    "sha256": "e3f7ed8b4aaf6f35dd6a26716cbd32388e38a64a1bc34a3f11592b1cf3db4f37"
+  },
+  "source": {
+    "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_relative_adjoint_compiler/q79_eta9_b89_relative_adjoint_worker_input.json",
+    "sha256": "1a10757e81c4d3efb1ce450f26a3370998221313fa5ecdd0db56e769da22e262"
+  },
+  "pilot_guides": {
+    "payload_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-edge1-guides.npz",
+    "payload_sha256": "8755b68b06a0eeaf1cf2c7a5903684dce4becfc1539a247346d8a97d128a0d69",
+    "metadata_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-edge1-guides.json",
+    "metadata_sha256": "66a60fb4036d24c93c15c0bface471f38ac855ba657d1e4aed1d2fefc0ffb646"
+  },
+  "selected_policy": {
+    "precision_bits": 512,
+    "predictor_degree": 12,
+    "taylor_order": 14,
+    "separation_max_depth": 24,
+    "maximum_dyadic_depth": 8,
+    "branch_range": [
+      0,
+      252
+    ]
+  },
+  "pilot": {
+    "job_id": "6ca28a8e-9c50-44d0-935f-51665e4bf6de",
+    "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+    "result_capsule_sha256": "902fd4897aa7395ab633a66eaf4cd97817dc62e5b1af2ae76bb74f33f907878c",
+    "result_manifest_sha256": "994a3b53c690fc4d4bb368ec64a7d145b24da9ce8ed7cd553e4dfbaed69d068a",
+    "packet_path": "q79_b89_accelerated_adaptive_source_isotopy_pilot.packet.json",
+    "packet_sha256": "2d31fb2fb1c2bb5b088fbf7a21e7c1894fc65cb115cbb922e4b4df94ce93d7b9",
+    "edge": 1,
+    "interval_range": [
+      336,
+      337
+    ],
+    "failed_parent_attempts": 1,
+    "certified_subcells": 2,
+    "maximum_dyadic_depth": 1,
+    "certified_branch_tubes": 504,
+    "same_parameter_pair_certificates": 63252,
+    "guide_homotopy_pair_certificates": 63252
+  },
+  "cross_edge_pilots": [
+    {
+      "job_id": "2bd3cb5e-6808-43b0-8a2a-110edbc432af",
+      "edge": 2,
+      "interval_range": [
+        0,
+        1
+      ],
+      "input_capsule_sha256": "539971e94721f79cf4a51119adbf5c80a89361ae72d3b505620b67e5e2b42258",
+      "result_capsule_sha256": "1c36c590c832829d514f4ecee3a6455cb8b934f18ef95d16fc2fe89d2fd65af7",
+      "result_manifest_sha256": "65ff19270e26084b89e6d0797587c5561b1452bc193a3b6295a9f821898c2e4e",
+      "packet_path": "q79_b89_accelerated_adaptive_source_isotopy_edge2_pilot.packet.json",
+      "packet_sha256": "6a9450d1be6a27e109fdc86dcb3758708b9eaed3cd0e6ff7ccd38cc82958924b",
+      "certified_subcells": 1,
+      "maximum_dyadic_depth": 0
+    },
+    {
+      "job_id": "eebe0af7-8386-4b20-9bd7-5282a381c01e",
+      "edge": 3,
+      "interval_range": [
+        0,
+        1
+      ],
+      "input_capsule_sha256": "f6f0530348815f429594659deb4ef10d946f88189fbeceabeb894fb7de12ce92",
+      "result_capsule_sha256": "81e642ed5cfb57a536cdf8d46f16d1793ed99112c80229a59ea1e3d3e511cfe2",
+      "result_manifest_sha256": "c42621376daf76ec9ee26fb9586d53a06a6b25e71b40cef47dbbf089b465ac0b",
+      "packet_path": "q79_b89_accelerated_adaptive_source_isotopy_edge3_pilot.packet.json",
+      "packet_sha256": "667ea27efa7ceb29006b8ba02dd6755a079fedc09b64598f117349d9594f684d",
+      "certified_subcells": 1,
+      "maximum_dyadic_depth": 0
+    }
+  ],
+  "guardrails": {
+    "pilot_process_success_is_not_theorem_promotion": true,
+    "only_the_declared_packet_interval_is_certified": true,
+    "full_branch_and_boundary_coverage_remain_required": true,
+    "claims_affine_Deligne_rejection_or_graph_Prym_selection": false
+  }
+}

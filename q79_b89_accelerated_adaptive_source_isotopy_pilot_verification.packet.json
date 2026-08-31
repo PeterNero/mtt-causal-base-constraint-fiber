@@ -1,0 +1,51 @@
+{
+  "schema": "mtt.cbf.q79-b89-accelerated-adaptive-pilot-verification.v1",
+  "theorem_target": "CBF.T53",
+  "job_id": "6ca28a8e-9c50-44d0-935f-51665e4bf6de",
+  "packet": {
+    "path": "q79_b89_accelerated_adaptive_source_isotopy_pilot.packet.json",
+    "sha256": "2d31fb2fb1c2bb5b088fbf7a21e7c1894fc65cb115cbb922e4b4df94ce93d7b9"
+  },
+  "source_lock": {
+    "path": "q79_b89_accelerated_adaptive_source_isotopy_source_lock.json"
+  },
+  "independent_verifier": {
+    "path": "verify_q79_b89_accelerated_adaptive_source_isotopy.py",
+    "sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5",
+    "passed": 10,
+    "total": 10,
+    "all_passed": true
+  },
+  "decision": {
+    "coarse_parent_passed": false,
+    "coarse_parent_best_margin": -0.00002734,
+    "dyadic_children_passed": 2,
+    "maximum_dyadic_depth": 1,
+    "minimum_child_Krawczyk_margin": 9.99999999546935e-14,
+    "minimum_source_pair_separation": 0.00000382197601893393,
+    "minimum_guide_Rouche_margin": 0.00000102571160622322,
+    "endpoint_label_identity_matches": 252,
+    "conclusion": "The selected recursive worker repairs the known edge-1 interval-336 coarse enclosure failure by one exact dyadic split."
+  },
+  "checks": {
+    "result_capsule_membership_and_file_hash_verified": true,
+    "source_and_guide_hashes_replayed": true,
+    "worker_hashes_replayed": true,
+    "selected_numerical_policy_replayed": true,
+    "recursive_attempt_tree_replayed": true,
+    "all_252_tubes_per_child_replayed": true,
+    "all_pair_counts_replayed": true,
+    "endpoint_identity_replayed": true,
+    "atomic_checkpoint_range_replayed": true,
+    "nonpromotion_guardrails_replayed": true
+  },
+  "all_passed": true,
+  "does_not_claim": [
+    "complete 2195-interval branch coverage",
+    "complete boundary coverage",
+    "joint 288-strand isotopy",
+    "B89 affine-Deligne rejection",
+    "selection of a replacement graph-Prym member",
+    "a physical eta9, HYM or Hull-Strominger endpoint"
+  ]
+}

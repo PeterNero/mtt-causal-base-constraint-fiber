@@ -1,0 +1,54 @@
+{
+  "schema": "mtt.cbf.q79-b89-recursive-boundary-pilot-verification.v1",
+  "theorem_target": "CBF.T53",
+  "packet": {
+    "path": "q79_b89_recursive_boundary_isotopy_pilot.packet.json",
+    "sha256": "fb2ad26a5ba58d004f71611bee1c2afd12127728e3da3093b7c6197199fe84f0"
+  },
+  "cell_witness": {
+    "path": "q79_b89_boundary_direct_homotopy_cell_pilot.packet.json",
+    "sha256": "6ee2b55834e9a11c5fd6c5676bab3848a511edc777937fffad9d6e49e312d75c"
+  },
+  "source_lock": {
+    "path": "q79_b89_recursive_boundary_isotopy_source_lock.json"
+  },
+  "independent_verifier": {
+    "path": "verify_q79_b89_recursive_boundary_isotopy.py",
+    "sha256": "5d62816d8545dd75ba864f5b313bfdc53b371ccfd36500a693728b4100b00377",
+    "passed": 10,
+    "total": 10,
+    "all_passed": true
+  },
+  "mathematical_decision": {
+    "old_Rouche_only_schedule_closed_interval": false,
+    "source_tubes_remain_strictly_separated": true,
+    "affine_homotopy_parameter_eliminated_exactly": true,
+    "zero_segment_criterion": "A complex segment from P to G contains zero only if Im(conj(P)G)=0 and Re(conj(P)G)<=0.",
+    "certified_subcells": 53,
+    "maximum_outer_dyadic_depth": 11,
+    "direct_affine_segment_pairs": 38,
+    "minimum_direct_alignment_margin": 0.000161534401470015,
+    "conclusion": "The exact edge-2 boundary interval 386 is certified on the same source and guide by a finite nonuniform dyadic cover."
+  },
+  "checks": {
+    "all_builder_checks_true_and_no_failures": true,
+    "source_and_guide_hashes_replayed": true,
+    "worker_and_baseline_hashes_replayed": true,
+    "selected_numerical_policy_replayed": true,
+    "recursive_attempt_forest_replayed": true,
+    "all_36_tubes_per_leaf_replayed": true,
+    "all_630_pairs_per_leaf_replayed": true,
+    "all_endpoint_label_bindings_replayed": true,
+    "direct_affine_segment_margins_replayed": true,
+    "atomic_checkpoint_range_replayed": true
+  },
+  "all_passed": true,
+  "does_not_claim": [
+    "complete 2195-interval boundary coverage",
+    "complete 252-strand branch coverage",
+    "joint 288-strand isotopy",
+    "B89 affine-Deligne rejection",
+    "selection of a replacement graph-Prym member",
+    "a physical eta9, HYM or Hull-Strominger endpoint"
+  ]
+}

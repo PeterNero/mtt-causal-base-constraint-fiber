@@ -118,6 +118,8 @@ def main() -> None:
     run(sys.executable, "verify_q79_oriented_hodge_real_carrier.py")
     run(sys.executable, "build_q79_hermitian_metric_hodge_compiler.py")
     run(sys.executable, "verify_q79_hermitian_metric_hodge_compiler.py")
+    run(sys.executable, "verify_q79_b89_accelerated_source_isotopy.py")
+    run(sys.executable, "verify_q79_b89_source_isotopy_frontier_freeze.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
     print("repository verification passed")
 

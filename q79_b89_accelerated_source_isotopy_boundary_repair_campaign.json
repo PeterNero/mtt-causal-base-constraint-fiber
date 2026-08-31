@@ -1,0 +1,7 @@
+{
+  "all_jobs_observed": true,
+  "jobs": [],
+  "replacement_packets_are_in_mixed_boundary_campaign": true,
+  "schema": "mtt.cbf.q79-b89-boundary-repair-campaign.v1",
+  "source_campaign_sha256": "c0dbabd8579a68182432ec54a9427130f6b7acd26b3fec09cbfe338d47190ede"
+}

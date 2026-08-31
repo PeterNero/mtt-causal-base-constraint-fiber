@@ -1,0 +1,790 @@
+{
+  "schema": "mtt.cbf.q79-b89-accelerated-source-isotopy-campaign.v1",
+  "theorem_target": "CBF.T53",
+  "purpose": "Complete the 252-strand selected-source B89 family isotopy campaign using exact Krawczyk tubes and an exact sweep partition of pair certificates.",
+  "source_repository": "mtt-preprojection-repair-calculus",
+  "source_sha256": "1a10757e81c4d3efb1ce450f26a3370998221313fa5ecdd0db56e769da22e262",
+  "wrapper_sha256": "2b65f4e27ee5b15b6454b02b612def6ad3bdd1f4dcdcd166e67adec4262fd1f0",
+  "baseline_certifier_sha256": "e3f7ed8b4aaf6f35dd6a26716cbd32388e38a64a1bc34a3f11592b1cf3db4f37",
+  "numerical_policy": {
+    "precision_bits": 512,
+    "predictor_degree": 12,
+    "taylor_order": 14,
+    "separation_max_depth": 24,
+    "branch_range": [
+      0,
+      252
+    ]
+  },
+  "preexisting_certified_coverage": {
+    "campaign": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_adaptive_taylor_family_campaign.json",
+    "edges": {
+      "0": [
+        0,
+        231
+      ],
+      "1": [
+        0,
+        144
+      ]
+    },
+    "intervals": 375,
+    "shards": 16
+  },
+  "queued_coverage": {
+    "edges": {
+      "1": [
+        144,
+        857
+      ],
+      "2": [
+        0,
+        678
+      ],
+      "3": [
+        0,
+        429
+      ]
+    },
+    "intervals": 1820,
+    "shards": 77
+  },
+  "total_target": {
+    "edges": 4,
+    "intervals": 2195,
+    "strands": 252
+  },
+  "boundary_repair_jobs": [
+    {
+      "id": "dc058301-f6c2-4c2c-a854-8dd36adf2d62",
+      "edge": 2,
+      "start": 128,
+      "stop": 192,
+      "state": "queued",
+      "output": "outputs/t53-adaptive-boundary-taylor-e2-i128-192.json",
+      "input_capsule_sha256": "b2ca0b1c33c67337891cef434b91d9f70ad565ef0bfc3cba7a825dcdfefa305b"
+    },
+    {
+      "id": "396b83ec-78a7-4b01-9e23-3e37c8723b70",
+      "edge": 2,
+      "start": 256,
+      "stop": 320,
+      "state": "queued",
+      "output": "outputs/t53-adaptive-boundary-taylor-e2-i256-320.json",
+      "input_capsule_sha256": "b2ca0b1c33c67337891cef434b91d9f70ad565ef0bfc3cba7a825dcdfefa305b"
+    },
+    {
+      "id": "1a8e9a07-0c5e-4cde-a3ba-0940314fdec2",
+      "edge": 2,
+      "start": 320,
+      "stop": 384,
+      "state": "queued",
+      "output": "outputs/t53-adaptive-boundary-taylor-e2-i320-384.json",
+      "input_capsule_sha256": "b2ca0b1c33c67337891cef434b91d9f70ad565ef0bfc3cba7a825dcdfefa305b"
+    },
+    {
+      "id": "126b81e3-c2ab-4ade-8fed-b5202a304b8f",
+      "edge": 2,
+      "start": 384,
+      "stop": 448,
+      "state": "queued",
+      "output": "outputs/t53-adaptive-boundary-taylor-e2-i384-448.json",
+      "input_capsule_sha256": "b2ca0b1c33c67337891cef434b91d9f70ad565ef0bfc3cba7a825dcdfefa305b"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "05d4ecb2-89b7-40d5-914d-fe2c04df581d",
+      "edge": 1,
+      "start": 144,
+      "stop": 168,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i144-168.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "46f7bee9-fff5-4817-a497-816ed8cca165",
+      "edge": 1,
+      "start": 168,
+      "stop": 192,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i168-192.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "1922bb81-92d8-4826-a877-487651ab26b1",
+      "edge": 1,
+      "start": 192,
+      "stop": 216,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i192-216.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "57ca3c39-aa29-4186-b29a-2baee87bb965",
+      "edge": 1,
+      "start": 216,
+      "stop": 240,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i216-240.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "acb55d16-adda-4874-8d98-99dfa6c10818",
+      "edge": 1,
+      "start": 240,
+      "stop": 264,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i240-264.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "050954a7-d39e-4244-8866-d0fc52c8f609",
+      "edge": 1,
+      "start": 264,
+      "stop": 288,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i264-288.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "128ae134-fafa-4128-a845-b0816c8fddcf",
+      "edge": 1,
+      "start": 288,
+      "stop": 312,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i288-312.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "2cc973ef-2197-4b42-b7da-7c583a67daf1",
+      "edge": 1,
+      "start": 312,
+      "stop": 336,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i312-336.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "dc8974ed-b913-4f9d-945a-9a5f5cce9ec1",
+      "edge": 1,
+      "start": 336,
+      "stop": 360,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i336-360.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "5b3f1945-9af3-4199-937b-1ff1d92b9e30",
+      "edge": 1,
+      "start": 360,
+      "stop": 384,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i360-384.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "e0aa9a7e-1e9b-4e8c-8891-c85f4829d8d6",
+      "edge": 1,
+      "start": 384,
+      "stop": 408,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i384-408.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "3f9eeb34-8e81-4b66-ae2b-ac2d141be103",
+      "edge": 1,
+      "start": 408,
+      "stop": 432,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i408-432.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "b3bc2c6f-6026-4af1-bd03-528124da4ce5",
+      "edge": 1,
+      "start": 432,
+      "stop": 456,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i432-456.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "4a15d9a9-06b3-43aa-a7c9-745a506986ca",
+      "edge": 1,
+      "start": 456,
+      "stop": 480,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i456-480.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "1a692629-b853-4acc-b326-9867e9438aff",
+      "edge": 1,
+      "start": 480,
+      "stop": 504,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i480-504.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "2410edf7-48a4-442d-99ec-9e44781aae1f",
+      "edge": 1,
+      "start": 504,
+      "stop": 528,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i504-528.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "09786c9b-a893-404e-b7de-bc537bdc72eb",
+      "edge": 1,
+      "start": 528,
+      "stop": 552,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i528-552.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "07509617-34e0-473e-8bc9-98b436e118a7",
+      "edge": 1,
+      "start": 552,
+      "stop": 576,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i552-576.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "13ef98cb-8d30-4af3-a35b-09025b7e66b2",
+      "edge": 1,
+      "start": 576,
+      "stop": 600,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i576-600.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "ee67f9b9-d917-4f86-822c-3ed5468806f1",
+      "edge": 1,
+      "start": 600,
+      "stop": 624,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i600-624.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "8ae4187d-4617-4173-9f3c-2662630243e7",
+      "edge": 1,
+      "start": 624,
+      "stop": 648,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i624-648.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "63155613-5d20-4e2a-9343-fb898ba55318",
+      "edge": 1,
+      "start": 648,
+      "stop": 672,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i648-672.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "f23f7484-3463-4b3a-a864-00233f7a3831",
+      "edge": 1,
+      "start": 672,
+      "stop": 696,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i672-696.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "ca0dcbca-f92d-4dc5-bace-27394b618768",
+      "edge": 1,
+      "start": 696,
+      "stop": 720,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i696-720.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "7194c6ac-a485-4930-93b8-e7d6c3faf879",
+      "edge": 1,
+      "start": 720,
+      "stop": 744,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i720-744.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "cb9ddeee-e019-4a6b-8856-6b0dc3bae77c",
+      "edge": 1,
+      "start": 744,
+      "stop": 768,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i744-768.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "e89c911c-eb48-4168-b57c-09344cb5d8ee",
+      "edge": 1,
+      "start": 768,
+      "stop": 792,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i768-792.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "1ab54ac8-0dd1-42f4-b6fd-cae0ba1be297",
+      "edge": 1,
+      "start": 792,
+      "stop": 816,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i792-816.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "5986d508-83f9-4b13-b614-0e1c23f03fa3",
+      "edge": 1,
+      "start": 816,
+      "stop": 840,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i816-840.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "33ea1a40-6f8d-4297-97ce-8b7244c92e69",
+      "edge": 1,
+      "start": 840,
+      "stop": 857,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e1-i840-857.json",
+      "input_capsule_sha256": "ffcf618b26e7eaac3730e94a6558f55bffbdec1ee3b772b2ea04b92dc5131f6c"
+    },
+    {
+      "id": "ec5f425d-c33a-41b6-b2b5-1e14136565f6",
+      "edge": 2,
+      "start": 0,
+      "stop": 24,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i0-24.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "38c0768c-c3ed-4a19-867f-771930032a4a",
+      "edge": 2,
+      "start": 24,
+      "stop": 48,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i24-48.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "874db928-6817-47d7-8406-7be8e68da2ac",
+      "edge": 2,
+      "start": 48,
+      "stop": 72,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i48-72.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "10fbea95-7543-46e9-be55-e8405fa8451b",
+      "edge": 2,
+      "start": 72,
+      "stop": 96,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i72-96.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "616f5809-4533-428f-a3b6-4f71ab0d9d17",
+      "edge": 2,
+      "start": 96,
+      "stop": 120,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i96-120.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "0f88eac2-2e0d-4132-b6fd-3230049ba77e",
+      "edge": 2,
+      "start": 120,
+      "stop": 144,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i120-144.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "ef8dd42c-3189-4240-8a38-5a906b3df481",
+      "edge": 2,
+      "start": 144,
+      "stop": 168,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i144-168.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "85d6e627-e976-4d51-b57e-b7e02daf33f9",
+      "edge": 2,
+      "start": 168,
+      "stop": 192,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i168-192.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "13979e0f-2992-46d0-95ca-fea03f89af98",
+      "edge": 2,
+      "start": 192,
+      "stop": 216,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i192-216.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "14dc773b-222b-46cc-b60e-3a82533ebca0",
+      "edge": 2,
+      "start": 216,
+      "stop": 240,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i216-240.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "222f626b-9546-4a9b-b463-10626257e91e",
+      "edge": 2,
+      "start": 240,
+      "stop": 264,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i240-264.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "ee489da2-b4f3-4232-b6dd-664d8e7b0ec6",
+      "edge": 2,
+      "start": 264,
+      "stop": 288,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i264-288.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "29161051-67cc-4bb4-a068-6806ee936515",
+      "edge": 2,
+      "start": 288,
+      "stop": 312,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i288-312.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "b4256cc6-e37d-40f3-a8fb-c94c773d20d7",
+      "edge": 2,
+      "start": 312,
+      "stop": 336,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i312-336.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "2f9c4997-9d01-4f34-81a9-ff069907a23c",
+      "edge": 2,
+      "start": 336,
+      "stop": 360,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i336-360.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "c79d80bb-2a33-408a-8ecf-f7e4119100e3",
+      "edge": 2,
+      "start": 360,
+      "stop": 384,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i360-384.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "078a3c62-9d95-4856-8712-057c292fadca",
+      "edge": 2,
+      "start": 384,
+      "stop": 408,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i384-408.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "db2e8ea4-25a3-4bb4-85f2-40ae934b7b3a",
+      "edge": 2,
+      "start": 408,
+      "stop": 432,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i408-432.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "63aa0a0c-1c08-47b9-ac28-be53768b08af",
+      "edge": 2,
+      "start": 432,
+      "stop": 456,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i432-456.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "e16df08c-3806-4123-881d-4e23054e9d64",
+      "edge": 2,
+      "start": 456,
+      "stop": 480,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i456-480.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "bfe78788-0ae3-477f-838d-bf5516a3da14",
+      "edge": 2,
+      "start": 480,
+      "stop": 504,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i480-504.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "a99116de-52d7-4672-a6c6-4baae5f116d2",
+      "edge": 2,
+      "start": 504,
+      "stop": 528,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i504-528.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "884cf8c9-774a-4ce0-a8c1-e5b62c56ef77",
+      "edge": 2,
+      "start": 528,
+      "stop": 552,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i528-552.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "ba01db30-c0a9-4bb6-892a-1f434f396703",
+      "edge": 2,
+      "start": 552,
+      "stop": 576,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i552-576.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "a5d03226-06e5-43a1-aaa8-4aa65b5cd134",
+      "edge": 2,
+      "start": 576,
+      "stop": 600,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i576-600.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "a1abbe83-0f89-45c9-a8a2-4ecaee21ae46",
+      "edge": 2,
+      "start": 600,
+      "stop": 624,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i600-624.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "5121b45b-ed2d-442f-bdc0-b6b39e12c0ea",
+      "edge": 2,
+      "start": 624,
+      "stop": 648,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i624-648.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "2907aa64-494c-4144-b677-434c165acfa8",
+      "edge": 2,
+      "start": 648,
+      "stop": 672,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i648-672.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "f92e6b9b-ee99-46b2-9ab9-ea8d52e75f24",
+      "edge": 2,
+      "start": 672,
+      "stop": 678,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e2-i672-678.json",
+      "input_capsule_sha256": "efe2c46d2d53811b1ab6c75f5349ef79bc1a9b1edb7e8699cdf8ce3da68af275"
+    },
+    {
+      "id": "557dbbf2-6e58-4a02-888b-1fac2095cd82",
+      "edge": 3,
+      "start": 0,
+      "stop": 24,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i0-24.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "edcf3b53-5fde-4cfd-84e3-5c2c17a890d5",
+      "edge": 3,
+      "start": 24,
+      "stop": 48,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i24-48.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "52f24ddc-870a-4248-8383-b48a725c1aa5",
+      "edge": 3,
+      "start": 48,
+      "stop": 72,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i48-72.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "0d039e28-2a5c-4eb1-9a4c-2eb9e26edd0e",
+      "edge": 3,
+      "start": 72,
+      "stop": 96,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i72-96.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "0d57f423-e4df-450e-8a75-649adbb1bf68",
+      "edge": 3,
+      "start": 96,
+      "stop": 120,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i96-120.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "59973648-252e-4a2e-9634-e60008e5728d",
+      "edge": 3,
+      "start": 120,
+      "stop": 144,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i120-144.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "cba52e87-2168-4821-b49b-40d0e38a3c10",
+      "edge": 3,
+      "start": 144,
+      "stop": 168,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i144-168.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "077c73df-f46c-4a6b-ab79-305553987a42",
+      "edge": 3,
+      "start": 168,
+      "stop": 192,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i168-192.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "94dae4d4-2c98-4b29-bb6b-50cced7714db",
+      "edge": 3,
+      "start": 192,
+      "stop": 216,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i192-216.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "2e4ffe48-905d-427b-8ccf-61724b6f81fc",
+      "edge": 3,
+      "start": 216,
+      "stop": 240,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i216-240.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "9defe5c7-9a1d-490b-b6d9-1bc6bb64a486",
+      "edge": 3,
+      "start": 240,
+      "stop": 264,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i240-264.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "359c0ed4-f707-481d-9d29-657e506809a2",
+      "edge": 3,
+      "start": 264,
+      "stop": 288,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i264-288.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "4f1f6902-87df-4288-b4bd-3e3b206a81b6",
+      "edge": 3,
+      "start": 288,
+      "stop": 312,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i288-312.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "d8a58c01-d6f6-4903-97c5-3370f6887b92",
+      "edge": 3,
+      "start": 312,
+      "stop": 336,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i312-336.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "975e1dfe-4f65-4898-b2f2-cf999675e3cc",
+      "edge": 3,
+      "start": 336,
+      "stop": 360,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i336-360.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "cd5c6441-5e85-4821-b6ab-7d036a8cbc81",
+      "edge": 3,
+      "start": 360,
+      "stop": 384,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i360-384.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "75e85289-0b7d-4ceb-84ca-8c9e5ab428ef",
+      "edge": 3,
+      "start": 384,
+      "stop": 408,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i384-408.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    },
+    {
+      "id": "f9bccfee-d1ef-4512-900d-5c27ff7afd39",
+      "edge": 3,
+      "start": 408,
+      "stop": 429,
+      "state": "queued",
+      "output": "outputs/accelerated-taylor-family-e3-i408-429.json",
+      "input_capsule_sha256": "4c880d4eced789db2a1ce58319a50cf215a9ca5d159204460c961043d5db9ff0"
+    }
+  ]
+}

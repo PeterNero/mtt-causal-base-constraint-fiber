@@ -1,0 +1,41 @@
+{
+  "all_passed": true,
+  "artifacts": {
+    "campaign": {
+      "bytes": 1668,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_ub_boundary_braid_pilot/outputs/certified/campaign.json",
+      "sha256": "458142850e3c829c56d95a1935a65c4c533ea1fd8aace77739a86c6794a349d9"
+    },
+    "negative_lift": {
+      "bytes": 3544,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_ub_boundary_braid_pilot/outputs/certified/ub-braid-ccw-minus.json",
+      "sha256": "432480a2a370cd1034d802cbd3ceb33547fe4771f9da914f5c3f2f343ee9c65e"
+    },
+    "positive_lift": {
+      "bytes": 3578,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_ub_boundary_braid_pilot/outputs/certified/ub-braid-ccw-plus.json",
+      "sha256": "30e4a64cb05c12a75d83b369155f32d257a6580eca870dfa4bbfa912729dd3b5"
+    }
+  },
+  "checks": {
+    "all_H0_and_Rminus_endpoint_assignments_are_bijections": true,
+    "all_four_H4_T92_edges_have_strict_Krawczyk_root_tubes_for_both_lifts": true,
+    "all_four_signed_endpoint_permutations_are_nonidentity": true,
+    "input_output_and_result_capsule_hashes_are_frozen": true,
+    "no_rank164_affine_Deligne_beta_C_U_eta9_or_HYM_claim_is_made": true,
+    "the_positive_and_negative_lift_permutations_are_distinct": true
+  },
+  "claim": "Both lifts of the H4-T92 counterclockwise loop have certified disjoint 256-bit Krawczyk root tubes for the degree-18 H0 and Rminus boundary sets. Their nonidentity endpoint permutations differ between the positive and negative lifts.",
+  "common_root_adapter": {
+    "original_path": "mtt-preprojection-repair-calculus/certificates/h4_q79_eta9_b89_certified_signed_boundary_braid.json",
+    "original_sha256": "101ac57f5c2effca50db58d9d9db29b0972c86be31fb9cbad8214519ea8b1895",
+    "path_prefix_only": true,
+    "semantic_change": false
+  },
+  "frontier_after": "the signed boundary-root transport is certified and can be consumed by a later rank-164 affine family return without erasing the lift sign",
+  "frontier_before": "the two lift signs had numerical boundary permutations but no promoted interval root-tube campaign",
+  "guard": "H4-T113 certifies signed boundary-root trajectories only. It does not emit the absolute rank-164 monodromy, affine cocycle, Smith decision, periods, Deligne value, beta_C, U_eta9 or a physical HYM endpoint.",
+  "id": "H4-T113",
+  "schema": "mtt.preprojection.certificate.v1",
+  "tier": "CERTIFIED_SELECTED_PATH_SIGNED_BOUNDARY_TRANSPORT_RANK164_ACTION_OPEN"
+}

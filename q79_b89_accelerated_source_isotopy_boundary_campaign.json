@@ -1,0 +1,938 @@
+{
+  "all_jobs_observed": false,
+  "capsules": {
+    "0": {
+      "bytes": 316753,
+      "manifest": {
+        "entrypoint": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+        "expanded_bytes": 492968,
+        "file_count": 9,
+        "files": [
+          {
+            "bytes": 20775,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+            "sha256": "91097022d4baac5cf81ff8fc0445fdb96a5db14629e96e8614c09297c807dfab"
+          },
+          {
+            "bytes": 26687,
+            "path": "experiments/q79_eta9_b89_branch_forms/q79_eta9_b89_branch_form_worker_input.json",
+            "sha256": "fe3e25938206cdc63ba2ec325987a4c3d21540d84771266eb42625c4756204fd"
+          },
+          {
+            "bytes": 41972,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_taylor_flint.py",
+            "sha256": "04b441f629229f4dbcf682b652e6e6b7abba8b105368bb2f00b09ece95b5cde4"
+          },
+          {
+            "bytes": 51922,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_flint.py",
+            "sha256": "941a8f77c2ce6ba505980828eadfdc42df04ba3a395e327ff414a54c4a61b12b"
+          },
+          {
+            "bytes": 49918,
+            "path": "experiments/q79_eta9_b89_moving_branch_polynomial/certify_moving_carrier_edge.py",
+            "sha256": "0cf455025317856bb12777e58ad2ff4087784061c57c167012eef94804c0ccca"
+          },
+          {
+            "bytes": 24426,
+            "path": "experiments/q79_eta9_b89_ub_boundary_braid_pilot/certify_flint.py",
+            "sha256": "ee4a7aa047aa3625bf2c43302a0e49dde683728baed41b3f8d0901d7ad1d6f20"
+          },
+          {
+            "bytes": 16042,
+            "path": "experiments/q79_eta9_b89_ub_boundary_braid_pilot/compute.py",
+            "sha256": "a1719e9d94d54bd011d5fb2b7fc1b5724080f6783236c8ece12ee44c71d3a2e8"
+          },
+          {
+            "bytes": 259949,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge0-guides.npz",
+            "sha256": "5f914f994b4578dc3a51c1bee7545bd2e74af962563f1063b6792b01695231a4"
+          },
+          {
+            "bytes": 1277,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge0-guides.json",
+            "sha256": "f6a4bed42fe06bb9f3640353d9eb10aa9f83416469e504a2c1aee6fc77ab53f7"
+          }
+        ],
+        "schema": "boe.mtt.calculation-capsule.v1"
+      },
+      "manifest_sha256": "7a0986d30bd583723cb3e851747920e04e9d719989d411524fe5c6d1b5867cd1",
+      "sha256": "a5f67fda3e67e5c128334b4147f588992eb03db0cf6bc8e7393c02727593ecaa"
+    },
+    "1": {
+      "bytes": 1013586,
+      "manifest": {
+        "entrypoint": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+        "expanded_bytes": 1189600,
+        "file_count": 9,
+        "files": [
+          {
+            "bytes": 20775,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+            "sha256": "91097022d4baac5cf81ff8fc0445fdb96a5db14629e96e8614c09297c807dfab"
+          },
+          {
+            "bytes": 26687,
+            "path": "experiments/q79_eta9_b89_branch_forms/q79_eta9_b89_branch_form_worker_input.json",
+            "sha256": "fe3e25938206cdc63ba2ec325987a4c3d21540d84771266eb42625c4756204fd"
+          },
+          {
+            "bytes": 41972,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_taylor_flint.py",
+            "sha256": "04b441f629229f4dbcf682b652e6e6b7abba8b105368bb2f00b09ece95b5cde4"
+          },
+          {
+            "bytes": 51922,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_flint.py",
+            "sha256": "941a8f77c2ce6ba505980828eadfdc42df04ba3a395e327ff414a54c4a61b12b"
+          },
+          {
+            "bytes": 49918,
+            "path": "experiments/q79_eta9_b89_moving_branch_polynomial/certify_moving_carrier_edge.py",
+            "sha256": "0cf455025317856bb12777e58ad2ff4087784061c57c167012eef94804c0ccca"
+          },
+          {
+            "bytes": 24426,
+            "path": "experiments/q79_eta9_b89_ub_boundary_braid_pilot/certify_flint.py",
+            "sha256": "ee4a7aa047aa3625bf2c43302a0e49dde683728baed41b3f8d0901d7ad1d6f20"
+          },
+          {
+            "bytes": 16042,
+            "path": "experiments/q79_eta9_b89_ub_boundary_braid_pilot/compute.py",
+            "sha256": "a1719e9d94d54bd011d5fb2b7fc1b5724080f6783236c8ece12ee44c71d3a2e8"
+          },
+          {
+            "bytes": 956581,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge1-guides.npz",
+            "sha256": "bee92cadc7858227a3591c74b920d24b52a3cccbc257badc39267c2acdd3cf4b"
+          },
+          {
+            "bytes": 1277,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge1-guides.json",
+            "sha256": "71cf72841b03fdf4a905f50e7709945fdf29ef8d1bff54057ae7c3f4fd3a5819"
+          }
+        ],
+        "schema": "boe.mtt.calculation-capsule.v1"
+      },
+      "manifest_sha256": "efee70e915781d5d05f3427971fee0cc070d2fc46d6680070c157bb7a04bdfba",
+      "sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62"
+    },
+    "2": {
+      "bytes": 812766,
+      "manifest": {
+        "entrypoint": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+        "expanded_bytes": 988828,
+        "file_count": 9,
+        "files": [
+          {
+            "bytes": 20775,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+            "sha256": "91097022d4baac5cf81ff8fc0445fdb96a5db14629e96e8614c09297c807dfab"
+          },
+          {
+            "bytes": 26687,
+            "path": "experiments/q79_eta9_b89_branch_forms/q79_eta9_b89_branch_form_worker_input.json",
+            "sha256": "fe3e25938206cdc63ba2ec325987a4c3d21540d84771266eb42625c4756204fd"
+          },
+          {
+            "bytes": 41972,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_taylor_flint.py",
+            "sha256": "04b441f629229f4dbcf682b652e6e6b7abba8b105368bb2f00b09ece95b5cde4"
+          },
+          {
+            "bytes": 51922,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_flint.py",
+            "sha256": "941a8f77c2ce6ba505980828eadfdc42df04ba3a395e327ff414a54c4a61b12b"
+          },
+          {
+            "bytes": 49918,
+            "path": "experiments/q79_eta9_b89_moving_branch_polynomial/certify_moving_carrier_edge.py",
+            "sha256": "0cf455025317856bb12777e58ad2ff4087784061c57c167012eef94804c0ccca"
+          },
+          {
+            "bytes": 24426,
+            "path": "experiments/q79_eta9_b89_ub_boundary_braid_pilot/certify_flint.py",
+            "sha256": "ee4a7aa047aa3625bf2c43302a0e49dde683728baed41b3f8d0901d7ad1d6f20"
+          },
+          {
+            "bytes": 16042,
+            "path": "experiments/q79_eta9_b89_ub_boundary_braid_pilot/compute.py",
+            "sha256": "a1719e9d94d54bd011d5fb2b7fc1b5724080f6783236c8ece12ee44c71d3a2e8"
+          },
+          {
+            "bytes": 755809,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge2-guides.npz",
+            "sha256": "b2ef6df8d86edf3a10db54aec9350fd651f1d375df249d7808ab3cc1b3fb567f"
+          },
+          {
+            "bytes": 1277,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge2-guides.json",
+            "sha256": "3e8d5faae934f5519bfa81c18970b41f950c27997c062a37b68c3e5a93c9dd6e"
+          }
+        ],
+        "schema": "boe.mtt.calculation-capsule.v1"
+      },
+      "manifest_sha256": "51676ef8022d4f78135b0e39dbad1d68a14b8e9890dddcb526d6c7ffffe47173",
+      "sha256": "557633810073af21b608827a6b927275c31d91ffdb1ea27ce57abd09ae6e38f7"
+    },
+    "3": {
+      "bytes": 535682,
+      "manifest": {
+        "entrypoint": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+        "expanded_bytes": 711835,
+        "file_count": 9,
+        "files": [
+          {
+            "bytes": 20775,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_right80_boundary_taylor_flint.py",
+            "sha256": "91097022d4baac5cf81ff8fc0445fdb96a5db14629e96e8614c09297c807dfab"
+          },
+          {
+            "bytes": 26687,
+            "path": "experiments/q79_eta9_b89_branch_forms/q79_eta9_b89_branch_form_worker_input.json",
+            "sha256": "fe3e25938206cdc63ba2ec325987a4c3d21540d84771266eb42625c4756204fd"
+          },
+          {
+            "bytes": 41972,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_taylor_flint.py",
+            "sha256": "04b441f629229f4dbcf682b652e6e6b7abba8b105368bb2f00b09ece95b5cde4"
+          },
+          {
+            "bytes": 51922,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_flint.py",
+            "sha256": "941a8f77c2ce6ba505980828eadfdc42df04ba3a395e327ff414a54c4a61b12b"
+          },
+          {
+            "bytes": 49918,
+            "path": "experiments/q79_eta9_b89_moving_branch_polynomial/certify_moving_carrier_edge.py",
+            "sha256": "0cf455025317856bb12777e58ad2ff4087784061c57c167012eef94804c0ccca"
+          },
+          {
+            "bytes": 24426,
+            "path": "experiments/q79_eta9_b89_ub_boundary_braid_pilot/certify_flint.py",
+            "sha256": "ee4a7aa047aa3625bf2c43302a0e49dde683728baed41b3f8d0901d7ad1d6f20"
+          },
+          {
+            "bytes": 16042,
+            "path": "experiments/q79_eta9_b89_ub_boundary_braid_pilot/compute.py",
+            "sha256": "a1719e9d94d54bd011d5fb2b7fc1b5724080f6783236c8ece12ee44c71d3a2e8"
+          },
+          {
+            "bytes": 478817,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge3-guides.npz",
+            "sha256": "9ea3bbd61a2bf5fe10b30be0f9f2f80d35d6091e0386c778a822bbabaa9ab8b3"
+          },
+          {
+            "bytes": 1276,
+            "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_inputs/right80-boundary-edge3-guides.json",
+            "sha256": "6fa6800f7c3b426f8782f34e9792857ea604d15f4b7023d55a7db5afb0f0a3b7"
+          }
+        ],
+        "schema": "boe.mtt.calculation-capsule.v1"
+      },
+      "manifest_sha256": "2361f6702a4e6f60d0f228a525ee2de3d3e2f98591f9d6c16d8ff68c9769159c",
+      "sha256": "5b3e40a6fcddd87232705af4233f5d28e6d9081062e62cf0c08b29de3c310d1c"
+    }
+  },
+  "chunk_intervals": 64,
+  "coverage": {
+    "carrier": "boundary",
+    "certified_intervals": 1940,
+    "complete": false,
+    "missing_ranges": {
+      "0": [],
+      "1": [],
+      "2": [
+        [
+          128,
+          192
+        ],
+        [
+          256,
+          386
+        ],
+        [
+          387,
+          448
+        ]
+      ],
+      "3": []
+    },
+    "shards": 33,
+    "target_intervals": 2195
+  },
+  "excluded_unsuccessful_original_job_ids": [
+    "b1f99f97-0aec-4cab-b6f9-095c1ffe5243",
+    "b2784bbb-4c12-433d-8c07-3749fa169571",
+    "dcf6cc69-c58d-4f02-932e-918edd72b388",
+    "ff883deb-2b29-4b8e-b0ac-926a3ea75490"
+  ],
+  "jobs": [
+    {
+      "assigned_agent": "pinero-beq-2",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 0,
+      "elapsed_seconds": 66.48020400002133,
+      "id": "23ffc50f-833b-4ed6-b2f9-ef149dafc828",
+      "input_capsule_sha256": "a5f67fda3e67e5c128334b4147f588992eb03db0cf6bc8e7393c02727593ecaa",
+      "interval_range": [
+        0,
+        64
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e0-i0-64.json",
+      "result_capsule_sha256": "5a16d217f857dbe484c0ad9d492a78052f165b49f19062411a12b96e920042c2",
+      "result_manifest_sha256": "23372fef1b92a83f8bff3aadcff66db14a5041c5d97fbd23535f95f5ba49cdc5",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/23ffc50f-833b-4ed6-b2f9-ef149dafc828/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "3e304a9c2e1873551eaaf7d110148dc914dd9943d1c40bf6b26d203c6cd52170",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 0,
+      "elapsed_seconds": 69.3656829999527,
+      "id": "7f3dac48-31d5-473f-a7ba-1e3d08549290",
+      "input_capsule_sha256": "a5f67fda3e67e5c128334b4147f588992eb03db0cf6bc8e7393c02727593ecaa",
+      "interval_range": [
+        64,
+        128
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e0-i64-128.json",
+      "result_capsule_sha256": "a2df9319725d7185ec5591c485ea292ac5824a58b7a1c37dd3db8c98f23fd27d",
+      "result_manifest_sha256": "8c557c6c66f50b9a0a0cd4ce2f0f7a3d56ab835d2ad4722818594de059952847",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/7f3dac48-31d5-473f-a7ba-1e3d08549290/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "3fac256704125874302ec992ba4b6950797dd2a80e0c6776d6d89f1b0a038c77",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-4",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 0,
+      "elapsed_seconds": 71.15651270002127,
+      "id": "9ee1a712-bf72-4d64-be74-d04df9f82203",
+      "input_capsule_sha256": "a5f67fda3e67e5c128334b4147f588992eb03db0cf6bc8e7393c02727593ecaa",
+      "interval_range": [
+        128,
+        192
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e0-i128-192.json",
+      "result_capsule_sha256": "56c98da6911c132c7ac7b189ad3c0dd17d529d4e7dbd06b35dde003ac146add8",
+      "result_manifest_sha256": "5f6ae51fe99ee9196f0e9bce227ae6e182bc84da955c779be3f107e34620fb15",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/9ee1a712-bf72-4d64-be74-d04df9f82203/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "155d84e081781a0cdd5cf186848390e6d6efe8364934877e6fbc3c474c492ce0",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-5",
+      "certified_intervals": 39,
+      "certified_subcells": 39,
+      "edge": 0,
+      "elapsed_seconds": 48.51647450000746,
+      "id": "6d402921-ef31-4438-86dd-b07052bbd9e3",
+      "input_capsule_sha256": "a5f67fda3e67e5c128334b4147f588992eb03db0cf6bc8e7393c02727593ecaa",
+      "interval_range": [
+        192,
+        231
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e0-i192-231.json",
+      "result_capsule_sha256": "7ce2cb2e2dab11e5a3f1445cea03f63370fd0d862a97357b76a63b20eed09ffe",
+      "result_manifest_sha256": "f86301bf0bd5f5e818ecd54b33e07b61d0cbd914b944068cebb23995cb268b39",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/6d402921-ef31-4438-86dd-b07052bbd9e3/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "1941ad9ab5102bbae7abe8929fd46e3755d50717fd22749183bfe96f635fb2b9",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-8",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 74.88001610001083,
+      "id": "7348915c-a175-4471-a5a7-80f3f04c10af",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        0,
+        64
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i0-64.json",
+      "result_capsule_sha256": "cb4cab61ae2325ab4313fcdd6fa3fe5067b1b8996f4472e6e46a0842b81a7b43",
+      "result_manifest_sha256": "bef85dc7a42dde392319ad3bb282b9049d6cef6c9ce32f02b0171f5561d1ba8f",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/7348915c-a175-4471-a5a7-80f3f04c10af/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "693d8f8779c3b14bd265fb4976d2a3ceb7e483089e31b6b83f8382edb992a4f9",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 75.82543849997455,
+      "id": "75035e3f-d4d1-44a8-b0c2-0038bdf7b1a6",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        64,
+        128
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i64-128.json",
+      "result_capsule_sha256": "4827ecd37a834154c82e90e491d7a94c4c7aef85ab7245b57eaf17d732579786",
+      "result_manifest_sha256": "0f70eee32a007b26cae423a01468c316624738a2428598264fe71cd4715f742b",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/75035e3f-d4d1-44a8-b0c2-0038bdf7b1a6/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "d7accaf2c3c31eadd2620f67847313fa48c2ba778b4e2c0b0ea121ae1f7c170d",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-3",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 74.47754340001848,
+      "id": "dc3e2765-0dec-4817-b9e6-042a8c3fec1f",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        128,
+        192
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i128-192.json",
+      "result_capsule_sha256": "210c2a801cbceca27fa93a85a107971cf6d175d5b08b21f6564e587e087d33eb",
+      "result_manifest_sha256": "7d759e814627c3ef09357200b6491c857c03a4f32a204205523398358e8d22c2",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/dc3e2765-0dec-4817-b9e6-042a8c3fec1f/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "0f1d08b1544dc02a44369c0345605f955c417ec55327bdf3966c1c52cc94f15d",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-7",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 70.83752820000518,
+      "id": "dbc0920e-ce3a-4ac1-8fd7-3fc4063fb41c",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        192,
+        256
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i192-256.json",
+      "result_capsule_sha256": "93258d223903b73b4f73437b2788975a76de664e7f6089862db5f3378572a122",
+      "result_manifest_sha256": "aad363a193486a013b269e24e12dec47b4779c9be662ec8cf80b780a46819433",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/dbc0920e-ce3a-4ac1-8fd7-3fc4063fb41c/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "0724743cfb9e47731b097f0104f59d2bbe5ae3baedcbc7d488f408b0390cddb7",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 89.92006849998143,
+      "id": "7b4edfc4-28d5-40e3-a056-5aa4ed15842e",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        256,
+        320
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i256-320.json",
+      "result_capsule_sha256": "d11285680557761d9b7c91b39f291421bd7fdc532f40a42c2542ab52252dd8d4",
+      "result_manifest_sha256": "7a1e93d7e2b924b678b05209f0f785dc88bc29049a6009e02262f06a3fe0e0f0",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/7b4edfc4-28d5-40e3-a056-5aa4ed15842e/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "64c029b0ea345348c440ec3f06ac1b80ee7ae555b0155ef98135899320683c1f",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-2",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 91.76150940003572,
+      "id": "b9fd7806-0890-4dbe-af09-d9cd65bd6fe2",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        320,
+        384
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i320-384.json",
+      "result_capsule_sha256": "e918774a0f909779af5b151500c33d73702a92463f93f99f035148216bde57f8",
+      "result_manifest_sha256": "61f5f7b3870b447a3082bae51a2068ca07ea3f06c3dbfcaaa6361db820279828",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/b9fd7806-0890-4dbe-af09-d9cd65bd6fe2/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "e84297995ea590084e96afcf7f85efe9794e551e7b185a9f328e42932ede0d22",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-3",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 91.96116200002143,
+      "id": "f62eea82-009f-43f1-949e-2054b375b442",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        384,
+        448
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i384-448.json",
+      "result_capsule_sha256": "6e25e8497970e3c042b966deef6ae539a7d78405db6fd44b9d4088aa99be737d",
+      "result_manifest_sha256": "bd64251b14701b8960ad0e3a3570474b7074cc2c87966ce9f2102a58e75481da",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/f62eea82-009f-43f1-949e-2054b375b442/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "f1ce8163bdb1f8fcedf4476738e8d7833ff3caa99114e4d1d0cfe84fcb5af100",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-4",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 92.46747200004756,
+      "id": "c88846aa-6470-46ab-ad8d-e5faddedd232",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        448,
+        512
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i448-512.json",
+      "result_capsule_sha256": "c527b74d467f967ac55d079051348d5e1c2e58eae5320681cb4bfecdabf0c0ad",
+      "result_manifest_sha256": "beef9e357776d465b4000b1e857c851feb42aab657a50a5997366d648cae3ccf",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/c88846aa-6470-46ab-ad8d-e5faddedd232/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "929f6b1f47a504bb7284cf3214bfa61ac1adca2b0c8e677c009ccb7870ca04a7",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-6",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 94.49019500002032,
+      "id": "619724ef-8570-4400-b40d-bb60586fa193",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        512,
+        576
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i512-576.json",
+      "result_capsule_sha256": "2ae302596c82680081ef0cbf0c91ba328535a75163293d58ea950de268d5fb8d",
+      "result_manifest_sha256": "b41eac8592e1222bdd06e9142877578325ffa22b845a97124fb02cf2b8fa9df5",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/619724ef-8570-4400-b40d-bb60586fa193/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "6cb99017be0242ac392fd4399f360f52d5f753284d8c1552774d46c5c230b6c2",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-5",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 94.51315469999099,
+      "id": "655166eb-facf-410e-bb4d-b8ea9c4fb1d5",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        576,
+        640
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i576-640.json",
+      "result_capsule_sha256": "5555bba5b060c5b30ac0d04b2a60a4f376f35a3019695cd3e89eb50a4db8d39b",
+      "result_manifest_sha256": "18325a45f3f9c311fbc49af9a6305908a312d88d47a484f3242c803185567e49",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/655166eb-facf-410e-bb4d-b8ea9c4fb1d5/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "4418298823b6e37e657574e4708de2fba4689376df471207a251a716a852767f",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-7",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 95.54553639999358,
+      "id": "e1689006-f961-4846-bc83-030d79b50767",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        640,
+        704
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i640-704.json",
+      "result_capsule_sha256": "6463db108e80de3c6b68e979b8adc23ee8aff8314a6a02859be7e02d55063e6c",
+      "result_manifest_sha256": "2bad28f5a55fc16c6ffe1e4493e25e7f6a485e89367b81ad130c014ddbe0ef2b",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/e1689006-f961-4846-bc83-030d79b50767/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "e5036f4da3bb1d009a56ad00235a3c47332fc779a4858526e92e39251543f479",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-8",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 96.02829089999432,
+      "id": "d529722a-74e0-471e-be26-8cfec0d8b09d",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        704,
+        768
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i704-768.json",
+      "result_capsule_sha256": "66bb8d70c605372a695d225be8d1f68465f1db36b6cc81719b1b6c89fba6198b",
+      "result_manifest_sha256": "67763da80a4698c8b4bc668907fafa40f000d3a8b85ec198e53076aed207a36e",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/d529722a-74e0-471e-be26-8cfec0d8b09d/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "49c03b503e5910d6408bf2b9d025cc316c8afa1ab87b7e235bba3c7b13b55aee",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 1,
+      "elapsed_seconds": 93.08211580000352,
+      "id": "106ab535-6662-4438-98fd-cfcf7cbabc4a",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        768,
+        832
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i768-832.json",
+      "result_capsule_sha256": "c928ec055b740b6d5d0881106d418ce51167c4f891af1ce3321cf21a7767a379",
+      "result_manifest_sha256": "eff4bdf654ef865360f48c732ff2f194abf4067744bc8879274515d98359e4af",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/106ab535-6662-4438-98fd-cfcf7cbabc4a/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "01f0176aa871ea4139daef60ee3283b747bbd7a39b895a8acc5e2b9be432a803",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-3",
+      "certified_intervals": 25,
+      "certified_subcells": 25,
+      "edge": 1,
+      "elapsed_seconds": 36.618441300000995,
+      "id": "41901828-b824-417d-aa59-975ec14d53bb",
+      "input_capsule_sha256": "aafebd4c0d791c3b152d4db3a196f561507962328aece9dee470af50e4104e62",
+      "interval_range": [
+        832,
+        857
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e1-i832-857.json",
+      "result_capsule_sha256": "73d401182677c370ef1cd2bee7172736364c3c266df03cb6057de347dba76bc4",
+      "result_manifest_sha256": "3909d1343678103349df491775ad568a95828a7167a75d1a519c415aa39d1e87",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/41901828-b824-417d-aa59-975ec14d53bb/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "f1745c7341b32634574aa88f5bf7ab6c73b94e24b84ab1ce0f777be289fddb46",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-2",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 2,
+      "elapsed_seconds": 98.09566449996782,
+      "id": "c0ae0eca-067d-4e14-add1-205ee5e637d8",
+      "input_capsule_sha256": "557633810073af21b608827a6b927275c31d91ffdb1ea27ce57abd09ae6e38f7",
+      "interval_range": [
+        0,
+        64
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e2-i0-64.json",
+      "result_capsule_sha256": "add177e79bc4284b09c33c6f9007d52e86a77250a43f32c8ef563696478ddffb",
+      "result_manifest_sha256": "fc1b2d89d1a5e0863d9f48f99e248593067bb9ca31349b73ece0c284961638b6",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/c0ae0eca-067d-4e14-add1-205ee5e637d8/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "516e11ad44acba7fb759cf9b594c44d12c9dc6826eee136c50d71768bc3e413d",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-4",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 2,
+      "elapsed_seconds": 101.96313290001126,
+      "id": "c7cdc768-674f-4f63-a830-2dabab4ff8e5",
+      "input_capsule_sha256": "557633810073af21b608827a6b927275c31d91ffdb1ea27ce57abd09ae6e38f7",
+      "interval_range": [
+        64,
+        128
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e2-i64-128.json",
+      "result_capsule_sha256": "d360faf877ece2742407c73b167614eec21ced847887be8f3ae21a814b8161f4",
+      "result_manifest_sha256": "0e0cef176ccda1a5bd9b5d11f98c13af7d359f7e3923e69ac0ed428122278247",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/c7cdc768-674f-4f63-a830-2dabab4ff8e5/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "d6d18c517daddbcc8aba4e82fd3ad4cafdbee7a26bf7fd86ae8dde94abaf7496",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-5",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 2,
+      "elapsed_seconds": 104.15816230000928,
+      "id": "2ab61c57-00b2-4730-9ce0-468596ada88a",
+      "input_capsule_sha256": "557633810073af21b608827a6b927275c31d91ffdb1ea27ce57abd09ae6e38f7",
+      "interval_range": [
+        192,
+        256
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e2-i192-256.json",
+      "result_capsule_sha256": "628a7151c574e04e666576268cad9f604b160e368b5f5957c80eb4c4da99f41a",
+      "result_manifest_sha256": "0e8cc4d59c6725c63dcfdc27a4edc15a5264c62fbf218196817c5d4df6f37852",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/2ab61c57-00b2-4730-9ce0-468596ada88a/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "e3819c6e9d7864e03550894d85770be627f5d766eafa2c8d714aa1927d421a36",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "local-requester",
+      "checkpoint_complete": true,
+      "edge": 2,
+      "id": "local-boundary-edge2-interval386",
+      "independent_verification": {
+        "packet_sha256": "fb2ad26a5ba58d004f71611bee1c2afd12127728e3da3093b7c6197199fe84f0",
+        "passed": true,
+        "passed_checks": 10,
+        "total_checks": 10,
+        "verifier": "python verify_q79_b89_recursive_boundary_isotopy.py",
+        "verifier_sha256": "5d62816d8545dd75ba864f5b313bfdc53b371ccfd36500a693728b4100b00377"
+      },
+      "interval_range": [
+        386,
+        387
+      ],
+      "observed_state": "succeeded",
+      "packet_schema": "mtt.preprojection.q79-eta9-b89-adaptive-boundary-taylor-krawczyk.v1",
+      "retrieved_path": "mtt-causal-base-constraint-fiber/q79_b89_recursive_boundary_isotopy_pilot.packet.json",
+      "retrieved_payload_sha256": "fb2ad26a5ba58d004f71611bee1c2afd12127728e3da3093b7c6197199fe84f0"
+    },
+    {
+      "assigned_agent": "pinero-beq-7",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 2,
+      "elapsed_seconds": 110.66011559998151,
+      "id": "c2407f8c-23a1-4c0b-8548-180f4539d51c",
+      "input_capsule_sha256": "557633810073af21b608827a6b927275c31d91ffdb1ea27ce57abd09ae6e38f7",
+      "interval_range": [
+        448,
+        512
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e2-i448-512.json",
+      "result_capsule_sha256": "17596ef04f5a1b5154f01b530acaa880ad41065ac074d97d52f7f96f79e7e460",
+      "result_manifest_sha256": "7976ba13bb605563549c8e0611cad30e375baa098e99dad19cc0fb4a5e453e3c",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/c2407f8c-23a1-4c0b-8548-180f4539d51c/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "155c4f21e4e8a401e231aa96405e272651e54753c5103b4af52ab6126a4e450b",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-6",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 2,
+      "elapsed_seconds": 112.10526490001939,
+      "id": "c14e0ba8-cf23-46eb-bd4a-5a20d68a20b3",
+      "input_capsule_sha256": "557633810073af21b608827a6b927275c31d91ffdb1ea27ce57abd09ae6e38f7",
+      "interval_range": [
+        512,
+        576
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e2-i512-576.json",
+      "result_capsule_sha256": "b861adfbd92fb18a2c796f532df5adca59862841f60d8b12db04d04aba94f9b5",
+      "result_manifest_sha256": "66ee07af0b166ee50f2c5a258fd9db4f71c7b887354b5d6a4cfef09435cb90b1",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/c14e0ba8-cf23-46eb-bd4a-5a20d68a20b3/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "23df4988537d45dac4e76575821a2361b3634b1b3db3842c8780f8be1433db62",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-3",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 2,
+      "elapsed_seconds": 115.95195590000367,
+      "id": "3bf236b0-1857-4076-b0a8-2ea7ced42da0",
+      "input_capsule_sha256": "557633810073af21b608827a6b927275c31d91ffdb1ea27ce57abd09ae6e38f7",
+      "interval_range": [
+        576,
+        640
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e2-i576-640.json",
+      "result_capsule_sha256": "88856864f01e74247a3653631f101132b5246b6fdb83f7be45f5194f8a8a2bc8",
+      "result_manifest_sha256": "4af59bdc5a751cbc4dcf7f36906d497d1145f31f5a53995206efb9fb579fb85a",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/3bf236b0-1857-4076-b0a8-2ea7ced42da0/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "60635954f49de43ccd3c8e1f018348d7e869549f3b222e452651d993284e9671",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq",
+      "certified_intervals": 38,
+      "certified_subcells": 38,
+      "edge": 2,
+      "elapsed_seconds": 71.40669169998728,
+      "id": "1038e091-a652-43ae-8ddb-05b1ec31dadc",
+      "input_capsule_sha256": "557633810073af21b608827a6b927275c31d91ffdb1ea27ce57abd09ae6e38f7",
+      "interval_range": [
+        640,
+        678
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e2-i640-678.json",
+      "result_capsule_sha256": "b4dd239a07190a76431f09a14eb88ffe484e19063344763b0ca4e58250bc3575",
+      "result_manifest_sha256": "02d2438bedd5c59a5cce560999ead60fa15712dcd9549462416e0dabe15bbbe0",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/1038e091-a652-43ae-8ddb-05b1ec31dadc/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "964a3d0a7be93b69030ddff19c6621368a1bf5bcf4ed2882e450b7f66a21b44c",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-2",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 3,
+      "elapsed_seconds": 120.22229340003105,
+      "id": "bb6f85f7-d974-4094-b5bb-64633b401d91",
+      "input_capsule_sha256": "5b3e40a6fcddd87232705af4233f5d28e6d9081062e62cf0c08b29de3c310d1c",
+      "interval_range": [
+        0,
+        64
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e3-i0-64.json",
+      "result_capsule_sha256": "c7bc111e70ffb2b0bc209f7c73af3c526f273c389dc692d8d34b3d3802b0120b",
+      "result_manifest_sha256": "2eaad3bb6c569c2f1bd40ac62c649490536ff82a1fc23868a0de1fa9bd0f4234",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/bb6f85f7-d974-4094-b5bb-64633b401d91/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "af307d4d67041f21a702025facc30ce92c8af33dbf6efdefcbe7bd75f6644c69",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-4",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 3,
+      "elapsed_seconds": 123.02616639999906,
+      "id": "641efd1d-3408-4dde-9747-acd9f9715c50",
+      "input_capsule_sha256": "5b3e40a6fcddd87232705af4233f5d28e6d9081062e62cf0c08b29de3c310d1c",
+      "interval_range": [
+        64,
+        128
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e3-i64-128.json",
+      "result_capsule_sha256": "7e80fc21928fd7280b4838c0f1b219c4c08d409428de9fa6ee5adf0b36f4345b",
+      "result_manifest_sha256": "aa246a78af69b76ee32d4a096d16dd4f0d8026da3a286e8c6ef9fc29f47d3f17",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/641efd1d-3408-4dde-9747-acd9f9715c50/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "f5c7acd12552c192a32bd1239120495f82e628a1821d2b2e71020c5e2f159d14",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-5",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 3,
+      "elapsed_seconds": 126.2507415,
+      "id": "3693423b-1548-4bc4-98ba-6f7f0a0703a4",
+      "input_capsule_sha256": "5b3e40a6fcddd87232705af4233f5d28e6d9081062e62cf0c08b29de3c310d1c",
+      "interval_range": [
+        128,
+        192
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e3-i128-192.json",
+      "result_capsule_sha256": "28d059c9e2626d6c385d0e09c723b4b5bf85225c1cf40457be16cb0a9e72c821",
+      "result_manifest_sha256": "d9e3f36fa328dc159d719a1bc2a05376269fafdb4879d94b18f2a770e08e1f10",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/3693423b-1548-4bc4-98ba-6f7f0a0703a4/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "0c0bbe134c3c3f5bd0054b033923d1c274b66e162f92617744ce175b1cf27f34",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-8",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 3,
+      "elapsed_seconds": 130.53196529997513,
+      "id": "e08caa66-edd2-48ad-b98f-fc5046502ea6",
+      "input_capsule_sha256": "5b3e40a6fcddd87232705af4233f5d28e6d9081062e62cf0c08b29de3c310d1c",
+      "interval_range": [
+        192,
+        256
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e3-i192-256.json",
+      "result_capsule_sha256": "9f74104e6e92ad17c2155f706c50604f0de485e6ed38521093e076c82fa6c380",
+      "result_manifest_sha256": "359bcfa72935bc38e2fc79626c2efc8ca94fdcb051521892b9d82ac173347b04",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/e08caa66-edd2-48ad-b98f-fc5046502ea6/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "b5e8090ad5f1cbf6762ba4b28f3a167db73d6ff7326cdd7c165e175a3c723a46",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-7",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 3,
+      "elapsed_seconds": 133.08465520001482,
+      "id": "adec7293-0f07-4e45-9c87-f2f20090d107",
+      "input_capsule_sha256": "5b3e40a6fcddd87232705af4233f5d28e6d9081062e62cf0c08b29de3c310d1c",
+      "interval_range": [
+        256,
+        320
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e3-i256-320.json",
+      "result_capsule_sha256": "8fda60c69ad1afb913e85ce8bed1b9bdb115da4ac49bee1a1cf7b465bbc0e54b",
+      "result_manifest_sha256": "f6039df504eca0ad5ccbf61987c9b89f1ceae68b83c8320bf496b81e60d345ff",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/adec7293-0f07-4e45-9c87-f2f20090d107/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "7b93a14d59c09d8604c7cce6df66bbb92fec7e59f9552c20c6e3b49060561e7a",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-6",
+      "certified_intervals": 64,
+      "certified_subcells": 64,
+      "edge": 3,
+      "elapsed_seconds": 135.48309469997184,
+      "id": "4851f4b5-2758-4262-8c58-51316b4a09d1",
+      "input_capsule_sha256": "5b3e40a6fcddd87232705af4233f5d28e6d9081062e62cf0c08b29de3c310d1c",
+      "interval_range": [
+        320,
+        384
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e3-i320-384.json",
+      "result_capsule_sha256": "d847ec0ef3677d41f4b7d901ccaf14c62e5696c1ff64f8c86b972a945d89c52f",
+      "result_manifest_sha256": "770fed18e6b576c63c5630cca45796199afa61964b63f9f63eea349cdb178979",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/4851f4b5-2758-4262-8c58-51316b4a09d1/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "5e107c0a05f9e9707cca4e5f47c2df3232765f4b842eb3440fbc305ab2840ef8",
+      "state_at_submission": "queued"
+    },
+    {
+      "assigned_agent": "pinero-beq-3",
+      "certified_intervals": 45,
+      "certified_subcells": 45,
+      "edge": 3,
+      "elapsed_seconds": 95.76418219995685,
+      "id": "e748d82d-bd6f-44ae-8582-d42fa00eeddf",
+      "input_capsule_sha256": "5b3e40a6fcddd87232705af4233f5d28e6d9081062e62cf0c08b29de3c310d1c",
+      "interval_range": [
+        384,
+        429
+      ],
+      "observed_state": "succeeded",
+      "output": "outputs/boundary-taylor-e3-i384-429.json",
+      "result_capsule_sha256": "1d6f011dab9b58d645262d7fa9c9f832711cfb9f6e88aba8ad600af805f16e63",
+      "result_manifest_sha256": "bf2cc90633f99f8c471b0cd793c3e26dd34a21b4c2ac96757f8361b41dc55de5",
+      "retrieved_path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/kernel_results/e748d82d-bd6f-44ae-8582-d42fa00eeddf/boundary-taylor/shard.json",
+      "retrieved_payload_sha256": "94f4cc7006e49ef13ed071d30bdf2a617edfaf1182471dd51eb543f15cd55c37",
+      "state_at_submission": "queued"
+    }
+  ],
+  "kernel_api": "http://127.0.0.1:8791",
+  "purpose": "Certify all 36 H0/Rminus strands on the hybrid right-80 source grid and bind them to the frozen joint Artin guide.",
+  "schema": "mtt.preprojection.q79-eta9-b89-boundary-taylor-campaign.v1",
+  "source_campaign_sha256": "c0dbabd8579a68182432ec54a9427130f6b7acd26b3fec09cbfe338d47190ede"
+}
