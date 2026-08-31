@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.q79-hermitian-metric-hodge-compiler.v1",
+  "title": "CBF.T52 Hermitian metric Hodge coefficient and first-variation compiler",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "metric_hodge_definition",
+    "non_diagonal_hermitian_witness",
+    "eight_shape_first_variation",
+    "q79_instantiation_boundary",
+    "parameter_ledger",
+    "physical_boundary",
+    "exact_payload_sha256",
+    "checks",
+    "check_summary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "boe.mtt.q79-hermitian-metric-hodge-compiler.v1"},
+    "claim_id": {"const": "CBF.T52"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "metric_hodge_definition": {"type": "object"},
+    "non_diagonal_hermitian_witness": {"type": "object"},
+    "eight_shape_first_variation": {"type": "object"},
+    "q79_instantiation_boundary": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "exact_payload_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "checks": {"type": "object"},
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "all_passed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 0},
+        "total": {"type": "integer", "minimum": 1},
+        "all_passed": {"type": "boolean"}
+      }
+    }
+  }
+}

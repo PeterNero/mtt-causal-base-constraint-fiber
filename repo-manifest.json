@@ -201,6 +201,7 @@
     "complete exact 64-state six-dimensional oriented exterior Hodge signed-permutation compiler",
     "canonical conjugate-paired complex-bundle realification and exact Hodge-contraction covariance",
     "determinant-one Hermitian equal-volume Hodge-shape no-go with eight source fields",
+    "exact supplied-Hermitian-metric full Hodge coefficient compiler and rank-eight first response",
     "typed causal-base/constraint-fiber research contract"
   ],
   "does_not_claim": [
@@ -322,6 +323,7 @@
     "selection of absolute gauge normalization or measured vector masses by the relative A51 mass pencil",
     "selection of compact-cosmology harmonic gauge modes by the flat R3 zero-mode theorem",
     "selection of the physical q79 Fu-Yau metric or conformal factor by the Hodge sign compiler",
+    "selection of physical q79 metric coefficients by the supplied-metric Hodge compiler or its non-diagonal witness",
     "selection of Majorana reality, chirality or particle spectrum by conjugate-paired realification",
     "a new globally original operator-theory identity"
   ],
@@ -378,7 +380,8 @@
     "SelectedRadialHiggsFutureStateAndCompleteFreeSeedTheorem_v1.md",
     "CommonActionQuantumTorsorAndOnePrimitiveBVNormalizationTheorem_v1.md",
     "NormalizedOrientationCoframeDensityAndOnePrimitiveBVProfileBridgeTheorem_v1.md",
-    "Q79OrientedHodgeStarAndConjugatePairedRealCarrierCompilerTheorem_v1.md"
+    "Q79OrientedHodgeStarAndConjugatePairedRealCarrierCompilerTheorem_v1.md",
+    "Q79HermitianMetricHodgeCoefficientAndFirstVariationCompilerTheorem_v1.md"
   ],
   "certificates": [
     "constraint_compression_leakage.packet.json",
@@ -431,7 +434,8 @@
     "selected_radial_higgs_future_state.packet.json",
     "common_action_quantum_torsor.packet.json",
     "normalized_orientation_coframe_bv_bridge.packet.json",
-    "q79_oriented_hodge_real_carrier.packet.json"
+    "q79_oriented_hodge_real_carrier.packet.json",
+    "q79_hermitian_metric_hodge_compiler.packet.json"
   ],
   "builders": [
     "python build_constraint_compression_leakage.py",
@@ -484,7 +488,8 @@
     "python build_selected_radial_higgs_future_state.py",
     "python build_common_action_quantum_torsor.py",
     "python build_normalized_orientation_coframe_bv_bridge.py",
-    "python build_q79_oriented_hodge_real_carrier.py"
+    "python build_q79_oriented_hodge_real_carrier.py",
+    "python build_q79_hermitian_metric_hodge_compiler.py"
   ],
   "syntheses": [
     "MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md",
@@ -532,7 +537,8 @@
     "selected_radial_higgs_future_state_contract.schema.json",
     "common_action_quantum_torsor_contract.schema.json",
     "normalized_orientation_coframe_bv_bridge_contract.schema.json",
-    "q79_oriented_hodge_real_carrier_contract.schema.json"
+    "q79_oriented_hodge_real_carrier_contract.schema.json",
+    "q79_hermitian_metric_hodge_compiler_contract.schema.json"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

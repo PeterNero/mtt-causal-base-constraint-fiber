@@ -1944,3 +1944,46 @@ packets and `0/7` rows. T51 adds zero continuous physical parameters and zero
 discrete selectors, preserving the one shared action primitive. It passes
 `74/74` builder checks, `143/143` independent checks and 18 focused tests; the
 full canonical suite passes all 435 tests.
+
+`Q79HermitianMetricHodgeCoefficientAndFirstVariationCompilerTheorem_v1.md`
+(`CBF.T52`) closes the universal supplied-metric coefficient layer left open
+by T51. For an oriented positive covariant metric `G`, inverse `H=G^-1` and
+volume factor `v=sqrt(det G)`, every full exterior Hodge coefficient is
+
+```text
+coefficient[e_(I^c),star_G(e_J)]
+  =sgn(I,I^c) v det(H[I,J]).
+```
+
+The formula recovers the T51 signed-permutation table at `G=I6`. At an exact
+non-diagonal determinant-one Hermitian witness, the full `64 by 64` Hodge
+matrix has 652 nonzero entries and obeys all 64 Hodge-square identities, all
+924 equal-degree wedge-metric identities and exact Hodge isometry.
+
+The exact first variation is
+
+```text
+delta(star_G)
+ =star_G[(1/2)tr(G^-1 deltaG)Id
+         -Lambda^k((G^-1 deltaG)^T)].
+```
+
+The eight fixed-volume Hermitian shape directions decompose as two diagonal,
+three real off-diagonal and three imaginary off-diagonal directions. Direct
+minor differentiation agrees entrywise with the variation formula at the
+identity and the non-diagonal witness. The flattened response has rank eight
+at both. Abstractly, fixed-volume variation on one-forms is `-star_G A^T`, so
+the response is injective for every supplied positive Hermitian metric.
+
+This advances the proto-spinor
+`metric_endomorphism_coefficient_compiler` to closed. It does not emit the
+selected metric coefficients. The same-member graph-Prym `beta_C` root
+`EA.03R`, Fu-Yau conformal factor, physical q79 metric, common visible-hidden
+HYM connection, gauge projector values, rank-102 operator and domains,
+physical `C4`/TT lift, chirality, upper action and QME remain open.
+`B.HS.01`, `B.GEO.01`, `B.ACTION.01` and `B.QFT.02` remain open. The eight
+shapes are unresolved source fields, not fit parameters. T52 adds zero
+continuous parameters and zero selectors, preserves the one shared action
+primitive, and leaves physical acceptance at `0/3` gates, `0/3` packets and
+`0/7` rows. It passes `42/42` builder checks, `96/96` independent checks and
+18 focused tests; the full canonical suite passes all 453 tests.

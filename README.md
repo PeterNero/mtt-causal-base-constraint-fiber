@@ -1801,3 +1801,41 @@ differential and domains, physical `C4`/TT lift, chirality, disposition of the
 primitive ledger and the `0/3`, `0/3`, `0/7` physical counters do not move.
 T51 passes `74/74` builder checks, `143/143` independent checks and 18 focused
 tests; the full canonical suite passes all 435 tests.
+
+The fifty-second theorem closes the next universal compiler layer without
+supplying the physical q79 metric. For any supplied oriented positive metric
+`G`, with `H=G^-1` and `v=sqrt(det G)`, it emits the complete Hodge matrix by
+
+```text
+coefficient[e_(I^c),star_G(e_J)]
+  =sgn(I,I^c) v det(H[I,J]).
+```
+
+This finite minor formula exactly specializes to the T51 sign table at
+`G=I6`. At a non-diagonal determinant-one Hermitian witness it produces a
+genuinely non-permutation 64-state response with 652 nonzero entries, while
+preserving all Hodge-square, wedge-metric and isometry identities.
+
+T52 also differentiates every coefficient directly and proves
+
+```text
+delta(star_G)
+ =star_G[(1/2)tr(G^-1 deltaG)Id
+         -Lambda^k((G^-1 deltaG)^T)].
+```
+
+The fixed-volume Hermitian tangent has two diagonal, three real
+off-diagonal and three imaginary off-diagonal directions. On one-forms its
+variation reduces to `-star_G A^T`; invertibility therefore makes the
+response injective. Exact execution confirms rank eight both at the identity
+and at the non-diagonal witness.
+
+This closes the proto-spinor metric-endomorphism coefficient compiler, not
+its selected coefficients. The same-member `beta_C` root `EA.03R`, Fu-Yau
+conformal factor, physical metric, common visible-hidden HYM connection,
+gauge projectors, rank-102 operator, chirality, upper action and QME remain
+open. The eight shapes remain endpoint source fields rather than fit
+parameters. T52 adds zero parameters and selectors, preserves the single
+shared action primitive, and leaves physical counters at `0/3`, `0/3`,
+`0/7`. It passes `42/42` builder checks, `96/96` independent checks and 18
+focused tests; the full canonical suite passes all 453 tests.

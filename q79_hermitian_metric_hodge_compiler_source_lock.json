@@ -1,0 +1,58 @@
+{
+  "schema": "boe.mtt.q79-hermitian-metric-hodge-compiler-source-lock.v1",
+  "claim_id": "CBF.T52",
+  "date": "2026-08-31",
+  "model_state_sha256": "5fdba232d862a95c164603f3156f0cfb8f8abed50af0756edc1618457b5d1f45",
+  "handoff_id": "fca40699-fbf5-4374-b01a-ebfcf606869d",
+  "sources": [
+    {
+      "id": "T51_THEOREM",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "23c17d57eb9bb2c0490521dadab246382ca41cac",
+      "path": "Q79OrientedHodgeStarAndConjugatePairedRealCarrierCompilerTheorem_v1.md",
+      "sha256": "0961e1e5426818adb95584efdac67a58bd6feee7370d44d231ff85f01124d177"
+    },
+    {
+      "id": "T51_PACKET",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "23c17d57eb9bb2c0490521dadab246382ca41cac",
+      "path": "q79_oriented_hodge_real_carrier.packet.json",
+      "sha256": "f8da485af1e098d10a7119f81ba46f0f3a88934d282b9583fc9096f6e7f2f6b4"
+    },
+    {
+      "id": "PROTOSPINOR_HODGE_TABLE",
+      "repository": "mtt-protospinor-gr-response-proof",
+      "repository_head": "a350d0d1a706845205d669542cf344750033c6f6",
+      "path": "../mtt-protospinor-gr-response-proof/certificates/selected_end0_hym_hodge_quadrature_projector_table_certificate.json",
+      "sha256": "ded2fb73e61f0818a817ca6a12516474bb970580160bf3eaa66a97695e032942"
+    },
+    {
+      "id": "Q79_FUYAU_BASE",
+      "repository": "mtt-protospinor-gr-response-proof",
+      "repository_head": "a350d0d1a706845205d669542cf344750033c6f6",
+      "path": "../mtt-protospinor-gr-response-proof/certificates/q79_degree2_k3_fuyau_torsion_glsm_base_certificate.json",
+      "sha256": "2f7dd722c5e387baf9438e6c2e14fe66f564de2109030ab08516552dabb86035"
+    },
+    {
+      "id": "Q79_HODGE_ACTION_AUDIT",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "repository_head": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "../20 Mathematical Language Discovery Program - Closure Dynamics/q79_hodge_action_axiom_selection_audit.packet.json",
+      "sha256": "9068f29c7e3e70e4d189c426f9266c742ed3a0c6e724b6a83ee74b1648772055"
+    },
+    {
+      "id": "Q79_AUGMENTED_HILBERT_COMPILER",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "repository_head": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "../20 Mathematical Language Discovery Program - Closure Dynamics/Q79_AUGMENTED_ENDPOINT_HILBERT_SPECTRAL_COMPILER_THEOREM_v1.md",
+      "sha256": "77453971f76294863f6acda44d3051143376497375452322a114d3a83ab7ea24"
+    },
+    {
+      "id": "TRANSPORTED_DELIGNE_METRIC_NATURALITY",
+      "repository": "mtt-q79-total-superconnection-branching",
+      "repository_head": "251e6d82b09ffbf3c35630a9b5c979f6bf080706",
+      "path": "../mtt-q79-total-superconnection-branching/theorems/TRANSPORTED_DELIGNE_COCHAIN_METRIC_AND_HODGE_NATURALITY_THEOREM_v1.md",
+      "sha256": "ded410e0b44cf31e76dea4564cd3768cd626aed530f70ae7327db3e1684374b3"
+    }
+  ]
+}
