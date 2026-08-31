@@ -1750,3 +1750,54 @@ Lorentzian full BV domain and QME pushforward remain open. The global H4-T15
 decision stays `AUXILIARY_COTANGENT_REDUCTION_ONLY`, and physical counters do
 not move. T50 passes `75/75` builder checks, `155/155` independent checks and
 15 focused tests; the full canonical suite passes all 417 tests.
+
+The fifty-first theorem completes the universal six-dimensional Hodge sign
+compiler that remained open after T50. For an oriented orthonormal coframe,
+the 64 exterior states have degree dimensions
+
+```text
+1, 6, 15, 20, 15, 6, 1,
+```
+
+and the exact signed-permutation rule is
+
+```text
+star(e_I)=sgn(I,I^c)e_(I^c).
+```
+
+All 64 `star^2=(-1)^(k(6-k))` identities and all 924 equal-degree ordered
+wedge-star identities are checked exactly. The table restricts to T50's
+`star(1)=nu`, `star(nu)=1` block without adding a density or action primitive.
+
+For a complex bundle `E`, T51 also constructs the canonical real carrier
+
+```text
+R(E)=E direct-sum conjugate(E),
+kappa(z,w)=(conjugate(w),conjugate(z)).
+```
+
+A supplied unitary differential and its adjoint, Laplacian, harmonic
+projector, reduced Green operator and contracting homotopy all commute with
+this real structure in the exact finite witness. This is a realification
+compiler, not a Majorana, chirality or particle-spectrum selection theorem.
+
+Normalized volume still does not determine Hodge shape. The explicit
+determinant-one Hermitian family
+
+```text
+g_t=diag(t^2,t^2,t^-2,t^-2,1,1)
+```
+
+has fixed volume but changes `star(e1)` and `star(e3)`. At fixed complex
+structure and volume the Hermitian metric retains eight local real shape
+components. They are source fields that the selected Fu-Yau/HYM equations
+must emit, not eight accepted fit parameters.
+
+T51 therefore closes only the proto-spinor
+`oriented_full_Hodge_star_wedge_sign_table` at compiler tier. The physical q79
+metric and conformal factor, common visible-hidden HYM connection, rank-102
+differential and domains, physical `C4`/TT lift, chirality, disposition of the
+86 topology-complement modes, upper action and QME remain open. The one-action
+primitive ledger and the `0/3`, `0/3`, `0/7` physical counters do not move.
+T51 passes `74/74` builder checks, `143/143` independent checks and 18 focused
+tests; the full canonical suite passes all 435 tests.

@@ -59,6 +59,8 @@ paper, note, packet name or search hit.
    `faa91fff-1f6b-4519-ae7a-b0ff0df467ab`; the normalized orientation,
    coframe-density and one-primitive BV-profile bridge handoff is
    `5c231909-d8b5-4929-be65-b442cbdd014d`;
+   the q79 oriented Hodge-star and conjugate-paired real-carrier compiler
+   handoff is `e0e3a984-cc12-4140-86d5-432002b346f5`;
    the radial closure-attractor and state-marginal handoff is
    `5067bb6f-4704-4da5-a085-be56da8cd4b0`;
    the renormalized BV anchored repair-semiflow and global-intertwining

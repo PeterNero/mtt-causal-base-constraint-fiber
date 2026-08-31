@@ -1,0 +1,115 @@
+{
+  "schema": "boe.mtt.q79-oriented-hodge-real-carrier-source-lock.v1",
+  "claim_id": "CBF.T51",
+  "date": "2026-08-31",
+  "model_state_sha256": "5fdba232d862a95c164603f3156f0cfb8f8abed50af0756edc1618457b5d1f45",
+  "handoff_id": "e0e3a984-cc12-4140-86d5-432002b346f5",
+  "repositories": {
+    "mtt-causal-base-constraint-fiber": "909f75633080f2f0502b5bd3e224ebc6ba9fbec9",
+    "mtt-preprojection-repair-calculus": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+    "mtt-protospinor-gr-response-proof": "a350d0d1a706845205d669542cf344750033c6f6",
+    "20 Mathematical Language Discovery Program - Closure Dynamics": "aafecf2201ab5573b63968175592062d91d10a0a",
+    "mtt-qm-source-proof": "cd3c13b665d6712dd78655cf0d2007231f634065"
+  },
+  "sources": [
+    {
+      "id": "T50_THEOREM",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "909f75633080f2f0502b5bd3e224ebc6ba9fbec9",
+      "git_blob": "09092b7b4d3f585d4a514293dbd7895a613dd08b",
+      "path": "NormalizedOrientationCoframeDensityAndOnePrimitiveBVProfileBridgeTheorem_v1.md",
+      "sha256": "23a611005123be23191733c4d12e5c3833e7ef074a01c2ce175e365c74f7d747"
+    },
+    {
+      "id": "T50_PACKET",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "909f75633080f2f0502b5bd3e224ebc6ba9fbec9",
+      "git_blob": "a0eeb85c04161857266eb86cd269c3bc74cf2463",
+      "path": "normalized_orientation_coframe_bv_bridge.packet.json",
+      "sha256": "2ec706ff79bf577d56cbaa1675b26e8bc208a24b2d7cc7cc73f8470c44145bb6"
+    },
+    {
+      "id": "H4_T16_THEOREM",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "686794dccfa76a6d27f486a7e24d55c210b2f3ac",
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_NORMALIZED_ORIENTATION_BV_PRODUCT_REDUCTION_AND_NEUTRAL_TOPOLOGY_NO_GO_THEOREM_v1.md",
+      "sha256": "f74b950287a85c854cbe4a793a82a0d26ab65805001629505dda2a34ab17b845"
+    },
+    {
+      "id": "H4_T16_CERT",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "6345043cb1ba6fcd0d7eb26fb4cc93a9e313f642",
+      "path": "../mtt-preprojection-repair-calculus/certificates/h4_normalized_orientation_bv_reduction.json",
+      "sha256": "7e6982ac8f231cf3e75d728aa81e37add58005ac90635d9259978645b2703d25"
+    },
+    {
+      "id": "H4_T17_THEOREM",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "7a0043f685593222d790495a77e97c2f5e1add34",
+      "path": "../mtt-preprojection-repair-calculus/theorems/PREPROJECTION_Q79_TOPOLOGY_MODE_LIFTING_INDEX_OBSTRUCTION_AND_SHARP_CYCLIC_WITNESS_THEOREM_v1.md",
+      "sha256": "f20ff433864f5586f0663f77ff74306896ece789a79c56f4352ab5c52f0194c1"
+    },
+    {
+      "id": "H4_T17_CERT",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_head": "8dbb413f853e76deef48cd75b37ce99323e14e02",
+      "git_blob": "8783f658d9aacf73a79f9b595783f929599bbf38",
+      "path": "../mtt-preprojection-repair-calculus/certificates/h4_q79_topology_mode_lifting_obstruction.json",
+      "sha256": "b10309a1fc977845e91b4a2bc73f082e742a4afc13815ae3250579e383c5ab14"
+    },
+    {
+      "id": "Q79_FUYAU_BASE",
+      "repository": "mtt-protospinor-gr-response-proof",
+      "repository_head": "a350d0d1a706845205d669542cf344750033c6f6",
+      "git_blob": "94ed5127f9f460ed7abe552f17d34965b63c8f5b",
+      "path": "../mtt-protospinor-gr-response-proof/certificates/q79_degree2_k3_fuyau_torsion_glsm_base_certificate.json",
+      "sha256": "2f7dd722c5e387baf9438e6c2e14fe66f564de2109030ab08516552dabb86035"
+    },
+    {
+      "id": "PROTOSPINOR_HODGE_TABLE",
+      "repository": "mtt-protospinor-gr-response-proof",
+      "repository_head": "a350d0d1a706845205d669542cf344750033c6f6",
+      "git_blob": "56ff4a323755205f49ecb9294a923980ddd6c1aa",
+      "path": "../mtt-protospinor-gr-response-proof/certificates/selected_end0_hym_hodge_quadrature_projector_table_certificate.json",
+      "sha256": "ded2fb73e61f0818a817ca6a12516474bb970580160bf3eaa66a97695e032942"
+    },
+    {
+      "id": "Q79_K3_REAL_STRUCTURE",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "repository_head": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "git_blob": "dd0d3f49402f470a7aa5af3dc271ae0cdbff6eea",
+      "path": "../20 Mathematical Language Discovery Program - Closure Dynamics/q79_k3_real_structure_bk3_kernel.packet.json",
+      "sha256": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+    },
+    {
+      "id": "Q79_HODGE_ACTION_AUDIT",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "repository_head": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "git_blob": "776c090a4299e29cd1dc9f30074ba482e039a1d4",
+      "path": "../20 Mathematical Language Discovery Program - Closure Dynamics/q79_hodge_action_axiom_selection_audit.packet.json",
+      "sha256": "9068f29c7e3e70e4d189c426f9266c742ed3a0c6e724b6a83ee74b1648772055"
+    },
+    {
+      "id": "Q79_FM_HYM_FRONTIER",
+      "repository": "mtt-qm-source-proof",
+      "repository_head": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "git_blob": "402723d7fdefae9967b89d0b281978b086b1f911",
+      "path": "../mtt-qm-source-proof/certificates/q79_fourier_mukai_hym_contract_dependency_compression.certificate.json",
+      "sha256": "7b8950ec0f0f5cce7a84fe8a7907e355876910488d901911eb49395657d26dbc"
+    }
+  ],
+  "guards": {
+    "closes_only_the_oriented_orthonormal_frame_hodge_sign_compiler": true,
+    "does_not_select_the_q79_fuyau_metric_or_conformal_factor": true,
+    "does_not_emit_visible_or_hidden_HYM_connections": true,
+    "conjugate_paired_realification_is_not_a_majorana_or_chirality_theorem": true,
+    "other_86_topology_modes_are_not_deleted_or_declared_massive": true,
+    "shared_circle_insufficiency_result_is_inherited_not_reproved": true,
+    "one_action_primitive_is_preserved": true,
+    "B_HS_01_B_GEO_01_B_ACTION_01_and_B_QFT_02_must_remain_open": true,
+    "physical_acceptance_counters_must_not_move": true
+  }
+}

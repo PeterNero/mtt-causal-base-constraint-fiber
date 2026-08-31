@@ -1898,3 +1898,49 @@ strict `alpha` source remain open. `B.GEO.01`, `B.ACTION.01` and `B.QFT.02`
 remain open; physical acceptance stays `0/3` gates, `0/3` packets and `0/7`
 rows. T50 passes `75/75` builder checks, `155/155` independent checks and 15
 focused tests; the full canonical suite passes all 417 tests.
+
+`Q79OrientedHodgeStarAndConjugatePairedRealCarrierCompilerTheorem_v1.md`
+(`CBF.T51`) closes the previously absent full oriented wedge-sign table at the
+universal orthonormal-frame compiler tier. The exterior carrier
+`Lambda^*(R^6)` has 64 basis states with degree dimensions
+`1,6,15,20,15,6,1`, and its exact Hodge rule is
+
+```text
+star(e_I)=sgn(I,I^c)e_(I^c).
+```
+
+The packet checks all 64 Hodge-square identities and all 924 equal-degree
+ordered wedge-star identities. Its unit/orientation restriction is exactly
+T50's `star(1)=nu`, `star(nu)=1`, so no second volume or action primitive is
+introduced.
+
+T51 separately supplies the canonical conjugate-paired realification
+`R(E)=E direct-sum conjugate(E)` with
+`kappa(z,w)=(conjugate(w),conjugate(z))`. In the rank-three witness the doubled
+complex carrier has real dimension 12, and the fixed and anti-fixed real
+subspaces each have rank 6. A supplied unitary nilpotent differential, its
+adjoint, Laplacian, harmonic projector, reduced Green and homotopy commute
+with `kappa`; the contraction identities are exact. This construction does
+not select a Majorana condition, chirality or a physical spectrum.
+
+The determinant-one Hermitian counterfamily
+
+```text
+g_t=diag(t^2,t^2,t^-2,t^-2,1,1)
+```
+
+has fixed orientation and unit volume but changes lower-degree Hodge rows.
+Thus T50's normalized volume cannot select the physical Hodge metric. With
+complex structure and volume fixed, the Hermitian shape has eight local real
+components. These are unresolved source fields, not eight fitted constants.
+
+The physical Fu-Yau metric/conformal factor and common visible-hidden HYM
+endpoint remain open. So do the rank-102 bundle-valued differential and
+domains, its physical projector/Green operator, the physical `C4`/TT lift,
+chirality and index, disposition of the other 86 topology modes, independently
+selected upper action and QME transport. `B.HS.01`, `B.GEO.01`, `B.ACTION.01`
+and `B.QFT.02` remain open; physical acceptance stays `0/3` gates, `0/3`
+packets and `0/7` rows. T51 adds zero continuous physical parameters and zero
+discrete selectors, preserving the one shared action primitive. It passes
+`74/74` builder checks, `143/143` independent checks and 18 focused tests; the
+full canonical suite passes all 435 tests.

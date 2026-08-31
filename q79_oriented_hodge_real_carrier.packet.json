@@ -1,0 +1,3225 @@
+{
+  "schema": "boe.mtt.q79-oriented-hodge-real-carrier.v1",
+  "claim_id": "CBF.T51",
+  "date": "2026-08-31",
+  "status": "EXACT_ORIENTED_EXTERIOR_HODGE_AND_CONJUGATE_PAIRED_REAL_CARRIER_COMPILER_PHYSICAL_Q79_METRIC_HYM_OPERATOR_AND_CHIRAL_INDEX_OPEN",
+  "source_provenance": {
+    "source_lock": "q79_oriented_hodge_real_carrier_source_lock.json",
+    "source_hashes_match": {
+      "T50_THEOREM": true,
+      "T50_PACKET": true,
+      "H4_T16_THEOREM": true,
+      "H4_T16_CERT": true,
+      "H4_T17_THEOREM": true,
+      "H4_T17_CERT": true,
+      "Q79_FUYAU_BASE": true,
+      "PROTOSPINOR_HODGE_TABLE": true,
+      "Q79_K3_REAL_STRUCTURE": true,
+      "Q79_HODGE_ACTION_AUDIT": true,
+      "Q79_FM_HYM_FRONTIER": true
+    },
+    "all_source_hashes_match": true,
+    "model_state_sha256": "5fdba232d862a95c164603f3156f0cfb8f8abed50af0756edc1618457b5d1f45",
+    "handoff_id": "e0e3a984-cc12-4140-86d5-432002b346f5"
+  },
+  "oriented_exterior_hodge": {
+    "dimension": 6,
+    "basis_dimension": 64,
+    "degree_dimensions": {
+      "0": 1,
+      "1": 6,
+      "2": 15,
+      "3": 20,
+      "4": 15,
+      "5": 6,
+      "6": 1
+    },
+    "basis_order": [
+      "1",
+      "e1",
+      "e2",
+      "e3",
+      "e4",
+      "e5",
+      "e6",
+      "e12",
+      "e13",
+      "e14",
+      "e15",
+      "e16",
+      "e23",
+      "e24",
+      "e25",
+      "e26",
+      "e34",
+      "e35",
+      "e36",
+      "e45",
+      "e46",
+      "e56",
+      "e123",
+      "e124",
+      "e125",
+      "e126",
+      "e134",
+      "e135",
+      "e136",
+      "e145",
+      "e146",
+      "e156",
+      "e234",
+      "e235",
+      "e236",
+      "e245",
+      "e246",
+      "e256",
+      "e345",
+      "e346",
+      "e356",
+      "e456",
+      "e1234",
+      "e1235",
+      "e1236",
+      "e1245",
+      "e1246",
+      "e1256",
+      "e1345",
+      "e1346",
+      "e1356",
+      "e1456",
+      "e2345",
+      "e2346",
+      "e2356",
+      "e2456",
+      "e3456",
+      "e12345",
+      "e12346",
+      "e12356",
+      "e12456",
+      "e13456",
+      "e23456",
+      "nu"
+    ],
+    "definition": "star(e_I)=sgn(I,I_complement)e_I_complement in an oriented orthonormal coframe",
+    "complete_signed_permutation_table": [
+      {
+        "column": 0,
+        "input": "1",
+        "degree": 0,
+        "row": 63,
+        "output": "nu",
+        "sign": 1
+      },
+      {
+        "column": 1,
+        "input": "e1",
+        "degree": 1,
+        "row": 62,
+        "output": "e23456",
+        "sign": 1
+      },
+      {
+        "column": 2,
+        "input": "e2",
+        "degree": 1,
+        "row": 61,
+        "output": "e13456",
+        "sign": -1
+      },
+      {
+        "column": 3,
+        "input": "e3",
+        "degree": 1,
+        "row": 60,
+        "output": "e12456",
+        "sign": 1
+      },
+      {
+        "column": 4,
+        "input": "e4",
+        "degree": 1,
+        "row": 59,
+        "output": "e12356",
+        "sign": -1
+      },
+      {
+        "column": 5,
+        "input": "e5",
+        "degree": 1,
+        "row": 58,
+        "output": "e12346",
+        "sign": 1
+      },
+      {
+        "column": 6,
+        "input": "e6",
+        "degree": 1,
+        "row": 57,
+        "output": "e12345",
+        "sign": -1
+      },
+      {
+        "column": 7,
+        "input": "e12",
+        "degree": 2,
+        "row": 56,
+        "output": "e3456",
+        "sign": 1
+      },
+      {
+        "column": 8,
+        "input": "e13",
+        "degree": 2,
+        "row": 55,
+        "output": "e2456",
+        "sign": -1
+      },
+      {
+        "column": 9,
+        "input": "e14",
+        "degree": 2,
+        "row": 54,
+        "output": "e2356",
+        "sign": 1
+      },
+      {
+        "column": 10,
+        "input": "e15",
+        "degree": 2,
+        "row": 53,
+        "output": "e2346",
+        "sign": -1
+      },
+      {
+        "column": 11,
+        "input": "e16",
+        "degree": 2,
+        "row": 52,
+        "output": "e2345",
+        "sign": 1
+      },
+      {
+        "column": 12,
+        "input": "e23",
+        "degree": 2,
+        "row": 51,
+        "output": "e1456",
+        "sign": 1
+      },
+      {
+        "column": 13,
+        "input": "e24",
+        "degree": 2,
+        "row": 50,
+        "output": "e1356",
+        "sign": -1
+      },
+      {
+        "column": 14,
+        "input": "e25",
+        "degree": 2,
+        "row": 49,
+        "output": "e1346",
+        "sign": 1
+      },
+      {
+        "column": 15,
+        "input": "e26",
+        "degree": 2,
+        "row": 48,
+        "output": "e1345",
+        "sign": -1
+      },
+      {
+        "column": 16,
+        "input": "e34",
+        "degree": 2,
+        "row": 47,
+        "output": "e1256",
+        "sign": 1
+      },
+      {
+        "column": 17,
+        "input": "e35",
+        "degree": 2,
+        "row": 46,
+        "output": "e1246",
+        "sign": -1
+      },
+      {
+        "column": 18,
+        "input": "e36",
+        "degree": 2,
+        "row": 45,
+        "output": "e1245",
+        "sign": 1
+      },
+      {
+        "column": 19,
+        "input": "e45",
+        "degree": 2,
+        "row": 44,
+        "output": "e1236",
+        "sign": 1
+      },
+      {
+        "column": 20,
+        "input": "e46",
+        "degree": 2,
+        "row": 43,
+        "output": "e1235",
+        "sign": -1
+      },
+      {
+        "column": 21,
+        "input": "e56",
+        "degree": 2,
+        "row": 42,
+        "output": "e1234",
+        "sign": 1
+      },
+      {
+        "column": 22,
+        "input": "e123",
+        "degree": 3,
+        "row": 41,
+        "output": "e456",
+        "sign": 1
+      },
+      {
+        "column": 23,
+        "input": "e124",
+        "degree": 3,
+        "row": 40,
+        "output": "e356",
+        "sign": -1
+      },
+      {
+        "column": 24,
+        "input": "e125",
+        "degree": 3,
+        "row": 39,
+        "output": "e346",
+        "sign": 1
+      },
+      {
+        "column": 25,
+        "input": "e126",
+        "degree": 3,
+        "row": 38,
+        "output": "e345",
+        "sign": -1
+      },
+      {
+        "column": 26,
+        "input": "e134",
+        "degree": 3,
+        "row": 37,
+        "output": "e256",
+        "sign": 1
+      },
+      {
+        "column": 27,
+        "input": "e135",
+        "degree": 3,
+        "row": 36,
+        "output": "e246",
+        "sign": -1
+      },
+      {
+        "column": 28,
+        "input": "e136",
+        "degree": 3,
+        "row": 35,
+        "output": "e245",
+        "sign": 1
+      },
+      {
+        "column": 29,
+        "input": "e145",
+        "degree": 3,
+        "row": 34,
+        "output": "e236",
+        "sign": 1
+      },
+      {
+        "column": 30,
+        "input": "e146",
+        "degree": 3,
+        "row": 33,
+        "output": "e235",
+        "sign": -1
+      },
+      {
+        "column": 31,
+        "input": "e156",
+        "degree": 3,
+        "row": 32,
+        "output": "e234",
+        "sign": 1
+      },
+      {
+        "column": 32,
+        "input": "e234",
+        "degree": 3,
+        "row": 31,
+        "output": "e156",
+        "sign": -1
+      },
+      {
+        "column": 33,
+        "input": "e235",
+        "degree": 3,
+        "row": 30,
+        "output": "e146",
+        "sign": 1
+      },
+      {
+        "column": 34,
+        "input": "e236",
+        "degree": 3,
+        "row": 29,
+        "output": "e145",
+        "sign": -1
+      },
+      {
+        "column": 35,
+        "input": "e245",
+        "degree": 3,
+        "row": 28,
+        "output": "e136",
+        "sign": -1
+      },
+      {
+        "column": 36,
+        "input": "e246",
+        "degree": 3,
+        "row": 27,
+        "output": "e135",
+        "sign": 1
+      },
+      {
+        "column": 37,
+        "input": "e256",
+        "degree": 3,
+        "row": 26,
+        "output": "e134",
+        "sign": -1
+      },
+      {
+        "column": 38,
+        "input": "e345",
+        "degree": 3,
+        "row": 25,
+        "output": "e126",
+        "sign": 1
+      },
+      {
+        "column": 39,
+        "input": "e346",
+        "degree": 3,
+        "row": 24,
+        "output": "e125",
+        "sign": -1
+      },
+      {
+        "column": 40,
+        "input": "e356",
+        "degree": 3,
+        "row": 23,
+        "output": "e124",
+        "sign": 1
+      },
+      {
+        "column": 41,
+        "input": "e456",
+        "degree": 3,
+        "row": 22,
+        "output": "e123",
+        "sign": -1
+      },
+      {
+        "column": 42,
+        "input": "e1234",
+        "degree": 4,
+        "row": 21,
+        "output": "e56",
+        "sign": 1
+      },
+      {
+        "column": 43,
+        "input": "e1235",
+        "degree": 4,
+        "row": 20,
+        "output": "e46",
+        "sign": -1
+      },
+      {
+        "column": 44,
+        "input": "e1236",
+        "degree": 4,
+        "row": 19,
+        "output": "e45",
+        "sign": 1
+      },
+      {
+        "column": 45,
+        "input": "e1245",
+        "degree": 4,
+        "row": 18,
+        "output": "e36",
+        "sign": 1
+      },
+      {
+        "column": 46,
+        "input": "e1246",
+        "degree": 4,
+        "row": 17,
+        "output": "e35",
+        "sign": -1
+      },
+      {
+        "column": 47,
+        "input": "e1256",
+        "degree": 4,
+        "row": 16,
+        "output": "e34",
+        "sign": 1
+      },
+      {
+        "column": 48,
+        "input": "e1345",
+        "degree": 4,
+        "row": 15,
+        "output": "e26",
+        "sign": -1
+      },
+      {
+        "column": 49,
+        "input": "e1346",
+        "degree": 4,
+        "row": 14,
+        "output": "e25",
+        "sign": 1
+      },
+      {
+        "column": 50,
+        "input": "e1356",
+        "degree": 4,
+        "row": 13,
+        "output": "e24",
+        "sign": -1
+      },
+      {
+        "column": 51,
+        "input": "e1456",
+        "degree": 4,
+        "row": 12,
+        "output": "e23",
+        "sign": 1
+      },
+      {
+        "column": 52,
+        "input": "e2345",
+        "degree": 4,
+        "row": 11,
+        "output": "e16",
+        "sign": 1
+      },
+      {
+        "column": 53,
+        "input": "e2346",
+        "degree": 4,
+        "row": 10,
+        "output": "e15",
+        "sign": -1
+      },
+      {
+        "column": 54,
+        "input": "e2356",
+        "degree": 4,
+        "row": 9,
+        "output": "e14",
+        "sign": 1
+      },
+      {
+        "column": 55,
+        "input": "e2456",
+        "degree": 4,
+        "row": 8,
+        "output": "e13",
+        "sign": -1
+      },
+      {
+        "column": 56,
+        "input": "e3456",
+        "degree": 4,
+        "row": 7,
+        "output": "e12",
+        "sign": 1
+      },
+      {
+        "column": 57,
+        "input": "e12345",
+        "degree": 5,
+        "row": 6,
+        "output": "e6",
+        "sign": 1
+      },
+      {
+        "column": 58,
+        "input": "e12346",
+        "degree": 5,
+        "row": 5,
+        "output": "e5",
+        "sign": -1
+      },
+      {
+        "column": 59,
+        "input": "e12356",
+        "degree": 5,
+        "row": 4,
+        "output": "e4",
+        "sign": 1
+      },
+      {
+        "column": 60,
+        "input": "e12456",
+        "degree": 5,
+        "row": 3,
+        "output": "e3",
+        "sign": -1
+      },
+      {
+        "column": 61,
+        "input": "e13456",
+        "degree": 5,
+        "row": 2,
+        "output": "e2",
+        "sign": 1
+      },
+      {
+        "column": 62,
+        "input": "e23456",
+        "degree": 5,
+        "row": 1,
+        "output": "e1",
+        "sign": -1
+      },
+      {
+        "column": 63,
+        "input": "nu",
+        "degree": 6,
+        "row": 0,
+        "output": "1",
+        "sign": 1
+      }
+    ],
+    "sparse_matrix_shape": [
+      64,
+      64
+    ],
+    "sparse_matrix_entries": [
+      {
+        "row": 63,
+        "column": 0,
+        "value": 1
+      },
+      {
+        "row": 62,
+        "column": 1,
+        "value": 1
+      },
+      {
+        "row": 61,
+        "column": 2,
+        "value": -1
+      },
+      {
+        "row": 60,
+        "column": 3,
+        "value": 1
+      },
+      {
+        "row": 59,
+        "column": 4,
+        "value": -1
+      },
+      {
+        "row": 58,
+        "column": 5,
+        "value": 1
+      },
+      {
+        "row": 57,
+        "column": 6,
+        "value": -1
+      },
+      {
+        "row": 56,
+        "column": 7,
+        "value": 1
+      },
+      {
+        "row": 55,
+        "column": 8,
+        "value": -1
+      },
+      {
+        "row": 54,
+        "column": 9,
+        "value": 1
+      },
+      {
+        "row": 53,
+        "column": 10,
+        "value": -1
+      },
+      {
+        "row": 52,
+        "column": 11,
+        "value": 1
+      },
+      {
+        "row": 51,
+        "column": 12,
+        "value": 1
+      },
+      {
+        "row": 50,
+        "column": 13,
+        "value": -1
+      },
+      {
+        "row": 49,
+        "column": 14,
+        "value": 1
+      },
+      {
+        "row": 48,
+        "column": 15,
+        "value": -1
+      },
+      {
+        "row": 47,
+        "column": 16,
+        "value": 1
+      },
+      {
+        "row": 46,
+        "column": 17,
+        "value": -1
+      },
+      {
+        "row": 45,
+        "column": 18,
+        "value": 1
+      },
+      {
+        "row": 44,
+        "column": 19,
+        "value": 1
+      },
+      {
+        "row": 43,
+        "column": 20,
+        "value": -1
+      },
+      {
+        "row": 42,
+        "column": 21,
+        "value": 1
+      },
+      {
+        "row": 41,
+        "column": 22,
+        "value": 1
+      },
+      {
+        "row": 40,
+        "column": 23,
+        "value": -1
+      },
+      {
+        "row": 39,
+        "column": 24,
+        "value": 1
+      },
+      {
+        "row": 38,
+        "column": 25,
+        "value": -1
+      },
+      {
+        "row": 37,
+        "column": 26,
+        "value": 1
+      },
+      {
+        "row": 36,
+        "column": 27,
+        "value": -1
+      },
+      {
+        "row": 35,
+        "column": 28,
+        "value": 1
+      },
+      {
+        "row": 34,
+        "column": 29,
+        "value": 1
+      },
+      {
+        "row": 33,
+        "column": 30,
+        "value": -1
+      },
+      {
+        "row": 32,
+        "column": 31,
+        "value": 1
+      },
+      {
+        "row": 31,
+        "column": 32,
+        "value": -1
+      },
+      {
+        "row": 30,
+        "column": 33,
+        "value": 1
+      },
+      {
+        "row": 29,
+        "column": 34,
+        "value": -1
+      },
+      {
+        "row": 28,
+        "column": 35,
+        "value": -1
+      },
+      {
+        "row": 27,
+        "column": 36,
+        "value": 1
+      },
+      {
+        "row": 26,
+        "column": 37,
+        "value": -1
+      },
+      {
+        "row": 25,
+        "column": 38,
+        "value": 1
+      },
+      {
+        "row": 24,
+        "column": 39,
+        "value": -1
+      },
+      {
+        "row": 23,
+        "column": 40,
+        "value": 1
+      },
+      {
+        "row": 22,
+        "column": 41,
+        "value": -1
+      },
+      {
+        "row": 21,
+        "column": 42,
+        "value": 1
+      },
+      {
+        "row": 20,
+        "column": 43,
+        "value": -1
+      },
+      {
+        "row": 19,
+        "column": 44,
+        "value": 1
+      },
+      {
+        "row": 18,
+        "column": 45,
+        "value": 1
+      },
+      {
+        "row": 17,
+        "column": 46,
+        "value": -1
+      },
+      {
+        "row": 16,
+        "column": 47,
+        "value": 1
+      },
+      {
+        "row": 15,
+        "column": 48,
+        "value": -1
+      },
+      {
+        "row": 14,
+        "column": 49,
+        "value": 1
+      },
+      {
+        "row": 13,
+        "column": 50,
+        "value": -1
+      },
+      {
+        "row": 12,
+        "column": 51,
+        "value": 1
+      },
+      {
+        "row": 11,
+        "column": 52,
+        "value": 1
+      },
+      {
+        "row": 10,
+        "column": 53,
+        "value": -1
+      },
+      {
+        "row": 9,
+        "column": 54,
+        "value": 1
+      },
+      {
+        "row": 8,
+        "column": 55,
+        "value": -1
+      },
+      {
+        "row": 7,
+        "column": 56,
+        "value": 1
+      },
+      {
+        "row": 6,
+        "column": 57,
+        "value": 1
+      },
+      {
+        "row": 5,
+        "column": 58,
+        "value": -1
+      },
+      {
+        "row": 4,
+        "column": 59,
+        "value": 1
+      },
+      {
+        "row": 3,
+        "column": 60,
+        "value": -1
+      },
+      {
+        "row": 2,
+        "column": 61,
+        "value": 1
+      },
+      {
+        "row": 1,
+        "column": 62,
+        "value": -1
+      },
+      {
+        "row": 0,
+        "column": 63,
+        "value": 1
+      }
+    ],
+    "nonzero_entries": 64,
+    "positive_entries": 36,
+    "negative_entries": 28,
+    "star_square_identity": "star^2=(-1)^(k(6-k)) on degree k",
+    "star_square_rows": [
+      {
+        "basis": "1",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e2",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e3",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e4",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e5",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e6",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e12",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e13",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e14",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e15",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e16",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e23",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e24",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e25",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e26",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e34",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e35",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e36",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e45",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e46",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e56",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e123",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e124",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e125",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e126",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e134",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e135",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e136",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e145",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e146",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e156",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e234",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e235",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e236",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e245",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e246",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e256",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e345",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e346",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e356",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e456",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e1234",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1235",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1236",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1245",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1246",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1256",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1345",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1346",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1356",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e1456",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e2345",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e2346",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e2356",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e2456",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e3456",
+        "actual": 1,
+        "expected": 1
+      },
+      {
+        "basis": "e12345",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e12346",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e12356",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e12456",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e13456",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "e23456",
+        "actual": -1,
+        "expected": -1
+      },
+      {
+        "basis": "nu",
+        "actual": 1,
+        "expected": 1
+      }
+    ],
+    "wedge_star_identity": "e_I wedge star(e_J)=delta_IJ nu for equal degrees",
+    "wedge_star_checks": 924,
+    "wedge_sign_table_status": "CLOSED_EXACT_ORIENTED_ORTHONORMAL_FRAME_COMPILER"
+  },
+  "normalized_orientation_composition": {
+    "T50_profile_basis": [
+      "1",
+      "nu"
+    ],
+    "star_1": "1*nu",
+    "star_nu": "1*1",
+    "T50_hodge_block": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "restriction_equals_T50": true,
+    "normalized_trace": "tau(nu)=1",
+    "global_volume_normalization_added": false,
+    "action_quantum": "alpha_upper=alpha_lower=f0/hbar"
+  },
+  "same_volume_metric_shape_nogo": {
+    "complex_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "parameter": "t=2",
+    "coframe_lengths": [
+      "2",
+      "2",
+      "1/2",
+      "1/2",
+      "1",
+      "1"
+    ],
+    "metric_diagonal": [
+      "4",
+      "4",
+      "1/4",
+      "1/4",
+      "1",
+      "1"
+    ],
+    "metric_determinant": "1",
+    "volume_factor": "1",
+    "is_Hermitian_for_fixed_standard_complex_structure": true,
+    "reference_and_deformed_volume_equal": true,
+    "orientation_rows_unchanged": {
+      "star_1": {
+        "input": "1",
+        "output": "nu",
+        "coefficient": "1"
+      },
+      "star_nu": {
+        "input": "nu",
+        "output": "1",
+        "coefficient": "1"
+      }
+    },
+    "shape_rows_changed": 40,
+    "explicit_changed_rows": [
+      {
+        "input": "e1",
+        "output": "e23456",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e3",
+        "output": "e12456",
+        "coefficient": "4"
+      }
+    ],
+    "full_deformed_star_table": [
+      {
+        "input": "1",
+        "output": "nu",
+        "coefficient": "1"
+      },
+      {
+        "input": "e1",
+        "output": "e23456",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e2",
+        "output": "e13456",
+        "coefficient": "-1/4"
+      },
+      {
+        "input": "e3",
+        "output": "e12456",
+        "coefficient": "4"
+      },
+      {
+        "input": "e4",
+        "output": "e12356",
+        "coefficient": "-4"
+      },
+      {
+        "input": "e5",
+        "output": "e12346",
+        "coefficient": "1"
+      },
+      {
+        "input": "e6",
+        "output": "e12345",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e12",
+        "output": "e3456",
+        "coefficient": "1/16"
+      },
+      {
+        "input": "e13",
+        "output": "e2456",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e14",
+        "output": "e2356",
+        "coefficient": "1"
+      },
+      {
+        "input": "e15",
+        "output": "e2346",
+        "coefficient": "-1/4"
+      },
+      {
+        "input": "e16",
+        "output": "e2345",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e23",
+        "output": "e1456",
+        "coefficient": "1"
+      },
+      {
+        "input": "e24",
+        "output": "e1356",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e25",
+        "output": "e1346",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e26",
+        "output": "e1345",
+        "coefficient": "-1/4"
+      },
+      {
+        "input": "e34",
+        "output": "e1256",
+        "coefficient": "16"
+      },
+      {
+        "input": "e35",
+        "output": "e1246",
+        "coefficient": "-4"
+      },
+      {
+        "input": "e36",
+        "output": "e1245",
+        "coefficient": "4"
+      },
+      {
+        "input": "e45",
+        "output": "e1236",
+        "coefficient": "4"
+      },
+      {
+        "input": "e46",
+        "output": "e1235",
+        "coefficient": "-4"
+      },
+      {
+        "input": "e56",
+        "output": "e1234",
+        "coefficient": "1"
+      },
+      {
+        "input": "e123",
+        "output": "e456",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e124",
+        "output": "e356",
+        "coefficient": "-1/4"
+      },
+      {
+        "input": "e125",
+        "output": "e346",
+        "coefficient": "1/16"
+      },
+      {
+        "input": "e126",
+        "output": "e345",
+        "coefficient": "-1/16"
+      },
+      {
+        "input": "e134",
+        "output": "e256",
+        "coefficient": "4"
+      },
+      {
+        "input": "e135",
+        "output": "e246",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e136",
+        "output": "e245",
+        "coefficient": "1"
+      },
+      {
+        "input": "e145",
+        "output": "e236",
+        "coefficient": "1"
+      },
+      {
+        "input": "e146",
+        "output": "e235",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e156",
+        "output": "e234",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e234",
+        "output": "e156",
+        "coefficient": "-4"
+      },
+      {
+        "input": "e235",
+        "output": "e146",
+        "coefficient": "1"
+      },
+      {
+        "input": "e236",
+        "output": "e145",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e245",
+        "output": "e136",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e246",
+        "output": "e135",
+        "coefficient": "1"
+      },
+      {
+        "input": "e256",
+        "output": "e134",
+        "coefficient": "-1/4"
+      },
+      {
+        "input": "e345",
+        "output": "e126",
+        "coefficient": "16"
+      },
+      {
+        "input": "e346",
+        "output": "e125",
+        "coefficient": "-16"
+      },
+      {
+        "input": "e356",
+        "output": "e124",
+        "coefficient": "4"
+      },
+      {
+        "input": "e456",
+        "output": "e123",
+        "coefficient": "-4"
+      },
+      {
+        "input": "e1234",
+        "output": "e56",
+        "coefficient": "1"
+      },
+      {
+        "input": "e1235",
+        "output": "e46",
+        "coefficient": "-1/4"
+      },
+      {
+        "input": "e1236",
+        "output": "e45",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e1245",
+        "output": "e36",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e1246",
+        "output": "e35",
+        "coefficient": "-1/4"
+      },
+      {
+        "input": "e1256",
+        "output": "e34",
+        "coefficient": "1/16"
+      },
+      {
+        "input": "e1345",
+        "output": "e26",
+        "coefficient": "-4"
+      },
+      {
+        "input": "e1346",
+        "output": "e25",
+        "coefficient": "4"
+      },
+      {
+        "input": "e1356",
+        "output": "e24",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e1456",
+        "output": "e23",
+        "coefficient": "1"
+      },
+      {
+        "input": "e2345",
+        "output": "e16",
+        "coefficient": "4"
+      },
+      {
+        "input": "e2346",
+        "output": "e15",
+        "coefficient": "-4"
+      },
+      {
+        "input": "e2356",
+        "output": "e14",
+        "coefficient": "1"
+      },
+      {
+        "input": "e2456",
+        "output": "e13",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e3456",
+        "output": "e12",
+        "coefficient": "16"
+      },
+      {
+        "input": "e12345",
+        "output": "e6",
+        "coefficient": "1"
+      },
+      {
+        "input": "e12346",
+        "output": "e5",
+        "coefficient": "-1"
+      },
+      {
+        "input": "e12356",
+        "output": "e4",
+        "coefficient": "1/4"
+      },
+      {
+        "input": "e12456",
+        "output": "e3",
+        "coefficient": "-1/4"
+      },
+      {
+        "input": "e13456",
+        "output": "e2",
+        "coefficient": "4"
+      },
+      {
+        "input": "e23456",
+        "output": "e1",
+        "coefficient": "-4"
+      },
+      {
+        "input": "nu",
+        "output": "1",
+        "coefficient": "1"
+      }
+    ],
+    "fixed_complex_structure_volume_one_Hermitian_shape_dimension": 8,
+    "conclusion": "normalized volume and the shared orientation profile do not select the six-dimensional Hodge shape",
+    "source_interpretation": "the eight local shape components are metric fields to be emitted by the selected Fu-Yau/HYM solution, not eight fitted constants"
+  },
+  "conjugate_paired_real_carrier": {
+    "functor": "R(E)=E+conjugate(E)",
+    "involution": "kappa(z,w)=(conjugate(w),conjugate(z))",
+    "general_complex_rank": "2r",
+    "general_fixed_real_rank": "2r",
+    "witness_original_complex_rank": 3,
+    "witness_doubled_complex_rank": 6,
+    "witness_realified_rank": 12,
+    "kappa_matrix": [
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "kappa_squared_identity": true,
+    "fixed_real_rank": 6,
+    "anti_fixed_real_rank": 6,
+    "unitary_connection_witness": {
+      "realified_matrix": [
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2",
+          "0"
+        ]
+      ],
+      "skew_symmetric": true,
+      "commutes_with_kappa": true
+    },
+    "form_Hodge_commutes_with_kappa": true,
+    "interpretation": "the conjugate summand is the canonical realification/BV conjugate carrier, not an independently selected mirror particle family",
+    "does_not_select_Majorana_condition": true,
+    "does_not_select_chiral_index": true
+  },
+  "operator_covariance": {
+    "witness_Q": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "witness_Q_adjoint": [
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "witness_laplacian": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "witness_harmonic_projector": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "witness_reduced_green": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "witness_homotopy": [
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "checks": {
+      "Q_squared_zero": true,
+      "kappa_commutes_Q": true,
+      "kappa_commutes_Q_adjoint": true,
+      "kappa_commutes_laplacian": true,
+      "kappa_commutes_harmonic_projector": true,
+      "kappa_commutes_reduced_green": true,
+      "contraction_identity": true,
+      "homotopy_squared_zero": true,
+      "projector_homotopy_zero": true,
+      "homotopy_projector_zero": true
+    },
+    "harmonic_rank": 4,
+    "positive_rank": 8,
+    "general_theorem": "if a supplied unitary differential and its closed domain commute with kappa, then its adjoint, Laplacian, harmonic projector, reduced Green and Hodge homotopy commute with kappa",
+    "green_reason": "inverse uniqueness on the kappa-invariant harmonic complement",
+    "physical_q79_operator_instantiated": false
+  },
+  "q79_instantiation_boundary": {
+    "explicit_real_q79_K3_available": true,
+    "q79_K3_real_structure_status": "CLOSED_EXACT_BK3_LARGE_GAUGE_KERNEL_RANK_ZERO",
+    "q79_FuYau_topological_source_status": "Q79_DEGREE2_K3_SPLITTING_CONIC_GLSM_AND_RANKONE_FUYAU_TOPOLOGICAL_SOURCE_CLOSED_EXACT_CONDITIONAL_FULL_HETEROTIC_0_2_BUNDLE_TORSION_ANOMALY_AND_IR_SCFT_OPEN",
+    "oriented_full_Hodge_star_wedge_sign_table": "CLOSED_AT_UNIVERSAL_ORTHONORMAL_FRAME_COMPILER_TIER",
+    "selected_metric_endomorphism_coefficients": "OPEN",
+    "selected_FuYau_conformal_factor": "OPEN",
+    "selected_visible_hidden_HYM_metric_and_connection": "OPEN",
+    "rank102_Dbar_Q_and_domains": "OPEN",
+    "rank102_harmonic_projector_and_reduced_Green": "OPEN",
+    "physical_C4_HYM_lift_or_direct_TT_block": "OPEN",
+    "other_86_topology_mode_disposition": "OPEN_AND_GOVERNED_BY_H4_T17",
+    "associated_chiral_operator_and_index": "OPEN",
+    "physical_real_slice": "OPEN_BEYOND_CANONICAL_CONJUGATE_PAIRED_COMPILER",
+    "dependency_order": [
+      "selected same-member visible source V",
+      "common visible-hidden HYM endpoint H",
+      "metric/coframe and rank102 differential",
+      "physical C4 lift or direct TT block J"
+    ]
+  },
+  "parameter_ledger": {
+    "shared_action_primitives_before_T51": 1,
+    "shared_action_primitives_after_T51": 1,
+    "continuous_parameters_added": 0,
+    "discrete_selectors_added": 0,
+    "observed_values_used": 0,
+    "fitted_values_used": 0,
+    "global_volume_knobs_added": 0,
+    "metric_shape_source_components_for_general_fixed_complex_structure": 8,
+    "metric_shape_components_are_free_parameters": false,
+    "metric_shape_components_are_endpoint_fields_to_compute": true
+  },
+  "physical_boundary": {
+    "B_HS_01_closed": false,
+    "B_GEO_01_closed": false,
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "global_H4_T15_decision": "AUXILIARY_COTANGENT_REDUCTION_ONLY",
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    },
+    "not_claimed": [
+      "selected physical q79 metric or Hodge star",
+      "selected visible-hidden HYM endpoint",
+      "rank102 physical differential, projector or Green operator",
+      "Majorana reality, chirality or particle spectrum",
+      "mass gap for the 86 topology complement modes",
+      "upper physical action or quantum BV/QME pushforward"
+    ]
+  },
+  "frontier_delta": "CBF.T51 closes the complete six-dimensional oriented orthonormal-frame Hodge signed-permutation table and the canonical conjugate-paired real-carrier compiler. It composes exactly with the T50 unit/orientation block and proves covariance of supplied unitary differential, adjoint, Laplacian, projector, reduced Green and homotopy under the real involution. An exact determinant-one Hermitian family proves that normalized volume leaves eight local metric-shape components undetermined. Those components are endpoint fields, not new fit parameters. The next actual source is a source-hashed q79 metric and unitary visible-hidden HYM connection. That metric/connection, the rank-102 operator, chiral index, 86-mode disposition, action and QME remain open, so physical counters do not move.",
+  "exact_payload_sha256": "66a0944a7b16c66442d610f29b303379f1615de02ace468c24a17987e2a395f2",
+  "checks": {
+    "source_hash::T50_THEOREM": true,
+    "source_hash::T50_PACKET": true,
+    "source_hash::H4_T16_THEOREM": true,
+    "source_hash::H4_T16_CERT": true,
+    "source_hash::H4_T17_THEOREM": true,
+    "source_hash::H4_T17_CERT": true,
+    "source_hash::Q79_FUYAU_BASE": true,
+    "source_hash::PROTOSPINOR_HODGE_TABLE": true,
+    "source_hash::Q79_K3_REAL_STRUCTURE": true,
+    "source_hash::Q79_HODGE_ACTION_AUDIT": true,
+    "source_hash::Q79_FM_HYM_FRONTIER": true,
+    "source_lock_claim_is_T51": true,
+    "schema_id_matches": true,
+    "schema_claim_matches": true,
+    "all_schema_required_fields_present": true,
+    "basis_has_64_states": true,
+    "degree_dimensions_are_binomial": true,
+    "hodge_table_has_one_row_per_state": true,
+    "hodge_table_is_signed_permutation": true,
+    "star_square_identity_holds_on_all_states": true,
+    "wedge_star_identity_holds_on_all_equal_degree_pairs": true,
+    "wedge_star_check_count_is_924": true,
+    "star_maps_unit_to_orientation": true,
+    "star_maps_orientation_to_unit": true,
+    "T50_orientation_block_is_recovered": true,
+    "T50_source_has_one_shared_primitive": true,
+    "H4_T16_source_passes": true,
+    "H4_T17_source_passes": true,
+    "H4_T17_keeps_86_mode_boundary": true,
+    "metric_family_is_Hermitian": true,
+    "metric_family_has_unit_determinant": true,
+    "metric_family_has_unit_volume": true,
+    "metric_family_changes_Hodge_shape": true,
+    "metric_family_preserves_orientation_rows": true,
+    "explicit_e1_and_e3_rows_differ": true,
+    "fixed_complex_structure_shape_dimension_is_eight": true,
+    "kappa_squared_is_identity": true,
+    "kappa_fixed_rank_is_six": true,
+    "kappa_antifixed_rank_is_six": true,
+    "connection_witness_is_unitary": true,
+    "connection_witness_commutes_with_kappa": true,
+    "operator::Q_squared_zero": true,
+    "operator::kappa_commutes_Q": true,
+    "operator::kappa_commutes_Q_adjoint": true,
+    "operator::kappa_commutes_laplacian": true,
+    "operator::kappa_commutes_harmonic_projector": true,
+    "operator::kappa_commutes_reduced_green": true,
+    "operator::contraction_identity": true,
+    "operator::homotopy_squared_zero": true,
+    "operator::projector_homotopy_zero": true,
+    "operator::homotopy_projector_zero": true,
+    "operator_harmonic_rank_is_four": true,
+    "operator_positive_rank_is_eight": true,
+    "real_carrier_does_not_claim_majorana": true,
+    "real_carrier_does_not_claim_chiral_index": true,
+    "q79_K3_source_is_exact": true,
+    "q79_FuYau_source_is_topological_not_metric": true,
+    "proto_source_had_wedge_sign_table_open": true,
+    "prior_hodge_audit_keeps_physical_rows_zero": true,
+    "prior_hodge_audit_shared_circle_insufficiency_is_inherited": true,
+    "FM_HYM_common_chamber_remains_open": true,
+    "selected_metric_coefficients_remain_open": true,
+    "selected_HYM_endpoint_remains_open": true,
+    "rank102_operator_remains_open": true,
+    "other_86_modes_remain_open": true,
+    "one_action_primitive_is_preserved": true,
+    "no_continuous_parameters_added": true,
+    "metric_shapes_are_fields_not_fit_parameters": true,
+    "all_four_blockers_remain_open": true,
+    "physical_counters_do_not_move": true,
+    "theorem_declares_compiler_tier": true,
+    "theorem_preserves_physical_boundary": true,
+    "theorem_records_eight_shape_fields": true,
+    "payload_hash_is_well_formed": true
+  },
+  "check_summary": {
+    "passed": 74,
+    "total": 74,
+    "all_passed": true
+  }
+}

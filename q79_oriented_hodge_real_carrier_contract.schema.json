@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.q79-oriented-hodge-real-carrier.v1",
+  "title": "CBF.T51 q79 oriented Hodge-star and conjugate-paired real-carrier compiler",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "oriented_exterior_hodge",
+    "normalized_orientation_composition",
+    "same_volume_metric_shape_nogo",
+    "conjugate_paired_real_carrier",
+    "operator_covariance",
+    "q79_instantiation_boundary",
+    "parameter_ledger",
+    "physical_boundary",
+    "frontier_delta",
+    "exact_payload_sha256",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.q79-oriented-hodge-real-carrier.v1"
+    },
+    "claim_id": {
+      "const": "CBF.T51"
+    },
+    "date": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "source_provenance": {
+      "type": "object"
+    },
+    "oriented_exterior_hodge": {
+      "type": "object"
+    },
+    "normalized_orientation_composition": {
+      "type": "object"
+    },
+    "same_volume_metric_shape_nogo": {
+      "type": "object"
+    },
+    "conjugate_paired_real_carrier": {
+      "type": "object"
+    },
+    "operator_covariance": {
+      "type": "object"
+    },
+    "q79_instantiation_boundary": {
+      "type": "object"
+    },
+    "parameter_ledger": {
+      "type": "object"
+    },
+    "physical_boundary": {
+      "type": "object"
+    },
+    "frontier_delta": {
+      "type": "string"
+    },
+    "exact_payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checks": {
+      "type": "object"
+    },
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "all_passed"]
+    }
+  },
+  "additionalProperties": false
+}
