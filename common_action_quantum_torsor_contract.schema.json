@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mtt.local/schemas/common-action-quantum-torsor.v1.json",
+  "title": "CBF.T49 common action-quantum torsor contract",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "status",
+    "source_provenance",
+    "common_coefficient_map",
+    "dimensionless_effective_action",
+    "canonical_radial_vertices",
+    "positive_scale_torsor",
+    "bv_qme_scale_separation",
+    "one_shared_primitive_ledger",
+    "physical_boundary",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.common-action-quantum-torsor.v1"},
+    "claim_id": {"const": "CBF.T49"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "common_coefficient_map": {"type": "object"},
+    "dimensionless_effective_action": {"type": "object"},
+    "canonical_radial_vertices": {"type": "object"},
+    "positive_scale_torsor": {"type": "object"},
+    "bv_qme_scale_separation": {"type": "object"},
+    "one_shared_primitive_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "checks": {
+      "type": "object",
+      "additionalProperties": {"const": true}
+    },
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "all_passed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 1},
+        "total": {"type": "integer", "minimum": 1},
+        "all_passed": {"const": true}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

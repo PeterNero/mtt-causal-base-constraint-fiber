@@ -1806,3 +1806,45 @@ physical `G1`, q79 HYM/direct universality and top-level `G2` remain open.
 T48 passes `101/101` builder checks, `200/200` independent checks and 15
 focused tests; the full canonical suite passes all 387 tests. Physical
 acceptance remains `0/3` gates, `0/3` packets and `0/7` rows.
+
+`CommonActionQuantumTorsorAndOnePrimitiveBVNormalizationTheorem_v1.md`
+(`CBF.T49`) resolves the apparent independence of the T48 scalar coefficient.
+The T32 heat-kernel action and its exact trace factor imply
+
+```text
+A_H=4f0/pi^2.
+```
+
+Together with A52/A88,
+
+```text
+g_i^-2=6f0K_i,
+A_H/g_i^-2=2/(3pi^2K_i).
+```
+
+The joint amplitude orbit has logarithmic Jacobian `(1,1,1,1)^T` and rank
+one. There is one common scalar-gauge action amplitude. The radial
+mass-squared scale `c_H=(f2/f0)Lambda^2` and gauge amplitude `c_g=6f0` are
+different typed quantities and are not equated.
+
+With `alpha=f0/hbar`, the selected T43 one-loop prefactor divided by the tree
+prefactor is `1/(8alpha)`. T39's pointed value/tadpole/Hessian conditions then
+leave zero free radial counterterm coefficients. Thus the complete direct
+radial tree-plus-one-loop and anchored local-formal normalization is fixed
+relative to one shared action quantum.
+
+The remaining primitive is not a convention at fixed `hbar`. Although the
+free generalized mass is independent of `f0`, the canonically normalized
+cubic and quartic tree vertices scale as `f0^-1/2` and `f0^-1`. A88/A89's
+no-go therefore remains controlling: topology, normalized probabilities,
+Ward/QME identities and shared-circle phase do not select the orbit point.
+
+A89 already adopts one common gauge anchor. T49 proves that scalar and direct
+local-formal BV normalization require no second anchor, so the primitive count
+remains one and T49 adds no parameter. The A52 numerical `f0` remains a
+measured profile coordinate, not a strict MTT prediction. Physical q79 cyclic
+pairing/real slice, same-upper full interaction, determinant holonomy,
+fixed-coupling continuum and strict source selection of `alpha` remain open.
+T49 passes `58/58` builder checks, `116/116` independent checks and 15 focused
+tests; the full canonical suite passes all 402 tests. Physical acceptance
+remains `0/3` gates, `0/3` packets and `0/7` rows.

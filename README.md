@@ -1653,3 +1653,48 @@ holonomy, fixed-coupling continuum, physical `G1`, q79 HYM map, Higgs pole
 mass or top-level `G2`. T48 passes `101/101` builder checks, `200/200`
 independent checks and 15 focused tests; the full canonical suite passes all
 387 tests. Physical gates remain `0/3`, packets `0/3` and rows `0/7`.
+
+The forty-ninth theorem removes an apparent extra normalization without
+pretending to derive its last value. T32's scalar trace did not leave an
+independent coefficient: restoring its suppressed common factor gives
+
+```text
+A_H=32f0/(8pi^2)=4f0/pi^2.
+```
+
+The A52/A88 gauge convention is `g_i^-2=6f0 K_i`, so
+
+```text
+A_H/g_i^-2=2/(3pi^2K_i).
+```
+
+The joint logarithmic amplitude Jacobian is the single column
+`(1,1,1,1)^T`, of rank one. Scalar and gauge normalization therefore share
+one positive amplitude. They are not two knobs. The radial mass scale
+`c_H=(f2/f0)Lambda^2` is kept distinct from the gauge amplitude `c_g=6f0`.
+
+Restoring the quantum of action identifies the remaining dimensionless
+primitive as
+
+```text
+alpha=f0/hbar.
+```
+
+T43's selected Weyl loop prefactor divided by the tree prefactor is exactly
+`1/(8alpha)`. T39 then fixes all three allowed pointed radial counterterms,
+leaving zero additional coefficients. The complete direct radial
+tree-plus-one-loop normalization is consequently fixed given `alpha`.
+
+This primitive cannot be deleted: the free generalized mass remains
+`m_h^2=8c_H`, but the canonically normalized cubic and quartic vertices scale
+as `f0^-1/2` and `f0^-1`. A88/A89 also prove that instanton integrality,
+theta periodicity, normalized filters, Born normalization and shared-circle
+phase do not select the positive amplitude.
+
+At the already adopted one-shared-primitive tier, T49 adds no new parameter:
+the primitive count stays one before and after scalar/BV consolidation. A
+strict source-derived value of `alpha`, the physical q79 cyclic pairing and
+real slice, same-upper full BV action, determinant holonomy and fixed-coupling
+continuum remain open. T49 passes `58/58` builder checks, `116/116`
+independent checks and 15 focused tests; the full canonical suite passes all
+402 tests. Physical counters remain `0/3` gates, `0/3` packets and `0/7` rows.

@@ -1,0 +1,263 @@
+{
+  "bv_qme_scale_separation": {
+    "H4_canonical_algebraic_cotangent_coefficient": 1,
+    "H4_physical_multiplier_selected": false,
+    "H4_to_direct_gluing_proved": false,
+    "H4_to_direct_gluing_rule": "if physical action pushforward is proved, its multiplier must represent the same alpha",
+    "QME_homogeneity": "both terms in 1/2(S,S)-i hbar Delta S scale by a^2",
+    "QME_or_Ward_selects_alpha": false,
+    "T39_anchor_conditions": 3,
+    "T39_free_coefficients_after_anchor": 0,
+    "determinant_line_relative_holonomy_selected": false,
+    "formal_QME_scheme_exists_for_each_alpha": true,
+    "physical_rescaling": "f0->a f0 at fixed hbar changes alpha",
+    "unit_rescaling": "S->aS and hbar->a hbar leaves S/hbar and alpha fixed"
+  },
+  "canonical_radial_vertices": {
+    "canonical_field": "phi=sqrt(2 A_H q2_*) eta",
+    "conclusion": "the common amplitude cancels from the free generalized mass but not from canonical interactions",
+    "f0_scaling_exponents": {
+      "g3_tree": "-1/2",
+      "g4_tree": "-1",
+      "mass_squared": "0"
+    },
+    "g3_tree": "6sqrt(2)q4_*H_*/(sqrt(A_H)q2_*^(3/2))=3sqrt(2)pi q4_*H_*/(sqrt(f0)q2_*^(3/2))",
+    "g4_tree": "6q4_*/(A_H q2_*^2)=3pi^2q4_*/(2f0 q2_*^2)",
+    "mass_common_amplitude_exponent": "0",
+    "mass_squared": "8 c_H"
+  },
+  "check_summary": {
+    "all_passed": true,
+    "passed": 58,
+    "total": 58
+  },
+  "checks": {
+    "A51_absolute_coefficient_is_open": true,
+    "A51_one_Higgs_projection_is_exact": true,
+    "A52_profile_product_action_is_closed": true,
+    "A52_selected_f0_is_not_strict": true,
+    "A52_strict_universal_action_is_open": true,
+    "A88_common_coordinates_remaining_is_one": true,
+    "A88_one_anchor_is_minimal": true,
+    "A88_positive_scale_orbit_rank_is_one": true,
+    "A89_one_shared_primitive_standard_is_adopted": true,
+    "A89_strict_zero_anchor_is_open": true,
+    "A89_topological_shortcut_is_rejected": true,
+    "A_H_over_c_g_rational_part_is_two_thirds": true,
+    "A_H_over_f0_is_exactly_four_over_pi2": true,
+    "H4_cotangent_completion_is_exact": true,
+    "H4_physical_antifields_are_open": true,
+    "H4_physical_trace_normalization_is_open": true,
+    "T32_claim_is_exact": true,
+    "T32_quadratic_trace_factor_is_32": true,
+    "T32_quartic_trace_factor_is_32": true,
+    "T32_scalar_action_has_f0_over_8pi2": true,
+    "T32_suppressed_factor_is_32f0_over_8pi2": true,
+    "T39_anchor_has_zero_free_coefficients": true,
+    "T39_formal_QME_scheme_is_not_upper_selected": true,
+    "T39_physical_endpoint_is_open": true,
+    "T43_emits_actual_direct_action": true,
+    "T43_higher_vertices_are_nonzero": true,
+    "T43_remainder_has_zero_two_jet": true,
+    "T43_selects_Weyl_half_coefficient": true,
+    "T46_fixed_coupling_continuum_is_open": true,
+    "T46_formal_pullback_exists": true,
+    "T48_A_H_was_recorded_unresolved": true,
+    "T48_complete_free_seed_is_closed": true,
+    "T48_mass_is_independent_of_A_H": true,
+    "all_source_hashes_match": true,
+    "all_source_paths_exist": true,
+    "combined_amplitude_jacobian_has_rank_one": true,
+    "common_gauge_amplitude_over_f0_is_six": true,
+    "contract_claim_is_T49": true,
+    "contract_schema_is_exact": true,
+    "finite_shell_free_QME_is_exact": true,
+    "finite_shell_interacting_limit_is_open": true,
+    "loop_over_tree_rational_part_is_one_eighth": true,
+    "physical_counters_are_frozen": true,
+    "profile_A_H_matches_common_formula": true,
+    "profile_c_g_matches_six_f0": true,
+    "profile_relative_ratio_matches_exact_formula": true,
+    "profile_value_is_diagnostic_only": true,
+    "q79_QME_action_coefficients_remain_profile": true,
+    "q79_QME_blocker_remains_open": true,
+    "radial_and_gauge_c_symbols_are_type_separated": true,
+    "relative_projection_has_rank_three": true,
+    "relative_projection_kills_common_direction": true,
+    "source_lock_claim_is_T49": true,
+    "source_lock_schema_is_exact": true,
+    "theorem_does_not_close_ACTION_blocker": true,
+    "theorem_preserves_strict_open_boundary": true,
+    "theorem_states_A_H_identity": true,
+    "theorem_states_one_loop_tree_ratio": true
+  },
+  "claim_id": "CBF.T49",
+  "common_coefficient_map": {
+    "A_H": "4 f0/pi^2",
+    "T32_heat_kernel_prefactor": "f0/(8 pi^2)",
+    "T32_trace_factor": 32,
+    "gauge_inverse_couplings": "g_i^(-2)=6 f0 K_i",
+    "profile_diagnostic_only": {
+      "A_H": 0.16106348735963533,
+      "A_H_over_c_g": 0.06754745576155852,
+      "c_g": 2.3844493555491857,
+      "f0": 0.39740822592486424,
+      "strict_MTT_source": false
+    },
+    "scalar_to_gauge_ratio": "A_H/g_i^(-2)=2/(3 pi^2 K_i)",
+    "typed_scales": {
+      "c_H": "(f2/f0)Lambda^2; radial mass-squared scale",
+      "c_g": "6f0; common gauge action amplitude",
+      "equality_claimed": false
+    }
+  },
+  "date": "2026-08-31",
+  "dimensionless_effective_action": {
+    "fixed_coupling_convergence_claimed": false,
+    "one_loop_over_tree_prefactor": "1/(8 alpha)",
+    "radial_action_through_one_loop": "Gamma_rad/hbar=(4alpha/pi^2) integral P_*(h)+ integral q4_* H_*^4 rho(h/H_*)/(2pi^2)+higher formal orders",
+    "rho": "x^4(3/2-log(x^2))-2x^2+1/2",
+    "rho_jets_0_through_5_at_one": [
+      0,
+      0,
+      0,
+      -16,
+      -64,
+      -48
+    ],
+    "selected_Weyl_one_loop_prefactor": "1/(2 pi^2)",
+    "shared_primitive": "alpha=f0/hbar",
+    "tree_prefactor": "4 alpha/pi^2"
+  },
+  "exact_payload_sha256": "8e1ccaabaa1cf4a4af9e5037c59ac7b3433d30bbe31445e5a0439f6f2b1c273f",
+  "frontier_delta": "The apparent independent scalar coefficient A_H is recovered exactly as 4f0/pi^2 and joins the A88 gauge amplitudes in one rank-one positive action torsor. T43 and T39 then give the direct radial tree-plus-one-loop and anchored local-formal normalization relative to alpha=f0/hbar with zero extra coefficients. The adopted one-shared-primitive tier therefore needs no new scalar or BV knob. A88/A89 nonselection remains decisive: the value of alpha and the physical q79 cyclic real slice/full action are not selected, so B.ACTION.01, B.QFT.02 and all physical counters remain open.",
+  "one_shared_primitive_ledger": {
+    "A89_adopted_gauge_primitive": true,
+    "adopted_standard": "one shared positive action primitive",
+    "direct_radial_normalization_given_alpha": "closed through one loop and local-formally anchored",
+    "new_primitives_introduced_by_T49": 0,
+    "profile_value_is_empirical": true,
+    "shared_primitives_after_scalar_BV_consolidation": 1,
+    "shared_primitives_before_scalar_BV_consolidation": 1,
+    "strict_source_value_for_alpha": "open",
+    "zero_knob_claimed": false
+  },
+  "physical_boundary": {
+    "B_ACTION_01_closed": false,
+    "B_QFT_02_closed": false,
+    "closed": [
+      "A_H=4f0/pi^2",
+      "rank-one scalar-gauge common-amplitude torsor",
+      "direct radial tree-plus-one-loop normalization relative to alpha",
+      "zero additional T39 radial counterterm coefficients",
+      "one-shared-primitive consolidation at the adopted tier"
+    ],
+    "open": [
+      "strict source selection of alpha",
+      "source-derived positive gauge-overlap shape beyond profile use",
+      "physical q79 cyclic pairing, trace density and real slice",
+      "same-upper full interacting BV map",
+      "determinant-line connection and relative holonomy",
+      "fixed-coupling regulator-independent C-star continuum",
+      "physical G1, top-level G2 and q79 endpoint rows"
+    ],
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    }
+  },
+  "positive_scale_torsor": {
+    "a_domain": "a>0",
+    "action": "f0->a f0, A_H->a A_H, g_i^-2->a g_i^-2, g_i->a^(-1/2)g_i",
+    "invariants": [
+      "g_i^-2/g_j^-2=K_i/K_j",
+      "A_H/g_i^-2=2/(3pi^2K_i)",
+      "m_h^2=8c_H",
+      "fixed points and BRST cohomology",
+      "normalized state transport"
+    ],
+    "jacobian_rank": 1,
+    "log_amplitude_order": [
+      "A_H",
+      "g_1^-2",
+      "g_2^-2",
+      "g_3^-2"
+    ],
+    "log_jacobian_column": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "noninvariants_at_fixed_hbar": [
+      "alpha=f0/hbar",
+      "one-loop/tree=1/(8alpha)",
+      "canonical cubic and quartic interactions"
+    ],
+    "relative_projection": [
+      [
+        1,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        -1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        -1
+      ]
+    ],
+    "relative_projection_of_orbit": [
+      0,
+      0,
+      0
+    ],
+    "relative_projection_rank": 3,
+    "topology_or_phase_selects_orbit_point": false
+  },
+  "schema": "boe.mtt.common-action-quantum-torsor.v1",
+  "source_provenance": {
+    "contract_schema": "common_action_quantum_torsor_contract.schema.json",
+    "contract_schema_sha256": "e9cdc1076462281e074081c10c0a0919b75a6f575f0770fdf7985e820d9e4617",
+    "handoff_id": "faa91fff-1f6b-4519-ae7a-b0ff0df467ab",
+    "model_state_sha256": "5fdba232d862a95c164603f3156f0cfb8f8abed50af0756edc1618457b5d1f45",
+    "source_hashes_match": {
+      "A51_PACKET": true,
+      "A51_SOURCE": true,
+      "A52_PACKET": true,
+      "A52_SOURCE": true,
+      "A88_PACKET": true,
+      "A88_SOURCE": true,
+      "A89_CERT": true,
+      "A89_SOURCE": true,
+      "H4_T14": true,
+      "Q79_FINITE_SHELL_BV": true,
+      "Q79_QME": true,
+      "T32": true,
+      "T39": true,
+      "T43": true,
+      "T46": true,
+      "T48": true
+    },
+    "source_lock": "common_action_quantum_torsor_source_lock.json",
+    "source_lock_sha256": "fb412738d519affd68697788efc661358e51f3aabe7b64febaf1400eb3015639",
+    "theorem": "CommonActionQuantumTorsorAndOnePrimitiveBVNormalizationTheorem_v1.md",
+    "theorem_sha256": "8a29fb2d063dfa5fb534fc30ee7090960515f4242f8a22a2ead29ecdc5c33a38"
+  },
+  "status": "exact common scalar-gauge action-amplitude rank-one torsor and direct local-formal one-primitive radial normalization; primitive value and physical q79 upper action remain open"
+}
