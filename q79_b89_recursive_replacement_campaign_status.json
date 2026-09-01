@@ -1,15 +1,15 @@
 {
-  "active_result_index_rows": 90,
+  "active_result_index_rows": 91,
   "campaign": "q79_b89_recursive_replacement_campaign.json",
   "campaign_intervals_independently_verified_by_carrier": {
     "boundary": 255,
-    "branch": 252
+    "branch": 264
   },
   "campaign_job_count": 218,
-  "campaign_packets_independently_verified": 86,
+  "campaign_packets_independently_verified": 87,
   "campaign_packets_independently_verified_by_carrier": {
     "boundary": 65,
-    "branch": 21
+    "branch": 22
   },
   "campaign_verified_jobs": [
     {
@@ -1375,6 +1375,22 @@
     {
       "carrier": "branch",
       "edge": 1,
+      "id": "4ccf6147-042c-459b-80c9-75e8c849bc89",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "interval_range": [
+        456,
+        468
+      ],
+      "packet_sha256": "df7c89ffdb619dcce83f239301f29a2393f9f9dc67084d09923b14dde3b89d61",
+      "reported_process_state": "succeeded",
+      "result_capsule_sha256": "039331b7db0dce80e66b36827ff1bde34db34c124de7792c0b09da9713d8484a",
+      "result_manifest_exit_code": 0,
+      "result_manifest_sha256": "8b252d942b74390126151ce1d9c405188f47810eac5ca651de76e9eebed9e8c8",
+      "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+    },
+    {
+      "carrier": "branch",
+      "edge": 1,
       "id": "9a2e7a1c-fb00-4d2f-b9cb-77d0a742870c",
       "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
       "interval_range": [
@@ -1399,12 +1415,12 @@
       "carrier": "branch",
       "checks": 10,
       "edge": 1,
-      "id": "9a2e7a1c-fb00-4d2f-b9cb-77d0a742870c",
+      "id": "4ccf6147-042c-459b-80c9-75e8c849bc89",
       "interval_range": [
-        468,
-        480
+        456,
+        468
       ],
-      "packet_sha256": "9374eb89d2b2c8f8dd25a105857927b4843c7ad1bdd7ac91144f657741fa1be8"
+      "packet_sha256": "df7c89ffdb619dcce83f239301f29a2393f9f9dc67084d09923b14dde3b89d61"
     }
   ],
   "recoverable_non_succeeded_capsules_awaiting_independent_verification": 0,
@@ -1415,13 +1431,13 @@
   },
   "schema": "mtt.cbf.q79-b89-recursive-replacement-campaign-status.v1",
   "states": {
-    "claimed": 6,
+    "claimed": 2,
     "failed": 6,
-    "queued": 120,
-    "running": 6,
-    "succeeded": 80
+    "queued": 118,
+    "running": 11,
+    "succeeded": 81
   },
   "succeeded_capsules_awaiting_independent_verification": 0,
-  "succeeded_result_capsules_available": 80,
+  "succeeded_result_capsules_available": 81,
   "verification_failures": []
 }
