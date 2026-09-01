@@ -2179,3 +2179,37 @@ Green operator and finite/continuum error bounds remain absent. `B.GEO.01` and
 rows. T55 adds no parameter or selector and preserves the one shared action
 primitive. It passes `35/35` builder checks, `41/41` independent checks and 14
 focused tests; the full canonical suite passes all 498 tests.
+
+## CBF.T56 Dirac-Dolbeault principal-symbol bridge
+
+`DiracDolbeaultPrincipalSymbolAndSameSourceMetricBridgeTheorem_v1.md` proves
+that T55's scalar-symbol gate is automatic once the same upper source emits a
+genuine first-order Dirac/Dolbeault closure charge. Its Clifford relation
+
+```text
+b(xi)b(eta)+b(eta)b(xi)=2h(xi,eta)I
+```
+
+implies `sigma_2(kappa B^2)(xi)=kappa h(xi,xi)I`. The anticommutator recovers
+the contravariant metric, and the same-source Hilbert density then lets T55
+separate the action scale and covariant metric before T52 emits the Hodge
+response. Connection, curvature, HYM and smooth endomorphism terms do not
+change the quadratic principal symbol.
+
+An exact non-diagonal six-dimensional witness verifies all 21 independent
+Clifford relations on an `8`-complex-dimensional spinor carrier, all 21
+polarization samples and a noncommuting lower-order potential. The composed
+T55 replay recovers the fixture scale `7`, the full T52 metric and the exact
+Hodge digest. The fixture is not physical and no parameter is added.
+
+The result changes the source contract: after a selected Dirac/Dolbeault
+operator is supplied, neither an independent scalarity proof nor an
+independent metric table is needed. It does not supply that operator or its
+density. The audited Costello result is four-dimensional auxiliary Euclidean,
+the hidden-HYM result is existential hidden transport, and the earlier q79
+Hodge-action theorem is conditional. The selected visible-hidden q79 Hilbert
+complex, HYM connection, domain, projector, reduced Green, C4/TT naturality
+and continuum error certificate remain open. `B.GEO.01`, `B.ACTION.01` and
+`B.OP.01` remain open; physical acceptance stays `0/3` gates, `0/3` packets
+and `0/7` rows. T56 passes `46/46` builder checks and `53/53` independent
+checks, plus 13 focused tests; the full canonical suite passes all 511 tests.

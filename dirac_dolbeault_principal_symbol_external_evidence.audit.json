@@ -1,0 +1,58 @@
+{
+  "schema": "boe.mtt.dirac-dolbeault-principal-symbol-external-evidence-audit.v1",
+  "date": "2026-09-01",
+  "role": "corroborating_evidence_not_a_premise_of_CBF_T56",
+  "sources": [
+    {
+      "id": "QM_Q79_COSTELLO_GAUGEFIXED_LAPLACE",
+      "repository": "mtt-qm-source-proof",
+      "repository_head": "cd3c13b665d6712dd78655cf0d2007231f634065",
+      "path": "certificates/q79_costello_gaugefixing_laplace_and_interior_heat_kernel.certificate.json",
+      "sha256": "4f388f50f6c8bcdcdab93d5ce5eda399bede34eb0862ae4342d1ecacb3f60b92",
+      "observed_status": "Q79_NAIVE_ADJOINT_HODGE_LAPLACE_PROMOTION_EXCLUDED_GAUGE_FIXED_LAPLACE_OPERATOR_AND_INTERIOR_HEAT_KERNEL_HK_CLOSED_FORMAL_BRIDGE_REDUCED_TO_CT_AND_EL",
+      "accepted_claims": [
+        "corrected gauge-fixed gauge, ghost, Higgs and squared-Weyl heat blocks share one scalar Laplace principal symbol",
+        "smooth curvature, mass and Yukawa terms are lower order",
+        "the naive mixed-order adjoint Hodge sum is not the local heat operator"
+      ],
+      "scope_boundary": "four-dimensional auxiliary Euclidean compact-support regulator tier; not the selected six-dimensional q79 HYM Hessian, metric or density"
+    },
+    {
+      "id": "THETA_Q79_HIDDEN_SHARED_LINE_HYM_PROMOTION",
+      "repository": "18 Theta-Closure & Execution Program",
+      "repository_head": "78e988e9e4b88013074df804b7ff4999970d77ae",
+      "path": "research_frontier/aqg_q79_hidden_shared_line_hym_promotion.packet.json",
+      "sha256": "e3cfd9341bf9cf0794bbb557f7b16afd97f104ecf8976ee24593bcd2b04460c9",
+      "observed_status": "CLOSED_EXACT_HIDDEN_SHARED_LINE_PROJECTIVE_HYM_CONNECTION_PROMOTION",
+      "accepted_claims": [
+        "hidden Dolbeault differential and formal adjoint are preserved by shared-line tensoring",
+        "hidden Dolbeault Laplacian, harmonic kernel and reduced Green operator are preserved",
+        "hidden gauge-Hessian block naturality is exact"
+      ],
+      "scope_boundary": "existential hidden object; selected numerical HYM connection, visible/common endpoint, same-upper-source coemission and full rank-102 operator remain open"
+    },
+    {
+      "id": "MLD_Q79_HODGE_ACTION_SELECTION",
+      "repository": "mtt-mathematical-language-discovery-program",
+      "repository_head": "aafecf2201ab5573b63968175592062d91d10a0a",
+      "path": "Q79_HODGE_ACTION_AXIOM_SELECTION_AND_SCALE_RIGIDITY_v1.md",
+      "sha256": "dc2eaee8b3c04c7b2ca2b725a674cbb0031bbb0d777dfab3adea9a22d39e2b16",
+      "packet_path": "q79_hodge_action_axiom_selection_audit.packet.json",
+      "packet_sha256": "9068f29c7e3e70e4d189c426f9266c742ed3a0c6e724b6a83ee74b1648772055",
+      "accepted_claims": [
+        "a selected closure supercharge B_Q=dbar_Q+dbar_Q_star has square Delta_Q",
+        "the shared-circle phase changes first-order polarization but not the square",
+        "the conditional construction removes independent exact/coexact Hodge weights"
+      ],
+      "scope_boundary": "physical endpoint, metric, projective HYM connection, rank-102 execution, nonlinear physical defect map and action shadow remain open"
+    }
+  ],
+  "joint_conclusion": {
+    "operator_class_is_well_motivated": true,
+    "general_Dirac_Dolbeault_scalar_symbol_theorem_is_supported": true,
+    "selected_physical_q79_operator_is_present": false,
+    "selected_physical_q79_density_is_present": false,
+    "B_GEO_01_closed": false,
+    "B_ACTION_01_closed": false
+  }
+}

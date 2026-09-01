@@ -1,0 +1,30 @@
+{
+  "schema": "boe.mtt.dirac-dolbeault-principal-symbol-source-lock.v1",
+  "claim_id": "CBF.T56",
+  "date": "2026-09-01",
+  "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+  "handoff_id": "c8f31be7-c2ad-47bb-a039-f1b50e0ece0a",
+  "sources": [
+    {
+      "id": "T55_THEOREM",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "e62c8511a2627ce946007139d40105e0baeb5fa1",
+      "path": "SameSourcePrincipalSymbolMetricActionScaleAndHodgeNaturalityTheorem_v1.md",
+      "sha256": "e615f1739979bcdb84c6bf771b233ce5290166886de3ef22e7d8f7e423078efa"
+    },
+    {
+      "id": "T55_PACKET",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "e62c8511a2627ce946007139d40105e0baeb5fa1",
+      "path": "same_source_principal_symbol_metric_hodge_naturality.packet.json",
+      "sha256": "98795072d9d35c40120a86340050b2a5f7e865ec7b4c1a9e651c88cd924cce03"
+    },
+    {
+      "id": "EXTERNAL_EVIDENCE_AUDIT",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "repository_head": "WORKTREE_CBF_T56",
+      "path": "dirac_dolbeault_principal_symbol_external_evidence.audit.json",
+      "sha256": "2937501b76ade1782d7ce7b10bb8d26425eec998d6e0e64426a21d95d0995ed4"
+    }
+  ]
+}

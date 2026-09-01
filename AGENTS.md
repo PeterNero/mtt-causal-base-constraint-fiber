@@ -65,6 +65,8 @@ paper, note, packet name or search hit.
    compiler handoff is `fca40699-fbf5-4374-b01a-ebfcf606869d`;
    the same-source principal-symbol metric, action-scale and Hodge-naturality
    handoff is `eb2c1e7d-ab93-4b27-a12e-eadfb93bebc4`;
+   the Dirac-Dolbeault principal-symbol and same-source metric bridge handoff is
+   `c8f31be7-c2ad-47bb-a039-f1b50e0ece0a`;
    the accelerated q79 B89 same-source isotopy and affine-Deligne branch
    decision handoff is `8a175974-2390-48a7-8963-21601cf63157`;
    the radial closure-attractor and state-marginal handoff is

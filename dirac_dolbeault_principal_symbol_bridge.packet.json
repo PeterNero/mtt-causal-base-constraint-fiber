@@ -1,0 +1,1673 @@
+{
+  "schema": "boe.mtt.dirac-dolbeault-principal-symbol-bridge.v1",
+  "claim_id": "CBF.T56",
+  "date": "2026-09-01",
+  "status": "EXACT_DIRAC_DOLBEAULT_SCALAR_SYMBOL_AND_T55_COMPOSITION_CONDITIONAL_Q79_SOURCE_REDUCTION",
+  "source_provenance": {
+    "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+    "handoff_id": "c8f31be7-c2ad-47bb-a039-f1b50e0ece0a",
+    "source_checks": [
+      {
+        "id": "T55_THEOREM",
+        "path": "SameSourcePrincipalSymbolMetricActionScaleAndHodgeNaturalityTheorem_v1.md",
+        "expected_sha256": "e615f1739979bcdb84c6bf771b233ce5290166886de3ef22e7d8f7e423078efa",
+        "actual_sha256": "e615f1739979bcdb84c6bf771b233ce5290166886de3ef22e7d8f7e423078efa",
+        "matches": true
+      },
+      {
+        "id": "T55_PACKET",
+        "path": "same_source_principal_symbol_metric_hodge_naturality.packet.json",
+        "expected_sha256": "98795072d9d35c40120a86340050b2a5f7e865ec7b4c1a9e651c88cd924cce03",
+        "actual_sha256": "98795072d9d35c40120a86340050b2a5f7e865ec7b4c1a9e651c88cd924cce03",
+        "matches": true
+      },
+      {
+        "id": "EXTERNAL_EVIDENCE_AUDIT",
+        "path": "dirac_dolbeault_principal_symbol_external_evidence.audit.json",
+        "expected_sha256": "2937501b76ade1782d7ce7b10bb8d26425eec998d6e0e64426a21d95d0995ed4",
+        "actual_sha256": "2937501b76ade1782d7ce7b10bb8d26425eec998d6e0e64426a21d95d0995ed4",
+        "matches": true
+      }
+    ],
+    "all_sources_hash_locked": true,
+    "external_sources_are_portable_audit_metadata_not_runtime_dependencies": true
+  },
+  "dirac_symbol_theorem": {
+    "first_order_relation": "b(xi)b(eta)+b(eta)b(xi)=2h(xi,eta)I",
+    "square_symbol": "sigma_2(B^2)(xi)=h(xi,xi)I",
+    "action_hessian_symbol": "sigma_2(kappa B^2+lower)(xi)=kappa h(xi,xi)I",
+    "metric_recovery": "h_ij I=(gamma_i gamma_j+gamma_j gamma_i)/2",
+    "Dolbeault_corollary": "sqrt(2)(dbar_A+dbar_A_star) is Dirac type and squares to 2 Delta_dbar,A",
+    "connection_curvature_HYM_Higgs_Yukawa_are_below_second_order": true,
+    "mixed_order_detour_requires_separate_gauge_fixing": true
+  },
+  "exact_six_dimensional_clifford_witness": {
+    "dimension": 6,
+    "complex_spinor_rank": 8,
+    "coframe": [
+      [
+        "1",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "inverse_transpose_coframe": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "-1",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "-1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "2",
+        "0",
+        "-1",
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "covariant_metric_G": [
+      [
+        "1",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "3",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "-1",
+        "1",
+        "0",
+        "3",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "-1",
+        "3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "3"
+      ]
+    ],
+    "contravariant_metric_H": [
+      [
+        "7",
+        "0",
+        "-3",
+        "3",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "7",
+        "-3",
+        "-3",
+        "0",
+        "2"
+      ],
+      [
+        "-3",
+        "-3",
+        "3",
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "3",
+        "-3",
+        "0",
+        "3",
+        "1",
+        "-1"
+      ],
+      [
+        "2",
+        "0",
+        "-1",
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "gamma_matrices": [
+      [
+        [
+          "0",
+          "2",
+          "-1-i",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "2",
+          "0",
+          "0",
+          "-1-i",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "-1+i",
+          "0",
+          "0",
+          "-2",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "-1+i",
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2",
+          "1+i",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "-2",
+          "0",
+          "0",
+          "1+i"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "1-i",
+          "0",
+          "0",
+          "2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "1-i",
+          "2",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "-2i",
+          "-1+i",
+          "0",
+          "-i",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "2i",
+          "0",
+          "0",
+          "-1+i",
+          "0",
+          "-i",
+          "0",
+          "0"
+        ],
+        [
+          "-1-i",
+          "0",
+          "0",
+          "2i",
+          "0",
+          "0",
+          "-i",
+          "0"
+        ],
+        [
+          "0",
+          "-1-i",
+          "-2i",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-i"
+        ],
+        [
+          "i",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2i",
+          "1-i",
+          "0"
+        ],
+        [
+          "0",
+          "i",
+          "0",
+          "0",
+          "-2i",
+          "0",
+          "0",
+          "1-i"
+        ],
+        [
+          "0",
+          "0",
+          "i",
+          "0",
+          "1+i",
+          "0",
+          "0",
+          "-2i"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "i",
+          "0",
+          "1+i",
+          "2i",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "-1+i",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1-i",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "1-i",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "1+i",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1-i",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1+i",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "-1+i"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1-i",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "1+i",
+          "-i",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1-i",
+          "0",
+          "0",
+          "-i",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "i",
+          "0",
+          "0",
+          "-1-i",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "i",
+          "-1+i",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1-i",
+          "i",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1+i",
+          "0",
+          "0",
+          "i"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-i",
+          "0",
+          "0",
+          "1+i"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-i",
+          "1-i",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "-i",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "i",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "i",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-i",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "i",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-i",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-i"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "i",
+          "0"
+        ]
+      ]
+    ],
+    "independent_Clifford_relation_count": 21,
+    "Clifford_relations": [
+      {
+        "row": 0,
+        "column": 0,
+        "target_H_entry": "7",
+        "normalized_half_trace": "7",
+        "relation_exact": true,
+        "relation_sha256": "0f69bf04011ab7106faef2134c19c8b80b461124c7b034896597006df3b80cca"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "target_H_entry": "0",
+        "normalized_half_trace": "0",
+        "relation_exact": true,
+        "relation_sha256": "9009a060079728fd6541cd7e14b139cf3d3c0cdc26871185a22d0e38b9e75129"
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "target_H_entry": "-3",
+        "normalized_half_trace": "-3",
+        "relation_exact": true,
+        "relation_sha256": "8f8f25b9d01ac1623328d24802fa448d39750844465d66dbd6fa0104a1d56507"
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "target_H_entry": "3",
+        "normalized_half_trace": "3",
+        "relation_exact": true,
+        "relation_sha256": "80a5c6a95466087fe883be9ffd77171c0ba985ccef7e3817ba311dbe66615eaa"
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "target_H_entry": "2",
+        "normalized_half_trace": "2",
+        "relation_exact": true,
+        "relation_sha256": "f8642c1f0b53ef27eab443ca4fb8d631f87ea8429099dd797594475685be4d50"
+      },
+      {
+        "row": 0,
+        "column": 5,
+        "target_H_entry": "0",
+        "normalized_half_trace": "0",
+        "relation_exact": true,
+        "relation_sha256": "9009a060079728fd6541cd7e14b139cf3d3c0cdc26871185a22d0e38b9e75129"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "target_H_entry": "7",
+        "normalized_half_trace": "7",
+        "relation_exact": true,
+        "relation_sha256": "0f69bf04011ab7106faef2134c19c8b80b461124c7b034896597006df3b80cca"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "target_H_entry": "-3",
+        "normalized_half_trace": "-3",
+        "relation_exact": true,
+        "relation_sha256": "8f8f25b9d01ac1623328d24802fa448d39750844465d66dbd6fa0104a1d56507"
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "target_H_entry": "-3",
+        "normalized_half_trace": "-3",
+        "relation_exact": true,
+        "relation_sha256": "8f8f25b9d01ac1623328d24802fa448d39750844465d66dbd6fa0104a1d56507"
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "target_H_entry": "0",
+        "normalized_half_trace": "0",
+        "relation_exact": true,
+        "relation_sha256": "9009a060079728fd6541cd7e14b139cf3d3c0cdc26871185a22d0e38b9e75129"
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "target_H_entry": "2",
+        "normalized_half_trace": "2",
+        "relation_exact": true,
+        "relation_sha256": "f8642c1f0b53ef27eab443ca4fb8d631f87ea8429099dd797594475685be4d50"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "target_H_entry": "3",
+        "normalized_half_trace": "3",
+        "relation_exact": true,
+        "relation_sha256": "80a5c6a95466087fe883be9ffd77171c0ba985ccef7e3817ba311dbe66615eaa"
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "target_H_entry": "0",
+        "normalized_half_trace": "0",
+        "relation_exact": true,
+        "relation_sha256": "9009a060079728fd6541cd7e14b139cf3d3c0cdc26871185a22d0e38b9e75129"
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "target_H_entry": "-1",
+        "normalized_half_trace": "-1",
+        "relation_exact": true,
+        "relation_sha256": "9efafe6cfb1fe8f157d742bfc83a644b9d55b97d1b92b3f575c8614070951bd3"
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "target_H_entry": "-1",
+        "normalized_half_trace": "-1",
+        "relation_exact": true,
+        "relation_sha256": "9efafe6cfb1fe8f157d742bfc83a644b9d55b97d1b92b3f575c8614070951bd3"
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "target_H_entry": "3",
+        "normalized_half_trace": "3",
+        "relation_exact": true,
+        "relation_sha256": "80a5c6a95466087fe883be9ffd77171c0ba985ccef7e3817ba311dbe66615eaa"
+      },
+      {
+        "row": 3,
+        "column": 4,
+        "target_H_entry": "1",
+        "normalized_half_trace": "1",
+        "relation_exact": true,
+        "relation_sha256": "fc63f9e00acf5e47d535a88435a152d718d2011a3e223bb0775b0e93fa5d9b8b"
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "target_H_entry": "-1",
+        "normalized_half_trace": "-1",
+        "relation_exact": true,
+        "relation_sha256": "9efafe6cfb1fe8f157d742bfc83a644b9d55b97d1b92b3f575c8614070951bd3"
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "target_H_entry": "1",
+        "normalized_half_trace": "1",
+        "relation_exact": true,
+        "relation_sha256": "fc63f9e00acf5e47d535a88435a152d718d2011a3e223bb0775b0e93fa5d9b8b"
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "target_H_entry": "0",
+        "normalized_half_trace": "0",
+        "relation_exact": true,
+        "relation_sha256": "9009a060079728fd6541cd7e14b139cf3d3c0cdc26871185a22d0e38b9e75129"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "target_H_entry": "1",
+        "normalized_half_trace": "1",
+        "relation_exact": true,
+        "relation_sha256": "fc63f9e00acf5e47d535a88435a152d718d2011a3e223bb0775b0e93fa5d9b8b"
+      }
+    ],
+    "all_Clifford_relations_exact": true,
+    "metric_recovered_from_Clifford_anticommutators": true,
+    "principal_symbol_samples": [
+      {
+        "label": "e1",
+        "row": 0,
+        "column": null,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "7",
+        "hessian_scalar": "49",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "bb9c34a352efa6fc61a2a7cea953f3e00fb81b3c6676a632e4bc586582b5c007"
+      },
+      {
+        "label": "e1+e2",
+        "row": 0,
+        "column": 1,
+        "covector": [
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "14",
+        "hessian_scalar": "98",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "0f69bf04011ab7106faef2134c19c8b80b461124c7b034896597006df3b80cca"
+      },
+      {
+        "label": "e1+e3",
+        "row": 0,
+        "column": 2,
+        "covector": [
+          "1",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "4",
+        "hessian_scalar": "28",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "f8642c1f0b53ef27eab443ca4fb8d631f87ea8429099dd797594475685be4d50"
+      },
+      {
+        "label": "e1+e4",
+        "row": 0,
+        "column": 3,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "16",
+        "hessian_scalar": "112",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "a3332662c51b82bb33d2bf8cc0536240b9eb9ce8dbf957e4e675d69a623138e8"
+      },
+      {
+        "label": "e1+e5",
+        "row": 0,
+        "column": 4,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "metric_scalar": "12",
+        "hessian_scalar": "84",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "02cd835445afb2e16305d05fa635d750c21a55a2ee188585bf60ff33d33f2965"
+      },
+      {
+        "label": "e1+e6",
+        "row": 0,
+        "column": 5,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "metric_scalar": "8",
+        "hessian_scalar": "56",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "4e1f3654bf54bd47eafb41f43ba206f309f5654e32ce9b69bf4f933646ae9d19"
+      },
+      {
+        "label": "e2",
+        "row": 1,
+        "column": null,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "7",
+        "hessian_scalar": "49",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "bb9c34a352efa6fc61a2a7cea953f3e00fb81b3c6676a632e4bc586582b5c007"
+      },
+      {
+        "label": "e2+e3",
+        "row": 1,
+        "column": 2,
+        "covector": [
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "4",
+        "hessian_scalar": "28",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "f8642c1f0b53ef27eab443ca4fb8d631f87ea8429099dd797594475685be4d50"
+      },
+      {
+        "label": "e2+e4",
+        "row": 1,
+        "column": 3,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "4",
+        "hessian_scalar": "28",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "f8642c1f0b53ef27eab443ca4fb8d631f87ea8429099dd797594475685be4d50"
+      },
+      {
+        "label": "e2+e5",
+        "row": 1,
+        "column": 4,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "metric_scalar": "8",
+        "hessian_scalar": "56",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "4e1f3654bf54bd47eafb41f43ba206f309f5654e32ce9b69bf4f933646ae9d19"
+      },
+      {
+        "label": "e2+e6",
+        "row": 1,
+        "column": 5,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "metric_scalar": "12",
+        "hessian_scalar": "84",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "02cd835445afb2e16305d05fa635d750c21a55a2ee188585bf60ff33d33f2965"
+      },
+      {
+        "label": "e3",
+        "row": 2,
+        "column": null,
+        "covector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "3",
+        "hessian_scalar": "21",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "da9bc6bd4063dfb5fdef07bdbb061b0651ee9efc1bfcb54cf001a084295dff28"
+      },
+      {
+        "label": "e3+e4",
+        "row": 2,
+        "column": 3,
+        "covector": [
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "6",
+        "hessian_scalar": "42",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "80a5c6a95466087fe883be9ffd77171c0ba985ccef7e3817ba311dbe66615eaa"
+      },
+      {
+        "label": "e3+e5",
+        "row": 2,
+        "column": 4,
+        "covector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        "metric_scalar": "2",
+        "hessian_scalar": "14",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "fc63f9e00acf5e47d535a88435a152d718d2011a3e223bb0775b0e93fa5d9b8b"
+      },
+      {
+        "label": "e3+e6",
+        "row": 2,
+        "column": 5,
+        "covector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1"
+        ],
+        "metric_scalar": "2",
+        "hessian_scalar": "14",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "fc63f9e00acf5e47d535a88435a152d718d2011a3e223bb0775b0e93fa5d9b8b"
+      },
+      {
+        "label": "e4",
+        "row": 3,
+        "column": null,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "metric_scalar": "3",
+        "hessian_scalar": "21",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "da9bc6bd4063dfb5fdef07bdbb061b0651ee9efc1bfcb54cf001a084295dff28"
+      },
+      {
+        "label": "e4+e5",
+        "row": 3,
+        "column": 4,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0"
+        ],
+        "metric_scalar": "6",
+        "hessian_scalar": "42",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "80a5c6a95466087fe883be9ffd77171c0ba985ccef7e3817ba311dbe66615eaa"
+      },
+      {
+        "label": "e4+e6",
+        "row": 3,
+        "column": 5,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "1"
+        ],
+        "metric_scalar": "2",
+        "hessian_scalar": "14",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "fc63f9e00acf5e47d535a88435a152d718d2011a3e223bb0775b0e93fa5d9b8b"
+      },
+      {
+        "label": "e5",
+        "row": 4,
+        "column": null,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "metric_scalar": "1",
+        "hessian_scalar": "7",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "a2ed0a6d122c51576c87da65b9977dc61a1ed691bc5b7e3d4ba9d362301a5fa5"
+      },
+      {
+        "label": "e5+e6",
+        "row": 4,
+        "column": 5,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        "metric_scalar": "2",
+        "hessian_scalar": "14",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "fc63f9e00acf5e47d535a88435a152d718d2011a3e223bb0775b0e93fa5d9b8b"
+      },
+      {
+        "label": "e6",
+        "row": 5,
+        "column": null,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "metric_scalar": "1",
+        "hessian_scalar": "7",
+        "Dirac_square_scalar": true,
+        "Dirac_square_sha256": "a2ed0a6d122c51576c87da65b9977dc61a1ed691bc5b7e3d4ba9d362301a5fa5"
+      }
+    ],
+    "principal_symbol_sample_count": 21,
+    "all_Dirac_squares_scalar": true
+  },
+  "lower_order_stability": {
+    "local_form": "B=gamma^i partial_i+gamma^i omega_i+Phi",
+    "potential": "i gamma_1 gamma_2",
+    "high_frequency_square": "(t b(xi)+V)^2=t^2 b(xi)^2+t(bV+Vb)+V^2",
+    "rows": [
+      {
+        "label": "e1",
+        "quadratic_coefficient_unchanged": true,
+        "quadratic_sha256": "bb9c34a352efa6fc61a2a7cea953f3e00fb81b3c6676a632e4bc586582b5c007",
+        "linear_coefficient_sha256": "9009a060079728fd6541cd7e14b139cf3d3c0cdc26871185a22d0e38b9e75129",
+        "constant_coefficient_sha256": "b826bf8a0703ae1eb5306d11ce496c86d0db6e92dcddea8ac8a5034ee449a254",
+        "linear_normalized_trace": "0"
+      },
+      {
+        "label": "e2",
+        "quadratic_coefficient_unchanged": true,
+        "quadratic_sha256": "bb9c34a352efa6fc61a2a7cea953f3e00fb81b3c6676a632e4bc586582b5c007",
+        "linear_coefficient_sha256": "9009a060079728fd6541cd7e14b139cf3d3c0cdc26871185a22d0e38b9e75129",
+        "constant_coefficient_sha256": "b826bf8a0703ae1eb5306d11ce496c86d0db6e92dcddea8ac8a5034ee449a254",
+        "linear_normalized_trace": "0"
+      },
+      {
+        "label": "e6",
+        "quadratic_coefficient_unchanged": true,
+        "quadratic_sha256": "a2ed0a6d122c51576c87da65b9977dc61a1ed691bc5b7e3d4ba9d362301a5fa5",
+        "linear_coefficient_sha256": "92b714b539b2b2489b4524ea527edcbe5af1401e62f70e9adf0aaae7337cf5c8",
+        "constant_coefficient_sha256": "b826bf8a0703ae1eb5306d11ce496c86d0db6e92dcddea8ac8a5034ee449a254",
+        "linear_normalized_trace": "0"
+      }
+    ],
+    "all_quadratic_coefficients_unchanged": true,
+    "connection_and_potential_change_only_lower_orders": true
+  },
+  "T55_composition": {
+    "action_scale_fixture": "7",
+    "action_scale_fixture_is_physical": false,
+    "density_fixture": "1",
+    "polarization_sample_count": 21,
+    "action_quadratic_A": [
+      [
+        "49",
+        "0",
+        "-21",
+        "21",
+        "14",
+        "0"
+      ],
+      [
+        "0",
+        "49",
+        "-21",
+        "-21",
+        "0",
+        "14"
+      ],
+      [
+        "-21",
+        "-21",
+        "21",
+        "0",
+        "-7",
+        "-7"
+      ],
+      [
+        "21",
+        "-21",
+        "0",
+        "21",
+        "7",
+        "-7"
+      ],
+      [
+        "14",
+        "0",
+        "-7",
+        "7",
+        "7",
+        "0"
+      ],
+      [
+        "0",
+        "14",
+        "-7",
+        "-7",
+        "0",
+        "7"
+      ]
+    ],
+    "reconstructed_A": [
+      [
+        "49",
+        "0",
+        "-21",
+        "21",
+        "14",
+        "0"
+      ],
+      [
+        "0",
+        "49",
+        "-21",
+        "-21",
+        "0",
+        "14"
+      ],
+      [
+        "-21",
+        "-21",
+        "21",
+        "0",
+        "-7",
+        "-7"
+      ],
+      [
+        "21",
+        "-21",
+        "0",
+        "21",
+        "7",
+        "-7"
+      ],
+      [
+        "14",
+        "0",
+        "-7",
+        "7",
+        "7",
+        "0"
+      ],
+      [
+        "0",
+        "14",
+        "-7",
+        "-7",
+        "0",
+        "7"
+      ]
+    ],
+    "recovered_action_scale": "7",
+    "recovered_covector_metric_H": [
+      [
+        "7",
+        "0",
+        "-3",
+        "3",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "7",
+        "-3",
+        "-3",
+        "0",
+        "2"
+      ],
+      [
+        "-3",
+        "-3",
+        "3",
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "3",
+        "-3",
+        "0",
+        "3",
+        "1",
+        "-1"
+      ],
+      [
+        "2",
+        "0",
+        "-1",
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "recovered_covariant_metric_G": [
+      [
+        "1",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "3",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "-1",
+        "1",
+        "0",
+        "3",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "-1",
+        "3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "3"
+      ]
+    ],
+    "A_reconstruction_exact": true,
+    "action_scale_reconstruction_exact": true,
+    "metric_reconstruction_exact": true,
+    "inverse_metric_reconstruction_exact": true,
+    "Hodge_reconstruction_sha256": "871f4f10b0cd09e38a48327b30c1642ea2189f3318b2bd93eb6b658eaca2cc65",
+    "source_T55_Hodge_sha256": "871f4f10b0cd09e38a48327b30c1642ea2189f3318b2bd93eb6b658eaca2cc65",
+    "Hodge_reconstruction_matches_T55": true
+  },
+  "q79_evidence_audit": {
+    "schema": "boe.mtt.dirac-dolbeault-principal-symbol-external-evidence-audit.v1",
+    "date": "2026-09-01",
+    "role": "corroborating_evidence_not_a_premise_of_CBF_T56",
+    "sources": [
+      {
+        "id": "QM_Q79_COSTELLO_GAUGEFIXED_LAPLACE",
+        "repository": "mtt-qm-source-proof",
+        "repository_head": "cd3c13b665d6712dd78655cf0d2007231f634065",
+        "path": "certificates/q79_costello_gaugefixing_laplace_and_interior_heat_kernel.certificate.json",
+        "sha256": "4f388f50f6c8bcdcdab93d5ce5eda399bede34eb0862ae4342d1ecacb3f60b92",
+        "observed_status": "Q79_NAIVE_ADJOINT_HODGE_LAPLACE_PROMOTION_EXCLUDED_GAUGE_FIXED_LAPLACE_OPERATOR_AND_INTERIOR_HEAT_KERNEL_HK_CLOSED_FORMAL_BRIDGE_REDUCED_TO_CT_AND_EL",
+        "accepted_claims": [
+          "corrected gauge-fixed gauge, ghost, Higgs and squared-Weyl heat blocks share one scalar Laplace principal symbol",
+          "smooth curvature, mass and Yukawa terms are lower order",
+          "the naive mixed-order adjoint Hodge sum is not the local heat operator"
+        ],
+        "scope_boundary": "four-dimensional auxiliary Euclidean compact-support regulator tier; not the selected six-dimensional q79 HYM Hessian, metric or density"
+      },
+      {
+        "id": "THETA_Q79_HIDDEN_SHARED_LINE_HYM_PROMOTION",
+        "repository": "18 Theta-Closure & Execution Program",
+        "repository_head": "78e988e9e4b88013074df804b7ff4999970d77ae",
+        "path": "research_frontier/aqg_q79_hidden_shared_line_hym_promotion.packet.json",
+        "sha256": "e3cfd9341bf9cf0794bbb557f7b16afd97f104ecf8976ee24593bcd2b04460c9",
+        "observed_status": "CLOSED_EXACT_HIDDEN_SHARED_LINE_PROJECTIVE_HYM_CONNECTION_PROMOTION",
+        "accepted_claims": [
+          "hidden Dolbeault differential and formal adjoint are preserved by shared-line tensoring",
+          "hidden Dolbeault Laplacian, harmonic kernel and reduced Green operator are preserved",
+          "hidden gauge-Hessian block naturality is exact"
+        ],
+        "scope_boundary": "existential hidden object; selected numerical HYM connection, visible/common endpoint, same-upper-source coemission and full rank-102 operator remain open"
+      },
+      {
+        "id": "MLD_Q79_HODGE_ACTION_SELECTION",
+        "repository": "mtt-mathematical-language-discovery-program",
+        "repository_head": "aafecf2201ab5573b63968175592062d91d10a0a",
+        "path": "Q79_HODGE_ACTION_AXIOM_SELECTION_AND_SCALE_RIGIDITY_v1.md",
+        "sha256": "dc2eaee8b3c04c7b2ca2b725a674cbb0031bbb0d777dfab3adea9a22d39e2b16",
+        "packet_path": "q79_hodge_action_axiom_selection_audit.packet.json",
+        "packet_sha256": "9068f29c7e3e70e4d189c426f9266c742ed3a0c6e724b6a83ee74b1648772055",
+        "accepted_claims": [
+          "a selected closure supercharge B_Q=dbar_Q+dbar_Q_star has square Delta_Q",
+          "the shared-circle phase changes first-order polarization but not the square",
+          "the conditional construction removes independent exact/coexact Hodge weights"
+        ],
+        "scope_boundary": "physical endpoint, metric, projective HYM connection, rank-102 execution, nonlinear physical defect map and action shadow remain open"
+      }
+    ],
+    "joint_conclusion": {
+      "operator_class_is_well_motivated": true,
+      "general_Dirac_Dolbeault_scalar_symbol_theorem_is_supported": true,
+      "selected_physical_q79_operator_is_present": false,
+      "selected_physical_q79_density_is_present": false,
+      "B_GEO_01_closed": false,
+      "B_ACTION_01_closed": false
+    }
+  },
+  "q79_source_contract_update": {
+    "before": "scalar positive q79 Hessian symbol and density requested before T55",
+    "after": "one selected Dirac/Dolbeault operator and same-source Hilbert density imply scalarity and feed T55",
+    "independent_scalar_symbol_proof_after_selected_Dirac_source": 0,
+    "independent_metric_payload_after_selected_Dirac_source_and_density": 0,
+    "selected_physical_q79_Dolbeault_operator": "OPEN",
+    "selected_physical_q79_density": "OPEN",
+    "selected_visible_hidden_HYM_connection": "OPEN",
+    "selected_domain_projector_and_reduced_Green": "OPEN",
+    "selected_C4_TT_naturality_and_error_bounds": "OPEN"
+  },
+  "parameter_ledger": {
+    "continuous_physical_parameters_added": 0,
+    "discrete_selectors_added": 0,
+    "observed_values_used": 0,
+    "fitted_values_used": 0,
+    "benchmark_action_scale_is_physical": false,
+    "one_shared_action_primitive_status": "OPEN_UNCHANGED"
+  },
+  "physical_boundary": {
+    "B_GEO_01_closed": false,
+    "B_ACTION_01_closed": false,
+    "B_OP_01_closed": false,
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    },
+    "selected_physical_operator_claimed": false,
+    "selected_physical_density_claimed": false
+  },
+  "exact_payload_sha256": "9db3b2d3515e8d2c9468b1b193148b8d6517cc24fc77b076355e0cd95640c6f5",
+  "checks": {
+    "schema_identifier": true,
+    "schema_required_fields": true,
+    "claim_id": true,
+    "theorem_states_Dirac_relation": true,
+    "theorem_preserves_physical_boundary": true,
+    "source_hashes_match": true,
+    "evidence_is_not_runtime_dependency": true,
+    "coframe_determinant_one": true,
+    "coframe_is_nonorthogonal": true,
+    "metric_from_coframe": true,
+    "metric_inverse_exact": true,
+    "flat_gamma_count": true,
+    "metric_gamma_count": true,
+    "spinor_rank": true,
+    "Clifford_relation_count": true,
+    "all_Clifford_relations_exact": true,
+    "metric_recovered_from_anticommutators": true,
+    "principal_sample_count": true,
+    "all_principal_squares_scalar": true,
+    "action_quadratic_exact": true,
+    "action_scale_positive": true,
+    "action_scale_exact": true,
+    "T55_inverse_metric_exact": true,
+    "T55_metric_exact": true,
+    "T55_Hodge_digest_exact": true,
+    "lower_order_witness_count": true,
+    "lower_order_quadratic_unchanged": true,
+    "connection_terms_classified_lower_order": true,
+    "evidence_source_count": true,
+    "Costello_scope_is_four_dimensional_auxiliary": true,
+    "hidden_HYM_scope_is_not_visible_endpoint": true,
+    "Hodge_action_scope_keeps_rank102_open": true,
+    "evidence_does_not_claim_selected_operator": true,
+    "evidence_does_not_claim_selected_density": true,
+    "scalarity_obligation_reduced": true,
+    "metric_payload_not_duplicated": true,
+    "no_continuous_parameters_added": true,
+    "no_selectors_added": true,
+    "no_observed_values": true,
+    "no_fitted_values": true,
+    "B_GEO_remains_open": true,
+    "B_ACTION_remains_open": true,
+    "B_OP_remains_open": true,
+    "physical_gates_unchanged": true,
+    "physical_packets_unchanged": true,
+    "physical_rows_unchanged": true
+  },
+  "check_summary": {
+    "passed": 46,
+    "total": 46,
+    "all_passed": true
+  }
+}

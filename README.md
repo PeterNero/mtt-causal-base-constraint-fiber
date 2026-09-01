@@ -1881,3 +1881,33 @@ symbol, density, HYM endpoint, Green operator and continuum intertwiner remain
 open, so `B.GEO.01` and `B.ACTION.01` remain open and the physical counters stay
 `0/3`, `0/3`, `0/7`. T55 passes `35/35` builder checks, `41/41` independent
 checks and 14 focused tests; the full canonical suite passes all 498 tests.
+
+`DiracDolbeaultPrincipalSymbolAndSameSourceMetricBridgeTheorem_v1.md`
+(`CBF.T56`) now derives T55's scalar-symbol gate from one first-order
+Dirac/Dolbeault source. If
+
+```text
+b(xi)b(eta)+b(eta)b(xi)=2h(xi,eta)I,
+```
+
+then `sigma_2(B^2)(xi)=h(xi,xi)I`; connection, curvature, HYM, Higgs and
+Yukawa terms remain below second order. The Clifford anticommutator itself
+recovers `h`, so a selected operator and its same-source Hilbert density feed
+T55 without a separate scalarity proof or metric table.
+
+The exact six-dimensional witness pulls the standard complex `8 x 8`
+Clifford matrices through T52's nonorthogonal determinant-one Hermitian
+coframe. All 21 independent Clifford relations hold exactly, all 21
+polarization symbols square to a scalar, and a noncommuting order-zero
+potential leaves every quadratic symbol coefficient unchanged. With the
+nonphysical fixture `kappa=7`, the chain reconstructs the same non-diagonal
+metric, action scale and complete Hodge digest as T55.
+
+The accompanying audit keeps three earlier results at their real tiers. The
+Costello packet is a four-dimensional auxiliary Euclidean gauge-fixed result;
+the shared-line HYM packet transports an existential hidden complex; and the
+Hodge-action theorem is conditional on a supplied q79 Dolbeault operator.
+None selects the physical six-dimensional endpoint. `B.GEO.01`,
+`B.ACTION.01` and `B.OP.01` remain open, with counters unchanged at `0/3`,
+`0/3`, `0/7`. T56 passes `46/46` builder checks and `53/53` independent
+checks, plus 13 focused tests; the full canonical suite passes all 511 tests.
