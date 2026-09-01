@@ -2254,3 +2254,38 @@ C4/TT naturality and finite/continuum error certificates remain open.
 `0/3` gates, `0/3` packets and `0/7` rows. T57 adds no parameter or selector
 and passes `52/52` builder checks, `58/58` independent checks and 13 focused
 tests; the full canonical suite passes all 524 tests.
+
+## CBF.T58 full-graded augmented symbol parametrix
+
+`FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md`
+extends T57 from degree one to the complete mapping-cone grading
+`n=-1,0,1,2,3`. The computation detects a genuine boundary condition: the
+scalar degree-minus-one lane is necessary. Omitting it produces three symbol
+levels at degree zero; including it yields the uniform exact formula
+
+```text
+sigma_2(Delta_Y,n)(xi)=q(xi)[I+a^2 rho P_n],
+rank(P_n)=1,4,6,4,1.
+```
+
+Every graded principal block now has an exact inverse, determinant, condition
+number and leading six-dimensional heat coefficient. The exact inverse is
+`q^(-1)[I-c/(1+c)P_n]`, with `c=a^2 rho`, and the leading heat weight is
+`(d_n-s_n)+s_n(1+c)^(-3)`. The graded baseline and projector-rank sums both
+vanish, proving exact leading heat-supertrace cancellation without asserting
+a Fredholm index theorem.
+
+The non-diagonal witness covers 21 polarization covectors and five degrees,
+for 105 exact records. At q79 rank `102`, the carrier dimensions are
+`1,105,309,307,102`, correction ranks are `1,4,6,4,1`, and baseline
+multiplicities are `0,101,303,303,101`. The previous T57 degree-one hashes
+are reproduced exactly. A negative control deletes the scalar lane and
+confirms failure of the simple projector form at every witness covector.
+
+This closes the full principal-symbol preconditioner, not the selected global
+operator. Lower-order q79 endpoint arrays, the kernel projector, global
+reduced inverse, tail bounds, physical intertwiner and radii decision remain
+open. `B.GEO.01`, `B.ACTION.01` and `B.OP.01` remain open; acceptance remains
+`0/3` gates, `0/3` packets and `0/7` rows. T58 adds no parameter or selector
+and passes `45/45` builder checks, `42/42` independent checks and 14 focused
+tests; the full canonical suite passes all 538 tests.

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.full-graded-augmented-heterotic-symbol-parametrix.v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "full_graded_theorem",
+    "exact_non_diagonal_witness",
+    "q79_rank102_specialization",
+    "heat_supertrace_certificate",
+    "operator_execution_contract_update",
+    "parameter_ledger",
+    "physical_boundary",
+    "exact_payload_sha256",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.full-graded-augmented-heterotic-symbol-parametrix.v1"},
+    "claim_id": {"const": "CBF.T58"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "full_graded_theorem": {"type": "object"},
+    "exact_non_diagonal_witness": {"type": "object"},
+    "q79_rank102_specialization": {"type": "object"},
+    "heat_supertrace_certificate": {"type": "object"},
+    "operator_execution_contract_update": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "exact_payload_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "checks": {"type": "object"},
+    "check_summary": {"type": "object"}
+  },
+  "additionalProperties": true
+}

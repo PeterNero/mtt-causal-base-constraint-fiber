@@ -1949,3 +1949,32 @@ domain, reduced Green operator and error certificates remain open. Counters
 stay `0/3`, `0/3`, `0/7`. T57 passes `52/52` builder checks, `58/58`
 independent checks and 13 focused tests; the full canonical suite passes all
 524 tests.
+
+`FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md`
+(`CBF.T58`) completes T57 across the entire augmented mapping cone. The
+correct grading is `n=-1,0,1,2,3`: the degree-minus-one scalar lane is forced,
+because deleting it leaves three symbol levels at degree zero and destroys the
+uniform projector form. With that lane restored, every degree satisfies
+
+```text
+sigma_2(Delta_Y,n)(xi)=q(xi)[I+cP_n],  c=a^2 rho,
+rank(P_n)=1,4,6,4,1.
+```
+
+The theorem gives the exact high-frequency inverse
+`q^(-1)[I-c/(1+c)P_n]`, determinant `q^(d_n)(1+c)^(s_n)`, condition number
+`1+c`, and six-real-dimensional leading heat weight
+`h_n=(d_n-s_n)+s_n(1+c)^(-3)`. Both the baseline multiplicities and projector
+ranks have zero graded alternating sum, so the leading heat supertrace
+cancels exactly. This is a principal-symbol identity, not a Fredholm index
+claim.
+
+The source-locked non-diagonal witness checks 21 covectors in all five
+degrees, for 105 exact records. For q79 rank `102`, the carrier dimensions are
+`1,105,309,307,102`, the correction ranks are `1,4,6,4,1`, and all five
+principal blocks now have exact preconditioners. No global reduced Green
+operator, lower-order endpoint arrays, kernel projector or tail bound is
+thereby selected. `B.GEO.01` and `B.OP.01` remain open and physical counters
+stay `0/3`, `0/3`, `0/7`. T58 passes `45/45` builder checks, `42/42`
+independent checks and 14 focused tests; the full canonical suite passes all
+538 tests.

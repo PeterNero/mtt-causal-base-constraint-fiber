@@ -1,0 +1,29 @@
+{
+  "schema": "boe.mtt.source-lock.v1",
+  "claim_id": "CBF.T58",
+  "date": "2026-09-01",
+  "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+  "handoff_id": "8a0a6626-8f9b-4377-b969-5c6f610664dd",
+  "sources": [
+    {
+      "id": "T57_THEOREM",
+      "path": "AugmentedHeteroticTriangularPrincipalSymbolMetricRecoveryTheorem_v1.md",
+      "sha256": "4405b98495a95a5b07fda6daf9b017c93f77a85b9cc966a750f0e28f27de6ed4"
+    },
+    {
+      "id": "T57_PACKET",
+      "path": "augmented_heterotic_triangular_principal_symbol.packet.json",
+      "sha256": "df10db3c12a46db5769ef22cf65c3ccdc1d936518c4f709518c5737daf30f93e"
+    },
+    {
+      "id": "T57_BUILDER",
+      "path": "build_augmented_heterotic_triangular_principal_symbol.py",
+      "sha256": "98322117852bbcf62a4abb45d6bd865b48f519330a8fe860f8e5642499950aab"
+    },
+    {
+      "id": "T57_INDEPENDENT_VERIFIER",
+      "path": "verify_augmented_heterotic_triangular_principal_symbol.py",
+      "sha256": "54a4912e703c7497a28795d6f419c8ea9fac86622cb19257eca3899ac6af125c"
+    }
+  ]
+}

@@ -124,6 +124,8 @@ def main() -> None:
     run(sys.executable, "verify_dirac_dolbeault_principal_symbol_bridge.py")
     run(sys.executable, "build_augmented_heterotic_triangular_principal_symbol.py")
     run(sys.executable, "verify_augmented_heterotic_triangular_principal_symbol.py")
+    run(sys.executable, "build_full_graded_augmented_heterotic_symbol_parametrix.py")
+    run(sys.executable, "verify_full_graded_augmented_heterotic_symbol_parametrix.py")
     run(sys.executable, "verify_q79_b89_accelerated_source_isotopy.py")
     run(sys.executable, "verify_q79_b89_source_isotopy_frontier_freeze.py")
     run(sys.executable, "build_q79_b89_downstream_promotion_readiness.py")
