@@ -41,7 +41,11 @@ def load(path: Path):
 
 
 def write(path: Path, value) -> None:
-    path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="ascii")
+    path.write_text(
+        json.dumps(value, indent=2, sort_keys=True) + "\n",
+        encoding="ascii",
+        newline="\n",
+    )
 
 
 def require(condition: bool, message: str) -> None:

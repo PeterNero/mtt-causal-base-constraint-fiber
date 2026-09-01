@@ -41,6 +41,22 @@ class RecursiveReplacementIngestTests(unittest.TestCase):
             self.assertEqual(MODULE.load(path), {"value": 2})
             path.read_bytes().decode("ascii")
 
+    def test_recoverable_failed_state_requires_explicit_opt_in_and_zero_exit(self) -> None:
+        job = {
+            "state": "failed",
+            "exit_code": None,
+            "result": {"manifest": {"exit_code": 0}},
+        }
+        self.assertFalse(MODULE.process_result_allowed(job))
+        self.assertTrue(MODULE.process_result_allowed(job, True))
+        job["result"]["manifest"]["exit_code"] = 1
+        self.assertFalse(MODULE.process_result_allowed(job, True))
+
+    def test_succeeded_zero_exit_remains_allowed(self) -> None:
+        self.assertTrue(
+            MODULE.process_result_allowed({"state": "succeeded", "exit_code": 0})
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

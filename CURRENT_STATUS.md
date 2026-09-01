@@ -2112,3 +2112,37 @@ translation. T54 therefore proves that complete branch isotopy plus the
 deterministic joint assembly is the only missing premise for the existing B89
 rejection replay. Its current decision is
 `STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING`; it does not call B89 rejected.
+
+### 2026-09-01 live B89 promotion checkpoint
+
+The cumulative requester-side audit now accepts 84 campaign capsules: all 65
+boundary packets and 19 branch packets. Every accepted capsule passed archive,
+manifest, requested-range, payload-hash and independent scientific-verifier
+checks. There are no scientific verification failures and no successful
+capsules awaiting audit. Exact carrier coverage is now
+
+```text
+boundary carrier: 2195/2195, complete
+branch carrier:     606/2195, incomplete
+```
+
+The newly accepted successful ranges include edge 1 `[288,324)`. Four further
+jobs were labeled failed only because their agents timed out after writing a
+zero-exit result capsule. Their exact ranges `[337,349)`, `[373,385)`,
+`[385,397)` and `[397,409)` were recovered only after result-manifest,
+capsule, payload and independent `10/10` verifier checks. The ledger preserves
+their reported process state instead of rewriting it as success. The remaining
+exact branch gaps are edge 1 `[324,336)`, `[349,373)` and `[409,857)`, edge 2
+`[1,678)`, and edge 3 `[1,429)`, totaling 1,589 intervals. At this snapshot 8
+jobs are running, 4 are claimed and 122 are queued; process state remains
+non-evidence until ingested.
+
+The finish-line transition has also been hardened. CBF.T54 no longer assumes
+that the branch must remain incomplete: it independently emits
+`READY_FOR_JOINT_ASSEMBLY_AND_B89_PROMOTION` exactly when both carriers reach
+`2195/2195`. `q79_b89_same_source_deligne_promote.py` refuses every partial
+state, then runs the frozen exact assemblers and H4-T123--126 promotion against
+the local same-source aggregates. Its independent verifier is
+`verify_q79_b89_same_source_deligne_promotion.py`. Thus carrier completion can
+now flow directly to a verified B89 decision without another implementation
+or theorem-design gap.

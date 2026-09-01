@@ -119,15 +119,30 @@ def parse_verifier_output(output: str) -> dict:
     return payload
 
 
+def process_result_allowed(job: dict, allow_recoverable_failed: bool = False) -> bool:
+    state = str(job.get("state", "unknown"))
+    result_exit = job.get("result", {}).get("manifest", {}).get("exit_code")
+    return (
+        state == "succeeded" and job.get("exit_code") == 0
+    ) or (
+        allow_recoverable_failed and state == "failed" and result_exit == 0
+    )
+
+
 def verify_capsule(
     campaign_row: dict,
     job: dict,
     capsule_path: Path,
     result_root: Path,
     upstream_root: Path,
+    allow_recoverable_failed: bool = False,
 ) -> tuple[dict, dict]:
     require(job["id"] == campaign_row["id"], "job id")
-    require(job["state"] == "succeeded" and job["exit_code"] == 0, "job success")
+    process_state = str(job.get("state", "unknown"))
+    require(
+        process_result_allowed(job, allow_recoverable_failed),
+        "job emitted a zero-exit result in an allowed process state",
+    )
     require(job["input_capsule"]["sha256"] == campaign_row["input_capsule_sha256"], "input capsule hash")
     require(
         sha256(capsule_path.parent / "input-capsule.zip")
@@ -202,6 +217,9 @@ def verify_capsule(
             int(campaign_row["interval_stop"]),
         ],
         "assigned_agent": job.get("assigned_agent"),
+        "reported_process_state": process_state,
+        "process_exit_code": job.get("exit_code"),
+        "result_manifest_exit_code": int(result_manifest["exit_code"]),
         "packet_path": relative_packet,
         "packet_sha256": sha256_bytes(packet_bytes),
         "input_capsule_sha256": campaign_row["input_capsule_sha256"],
@@ -239,6 +257,7 @@ def main() -> int:
         default=str(ROOT / "q79_b89_recursive_replacement_campaign_status.json"),
     )
     parser.add_argument("--ingest-succeeded", action="store_true")
+    parser.add_argument("--ingest-recoverable-results", action="store_true")
     parser.add_argument("--job-id", action="append", default=[])
     parser.add_argument("--max-ingest", type=int)
     args = parser.parse_args()
@@ -256,6 +275,7 @@ def main() -> int:
     ingested = []
     verification_failures = []
     succeeded_available = []
+    recoverable_failed_available = []
 
     for campaign_row in campaign["jobs"]:
         job_id = campaign_row["id"]
@@ -266,10 +286,27 @@ def main() -> int:
         job = load(job_path)
         state = str(job.get("state", "unknown"))
         statuses[state] += 1
-        if state != "succeeded" or not job.get("result", {}).get("available"):
+        result_available = job.get("result", {}).get("available") is True
+        is_succeeded_result = state == "succeeded" and result_available
+        is_recoverable_failed_result = (
+            state == "failed"
+            and job.get("result", {}).get("manifest", {}).get("exit_code") == 0
+            and result_available
+        )
+        if is_succeeded_result:
+            succeeded_available.append(job_id)
+        if is_recoverable_failed_result:
+            recoverable_failed_available.append(job_id)
+        if not (is_succeeded_result or is_recoverable_failed_result):
             continue
-        succeeded_available.append(job_id)
-        if not args.ingest_succeeded or (selected_ids and job_id not in selected_ids):
+        requested = (
+            (is_succeeded_result and args.ingest_succeeded)
+            or (
+                is_recoverable_failed_result
+                and args.ingest_recoverable_results
+            )
+        )
+        if not requested or (selected_ids and job_id not in selected_ids):
             continue
         if job_id in indexed:
             continue
@@ -282,6 +319,7 @@ def main() -> int:
                 root / job_id / "result-capsule.zip",
                 result_root,
                 upstream_root,
+                allow_recoverable_failed=is_recoverable_failed_result,
             )
             indexed[job_id] = row
             ingested.append(
@@ -332,6 +370,9 @@ def main() -> int:
         },
         "states": dict(sorted(statuses.items())),
         "succeeded_result_capsules_available": len(succeeded_available),
+        "recoverable_failed_result_capsules_available": len(
+            recoverable_failed_available
+        ),
         "active_result_index_rows": len(index["jobs"]),
         "campaign_packets_independently_verified": len(verified_campaign_rows),
         "campaign_packets_independently_verified_by_carrier": dict(
@@ -348,6 +389,12 @@ def main() -> int:
                 "result_capsule_sha256": row.get("result_capsule_sha256"),
                 "result_manifest_sha256": row.get("result_manifest_sha256"),
                 "verifier_sha256": row["independent_verification"]["verifier_sha256"],
+                "reported_process_state": row.get(
+                    "reported_process_state", "succeeded"
+                ),
+                "result_manifest_exit_code": int(
+                    row.get("result_manifest_exit_code", 0)
+                ),
             }
             for row in sorted(
                 verified_campaign_rows,
@@ -364,10 +411,15 @@ def main() -> int:
         "succeeded_capsules_awaiting_independent_verification": len(
             set(succeeded_available) - {row["id"] for row in verified_campaign_rows}
         ),
+        "recoverable_failed_capsules_awaiting_independent_verification": len(
+            set(recoverable_failed_available)
+            - {row["id"] for row in verified_campaign_rows}
+        ),
         "newly_ingested": ingested,
         "verification_failures": verification_failures,
         "guardrails": {
             "succeeded_processes_are_not_counted_without_independent_verification": True,
+            "recoverable_failed_process_labels_are_counted_only_after_zero_exit_capsule_and_independent_verification": True,
             "failed_verifications_are_absent_from_the_result_index": True,
         },
     }

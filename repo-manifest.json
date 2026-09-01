@@ -577,7 +577,11 @@
   "campaign_tools": [
     "q79_b89_recursive_replacement_ingest.py",
     "verify_q79_b89_source_isotopy_frontier_freeze.py",
-    "tests/test_q79_b89_recursive_replacement_ingest.py"
+    "q79_b89_same_source_deligne_promote.py",
+    "verify_q79_b89_same_source_deligne_promotion.py",
+    "tests/test_q79_b89_recursive_replacement_ingest.py",
+    "tests/test_q79_b89_source_isotopy_frontier_freeze.py",
+    "tests/test_q79_b89_same_source_deligne_promote.py"
   ],
   "verifier": "python verify.py",
   "dependencies": [],

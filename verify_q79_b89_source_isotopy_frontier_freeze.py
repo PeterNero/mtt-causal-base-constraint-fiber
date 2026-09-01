@@ -15,6 +15,16 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def newline_portable_sha256_matches(path: Path, expected: str) -> bool:
+    """Accept the frozen text payload with either LF or CRLF transport bytes."""
+    raw = path.read_bytes()
+    normalized = raw.replace(b"\r\n", b"\n")
+    if b"\r" in normalized:
+        return False
+    variants = (raw, normalized, normalized.replace(b"\n", b"\r\n"))
+    return any(hashlib.sha256(value).hexdigest() == expected for value in variants)
+
+
 def load(name: str):
     return json.loads((ROOT / name).read_text(encoding="ascii"))
 
@@ -157,14 +167,22 @@ def main() -> None:
         and campaign["dispatch"]["boundary_job_count"]
         == sum(row["carrier"] == "boundary" for row in campaign_jobs)
         == 65
-        and campaign["source_locks"]["branch"]["sha256"]
-        == sha256(ROOT / campaign["source_locks"]["branch"]["path"])
-        and campaign["source_locks"]["boundary"]["sha256"]
-        == sha256(ROOT / campaign["source_locks"]["boundary"]["path"])
-        and campaign["source_locks"]["result_index"]["sha256"]
-        == sha256(ROOT / campaign["source_locks"]["result_index"]["path"])
-        and campaign["source_locks"]["preflight_coverage"]["sha256"]
-        == sha256(ROOT / campaign["source_locks"]["preflight_coverage"]["path"])
+        and newline_portable_sha256_matches(
+            ROOT / campaign["source_locks"]["branch"]["path"],
+            campaign["source_locks"]["branch"]["sha256"],
+        )
+        and newline_portable_sha256_matches(
+            ROOT / campaign["source_locks"]["boundary"]["path"],
+            campaign["source_locks"]["boundary"]["sha256"],
+        )
+        and newline_portable_sha256_matches(
+            ROOT / campaign["source_locks"]["result_index"]["path"],
+            campaign["source_locks"]["result_index"]["sha256"],
+        )
+        and newline_portable_sha256_matches(
+            ROOT / campaign["source_locks"]["preflight_coverage"]["path"],
+            campaign["source_locks"]["preflight_coverage"]["sha256"],
+        )
     )
 
     branch_requested, branch_overlap = interval_union(campaign_jobs, "branch")

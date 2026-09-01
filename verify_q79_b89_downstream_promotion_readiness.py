@@ -82,6 +82,12 @@ def main() -> int:
             "range",
         )
         require(row["input_capsule_sha256"] == source["input_capsule_sha256"], "capsule")
+        require(
+            row.get("reported_process_state", "succeeded")
+            in {"succeeded", "failed"},
+            "process state",
+        )
+        require(row.get("result_manifest_exit_code", 0) == 0, "result exit")
         for interval in range(*row["interval_range"]):
             key = (row["edge"], interval)
             require(key not in additions[row["carrier"]], "overlap")
@@ -118,8 +124,12 @@ def main() -> int:
     )
     require(sum(witness[row] * translation[row] for row in range(164)) % 2 == 1, "pairing")
     require(packet["coverage"]["boundary"]["complete"], "boundary complete")
-    require(not packet["coverage"]["branch"]["complete"], "branch remains open")
-    require(packet["decision"] == "STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING", "decision")
+    expected_decision = (
+        "READY_FOR_JOINT_ASSEMBLY_AND_B89_PROMOTION"
+        if packet["coverage"]["branch"]["complete"]
+        else "STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING"
+    )
+    require(packet["decision"] == expected_decision, "decision")
     require(all(packet["checks"].values()), "checks")
     require(not any(packet["guardrails"].values()), "guardrails")
     print(

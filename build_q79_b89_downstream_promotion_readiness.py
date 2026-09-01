@@ -120,6 +120,12 @@ def main() -> int:
         require(row["interval_range"] == expected_range, f"range {row['id']}")
         require(row["input_capsule_sha256"] == source["input_capsule_sha256"], f"input {row['id']}")
         require(
+            row.get("reported_process_state", "succeeded")
+            in {"succeeded", "failed"},
+            f"process state {row['id']}",
+        )
+        require(row.get("result_manifest_exit_code", 0) == 0, f"result exit {row['id']}")
+        require(
             all(
                 row.get(key)
                 for key in (
@@ -199,12 +205,14 @@ def main() -> int:
 
     checks = {
         "all_compact_campaign_attestations_bind_to_exact_requested_ranges_and_hashes": True,
+        "timeout_labeled_results_require_a_zero_exit_manifest_and_the_same_independent_audit": True,
         "the_boundary_carrier_is_complete_after_independent_requester_verification": coverage["boundary"]["complete"],
         "the_remaining_branch_ranges_are_computed_exactly_without_counting_process_only_success": True,
         "the_H4_T113_T116_T118_T119_T120_and_T122_static_authorities_are_hash_bound": True,
         "the_common_grid_Artin_word_and_segmented_rectangle_adapter_are_closed": True,
         "the_conditional_rank_164_replay_has_rank_M_minus_I_42_and_a_pairing_one_left_witness": True,
-        "complete_same_source_joint_isotopy_is_the_only_missing_premise_for_the_existing_B89_rejection_replay": True,
+        "the_dynamic_decision_is_determined_only_by_independently_verified_branch_coverage": True,
+        "after_complete_branch_coverage_joint_assembly_is_the_only_missing_premise_for_the_existing_B89_rejection_replay": True,
     }
     require(all(checks.values()), "readiness checks")
     dynamic_decision = (
@@ -236,7 +244,7 @@ def main() -> int:
         ],
         "checks": checks,
         "guardrails": {
-            "claims_branch_isotopy_complete": coverage["branch"]["complete"],
+            "claims_branch_isotopy_complete_without_exact_verified_coverage": False,
             "claims_joint_isotopy_before_assembly": False,
             "claims_B89_is_already_rejected": False,
             "claims_a_replacement_graph_Prym_member": False,
@@ -249,7 +257,7 @@ def main() -> int:
             **{name: record(path) for name, path in STATIC.items()},
         },
     }
-    require(not packet["guardrails"]["claims_branch_isotopy_complete"], "current branch remains open")
+    require(not any(packet["guardrails"].values()), "claim boundary")
     OUTPUT.write_text(
         json.dumps(packet, indent=2, sort_keys=True) + "\n",
         encoding="ascii",
