@@ -2151,3 +2151,31 @@ the local same-source aggregates. Its independent verifier is
 `verify_q79_b89_same_source_deligne_promotion.py`. Thus carrier completion can
 now flow directly to a verified B89 decision without another implementation
 or theorem-design gap.
+
+## CBF.T55 same-source principal-symbol reduction
+
+`SameSourcePrincipalSymbolMetricActionScaleAndHodgeNaturalityTheorem.v1`
+proves that the eight T52 shape coefficients are not a second source payload
+once the same physical geometry-action member supplies a scalar positive
+principal symbol and its oriented density. Polarization recovers the
+contravariant quadratic form `A`; then
+
+```text
+c=(v^2 det A)^(1/6),
+G=c A^-1
+```
+
+uniquely separates the action scale and six-metric. Composition with T52
+determines the complete Hodge matrix and first response. The exact non-diagonal
+benchmark reproduces the T52 Hodge digest, proves full coframe-pullback
+naturality and carries all eight Hermitian shape directions with rank eight.
+
+This is a conditional source-contract reduction, not a physical endpoint.
+The local shape dimension remains eight. Without density there is one positive
+joint scale orbit, and a nonscalar principal symbol cannot be promoted from
+its trace. The selected q79 scalar Hessian symbol, density, HYM connection,
+Green operator and finite/continuum error bounds remain absent. `B.GEO.01` and
+`B.ACTION.01` remain open; physical acceptance remains `0/3` packets and `0/7`
+rows. T55 adds no parameter or selector and preserves the one shared action
+primitive. It passes `35/35` builder checks, `41/41` independent checks and 14
+focused tests; the full canonical suite passes all 498 tests.

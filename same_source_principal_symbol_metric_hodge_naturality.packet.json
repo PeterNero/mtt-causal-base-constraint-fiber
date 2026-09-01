@@ -1,0 +1,1876 @@
+{
+  "schema": "boe.mtt.same-source-principal-symbol-metric-hodge-naturality.v1",
+  "claim_id": "CBF.T55",
+  "date": "2026-09-01",
+  "status": "EXACT_GENERAL_PLUS_EXACT_SOURCE_LOCKED_BENCHMARK_CONDITIONAL_PHYSICAL_REDUCTION",
+  "source_provenance": {
+    "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+    "handoff_id": "eb2c1e7d-ab93-4b27-a12e-eadfb93bebc4",
+    "source_checks": [
+      {
+        "id": "T52_THEOREM",
+        "path": "Q79HermitianMetricHodgeCoefficientAndFirstVariationCompilerTheorem_v1.md",
+        "expected_sha256": "5fa7ebad5eb57d97a1a6d08faa5ad26235d48a2bb069c67079a62dbb3668692e",
+        "actual_sha256": "5fa7ebad5eb57d97a1a6d08faa5ad26235d48a2bb069c67079a62dbb3668692e",
+        "matches": true
+      },
+      {
+        "id": "T52_PACKET",
+        "path": "q79_hermitian_metric_hodge_compiler.packet.json",
+        "expected_sha256": "7b8683a56da2cb9773a933502790e06e91ca478624573240e2db0fefc87586c4",
+        "actual_sha256": "7b8683a56da2cb9773a933502790e06e91ca478624573240e2db0fefc87586c4",
+        "matches": true
+      },
+      {
+        "id": "T12_ENDPOINT_FACTORIZATION_THEOREM",
+        "path": "SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md",
+        "expected_sha256": "2e9a860a759877a4df06c3885c246ed4cc2679c5069e7d95d5d44b4f0bf213ae",
+        "actual_sha256": "2e9a860a759877a4df06c3885c246ed4cc2679c5069e7d95d5d44b4f0bf213ae",
+        "matches": true
+      },
+      {
+        "id": "T12_ENDPOINT_FACTORIZATION_PACKET",
+        "path": "q79_seven_row_endpoint_factorization.packet.json",
+        "expected_sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
+        "actual_sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
+        "matches": true
+      },
+      {
+        "id": "T50_DENSITY_THEOREM",
+        "path": "NormalizedOrientationCoframeDensityAndOnePrimitiveBVProfileBridgeTheorem_v1.md",
+        "expected_sha256": "23a611005123be23191733c4d12e5c3833e7ef074a01c2ce175e365c74f7d747",
+        "actual_sha256": "23a611005123be23191733c4d12e5c3833e7ef074a01c2ce175e365c74f7d747",
+        "matches": true
+      },
+      {
+        "id": "T50_DENSITY_PACKET",
+        "path": "normalized_orientation_coframe_bv_bridge.packet.json",
+        "expected_sha256": "2ec706ff79bf577d56cbaa1675b26e8bc208a24b2d7cc7cc73f8470c44145bb6",
+        "actual_sha256": "2ec706ff79bf577d56cbaa1675b26e8bc208a24b2d7cc7cc73f8470c44145bb6",
+        "matches": true
+      }
+    ],
+    "all_sources_hash_locked": true
+  },
+  "reconstruction_theorem": {
+    "base_dimension": 6,
+    "internal_rank": 4,
+    "scalar_symbol_gate": "sigma_2(L)(xi)=a(xi) I_E",
+    "normalized_trace": "a(xi)=Tr_E(sigma_2(L)(xi))/rank(E)",
+    "polarization": "A_ij=(a(e_i+e_j)-a(e_i)-a(e_j))/2",
+    "action_scale_formula": "c=(v^2 det(A))^(1/n)",
+    "contravariant_metric_formula": "H=A/c",
+    "covariant_metric_formula": "G=c A^-1",
+    "density_is_required_for_absolute_scale": true,
+    "unique_positive_reconstruction": true
+  },
+  "exact_non_diagonal_benchmark": {
+    "source_T52_claim": "CBF.T52",
+    "source_metric_sha256": "43c50a53370f5874aafcdfbfd8555e00af226f46da3a0c9397b6470a916f1fb5",
+    "source_Hodge_sha256": "871f4f10b0cd09e38a48327b30c1642ea2189f3318b2bd93eb6b658eaca2cc65",
+    "action_scale_fixture": "7",
+    "density_fixture": "1",
+    "action_quadratic_A": [
+      [
+        "49",
+        "0",
+        "-21",
+        "21",
+        "14",
+        "0"
+      ],
+      [
+        "0",
+        "49",
+        "-21",
+        "-21",
+        "0",
+        "14"
+      ],
+      [
+        "-21",
+        "-21",
+        "21",
+        "0",
+        "-7",
+        "-7"
+      ],
+      [
+        "21",
+        "-21",
+        "0",
+        "21",
+        "7",
+        "-7"
+      ],
+      [
+        "14",
+        "0",
+        "-7",
+        "7",
+        "7",
+        "0"
+      ],
+      [
+        "0",
+        "14",
+        "-7",
+        "-7",
+        "0",
+        "7"
+      ]
+    ],
+    "determinant_A": "117649",
+    "symbol_sample_count": 21,
+    "symbol_samples": [
+      {
+        "label": "e1",
+        "row": 0,
+        "column": null,
+        "vector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "49",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "49",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "49",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "49"
+          ]
+        ],
+        "normalized_trace": "49",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e1+e2",
+        "row": 0,
+        "column": 1,
+        "vector": [
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "98",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "98",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "98",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "98"
+          ]
+        ],
+        "normalized_trace": "98",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e1+e3",
+        "row": 0,
+        "column": 2,
+        "vector": [
+          "1",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "28",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "28",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "28",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "28"
+          ]
+        ],
+        "normalized_trace": "28",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e1+e4",
+        "row": 0,
+        "column": 3,
+        "vector": [
+          "1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "112",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "112",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "112",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "112"
+          ]
+        ],
+        "normalized_trace": "112",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e1+e5",
+        "row": 0,
+        "column": 4,
+        "vector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "84",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "84",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "84",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "84"
+          ]
+        ],
+        "normalized_trace": "84",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e1+e6",
+        "row": 0,
+        "column": 5,
+        "vector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "symbol_matrix": [
+          [
+            "56",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "56",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "56",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "56"
+          ]
+        ],
+        "normalized_trace": "56",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e2",
+        "row": 1,
+        "column": null,
+        "vector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "49",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "49",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "49",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "49"
+          ]
+        ],
+        "normalized_trace": "49",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e2+e3",
+        "row": 1,
+        "column": 2,
+        "vector": [
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "28",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "28",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "28",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "28"
+          ]
+        ],
+        "normalized_trace": "28",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e2+e4",
+        "row": 1,
+        "column": 3,
+        "vector": [
+          "0",
+          "1",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "28",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "28",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "28",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "28"
+          ]
+        ],
+        "normalized_trace": "28",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e2+e5",
+        "row": 1,
+        "column": 4,
+        "vector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "56",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "56",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "56",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "56"
+          ]
+        ],
+        "normalized_trace": "56",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e2+e6",
+        "row": 1,
+        "column": 5,
+        "vector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "symbol_matrix": [
+          [
+            "84",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "84",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "84",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "84"
+          ]
+        ],
+        "normalized_trace": "84",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e3",
+        "row": 2,
+        "column": null,
+        "vector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "21",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "21",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "21",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "21"
+          ]
+        ],
+        "normalized_trace": "21",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e3+e4",
+        "row": 2,
+        "column": 3,
+        "vector": [
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "42",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "42",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "42",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "42"
+          ]
+        ],
+        "normalized_trace": "42",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e3+e5",
+        "row": 2,
+        "column": 4,
+        "vector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "14",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "14",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "14",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "14"
+          ]
+        ],
+        "normalized_trace": "14",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e3+e6",
+        "row": 2,
+        "column": 5,
+        "vector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1"
+        ],
+        "symbol_matrix": [
+          [
+            "14",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "14",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "14",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "14"
+          ]
+        ],
+        "normalized_trace": "14",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e4",
+        "row": 3,
+        "column": null,
+        "vector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "21",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "21",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "21",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "21"
+          ]
+        ],
+        "normalized_trace": "21",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e4+e5",
+        "row": 3,
+        "column": 4,
+        "vector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "42",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "42",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "42",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "42"
+          ]
+        ],
+        "normalized_trace": "42",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e4+e6",
+        "row": 3,
+        "column": 5,
+        "vector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "1"
+        ],
+        "symbol_matrix": [
+          [
+            "14",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "14",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "14",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "14"
+          ]
+        ],
+        "normalized_trace": "14",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e5",
+        "row": 4,
+        "column": null,
+        "vector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "symbol_matrix": [
+          [
+            "7",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "7",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "7",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "7"
+          ]
+        ],
+        "normalized_trace": "7",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e5+e6",
+        "row": 4,
+        "column": 5,
+        "vector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        "symbol_matrix": [
+          [
+            "14",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "14",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "14",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "14"
+          ]
+        ],
+        "normalized_trace": "14",
+        "scalar_residual_zero": true
+      },
+      {
+        "label": "e6",
+        "row": 5,
+        "column": null,
+        "vector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "symbol_matrix": [
+          [
+            "7",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "7",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "7",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "7"
+          ]
+        ],
+        "normalized_trace": "7",
+        "scalar_residual_zero": true
+      }
+    ],
+    "all_symbol_samples_scalar": true,
+    "reconstructed_A": [
+      [
+        "49",
+        "0",
+        "-21",
+        "21",
+        "14",
+        "0"
+      ],
+      [
+        "0",
+        "49",
+        "-21",
+        "-21",
+        "0",
+        "14"
+      ],
+      [
+        "-21",
+        "-21",
+        "21",
+        "0",
+        "-7",
+        "-7"
+      ],
+      [
+        "21",
+        "-21",
+        "0",
+        "21",
+        "7",
+        "-7"
+      ],
+      [
+        "14",
+        "0",
+        "-7",
+        "7",
+        "7",
+        "0"
+      ],
+      [
+        "0",
+        "14",
+        "-7",
+        "-7",
+        "0",
+        "7"
+      ]
+    ],
+    "recovered_action_scale": "7",
+    "recovered_covector_metric_H": [
+      [
+        "7",
+        "0",
+        "-3",
+        "3",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "7",
+        "-3",
+        "-3",
+        "0",
+        "2"
+      ],
+      [
+        "-3",
+        "-3",
+        "3",
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "3",
+        "-3",
+        "0",
+        "3",
+        "1",
+        "-1"
+      ],
+      [
+        "2",
+        "0",
+        "-1",
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "recovered_covariant_metric_G": [
+      [
+        "1",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "3",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "-1",
+        "1",
+        "0",
+        "3",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "-1",
+        "3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "3"
+      ]
+    ],
+    "A_reconstruction_exact": true,
+    "action_scale_reconstruction_exact": true,
+    "metric_reconstruction_exact": true,
+    "inverse_metric_reconstruction_exact": true,
+    "Hodge_reconstruction_sha256": "871f4f10b0cd09e38a48327b30c1642ea2189f3318b2bd93eb6b658eaca2cc65",
+    "Hodge_reconstruction_matches_T52": true
+  },
+  "naturality_certificate": {
+    "coframe_change": [
+      [
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "coframe_change_determinant": "1",
+    "complex_linear_nonorthogonal": true,
+    "transformed_action_quadratic": [
+      [
+        "49",
+        "0",
+        "28",
+        "21",
+        "-7",
+        "21"
+      ],
+      [
+        "0",
+        "49",
+        "-21",
+        "28",
+        "-21",
+        "-7"
+      ],
+      [
+        "28",
+        "-21",
+        "28",
+        "0",
+        "7",
+        "14"
+      ],
+      [
+        "21",
+        "28",
+        "0",
+        "28",
+        "-14",
+        "7"
+      ],
+      [
+        "-7",
+        "-21",
+        "7",
+        "-14",
+        "14",
+        "0"
+      ],
+      [
+        "21",
+        "-7",
+        "14",
+        "7",
+        "0",
+        "14"
+      ]
+    ],
+    "transformed_A_reconstruction_exact": true,
+    "transformed_action_scale_invariant": true,
+    "transformed_metric_reconstruction_exact": true,
+    "full_exterior_pullback_shape": [
+      64,
+      64
+    ],
+    "full_Hodge_pullback_naturality": true,
+    "internal_unitary_conjugation_preserves_scalar_symbol": true,
+    "gauge_and_base_naturality_exact": true
+  },
+  "first_variation_certificate": {
+    "variation_formula_action_scale": "dot(c)/c=(2 dot(v)/v+Tr(A^-1 dot(A)))/n",
+    "variation_formula_metric": "dot(G)=(dot(c)/c)G-G[dot(A)/c]G",
+    "shape_direction_count": 8,
+    "shape_rows": [
+      {
+        "name": "diag_1_minus_2",
+        "delta_symbol_quadratic": [
+          [
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "7",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "7",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "delta_volume_over_volume": "0",
+        "delta_action_scale_over_scale": "0",
+        "recovered_metric_direction_matches_T52": true,
+        "recovered_Hodge_derivative_sha256": "12142441dfd51f2516753cb1981d4922f2ebbb1e560fece53f3a9b5c9335880d",
+        "T52_Hodge_derivative_sha256": "12142441dfd51f2516753cb1981d4922f2ebbb1e560fece53f3a9b5c9335880d",
+        "Hodge_derivative_matches_T52": true
+      },
+      {
+        "name": "diag_1_plus_2_minus_2x3",
+        "delta_symbol_quadratic": [
+          [
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-7",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "14",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "14"
+          ]
+        ],
+        "delta_volume_over_volume": "0",
+        "delta_action_scale_over_scale": "0",
+        "recovered_metric_direction_matches_T52": true,
+        "recovered_Hodge_derivative_sha256": "6cfa285e53f4fe78ea381ca226308bad383b460ffdb0e006e8ca94ddc8edc3af",
+        "T52_Hodge_derivative_sha256": "6cfa285e53f4fe78ea381ca226308bad383b460ffdb0e006e8ca94ddc8edc3af",
+        "Hodge_derivative_matches_T52": true
+      },
+      {
+        "name": "real_12",
+        "delta_symbol_quadratic": [
+          [
+            "0",
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-7",
+            "0",
+            "0"
+          ],
+          [
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "delta_volume_over_volume": "0",
+        "delta_action_scale_over_scale": "0",
+        "recovered_metric_direction_matches_T52": true,
+        "recovered_Hodge_derivative_sha256": "c9a8978a0dc4819b53c9d727e94993fe0db2d7c05928499b60e9a247702210fe",
+        "T52_Hodge_derivative_sha256": "c9a8978a0dc4819b53c9d727e94993fe0db2d7c05928499b60e9a247702210fe",
+        "Hodge_derivative_matches_T52": true
+      },
+      {
+        "name": "real_13",
+        "delta_symbol_quadratic": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-7",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-7"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "delta_volume_over_volume": "0",
+        "delta_action_scale_over_scale": "0",
+        "recovered_metric_direction_matches_T52": true,
+        "recovered_Hodge_derivative_sha256": "78263f01f6e0a2e679409da5e3455d24d1fb1cc2267726f0134ed9619656205d",
+        "T52_Hodge_derivative_sha256": "78263f01f6e0a2e679409da5e3455d24d1fb1cc2267726f0134ed9619656205d",
+        "Hodge_derivative_matches_T52": true
+      },
+      {
+        "name": "real_23",
+        "delta_symbol_quadratic": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-7",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-7"
+          ],
+          [
+            "0",
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-7",
+            "0",
+            "0"
+          ]
+        ],
+        "delta_volume_over_volume": "0",
+        "delta_action_scale_over_scale": "0",
+        "recovered_metric_direction_matches_T52": true,
+        "recovered_Hodge_derivative_sha256": "5ba9e5ec0b85e85fce2354805c37b04af697b87088ba02df62080566641cf67b",
+        "T52_Hodge_derivative_sha256": "5ba9e5ec0b85e85fce2354805c37b04af697b87088ba02df62080566641cf67b",
+        "Hodge_derivative_matches_T52": true
+      },
+      {
+        "name": "imag_12",
+        "delta_symbol_quadratic": [
+          [
+            "0",
+            "0",
+            "0",
+            "7",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "delta_volume_over_volume": "0",
+        "delta_action_scale_over_scale": "0",
+        "recovered_metric_direction_matches_T52": true,
+        "recovered_Hodge_derivative_sha256": "3869775b4b68f0dd07c92dcc28b320011e08b1f5342f6785d066e23044dd1538",
+        "T52_Hodge_derivative_sha256": "3869775b4b68f0dd07c92dcc28b320011e08b1f5342f6785d066e23044dd1538",
+        "Hodge_derivative_matches_T52": true
+      },
+      {
+        "name": "imag_13",
+        "delta_symbol_quadratic": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "7"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-7",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-7",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "delta_volume_over_volume": "0",
+        "delta_action_scale_over_scale": "0",
+        "recovered_metric_direction_matches_T52": true,
+        "recovered_Hodge_derivative_sha256": "ddddad08e462d24c23af613b321e8867fd7fac673d9b49641bf7404907a329d3",
+        "T52_Hodge_derivative_sha256": "ddddad08e462d24c23af613b321e8867fd7fac673d9b49641bf7404907a329d3",
+        "Hodge_derivative_matches_T52": true
+      },
+      {
+        "name": "imag_23",
+        "delta_symbol_quadratic": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "7"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-7",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-7",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "7",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "delta_volume_over_volume": "0",
+        "delta_action_scale_over_scale": "0",
+        "recovered_metric_direction_matches_T52": true,
+        "recovered_Hodge_derivative_sha256": "e90fe2a453fa834b5738457e3c0c517e378eb2be159eb143fb44b49ee0d3629e",
+        "T52_Hodge_derivative_sha256": "e90fe2a453fa834b5738457e3c0c517e378eb2be159eb143fb44b49ee0d3629e",
+        "Hodge_derivative_matches_T52": true
+      }
+    ],
+    "all_metric_directions_recovered": true,
+    "all_Hodge_derivatives_match_T52": true,
+    "composite_Hodge_response_rank": 8,
+    "rank_eight_shape_response": true
+  },
+  "necessity_cutsets": {
+    "without_density": {
+      "same_action_quadratic": true,
+      "first_candidate_action_scale": "7",
+      "second_candidate_action_scale": "14",
+      "first_candidate_density": "1",
+      "second_candidate_density": "8",
+      "one_positive_scale_orbit_remains": true
+    },
+    "without_scalarity": {
+      "nonscalar_symbol": [
+        [
+          "48",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "49",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "49",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "50"
+        ]
+      ],
+      "normalized_trace": "49",
+      "trace_matches_scalar_sample": true,
+      "scalar_residual_rank": 2,
+      "scalar_gate_fails": true,
+      "trace_only_metric_promotion_rejected": true
+    }
+  },
+  "q79_source_contract_update": {
+    "previous_T52_metric_shape_source_fields": 8,
+    "intrinsic_Hermitian_shape_dimension_after_T55": 8,
+    "independent_metric_payload_after_accepted_same_source_symbol_and_density": 0,
+    "required_same_source_inputs": [
+      "scalar_positive_principal_symbol",
+      "positive_oriented_density",
+      "common_GAS_source_hash",
+      "complex_structure_for_Hermitian_typing"
+    ],
+    "GAS_to_metric_Hodge_compiler": "CLOSED_CONDITIONALLY_BY_T55",
+    "selected_physical_GAS_instance": "OPEN",
+    "selected_q79_metric_values": "OPEN",
+    "selected_HYM_connection_and_Green": "OPEN",
+    "rank102_continuum_execution": "OPEN"
+  },
+  "parameter_ledger": {
+    "continuous_parameters_added": 0,
+    "discrete_selectors_added": 0,
+    "observed_values_used": 0,
+    "fitted_values_used": 0,
+    "benchmark_action_scale_is_physical": false,
+    "shared_action_primitives_after_T55": 1,
+    "metric_shape_degrees_removed": 0,
+    "duplicate_metric_source_payloads_removed_conditionally": 1
+  },
+  "physical_boundary": {
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    },
+    "B_HS_01_closed": false,
+    "B_GEO_01_closed": false,
+    "B_ACTION_01_closed": false,
+    "B_OP_01_closed": false,
+    "B_QFT_02_closed": false,
+    "reason": "No selected physical q79 scalar Hessian symbol, density, HYM endpoint, Green operator or continuum intertwiner is supplied."
+  },
+  "exact_payload_sha256": "8a30d3c58c46275acb09d19e00f8490813edac3ac942f47cdcfe1f3ba3fe167d",
+  "checks": {
+    "all_sources_hash_locked": true,
+    "all_symbol_samples_are_scalar": true,
+    "twenty_one_polarization_samples_are_emitted": true,
+    "A_reconstruction_is_exact": true,
+    "determinant_A_is_seventh_power_six": true,
+    "action_scale_reconstruction_is_exact": true,
+    "metric_reconstruction_is_exact": true,
+    "inverse_metric_reconstruction_is_exact": true,
+    "Hodge_reconstruction_matches_T52": true,
+    "coframe_change_is_orientation_preserving": true,
+    "coframe_change_is_nonorthogonal": true,
+    "transformed_A_reconstruction_is_exact": true,
+    "transformed_scale_is_invariant": true,
+    "transformed_metric_reconstruction_is_exact": true,
+    "full_Hodge_pullback_naturality_holds": true,
+    "all_eight_metric_variations_are_recovered": true,
+    "all_eight_Hodge_variations_match_T52": true,
+    "composite_shape_response_has_rank_eight": true,
+    "density_free_scale_orbit_keeps_A_fixed": true,
+    "density_free_scale_orbit_changes_density": true,
+    "nonscalar_trace_control_preserves_trace": true,
+    "nonscalar_trace_control_fails_scalar_gate": true,
+    "T52_shape_dimension_is_not_erased": true,
+    "duplicate_metric_payload_is_conditionally_removed": true,
+    "selected_physical_GAS_remains_open": true,
+    "one_action_primitive_is_preserved": true,
+    "no_observed_or_fitted_values_are_used": true,
+    "physical_counters_do_not_move": true,
+    "controlling_blockers_remain_open": true,
+    "theorem_states_same_source_reconstruction": true,
+    "theorem_records_scalar_gate": true,
+    "theorem_records_scale_boundary": true,
+    "theorem_preserves_physical_boundary": true,
+    "schema_required_fields_are_present": true,
+    "payload_hash_is_well_formed": true
+  },
+  "check_summary": {
+    "passed": 35,
+    "total": 35,
+    "all_passed": true
+  }
+}

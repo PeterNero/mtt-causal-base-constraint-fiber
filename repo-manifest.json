@@ -202,6 +202,9 @@
     "canonical conjugate-paired complex-bundle realification and exact Hodge-contraction covariance",
     "determinant-one Hermitian equal-volume Hodge-shape no-go with eight source fields",
     "exact supplied-Hermitian-metric full Hodge coefficient compiler and rank-eight first response",
+    "same-source scalar principal-symbol reconstruction of action scale and six-metric",
+    "exact symbol-to-Hodge composition with gauge, coframe and first-variation naturality",
+    "density-free one-scale and nonscalar-symbol necessity cutsets",
     "hash-locked exact-source B89 pair-sweep equivalence on two distinct-edge cells",
     "recursive dyadic repair of failed B89 source-isotopy cells with exact 252-label endpoint binding",
     "hash-locked adaptive B89 source-isotopy pilots on all three nontrivial branch edges",
@@ -329,6 +332,8 @@
     "selection of compact-cosmology harmonic gauge modes by the flat R3 zero-mode theorem",
     "selection of the physical q79 Fu-Yau metric or conformal factor by the Hodge sign compiler",
     "selection of physical q79 metric coefficients by the supplied-metric Hodge compiler or its non-diagonal witness",
+    "existence or selection of the physical q79 scalar Laplace-type Hessian symbol and same-source density",
+    "removal of the eight intrinsic Hermitian metric shape degrees of freedom",
     "selection of Majorana reality, chirality or particle spectrum by conjugate-paired realification",
     "full B89 source isotopy, affine Deligne rejection or replacement graph-Prym selection from the T53A acceleration checkpoint",
     "a new globally original operator-theory identity"
@@ -388,6 +393,7 @@
     "NormalizedOrientationCoframeDensityAndOnePrimitiveBVProfileBridgeTheorem_v1.md",
     "Q79OrientedHodgeStarAndConjugatePairedRealCarrierCompilerTheorem_v1.md",
     "Q79HermitianMetricHodgeCoefficientAndFirstVariationCompilerTheorem_v1.md",
+    "SameSourcePrincipalSymbolMetricActionScaleAndHodgeNaturalityTheorem_v1.md",
     "Q79B89DownstreamPromotionReadinessTheorem_v1.md"
   ],
   "certificates": [
@@ -443,6 +449,7 @@
     "normalized_orientation_coframe_bv_bridge.packet.json",
     "q79_oriented_hodge_real_carrier.packet.json",
     "q79_hermitian_metric_hodge_compiler.packet.json",
+    "same_source_principal_symbol_metric_hodge_naturality.packet.json",
     "q79_b89_accelerated_source_isotopy_benchmark.packet.json",
     "q79_b89_accelerated_source_isotopy_benchmark_edge1.packet.json",
     "q79_b89_accelerated_source_isotopy_equivalence.packet.json",
@@ -511,6 +518,7 @@
     "python build_normalized_orientation_coframe_bv_bridge.py",
     "python build_q79_oriented_hodge_real_carrier.py",
     "python build_q79_hermitian_metric_hodge_compiler.py",
+    "python build_same_source_principal_symbol_metric_hodge_naturality.py",
     "python build_q79_b89_accelerated_source_isotopy_equivalence.py",
     "python build_q79_b89_downstream_promotion_readiness.py"
   ],
@@ -563,6 +571,7 @@
     "normalized_orientation_coframe_bv_bridge_contract.schema.json",
     "q79_oriented_hodge_real_carrier_contract.schema.json",
     "q79_hermitian_metric_hodge_compiler_contract.schema.json",
+    "same_source_principal_symbol_metric_hodge_naturality_contract.schema.json",
     "q79_b89_accelerated_source_isotopy_contract.schema.json",
     "q79_b89_accelerated_adaptive_source_isotopy_contract.schema.json",
     "q79_b89_recursive_boundary_isotopy_contract.schema.json"

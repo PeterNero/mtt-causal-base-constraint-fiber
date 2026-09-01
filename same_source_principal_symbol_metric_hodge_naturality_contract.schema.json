@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.same-source-principal-symbol-metric-hodge-naturality.v1",
+  "title": "CBF.T55 same-source principal-symbol metric and Hodge naturality packet",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "reconstruction_theorem",
+    "exact_non_diagonal_benchmark",
+    "naturality_certificate",
+    "first_variation_certificate",
+    "necessity_cutsets",
+    "q79_source_contract_update",
+    "parameter_ledger",
+    "physical_boundary",
+    "exact_payload_sha256",
+    "checks",
+    "check_summary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "boe.mtt.same-source-principal-symbol-metric-hodge-naturality.v1"},
+    "claim_id": {"const": "CBF.T55"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "reconstruction_theorem": {"type": "object"},
+    "exact_non_diagonal_benchmark": {"type": "object"},
+    "naturality_certificate": {"type": "object"},
+    "first_variation_certificate": {"type": "object"},
+    "necessity_cutsets": {"type": "object"},
+    "q79_source_contract_update": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "exact_payload_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "checks": {"type": "object"},
+    "check_summary": {
+      "type": "object",
+      "required": ["passed", "total", "all_passed"],
+      "properties": {
+        "passed": {"type": "integer", "minimum": 0},
+        "total": {"type": "integer", "minimum": 1},
+        "all_passed": {"type": "boolean"}
+      }
+    }
+  }
+}

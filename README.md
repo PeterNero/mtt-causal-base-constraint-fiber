@@ -1842,3 +1842,42 @@ parameters. T52 adds zero parameters and selectors, preserves the single
 shared action primitive, and leaves physical counters at `0/3`, `0/3`,
 `0/7`. It passes `42/42` builder checks, `96/96` independent checks and 18
 focused tests; the full canonical suite passes all 453 tests.
+
+`SameSourcePrincipalSymbolMetricActionScaleAndHodgeNaturalityTheorem_v1.md`
+(`CBF.T55`) closes the source-duplication question left by T52. For a rank-`r`
+upper-action Hessian with scalar positive principal symbol
+
+```text
+sigma_2(L)(xi)=a(xi) I_r,
+A_ij=polarization(a)_ij,
+```
+
+and a positive density `v` from the same source, the action coefficient and
+metric are uniquely reconstructed as
+
+```text
+c=(v^2 det A)^(1/n),
+H=A/c,
+G=c A^-1.
+```
+
+The complete T52 Hodge operator and its first response are consequently
+functions of the same `GAS` symbol and density. The eight fixed-volume
+Hermitian shape directions remain local geometric degrees of freedom, but an
+accepted scalar-symbol `GAS` packet need not emit them again as an independent
+metric row table.
+
+The exact six-dimensional benchmark uses the non-diagonal T52 metric,
+internal rank four and the nonphysical fixture `c=7`. Its 21 polarization
+samples recover `det A=7^6`, `c=7`, the full metric and the exact T52 Hodge
+digest. A nonorthogonal determinant-one complex-linear coframe shear satisfies
+the complete `64 x 64` pullback identity, and all eight shape variations pass
+through the symbol chain with response rank eight.
+
+Two necessity cutsets prevent overstatement. Without the density, one joint
+positive action/metric scale remains. With a nonscalar endomorphism-valued
+symbol, normalized trace does not justify metric promotion. The physical q79
+symbol, density, HYM endpoint, Green operator and continuum intertwiner remain
+open, so `B.GEO.01` and `B.ACTION.01` remain open and the physical counters stay
+`0/3`, `0/3`, `0/7`. T55 passes `35/35` builder checks, `41/41` independent
+checks and 14 focused tests; the full canonical suite passes all 498 tests.
