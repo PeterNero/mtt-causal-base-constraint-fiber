@@ -1,0 +1,311 @@
+{
+  "check_summary": {
+    "all_passed": true,
+    "checks": {
+      "all_cochain_checks": true,
+      "all_degree_probe_groups_pass": true,
+      "all_direct_coefficient_checks": true,
+      "all_principal_blocks_match_T58": true,
+      "blockers_remain_open": true,
+      "cochain_check_count": true,
+      "coefficient_rows_reduced_to_zero": true,
+      "direct_coefficient_check_count": true,
+      "feshbach_check_count": true,
+      "feshbach_checks": true,
+      "five_degrees_present": true,
+      "neumann_check_count": true,
+      "neumann_checks": true,
+      "no_fitted_values": true,
+      "no_observed_values": true,
+      "no_parameters_added": true,
+      "no_selectors_added": true,
+      "nonconstant_C_present": true,
+      "nonconstant_E_present": true,
+      "physical_counters_unchanged": true,
+      "q79_dimensions": true,
+      "schema_identifier": true,
+      "schema_required_fields": true,
+      "selected_inverse_remains_open": true,
+      "selected_values_remain_open": true,
+      "source_count": true,
+      "source_hashes_match": true,
+      "theorem_tokens_present": true,
+      "witness_dimensions": true,
+      "witness_rank_sequence": true
+    },
+    "feshbach_subchecks": {
+      "block_inverse_formula_exact": true,
+      "feshbach_inverse_exact": true,
+      "full_inverse_exact": true,
+      "kernel_projector_exact": true,
+      "main_gap_positive": true,
+      "reduced_green_annihilates_kernel": true,
+      "reduced_green_left_identity": true,
+      "reduced_green_right_identity": true,
+      "schur_margin_positive": true,
+      "tail_gap_positive": true,
+      "tail_inverse_exact": true
+    },
+    "neumann_subchecks": {
+      "neumann_actual_error_is_13_over_8100": true,
+      "neumann_bound_is_one_over_162": true,
+      "neumann_bound_is_strict": true,
+      "neumann_exact_inverse": true,
+      "neumann_projector_is_idempotent": true,
+      "neumann_relative_norm_is_one_third": true,
+      "neumann_remainder_matrix_exact": true
+    },
+    "passed": 30,
+    "total": 30
+  },
+  "claim_id": "CBF.T59",
+  "coefficient_compiler_theorem": {
+    "C_formula": "A_n^(i*)A_n^j+A_(n-1)^i A_(n-1)^(j*)",
+    "E_formula": "-A_n^(i*)partial_iB_n+D_nB_n+A_(n-1)^i partial_iD_(n-1)+B_(n-1)D_(n-1)",
+    "Hodge_expansion": "Delta_n=-C_n^(ij)partial_i partial_j+R_n^j partial_j+E_n",
+    "R_formula": "-A_n^(i*)partial_iA_n^j+D_nA_n^j-A_n^(j*)B_n-A_(n-1)^i partial_iA_(n-1)^(j*)+A_(n-1)^jD_(n-1)-B_(n-1)A_(n-1)^(j*)",
+    "adjoint": "L_n^*=-A_n^(j*) partial_j+D_n",
+    "adjoint_zero_order": "D_n=B_n^*-mu^-1 partial_j(mu A_n^(j*))",
+    "connection_fold": "B_n=b_n+a_n^j Gamma_j",
+    "degrees": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "independent_lower_order_matrix_rows_required_after_endpoint": 0,
+    "local_differential": "L_n=A_n^j partial_j+B_n"
+  },
+  "date": "2026-09-01",
+  "feshbach_tail_certificate": {
+    "coupling_frobenius_sq": "41281/176400",
+    "feshbach_inverse_sha256": "7ac22caa72a943a62c72cba49e4bf73ad4df05f41195df6d0d1f54e7f6ec9ff8",
+    "feshbach_operator_sha256": "228ef17eddd5b5dd03fdc570c1bb28e2b8c10f48939a44812ca7a4bf3cd1ac07",
+    "fixtures_are_physical": false,
+    "full_inverse_sha256": "4cce9e4c6d191831df9226a43e1b53e171993a7a5b007cdb14c29699ac18f18f",
+    "full_operator_sha256": "8b0e2ccede03308d01e5309b9bfb37f17fba61dfb559025cb6206e2661ecab1a",
+    "kernel_extended_delta_sha256": "f86ab4cdda140a0348e175d7ab3f5ab709b296f0f43dd019100cadd83a9c329b",
+    "kernel_projector_sha256": "1dfef0a8c9ee928362775a18068bb11a009eb29eccd5d40b03e1da358f4589c2",
+    "main_dimension": 2,
+    "main_gap_gershgorin": "9/5",
+    "reduced_green_sha256": "d84977837ff8d84c05fa3112ce0f860dd15460a1828a95be2a59f6062e1f9aac",
+    "schur_lower_bound": "1466939/837900",
+    "tail_dimension": 2,
+    "tail_gap_gershgorin": "19/4",
+    "tail_inverse_sha256": "665fc8ced8a2cff5ba65301bf8c2ba627ce7858d03c7358de324162608757cdd"
+  },
+  "five_degree_exact_witness": {
+    "Q_rank": 4,
+    "all_cochain_compositions_zero": true,
+    "all_direct_composition_checks_pass": true,
+    "all_principal_x0_blocks_match_T58": true,
+    "cochain_compositions_checked": 3,
+    "degree_rows": [
+      {
+        "C_max_polynomial_degree": 2,
+        "C_nonzero_entries": 1,
+        "C_sha256": "e1a02d0e7a2b98ff3541a314c18b68e7c73b97c440d09bb50d265a047ffe236d",
+        "E_max_polynomial_degree": 2,
+        "E_nonzero_entries": 1,
+        "E_sha256": "1d5150d9abcc366ec133eb955ae258118581758f38095b79f8c77ae24c0bf427",
+        "R_max_polynomial_degree": 2,
+        "R_nonzero_entries": 1,
+        "R_sha256": "5a020bd8cabd5b11609527c3b90e251975ad082692d9ea13140e1a284c560eca",
+        "carrier_dimension": 1,
+        "correction_rank": 1,
+        "degree": -1,
+        "principal_at_x0_matches_T58": true,
+        "three_dense_direct_composition_checks": true
+      },
+      {
+        "C_max_polynomial_degree": 2,
+        "C_nonzero_entries": 9,
+        "C_sha256": "aae28cfcf25f911a07a4bbe8471bffbd6a145443f6f7f3e0bdb7cec0f9da37b1",
+        "E_max_polynomial_degree": 2,
+        "E_nonzero_entries": 9,
+        "E_sha256": "87320ebbd5d969d7599015ac50edf5bb5ec5eecbbd4e13b85a6c8b9cae4ed4bd",
+        "R_max_polynomial_degree": 2,
+        "R_nonzero_entries": 9,
+        "R_sha256": "abc59a1346842a38645dfa63bb1b26ae6e418cb1a2502fff2ff900aa7037fd8a",
+        "carrier_dimension": 7,
+        "correction_rank": 4,
+        "degree": 0,
+        "principal_at_x0_matches_T58": true,
+        "three_dense_direct_composition_checks": true
+      },
+      {
+        "C_max_polynomial_degree": 2,
+        "C_nonzero_entries": 19,
+        "C_sha256": "2b58a84bd716d57e3ac8bf76654f187d2759eed1fb0ac03c88a00dfab5aeded3",
+        "E_max_polynomial_degree": 2,
+        "E_nonzero_entries": 19,
+        "E_sha256": "734b9d29f2512715fbbd35a3688c120d49d95be9192e1cbac8f0d9877402ea1c",
+        "R_max_polynomial_degree": 2,
+        "R_nonzero_entries": 19,
+        "R_sha256": "5de986f34e4ce4c792dc8b86776623e9268408237ee899573204a6d950975b10",
+        "carrier_dimension": 15,
+        "correction_rank": 6,
+        "degree": 1,
+        "principal_at_x0_matches_T58": true,
+        "three_dense_direct_composition_checks": true
+      },
+      {
+        "C_max_polynomial_degree": 2,
+        "C_nonzero_entries": 15,
+        "C_sha256": "970d5b31d9db12e518c272ae91d9e7f71a96ae19a40c2a8e6d76836d878b1638",
+        "E_max_polynomial_degree": 2,
+        "E_nonzero_entries": 15,
+        "E_sha256": "53457fb67cbf52201fa812d4f87619d0a4380b14eef04ff159d62362e23670d9",
+        "R_max_polynomial_degree": 2,
+        "R_nonzero_entries": 15,
+        "R_sha256": "24bae07aaab075f4e3719a1686c6e497ef0023fe68f59db98f66d552d07cf5ec",
+        "carrier_dimension": 13,
+        "correction_rank": 4,
+        "degree": 2,
+        "principal_at_x0_matches_T58": true,
+        "three_dense_direct_composition_checks": true
+      },
+      {
+        "C_max_polynomial_degree": 2,
+        "C_nonzero_entries": 4,
+        "C_sha256": "332c61bb4d95701c016de88b9426df328d87203d0765714502fadce239f729d2",
+        "E_max_polynomial_degree": 2,
+        "E_nonzero_entries": 4,
+        "E_sha256": "d3d856eba49f1d19a953e21aa668893b43f01e7496f5394883db554f5bfef8cf",
+        "R_max_polynomial_degree": 2,
+        "R_nonzero_entries": 4,
+        "R_sha256": "264ca493cce63637d33e85d695cb5a72afe0b2378b1acf6d3b8ba58938a73d9a",
+        "carrier_dimension": 4,
+        "correction_rank": 1,
+        "degree": 3,
+        "principal_at_x0_matches_T58": true,
+        "three_dense_direct_composition_checks": true
+      }
+    ],
+    "density": "mu(x)=exp(x/3)",
+    "density_log_derivative": "1/3",
+    "direct_composition_checks": 15,
+    "fixtures_are_physical": false,
+    "nonconstant_principal_and_zero_order_coefficients": true
+  },
+  "parameter_ledger": {
+    "continuous_physical_parameters_added": 0,
+    "discrete_selectors_added": 0,
+    "fitted_values_used": 0,
+    "observed_values_used": 0,
+    "witness_rationals_are_exactness_fixtures": true
+  },
+  "payload_sha256": "36c10cce37311fc0a84c548e0e3527d4524487ca2beb2c977763f61e0496dae4",
+  "physical_boundary": {
+    "B_GEO_01_closed": false,
+    "B_OP_01_closed": false,
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    },
+    "selected_global_inverse_and_tail": false,
+    "selected_kernel_projector": false,
+    "selected_lower_order_arrays": false,
+    "selected_visible_hidden_HYM_endpoint": false
+  },
+  "projected_neumann_inverse_certificate": {
+    "H0_sha256": "b1d1916e34223f3ed29c19193261e13d78e86dda843ac174c77ffeaee75e9e44",
+    "H_sha256": "0830e6c4b7da57289ae34a3b6c1432e5fb2277e2bb1e24340de91e09001a93e3",
+    "actual_error_operator_norm": "13/8100",
+    "certified_error_bound": "1/162",
+    "dimension": 4,
+    "error_sha256": "c611dfdc00fd7550d667eda3f6ffdda99a9972a395ed7a182560aeeb69f7be39",
+    "eta": "1/3",
+    "exact_inverse_sha256": "665135011fb20a71bffd9984eb7d5a91418641d83f4d84b7229a86ff99eb7bbb",
+    "fixtures_are_physical": false,
+    "gamma": "1",
+    "inverse_norm_upper_bound": "3/2",
+    "neumann_approximation_sha256": "c4356cbcc9e2a31777d78687a589f133f949c938db3e0bb1e8b3418451a8a2cb",
+    "neumann_order": 4,
+    "relative_perturbation_sha256": "1c960340b30f5089e266417cce213772efa2da216ad4344f1f3a450b756e72bd"
+  },
+  "q79_execution_contract_update": {
+    "B_GEO_01_closed": false,
+    "B_OP_01_closed": false,
+    "Feshbach_tail_acceptance_compiler": "CLOSED_BY_CBF_T59",
+    "carrier_dimensions": [
+      1,
+      105,
+      309,
+      307,
+      102
+    ],
+    "independent_coefficient_entry_source_rows_after_endpoint": 0,
+    "local_lower_order_coefficient_compiler": "CLOSED_BY_CBF_T59",
+    "principal_preconditioner": "CLOSED_BY_CBF_T58",
+    "projected_global_inverse_acceptance_compiler": "CLOSED_BY_CBF_T59",
+    "radii_inequality_decision": "OPEN",
+    "selected_endpoint_coefficient_values": "OPEN",
+    "selected_finite_continuum_intertwiner": "OPEN",
+    "selected_gamma_eta_tau_and_schur_margin": "OPEN",
+    "selected_global_reduced_inverse": "OPEN",
+    "selected_kernel_projection": "OPEN"
+  },
+  "schema": "boe.mtt.augmented-hodge-lower-order-inverse-tail-compiler.v1",
+  "source_provenance": {
+    "all_portable_sources_hash_locked": true,
+    "discovery_evidence": [
+      {
+        "id": "AUGMENTED_ENDPOINT_HILBERT_COMPILER_THEOREM",
+        "path": "Q79_AUGMENTED_ENDPOINT_HILBERT_SPECTRAL_COMPILER_THEOREM_v1.md",
+        "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+        "required_for_portable_build": false,
+        "sha256": "77453971f76294863f6acda44d3051143376497375452322a114d3a83ab7ea24"
+      },
+      {
+        "id": "AUGMENTED_ENDPOINT_HILBERT_COMPILER_PACKET",
+        "path": "q79_augmented_endpoint_hilbert_spectral_compiler.packet.json",
+        "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+        "required_for_portable_build": false,
+        "sha256": "8024814dcbcfd3fc24231cb5ad1fbc77f9ffc16b42742bdcf338f689f9ff53f0"
+      }
+    ],
+    "handoff_id": "733c3cec-d0e2-4a2f-a991-ad6b632c2943",
+    "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+    "source_checks": [
+      {
+        "actual_sha256": "69b5507a427678e4b1fb52c1686198aad467cd04129b5e934044ff8fdb16d4ea",
+        "expected_sha256": "69b5507a427678e4b1fb52c1686198aad467cd04129b5e934044ff8fdb16d4ea",
+        "id": "T58_THEOREM",
+        "matches": true,
+        "path": "FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "0a2336e81fe14fc10ef9c1d9f2dfb9f1b6ffca9edc46247b5cfc1269f4b63ebd",
+        "expected_sha256": "0a2336e81fe14fc10ef9c1d9f2dfb9f1b6ffca9edc46247b5cfc1269f4b63ebd",
+        "id": "T58_PACKET",
+        "matches": true,
+        "path": "full_graded_augmented_heterotic_symbol_parametrix.packet.json"
+      },
+      {
+        "actual_sha256": "93449d67031ba3ea17bd688b975c40f4808982dbd8219844fafdec5b2b424427",
+        "expected_sha256": "93449d67031ba3ea17bd688b975c40f4808982dbd8219844fafdec5b2b424427",
+        "id": "T58_BUILDER",
+        "matches": true,
+        "path": "build_full_graded_augmented_heterotic_symbol_parametrix.py"
+      },
+      {
+        "actual_sha256": "75c77c756a909b08227c91ea295bff4d13c2b2e0acf163b5483576b9cbc2c71f",
+        "expected_sha256": "75c77c756a909b08227c91ea295bff4d13c2b2e0acf163b5483576b9cbc2c71f",
+        "id": "T58_INDEPENDENT_VERIFIER",
+        "matches": true,
+        "path": "verify_full_graded_augmented_heterotic_symbol_parametrix.py"
+      }
+    ]
+  },
+  "status": "EXACT_FIVE_DEGREE_LOWER_ORDER_COEFFICIENT_AND_PROJECTED_GLOBAL_INVERSE_TAIL_COMPILER_PHYSICAL_VALUES_OPEN"
+}

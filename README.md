@@ -1978,3 +1978,35 @@ thereby selected. `B.GEO.01` and `B.OP.01` remain open and physical counters
 stay `0/3`, `0/3`, `0/7`. T58 passes `45/45` builder checks, `42/42`
 independent checks and 14 focused tests; the full canonical suite passes all
 538 tests.
+
+`AugmentedHodgeLowerOrderCoefficientAndGlobalInverseTailCompilerTheorem_v1.md`
+(`CBF.T59`) closes the operator-design layer immediately below T58. In local
+orthonormal frames it expands every complete augmented Hodge block as
+
+```text
+Delta_n=-C_n^(ij) partial_i partial_j+R_n^j partial_j+E_n
+```
+
+and gives exact formulas for `C`, `R` and `E` from the same differential
+coefficients `A_n^j,B_n`, their derivatives and the Hilbert-density drift.
+Writing a connection as `nabla=partial+Gamma` folds it into
+`B_n=b_n+A_n^j Gamma_j`. Consequently, after one endpoint supplies its
+connection, residual terms, pairing and density, the number of independent
+lower-order matrix-entry source rows is zero.
+
+The exact weighted witness uses the real T58 maps with nonconstant rational
+principal and zero-order coefficients. Three cochain compositions vanish and
+15 direct five-degree Hodge actions agree coefficient by coefficient. An
+independent verifier reconstructs `E`, `R` and `C` from constant, linear and
+quadratic probes rather than reusing the expansion formulas.
+
+T59 also supplies two complete conditional global-execution tests. A
+projected relative-form perturbation with `eta<1` gives an exact Neumann
+inverse and remainder bound; the rational witness has actual error `13/8100`
+below the bound `1/162`. A Galerkin/tail Feshbach theorem emits the Schur
+operator, exact block inverse, kernel projector and reduced Green identities.
+The selected q79 endpoint must still provide the coefficient values and pass
+the resulting gap and margin inequalities. `B.GEO.01` and `B.OP.01` remain
+open and physical counters stay `0/3`, `0/3`, `0/7`. T59 adds no parameter or
+selector and passes `30/30` builder checks, `27/27` independent checks and 14
+focused tests; the full canonical suite passes all 552 tests.

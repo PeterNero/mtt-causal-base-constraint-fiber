@@ -2289,3 +2289,43 @@ open. `B.GEO.01`, `B.ACTION.01` and `B.OP.01` remain open; acceptance remains
 `0/3` gates, `0/3` packets and `0/7` rows. T58 adds no parameter or selector
 and passes `45/45` builder checks, `42/42` independent checks and 14 focused
 tests; the full canonical suite passes all 538 tests.
+
+## CBF.T59 lower-order coefficient and inverse-tail compiler
+
+`AugmentedHodgeLowerOrderCoefficientAndGlobalInverseTailCompilerTheorem_v1.md`
+derives the complete local coefficient arrays of every five-degree augmented
+Hodge block from one supplied first-order differential and Hilbert density.
+For `L_n=A_n^j partial_j+B_n`, the metric adjoint is
+
+```text
+L_n^*=-A_n^(j*) partial_j
+      +B_n^*-mu^(-1)partial_j(mu A_n^(j*)).
+```
+
+Expanding `L_n^*L_n+L_(n-1)L_(n-1)^*` gives exact second-, first- and
+zero-order arrays. The connection form `nabla=partial+Gamma` enters through
+`B_n=b_n+A_n^j Gamma_j`, so the arrays are outputs of the endpoint rather than
+independent numerical source rows. Their post-endpoint source-row count is now
+exactly zero.
+
+The weighted rank-four witness retains all five T58 degrees and uses
+nonconstant rational coefficients with `mu=exp(x/3)`. It verifies three
+cochain compositions and 15 direct Hodge identities. The independent verifier
+recovers `E`, `R` and `C` from the direct action on constant, linear and
+quadratic basis probes and matches every declared hash.
+
+The global execution compiler is also complete conditionally. A kernel-
+projected relative-form bound `eta<1` yields the reduced inverse and an exact
+Neumann remainder estimate. The auxiliary rational witness gives actual error
+`13/8100 < 1/162`. A separate Feshbach witness certifies a positive tail gap,
+positive Schur margin, exact block inverse, kernel projector and both reduced-
+Green identities.
+
+This closes the coefficient, inverse-acceptance and tail-acceptance compiler
+rows, not their selected physical values. The visible-hidden HYM endpoint,
+`A_n^j,B_n,mu`, harmonic projector, physical gaps/margins, finite/continuum
+intertwiner and radii decision remain open. `B.GEO.01`, `B.ACTION.01` and
+`B.OP.01` remain open; acceptance remains `0/3` gates, `0/3` packets and `0/7`
+rows. T59 adds no parameter or selector and passes `30/30` builder checks,
+`27/27` independent checks and 14 focused tests; the full canonical suite
+passes all 552 tests.

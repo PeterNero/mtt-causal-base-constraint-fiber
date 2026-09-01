@@ -215,6 +215,10 @@
     "necessary scalar degree-minus-one completion of the augmented mapping cone",
     "exact full-graded principal-symbol inverse, determinant and leading heat-supertrace cancellation",
     "conditional q79 rank-102 full-graded carrier dimensions and heat weights",
+    "exact five-degree augmented Hodge first- and zero-order coefficient compiler",
+    "no-independent-matrix-row theorem for endpoint-derived lower-order coefficients",
+    "exact projected relative-form Neumann inverse and remainder certificate",
+    "exact Galerkin-tail Feshbach, kernel-projector and reduced-Green compiler",
     "hash-locked exact-source B89 pair-sweep equivalence on two distinct-edge cells",
     "recursive dyadic repair of failed B89 source-isotopy cells with exact 252-label endpoint binding",
     "hash-locked adaptive B89 source-isotopy pilots on all three nontrivial branch edges",
@@ -347,6 +351,8 @@
     "selection of the physical q79 augmented endpoint, density or relative lane normalization by the triangular-symbol witness",
     "selection of lower-order q79 operator coefficients, a global reduced Green operator or continuum tail bounds by the full-graded principal parametrix",
     "a Fredholm index theorem from the leading-symbol heat-supertrace cancellation alone",
+    "selection of q79 connection, density, lower-order coefficient values, kernel projector or inverse margins by the lower-order compiler",
+    "physical acceptance of a global q79 inverse from the auxiliary Neumann or Feshbach witnesses",
     "removal of the eight intrinsic Hermitian metric shape degrees of freedom",
     "selection of Majorana reality, chirality or particle spectrum by conjugate-paired realification",
     "full B89 source isotopy, affine Deligne rejection or replacement graph-Prym selection from the T53A acceleration checkpoint",
@@ -411,6 +417,7 @@
     "DiracDolbeaultPrincipalSymbolAndSameSourceMetricBridgeTheorem_v1.md",
     "AugmentedHeteroticTriangularPrincipalSymbolMetricRecoveryTheorem_v1.md",
     "FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md",
+    "AugmentedHodgeLowerOrderCoefficientAndGlobalInverseTailCompilerTheorem_v1.md",
     "Q79B89DownstreamPromotionReadinessTheorem_v1.md"
   ],
   "certificates": [
@@ -470,6 +477,7 @@
     "dirac_dolbeault_principal_symbol_bridge.packet.json",
     "augmented_heterotic_triangular_principal_symbol.packet.json",
     "full_graded_augmented_heterotic_symbol_parametrix.packet.json",
+    "augmented_hodge_lower_order_inverse_tail_compiler.packet.json",
     "q79_b89_accelerated_source_isotopy_benchmark.packet.json",
     "q79_b89_accelerated_source_isotopy_benchmark_edge1.packet.json",
     "q79_b89_accelerated_source_isotopy_equivalence.packet.json",
@@ -542,6 +550,7 @@
     "python build_dirac_dolbeault_principal_symbol_bridge.py",
     "python build_augmented_heterotic_triangular_principal_symbol.py",
     "python build_full_graded_augmented_heterotic_symbol_parametrix.py",
+    "python build_augmented_hodge_lower_order_inverse_tail_compiler.py",
     "python build_q79_b89_accelerated_source_isotopy_equivalence.py",
     "python build_q79_b89_downstream_promotion_readiness.py"
   ],
@@ -598,6 +607,7 @@
     "dirac_dolbeault_principal_symbol_contract.schema.json",
     "augmented_heterotic_triangular_principal_symbol_contract.schema.json",
     "full_graded_augmented_heterotic_symbol_parametrix_contract.schema.json",
+    "augmented_hodge_lower_order_inverse_tail_compiler_contract.schema.json",
     "q79_b89_accelerated_source_isotopy_contract.schema.json",
     "q79_b89_accelerated_adaptive_source_isotopy_contract.schema.json",
     "q79_b89_recursive_boundary_isotopy_contract.schema.json"

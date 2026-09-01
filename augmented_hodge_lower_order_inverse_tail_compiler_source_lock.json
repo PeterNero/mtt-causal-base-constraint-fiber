@@ -1,0 +1,43 @@
+{
+  "schema": "boe.mtt.source-lock.v1",
+  "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+  "handoff_id": "733c3cec-d0e2-4a2f-a991-ad6b632c2943",
+  "sources": [
+    {
+      "id": "T58_THEOREM",
+      "path": "FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md",
+      "sha256": "69b5507a427678e4b1fb52c1686198aad467cd04129b5e934044ff8fdb16d4ea"
+    },
+    {
+      "id": "T58_PACKET",
+      "path": "full_graded_augmented_heterotic_symbol_parametrix.packet.json",
+      "sha256": "0a2336e81fe14fc10ef9c1d9f2dfb9f1b6ffca9edc46247b5cfc1269f4b63ebd"
+    },
+    {
+      "id": "T58_BUILDER",
+      "path": "build_full_graded_augmented_heterotic_symbol_parametrix.py",
+      "sha256": "93449d67031ba3ea17bd688b975c40f4808982dbd8219844fafdec5b2b424427"
+    },
+    {
+      "id": "T58_INDEPENDENT_VERIFIER",
+      "path": "verify_full_graded_augmented_heterotic_symbol_parametrix.py",
+      "sha256": "75c77c756a909b08227c91ea295bff4d13c2b2e0acf163b5483576b9cbc2c71f"
+    }
+  ],
+  "discovery_evidence": [
+    {
+      "id": "AUGMENTED_ENDPOINT_HILBERT_COMPILER_THEOREM",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "path": "Q79_AUGMENTED_ENDPOINT_HILBERT_SPECTRAL_COMPILER_THEOREM_v1.md",
+      "sha256": "77453971f76294863f6acda44d3051143376497375452322a114d3a83ab7ea24",
+      "required_for_portable_build": false
+    },
+    {
+      "id": "AUGMENTED_ENDPOINT_HILBERT_COMPILER_PACKET",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "path": "q79_augmented_endpoint_hilbert_spectral_compiler.packet.json",
+      "sha256": "8024814dcbcfd3fc24231cb5ad1fbc77f9ffc16b42742bdcf338f689f9ff53f0",
+      "required_for_portable_build": false
+    }
+  ]
+}

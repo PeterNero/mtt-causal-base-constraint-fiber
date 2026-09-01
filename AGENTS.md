@@ -71,6 +71,8 @@ paper, note, packet name or search hit.
    handoff is `9ff36ef1-eb65-4825-ab64-682c94e25968`;
    the full-graded augmented heterotic symbol-parametrix and heat-trace
    handoff is `8a0a6626-8f9b-4377-b969-5c6f610664dd`;
+   the augmented Hodge lower-order coefficient and global inverse-tail
+   compiler handoff is `733c3cec-d0e2-4a2f-a991-ad6b632c2943`;
    the accelerated q79 B89 same-source isotopy and affine-Deligne branch
    decision handoff is `8a175974-2390-48a7-8963-21601cf63157`;
    the radial closure-attractor and state-marginal handoff is

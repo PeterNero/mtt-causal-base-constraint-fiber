@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.augmented-hodge-lower-order-inverse-tail-compiler.v1",
+  "title": "CBF.T59 augmented Hodge lower-order and inverse-tail compiler",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "coefficient_compiler_theorem",
+    "five_degree_exact_witness",
+    "projected_neumann_inverse_certificate",
+    "feshbach_tail_certificate",
+    "q79_execution_contract_update",
+    "parameter_ledger",
+    "physical_boundary",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.augmented-hodge-lower-order-inverse-tail-compiler.v1"},
+    "claim_id": {"const": "CBF.T59"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "coefficient_compiler_theorem": {"type": "object"},
+    "five_degree_exact_witness": {"type": "object"},
+    "projected_neumann_inverse_certificate": {"type": "object"},
+    "feshbach_tail_certificate": {"type": "object"},
+    "q79_execution_contract_update": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "check_summary": {"type": "object"}
+  }
+}
