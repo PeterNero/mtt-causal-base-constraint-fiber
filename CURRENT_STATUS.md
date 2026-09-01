@@ -10,6 +10,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Associated-matter BV4 handoff: `7a343059-b0e9-44fc-a725-733048697896`
 - Accelerated q79 B89 same-source isotopy handoff: `8a175974-2390-48a7-8963-21601cf63157`
 - Fourier-Mukai double-qutrit bridge handoff: `6b64e72d-1dbb-4c88-8a77-b7b91ffa217a`
+- double-qutrit polarization and SpinC soldering handoff: `57b00a64-ed56-487a-a365-aa7b78b54468`
 - Provider-neutral source/q79 classification handoff: `f8fdd194-ed79-45af-a124-5c6219a6dce1`
 - Direct one-constraint multiplier-source handoff: `b8d489d8-41ea-4481-9c15-b31904f215af`
 - Closure-pressure family-Hessian handoff: `c90aa36c-e4b7-4dbe-9eaf-b599b414d474`
@@ -2367,11 +2368,66 @@ rank `13`, not `9`, with spectrum `0^1,2^6,6^6` and a strict next-level gap
 from `6` to `8`. Thus the selected `M3` is theta/Fourier-Mukai coefficient
 data, not an arbitrary scalar-Fourier truncation.
 
-The remaining physical exit is sharply typed but not closed: select a global,
-connection-compatible isometry from the four finite qutrit one-forms to the
-T58 augmented symbol space and verify domains and endpoint residuals. Equal
-ranks alone do not select this map. `B.GEO.01` and `B.OP.01` therefore remain
-open and physical counters do not move. T60 adds no observed value, fitted
-coefficient, physical parameter or selector. Its focused evidence is `44/44`
-builder checks, `37/37` independent checks and 15 unit tests; the full
-canonical suite passes all 567 tests.
+T61 now refines the remaining map: the local generic `U(4)` search is retired,
+while global connection and endpoint covariance remain open. `B.GEO.01` and
+`B.OP.01` therefore remain open and physical counters do not move. T60 adds no
+observed value, fitted coefficient, physical parameter or selector. Its
+focused evidence is `44/44` builder checks, `37/37` independent checks and 15
+unit tests.
+
+## CBF.T61 double-qutrit polarization and SpinC soldering criterion
+
+`Q79DoubleQutritMixedBidegreeEndomorphismAndSpinCSolderingCriterionTheorem_v1.md`
+closes the local linear-map ambiguity left by T60. In the locked `X/Z`
+orientation, each qutrit harmonic plane has quarter-turn
+
+```text
+J=[[0,-1],[1,0]],             J^2=-I2.
+```
+
+The vertical/internal labels and eta9 complex orientation canonically
+polarize the original degree-one carrier as
+
+```text
+L_v^+ direct-sum (L_i^+ direct-sum L_v^- direct-sum L_i^-),
+rank 1 + 3.
+```
+
+The explicit coefficient matrix `N_pol/sqrt(2)` is unitary and conjugates the
+finite action to `diag(i,i,-i,-i)`. This is a same-degree chartwise bridge,
+not an arbitrary `U(4)` choice. Its global physical promotion is exactly two
+parallel maps:
+
+```text
+s_alpha:L_v^+ -> C alpha_hat,
+kappa_3:L_i^+ direct-sum L_v^- direct-sum L_i^-
+        -> T^(0,1)*X.
+```
+
+T61 also identifies a stronger, distinct SpinC candidate in the mixed
+bidegree `H1_v tensor H1_i` inside finite degree two. The double return obeys
+
+```text
+(J tensor J)^2=(-I) tensor (-I)=+I,
+```
+
+and the exact symplectic map turns this carrier into `M2(C)`. Its normalized
+Pauli transform gives `M2=C I2 direct-sum sl2` with ranks `1+3` and induced
+action `diag(1,-1,1,-1)`. Direct degree one cannot carry this adjoint action,
+because its square is `-I4`; the mixed carrier cannot silently replace it
+either, because it lies in degree two. A selected totalization shift is
+required if this stronger route is used.
+
+Globalization is reduced to explicit holonomy and curvature equations. `C4`
+alone leaves an eight-complex-dimensional intertwiner space, so it does not
+select the physical map. The theorem also corrects the global variance:
+`U_v tensor U_i` is
+`Hom(U_i,U_v) tensor det(U_i)`, not untwisted `Hom`. The scalar lane is thus
+the internal determinant/shared line. The necessary twisted Chern tests are
+`c1=3l`, `c2=3l^2+4c2(W)-c1(W)^2` and
+`c3=l^3+l(4c2(W)-c1(W)^2)`, with `l=c1(det U_i)`. The selected HYM
+connections, endpoint Hessian, projector, Green operator and residual remain
+open. Physical counters stay `0/3`, `0/3`, `0/7`; no parameter, fit or
+observed value is added. Focused evidence is `46/46` builder checks, `41/41`
+independent checks and 14 unit tests. The full canonical repository suite
+passes all 581 tests.

@@ -1,0 +1,657 @@
+{
+  "check_summary": {
+    "all_passed": true,
+    "checks": {
+      "C4_alone_does_not_select_unique_intertwiner": true,
+      "T58_augmented_degree_zero_rank_is_four": true,
+      "T60_actions_remain_distinct": true,
+      "T60_four_direction_space_is_rank_four": true,
+      "T60_mixed_bidegree_is_present_in_degree_two": true,
+      "all_six_locked_sources_match": true,
+      "claim_id": true,
+      "conjugation_matrix_squares_to_identity": true,
+      "direct_and_tensorial_minimal_polynomials_differ": true,
+      "direct_degree_one_adjoint_bridge_is_impossible": true,
+      "direct_holomorphic_polarization_intertwines_C4": true,
+      "direct_holomorphic_polarization_is_unitary": true,
+      "direct_polarized_complement_has_rank_three": true,
+      "direct_polarized_scalar_lane_has_eigenvalue_plus_i": true,
+      "direct_polarized_transform_has_unit_determinant_modulus": true,
+      "direct_sum_square_is_minus_identity": true,
+      "epsilon_is_symplectic_for_J": true,
+      "finite_C4_harmonic_matrix_is_locked": true,
+      "global_parallel_matching_is_not_in_T60": true,
+      "induced_C4_has_fixed_scalar": true,
+      "induced_C4_has_one_more_fixed_traceless_lane": true,
+      "induced_C4_has_two_odd_traceless_lanes": true,
+      "mixed_intertwiner_space_dimension_is_eight": true,
+      "mixed_scalar_lane_is_the_internal_determinant_line": true,
+      "mixed_tensor_square_is_identity": true,
+      "pauli_transform_determinant_has_modulus_four": true,
+      "pauli_transform_intertwines_C4": true,
+      "pauli_transform_is_unitary_after_sqrt2_normalization": true,
+      "phi_intertwines_mixed_action_with_conjugation": true,
+      "phi_is_unitary": true,
+      "physical_B_GEO_remains_open": true,
+      "physical_B_HS_remains_open": true,
+      "physical_B_OP_remains_open": true,
+      "physical_rows_do_not_move": true,
+      "quarter_turn_squares_to_minus_identity": true,
+      "rank_two_variance_correction_keeps_determinant_twist": true,
+      "schema_file_exists": true,
+      "schema_identifier": true,
+      "selected_HYM_endpoint_remains_open": true,
+      "theorem_file_exists": true,
+      "trace_plus_traceless_rank_is_one_plus_three": true,
+      "twisted_rank_three_chern_formulas_are_recorded": true,
+      "zero_fits": true,
+      "zero_new_continuous_parameters": true,
+      "zero_new_discrete_selectors": true,
+      "zero_observed_values": true
+    },
+    "passed": 46,
+    "total": 46
+  },
+  "claim_id": "CBF.T61",
+  "corrected_augmented_bridge": {
+    "domain_transport": "A smooth bounded unitary bundle map transports Sobolev domains on compact X; operator-domain equality still needs the selected endpoint coefficients.",
+    "endpoint_residual": "R_I=H_aug I-I H_mixed",
+    "physical_residual_computed": false,
+    "primary_same_degree_route": {
+      "all_exterior_degrees": "Lambda^(n+1)I_pol followed by the exact T60/T58 exterior map J_n",
+      "finite_rank_three_bundle": "R3_fin=L_i_plus direct-sum L_v_minus direct-sum L_i_minus",
+      "finite_scalar_line": "L_v_plus",
+      "map": "I_pol=s_alpha direct-sum kappa_3",
+      "preserves_original_degree": true,
+      "required_line_map": "s_alpha:L_v_plus->C alpha_hat",
+      "required_rank_three_map": "kappa_3:R3_fin->T^(0,1)*X"
+    },
+    "secondary_mixed_spinc_route": {
+      "decomposition": "Locally A=delta tensor B after s; b0=tr(B)/2; B0=B-b0 I2",
+      "degree_issue": "The source is mixed bidegree (1,1) inside H2; a selected suspension/totalization is required before it can replace the degree-one generator.",
+      "determinant_line_map": "d_alpha:D_i->L_alpha",
+      "map": "I_mix(delta tensor B)=tr(B)/sqrt(2) d_alpha(delta) direct-sum kappa(delta tensor B0)",
+      "metric_isometry_if_s_and_kappa_are_unitary": true,
+      "normalized_scalar": "delta tensor s/sqrt(2) maps to d_alpha(delta)",
+      "normalized_symbol_covector": "alpha_hat=alpha/|alpha|"
+    }
+  },
+  "date": "2026-09-01",
+  "direct_degree_one_cutset": {
+    "basis": [
+      "theta_vX",
+      "theta_vZ",
+      "theta_iX",
+      "theta_iZ"
+    ],
+    "candidate_tensorial_square": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "invertible_intertwiner_exists": false,
+    "proof": "Similarity preserves squares; -I4 cannot be similar to +I4 in characteristic zero.",
+    "quarter_turn": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "scope": "This excludes the SpinC-adjoint/doubled-return interpretation of direct H1. It does not assign an unselected physical C4 action to T58.",
+    "square": [
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ]
+    ]
+  },
+  "direct_holomorphic_polarization": {
+    "N_pol": [
+      [
+        1,
+        "i",
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        "i"
+      ],
+      [
+        1,
+        "-i",
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        "-i"
+      ]
+    ],
+    "N_pol_N_pol_dagger": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2
+      ]
+    ],
+    "chartwise_map_selected_by_vertical_internal_labels_and_eta9_orientation": true,
+    "coefficient_transform": "H_pol=N_pol/sqrt(2)",
+    "conjugate_orientation": "The -i scalar convention is the complex-conjugate shared-line branch, not a fitted numerical choice.",
+    "det_N_pol": "4",
+    "global_connection_compatible_map_selected": false,
+    "induced_C4": [
+      [
+        "i",
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        "i",
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        "-i",
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        "-i"
+      ]
+    ],
+    "induced_C4_spectrum": {
+      "+i": 2,
+      "-i": 2
+    },
+    "is_unitary": true,
+    "ordered_target_lanes": [
+      "L_v_plus",
+      "L_i_plus",
+      "L_v_minus",
+      "L_i_minus"
+    ],
+    "rank_three_complement": [
+      "L_i_plus=span(theta_iX-i theta_iZ)",
+      "L_v_minus=span(theta_vX+i theta_vZ)",
+      "L_i_minus=span(theta_iX+i theta_iZ)"
+    ],
+    "scalar_lane": "L_v_plus=span(theta_vX-i theta_vZ)",
+    "selected_complex_structure": "J(theta_X)=theta_Z, J(theta_Z)=-theta_X",
+    "source": "H1_v direct-sum H1_i",
+    "uses_original_exterior_degree": true
+  },
+  "frontier_delta": {
+    "closed": [
+      "exact no-go for the direct-degree-one SpinC-adjoint bridge",
+      "exact same-degree holomorphic 1+3 polarization selected chartwise by the two qutrit labels and eta9 orientation",
+      "selected mixed-bidegree rank-four replacement inside the existing double-qutrit complex",
+      "exact endomorphism and normalized trace/Pauli 1+3 transform",
+      "double-return central-sign cancellation and induced C4 representation",
+      "necessary and sufficient parallel matching/soldering interface",
+      "exact holonomy, curvature and characteristic-class tests for globalization"
+    ],
+    "named_exit_clause_changed": "The local generic U(4) search is retired: the marked source fixes a same-degree polarized transform. Global promotion is reduced to s_alpha plus kappa_3, while the stronger mixed SpinC route additionally requires a selected totalization shift.",
+    "open": [
+      "parallel global matching s between the vertical-theta and internal-qutrit one-form bundles",
+      "parallel determinant/shared-line map d_alpha from det(U_i) to the augmented alpha line",
+      "selected determinant-twisted SpinC/adjoint soldering kappa to the q79 antiholomorphic cotangent bundle",
+      "or, on the same-degree route, parallel maps s_alpha and kappa_3 for the polarized line and rank-three complement",
+      "selected degree shift/totalization if the mixed SpinC route is used as the T58 generator",
+      "same-source visible/hidden Hull-Strominger endpoint and connection matrices",
+      "physical Hessian, projector, Green operator and endpoint-residual certificate"
+    ]
+  },
+  "global_bundle_criterion": {
+    "C4_alone_selects_the_map": false,
+    "C4_only_intertwiner_dimension_complex": 8,
+    "C4_only_unitary_family": "U(2) x U(2)",
+    "C4_plus_fixed_scalar_residual_family": "U(1) x U(2)",
+    "canonical_rank_two_variance_identity": "U_i=U_i^* tensor det(U_i)",
+    "curvature_equation": "F_v s=s F_i",
+    "finite_bundles": "oriented Hermitian rank-two one-form bundles U_v and U_i",
+    "global_parallel_matching_selected": false,
+    "globally_typed_mixed_bundle": "M=Hom(U_i,U_v) tensor D_i, D_i=det(U_i)",
+    "holonomy_equation": "Hol_v(gamma) s=s Hol_i(gamma) for every loop gamma",
+    "local_marked_axis_matching": "available chartwise from the locked X/Z markings",
+    "parallel_matching_equation": "nabla_v s-s nabla_i=0",
+    "raw_mixed_bundle": "M=U_v tensor U_i",
+    "required_matching": "a unitary determinant-compatible bundle isomorphism s:U_i->U_v",
+    "scalar_line": "D_i tensor C.s, canonically isomorphic to D_i",
+    "shared_line_role": "A parallel map D_i->L_alpha is required; a local epsilon frame must not be treated as a global determinant trivialization.",
+    "traceless_bundle": "D_i tensor Hom_0^s, Hom_0^s={A:tr(s^-1 A)=0}"
+  },
+  "mixed_bidegree_endomorphism": {
+    "basis": [
+      "vX tensor iX",
+      "vX tensor iZ",
+      "vZ tensor iX",
+      "vZ tensor iZ"
+    ],
+    "central_sign_cancellation": "J^2 tensor J^2=(-I) tensor (-I)=+I",
+    "diagonal_double_return": [
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "diagonal_double_return_spectrum": {
+      "+1": 2,
+      "-1": 2
+    },
+    "diagonal_double_return_square": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "endomorphism_map": "Phi(u tensor v)=u v^T epsilon",
+    "endomorphism_map_is_unitary": true,
+    "endomorphism_map_matrix_row_major": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "equivariance": "Phi((J u) tensor (J v))=J Phi(u tensor v) J^-1",
+    "full_H2_decomposition": "Lambda2(H1_v) direct-sum (H1_v tensor H1_i) direct-sum Lambda2(H1_i)",
+    "full_H2_ranks": [
+      1,
+      4,
+      1
+    ],
+    "location": "H1_v tensor H1_i, the mixed (1,1) summand of H2",
+    "quarter_turn_J": [
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "symplectic_form_epsilon": [
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        0
+      ]
+    ]
+  },
+  "parameter_ledger": {
+    "continuous_physical_parameters_added": 0,
+    "discrete_physical_selectors_added": 0,
+    "fitted_values_used": 0,
+    "observed_values_used": 0
+  },
+  "physical_boundary": {
+    "B_GEO_01_closed": false,
+    "B_HS_01_closed": false,
+    "B_OP_01_closed": false,
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    }
+  },
+  "result": {
+    "corrected_C4_square": "+I4",
+    "corrected_carrier": "H1_v tensor H1_i inside H2 of the double-qutrit bicomplex",
+    "corrected_carrier_rank": 4,
+    "direct_degree_one_C4_square": "-I4",
+    "direct_degree_one_candidate": "H1_v direct-sum H1_i",
+    "direct_degree_one_rank": 4,
+    "direct_degree_one_to_adjoint_1_plus_3": "EXACT_NO_GO_FOR_THE_DOUBLED_RETURN_ADJOINT_ACTION",
+    "direct_degree_one_to_polarized_1_plus_3": "CLOSED_EXACT_CHARTWISE",
+    "finite_trace_decomposition": "C.I2 direct-sum sl2(C)",
+    "finite_trace_decomposition_ranks": [
+      1,
+      3
+    ],
+    "physical_promotion": "OPEN_PENDING_PARALLEL_POLARIZED_LINE_AND_RANK_THREE_SOLDERING_OR_A_SELECTED_MIXED_TOTALIZATION"
+  },
+  "schema": "boe.mtt.q79-double-qutrit-mixed-bidegree-spinc-soldering.v1",
+  "source_provenance": {
+    "all_local_sources_hash_locked": true,
+    "builder_sha256": "119ecdba21745fbea6449c194e31db6b59c2b8d2df17d0f5130ca66625b005f5",
+    "external_reference": {
+      "authors": "W. Ambrose and I. M. Singer",
+      "doi": "10.1090/S0002-9947-1953-0063739-1",
+      "title": "A theorem on holonomy",
+      "use": "Curvature generates connection holonomy; a parallel global bridge must intertwine the complete holonomy representations."
+    },
+    "handoff_id": "57b00a64-ed56-487a-a365-aa7b78b54468",
+    "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+    "schema_sha256": "b448526b93d5ccb54050025a42a2f0df96ea10fa88090296e2c645b89e4e42d0",
+    "source_checks": [
+      {
+        "actual_sha256": "b7d9572394e4546742488ce33a0314fb5c2c489519fce6e62c10f826c53e55be",
+        "expected_sha256": "b7d9572394e4546742488ce33a0314fb5c2c489519fce6e62c10f826c53e55be",
+        "id": "T60_THEOREM",
+        "matches": true,
+        "path": "Q79FourierMukaiDoubleQutritKoszulAndAugmentedExteriorBridgeTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "2814267c41fcd38b7baf40929ceca04378f19bd3b88482191fa520a8091cfe51",
+        "expected_sha256": "2814267c41fcd38b7baf40929ceca04378f19bd3b88482191fa520a8091cfe51",
+        "id": "T60_PACKET",
+        "matches": true,
+        "path": "q79_fourier_mukai_double_qutrit_augmented_exterior_bridge.packet.json"
+      },
+      {
+        "actual_sha256": "69b5507a427678e4b1fb52c1686198aad467cd04129b5e934044ff8fdb16d4ea",
+        "expected_sha256": "69b5507a427678e4b1fb52c1686198aad467cd04129b5e934044ff8fdb16d4ea",
+        "id": "T58_THEOREM",
+        "matches": true,
+        "path": "FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "0a2336e81fe14fc10ef9c1d9f2dfb9f1b6ffca9edc46247b5cfc1269f4b63ebd",
+        "expected_sha256": "0a2336e81fe14fc10ef9c1d9f2dfb9f1b6ffca9edc46247b5cfc1269f4b63ebd",
+        "id": "T58_PACKET",
+        "matches": true,
+        "path": "full_graded_augmented_heterotic_symbol_parametrix.packet.json"
+      },
+      {
+        "actual_sha256": "f4c790180c2018706bd47e0e24c04c03046305e9cc9d24d0f3f38e075edbd417",
+        "expected_sha256": "f4c790180c2018706bd47e0e24c04c03046305e9cc9d24d0f3f38e075edbd417",
+        "id": "FINITE_C4_THEOREM",
+        "matches": true,
+        "path": "Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d",
+        "expected_sha256": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d",
+        "id": "FINITE_C4_PACKET",
+        "matches": true,
+        "path": "q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.packet.json"
+      }
+    ],
+    "theorem_sha256": "0bd12aeb4c5c195b36b16d03353ba8c9742882caa10524b698e92e226528db86"
+  },
+  "spinc_adjoint_soldering_criterion": {
+    "curvature_equation": "F_T kappa(delta tensor B)=kappa(F_D delta tensor B+delta tensor [F_v,B])",
+    "necessary_chern_conditions": [
+      "c1(T^(0,1)*X)=3l",
+      "c2(T^(0,1)*X)=3l^2+4c2(U_v)-c1(U_v)^2",
+      "c3(T^(0,1)*X)=l^3+l(4c2(U_v)-c1(U_v)^2), where l=c1(D_i)"
+    ],
+    "parallel_equation": "nabla_T kappa(delta tensor B)=kappa(nabla_D delta tensor B+delta tensor [nabla_v,B])",
+    "rank": 3,
+    "required_map": "kappa:D_i tensor End_0(U_v)->T^(0,1)*X",
+    "requirements": [
+      "complex-linear metric isometry",
+      "orientation preservation",
+      "parallel connection intertwiner",
+      "C4/monodromy or direct TT equivariance",
+      "same-source determinant/shared-line identification"
+    ],
+    "selected_physical_kappa": false,
+    "untwisted_special_case": "For l=0 these reduce to c1=0, c2=4c2(U_v)-c1(U_v)^2, c3=0."
+  },
+  "status": "CLOSED_EXACT_LOCAL_POLARIZED_AND_MIXED_BIDEGREE_BRIDGES_GLOBAL_SOLDERING_PHYSICAL_ENDPOINT_OPEN",
+  "trace_pauli_transform": {
+    "N": [
+      [
+        0,
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        -1
+      ],
+      [
+        "i",
+        0,
+        0,
+        "i"
+      ],
+      [
+        0,
+        -1,
+        -1,
+        0
+      ]
+    ],
+    "N_N_dagger": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2
+      ]
+    ],
+    "coefficient_transform": "H=N/sqrt(2)",
+    "det_N": "4i",
+    "induced_C4_split": "scalar(+1) direct-sum [sigma1(-1),sigma2(+1),sigma3(-1)]",
+    "induced_diagonal_C4": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ]
+    ],
+    "is_unitary": true,
+    "scalar_row": "(-vX_iZ+vZ_iX)/sqrt(2)",
+    "shared_phase_note": "Replacing sigma2 by its conjugate uses the existing +i/-i shared-line pair; it is not a fitted physical value.",
+    "source_basis": [
+      "vX_iX",
+      "vX_iZ",
+      "vZ_iX",
+      "vZ_iZ"
+    ],
+    "target_basis": [
+      "I/sqrt(2)",
+      "sigma1/sqrt(2)",
+      "sigma2/sqrt(2)",
+      "sigma3/sqrt(2)"
+    ],
+    "traceless_rows": [
+      "(vX_iX-vZ_iZ)/sqrt(2)",
+      "i(vX_iX+vZ_iZ)/sqrt(2)",
+      "(-vX_iZ-vZ_iX)/sqrt(2)"
+    ]
+  }
+}

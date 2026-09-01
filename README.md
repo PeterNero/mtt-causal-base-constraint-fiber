@@ -2036,4 +2036,28 @@ coefficient geometry, not a scalar cutoff. T60 does not yet select the global
 connection-compatible four-direction physical intertwiner, so the q79
 endpoint and physical counters remain open. It adds no parameter or selector
 and passes `44/44` builder checks, `37/37` independent checks and 15 focused
-tests; the full canonical suite passes all 567 tests.
+tests.
+
+`Q79DoubleQutritMixedBidegreeEndomorphismAndSpinCSolderingCriterionTheorem_v1.md`
+(`CBF.T61`) resolves the local part of that intertwiner problem. The locked
+quarter-turn polarizes the original degree-one carrier into a selected
+vertical-theta holomorphic line plus a rank-three complement. Its explicit
+unitary transform has induced spectrum `(+i,+i,-i,-i)`, preserves the T60
+degree and removes the local generic `U(4)` choice. Physical globalization is
+reduced to a parallel line map to `C alpha_hat` and a parallel rank-three map
+to `T^(0,1)*X`.
+
+T61 separately constructs the mixed `(1,1)` carrier
+`H1_v tensor H1_i`. Here the two quarter-turn signs cancel, and an exact
+symplectic map followed by the normalized Pauli transform gives
+`M2(C)=C I2 direct-sum sl2(C)`. This is the natural SpinC-adjoint `1+3`
+candidate, but it lies in finite degree two and therefore needs a selected
+totalization shift before it can replace T58's degree-one generator. `C4`
+alone leaves an eight-dimensional complex intertwiner space. The remaining
+selection is consequently a real connection/holonomy problem, with explicit
+curvature and Chern-class tests, rather than another basis search. Globally,
+the mixed carrier is `Hom(U_i,U_v) tensor det(U_i)`; its determinant twist is
+the shared-line lane and cannot be erased by a local epsilon frame. T61 keeps
+all physical blockers and counters open, adds no parameter or selector, and
+passes `46/46` builder checks, `41/41` independent checks and 14 focused
+tests; the full canonical repository suite passes all 581 tests.
