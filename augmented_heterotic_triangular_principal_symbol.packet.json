@@ -1,0 +1,1339 @@
+{
+  "schema": "boe.mtt.augmented-heterotic-triangular-principal-symbol.v1",
+  "claim_id": "CBF.T57",
+  "date": "2026-09-01",
+  "status": "EXACT_PROJECTOR_CORRECTED_TRIANGULAR_SYMBOL_AND_SAME_SOURCE_METRIC_NORMALIZATION_RECOVERY_CONDITIONAL_Q79_SOURCE_REDUCTION",
+  "source_provenance": {
+    "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+    "handoff_id": "9ff36ef1-eb65-4825-ab64-682c94e25968",
+    "source_checks": [
+      {
+        "id": "T56_THEOREM",
+        "path": "DiracDolbeaultPrincipalSymbolAndSameSourceMetricBridgeTheorem_v1.md",
+        "expected_sha256": "5e5703823ca4079716c93c4f80dfd7c44908caf9bd4a64b35c258c54d25889e6",
+        "actual_sha256": "5e5703823ca4079716c93c4f80dfd7c44908caf9bd4a64b35c258c54d25889e6",
+        "matches": true
+      },
+      {
+        "id": "T56_PACKET",
+        "path": "dirac_dolbeault_principal_symbol_bridge.packet.json",
+        "expected_sha256": "d9d455a1a727879e4f8bdbf17d4a0e3435b1ac2c22379e376069693751ca4576",
+        "actual_sha256": "d9d455a1a727879e4f8bdbf17d4a0e3435b1ac2c22379e376069693751ca4576",
+        "matches": true
+      },
+      {
+        "id": "T52_PACKET",
+        "path": "q79_hermitian_metric_hodge_compiler.packet.json",
+        "expected_sha256": "7b8683a56da2cb9773a933502790e06e91ca478624573240e2db0fefc87586c4",
+        "actual_sha256": "7b8683a56da2cb9773a933502790e06e91ca478624573240e2db0fefc87586c4",
+        "matches": true
+      },
+      {
+        "id": "T55_PACKET",
+        "path": "same_source_principal_symbol_metric_hodge_naturality.packet.json",
+        "expected_sha256": "98795072d9d35c40120a86340050b2a5f7e865ec7b4c1a9e651c88cd924cce03",
+        "actual_sha256": "98795072d9d35c40120a86340050b2a5f7e865ec7b4c1a9e651c88cd924cce03",
+        "matches": true
+      },
+      {
+        "id": "AUGMENTED_COMPILER_AUDIT",
+        "path": "augmented_heterotic_triangular_external_source.audit.json",
+        "expected_sha256": "209cc8ae24038fdab9f5ef28fac78d3b169ec5f6d771824f71ccec0758fc1b81",
+        "actual_sha256": "209cc8ae24038fdab9f5ef28fac78d3b169ec5f6d771824f71ccec0758fc1b81",
+        "matches": true
+      }
+    ],
+    "all_sources_hash_locked": true,
+    "external_audit": {
+      "schema": "boe.mtt.external-source-audit.v1",
+      "audit_id": "CBF.T57.AUDIT",
+      "date": "2026-09-01",
+      "role": "source_locked_design_input_not_a_selected_physical_endpoint",
+      "source_repository": {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/20 Mathematical Language Discovery Program - Closure Dynamics",
+        "git_head": "aafecf2201ab5573b63968175592062d91d10a0a",
+        "read_only_during_CBF_T57": true
+      },
+      "sources": [
+        {
+          "id": "Q79_AUGMENTED_ENDPOINT_THEOREM",
+          "path": "Q79_AUGMENTED_ENDPOINT_HILBERT_SPECTRAL_COMPILER_THEOREM_v1.md",
+          "sha256": "77453971f76294863f6acda44d3051143376497375452322a114d3a83ab7ea24",
+          "accepted_content": "The corrected upper complex is triangular: Y_n=Omega^(0,n)(Q_phys) direct-sum Omega^(0,n+1)(X), with diagonal Dolbeault lanes and alternating first-order partial lane.",
+          "scope_boundary": "The theorem assumes a selected compact endpoint, pairing and Hilbert data; it does not emit the physical q79 source or calculate the complete cotangent Hodge principal symbol."
+        },
+        {
+          "id": "Q79_AUGMENTED_ENDPOINT_PACKET",
+          "path": "q79_augmented_endpoint_hilbert_spectral_compiler.packet.json",
+          "sha256": "8024814dcbcfd3fc24231cb5ad1fbc77f9ffc16b42742bdcf338f689f9ff53f0",
+          "accepted_content": "The finite weighted witness validates nilpotence, adjoints, Hodge positivity, compact-resolvent reduction and Galerkin convergence for supplied data.",
+          "scope_boundary": "Its finite witness is not the physical rank-102 q79 endpoint and does not select its metric, connection, density or relative lane normalization."
+        }
+      ],
+      "joint_conclusion": {
+        "triangular_complex_formula_is_adopted": true,
+        "first_order_partial_lane_must_be_included_in_principal_symbol": true,
+        "selected_physical_q79_endpoint_is_present": false,
+        "selected_physical_relative_lane_normalization_is_present": false,
+        "selected_visible_hidden_HYM_connection_is_present": false
+      }
+    },
+    "external_sources_are_audited_design_inputs_not_runtime_dependencies": true
+  },
+  "triangular_symbol_theorem": {
+    "complex": "Y_n=Omega^(0,n)(Q) direct-sum Omega^(0,n+1)(X)",
+    "differential": "L_n=[[dbar_Q,a(-1)^n partial],[0,dbar]]",
+    "partial_coefficient_a": "1/2",
+    "relative_lane_normalization_symbol": "rho=m_Q/m_shifted",
+    "degree_one_formula": "sigma_2(Delta_Y,1)(xi)=q(xi)I+a^2 rho q(xi)P_xi",
+    "projector_formula": "P_xi=(p_alpha tensor I_Lambda01) direct-sum I_Lambda02",
+    "projector_rank": 6,
+    "off_diagonal_second_order_terms_cancel": true,
+    "full_augmented_symbol_is_scalar": false,
+    "eigenvalues": [
+      "q",
+      "q(1+a^2 rho)"
+    ],
+    "relative_normalization_recovery": "rho=(lambda_high/lambda_low-1)/a^2",
+    "general_degree_one_dimension": "3r+3",
+    "general_multiplicities": {
+      "baseline": "3r-3",
+      "elevated": 6
+    },
+    "normalized_trace_factor": "1+2a^2 rho/(r+1)",
+    "T56_scope_correction": "T56 applies to the diagonal Dirac/Dolbeault blocks; T57 is required for the full first-order triangular totalization."
+  },
+  "exact_six_dimensional_witness": {
+    "real_dimension": 6,
+    "complex_dimension": 3,
+    "Q_rank": 4,
+    "degree_one_dimension": 15,
+    "partial_coefficient_a": "1/2",
+    "relative_lane_normalization_fixture_rho": "1",
+    "relative_lane_normalization_fixture_is_physical": false,
+    "coframe": [
+      [
+        "1",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "covariant_metric_G": [
+      [
+        "1",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "3",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "-1",
+        "1",
+        "0",
+        "3",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "-1",
+        "3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "3"
+      ]
+    ],
+    "contravariant_metric_H": [
+      [
+        "7",
+        "0",
+        "-3",
+        "3",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "7",
+        "-3",
+        "-3",
+        "0",
+        "2"
+      ],
+      [
+        "-3",
+        "-3",
+        "3",
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "3",
+        "-3",
+        "0",
+        "3",
+        "1",
+        "-1"
+      ],
+      [
+        "2",
+        "0",
+        "-1",
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "sample_count": 21,
+    "samples": [
+      {
+        "label": "e1",
+        "row": 0,
+        "column": null,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "7",
+        "complex_symbol_beta": [
+          "1",
+          "-1+i",
+          "2"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "a3d74f692c171f6e3b64bd3214785b041a274587d1f27be45b68bc1baec06b8a",
+        "projector_sha256": "4a67fbfefe99c3ecec8365e3dd3e718495c1b7536f46d676c7df89215ba51f78",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "7",
+        "elevated_eigenvalue": "35/4",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "77/10",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "49"
+      },
+      {
+        "label": "e1+e2",
+        "row": 0,
+        "column": 1,
+        "covector": [
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "14",
+        "complex_symbol_beta": [
+          "1+i",
+          "-2",
+          "2+2i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "96243b94ce2be764013eedfaae7fe9bb518405112e27352ab01dceb7e720fb59",
+        "projector_sha256": "4a67fbfefe99c3ecec8365e3dd3e718495c1b7536f46d676c7df89215ba51f78",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "14",
+        "elevated_eigenvalue": "35/2",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "77/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "98"
+      },
+      {
+        "label": "e1+e3",
+        "row": 0,
+        "column": 2,
+        "covector": [
+          "1",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "4",
+        "complex_symbol_beta": [
+          "1",
+          "i",
+          "1-i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "cb91fd753a3b347f04016fb620e4ff48b69e4f3494669f098b3307ef71ea9607",
+        "projector_sha256": "d0d01a05fd270bc61d007e34af3aadb8b3719a8c60843472fb39c214d48d6ebf",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "4",
+        "elevated_eigenvalue": "5",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "22/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "28"
+      },
+      {
+        "label": "e1+e4",
+        "row": 0,
+        "column": 3,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "16",
+        "complex_symbol_beta": [
+          "1",
+          "-1+2i",
+          "3-i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "80077315e2498c65c94db49c313936115ab4cd3e186b08f89aa5c729b2fe165c",
+        "projector_sha256": "25183a50afb1360d24da26ed2d4cbe18e6bc8565f118c26ece9da1835e4a8465",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "16",
+        "elevated_eigenvalue": "20",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "88/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "112"
+      },
+      {
+        "label": "e1+e5",
+        "row": 0,
+        "column": 4,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "metric_quadratic_q": "12",
+        "complex_symbol_beta": [
+          "1",
+          "-1+i",
+          "3"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "4b0f711386e915df08a5cdd199a737b2cf4581f3037c67d75857b0bf42df6a77",
+        "projector_sha256": "1f357766f45499d3373241e3dc5c2824c78769b2f6dce46058ac4d1702ad324d",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "12",
+        "elevated_eigenvalue": "15",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "66/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "84"
+      },
+      {
+        "label": "e1+e6",
+        "row": 0,
+        "column": 5,
+        "covector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "metric_quadratic_q": "8",
+        "complex_symbol_beta": [
+          "1",
+          "-1+i",
+          "2+i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "1ca154f02b806ba5e873f8db5e4a9c9d5f79cf4d1c648575406809c8e3b68309",
+        "projector_sha256": "2bfb9da4f01ce95cae5b6531a73cd4f01a074687523a292cbef0eff0beb441a3",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "8",
+        "elevated_eigenvalue": "10",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "44/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "56"
+      },
+      {
+        "label": "e2",
+        "row": 1,
+        "column": null,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "7",
+        "complex_symbol_beta": [
+          "i",
+          "-1-i",
+          "2i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "a3d74f692c171f6e3b64bd3214785b041a274587d1f27be45b68bc1baec06b8a",
+        "projector_sha256": "4a67fbfefe99c3ecec8365e3dd3e718495c1b7536f46d676c7df89215ba51f78",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "7",
+        "elevated_eigenvalue": "35/4",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "77/10",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "49"
+      },
+      {
+        "label": "e2+e3",
+        "row": 1,
+        "column": 2,
+        "covector": [
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "4",
+        "complex_symbol_beta": [
+          "i",
+          "-i",
+          "-1+i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "8f3c7055863b1640a2e46528d0c086f3c64fe28efd789b5510317538c714f58c",
+        "projector_sha256": "4dbd1cff3da68fe8d2db43a1353fbb97f3e069514a74147a27cd91b2f4ee8302",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "4",
+        "elevated_eigenvalue": "5",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "22/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "28"
+      },
+      {
+        "label": "e2+e4",
+        "row": 1,
+        "column": 3,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "4",
+        "complex_symbol_beta": [
+          "i",
+          "-1",
+          "1+i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "cb91fd753a3b347f04016fb620e4ff48b69e4f3494669f098b3307ef71ea9607",
+        "projector_sha256": "d0d01a05fd270bc61d007e34af3aadb8b3719a8c60843472fb39c214d48d6ebf",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "4",
+        "elevated_eigenvalue": "5",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "22/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "28"
+      },
+      {
+        "label": "e2+e5",
+        "row": 1,
+        "column": 4,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "metric_quadratic_q": "8",
+        "complex_symbol_beta": [
+          "i",
+          "-1-i",
+          "1+2i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "cc4c5fc8324aec4426d95b89778e59237b19db99ef785d6e51c16da8e2721332",
+        "projector_sha256": "9388e39f0953a62704dd247c0856c0bdcb28c8701e6b32b05ceec1630f549b9f",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "8",
+        "elevated_eigenvalue": "10",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "44/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "56"
+      },
+      {
+        "label": "e2+e6",
+        "row": 1,
+        "column": 5,
+        "covector": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "metric_quadratic_q": "12",
+        "complex_symbol_beta": [
+          "i",
+          "-1-i",
+          "3i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "4b0f711386e915df08a5cdd199a737b2cf4581f3037c67d75857b0bf42df6a77",
+        "projector_sha256": "1f357766f45499d3373241e3dc5c2824c78769b2f6dce46058ac4d1702ad324d",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "12",
+        "elevated_eigenvalue": "15",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "66/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "84"
+      },
+      {
+        "label": "e3",
+        "row": 2,
+        "column": null,
+        "covector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "3",
+        "complex_symbol_beta": [
+          "0",
+          "1",
+          "-1-i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "88d4e7e53bfe987d184777d25b4bb8a29eddf7a1e5607584f4cb47706d4625c3",
+        "projector_sha256": "cdced739b9c0457d45d3745535b160585aabff7d0e932ba2511714dd1a4ceee5",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "3",
+        "elevated_eigenvalue": "15/4",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "33/10",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "21"
+      },
+      {
+        "label": "e3+e4",
+        "row": 2,
+        "column": 3,
+        "covector": [
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "6",
+        "complex_symbol_beta": [
+          "0",
+          "1+i",
+          "-2i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "21ae14cbbc6410fdf43a00982d7f91fa20e7bcf245aca5a289abbff9e50598e1",
+        "projector_sha256": "cdced739b9c0457d45d3745535b160585aabff7d0e932ba2511714dd1a4ceee5",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "6",
+        "elevated_eigenvalue": "15/2",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "33/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "42"
+      },
+      {
+        "label": "e3+e5",
+        "row": 2,
+        "column": 4,
+        "covector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        "metric_quadratic_q": "2",
+        "complex_symbol_beta": [
+          "0",
+          "1",
+          "-i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "56fcd5c9eaec8510690f1516d54909713d5058c2722c0c8658bed1fee57e2869",
+        "projector_sha256": "e8001f0f020f82a7454536b2098da9235968dbe0bceb668a172b2b9b35f0b68f",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "2",
+        "elevated_eigenvalue": "5/2",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "11/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "14"
+      },
+      {
+        "label": "e3+e6",
+        "row": 2,
+        "column": 5,
+        "covector": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1"
+        ],
+        "metric_quadratic_q": "2",
+        "complex_symbol_beta": [
+          "0",
+          "1",
+          "-1"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "6c82c92cb795970f3cf1a3a77c36c33dd0d5b06ada887d13cbe600c192dcc74c",
+        "projector_sha256": "11958c9014de09d7dd6b81a8591160b5d459555176c42d1f191c077b8607a243",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "2",
+        "elevated_eigenvalue": "5/2",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "11/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "14"
+      },
+      {
+        "label": "e4",
+        "row": 3,
+        "column": null,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "metric_quadratic_q": "3",
+        "complex_symbol_beta": [
+          "0",
+          "i",
+          "1-i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "88d4e7e53bfe987d184777d25b4bb8a29eddf7a1e5607584f4cb47706d4625c3",
+        "projector_sha256": "cdced739b9c0457d45d3745535b160585aabff7d0e932ba2511714dd1a4ceee5",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "3",
+        "elevated_eigenvalue": "15/4",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "33/10",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "21"
+      },
+      {
+        "label": "e4+e5",
+        "row": 3,
+        "column": 4,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0"
+        ],
+        "metric_quadratic_q": "6",
+        "complex_symbol_beta": [
+          "0",
+          "i",
+          "2-i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "afa3d4df889a04c8721f303ee018d2d56893428d360c9c995ef329efabf96aed",
+        "projector_sha256": "85ad1a31b44a291504471736bb817151bee0a5a39a77323b88d28c71f9f12709",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "6",
+        "elevated_eigenvalue": "15/2",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "33/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "42"
+      },
+      {
+        "label": "e4+e6",
+        "row": 3,
+        "column": 5,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "1"
+        ],
+        "metric_quadratic_q": "2",
+        "complex_symbol_beta": [
+          "0",
+          "i",
+          "1"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "56fcd5c9eaec8510690f1516d54909713d5058c2722c0c8658bed1fee57e2869",
+        "projector_sha256": "e8001f0f020f82a7454536b2098da9235968dbe0bceb668a172b2b9b35f0b68f",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "2",
+        "elevated_eigenvalue": "5/2",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "11/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "14"
+      },
+      {
+        "label": "e5",
+        "row": 4,
+        "column": null,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "metric_quadratic_q": "1",
+        "complex_symbol_beta": [
+          "0",
+          "0",
+          "1"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "5a159f8e7eaf39510cd5be87fc8120e8161af743414f5faba7e9d97d94188adb",
+        "projector_sha256": "b0694fb8cc17d0cb812d7fd3386347dc8ddd4fcb447307f0fd47fd5f77b0f696",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "1",
+        "elevated_eigenvalue": "5/4",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "11/10",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "7"
+      },
+      {
+        "label": "e5+e6",
+        "row": 4,
+        "column": 5,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        "metric_quadratic_q": "2",
+        "complex_symbol_beta": [
+          "0",
+          "0",
+          "1+i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "82a3ddb6acca60032649b91d3e8e504b6ab2be8c1585b819b6f3885bde0fa220",
+        "projector_sha256": "b0694fb8cc17d0cb812d7fd3386347dc8ddd4fcb447307f0fd47fd5f77b0f696",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "2",
+        "elevated_eigenvalue": "5/2",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "11/5",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "14"
+      },
+      {
+        "label": "e6",
+        "row": 5,
+        "column": null,
+        "covector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "metric_quadratic_q": "1",
+        "complex_symbol_beta": [
+          "0",
+          "0",
+          "i"
+        ],
+        "nilpotence_exact": true,
+        "nilpotence_sha256": "1cc62edde28b26b1766136be2ca9af784f2e0c2c071efa608377530cbaccbbe0",
+        "Hodge_symbol_sha256": "5a159f8e7eaf39510cd5be87fc8120e8161af743414f5faba7e9d97d94188adb",
+        "projector_sha256": "b0694fb8cc17d0cb812d7fd3386347dc8ddd4fcb447307f0fd47fd5f77b0f696",
+        "projector_exact": true,
+        "projector_rank": 6,
+        "off_diagonal_second_order_cancellation": true,
+        "baseline_eigenvalue": "1",
+        "elevated_eigenvalue": "5/4",
+        "baseline_multiplicity": 9,
+        "elevated_multiplicity": 6,
+        "two_level_identity_exact": true,
+        "normalized_trace": "11/10",
+        "normalized_trace_factor": "11/10",
+        "scalar_ansatz_residual_rank": 6,
+        "corrected_baseline_action_scalar": "7"
+      }
+    ],
+    "all_complex_symbols_nilpotent": true,
+    "all_Hodge_off_diagonal_second_order_blocks_cancel": true,
+    "all_corrections_are_rank_six_orthogonal_projectors": true,
+    "all_symbols_have_exactly_two_levels": true,
+    "scalar_full_symbol_negative_control_passes": true,
+    "baseline_multiplicity": 9,
+    "elevated_multiplicity": 6,
+    "normalized_trace_factor": "11/10",
+    "recovered_relative_lane_normalization": "1"
+  },
+  "q79_rank102_specialization": {
+    "Q_rank": 102,
+    "degree_one_dimension": 309,
+    "projector_rank": 6,
+    "baseline_multiplicity": 303,
+    "elevated_multiplicity": 6,
+    "partial_coefficient_a": "1/2",
+    "normalized_trace_factor_formula": "1+rho/206",
+    "rho_one_benchmark_trace_factor": "207/206",
+    "rho_one_benchmark_is_physical": false,
+    "relative_normalization_is_spectrally_observable": true
+  },
+  "same_source_recovery": {
+    "action_scale_fixture": "7",
+    "action_scale_fixture_is_physical": false,
+    "density_fixture": "1",
+    "trace_correction": "11/10",
+    "action_quadratic_A": [
+      [
+        "49",
+        "0",
+        "-21",
+        "21",
+        "14",
+        "0"
+      ],
+      [
+        "0",
+        "49",
+        "-21",
+        "-21",
+        "0",
+        "14"
+      ],
+      [
+        "-21",
+        "-21",
+        "21",
+        "0",
+        "-7",
+        "-7"
+      ],
+      [
+        "21",
+        "-21",
+        "0",
+        "21",
+        "7",
+        "-7"
+      ],
+      [
+        "14",
+        "0",
+        "-7",
+        "7",
+        "7",
+        "0"
+      ],
+      [
+        "0",
+        "14",
+        "-7",
+        "-7",
+        "0",
+        "7"
+      ]
+    ],
+    "reconstructed_action_quadratic_A": [
+      [
+        "49",
+        "0",
+        "-21",
+        "21",
+        "14",
+        "0"
+      ],
+      [
+        "0",
+        "49",
+        "-21",
+        "-21",
+        "0",
+        "14"
+      ],
+      [
+        "-21",
+        "-21",
+        "21",
+        "0",
+        "-7",
+        "-7"
+      ],
+      [
+        "21",
+        "-21",
+        "0",
+        "21",
+        "7",
+        "-7"
+      ],
+      [
+        "14",
+        "0",
+        "-7",
+        "7",
+        "7",
+        "0"
+      ],
+      [
+        "0",
+        "14",
+        "-7",
+        "-7",
+        "0",
+        "7"
+      ]
+    ],
+    "recovered_action_scale": "7",
+    "recovered_covector_metric_H": [
+      [
+        "7",
+        "0",
+        "-3",
+        "3",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "7",
+        "-3",
+        "-3",
+        "0",
+        "2"
+      ],
+      [
+        "-3",
+        "-3",
+        "3",
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "3",
+        "-3",
+        "0",
+        "3",
+        "1",
+        "-1"
+      ],
+      [
+        "2",
+        "0",
+        "-1",
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "recovered_covariant_metric_G": [
+      [
+        "1",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "3",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "-1",
+        "1",
+        "0",
+        "3",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "-1",
+        "3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "3"
+      ]
+    ],
+    "recovered_relative_lane_normalization": "1",
+    "action_quadratic_reconstruction_exact": true,
+    "action_scale_reconstruction_exact": true,
+    "metric_reconstruction_exact": true,
+    "inverse_metric_reconstruction_exact": true,
+    "Hodge_reconstruction_sha256": "871f4f10b0cd09e38a48327b30c1642ea2189f3318b2bd93eb6b658eaca2cc65",
+    "source_T55_Hodge_sha256": "871f4f10b0cd09e38a48327b30c1642ea2189f3318b2bd93eb6b658eaca2cc65",
+    "Hodge_reconstruction_matches_T55": true
+  },
+  "q79_source_contract_update": {
+    "before": "full augmented Hodge symbol was implicitly treated as a scalar T56 input",
+    "after": "full augmented symbol is a canonical rank-six projector correction whose two levels emit rho and whose corrected baseline feeds T55",
+    "independent_scalar_full_symbol_obligation": "REMOVED_AS_FALSE_REQUIREMENT",
+    "independent_relative_lane_normalization_after_full_selected_symbol": 0,
+    "independent_metric_payload_after_full_selected_symbol_and_density": 0,
+    "selected_physical_q79_augmented_complex": "OPEN",
+    "selected_physical_q79_density": "OPEN",
+    "selected_visible_hidden_HYM_connection": "OPEN",
+    "selected_domain_projector_and_reduced_Green": "OPEN",
+    "selected_C4_TT_naturality_and_error_bounds": "OPEN"
+  },
+  "parameter_ledger": {
+    "continuous_physical_parameters_added": 0,
+    "discrete_selectors_added": 0,
+    "observed_values_used": 0,
+    "fitted_values_used": 0,
+    "rho_one_is_only_a_witness_fixture": true,
+    "rho_is_recovered_not_fitted_once_full_symbol_is_selected": true,
+    "one_shared_action_primitive_status": "OPEN_UNCHANGED"
+  },
+  "physical_boundary": {
+    "B_GEO_01_closed": false,
+    "B_ACTION_01_closed": false,
+    "B_OP_01_closed": false,
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    },
+    "selected_physical_endpoint_claimed": false,
+    "selected_physical_relative_normalization_claimed": false
+  },
+  "exact_payload_sha256": "d10a306406bbcf0b80a18ebda3240bc8a513af1c5027a6f23d8bbaa2614727ff",
+  "checks": {
+    "schema_identifier": true,
+    "schema_required_fields": true,
+    "claim_id": true,
+    "theorem_states_non_scalar_formula": true,
+    "theorem_states_q79_multiplicities": true,
+    "theorem_preserves_physical_boundary": true,
+    "source_hashes_match": true,
+    "external_sources_are_nonruntime": true,
+    "audit_adopts_triangular_complex": true,
+    "audit_does_not_select_endpoint": true,
+    "coframe_determinant_one": true,
+    "coframe_nonorthogonal": true,
+    "metric_from_coframe": true,
+    "metric_inverse_exact": true,
+    "sample_count": true,
+    "all_nilpotence_exact": true,
+    "all_off_diagonal_cancel": true,
+    "all_projectors_exact": true,
+    "all_projector_ranks_six": true,
+    "all_two_level_identities": true,
+    "scalar_negative_control": true,
+    "witness_dimension": true,
+    "witness_multiplicities": true,
+    "witness_trace_factor": true,
+    "witness_rho_recovered": true,
+    "action_A_reconstructed": true,
+    "action_scale_recovered": true,
+    "inverse_metric_recovered": true,
+    "metric_recovered": true,
+    "Hodge_recovered": true,
+    "q79_dimension": true,
+    "q79_baseline_multiplicity": true,
+    "q79_elevated_multiplicity": true,
+    "q79_trace_factor": true,
+    "full_symbol_declared_nonscalar": true,
+    "T56_scope_corrected": true,
+    "scalar_requirement_removed": true,
+    "rho_not_duplicate_input": true,
+    "metric_not_duplicate_input": true,
+    "no_continuous_parameters": true,
+    "no_selectors": true,
+    "no_observed_values": true,
+    "no_fitted_values": true,
+    "rho_recovered_not_fitted": true,
+    "B_GEO_open": true,
+    "B_ACTION_open": true,
+    "B_OP_open": true,
+    "physical_gates_unchanged": true,
+    "physical_packets_unchanged": true,
+    "physical_rows_unchanged": true,
+    "no_selected_endpoint_claim": true,
+    "no_selected_rho_claim": true
+  },
+  "check_summary": {
+    "passed": 52,
+    "total": 52,
+    "all_passed": true
+  }
+}

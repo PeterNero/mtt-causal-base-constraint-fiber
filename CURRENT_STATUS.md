@@ -2213,3 +2213,44 @@ and continuum error certificate remain open. `B.GEO.01`, `B.ACTION.01` and
 `B.OP.01` remain open; physical acceptance stays `0/3` gates, `0/3` packets
 and `0/7` rows. T56 passes `46/46` builder checks and `53/53` independent
 checks, plus 13 focused tests; the full canonical suite passes all 511 tests.
+
+## CBF.T57 augmented triangular principal-symbol recovery
+
+`AugmentedHeteroticTriangularPrincipalSymbolMetricRecoveryTheorem_v1.md`
+computes the degree-one Hodge symbol of the corrected upper complex
+
+```text
+Y_n=Omega^(0,n)(Q) direct-sum Omega^(0,n+1)(X),
+L_n=[[dbar_Q,a(-1)^n partial],[0,dbar]].
+```
+
+The alternating sign makes the symbol complex nilpotent and cancels all mixed
+second-order Hodge blocks. The first-order `partial` lane still contributes a
+canonical rank-six orthogonal projector:
+
+```text
+sigma_2(Delta_Y,1)(xi)=q(xi)I+a^2 rho q(xi)P_xi.
+```
+
+The full augmented symbol is therefore not scalar. Its two levels `q` and
+`q(1+a^2 rho)` recover the relative Hilbert-lane normalization `rho`; their
+corrected baseline and the same-source density then recover the action scale,
+metric and Hodge response through T55/T52. An independent `rho` row and an
+independent metric payload are no longer required after selection of the full
+operator.
+
+The exact non-diagonal rank-four witness verifies nilpotence, mixed-block
+cancellation, rank-six projector structure and the two-level identity for all
+21 polarization covectors. Its degree-one multiplicities are `9+6`. For q79
+rank `102`, they become `303+6` in dimension `309`, and the normalized trace
+factor is `1+rho/206`. The witness value `rho=1`, and therefore `207/206`, is
+not a selected physical value.
+
+T57 restricts T56 to its correct diagonal Dirac/Dolbeault scope rather than
+retracting it. The selected augmented q79 endpoint, density, common
+visible-hidden HYM connection, domains, projectors, reduced Green operator,
+C4/TT naturality and finite/continuum error certificates remain open.
+`B.GEO.01`, `B.ACTION.01` and `B.OP.01` remain open; physical acceptance stays
+`0/3` gates, `0/3` packets and `0/7` rows. T57 adds no parameter or selector
+and passes `52/52` builder checks, `58/58` independent checks and 13 focused
+tests; the full canonical suite passes all 524 tests.

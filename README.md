@@ -1911,3 +1911,41 @@ None selects the physical six-dimensional endpoint. `B.GEO.01`,
 `B.ACTION.01` and `B.OP.01` remain open, with counters unchanged at `0/3`,
 `0/3`, `0/7`. T56 passes `46/46` builder checks and `53/53` independent
 checks, plus 13 focused tests; the full canonical suite passes all 511 tests.
+
+`AugmentedHeteroticTriangularPrincipalSymbolMetricRecoveryTheorem_v1.md`
+(`CBF.T57`) computes the principal symbol of the corrected upper heterotic
+totalization rather than treating it as one diagonal Dirac square. For
+
+```text
+Y_n=Omega^(0,n)(Q) direct-sum Omega^(0,n+1)(X),
+L_n=[[dbar_Q,a(-1)^n partial],[0,dbar]],
+```
+
+the alternating sign cancels every mixed second-order Hodge block. The
+first-order `partial` lane nevertheless leaves
+
+```text
+sigma_2(Delta_Y,1)(xi)=q(xi)I+a^2 rho q(xi)P_xi,
+```
+
+where `P_xi` is a canonical rank-six orthogonal projector. Thus the full
+symbol is not scalar. It has exactly two levels, `q` and `q(1+a^2 rho)`, so
+their ratio recovers the relative Hilbert-lane normalization `rho`. The
+corrected baseline then feeds T55 and T52 without a second `rho` row or metric
+table.
+
+The exact non-diagonal six-dimensional witness uses a rank-four `Q` carrier.
+Across all 21 polarization covectors, the triangular symbol is nilpotent, the
+mixed blocks cancel, the correction has exact rank six and the two-level
+identity holds. Its degree-one multiplicities are `9+6`; the q79 rank-102
+specialization is `303+6` in dimension `309`, with normalized trace factor
+`1+rho/206`. The benchmark `rho=1` gives `207/206`, but is explicitly not a
+physical q79 value.
+
+T57 corrects the scope of T56 without retracting it: T56 governs the diagonal
+Dolbeault blocks, while T57 governs their first-order triangular totalization.
+The physical augmented endpoint, density, visible-hidden HYM connection,
+domain, reduced Green operator and error certificates remain open. Counters
+stay `0/3`, `0/3`, `0/7`. T57 passes `52/52` builder checks, `58/58`
+independent checks and 13 focused tests; the full canonical suite passes all
+524 tests.

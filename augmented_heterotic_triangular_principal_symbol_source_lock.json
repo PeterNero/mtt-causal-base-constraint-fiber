@@ -1,0 +1,34 @@
+{
+  "schema": "boe.mtt.source-lock.v1",
+  "claim_id": "CBF.T57",
+  "date": "2026-09-01",
+  "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+  "handoff_id": "9ff36ef1-eb65-4825-ab64-682c94e25968",
+  "sources": [
+    {
+      "id": "T56_THEOREM",
+      "path": "DiracDolbeaultPrincipalSymbolAndSameSourceMetricBridgeTheorem_v1.md",
+      "sha256": "5e5703823ca4079716c93c4f80dfd7c44908caf9bd4a64b35c258c54d25889e6"
+    },
+    {
+      "id": "T56_PACKET",
+      "path": "dirac_dolbeault_principal_symbol_bridge.packet.json",
+      "sha256": "d9d455a1a727879e4f8bdbf17d4a0e3435b1ac2c22379e376069693751ca4576"
+    },
+    {
+      "id": "T52_PACKET",
+      "path": "q79_hermitian_metric_hodge_compiler.packet.json",
+      "sha256": "7b8683a56da2cb9773a933502790e06e91ca478624573240e2db0fefc87586c4"
+    },
+    {
+      "id": "T55_PACKET",
+      "path": "same_source_principal_symbol_metric_hodge_naturality.packet.json",
+      "sha256": "98795072d9d35c40120a86340050b2a5f7e865ec7b4c1a9e651c88cd924cce03"
+    },
+    {
+      "id": "AUGMENTED_COMPILER_AUDIT",
+      "path": "augmented_heterotic_triangular_external_source.audit.json",
+      "sha256": "209cc8ae24038fdab9f5ef28fac78d3b169ec5f6d771824f71ccec0758fc1b81"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.augmented-heterotic-triangular-principal-symbol.v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "triangular_symbol_theorem",
+    "exact_six_dimensional_witness",
+    "q79_rank102_specialization",
+    "same_source_recovery",
+    "q79_source_contract_update",
+    "parameter_ledger",
+    "physical_boundary",
+    "exact_payload_sha256",
+    "checks",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.augmented-heterotic-triangular-principal-symbol.v1"},
+    "claim_id": {"const": "CBF.T57"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "triangular_symbol_theorem": {"type": "object"},
+    "exact_six_dimensional_witness": {"type": "object"},
+    "q79_rank102_specialization": {"type": "object"},
+    "same_source_recovery": {"type": "object"},
+    "q79_source_contract_update": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "exact_payload_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "checks": {"type": "object"},
+    "check_summary": {"type": "object"}
+  },
+  "additionalProperties": true
+}
