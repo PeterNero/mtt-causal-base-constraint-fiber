@@ -1,15 +1,15 @@
 {
-  "active_result_index_rows": 88,
+  "active_result_index_rows": 90,
   "campaign": "q79_b89_recursive_replacement_campaign.json",
   "campaign_intervals_independently_verified_by_carrier": {
     "boundary": 255,
-    "branch": 228
+    "branch": 252
   },
   "campaign_job_count": 218,
-  "campaign_packets_independently_verified": 84,
+  "campaign_packets_independently_verified": 86,
   "campaign_packets_independently_verified_by_carrier": {
     "boundary": 65,
-    "branch": 19
+    "branch": 21
   },
   "campaign_verified_jobs": [
     {
@@ -1311,6 +1311,22 @@
     {
       "carrier": "branch",
       "edge": 1,
+      "id": "f2fddd37-4c14-4995-a1f8-538713de7b68",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "interval_range": [
+        361,
+        373
+      ],
+      "packet_sha256": "9f8d4ed01a931b5ac5134fc1060666544f6d628d6f71f16f6f6f04247fc952af",
+      "reported_process_state": "failed",
+      "result_capsule_sha256": "1f2f54b6f85f75b9ca145eaee895f05d1be1098317fae0f69db0d9543a384942",
+      "result_manifest_exit_code": 0,
+      "result_manifest_sha256": "a6964fa70d828e86e1095a5b5061469490e21de833523935a485c70e4786737a",
+      "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+    },
+    {
+      "carrier": "branch",
+      "edge": 1,
       "id": "265183b7-f0c9-487d-974b-1f49bb17c0bc",
       "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
       "interval_range": [
@@ -1355,26 +1371,54 @@
       "result_manifest_exit_code": 0,
       "result_manifest_sha256": "7b0e853c3b87d750ccbb61f25a1a3d885fd6ae1e95b2c2690050cb5c293b980e",
       "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+    },
+    {
+      "carrier": "branch",
+      "edge": 1,
+      "id": "9a2e7a1c-fb00-4d2f-b9cb-77d0a742870c",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "interval_range": [
+        468,
+        480
+      ],
+      "packet_sha256": "9374eb89d2b2c8f8dd25a105857927b4843c7ad1bdd7ac91144f657741fa1be8",
+      "reported_process_state": "failed",
+      "result_capsule_sha256": "dd02aa471db0d1a9f5fba8633ec26250a071f8b2d69eb46f93f4822fb9f85b60",
+      "result_manifest_exit_code": 0,
+      "result_manifest_sha256": "19e81fd05692e41e68367f4cb81eabcd82d07faca6af2db7466b53ebd4d434a1",
+      "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
     }
   ],
   "guardrails": {
     "failed_verifications_are_absent_from_the_result_index": true,
-    "recoverable_failed_process_labels_are_counted_only_after_zero_exit_capsule_and_independent_verification": true,
+    "recoverable_non_succeeded_process_labels_are_counted_only_after_zero_exit_capsule_and_independent_verification": true,
     "succeeded_processes_are_not_counted_without_independent_verification": true
   },
-  "newly_ingested": [],
-  "recoverable_failed_capsules_awaiting_independent_verification": 0,
-  "recoverable_failed_result_capsules_available": 4,
+  "newly_ingested": [
+    {
+      "carrier": "branch",
+      "checks": 10,
+      "edge": 1,
+      "id": "9a2e7a1c-fb00-4d2f-b9cb-77d0a742870c",
+      "interval_range": [
+        468,
+        480
+      ],
+      "packet_sha256": "9374eb89d2b2c8f8dd25a105857927b4843c7ad1bdd7ac91144f657741fa1be8"
+    }
+  ],
+  "recoverable_non_succeeded_capsules_awaiting_independent_verification": 0,
+  "recoverable_non_succeeded_result_capsules_available": 6,
   "runtime": {
     "absolute_path_recorded": false,
     "kind": "external durable job store supplied by CLI"
   },
   "schema": "mtt.cbf.q79-b89-recursive-replacement-campaign-status.v1",
   "states": {
-    "claimed": 4,
-    "failed": 4,
-    "queued": 122,
-    "running": 8,
+    "claimed": 6,
+    "failed": 6,
+    "queued": 120,
+    "running": 6,
     "succeeded": 80
   },
   "succeeded_capsules_awaiting_independent_verification": 0,

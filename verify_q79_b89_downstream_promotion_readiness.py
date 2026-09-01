@@ -84,7 +84,7 @@ def main() -> int:
         require(row["input_capsule_sha256"] == source["input_capsule_sha256"], "capsule")
         require(
             row.get("reported_process_state", "succeeded")
-            in {"succeeded", "failed"},
+            in {"succeeded", "failed", "running"},
             "process state",
         )
         require(row.get("result_manifest_exit_code", 0) == 0, "result exit")

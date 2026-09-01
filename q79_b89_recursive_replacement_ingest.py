@@ -119,13 +119,17 @@ def parse_verifier_output(output: str) -> dict:
     return payload
 
 
-def process_result_allowed(job: dict, allow_recoverable_failed: bool = False) -> bool:
+def process_result_allowed(
+    job: dict, allow_recoverable_non_succeeded: bool = False
+) -> bool:
     state = str(job.get("state", "unknown"))
     result_exit = job.get("result", {}).get("manifest", {}).get("exit_code")
     return (
         state == "succeeded" and job.get("exit_code") == 0
     ) or (
-        allow_recoverable_failed and state == "failed" and result_exit == 0
+        allow_recoverable_non_succeeded
+        and state in {"failed", "running"}
+        and result_exit == 0
     )
 
 
@@ -135,12 +139,12 @@ def verify_capsule(
     capsule_path: Path,
     result_root: Path,
     upstream_root: Path,
-    allow_recoverable_failed: bool = False,
+    allow_recoverable_non_succeeded: bool = False,
 ) -> tuple[dict, dict]:
     require(job["id"] == campaign_row["id"], "job id")
     process_state = str(job.get("state", "unknown"))
     require(
-        process_result_allowed(job, allow_recoverable_failed),
+        process_result_allowed(job, allow_recoverable_non_succeeded),
         "job emitted a zero-exit result in an allowed process state",
     )
     require(job["input_capsule"]["sha256"] == campaign_row["input_capsule_sha256"], "input capsule hash")
@@ -275,7 +279,7 @@ def main() -> int:
     ingested = []
     verification_failures = []
     succeeded_available = []
-    recoverable_failed_available = []
+    recoverable_non_succeeded_available = []
 
     for campaign_row in campaign["jobs"]:
         job_id = campaign_row["id"]
@@ -288,21 +292,21 @@ def main() -> int:
         statuses[state] += 1
         result_available = job.get("result", {}).get("available") is True
         is_succeeded_result = state == "succeeded" and result_available
-        is_recoverable_failed_result = (
-            state == "failed"
+        is_recoverable_non_succeeded_result = (
+            state in {"failed", "running"}
             and job.get("result", {}).get("manifest", {}).get("exit_code") == 0
             and result_available
         )
         if is_succeeded_result:
             succeeded_available.append(job_id)
-        if is_recoverable_failed_result:
-            recoverable_failed_available.append(job_id)
-        if not (is_succeeded_result or is_recoverable_failed_result):
+        if is_recoverable_non_succeeded_result:
+            recoverable_non_succeeded_available.append(job_id)
+        if not (is_succeeded_result or is_recoverable_non_succeeded_result):
             continue
         requested = (
             (is_succeeded_result and args.ingest_succeeded)
             or (
-                is_recoverable_failed_result
+                is_recoverable_non_succeeded_result
                 and args.ingest_recoverable_results
             )
         )
@@ -319,7 +323,7 @@ def main() -> int:
                 root / job_id / "result-capsule.zip",
                 result_root,
                 upstream_root,
-                allow_recoverable_failed=is_recoverable_failed_result,
+                allow_recoverable_non_succeeded=is_recoverable_non_succeeded_result,
             )
             indexed[job_id] = row
             ingested.append(
@@ -370,8 +374,8 @@ def main() -> int:
         },
         "states": dict(sorted(statuses.items())),
         "succeeded_result_capsules_available": len(succeeded_available),
-        "recoverable_failed_result_capsules_available": len(
-            recoverable_failed_available
+        "recoverable_non_succeeded_result_capsules_available": len(
+            recoverable_non_succeeded_available
         ),
         "active_result_index_rows": len(index["jobs"]),
         "campaign_packets_independently_verified": len(verified_campaign_rows),
@@ -411,15 +415,15 @@ def main() -> int:
         "succeeded_capsules_awaiting_independent_verification": len(
             set(succeeded_available) - {row["id"] for row in verified_campaign_rows}
         ),
-        "recoverable_failed_capsules_awaiting_independent_verification": len(
-            set(recoverable_failed_available)
+        "recoverable_non_succeeded_capsules_awaiting_independent_verification": len(
+            set(recoverable_non_succeeded_available)
             - {row["id"] for row in verified_campaign_rows}
         ),
         "newly_ingested": ingested,
         "verification_failures": verification_failures,
         "guardrails": {
             "succeeded_processes_are_not_counted_without_independent_verification": True,
-            "recoverable_failed_process_labels_are_counted_only_after_zero_exit_capsule_and_independent_verification": True,
+            "recoverable_non_succeeded_process_labels_are_counted_only_after_zero_exit_capsule_and_independent_verification": True,
             "failed_verifications_are_absent_from_the_result_index": True,
         },
     }

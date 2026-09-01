@@ -34,9 +34,9 @@
       "target_intervals": 2195
     },
     "branch": {
-      "campaign_delta_intervals": 228,
-      "campaign_verified_packets": 19,
-      "certified_intervals": 606,
+      "campaign_delta_intervals": 252,
+      "campaign_verified_packets": 21,
+      "certified_intervals": 630,
       "complete": false,
       "missing_ranges": {
         "0": [],
@@ -47,10 +47,14 @@
           ],
           [
             349,
-            373
+            361
           ],
           [
             409,
+            468
+          ],
+          [
+            480,
             857
           ]
         ],
@@ -120,9 +124,9 @@
       "sha256": "587a56925441af06ab7e779618699fe6316ad16bc19ef27482478ff9820f1853"
     },
     "campaign_status": {
-      "bytes": 62889,
+      "bytes": 64649,
       "path": "mtt-causal-base-constraint-fiber/q79_b89_recursive_replacement_campaign_status.json",
-      "sha256": "87fa9fb2f39755b63395a920cbbddb91ad5620717f71454d95c18f0a0a69a8e9"
+      "sha256": "06c55ea55e9e21eef949e1ae78a337b239301c26ff9de1e925379f78c726573a"
     },
     "common_grid_Artin": {
       "bytes": 1856413,

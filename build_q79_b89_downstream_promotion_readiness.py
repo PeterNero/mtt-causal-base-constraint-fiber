@@ -121,7 +121,7 @@ def main() -> int:
         require(row["input_capsule_sha256"] == source["input_capsule_sha256"], f"input {row['id']}")
         require(
             row.get("reported_process_state", "succeeded")
-            in {"succeeded", "failed"},
+            in {"succeeded", "failed", "running"},
             f"process state {row['id']}",
         )
         require(row.get("result_manifest_exit_code", 0) == 0, f"result exit {row['id']}")

@@ -52,6 +52,15 @@ class RecursiveReplacementIngestTests(unittest.TestCase):
         job["result"]["manifest"]["exit_code"] = 1
         self.assertFalse(MODULE.process_result_allowed(job, True))
 
+    def test_running_state_with_completed_result_uses_the_same_explicit_gate(self) -> None:
+        job = {
+            "state": "running",
+            "exit_code": None,
+            "result": {"manifest": {"exit_code": 0}},
+        }
+        self.assertFalse(MODULE.process_result_allowed(job))
+        self.assertTrue(MODULE.process_result_allowed(job, True))
+
     def test_succeeded_zero_exit_remains_allowed(self) -> None:
         self.assertTrue(
             MODULE.process_result_allowed({"state": "succeeded", "exit_code": 0})

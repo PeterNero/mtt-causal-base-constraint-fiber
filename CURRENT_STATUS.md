@@ -2115,15 +2115,15 @@ rejection replay. Its current decision is
 
 ### 2026-09-01 live B89 promotion checkpoint
 
-The cumulative requester-side audit now accepts 84 campaign capsules: all 65
-boundary packets and 19 branch packets. Every accepted capsule passed archive,
+The cumulative requester-side audit now accepts 86 campaign capsules: all 65
+boundary packets and 21 branch packets. Every accepted capsule passed archive,
 manifest, requested-range, payload-hash and independent scientific-verifier
 checks. There are no scientific verification failures and no successful
 capsules awaiting audit. Exact carrier coverage is now
 
 ```text
 boundary carrier: 2195/2195, complete
-branch carrier:     606/2195, incomplete
+branch carrier:     630/2195, incomplete
 ```
 
 The newly accepted successful ranges include edge 1 `[288,324)`. Four further
@@ -2132,10 +2132,14 @@ zero-exit result capsule. Their exact ranges `[337,349)`, `[373,385)`,
 `[385,397)` and `[397,409)` were recovered only after result-manifest,
 capsule, payload and independent `10/10` verifier checks. The ledger preserves
 their reported process state instead of rewriting it as success. The remaining
-exact branch gaps are edge 1 `[324,336)`, `[349,373)` and `[409,857)`, edge 2
-`[1,678)`, and edge 3 `[1,429)`, totaling 1,589 intervals. At this snapshot 8
-jobs are running, 4 are claimed and 122 are queued; process state remains
-non-evidence until ingested.
+exact branch gaps are edge 1 `[324,336)`, `[349,361)`, `[409,468)` and
+`[480,857)`, edge 2 `[1,678)`, and edge 3 `[1,429)`, totaling 1,565
+intervals. A fifth
+timeout-labeled result, `[361,373)`, was recovered while its orchestration
+record still said running, using the same immutable zero-exit capsule and
+independent-verifier gate, followed by `[468,480)` under the same rule. At
+this snapshot 6 jobs are running, 6 are claimed and 120 are queued; process
+state remains non-evidence until ingested.
 
 The finish-line transition has also been hardened. CBF.T54 no longer assumes
 that the branch must remain incomplete: it independently emits

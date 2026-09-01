@@ -3,7 +3,7 @@
   "campaign_set": "adaptive",
   "coverage": {
     "carrier": "branch",
-    "certified_intervals": 606,
+    "certified_intervals": 630,
     "complete": false,
     "missing_ranges": {
       "0": [],
@@ -14,10 +14,14 @@
         ],
         [
           349,
-          373
+          361
         ],
         [
           409,
+          468
+        ],
+        [
+          480,
           857
         ]
       ],
@@ -34,7 +38,7 @@
         ]
       ]
     },
-    "shards": 38,
+    "shards": 40,
     "target_intervals": 2195
   },
   "jobs": [
@@ -781,6 +785,28 @@
       "retrieved_payload_sha256": "e4b5b151403f0c144f114c5cc68ca26b29dc621ad93c1822745410120be92bfa"
     },
     {
+      "assigned_agent": "pinero-t53-09",
+      "checkpoint_complete": true,
+      "edge": 1,
+      "id": "f2fddd37-4c14-4995-a1f8-538713de7b68",
+      "independent_verification": {
+        "packet_sha256": "9f8d4ed01a931b5ac5134fc1060666544f6d628d6f71f16f6f6f04247fc952af",
+        "passed": true,
+        "passed_checks": 10,
+        "total_checks": 10,
+        "verifier": "C:\\Users\\nero_\\AppData\\Local\\Programs\\Python\\Python314\\python.exe C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-causal-base-constraint-fiber\\verify_q79_b89_accelerated_adaptive_source_isotopy.py --packet C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-causal-base-constraint-fiber\\q79_b89_accelerated_source_isotopy_results\\v2\\f2fddd37-4c14-4995-a1f8-538713de7b68\\t53-v2-adaptive-branch-e1-i361-373.json --baseline-root C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus --source C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_relative_adjoint_compiler\\q79_eta9_b89_relative_adjoint_worker_input.json --guides C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_family_branch_braid_pilot\\kernel_inputs\\right80-edge1-guides.npz --metadata C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_family_branch_braid_pilot\\kernel_inputs\\right80-edge1-guides.json",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+      },
+      "interval_range": [
+        361,
+        373
+      ],
+      "observed_state": "succeeded",
+      "packet_schema": "mtt.preprojection.q79-eta9-b89-adaptive-family-taylor-krawczyk.v1",
+      "retrieved_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_results/v2/f2fddd37-4c14-4995-a1f8-538713de7b68/t53-v2-adaptive-branch-e1-i361-373.json",
+      "retrieved_payload_sha256": "9f8d4ed01a931b5ac5134fc1060666544f6d628d6f71f16f6f6f04247fc952af"
+    },
+    {
       "assigned_agent": "pinero-t53-01",
       "checkpoint_complete": true,
       "edge": 1,
@@ -845,6 +871,28 @@
       "packet_schema": "mtt.preprojection.q79-eta9-b89-adaptive-family-taylor-krawczyk.v1",
       "retrieved_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_results/v2/b796b64a-0711-4b8a-a720-bff520410097/t53-v2-adaptive-branch-e1-i397-409.json",
       "retrieved_payload_sha256": "e27ec8d0fcb3ed51a56a0a1ba6ea8ce1a58fc3f806ec0b604ba4247358ecd80a"
+    },
+    {
+      "assigned_agent": "pinero-t53-10",
+      "checkpoint_complete": true,
+      "edge": 1,
+      "id": "9a2e7a1c-fb00-4d2f-b9cb-77d0a742870c",
+      "independent_verification": {
+        "packet_sha256": "9374eb89d2b2c8f8dd25a105857927b4843c7ad1bdd7ac91144f657741fa1be8",
+        "passed": true,
+        "passed_checks": 10,
+        "total_checks": 10,
+        "verifier": "C:\\Users\\nero_\\AppData\\Local\\Programs\\Python\\Python314\\python.exe C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-causal-base-constraint-fiber\\verify_q79_b89_accelerated_adaptive_source_isotopy.py --packet C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-causal-base-constraint-fiber\\q79_b89_accelerated_source_isotopy_results\\v2\\9a2e7a1c-fb00-4d2f-b9cb-77d0a742870c\\t53-v2-adaptive-branch-e1-i468-480.json --baseline-root C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus --source C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_relative_adjoint_compiler\\q79_eta9_b89_relative_adjoint_worker_input.json --guides C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_family_branch_braid_pilot\\kernel_inputs\\right80-edge1-guides.npz --metadata C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_family_branch_braid_pilot\\kernel_inputs\\right80-edge1-guides.json",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+      },
+      "interval_range": [
+        468,
+        480
+      ],
+      "observed_state": "succeeded",
+      "packet_schema": "mtt.preprojection.q79-eta9-b89-adaptive-family-taylor-krawczyk.v1",
+      "retrieved_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_results/v2/9a2e7a1c-fb00-4d2f-b9cb-77d0a742870c/t53-v2-adaptive-branch-e1-i468-480.json",
+      "retrieved_payload_sha256": "9374eb89d2b2c8f8dd25a105857927b4843c7ad1bdd7ac91144f657741fa1be8"
     },
     {
       "assigned_agent": "pinero-t53-07",
