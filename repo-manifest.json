@@ -418,6 +418,7 @@
     "AugmentedHeteroticTriangularPrincipalSymbolMetricRecoveryTheorem_v1.md",
     "FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md",
     "AugmentedHodgeLowerOrderCoefficientAndGlobalInverseTailCompilerTheorem_v1.md",
+    "Q79FourierMukaiDoubleQutritKoszulAndAugmentedExteriorBridgeTheorem_v1.md",
     "Q79B89DownstreamPromotionReadinessTheorem_v1.md"
   ],
   "certificates": [
@@ -478,6 +479,7 @@
     "augmented_heterotic_triangular_principal_symbol.packet.json",
     "full_graded_augmented_heterotic_symbol_parametrix.packet.json",
     "augmented_hodge_lower_order_inverse_tail_compiler.packet.json",
+    "q79_fourier_mukai_double_qutrit_augmented_exterior_bridge.packet.json",
     "q79_b89_accelerated_source_isotopy_benchmark.packet.json",
     "q79_b89_accelerated_source_isotopy_benchmark_edge1.packet.json",
     "q79_b89_accelerated_source_isotopy_equivalence.packet.json",
@@ -551,6 +553,7 @@
     "python build_augmented_heterotic_triangular_principal_symbol.py",
     "python build_full_graded_augmented_heterotic_symbol_parametrix.py",
     "python build_augmented_hodge_lower_order_inverse_tail_compiler.py",
+    "python build_q79_fourier_mukai_double_qutrit_augmented_exterior_bridge.py",
     "python build_q79_b89_accelerated_source_isotopy_equivalence.py",
     "python build_q79_b89_downstream_promotion_readiness.py"
   ],
@@ -608,6 +611,7 @@
     "augmented_heterotic_triangular_principal_symbol_contract.schema.json",
     "full_graded_augmented_heterotic_symbol_parametrix_contract.schema.json",
     "augmented_hodge_lower_order_inverse_tail_compiler_contract.schema.json",
+    "q79_fourier_mukai_double_qutrit_augmented_exterior_bridge_contract.schema.json",
     "q79_b89_accelerated_source_isotopy_contract.schema.json",
     "q79_b89_accelerated_adaptive_source_isotopy_contract.schema.json",
     "q79_b89_recursive_boundary_isotopy_contract.schema.json"

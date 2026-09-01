@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.q79-fourier-mukai-double-qutrit-augmented-exterior-bridge.v1",
+  "title": "CBF.T60 q79 Fourier-Mukai double-qutrit and augmented-exterior bridge",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "source_provenance",
+    "fourier_mukai_coefficient_typing",
+    "double_qutrit_koszul_hodge",
+    "centered_log_compiler",
+    "augmented_exterior_bridge",
+    "equianharmonic_continuum_cutset",
+    "frontier_delta",
+    "parameter_ledger",
+    "physical_boundary",
+    "check_summary"
+  ],
+  "properties": {
+    "schema": {"const": "boe.mtt.q79-fourier-mukai-double-qutrit-augmented-exterior-bridge.v1"},
+    "claim_id": {"const": "CBF.T60"},
+    "date": {"type": "string"},
+    "status": {"type": "string"},
+    "source_provenance": {"type": "object"},
+    "fourier_mukai_coefficient_typing": {"type": "object"},
+    "double_qutrit_koszul_hodge": {"type": "object"},
+    "centered_log_compiler": {"type": "object"},
+    "augmented_exterior_bridge": {"type": "object"},
+    "equianharmonic_continuum_cutset": {"type": "object"},
+    "frontier_delta": {"type": "object"},
+    "parameter_ledger": {"type": "object"},
+    "physical_boundary": {"type": "object"},
+    "check_summary": {"type": "object"}
+  }
+}

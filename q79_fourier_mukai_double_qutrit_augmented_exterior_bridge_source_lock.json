@@ -1,0 +1,71 @@
+{
+  "schema": "boe.mtt.source-lock.v1",
+  "claim_id": "CBF.T60",
+  "date": "2026-09-01",
+  "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+  "handoff_id": "6b64e72d-1dbb-4c88-8a77-b7b91ffa217a",
+  "sources": [
+    {
+      "id": "T04_FINITE_WEYL_THEOREM",
+      "path": "SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem_v1.md",
+      "sha256": "9a47357584e94caddc6fb67353433282e2cd1e89c1efa3c0685a895c552c2fa6"
+    },
+    {
+      "id": "T04_FINITE_WEYL_PACKET",
+      "path": "selected_finite_weyl_koszul_hodge_and_interaction_cutset.packet.json",
+      "sha256": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c"
+    },
+    {
+      "id": "T58_AUGMENTED_SYMBOL_THEOREM",
+      "path": "FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md",
+      "sha256": "69b5507a427678e4b1fb52c1686198aad467cd04129b5e934044ff8fdb16d4ea"
+    },
+    {
+      "id": "T58_AUGMENTED_SYMBOL_PACKET",
+      "path": "full_graded_augmented_heterotic_symbol_parametrix.packet.json",
+      "sha256": "0a2336e81fe14fc10ef9c1d9f2dfb9f1b6ffca9edc46247b5cfc1269f4b63ebd"
+    }
+  ],
+  "discovery_evidence": [
+    {
+      "id": "UST_G3AB_THETA_ORIENTATION",
+      "repository": "mtt-unified-source-theorem",
+      "path": "UST_G3AB_ETA9_THETA_ORIENTATION_UNIVERSAL_INCIDENCE_AND_TWO_TWIST_SEPARATION_THEOREM_v1.md",
+      "sha256": "d222c57c3aec31253cc57b5567718d6a9566df3014d39a9517dfbb2cd37191b1",
+      "extracted_claim": "The selected level-three theta module has XZ=omega ZX and multiplier sigma((a,b),(c,d))=omega^(-cb).",
+      "required_for_portable_build": false
+    },
+    {
+      "id": "UST_G3T_BALANCED_QUTRIT",
+      "repository": "mtt-unified-source-theorem",
+      "path": "state/ust_g3t_support_wide_slope_balanced_qutrit.packet.json",
+      "sha256": "b6c068e95504522ca23c6b78e229038094913f9902240c69ac2ce0d6461a1ab3",
+      "extracted_claim": "Three degree-three source factors transform to three stable rank-three factors with an internal projective qutrit orbit.",
+      "required_for_portable_build": false
+    },
+    {
+      "id": "UST_G3W_PROJECTIVE_TRANSLATION",
+      "repository": "mtt-unified-source-theorem",
+      "path": "state/ust_g3w_relative_projective_translation.packet.json",
+      "sha256": "feea878a3a218f913708f06ee950b0e3673d79d97c61f0b4a9f22ceb71fe21d1",
+      "extracted_claim": "Each rank-three factor is semihomogeneous; its finite theta kernel is E[3] and its standard representation has dimension three.",
+      "required_for_portable_build": false
+    },
+    {
+      "id": "Q79_HIDDEN_ADJOINT",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "path": "q79_hidden_qutrit_adjoint_isotypic.packet.json",
+      "sha256": "f00b3ef3a8c968d62f8d60d208a9f2d3c8269c3c6909e54155944c7e045a4e5b",
+      "extracted_claim": "Locally W9=U3 tensor Q3, End(W9) has rank 81, ad(W9) has rank 80, and the internal qutrit covers the identity rather than vertical translation.",
+      "required_for_portable_build": false
+    },
+    {
+      "id": "FSB_03E_HOLONOMY_PRODUCT_WITNESS",
+      "repository": "mtt-q79-total-superconnection-branching",
+      "path": "artifacts/hidden_holonomy_product_rigidity.packet.json",
+      "sha256": "68d161450ad0632aed934cfe1e23a89471fe18e6042a02e999caa9d11146f146",
+      "extracted_claim": "A two-factor Weyl witness on a nine-dimensional hidden fiber has scalar joint commutant, but its physical HYM-holonomy identification was left open.",
+      "required_for_portable_build": false
+    }
+  ]
+}

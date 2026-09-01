@@ -2010,3 +2010,30 @@ the resulting gap and margin inequalities. `B.GEO.01` and `B.OP.01` remain
 open and physical counters stay `0/3`, `0/3`, `0/7`. T59 adds no parameter or
 selector and passes `30/30` builder checks, `27/27` independent checks and 14
 focused tests; the full canonical suite passes all 552 tests.
+
+`Q79FourierMukaiDoubleQutritKoszulAndAugmentedExteriorBridgeTheorem_v1.md`
+(`CBF.T60`) identifies the two distinct qutrit factors behind the q79 hidden
+coefficient carrier. A degree-three theta/Fourier-Mukai fiber gives one
+rank-three factor and the internal three-factor orbit gives the other, so
+
+```text
+End(H_theta tensor Q3_internal)=M3 tensor M3=M9,
+dim M9=81=1+80.
+```
+
+The four commuting adjoint Weyl directions yield an exact finite Koszul-Hodge
+complex with spectrum `0^1,3^8,6^24,9^32,12^16`, reduced Green values
+`1/3,1/6,1/9,1/12` and cohomology dimensions `1,4,6,4,1`. The latter are
+canonically the exterior dimensions of a four-dimensional symbol space,
+which closes the abstract carrier bridge to T58 rather than merely matching
+its ranks. Centered logarithms and finite differences are exactly
+chain-isomorphic.
+
+The equianharmonic scalar-Fourier calculation supplies an equally important
+negative result: the complete lowest band in the nine character sectors has
+rank `13`, not `9`. Thus the finite `M3` factor comes from theta/Fourier-Mukai
+coefficient geometry, not a scalar cutoff. T60 does not yet select the global
+connection-compatible four-direction physical intertwiner, so the q79
+endpoint and physical counters remain open. It adds no parameter or selector
+and passes `44/44` builder checks, `37/37` independent checks and 15 focused
+tests; the full canonical suite passes all 567 tests.

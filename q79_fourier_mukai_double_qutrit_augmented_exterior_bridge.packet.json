@@ -1,0 +1,2704 @@
+{
+  "augmented_exterior_bridge": {
+    "T58_rank_sequence": [
+      1,
+      4,
+      6,
+      4,
+      1
+    ],
+    "abstract_carrier_bridge_closed": true,
+    "augmented_symbol_space": "V4_aug=C.alpha direct-sum C^3",
+    "finite_one_form_space": "V4_fin=span(theta_vX,theta_vZ,theta_iX,theta_iZ)",
+    "isometry": "J_n(e0 wedge eta+zeta)=alpha tensor eta direct-sum zeta",
+    "physical_acceptance_conditions": [
+      "same-source selection",
+      "metric isometry",
+      "orientation and real-structure compatibility",
+      "connection covariance",
+      "domain covariance",
+      "endpoint residual intertwining"
+    ],
+    "rank_formula": "C(3,n)+C(3,n+1)=C(4,n+1)",
+    "rank_sequence": [
+      1,
+      4,
+      6,
+      4,
+      1
+    ],
+    "rows": [
+      {
+        "alpha_lane_dimension": 0,
+        "basis_map": [
+          {
+            "source_subset": [],
+            "target_lane": "Lambda_n_plus_1",
+            "target_subset": []
+          }
+        ],
+        "domain_dimension": 1,
+        "exterior_degree": 0,
+        "form_lane_dimension": 1,
+        "mapping_cone_degree": -1,
+        "target_dimension": 1
+      },
+      {
+        "alpha_lane_dimension": 1,
+        "basis_map": [
+          {
+            "source_subset": [
+              0
+            ],
+            "target_lane": "alpha_tensor_Lambda_n",
+            "target_subset": []
+          },
+          {
+            "source_subset": [
+              1
+            ],
+            "target_lane": "Lambda_n_plus_1",
+            "target_subset": [
+              0
+            ]
+          },
+          {
+            "source_subset": [
+              2
+            ],
+            "target_lane": "Lambda_n_plus_1",
+            "target_subset": [
+              1
+            ]
+          },
+          {
+            "source_subset": [
+              3
+            ],
+            "target_lane": "Lambda_n_plus_1",
+            "target_subset": [
+              2
+            ]
+          }
+        ],
+        "domain_dimension": 4,
+        "exterior_degree": 1,
+        "form_lane_dimension": 3,
+        "mapping_cone_degree": 0,
+        "target_dimension": 4
+      },
+      {
+        "alpha_lane_dimension": 3,
+        "basis_map": [
+          {
+            "source_subset": [
+              0,
+              1
+            ],
+            "target_lane": "alpha_tensor_Lambda_n",
+            "target_subset": [
+              0
+            ]
+          },
+          {
+            "source_subset": [
+              0,
+              2
+            ],
+            "target_lane": "alpha_tensor_Lambda_n",
+            "target_subset": [
+              1
+            ]
+          },
+          {
+            "source_subset": [
+              0,
+              3
+            ],
+            "target_lane": "alpha_tensor_Lambda_n",
+            "target_subset": [
+              2
+            ]
+          },
+          {
+            "source_subset": [
+              1,
+              2
+            ],
+            "target_lane": "Lambda_n_plus_1",
+            "target_subset": [
+              0,
+              1
+            ]
+          },
+          {
+            "source_subset": [
+              1,
+              3
+            ],
+            "target_lane": "Lambda_n_plus_1",
+            "target_subset": [
+              0,
+              2
+            ]
+          },
+          {
+            "source_subset": [
+              2,
+              3
+            ],
+            "target_lane": "Lambda_n_plus_1",
+            "target_subset": [
+              1,
+              2
+            ]
+          }
+        ],
+        "domain_dimension": 6,
+        "exterior_degree": 2,
+        "form_lane_dimension": 3,
+        "mapping_cone_degree": 1,
+        "target_dimension": 6
+      },
+      {
+        "alpha_lane_dimension": 3,
+        "basis_map": [
+          {
+            "source_subset": [
+              0,
+              1,
+              2
+            ],
+            "target_lane": "alpha_tensor_Lambda_n",
+            "target_subset": [
+              0,
+              1
+            ]
+          },
+          {
+            "source_subset": [
+              0,
+              1,
+              3
+            ],
+            "target_lane": "alpha_tensor_Lambda_n",
+            "target_subset": [
+              0,
+              2
+            ]
+          },
+          {
+            "source_subset": [
+              0,
+              2,
+              3
+            ],
+            "target_lane": "alpha_tensor_Lambda_n",
+            "target_subset": [
+              1,
+              2
+            ]
+          },
+          {
+            "source_subset": [
+              1,
+              2,
+              3
+            ],
+            "target_lane": "Lambda_n_plus_1",
+            "target_subset": [
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "domain_dimension": 4,
+        "exterior_degree": 3,
+        "form_lane_dimension": 1,
+        "mapping_cone_degree": 2,
+        "target_dimension": 4
+      },
+      {
+        "alpha_lane_dimension": 1,
+        "basis_map": [
+          {
+            "source_subset": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "target_lane": "alpha_tensor_Lambda_n",
+            "target_subset": [
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "domain_dimension": 1,
+        "exterior_degree": 4,
+        "form_lane_dimension": 0,
+        "mapping_cone_degree": 3,
+        "target_dimension": 1
+      }
+    ],
+    "selected_physical_intertwiner": "OPEN"
+  },
+  "centered_log_compiler": {
+    "all_factors_nonzero": true,
+    "chain_map_identity": "d_difference T_k=T_(k+1) d_log",
+    "claims_continuum_derivative": false,
+    "degree_k_chain_map": "T_k(theta_S)=prod_(j in S)R(lambda_j) theta_S",
+    "difference_to_log_factor": "R(lambda)=(exp(lambda)-1)/lambda, R(0)=1",
+    "exponential_recovers_each_adjoint_generator": true,
+    "generator_spectrum": [
+      "-2*pi*i/3",
+      "0",
+      "2*pi*i/3"
+    ],
+    "nonzero_factor_absolute_square": "27/(4*pi^2)",
+    "nonzero_factor_absolute_value": "3*sqrt(3)/(2*pi)",
+    "principal_log_is_unique": true
+  },
+  "check_summary": {
+    "all_passed": true,
+    "checks": {
+      "Ad_X_character_orientation_is_exact": true,
+      "Ad_Z_character_orientation_is_exact": true,
+      "T58_rank_sequence_matches_exactly": true,
+      "actions_are_typed_as_distinct": true,
+      "adjoint_rank_is_80": true,
+      "all_81_double_qutrit_modes_executed": true,
+      "all_Hodge_blocks_scalar": true,
+      "all_Koszul_compositions_zero": true,
+      "all_local_sources_hash_locked": true,
+      "all_nine_character_sectors_executed": true,
+      "centered_log_factors_are_nonzero": true,
+      "centered_log_not_called_continuum": true,
+      "claim_id": true,
+      "cohomology_is_1_4_6_4_1": true,
+      "degree_carrier_dimensions_are_exact": true,
+      "degree_zero_spectrum_is_1_8_24_32_16": true,
+      "endomorphism_rank_is_81": true,
+      "equianharmonic_ground_band_rank_is_13": true,
+      "equianharmonic_ground_spectrum_is_0_2_6": true,
+      "equianharmonic_metric_is_positive": true,
+      "equianharmonic_scalar_band_gap_is_two": true,
+      "exactly_two_sectors_are_triply_degenerate": true,
+      "exterior_bridge_has_five_degrees": true,
+      "exterior_bridge_is_bijective_by_basis_count": true,
+      "exterior_bridge_rank_sequence_is_1_4_6_4_1": true,
+      "four_local_sources_checked": true,
+      "green_identity_exact": true,
+      "hidden_tensor_rank_is_nine": true,
+      "locked_Weyl_relation_is_exact": true,
+      "no_continuum_truncation_used_for_typing": true,
+      "no_parameters_or_observed_values_added": true,
+      "physical_blockers_remain_open": true,
+      "physical_counters_do_not_move": true,
+      "scalar_Fourier_band_does_not_equal_M3": true,
+      "schema_identifier": true,
+      "schema_required_fields": true,
+      "spectrum_multiplicity_sums_to_81": true,
+      "theorem_preserves_physical_boundary": true,
+      "theorem_states_81_equals_1_plus_80": true,
+      "theorem_states_rank13_cutset": true,
+      "theta_RR_dimension_is_three": true,
+      "theta_h1_vanishes": true,
+      "tracefree_gap_is_three": true,
+      "tracefree_harmonic_dimensions_are_zero": true
+    },
+    "passed": 44,
+    "total": 44
+  },
+  "claim_id": "CBF.T60",
+  "date": "2026-09-01",
+  "double_qutrit_koszul_hodge": {
+    "all_differential_compositions_zero": true,
+    "all_four_adjoint_automorphisms_commute": true,
+    "all_hodge_blocks_are_scalar_mode_laplacians": true,
+    "automorphisms": [
+      "Ad_X tensor id",
+      "Ad_Z tensor id",
+      "id tensor Ad_X",
+      "id tensor Ad_Z"
+    ],
+    "cohomology_dimensions": [
+      1,
+      4,
+      6,
+      4,
+      1
+    ],
+    "degree_rows": [
+      {
+        "carrier_dimension": 81,
+        "degree": 0,
+        "harmonic_dimension": 1,
+        "tracefree_carrier_dimension": 80,
+        "tracefree_harmonic_dimension": 0
+      },
+      {
+        "carrier_dimension": 324,
+        "degree": 1,
+        "harmonic_dimension": 4,
+        "tracefree_carrier_dimension": 320,
+        "tracefree_harmonic_dimension": 0
+      },
+      {
+        "carrier_dimension": 486,
+        "degree": 2,
+        "harmonic_dimension": 6,
+        "tracefree_carrier_dimension": 480,
+        "tracefree_harmonic_dimension": 0
+      },
+      {
+        "carrier_dimension": 324,
+        "degree": 3,
+        "harmonic_dimension": 4,
+        "tracefree_carrier_dimension": 320,
+        "tracefree_harmonic_dimension": 0
+      },
+      {
+        "carrier_dimension": 81,
+        "degree": 4,
+        "harmonic_dimension": 1,
+        "tracefree_carrier_dimension": 80,
+        "tracefree_harmonic_dimension": 0
+      }
+    ],
+    "degree_zero_spectrum": {
+      "0": 1,
+      "12": 16,
+      "3": 8,
+      "6": 24,
+      "9": 32
+    },
+    "green_identity_exact": true,
+    "kernel": "Q(omega).I9",
+    "kernel_rank": 1,
+    "mode_basis": "W_ab tensor W_cd",
+    "mode_count": 81,
+    "mode_difference_coefficients": "(omega^a-1,omega^(-b)-1,omega^c-1,omega^(-d)-1)",
+    "modes": [
+      {
+        "cohomology_dimensions": [
+          1,
+          4,
+          6,
+          4,
+          1
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "green_eigenvalue": null,
+        "label": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 0,
+        "nonzero_direction_count": 0
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/3",
+        "label": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 3,
+        "nonzero_direction_count": 1
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/3",
+        "label": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 3,
+        "nonzero_direction_count": 1
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/3",
+        "label": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 3,
+        "nonzero_direction_count": 1
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/3",
+        "label": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 3,
+        "nonzero_direction_count": 1
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "green_eigenvalue": "1/3",
+        "label": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 3,
+        "nonzero_direction_count": 1
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          0,
+          1,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "green_eigenvalue": "1/3",
+        "label": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 3,
+        "nonzero_direction_count": 1
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          2,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          0,
+          2,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          0,
+          2,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "green_eigenvalue": "1/3",
+        "label": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 3,
+        "nonzero_direction_count": 1
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          0,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          2,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          2,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          1,
+          2,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "green_eigenvalue": "1/3",
+        "label": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 3,
+        "nonzero_direction_count": 1
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          0,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          0,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          0,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          0,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          1,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          1,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          2,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          2,
+          1,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "green_eigenvalue": "1/6",
+        "label": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "laplacian_eigenvalue": 6,
+        "nonzero_direction_count": 2
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          0,
+          2
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          2,
+          0,
+          1
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          2,
+          0,
+          2
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          2,
+          1,
+          0
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          2,
+          0
+        ],
+        "green_eigenvalue": "1/9",
+        "label": [
+          2,
+          2,
+          2,
+          0
+        ],
+        "laplacian_eigenvalue": 9,
+        "nonzero_direction_count": 3
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          2,
+          2
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          2,
+          2,
+          2,
+          1
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      },
+      {
+        "cohomology_dimensions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference_exponents": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "green_eigenvalue": "1/12",
+        "label": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "laplacian_eigenvalue": 12,
+        "nonzero_direction_count": 4
+      }
+    ],
+    "one_qutrit_complex_embeds_as_either_two_direction_face": true,
+    "reduced_green_eigenvalues": [
+      "1/3",
+      "1/6",
+      "1/9",
+      "1/12"
+    ],
+    "spectrum_generating_polynomial": "(1+2t)^4",
+    "tracefree_gap": 3
+  },
+  "equianharmonic_continuum_cutset": {
+    "character_residue_formula": "(u,v)=(-bar(a),bar(b)) mod 3",
+    "conclusion": "The exact M3 is a Fourier-Mukai theta coefficient algebra, not the lowest scalar-Fourier band.",
+    "dual_quadratic_form_up_to_scale": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "ground_band_ceiling": 6,
+    "ground_mode_spectrum": {
+      "0": 1,
+      "2": 6,
+      "6": 6
+    },
+    "lowest_full_band_rank": 13,
+    "marked_curve": "Fermat/equianharmonic elliptic curve",
+    "quadratic_formula": "Q(u,v)=2u^2+2uv+2v^2",
+    "scalar_fourier_low_band_equals_M3": false,
+    "sector_rows": [
+      {
+        "character": [
+          0,
+          0
+        ],
+        "minimizing_representatives": [
+          [
+            0,
+            0
+          ]
+        ],
+        "minimum_Q": 0,
+        "minimum_multiplicity": 1,
+        "next_Q": 18,
+        "residue": [
+          0,
+          0
+        ]
+      },
+      {
+        "character": [
+          0,
+          1
+        ],
+        "minimizing_representatives": [
+          [
+            0,
+            -1
+          ]
+        ],
+        "minimum_Q": 2,
+        "minimum_multiplicity": 1,
+        "next_Q": 8,
+        "residue": [
+          0,
+          2
+        ]
+      },
+      {
+        "character": [
+          0,
+          2
+        ],
+        "minimizing_representatives": [
+          [
+            0,
+            1
+          ]
+        ],
+        "minimum_Q": 2,
+        "minimum_multiplicity": 1,
+        "next_Q": 8,
+        "residue": [
+          0,
+          1
+        ]
+      },
+      {
+        "character": [
+          1,
+          0
+        ],
+        "minimizing_representatives": [
+          [
+            1,
+            0
+          ]
+        ],
+        "minimum_Q": 2,
+        "minimum_multiplicity": 1,
+        "next_Q": 8,
+        "residue": [
+          1,
+          0
+        ]
+      },
+      {
+        "character": [
+          1,
+          1
+        ],
+        "minimizing_representatives": [
+          [
+            1,
+            -1
+          ]
+        ],
+        "minimum_Q": 2,
+        "minimum_multiplicity": 1,
+        "next_Q": 8,
+        "residue": [
+          1,
+          2
+        ]
+      },
+      {
+        "character": [
+          1,
+          2
+        ],
+        "minimizing_representatives": [
+          [
+            -2,
+            1
+          ],
+          [
+            1,
+            -2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "minimum_Q": 6,
+        "minimum_multiplicity": 3,
+        "next_Q": 24,
+        "residue": [
+          1,
+          1
+        ]
+      },
+      {
+        "character": [
+          2,
+          0
+        ],
+        "minimizing_representatives": [
+          [
+            -1,
+            0
+          ]
+        ],
+        "minimum_Q": 2,
+        "minimum_multiplicity": 1,
+        "next_Q": 8,
+        "residue": [
+          2,
+          0
+        ]
+      },
+      {
+        "character": [
+          2,
+          1
+        ],
+        "minimizing_representatives": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            2
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        "minimum_Q": 6,
+        "minimum_multiplicity": 3,
+        "next_Q": 24,
+        "residue": [
+          2,
+          2
+        ]
+      },
+      {
+        "character": [
+          2,
+          2
+        ],
+        "minimizing_representatives": [
+          [
+            -1,
+            1
+          ]
+        ],
+        "minimum_Q": 2,
+        "minimum_multiplicity": 1,
+        "next_Q": 8,
+        "residue": [
+          2,
+          1
+        ]
+      }
+    ],
+    "strict_band_gap": 2,
+    "tail_floor": 8,
+    "triply_degenerate_character_sectors": 2
+  },
+  "fourier_mukai_coefficient_typing": {
+    "actions_are_distinct": true,
+    "adjoint_rank": 80,
+    "coefficient_algebra": "M3(Q(omega)) tensor M3(Q(omega))",
+    "continuum_mode_truncation_used": false,
+    "endomorphism_rank": 81,
+    "fiber_formula": "H_theta,y=H0(E,L tensor P_y)",
+    "fiber_h0": 3,
+    "fiber_h1": 0,
+    "first_action": "finite theta kernel of the semihomogeneous Fourier-Mukai factor",
+    "fourier_mukai_factor_rank": 3,
+    "hidden_rank": 9,
+    "internal_qutrit_rank": 3,
+    "local_hidden_fiber": "W9_y=H_theta,y tensor Q3_internal",
+    "second_action": "internal qutrit action over the identity on the three-factor orbit",
+    "strict_global_elliptic_action_claimed": false,
+    "theta_line": "L=O_E(3[0])",
+    "theta_line_degree": 3
+  },
+  "frontier_delta": {
+    "closed": [
+      "selected local Fourier-Mukai theta-fiber source of the first M3",
+      "double-qutrit coefficient typing and 81=1+80 decomposition",
+      "four-generator finite Koszul-Hodge complex and reduced Green operator",
+      "centered-log finite-chain compiler",
+      "canonical augmented-exterior carrier bridge to CBF.T58",
+      "equianharmonic rank-13 scalar-Fourier truncation no-go"
+    ],
+    "named_exit_clause_changed": "The finite coefficient source and abstract four-direction carrier bridge are now closed; B.GEO.01 is reduced to a selected covariant intertwiner and endpoint execution.",
+    "open": [
+      "selected global finite-to-augmented one-form intertwiner",
+      "connection, domain and endpoint-residual covariance of that intertwiner",
+      "same-source visible/common Hull-Strominger endpoint",
+      "physical Hessian coefficients, harmonic projector and reduced Green operator"
+    ]
+  },
+  "parameter_ledger": {
+    "continuous_physical_parameters_added": 0,
+    "discrete_selectors_added": 0,
+    "fitted_values_used": 0,
+    "nonphysical_fixture_values_used": 0,
+    "observed_values_used": 0
+  },
+  "physical_boundary": {
+    "B_GEO_01_closed": false,
+    "B_HS_01_closed": false,
+    "B_OP_01_closed": false,
+    "finite_coefficient_algebra_is_selected": true,
+    "physical_continuum_operator_is_selected": false,
+    "physical_gates": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_packets": {
+      "accepted": 0,
+      "total": 3
+    },
+    "physical_rows": {
+      "accepted": 0,
+      "total": 7
+    }
+  },
+  "schema": "boe.mtt.q79-fourier-mukai-double-qutrit-augmented-exterior-bridge.v1",
+  "source_hashes": {
+    "builder_sha256": "675f7fd153382c2228b652bab2f4b3741d88158584f3a722dfe93067b589a371",
+    "schema_sha256": "77f92ef3f5a6009ae9542b07ab521ded655c0aa92ad26baebc5239be24fdf022",
+    "source_lock_sha256": "92a39eea646caa5207377624394c958f629508f7632f8e862e7bc2ee99c2c1d5",
+    "theorem_sha256": "b7d9572394e4546742488ce33a0314fb5c2c489519fce6e62c10f826c53e55be"
+  },
+  "source_provenance": {
+    "all_local_sources_hash_locked": true,
+    "discovery_evidence": [
+      {
+        "extracted_claim": "The selected level-three theta module has XZ=omega ZX and multiplier sigma((a,b),(c,d))=omega^(-cb).",
+        "id": "UST_G3AB_THETA_ORIENTATION",
+        "path": "UST_G3AB_ETA9_THETA_ORIENTATION_UNIVERSAL_INCIDENCE_AND_TWO_TWIST_SEPARATION_THEOREM_v1.md",
+        "repository": "mtt-unified-source-theorem",
+        "required_for_portable_build": false,
+        "sha256": "d222c57c3aec31253cc57b5567718d6a9566df3014d39a9517dfbb2cd37191b1"
+      },
+      {
+        "extracted_claim": "Three degree-three source factors transform to three stable rank-three factors with an internal projective qutrit orbit.",
+        "id": "UST_G3T_BALANCED_QUTRIT",
+        "path": "state/ust_g3t_support_wide_slope_balanced_qutrit.packet.json",
+        "repository": "mtt-unified-source-theorem",
+        "required_for_portable_build": false,
+        "sha256": "b6c068e95504522ca23c6b78e229038094913f9902240c69ac2ce0d6461a1ab3"
+      },
+      {
+        "extracted_claim": "Each rank-three factor is semihomogeneous; its finite theta kernel is E[3] and its standard representation has dimension three.",
+        "id": "UST_G3W_PROJECTIVE_TRANSLATION",
+        "path": "state/ust_g3w_relative_projective_translation.packet.json",
+        "repository": "mtt-unified-source-theorem",
+        "required_for_portable_build": false,
+        "sha256": "feea878a3a218f913708f06ee950b0e3673d79d97c61f0b4a9f22ceb71fe21d1"
+      },
+      {
+        "extracted_claim": "Locally W9=U3 tensor Q3, End(W9) has rank 81, ad(W9) has rank 80, and the internal qutrit covers the identity rather than vertical translation.",
+        "id": "Q79_HIDDEN_ADJOINT",
+        "path": "q79_hidden_qutrit_adjoint_isotypic.packet.json",
+        "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+        "required_for_portable_build": false,
+        "sha256": "f00b3ef3a8c968d62f8d60d208a9f2d3c8269c3c6909e54155944c7e045a4e5b"
+      },
+      {
+        "extracted_claim": "A two-factor Weyl witness on a nine-dimensional hidden fiber has scalar joint commutant, but its physical HYM-holonomy identification was left open.",
+        "id": "FSB_03E_HOLONOMY_PRODUCT_WITNESS",
+        "path": "artifacts/hidden_holonomy_product_rigidity.packet.json",
+        "repository": "mtt-q79-total-superconnection-branching",
+        "required_for_portable_build": false,
+        "sha256": "68d161450ad0632aed934cfe1e23a89471fe18e6042a02e999caa9d11146f146"
+      }
+    ],
+    "handoff_id": "6b64e72d-1dbb-4c88-8a77-b7b91ffa217a",
+    "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+    "source_checks": [
+      {
+        "actual_sha256": "9a47357584e94caddc6fb67353433282e2cd1e89c1efa3c0685a895c552c2fa6",
+        "expected_sha256": "9a47357584e94caddc6fb67353433282e2cd1e89c1efa3c0685a895c552c2fa6",
+        "id": "T04_FINITE_WEYL_THEOREM",
+        "matches": true,
+        "path": "SelectedFiniteWeylKoszulHodgeAndInteractionCutsetTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c",
+        "expected_sha256": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c",
+        "id": "T04_FINITE_WEYL_PACKET",
+        "matches": true,
+        "path": "selected_finite_weyl_koszul_hodge_and_interaction_cutset.packet.json"
+      },
+      {
+        "actual_sha256": "69b5507a427678e4b1fb52c1686198aad467cd04129b5e934044ff8fdb16d4ea",
+        "expected_sha256": "69b5507a427678e4b1fb52c1686198aad467cd04129b5e934044ff8fdb16d4ea",
+        "id": "T58_AUGMENTED_SYMBOL_THEOREM",
+        "matches": true,
+        "path": "FullGradedAugmentedHeteroticSymbolParametrixAndHeatTraceTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "0a2336e81fe14fc10ef9c1d9f2dfb9f1b6ffca9edc46247b5cfc1269f4b63ebd",
+        "expected_sha256": "0a2336e81fe14fc10ef9c1d9f2dfb9f1b6ffca9edc46247b5cfc1269f4b63ebd",
+        "id": "T58_AUGMENTED_SYMBOL_PACKET",
+        "matches": true,
+        "path": "full_graded_augmented_heterotic_symbol_parametrix.packet.json"
+      }
+    ]
+  },
+  "status": "CLOSED_EXACT_SELECTED_FIBER_COEFFICIENT_AND_AUGMENTED_EXTERIOR_BRIDGE_PHYSICAL_CONTINUUM_INTERTWINER_OPEN"
+}

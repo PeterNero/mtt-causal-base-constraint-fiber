@@ -2,13 +2,14 @@
 
 This is a snapshot, not a substitute for live kernel queries.
 
-- Kernel model: `5fdba232d862a95c164603f3156f0cfb8f8abed50af0756edc1618457b5d1f45`
-- Model generated: `2026-08-31T01:25:25+00:00`
+- Kernel model: `f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1`
+- Model generated: `2026-09-01T06:52:25+00:00`
 - Durable handoff: `fa47d1c9-866a-4f9b-8d6b-ca08a3347ade`
 - Current synthesis handoff: `ef8bbc37-10ab-4cc7-abc6-81e987e576f3`
 - Endpoint-factorization handoff: `716be879-715b-4416-be42-2c096d3d9b0b`
 - Associated-matter BV4 handoff: `7a343059-b0e9-44fc-a725-733048697896`
 - Accelerated q79 B89 same-source isotopy handoff: `8a175974-2390-48a7-8963-21601cf63157`
+- Fourier-Mukai double-qutrit bridge handoff: `6b64e72d-1dbb-4c88-8a77-b7b91ffa217a`
 - Provider-neutral source/q79 classification handoff: `f8fdd194-ed79-45af-a124-5c6219a6dce1`
 - Direct one-constraint multiplier-source handoff: `b8d489d8-41ea-4481-9c15-b31904f215af`
 - Closure-pressure family-Hessian handoff: `c90aa36c-e4b7-4dbe-9eaf-b599b414d474`
@@ -2329,3 +2330,48 @@ intertwiner and radii decision remain open. `B.GEO.01`, `B.ACTION.01` and
 rows. T59 adds no parameter or selector and passes `30/30` builder checks,
 `27/27` independent checks and 14 focused tests; the full canonical suite
 passes all 552 tests.
+
+## CBF.T60 q79 Fourier-Mukai double-qutrit bridge
+
+`Q79FourierMukaiDoubleQutritKoszulAndAugmentedExteriorBridgeTheorem_v1.md`
+identifies two distinct selected rank-three factors in the q79 hidden fiber.
+The degree-three theta space of the marked elliptic curve supplies the local
+fiber of each semihomogeneous Fourier-Mukai factor, while the three-factor
+orbit supplies the separate internal qutrit. Hence the exact local
+coefficient algebra is
+
+```text
+End(H_theta) tensor End(Q3_internal) = M3 tensor M3 = M9,
+dim M9 = 81 = 1 + 80.
+```
+
+This explains the hidden rank `81` and tracefree rank `80` without a
+continuum cutoff. The four commuting adjoint Weyl directions generate an
+exact Koszul-Hodge complex with degree-zero spectrum
+`0^1,3^8,6^24,9^32,12^16`, reduced Green values
+`1/3,1/6,1/9,1/12`, and cohomology dimensions `1,4,6,4,1`. Principal
+centered logarithms are chain-isomorphic to finite differences with exact
+nonzero modulus `3 sqrt(3)/(2 pi)`.
+
+The same `1,4,6,4,1` sequence in T58 is now explained by the canonical
+isometry
+
+```text
+Lambda^(n+1)(C e0 direct-sum C3)
+  -> (C alpha tensor Lambda^n C3) direct-sum Lambda^(n+1) C3.
+```
+
+An exact equianharmonic calculation also rules out a hidden shortcut: the
+complete lowest scalar-Fourier band in the nine adjoint character sectors has
+rank `13`, not `9`, with spectrum `0^1,2^6,6^6` and a strict next-level gap
+from `6` to `8`. Thus the selected `M3` is theta/Fourier-Mukai coefficient
+data, not an arbitrary scalar-Fourier truncation.
+
+The remaining physical exit is sharply typed but not closed: select a global,
+connection-compatible isometry from the four finite qutrit one-forms to the
+T58 augmented symbol space and verify domains and endpoint residuals. Equal
+ranks alone do not select this map. `B.GEO.01` and `B.OP.01` therefore remain
+open and physical counters do not move. T60 adds no observed value, fitted
+coefficient, physical parameter or selector. Its focused evidence is `44/44`
+builder checks, `37/37` independent checks and 15 unit tests; the full
+canonical suite passes all 567 tests.

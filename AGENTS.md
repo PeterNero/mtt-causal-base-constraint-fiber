@@ -73,6 +73,8 @@ paper, note, packet name or search hit.
    handoff is `8a0a6626-8f9b-4377-b969-5c6f610664dd`;
    the augmented Hodge lower-order coefficient and global inverse-tail
    compiler handoff is `733c3cec-d0e2-4a2f-a991-ad6b632c2943`;
+   the q79 Fourier-Mukai double-qutrit Koszul and augmented-exterior bridge
+   handoff is `6b64e72d-1dbb-4c88-8a77-b7b91ffa217a`;
    the accelerated q79 B89 same-source isotopy and affine-Deligne branch
    decision handoff is `8a175974-2390-48a7-8963-21601cf63157`;
    the radial closure-attractor and state-marginal handoff is
