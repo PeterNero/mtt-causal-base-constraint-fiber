@@ -459,8 +459,11 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
   causal-operator, exact-response and route-separation contract.
 - `MTT_FIXEDPOINT_GAUGE_GROUNDING_MAP_v1.md`: current fixed-point, A47 gauge,
   locality, duality and dimensions status map.
-- `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v1.md`: disciplined
-  philosophical reading, competing ontologies, objections and Bell boundary.
+- `PHILOSOPHICAL_INTERPRETATION_OF_CONSTRAINT_REALISM_v2.md`: expanded current
+  philosophical synthesis of causal-base locality, closure repair, fixed-point
+  identity, compression, gauge descent, entanglement, measurement, dimensions,
+  q79 status, objections and empirical boundaries. Version 1 is retained as the
+  concise historical edition.
 - `CONSTRAINT_REDUCTION_REFERENCE_SYSTEM_v0.md`: candidate common language for
   preprojection rules, compression and transferred higher products.
 - `RESEARCH_ROADMAP.md`: ordered route from this identity to a selected MTT
