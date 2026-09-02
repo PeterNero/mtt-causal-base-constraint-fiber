@@ -76,8 +76,11 @@
   },
   "dispatch": {
     "active_job_count": 218,
+    "historical_job_count": 219,
     "branch_job_count": 153,
+    "historical_branch_job_count": 154,
     "boundary_job_count": 65,
+    "superseded_job_count": 1,
     "branch_max_cells_per_job": 12,
     "boundary_max_cells_per_job": 4,
     "requirements": [
@@ -2291,7 +2294,13 @@
       "interval_stop": 456,
       "output": "outputs/t53-v2-adaptive-branch-e1-i449-456.json",
       "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
-      "submission_order": 219
+      "submission_order": 219,
+      "replacement_of_job_id": "4db1068a-df89-410b-85cf-e3a369349090",
+      "predecessor_certified_atomic_prefix": [
+        444,
+        449
+      ],
+      "replacement_reason": "The cancelled predecessor supplied the independently verified atomic prefix [444,449); this job computes only its uncertified remainder [449,456)."
     }
   ],
   "guardrails": {

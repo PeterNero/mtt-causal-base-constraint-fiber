@@ -158,14 +158,22 @@ def main() -> None:
     )
 
     campaign_jobs = campaign["jobs"]
+    replacement_jobs = [row for row in campaign_jobs if "replacement_of_job_id" in row]
+    original_jobs = [row for row in campaign_jobs if "replacement_of_job_id" not in row]
+    jobs_by_id = {row["id"]: row for row in campaign_jobs}
     checks["replacement_campaign_source_locks_and_job_counts"] = (
         campaign["schema"] == "mtt.cbf.q79-b89-recursive-replacement-campaign.v1"
-        and campaign["dispatch"]["active_job_count"] == len(campaign_jobs) == 218
+        and campaign["dispatch"]["historical_job_count"] == len(campaign_jobs) == 219
+        and campaign["dispatch"]["active_job_count"] == len(original_jobs) == 218
+        and campaign["dispatch"]["superseded_job_count"] == len(replacement_jobs) == 1
         and campaign["dispatch"]["branch_job_count"]
-        == sum(row["carrier"] == "branch" for row in campaign_jobs)
+        == sum(row["carrier"] == "branch" for row in original_jobs)
         == 153
+        and campaign["dispatch"]["historical_branch_job_count"]
+        == sum(row["carrier"] == "branch" for row in campaign_jobs)
+        == 154
         and campaign["dispatch"]["boundary_job_count"]
-        == sum(row["carrier"] == "boundary" for row in campaign_jobs)
+        == sum(row["carrier"] == "boundary" for row in original_jobs)
         == 65
         and newline_portable_sha256_matches(
             ROOT / campaign["source_locks"]["branch"]["path"],
@@ -185,8 +193,8 @@ def main() -> None:
         )
     )
 
-    branch_requested, branch_overlap = interval_union(campaign_jobs, "branch")
-    boundary_requested, boundary_overlap = interval_union(campaign_jobs, "boundary")
+    branch_requested, branch_overlap = interval_union(original_jobs, "branch")
+    boundary_requested, boundary_overlap = interval_union(original_jobs, "boundary")
     checks["replacement_campaign_exact_missing_interval_union"] = (
         not branch_overlap
         and not boundary_overlap
@@ -194,6 +202,29 @@ def main() -> None:
         and boundary_requested == missing_union(coverage, "boundary")
         and sum(map(len, branch_requested.values())) == 1817
         and sum(map(len, boundary_requested.values())) == 255
+    )
+    indexed_by_id = {row["id"]: row for row in result_index["jobs"]}
+    replacement_lineage = []
+    for replacement in replacement_jobs:
+        predecessor = jobs_by_id.get(replacement["replacement_of_job_id"])
+        prefix = replacement.get("predecessor_certified_atomic_prefix", [])
+        indexed_predecessor = indexed_by_id.get(replacement["replacement_of_job_id"])
+        replacement_lineage.append(
+            predecessor is not None
+            and indexed_predecessor is not None
+            and replacement["carrier"] == predecessor["carrier"]
+            and replacement["edge"] == predecessor["edge"]
+            and replacement["input_capsule_sha256"]
+            == predecessor["input_capsule_sha256"]
+            and prefix
+            == [predecessor["interval_start"], replacement["interval_start"]]
+            and replacement["interval_stop"] == predecessor["interval_stop"]
+            and indexed_predecessor["interval_range"] == prefix
+            and indexed_predecessor["reported_process_state"] == "cancelled"
+            and indexed_predecessor["independent_verification"]["passed"] is True
+        )
+    checks["replacement_remainder_has_verified_atomic_prefix_lineage"] = (
+        len(replacement_lineage) == 1 and all(replacement_lineage)
     )
     checks["replacement_campaign_nonpromotion_guardrail"] = (
         campaign["guardrails"]["process_success_is_not_theorem_promotion"]

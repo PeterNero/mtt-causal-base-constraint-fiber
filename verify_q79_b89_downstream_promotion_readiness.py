@@ -70,24 +70,42 @@ def main() -> int:
     status = load(COMMON / packet["inputs"]["campaign_status"]["path"])
     preflight = load(COMMON / packet["inputs"]["preflight_coverage"]["path"])
     jobs = {row["id"]: row for row in campaign["jobs"]}
-    require(len(jobs) == 218, "campaign jobs")
+    require(len(jobs) == 219, "campaign jobs")
+    replacements_by_predecessor = {
+        row["replacement_of_job_id"]: row
+        for row in campaign["jobs"]
+        if "replacement_of_job_id" in row
+    }
+    require(len(replacements_by_predecessor) == 1, "replacement lineage")
     additions = {"branch": set(), "boundary": set()}
     for row in status["campaign_verified_jobs"]:
         source = jobs[row["id"]]
         require(row["carrier"] == source["carrier"], "carrier")
         require(row["edge"] == source["edge"], "edge")
-        require(
-            row["interval_range"]
-            == [source["interval_start"], source["interval_stop"]],
-            "range",
-        )
+        expected_range = [source["interval_start"], source["interval_stop"]]
+        is_cancelled_prefix = row["interval_range"] != expected_range
+        if is_cancelled_prefix:
+            replacement = replacements_by_predecessor.get(row["id"])
+            require(replacement is not None, "prefix replacement")
+            require(
+                row["interval_range"]
+                == replacement["predecessor_certified_atomic_prefix"]
+                == [source["interval_start"], replacement["interval_start"]],
+                "atomic prefix",
+            )
+            require(replacement["interval_stop"] == source["interval_stop"], "remainder")
+        else:
+            require(row["interval_range"] == expected_range, "range")
         require(row["input_capsule_sha256"] == source["input_capsule_sha256"], "capsule")
         require(
             row.get("reported_process_state", "succeeded")
-            in {"succeeded", "failed", "running"},
+            in {"succeeded", "failed", "running", "cancelled"},
             "process state",
         )
-        require(row.get("result_manifest_exit_code", 0) == 0, "result exit")
+        require(
+            row.get("result_manifest_exit_code", 0) == (1 if is_cancelled_prefix else 0),
+            "result exit",
+        )
         for interval in range(*row["interval_range"]):
             key = (row["edge"], interval)
             require(key not in additions[row["carrier"]], "overlap")

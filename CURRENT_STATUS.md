@@ -2155,6 +2155,46 @@ the local same-source aggregates. Its independent verifier is
 now flow directly to a verified B89 decision without another implementation
 or theorem-design gap.
 
+### 2026-09-02 consolidated T53 campaign frontier
+
+The complete terminal T53 capsule history has now been re-audited against the
+immutable campaign and ingested through the requester-side scientific
+verifiers. The durable result index contains 205 nonoverlapping packet rows.
+Of these, 201 are campaign packets: 65 boundary packets certifying all 255
+requested boundary intervals and 136 branch packets certifying 1,606 requested
+branch intervals. Together with the immutable preflight coverage, the exact
+carrier state is
+
+```text
+boundary carrier: 2195/2195, complete
+branch carrier:   1984/2195, incomplete
+```
+
+This is `90.39%` exact branch coverage. No queued, running or process-only
+success is counted. Thirty-three zero-exit capsules whose orchestration records
+ended in a non-success state entered the index only after archive, manifest,
+payload-hash and independent `10/10` scientific-verifier checks. One cancelled
+job supplied an independently verified atomic prefix `[444,449)` with exit code
+one. Its replacement lineage is now explicit: the replacement job requests
+only the uncertified remainder `[449,456)`. The original 218-job exact coverage
+partition remains separately verified as nonoverlapping.
+
+The 211 intervals not yet certified are exactly
+
+```text
+edge 1: [432,444), [449,456), [492,516), [552,564), [792,804)
+edge 2: [181,325)
+```
+
+Two jobs are still running on `[432,444)` and `[449,456)`. They are not part of
+the certified count. If both pass the same ingestion gate, branch coverage will
+become `2003/2195`, leaving 192 intervals. The current T54 downstream packet
+has been rebuilt and independently replayed at `1984/2195`; its decision remains
+`STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING`. The static rank-164 replay still
+has `rank(M-I)=42` over `F2` and witness pairing one. B89 is therefore not yet
+rejected. The portable frontier freeze now passes `13/13` checks, including the
+cancelled-prefix/remainder lineage check.
+
 ## CBF.T55 same-source principal-symbol reduction
 
 `SameSourcePrincipalSymbolMetricActionScaleAndHodgeNaturalityTheorem.v1`

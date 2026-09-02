@@ -34,42 +34,41 @@
       "target_intervals": 2195
     },
     "branch": {
-      "campaign_delta_intervals": 264,
-      "campaign_verified_packets": 22,
-      "certified_intervals": 642,
+      "campaign_delta_intervals": 1606,
+      "campaign_verified_packets": 136,
+      "certified_intervals": 1984,
       "complete": false,
       "missing_ranges": {
         "0": [],
         "1": [
           [
-            324,
-            336
+            432,
+            444
           ],
           [
-            349,
-            361
-          ],
-          [
-            409,
+            449,
             456
           ],
           [
-            480,
-            857
+            492,
+            516
+          ],
+          [
+            552,
+            564
+          ],
+          [
+            792,
+            804
           ]
         ],
         "2": [
           [
-            1,
-            678
+            181,
+            325
           ]
         ],
-        "3": [
-          [
-            1,
-            429
-          ]
-        ]
+        "3": []
       },
       "target_intervals": 2195
     }
@@ -119,14 +118,14 @@
       "sha256": "0408a2c2d44b9d3cfc76018cf85e300313682db2a592ae958ed8cf2289048389"
     },
     "campaign": {
-      "bytes": 82697,
+      "bytes": 83492,
       "path": "mtt-causal-base-constraint-fiber/q79_b89_recursive_replacement_campaign.json",
-      "sha256": "587a56925441af06ab7e779618699fe6316ad16bc19ef27482478ff9820f1853"
+      "sha256": "6ee7f616de4327df42e326dc988d9c00b7e147672390d44500ef08855c7f396b"
     },
     "campaign_status": {
-      "bytes": 65382,
+      "bytes": 180073,
       "path": "mtt-causal-base-constraint-fiber/q79_b89_recursive_replacement_campaign_status.json",
-      "sha256": "95c22ca9ec0f6579342fde873b8f88ff892299cb617f100d377a44866da3b4e3"
+      "sha256": "9754b509a501a15789a4dddc5d5cee577d8f46342bbd90db3e700595bb6d7c27"
     },
     "common_grid_Artin": {
       "bytes": 1856413,

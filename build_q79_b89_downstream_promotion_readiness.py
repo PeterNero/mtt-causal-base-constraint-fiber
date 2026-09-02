@@ -107,7 +107,13 @@ def main() -> int:
     status = load(STATUS)
     preflight = load(PREFLIGHT)
     campaign_by_id = {row["id"]: row for row in campaign["jobs"]}
-    require(len(campaign_by_id) == len(campaign["jobs"]) == 218, "campaign ids")
+    require(len(campaign_by_id) == len(campaign["jobs"]) == 219, "campaign ids")
+    replacements_by_predecessor = {
+        row["replacement_of_job_id"]: row
+        for row in campaign["jobs"]
+        if "replacement_of_job_id" in row
+    }
+    require(len(replacements_by_predecessor) == 1, "replacement lineage")
 
     verified = status["campaign_verified_jobs"]
     require(len({row["id"] for row in verified}) == len(verified), "verified ids")
@@ -117,14 +123,32 @@ def main() -> int:
         require(row["carrier"] == source["carrier"], f"carrier {row['id']}")
         require(int(row["edge"]) == int(source["edge"]), f"edge {row['id']}")
         expected_range = [int(source["interval_start"]), int(source["interval_stop"])]
-        require(row["interval_range"] == expected_range, f"range {row['id']}")
+        is_cancelled_prefix = row["interval_range"] != expected_range
+        if is_cancelled_prefix:
+            replacement = replacements_by_predecessor.get(row["id"])
+            require(replacement is not None, f"prefix replacement {row['id']}")
+            require(
+                row["interval_range"]
+                == replacement["predecessor_certified_atomic_prefix"]
+                == [source["interval_start"], replacement["interval_start"]],
+                f"atomic prefix {row['id']}",
+            )
+            require(
+                replacement["interval_stop"] == source["interval_stop"],
+                f"replacement remainder {row['id']}",
+            )
+        else:
+            require(row["interval_range"] == expected_range, f"range {row['id']}")
         require(row["input_capsule_sha256"] == source["input_capsule_sha256"], f"input {row['id']}")
         require(
             row.get("reported_process_state", "succeeded")
-            in {"succeeded", "failed", "running"},
+            in {"succeeded", "failed", "running", "cancelled"},
             f"process state {row['id']}",
         )
-        require(row.get("result_manifest_exit_code", 0) == 0, f"result exit {row['id']}")
+        require(
+            row.get("result_manifest_exit_code", 0) == (1 if is_cancelled_prefix else 0),
+            f"result exit {row['id']}",
+        )
         require(
             all(
                 row.get(key)
@@ -137,7 +161,7 @@ def main() -> int:
             ),
             f"hash ledger {row['id']}",
         )
-        start, stop = expected_range
+        start, stop = row["interval_range"]
         for interval in range(start, stop):
             key = (int(source["edge"]), interval)
             require(key not in added[row["carrier"]], f"verified overlap {row['id']}")

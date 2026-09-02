@@ -317,6 +317,16 @@ from the routine suite because it evaluates 3,869,500 admissible quadruples:
 python verify_q79_symmetric_response_transferred_m4.py --recompute
 ```
 
+## Live B89 campaign frontier
+
+The T53 same-source isotopy campaign is consolidated in the hash-verified
+result index and current coverage report. At the 2026-09-02 checkpoint the
+signed-boundary carrier is complete at `2195/2195`; the branch carrier is
+certified at `1984/2195`. Exactly 211 branch intervals remain. This is a
+coverage and downstream-readiness result, not a B89 rejection or a physical
+HYM endpoint. See `CURRENT_STATUS.md` for the exact missing ranges and
+`Q79B89DownstreamPromotionReadinessTheorem_v1.md` for the promotion boundary.
+
 ## Repository map
 
 - `RESEARCH_CHARTER.md`: typed hypothesis and promotion rules.
@@ -471,6 +481,17 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 - `Q79_ETA9_ENDPOINT_UNLOCK_DECISION_PROGRAM_v1.md`: quotient-first,
   goal-oriented decision tree for selecting or obstructing the same-source
   eta9/Deligne/HYM endpoint before expensive full reconstruction.
+- `Q79B89DownstreamPromotionReadinessTheorem_v1.md`: exact T54 audit of the
+  verified T53 carrier frontier and the already-closed conditional rank-164
+  affine obstruction.
+- `q79_b89_accelerated_source_isotopy_result_index.json`: durable,
+  nonoverlapping requester-verified packet ledger.
+- `q79_b89_accelerated_source_isotopy_coverage_report.json`: exact current
+  branch/boundary coverage and missing-range report.
+- `q79_b89_recursive_replacement_campaign.json`: immutable original coverage
+  partition plus explicitly linked cancelled-prefix remainder recovery.
+- `q79_b89_recursive_replacement_campaign_status.json`: process-state and
+  independent-ingestion audit; process success alone is never coverage.
 - `constraint_compression_leakage.packet.json`: generated exact certificate.
 - `repair_fixedpoint_gauge_descent.packet.json`: generated repair/symmetry
   certificate.
