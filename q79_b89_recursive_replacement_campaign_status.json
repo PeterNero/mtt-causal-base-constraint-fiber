@@ -1,15 +1,15 @@
 {
-  "active_result_index_rows": 91,
+  "active_result_index_rows": 92,
   "campaign": "q79_b89_recursive_replacement_campaign.json",
   "campaign_intervals_independently_verified_by_carrier": {
     "boundary": 255,
-    "branch": 264
+    "branch": 269
   },
-  "campaign_job_count": 218,
-  "campaign_packets_independently_verified": 87,
+  "campaign_job_count": 219,
+  "campaign_packets_independently_verified": 88,
   "campaign_packets_independently_verified_by_carrier": {
     "boundary": 65,
-    "branch": 22
+    "branch": 23
   },
   "campaign_verified_jobs": [
     {
@@ -1375,6 +1375,22 @@
     {
       "carrier": "branch",
       "edge": 1,
+      "id": "4db1068a-df89-410b-85cf-e3a369349090",
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "interval_range": [
+        444,
+        449
+      ],
+      "packet_sha256": "47d7169d9c1e78a135627153a97ab0e563f2746430ed8d775d708bb3a511c8ce",
+      "reported_process_state": "cancelled",
+      "result_capsule_sha256": "f93339dbe05ba924860549197340abe7e043e1fae53c993e946150980d399d11",
+      "result_manifest_exit_code": 1,
+      "result_manifest_sha256": "d85c87e8f359612026d7844fae01e93d28d9f2906ee8e535192a621035bd3c63",
+      "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+    },
+    {
+      "carrier": "branch",
+      "edge": 1,
       "id": "4ccf6147-042c-459b-80c9-75e8c849bc89",
       "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
       "interval_range": [
@@ -1405,39 +1421,28 @@
       "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
     }
   ],
+  "cancelled_checkpoint_capsules_available": 1,
   "guardrails": {
+    "cancelled_processes_contribute_only_hash_verified_atomic_prefixes_after_independent_verification": true,
     "failed_verifications_are_absent_from_the_result_index": true,
     "recoverable_non_succeeded_process_labels_are_counted_only_after_zero_exit_capsule_and_independent_verification": true,
     "succeeded_processes_are_not_counted_without_independent_verification": true
   },
-  "newly_ingested": [
-    {
-      "carrier": "branch",
-      "checks": 10,
-      "edge": 1,
-      "id": "4ccf6147-042c-459b-80c9-75e8c849bc89",
-      "interval_range": [
-        456,
-        468
-      ],
-      "packet_sha256": "df7c89ffdb619dcce83f239301f29a2393f9f9dc67084d09923b14dde3b89d61"
-    }
-  ],
-  "recoverable_non_succeeded_capsules_awaiting_independent_verification": 0,
-  "recoverable_non_succeeded_result_capsules_available": 6,
+  "newly_ingested": [],
+  "recoverable_non_succeeded_capsules_awaiting_independent_verification": 27,
+  "recoverable_non_succeeded_result_capsules_available": 33,
   "runtime": {
     "absolute_path_recorded": false,
     "kind": "external durable job store supplied by CLI"
   },
   "schema": "mtt.cbf.q79-b89-recursive-replacement-campaign-status.v1",
   "states": {
-    "claimed": 2,
-    "failed": 6,
-    "queued": 118,
-    "running": 11,
-    "succeeded": 81
+    "cancelled": 1,
+    "failed": 49,
+    "running": 2,
+    "succeeded": 167
   },
-  "succeeded_capsules_awaiting_independent_verification": 0,
-  "succeeded_result_capsules_available": 81,
+  "succeeded_capsules_awaiting_independent_verification": 86,
+  "succeeded_result_capsules_available": 167,
   "verification_failures": []
 }

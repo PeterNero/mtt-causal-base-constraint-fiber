@@ -120,7 +120,9 @@ def parse_verifier_output(output: str) -> dict:
 
 
 def process_result_allowed(
-    job: dict, allow_recoverable_non_succeeded: bool = False
+    job: dict,
+    allow_recoverable_non_succeeded: bool = False,
+    allow_cancelled_checkpoint: bool = False,
 ) -> bool:
     state = str(job.get("state", "unknown"))
     result_exit = job.get("result", {}).get("manifest", {}).get("exit_code")
@@ -130,6 +132,10 @@ def process_result_allowed(
         allow_recoverable_non_succeeded
         and state in {"failed", "running"}
         and result_exit == 0
+    ) or (
+        allow_cancelled_checkpoint
+        and state == "cancelled"
+        and job.get("result", {}).get("available") is True
     )
 
 
@@ -140,12 +146,17 @@ def verify_capsule(
     result_root: Path,
     upstream_root: Path,
     allow_recoverable_non_succeeded: bool = False,
+    allow_cancelled_checkpoint: bool = False,
 ) -> tuple[dict, dict]:
     require(job["id"] == campaign_row["id"], "job id")
     process_state = str(job.get("state", "unknown"))
     require(
-        process_result_allowed(job, allow_recoverable_non_succeeded),
-        "job emitted a zero-exit result in an allowed process state",
+        process_result_allowed(
+            job,
+            allow_recoverable_non_succeeded,
+            allow_cancelled_checkpoint,
+        ),
+        "job emitted an explicitly allowed result capsule",
     )
     require(job["input_capsule"]["sha256"] == campaign_row["input_capsule_sha256"], "input capsule hash")
     require(
@@ -168,7 +179,10 @@ def verify_capsule(
         )
         result_manifest = json.loads(manifest_bytes.decode("ascii"))
         require(result_manifest["job_id"] == job["id"], "result manifest job id")
-        require(result_manifest["exit_code"] == 0, "result manifest exit")
+        if allow_cancelled_checkpoint:
+            require(process_state == "cancelled", "cancelled checkpoint state")
+        else:
+            require(result_manifest["exit_code"] == 0, "result manifest exit")
         require(
             result_manifest["input_capsule_sha256"]
             == campaign_row["input_capsule_sha256"],
@@ -190,11 +204,32 @@ def verify_capsule(
     packet = json.loads(packet_bytes.decode("ascii"))
     require(all(packet["checks"].values()) and not packet["failures"], "packet checks")
     require(int(packet["edge"]) == int(campaign_row["edge"]), "packet edge")
+    packet_range = [int(value) for value in packet["interval_range"]]
+    requested_range = [
+        int(campaign_row["interval_start"]),
+        int(campaign_row["interval_stop"]),
+    ]
     require(
-        [int(value) for value in packet["interval_range"]]
-        == [campaign_row["interval_start"], campaign_row["interval_stop"]],
-        "packet requested range",
+        packet_range[0] == requested_range[0]
+        and packet_range[0] < packet_range[1] <= requested_range[1],
+        "packet is a nonempty requested-range prefix",
     )
+    if packet_range != requested_range:
+        checkpoint = packet.get("checkpoint") or {}
+        require(checkpoint.get("atomic_replace") is True, "atomic checkpoint")
+        require(
+            checkpoint.get("certified_interval_count")
+            == packet_range[1] - packet_range[0],
+            "checkpoint certified interval count",
+        )
+        require(
+            checkpoint.get("next_interval") == packet_range[1],
+            "checkpoint next interval",
+        )
+        require(
+            checkpoint.get("complete_requested_range") is False,
+            "partial checkpoint completion flag",
+        )
 
     command, verifier = verifier_command(
         campaign_row["carrier"], int(campaign_row["edge"]), destination, upstream_root
@@ -216,10 +251,7 @@ def verify_capsule(
         "id": job["id"],
         "carrier": campaign_row["carrier"],
         "edge": int(campaign_row["edge"]),
-        "interval_range": [
-            int(campaign_row["interval_start"]),
-            int(campaign_row["interval_stop"]),
-        ],
+        "interval_range": packet_range,
         "assigned_agent": job.get("assigned_agent"),
         "reported_process_state": process_state,
         "process_exit_code": job.get("exit_code"),
@@ -262,6 +294,7 @@ def main() -> int:
     )
     parser.add_argument("--ingest-succeeded", action="store_true")
     parser.add_argument("--ingest-recoverable-results", action="store_true")
+    parser.add_argument("--ingest-cancelled-checkpoints", action="store_true")
     parser.add_argument("--job-id", action="append", default=[])
     parser.add_argument("--max-ingest", type=int)
     args = parser.parse_args()
@@ -280,6 +313,7 @@ def main() -> int:
     verification_failures = []
     succeeded_available = []
     recoverable_non_succeeded_available = []
+    cancelled_checkpoint_available = []
 
     for campaign_row in campaign["jobs"]:
         job_id = campaign_row["id"]
@@ -297,17 +331,28 @@ def main() -> int:
             and job.get("result", {}).get("manifest", {}).get("exit_code") == 0
             and result_available
         )
+        is_cancelled_checkpoint = state == "cancelled" and result_available
         if is_succeeded_result:
             succeeded_available.append(job_id)
         if is_recoverable_non_succeeded_result:
             recoverable_non_succeeded_available.append(job_id)
-        if not (is_succeeded_result or is_recoverable_non_succeeded_result):
+        if is_cancelled_checkpoint:
+            cancelled_checkpoint_available.append(job_id)
+        if not (
+            is_succeeded_result
+            or is_recoverable_non_succeeded_result
+            or is_cancelled_checkpoint
+        ):
             continue
         requested = (
             (is_succeeded_result and args.ingest_succeeded)
             or (
                 is_recoverable_non_succeeded_result
                 and args.ingest_recoverable_results
+            )
+            or (
+                is_cancelled_checkpoint
+                and args.ingest_cancelled_checkpoints
             )
         )
         if not requested or (selected_ids and job_id not in selected_ids):
@@ -324,6 +369,7 @@ def main() -> int:
                 result_root,
                 upstream_root,
                 allow_recoverable_non_succeeded=is_recoverable_non_succeeded_result,
+                allow_cancelled_checkpoint=is_cancelled_checkpoint,
             )
             indexed[job_id] = row
             ingested.append(
@@ -377,6 +423,9 @@ def main() -> int:
         "recoverable_non_succeeded_result_capsules_available": len(
             recoverable_non_succeeded_available
         ),
+        "cancelled_checkpoint_capsules_available": len(
+            cancelled_checkpoint_available
+        ),
         "active_result_index_rows": len(index["jobs"]),
         "campaign_packets_independently_verified": len(verified_campaign_rows),
         "campaign_packets_independently_verified_by_carrier": dict(
@@ -424,6 +473,7 @@ def main() -> int:
         "guardrails": {
             "succeeded_processes_are_not_counted_without_independent_verification": True,
             "recoverable_non_succeeded_process_labels_are_counted_only_after_zero_exit_capsule_and_independent_verification": True,
+            "cancelled_processes_contribute_only_hash_verified_atomic_prefixes_after_independent_verification": True,
             "failed_verifications_are_absent_from_the_result_index": True,
         },
     }

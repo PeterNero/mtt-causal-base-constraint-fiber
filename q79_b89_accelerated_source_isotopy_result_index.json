@@ -2016,6 +2016,32 @@
       "result_manifest_sha256": "7b0e853c3b87d750ccbb61f25a1a3d885fd6ae1e95b2c2690050cb5c293b980e"
     },
     {
+      "assigned_agent": "DESKTOP-9GSNTQ3-eta9-08",
+      "carrier": "branch",
+      "edge": 1,
+      "id": "4db1068a-df89-410b-85cf-e3a369349090",
+      "independent_verification": {
+        "packet_sha256": "47d7169d9c1e78a135627153a97ab0e563f2746430ed8d775d708bb3a511c8ce",
+        "passed": true,
+        "passed_checks": 10,
+        "total_checks": 10,
+        "verifier": "C:\\Users\\nero_\\AppData\\Local\\Programs\\Python\\Python314\\python.exe C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-causal-base-constraint-fiber\\verify_q79_b89_accelerated_adaptive_source_isotopy.py --packet C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-causal-base-constraint-fiber\\q79_b89_accelerated_source_isotopy_results\\v2\\4db1068a-df89-410b-85cf-e3a369349090\\t53-v2-adaptive-branch-e1-i444-456.json --baseline-root C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus --source C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_relative_adjoint_compiler\\q79_eta9_b89_relative_adjoint_worker_input.json --guides C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_family_branch_braid_pilot\\kernel_inputs\\right80-edge1-guides.npz --metadata C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-preprojection-repair-calculus\\experiments\\q79_eta9_b89_family_branch_braid_pilot\\kernel_inputs\\right80-edge1-guides.json",
+        "verifier_sha256": "8b3e158e8a12035be9225479bfb6ce14262ea62d2c171a208220adb50a7acbd5"
+      },
+      "input_capsule_sha256": "a05f95ea8774a90fc35b01b846d00c3c3a740693547ad782890a053e70846425",
+      "interval_range": [
+        444,
+        449
+      ],
+      "packet_path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_results/v2/4db1068a-df89-410b-85cf-e3a369349090/t53-v2-adaptive-branch-e1-i444-456.json",
+      "packet_sha256": "47d7169d9c1e78a135627153a97ab0e563f2746430ed8d775d708bb3a511c8ce",
+      "process_exit_code": 1,
+      "reported_process_state": "cancelled",
+      "result_capsule_sha256": "f93339dbe05ba924860549197340abe7e043e1fae53c993e946150980d399d11",
+      "result_manifest_exit_code": 1,
+      "result_manifest_sha256": "d85c87e8f359612026d7844fae01e93d28d9f2906ee8e535192a621035bd3c63"
+    },
+    {
       "assigned_agent": "pinero-t53-04",
       "carrier": "branch",
       "edge": 1,

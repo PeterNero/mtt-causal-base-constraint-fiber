@@ -61,6 +61,27 @@ class RecursiveReplacementIngestTests(unittest.TestCase):
         self.assertFalse(MODULE.process_result_allowed(job))
         self.assertTrue(MODULE.process_result_allowed(job, True))
 
+    def test_cancelled_checkpoint_requires_explicit_gate_and_available_capsule(self) -> None:
+        job = {
+            "state": "cancelled",
+            "exit_code": 1,
+            "result": {"available": True, "manifest": {"exit_code": 1}},
+        }
+        self.assertFalse(MODULE.process_result_allowed(job))
+        self.assertTrue(
+            MODULE.process_result_allowed(
+                job,
+                allow_cancelled_checkpoint=True,
+            )
+        )
+        job["result"]["available"] = False
+        self.assertFalse(
+            MODULE.process_result_allowed(
+                job,
+                allow_cancelled_checkpoint=True,
+            )
+        )
+
     def test_succeeded_zero_exit_remains_allowed(self) -> None:
         self.assertTrue(
             MODULE.process_result_allowed({"state": "succeeded", "exit_code": 0})
