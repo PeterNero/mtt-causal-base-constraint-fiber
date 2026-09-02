@@ -132,6 +132,8 @@ def main() -> None:
     run(sys.executable, "verify_q79_fourier_mukai_double_qutrit_augmented_exterior_bridge.py")
     run(sys.executable, "build_q79_double_qutrit_mixed_bidegree_spinc_soldering.py")
     run(sys.executable, "verify_q79_double_qutrit_mixed_bidegree_spinc_soldering.py")
+    run(sys.executable, "build_q79_binary_spinc_pauli_rootstack_compiler.py")
+    run(sys.executable, "verify_q79_binary_spinc_pauli_rootstack_compiler.py")
     run(sys.executable, "verify_q79_b89_accelerated_source_isotopy.py")
     run(sys.executable, "verify_q79_b89_source_isotopy_frontier_freeze.py")
     run(sys.executable, "build_q79_b89_downstream_promotion_readiness.py")

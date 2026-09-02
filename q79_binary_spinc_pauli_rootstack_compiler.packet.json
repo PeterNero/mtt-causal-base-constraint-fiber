@@ -1,0 +1,708 @@
+{
+  "binary_spinor": {
+    "SpinC_roots": [
+      "+i",
+      "-i"
+    ],
+    "carrier": "S=C^2, the selected binary sheet SpinC carrier",
+    "combined_generator_squares": [
+      "(+i q_a)^2=1",
+      "(-i q_a)^2=1"
+    ],
+    "determinant_character": "sign",
+    "group": "Dic3 -> S3",
+    "q1_quaternion": [
+      "0",
+      "sqrt(2)/2",
+      "-sqrt(2)/2",
+      "0"
+    ],
+    "q2_quaternion": [
+      "0",
+      "0",
+      "sqrt(2)/2",
+      "-sqrt(2)/2"
+    ],
+    "relations": [
+      "q1^2=q2^2=-1",
+      "q1 q2 q1=q2 q1 q2",
+      "(q1 q2)^3=-1"
+    ],
+    "unselected_conjugate_presentations": 2
+  },
+  "checks": {
+    "T24_does_not_regrade_mixed_H2_to_augmented_H1": true,
+    "adjoint_q1_has_signed_permutation_character": true,
+    "adjoint_q1_is_orthogonal": true,
+    "adjoint_q2_has_signed_permutation_character": true,
+    "adjoint_q2_is_orthogonal": true,
+    "all_local_source_hashes_match": true,
+    "binary_braid_relation": true,
+    "binary_product_cube_is_minus_one": true,
+    "combined_identity_character_is_four": true,
+    "combined_representation_has_rank_four": true,
+    "combined_three_cycle_character_is_one": true,
+    "combined_transposition_character_is_zero": true,
+    "determinant_twist_q1_is_literal_P23": true,
+    "determinant_twist_q2_is_literal_P12": true,
+    "generated_sheet_group_has_order_six": true,
+    "generated_sheet_group_is_closed": true,
+    "hidden_adjoint_HYM_is_unchanged_by_flat_line_twist": true,
+    "hidden_visible_common_endpoint_is_not_claimed": true,
+    "no_continuous_physical_parameters": true,
+    "no_discrete_physical_selectors": true,
+    "no_fitted_values": true,
+    "no_observed_inputs": true,
+    "physical_HYM_soldering_is_not_claimed": true,
+    "physical_packet_acceptance_stays_zero_of_three": true,
+    "physical_row_acceptance_stays_zero_of_seven": true,
+    "q1_is_unit": true,
+    "q1_square_is_minus_one": true,
+    "q2_is_unit": true,
+    "q2_square_is_minus_one": true,
+    "qutrit_to_binary_maps_are_not_claimed": true,
+    "rank_three_lane_is_sheet_permutation_system": true,
+    "root_selector_is_not_added": true,
+    "shared_line_is_flat_SpinC_determinant": true,
+    "twisted_braid_relation": true,
+    "twisted_generators_are_involutions": true,
+    "twisted_product_has_order_three": true,
+    "two_conjugate_roots_are_equivalent": true
+  },
+  "claim_id": "CBF.T62",
+  "date": "2026-09-02",
+  "flat_rootstack_compiler": {
+    "character_on_identity_transposition_three_cycle": [
+      4,
+      0,
+      1
+    ],
+    "generator_1": [
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "generator_2": [
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "holonomy_rows": [
+      {
+        "class": "identity",
+        "combined_1_plus_3_matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "combined_character": 4,
+        "determinant_character": 1,
+        "parity": 0,
+        "sheet_matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "word": "e"
+      },
+      {
+        "class": "transposition",
+        "combined_1_plus_3_matrix": [
+          [
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "combined_character": 0,
+        "determinant_character": -1,
+        "parity": 1,
+        "sheet_matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "word": "1"
+      },
+      {
+        "class": "transposition",
+        "combined_1_plus_3_matrix": [
+          [
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "combined_character": 0,
+        "determinant_character": -1,
+        "parity": 1,
+        "sheet_matrix": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "word": "121"
+      },
+      {
+        "class": "transposition",
+        "combined_1_plus_3_matrix": [
+          [
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "combined_character": 0,
+        "determinant_character": -1,
+        "parity": 1,
+        "sheet_matrix": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "word": "2"
+      },
+      {
+        "class": "three_cycle",
+        "combined_1_plus_3_matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "combined_character": 1,
+        "determinant_character": 1,
+        "parity": 0,
+        "sheet_matrix": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "word": "12"
+      },
+      {
+        "class": "three_cycle",
+        "combined_1_plus_3_matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "combined_character": 1,
+        "determinant_character": 1,
+        "parity": 0,
+        "sheet_matrix": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "word": "21"
+      }
+    ],
+    "identity": "D tensor End(S)=D tensor C.I2 direct-sum D tensor sl(S)=L_shared direct-sum E_D^C",
+    "new_parameter_or_selector": false,
+    "ordered_1_plus_3_basis": [
+      "I2",
+      "sigma_x",
+      "sigma_y",
+      "sigma_z"
+    ],
+    "rank_three_lane": "D tensor sl(S)=E_D^C",
+    "root_independence": "The +/-i phases cancel on End(S), and both determinant characters are sign.",
+    "scalar_lane": "D=det(S)=L_shared, the root-independent flat SpinC sign line"
+  },
+  "frontier_delta": "T61's determinant-twisted Pauli possibility is now an exact global flat q79 root-stack compiler: the scalar lane is the shared SpinC determinant and the three Pauli lanes are literally the sheet-permutation local system. The unknown global map is reduced to two same-source qutrit-to-binary identifications, a genuine mixed-degree suspension, and physical HYM soldering to the antiholomorphic cotangent bundle. T24 does not supply that suspension. Physical blockers and counters do not move.",
+  "hidden_HYM_compatibility": {
+    "closed_identity": "End(L_shared tensor W9)=End(W9)",
+    "common_visible_hidden_chamber": false,
+    "connection_reason": "The flat scalar shared-line connection cancels in the adjoint commutator.",
+    "curvature_HYM_constant_and_hidden_Hessian_unchanged": true,
+    "physical_Hull_Strominger_endpoint": false,
+    "selected_visible_V3": false
+  },
+  "parameter_ledger": {
+    "continuous_physical_parameters": 0,
+    "discrete_physical_selectors": 0,
+    "equivalent_unselected_root_presentations": 2,
+    "fitted_values": 0,
+    "observed_inputs": 0
+  },
+  "pauli_adjoint": {
+    "Ad_q1": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "Ad_q2": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "P_12": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "P_23": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "character_on_identity_transposition_three_cycle": [
+      3,
+      -1,
+      0
+    ],
+    "determinant_twisted_Ad_q1": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "determinant_twisted_Ad_q2": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "ordered_basis": [
+      "sigma_x",
+      "sigma_y",
+      "sigma_z"
+    ],
+    "representation_type": "sign tensor E_D",
+    "twisted_representation_type": "E_D"
+  },
+  "physical_boundary": {
+    "B_GEO_01": "OPEN",
+    "B_HS_01": "OPEN",
+    "B_OP_01": "OPEN",
+    "physical_packets_accepted": 0,
+    "physical_packets_required": 3,
+    "physical_rows_accepted": 0,
+    "physical_rows_required": 7
+  },
+  "schema": "boe.mtt.q79-binary-spinc-pauli-rootstack-compiler.v1",
+  "source_cutset": {
+    "closed_flat_compiler": "binary S -> D tensor End(S) -> L_shared direct-sum E_D^C",
+    "derived_T61_matching_if_maps_exist": "s=b_v^(-1) b_i",
+    "open_degree_map": "tau:D tensor End(S)->augmented degree one",
+    "open_line_comparison": "L_shared->L_alpha on the physical symbol base",
+    "open_physical_soldering": "sigma_D:E_D^C->T^(0,1)*X",
+    "open_qutrit_maps": [
+      "b_v:U_v->S",
+      "b_i:U_i->S"
+    ],
+    "required_endpoint_properties": [
+      "same selected visible-hidden HYM source",
+      "unitary parallel complete-holonomy intertwining",
+      "ramification extension",
+      "metric orientation and principal-symbol preservation",
+      "domain projector Green and residual preservation",
+      "certified continuum-to-finite error"
+    ]
+  },
+  "source_provenance": {
+    "discovery_evidence": [
+      {
+        "extracted_claim": "The selected binary sheet lifts q1,q2 generate Dic3, their shared phase roots are plus/minus i, and the combined SpinC lifts square to identity with determinant equal to the shared sign line.",
+        "id": "Q79_BINARY_SHEET_FM_SPINC_RETURN",
+        "path": "q79_binary_sheet_fm_shared_root_comparison.packet.json",
+        "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+        "required_for_portable_build": false,
+        "sha256": "c889acdd290137543c1afd22f90ddafe4618a6fcae9baaf65b24862e471d7a9f"
+      },
+      {
+        "extracted_claim": "The SpinC determinant, CLN line and finite root-stack operators are parallel pullbacks of one universal flat Z64 line; continuum nonzero-Chern HYM Hessian naturality remains open.",
+        "id": "Q79_UNIVERSAL_SHARED_LINE",
+        "path": "q79_universal_shared_line_intertwiner.packet.json",
+        "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+        "required_for_portable_build": false,
+        "sha256": "6a39eef5e86082040a705b7259ceced756f3b9b569e444a3075a3f239123b1ff"
+      },
+      {
+        "extracted_claim": "Tensoring the existential hidden projective HYM bundle by the flat shared line preserves curvature, the adjoint connection and the hidden deformation Hessian, but does not select the visible/common Hull-Strominger endpoint.",
+        "id": "Q79_HIDDEN_SHARED_LINE_HYM",
+        "path": "research_frontier/aqg_q79_hidden_shared_line_hym_promotion.packet.json",
+        "repository": "18 Theta-Closure & Execution Program",
+        "required_for_portable_build": false,
+        "sha256": "e3cfd9341bf9cf0794bbb557f7b16afd97f104ecf8976ee24593bcd2b04460c9"
+      },
+      {
+        "extracted_claim": "The determinant-twisted root-plane exterior functor gives the q79 sheet-permutation strain system and J_DE exactly on the flat root-stack symbol; the inverse-Fourier-Mukai HYM lift remains open.",
+        "id": "Q79_ROOTPLANE_STRAIN_FUNCTOR",
+        "path": "certificates/q79_shared_rootplane_twisted_exterior_jde_functor_certificate.json",
+        "repository": "mtt-protospinor-gr-response-proof",
+        "required_for_portable_build": false,
+        "sha256": "bd3fa74c70d47490f28fe32c729acbb75c680e5168455dc86025c64988127d32"
+      }
+    ],
+    "handoff_id": "7f3f1663-ab5a-4c03-b0c5-89a004d451a4",
+    "locked_local_sources": [
+      {
+        "actual_sha256": "0bd12aeb4c5c195b36b16d03353ba8c9742882caa10524b698e92e226528db86",
+        "expected_sha256": "0bd12aeb4c5c195b36b16d03353ba8c9742882caa10524b698e92e226528db86",
+        "id": "T61_THEOREM",
+        "matches": true,
+        "path": "Q79DoubleQutritMixedBidegreeEndomorphismAndSpinCSolderingCriterionTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "08a20f808bc619c8115b9fd33e473aabea5b1c353b5693126e4eedd8a46fa9db",
+        "expected_sha256": "08a20f808bc619c8115b9fd33e473aabea5b1c353b5693126e4eedd8a46fa9db",
+        "id": "T61_PACKET",
+        "matches": true,
+        "path": "q79_double_qutrit_mixed_bidegree_spinc_soldering.packet.json"
+      },
+      {
+        "actual_sha256": "f4c790180c2018706bd47e0e24c04c03046305e9cc9d24d0f3f38e075edbd417",
+        "expected_sha256": "f4c790180c2018706bd47e0e24c04c03046305e9cc9d24d0f3f38e075edbd417",
+        "id": "T42_THEOREM",
+        "matches": true,
+        "path": "Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d",
+        "expected_sha256": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d",
+        "id": "T42_PACKET",
+        "matches": true,
+        "path": "q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.packet.json"
+      },
+      {
+        "actual_sha256": "d07d66ce1e67398472692c50fa81bceab696d55df5a9728a691e4b791bc9bc32",
+        "expected_sha256": "d07d66ce1e67398472692c50fa81bceab696d55df5a9728a691e4b791bc9bc32",
+        "id": "T24_THEOREM",
+        "matches": true,
+        "path": "UpperTensorTotalizationSharedLineSuperchargeSelectionTheorem_v1.md"
+      },
+      {
+        "actual_sha256": "9cffb9e688968f4debe4f5f10a618788155d9df663ae900843e663aff3b8f7f5",
+        "expected_sha256": "9cffb9e688968f4debe4f5f10a618788155d9df663ae900843e663aff3b8f7f5",
+        "id": "T24_PACKET",
+        "matches": true,
+        "path": "upper_totalization_supercharge.packet.json"
+      }
+    ],
+    "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+    "schema_sha256": "f9965b87312348db12a88570a6bd44a59b9ced68cd0408b9697cd815f4172c18",
+    "source_lock_sha256": "b9089a49d7e632b8f37f8807b2ca817c54c42c6cf3776109f345187f887e89cb",
+    "theorem_sha256": "f6d57de0451d7816e3e400316f8dda978299c45df6952b8891dff0c2c92434e2"
+  },
+  "status": "CLOSED_EXACT_FLAT_ROOTSTACK_1PLUS3_COMPILER_QUTRIT_BINDING_AND_PHYSICAL_HYM_SOLDERING_OPEN",
+  "strain_composition": {
+    "T42_flat_strain_source": "E_D direct-sum E_S with J_DE=[[0,-I3],[I3,0]]",
+    "complexification_statement": "Realifying E_D^C gives the two real E_D copies on which J_DE is the standard complex structure.",
+    "marked_vertical_C4_promoted": false,
+    "meeting_lane": "The Pauli rank-three lane is the same E_D sheet-permutation local system.",
+    "physical_inverse_Fourier_Mukai_HYM_promoted": false
+  },
+  "tier": "exact flat associated-bundle representation and hidden shared-line HYM naturality; physical endpoint open",
+  "totalization_cutset": {
+    "T24_factor_degrees": "external degree-one differential plus root-neutral order-zero Yukawa incidence",
+    "T24_selected_totalization": "q_tot=q_Y tensor I + Gamma_Y tensor q_F",
+    "T24_supplies_T61_degree_shift": false,
+    "T61_mixed_source": "U_v tensor U_i subset Lambda^2(U_v direct-sum U_i)",
+    "reason": "T24 does not suspend or regrade the mixed (1,1) degree-two summand into the augmented degree-one carrier."
+  }
+}

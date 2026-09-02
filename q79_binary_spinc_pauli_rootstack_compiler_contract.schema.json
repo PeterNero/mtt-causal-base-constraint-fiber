@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "boe.mtt.q79-binary-spinc-pauli-rootstack-compiler.v1",
+  "title": "CBF.T62 q79 binary-SpinC Pauli root-stack compiler packet",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "date",
+    "status",
+    "tier",
+    "source_provenance",
+    "binary_spinor",
+    "pauli_adjoint",
+    "flat_rootstack_compiler",
+    "strain_composition",
+    "hidden_HYM_compatibility",
+    "totalization_cutset",
+    "source_cutset",
+    "physical_boundary",
+    "parameter_ledger",
+    "frontier_delta",
+    "checks"
+  ],
+  "properties": {
+    "schema": {
+      "const": "boe.mtt.q79-binary-spinc-pauli-rootstack-compiler.v1"
+    },
+    "claim_id": {
+      "const": "CBF.T62"
+    },
+    "date": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string"
+    },
+    "source_provenance": {
+      "type": "object"
+    },
+    "binary_spinor": {
+      "type": "object"
+    },
+    "pauli_adjoint": {
+      "type": "object"
+    },
+    "flat_rootstack_compiler": {
+      "type": "object"
+    },
+    "strain_composition": {
+      "type": "object"
+    },
+    "hidden_HYM_compatibility": {
+      "type": "object"
+    },
+    "totalization_cutset": {
+      "type": "object"
+    },
+    "source_cutset": {
+      "type": "object"
+    },
+    "physical_boundary": {
+      "type": "object"
+    },
+    "parameter_ledger": {
+      "type": "object"
+    },
+    "frontier_delta": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": {
+        "const": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

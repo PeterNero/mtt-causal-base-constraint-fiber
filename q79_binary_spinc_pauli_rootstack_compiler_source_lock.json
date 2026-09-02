@@ -1,0 +1,80 @@
+{
+  "schema": "boe.mtt.source-lock.v1",
+  "claim_id": "CBF.T62",
+  "date": "2026-09-02",
+  "model_state_sha256": "f92c7c23388a1de1076e33b2f18ca97c689cc5c9c66340678238c86e8573e1a1",
+  "handoff_id": "7f3f1663-ab5a-4c03-b0c5-89a004d451a4",
+  "sources": [
+    {
+      "id": "T61_THEOREM",
+      "path": "Q79DoubleQutritMixedBidegreeEndomorphismAndSpinCSolderingCriterionTheorem_v1.md",
+      "sha256": "0bd12aeb4c5c195b36b16d03353ba8c9742882caa10524b698e92e226528db86"
+    },
+    {
+      "id": "T61_PACKET",
+      "path": "q79_double_qutrit_mixed_bidegree_spinc_soldering.packet.json",
+      "sha256": "08a20f808bc619c8115b9fd33e473aabea5b1c353b5693126e4eedd8a46fa9db"
+    },
+    {
+      "id": "T42_THEOREM",
+      "path": "Q79WeylKoszulMonodromyC4CohomologyIntertwinerAndProductCutsetTheorem_v1.md",
+      "sha256": "f4c790180c2018706bd47e0e24c04c03046305e9cc9d24d0f3f38e075edbd417"
+    },
+    {
+      "id": "T42_PACKET",
+      "path": "q79_weyl_koszul_monodromy_c4_cohomology_intertwiner.packet.json",
+      "sha256": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d"
+    },
+    {
+      "id": "T24_THEOREM",
+      "path": "UpperTensorTotalizationSharedLineSuperchargeSelectionTheorem_v1.md",
+      "sha256": "d07d66ce1e67398472692c50fa81bceab696d55df5a9728a691e4b791bc9bc32"
+    },
+    {
+      "id": "T24_PACKET",
+      "path": "upper_totalization_supercharge.packet.json",
+      "sha256": "9cffb9e688968f4debe4f5f10a618788155d9df663ae900843e663aff3b8f7f5"
+    }
+  ],
+  "discovery_evidence": [
+    {
+      "id": "Q79_BINARY_SHEET_FM_SPINC_RETURN",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "path": "q79_binary_sheet_fm_shared_root_comparison.packet.json",
+      "sha256": "c889acdd290137543c1afd22f90ddafe4618a6fcae9baaf65b24862e471d7a9f",
+      "extracted_claim": "The selected binary sheet lifts q1,q2 generate Dic3, their shared phase roots are plus/minus i, and the combined SpinC lifts square to identity with determinant equal to the shared sign line.",
+      "required_for_portable_build": false
+    },
+    {
+      "id": "Q79_UNIVERSAL_SHARED_LINE",
+      "repository": "20 Mathematical Language Discovery Program - Closure Dynamics",
+      "path": "q79_universal_shared_line_intertwiner.packet.json",
+      "sha256": "6a39eef5e86082040a705b7259ceced756f3b9b569e444a3075a3f239123b1ff",
+      "extracted_claim": "The SpinC determinant, CLN line and finite root-stack operators are parallel pullbacks of one universal flat Z64 line; continuum nonzero-Chern HYM Hessian naturality remains open.",
+      "required_for_portable_build": false
+    },
+    {
+      "id": "Q79_HIDDEN_SHARED_LINE_HYM",
+      "repository": "18 Theta-Closure & Execution Program",
+      "path": "research_frontier/aqg_q79_hidden_shared_line_hym_promotion.packet.json",
+      "sha256": "e3cfd9341bf9cf0794bbb557f7b16afd97f104ecf8976ee24593bcd2b04460c9",
+      "extracted_claim": "Tensoring the existential hidden projective HYM bundle by the flat shared line preserves curvature, the adjoint connection and the hidden deformation Hessian, but does not select the visible/common Hull-Strominger endpoint.",
+      "required_for_portable_build": false
+    },
+    {
+      "id": "Q79_ROOTPLANE_STRAIN_FUNCTOR",
+      "repository": "mtt-protospinor-gr-response-proof",
+      "path": "certificates/q79_shared_rootplane_twisted_exterior_jde_functor_certificate.json",
+      "sha256": "bd3fa74c70d47490f28fe32c729acbb75c680e5168455dc86025c64988127d32",
+      "extracted_claim": "The determinant-twisted root-plane exterior functor gives the q79 sheet-permutation strain system and J_DE exactly on the flat root-stack symbol; the inverse-Fourier-Mukai HYM lift remains open.",
+      "required_for_portable_build": false
+    }
+  ],
+  "portability": {
+    "external_absolute_paths_required_at_runtime": false,
+    "external_claims_are_hash_locked": true,
+    "binary_and_representation_claims_are_recomputed_algebraically": true,
+    "hidden_HYM_claim_is_composed_not_reexecuted": true,
+    "physical_endpoint_data_embedded": false
+  }
+}

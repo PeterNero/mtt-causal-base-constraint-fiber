@@ -2061,3 +2061,30 @@ the shared-line lane and cannot be erased by a local epsilon frame. T61 keeps
 all physical blockers and counters open, adds no parameter or selector, and
 passes `46/46` builder checks, `41/41` independent checks and 14 focused
 tests; the full canonical repository suite passes all 581 tests.
+
+`Q79BinarySpinCPauliRootStackCompilerAndPhysicalSolderingCutsetTheorem_v1.md`
+(`CBF.T62`) constructs the global flat-root-stack object that T61 left as a
+SpinC possibility. If `S` is the selected binary sheet spinor and
+`D=det(S)`, then
+
+```text
+D tensor End(S)=L_shared direct-sum E_D^C.
+```
+
+The equality is exact at full `S3` holonomy: in the Pauli basis the two
+determinant-twisted adjoints are literally `P_(23)` and `P_(12)`. Thus the
+scalar is the root-independent shared SpinC determinant line and the three
+traceless directions are the q79 sheet-permutation local system. The two
+conjugate `+i/-i` presentations induce the same compiler and require no
+selector. The shared scalar line also tensors through the existential hidden
+projective HYM object without changing its adjoint connection or Hessian.
+
+This does not yet identify the compiler with T58's physical augmented symbol.
+T62 proves that T24's existing totalization has the wrong factor degrees to
+supply the missing suspension. The remaining objects are the same-source maps
+from both T60 qutrit planes to the binary spinor, a genuine mixed-degree shift,
+and the physical parallel soldering `E_D^C->T^(0,1)*X` plus its line comparison.
+The physical HYM endpoint and `0/7` rows remain open. T62 passes `37/37`
+builder checks, `44/44` independent checks and 13 focused tests, with no new
+parameter, fit, observed input or discrete selector; the full canonical suite
+passes all 594 tests.

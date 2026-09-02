@@ -77,6 +77,8 @@ paper, note, packet name or search hit.
    handoff is `6b64e72d-1dbb-4c88-8a77-b7b91ffa217a`;
    the q79 double-qutrit polarization, mixed-bidegree endomorphism and SpinC
    soldering-criterion handoff is `57b00a64-ed56-487a-a365-aa7b78b54468`;
+   the q79 binary-SpinC Pauli root-stack compiler and physical-soldering cutset
+   handoff is `7f3f1663-ab5a-4c03-b0c5-89a004d451a4`;
    the accelerated q79 B89 same-source isotopy and affine-Deligne branch
    decision handoff is `8a175974-2390-48a7-8963-21601cf63157`;
    the radial closure-attractor and state-marginal handoff is

@@ -11,6 +11,7 @@ This is a snapshot, not a substitute for live kernel queries.
 - Accelerated q79 B89 same-source isotopy handoff: `8a175974-2390-48a7-8963-21601cf63157`
 - Fourier-Mukai double-qutrit bridge handoff: `6b64e72d-1dbb-4c88-8a77-b7b91ffa217a`
 - double-qutrit polarization and SpinC soldering handoff: `57b00a64-ed56-487a-a365-aa7b78b54468`
+- binary-SpinC Pauli root-stack compiler handoff: `7f3f1663-ab5a-4c03-b0c5-89a004d451a4`
 - Provider-neutral source/q79 classification handoff: `f8fdd194-ed79-45af-a124-5c6219a6dce1`
 - Direct one-constraint multiplier-source handoff: `b8d489d8-41ea-4481-9c15-b31904f215af`
 - Closure-pressure family-Hessian handoff: `c90aa36c-e4b7-4dbe-9eaf-b599b414d474`
@@ -2431,3 +2432,54 @@ open. Physical counters stay `0/3`, `0/3`, `0/7`; no parameter, fit or
 observed value is added. Focused evidence is `46/46` builder checks, `41/41`
 independent checks and 14 unit tests. The full canonical repository suite
 passes all 581 tests.
+
+## CBF.T62 binary-SpinC Pauli root-stack compiler
+
+`Q79BinarySpinCPauliRootStackCompilerAndPhysicalSolderingCutsetTheorem_v1.md`
+composes T61 with the selected binary sheet SpinC carrier, universal shared
+line, q79 sheet local system and hidden shared-line HYM tensoring. For the
+binary spinor `S`, with `D=det(S)`, the exact global flat-root-stack identity is
+
+```text
+D tensor End(S)
+  = D tensor C I2 direct-sum D tensor sl(S)
+  = L_shared direct-sum E_D^C.
+```
+
+This is stronger than a character or rank match. In the ordered Pauli basis,
+the two binary adjoints have character `(3,-1,0)`. Multiplication by the
+determinant sign gives
+
+```text
+-Ad(q1)=P_(23),                 -Ad(q2)=P_(12)
+```
+
+entry by entry. The matrices generate all six `S3` holonomies, so the
+three-lane is literally the q79 sheet-permutation local system. The scalar
+lane is the root-independent shared SpinC determinant line. The conjugate
+`+i/-i` roots produce the same compiler and add no selector.
+
+The hidden HYM shared-line theorem composes with the scalar lane: twisting the
+existential hidden projective HYM object by the flat shared line preserves its
+curvature, adjoint connection and hidden deformation Hessian. This does not
+select the visible bundle or common Hull-Strominger chamber.
+
+T62 also proves that T24 is not the missing degree shift. T24 totalizes an
+external degree-one differential with a root-neutral order-zero Yukawa factor;
+it does not suspend the T61 mixed `(1,1)` degree-two summand. The remaining
+global source is now exactly:
+
+```text
+b_v:U_v->S,                    b_i:U_i->S,
+tau:D tensor End(S)->augmented degree one,
+L_shared->L_alpha,
+sigma_D:E_D^C->T^(0,1)*X.
+```
+
+The final maps must be emitted by the same selected q79 HYM endpoint and must
+preserve complete holonomy, ramification extension, symbol, domains, projector,
+Green operator and certified residual. `B.HS.01`, `B.GEO.01` and `B.OP.01`
+remain open and physical counters stay `0/3`, `0/3`, `0/7`. T62 adds no
+observed input, fit, continuous parameter or discrete selector. Focused
+evidence is `37/37` builder checks, `44/44` independent checks and 13 tests;
+the full canonical repository suite passes all 594 tests.
