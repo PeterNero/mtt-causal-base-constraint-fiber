@@ -1,0 +1,45 @@
+{
+  "schema": "mtt.cbf.q79-eta9-twisted-spectral-rank-divisibility-source.v1",
+  "sources": {
+    "B89": {
+      "deligne_class": "NONZERO",
+      "local_path": "q79_b89_same_source_deligne_obstruction.packet.json",
+      "mod_two_shadow": 1,
+      "order_known": false,
+      "sha256": "07274f863a06463ff0e5812a35cea80ac821dcde447eb14f6709591eef171210",
+      "theorem_id": "H4-T126"
+    },
+    "G3BI": {
+      "global_deligne_class": "NONZERO",
+      "local_component": 4,
+      "local_component_group_modulus": 20,
+      "local_component_order": 5,
+      "repository_commit": "5f50be28d469fffff9ae4f2a9ddaff1883c22aa0",
+      "sha256": "e18074197c47a0104ba8d62a092ea854ab5e04c77a7be02d596111ecc64a255b",
+      "theorem_id": "H4-T87",
+      "upstream_path": "experiments/q79_eta9_g3bi_deligne_obstruction/q79_eta9_g3bi_deligne_obstruction.packet.json"
+    },
+    "rank_one_gate": {
+      "field": "rank_one_spectral_object_gate.inverse_gerbe_twisted_rank_one_sheaf_exists_iff_beta_C_zero",
+      "repository_commit": "774bd880893043d5bcede64ae49020303e3d5d66",
+      "sha256": "4f6aba0ce7b2a0a586c49ef60740f08f77535536a421cdafe8704ec9af9a93b9",
+      "upstream_path": "candidate_data/selected_q79twistedspectralgerbelifthymandbianchiexecution/flat_analytic_gerbe_lift_gate.packet.json",
+      "value": true
+    },
+    "post_M32_rank_cutset": {
+      "cover_degree": 3,
+      "desired_inverse_transform_rank": 3,
+      "forced_generic_spectral_rank": 1,
+      "repository_commit": "8472ac9fe24a8dd9206470912c23268f9640ad30",
+      "sha256": "fd85686d84ceeb51a876311cb05c22cb641d4626c23c52651ba0fd18f57a9d13",
+      "status": "PHYSICAL_ALPHA_ZERO_TARGET_AND_SPECTRAL_RANK_CUTSET_CLOSED_EXACT",
+      "upstream_path": "q79_post_m32_global_gerbe_target_and_rank_cutset.packet.json"
+    },
+    "T67": {
+      "local_path": "q79_eta9_cayley_critical_correlated_readout.packet.json",
+      "physical_endpoint_selected": false,
+      "sha256": "f8798baa711970b85b48026dd0339e2fb413d5d066dbe3166845a0d0c16240bc",
+      "theorem_id": "CBF.T67"
+    }
+  }
+}

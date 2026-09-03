@@ -2726,3 +2726,81 @@ coefficient-ball `6777 x 6777` inverse certificate with a strict Neumann
 bound, all-row replay and a denominator ball excluding zero. The result adds
 no observed input, fit parameter or selector. Eight focused tests and the
 independent T65 verifier pass.
+
+## CBF.T66 characteristic-zero Cayley extension
+
+`Q79Eta9CayleyCriticalCharacteristicZeroExtensionTheorem_v1.md` replaces
+T65's frozen-binary row-gauge comparison with a coefficient-ball system for
+the declared seed-7909 minor. A binary64 sparse inverse is used only as a
+preconditioner. Thirty-six cancellation-sensitive rows are rebuilt with
+512-bit Arb arithmetic and give
+
+```text
+||I-PA||_infinity <= 0.484076176568743,
+Neumann margin      >= 0.515923823431257.
+```
+
+Thus the exact characteristic-zero `6777 x 6777` system is invertible. All
+16,740 value rows and all 16,740 derivative rows enclose zero. The independent
+coordinate-box denominator still contains zero, so T66 closes the inverse and
+all-row relation gates but does not yet close the scalar readout.
+
+## CBF.T67 correlated characteristic-zero scalar readout
+
+`Q79Eta9CayleyCriticalCorrelatedReadoutTheorem_v1.md` retains the common
+2,584-coordinate source instead of treating 6,777 dependent solution
+coordinates independently. Exact Cayley transport and two adjoint solves give
+
+```text
+|D|  >= 1.830171225420945e-4,
+|D'| >= 1.131190099982028e-3,
+
+s_C  =  309666.0027514012 - 1567924.023635981 i,
+s_C' = -8712642.17150278 + 4654975.173896328 i.
+```
+
+The certified absolute errors are at most `1.460e-10` and `1.044e-3`; an
+independent array-only replay also excludes zero. This is an exact
+characteristic-zero normalization result on the B89 method member, with no
+observed value, fit parameter or selector. It is not a physical value because
+B89 is already excluded from the admissible endpoint locus.
+
+## CBF.T68 twisted-spectral rank divisibility and endpoint sieve
+
+`Q79Eta9TwistedSpectralRankDivisibilityAndEndpointSieveTheorem_v1.md` consumes
+the already-proved post-M32 QG rank cutset and applies it to the later exact
+B89/G3BI data. The determinant law is not rediscovered here. If transition
+matrices of a rank-`r` `alpha`-twisted object obey
+If transition matrices of a rank-`r` `alpha`-twisted object obey
+
+```text
+g_ij g_jk g_ki = alpha_ijk I_r,
+```
+
+then determinants give `r[alpha]=0`. The degree-three endpoint has spectral
+rank one and inverse-transform rank three, so `beta_C=0` is a derived descent
+condition rather than an optional selection convention.
+
+The exact candidate consequences are:
+
+```text
+                         spectral r=1  spectral r=3
+B89 mod-two shadow       rejected      rejected
+G3BI component 4 mod 20  rejected      rejected
+```
+
+The B89 parity witness excludes every odd spectral rank but does not determine
+the integral class order. Spectral rank two passes only that parity shadow and
+would transform to rank six. The G3BI local component has order five, so
+spectral rank five is the first rank passing that necessary local test and
+would transform to rank fifteen. Neither object is constructed. T67 is
+retained as a method and normalization result but cannot be promoted through
+B89.
+
+The next physical search is consequently selection-first: enumerate explicit
+same-residue G3AJ/G3BJ candidates, apply the local component sieve, compute the
+identity-component Deligne coordinate only for component-trivial survivors,
+and run the normalized rank-one HYM chain only after a certified
+`beta_C=0` member is found. A nonzero-`beta_C` route would be a different
+higher-rank theory and must rederive the inverse transform, index, matter
+multiplicities and finite `27`-state comparison.

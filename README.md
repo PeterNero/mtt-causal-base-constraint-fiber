@@ -2256,3 +2256,25 @@ reconstruction still excludes zero with lower bounds `1.811e-4` for `D` and
 `1.060e-3` for `D'`. T67 adds no fit parameter or selector. It does not select
 the physical q79 HYM endpoint, prove `beta_C=0`, execute the final physical
 meridian/period readout or compare with an observed Standard Model value.
+
+`Q79Eta9TwistedSpectralRankDivisibilityAndEndpointSieveTheorem_v1.md`
+(`CBF.T68`) consumes the earlier post-M32 QG rank cutset and applies it to the
+later B89 and G3BI obstructions. It does not relabel the determinant argument
+as new. For a spectral rank-`r` twisted object, taking determinants of
+`g_ij g_jk g_ki=alpha_ijk I_r` gives the necessary condition
+`r[alpha]=0`; in rank one this is equivalent to vanishing of the twisting
+class. The normalized degree-three BHT/Fourier--Mukai contract uses spectral
+rank one to reconstruct rank three, so its zero-class gate is mathematical
+descent, not a fitted or optional selection rule.
+
+Applying the theorem to the certified candidate data excludes B89 and G3BI
+at spectral ranks one and three. B89's nonzero mod-two shadow excludes every
+odd spectral rank, while G3BI's local component `4 mod 20` has order five.
+These are necessary-condition no-go results: B89's first parity-compatible
+spectral rank two would transform to rank six, while G3BI's first locally
+compatible spectral rank five would transform to rank fifteen. Neither object
+is constructed, and the B89 integral order is not determined.
+T67 therefore remains a rigorous method-member normalization and cannot be
+promoted as a physical value. The unchanged physical route must find a
+component-trivial, identity-component-zero G3AJ/G3BJ member before executing
+the rank-one HYM endpoint.

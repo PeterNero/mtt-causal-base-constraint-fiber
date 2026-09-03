@@ -1,0 +1,320 @@
+{
+  "B89_application": {
+    "certified_mod_two_shadow": 1,
+    "class": "NONZERO",
+    "conclusion_rank_one": "REJECTED",
+    "conclusion_spectral_rank_three": "REJECTED",
+    "corresponding_inverse_transform_rank": 6,
+    "even_rank_boundary": "spectral rank two passes the mod-two shadow only; existence is not proved, the exact class order remains unknown, and the degree-three inverse transform would have rank six rather than three",
+    "exact_integral_order_known": false,
+    "first_spectral_rank_not_rejected_by_known_shadow": 2,
+    "rank_table_1_through_10": [
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 1,
+        "necessary_component_condition_passes": false,
+        "rank": 1
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 2
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 1,
+        "necessary_component_condition_passes": false,
+        "rank": 3
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 4
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 1,
+        "necessary_component_condition_passes": false,
+        "rank": 5
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 6
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 1,
+        "necessary_component_condition_passes": false,
+        "rank": 7
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 8
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 1,
+        "necessary_component_condition_passes": false,
+        "rank": 9
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 10
+      }
+    ]
+  },
+  "G3BI_application": {
+    "conclusion_rank_one": "REJECTED",
+    "conclusion_spectral_rank_three": "REJECTED",
+    "corresponding_inverse_transform_rank": 15,
+    "first_spectral_rank_passing_the_local_component_test": 5,
+    "global_class": "NONZERO",
+    "local_component": 4,
+    "local_component_group": "Z/20Z",
+    "local_component_order": 5,
+    "pairing_four_rank_table_1_through_10": [
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 16,
+        "necessary_component_condition_passes": false,
+        "rank": 1
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 12,
+        "necessary_component_condition_passes": false,
+        "rank": 2
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 8,
+        "necessary_component_condition_passes": false,
+        "rank": 3
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 4,
+        "necessary_component_condition_passes": false,
+        "rank": 4
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 5
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 16,
+        "necessary_component_condition_passes": false,
+        "rank": 6
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 12,
+        "necessary_component_condition_passes": false,
+        "rank": 7
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 8,
+        "necessary_component_condition_passes": false,
+        "rank": 8
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 4,
+        "necessary_component_condition_passes": false,
+        "rank": 9
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 10
+      }
+    ],
+    "pairing_four_root_component": 16,
+    "rank_five_boundary": "spectral rank five passes this necessary local-component test only; no rank-five twisted object is constructed, and the degree-three inverse transform would have rank fifteen rather than three",
+    "rank_table_1_through_10": [
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 4,
+        "necessary_component_condition_passes": false,
+        "rank": 1
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 8,
+        "necessary_component_condition_passes": false,
+        "rank": 2
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 12,
+        "necessary_component_condition_passes": false,
+        "rank": 3
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 16,
+        "necessary_component_condition_passes": false,
+        "rank": 4
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 5
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 4,
+        "necessary_component_condition_passes": false,
+        "rank": 6
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 8,
+        "necessary_component_condition_passes": false,
+        "rank": 7
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 12,
+        "necessary_component_condition_passes": false,
+        "rank": 8
+      },
+      {
+        "known_quotient_order_divides_rank": false,
+        "multiple": 16,
+        "necessary_component_condition_passes": false,
+        "rank": 9
+      },
+      {
+        "known_quotient_order_divides_rank": true,
+        "multiple": 0,
+        "necessary_component_condition_passes": true,
+        "rank": 10
+      }
+    ]
+  },
+  "T67_interpretation": {
+    "member": "B89 method member",
+    "physical_promotion": "FORBIDDEN_BY_THE_B89_RANK_ONE_ENDPOINT_SIEVE",
+    "retained_use": "conditioning, normalization and characteristic-zero transport validation",
+    "same_source_characteristic_zero_scalar": "CERTIFIED_NONZERO"
+  },
+  "all_checks_pass": true,
+  "candidate_search_contract": {
+    "higher_rank_route": [
+      "declare the replacement spectral rank before inspecting physical values",
+      "require the order of every local/global twisting class to divide that rank",
+      "prove existence and local freeness rather than only the divisibility condition",
+      "rederive the inverse transform of rank 3r, its index, matter multiplicities and finite 27-state map"
+    ],
+    "next_candidate_family": "explicit same-residue G3AJ/G3BJ members not already rejected",
+    "unchanged_rank_one_route": [
+      "apply the finite local-component sieve",
+      "reject every nonzero local component",
+      "for each component-trivial survivor, compute the identity-component affine Deligne coordinate",
+      "retain only a certified beta_C=0 member",
+      "then execute the normalized rank-one inverse Fourier-Mukai and HYM endpoint"
+    ]
+  },
+  "canonical_payload_sha256": "f0143bd6a9442e1e93b36d772de6e600cb811d73e55a8262d62e09c0094165c0",
+  "checks": {
+    "B89_and_G3BI_are_both_rejected_for_hypothetical_spectral_rank_three": true,
+    "B89_and_G3BI_are_both_rejected_for_the_unchanged_rank_one_endpoint": true,
+    "T67_remains_a_method_chart_result_and_is_not_promoted_to_a_physical_endpoint": true,
+    "a_finite_rank_r_twisted_bundle_requires_r_times_alpha_to_vanish": true,
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "rank_one_exists_exactly_when_the_twisting_class_vanishes": true,
+    "the_B89_mod_two_shadow_rejects_every_odd_rank_including_one_and_three": true,
+    "the_G3BI_order_five_local_component_requires_rank_divisible_by_five": true,
+    "the_G3BI_pairing_four_component_has_the_same_order_five_rank_sieve": true,
+    "the_determinant_of_a_rank_r_twisted_cocycle_has_twist_r_times_alpha": true,
+    "the_existing_degree_three_BHT_endpoint_has_spectral_rank_one_and_inverse_rank_three": true,
+    "the_first_B89_parity_compatible_spectral_rank_would_transform_to_rank_six": true,
+    "the_first_G3BI_component_compatible_spectral_rank_would_transform_to_rank_fifteen": true,
+    "the_post_M32_authority_already_proves_the_rank_one_determinant_cutset": true
+  },
+  "endpoint_decision": {
+    "cover_degree": 3,
+    "is_an_optional_selection_convention": false,
+    "nonzero_beta_alternative": "requires a different higher-rank twisted endpoint and a new inverse-Fourier-Mukai, index, matter and 27-state derivation",
+    "required_class": "beta_C=0",
+    "requirement_status": "DERIVED_FROM_RANK_ONE_COCYCLE_DESCENT",
+    "unchanged_MTT_BHT_spectral_rank": 1,
+    "unchanged_inverse_transform_rank": 3
+  },
+  "frontier_delta": {
+    "after": "the established cutset is applied to the late candidates: B89 and G3BI are excluded at spectral ranks one and three; their first not-yet-ruled-out spectral ranks would transform to ranks six and fifteen, so neither preserves the intended rank-three endpoint and T67 cannot be promoted",
+    "before": "the post-M32 QG theorem already derived beta_C=0 for the degree-three/rank-three endpoint, while the later B89 and G3BI obstructions and T67's chart scalar were not folded through that rank cutset"
+  },
+  "general_theorem": {
+    "cohomology_consequence": "existence of a rank-r locally free alpha-twisted object implies r[alpha]=0",
+    "determinant_law": "delta(det g)_ijk = alpha_ijk^r",
+    "higher_rank_warning": "r[alpha]=0 is necessary, not sufficient; period/index and local-freeness obligations remain",
+    "rank_one_equivalence": "a rank-one alpha-twisted object exists iff [alpha]=0",
+    "source_status": "CONSUMED_FROM_POST_M32_QG_RANK_CUTSET_NOT_REDISCOVERED_HERE",
+    "twisted_transition_law": "g_ij g_jk g_ki = alpha_ijk I_r"
+  },
+  "guardrails": {
+    "claims_B89_has_exact_order_two": false,
+    "claims_G3BI_global_beta_has_exact_order_five": false,
+    "claims_T67_is_a_physical_value": false,
+    "claims_a_beta_zero_member_is_selected": false,
+    "claims_a_higher_rank_twisted_object_exists": false,
+    "claims_the_physical_HYM_endpoint_is_emitted": false
+  },
+  "inputs": {
+    "B89": {
+      "bytes": 7963,
+      "path": "q79_b89_same_source_deligne_obstruction.packet.json",
+      "sha256": "07274f863a06463ff0e5812a35cea80ac821dcde447eb14f6709591eef171210"
+    },
+    "G3BI_upstream": {
+      "path": "experiments/q79_eta9_g3bi_deligne_obstruction/q79_eta9_g3bi_deligne_obstruction.packet.json",
+      "repository_commit": "5f50be28d469fffff9ae4f2a9ddaff1883c22aa0",
+      "sha256": "e18074197c47a0104ba8d62a092ea854ab5e04c77a7be02d596111ecc64a255b"
+    },
+    "T67": {
+      "bytes": 16683,
+      "path": "q79_eta9_cayley_critical_correlated_readout.packet.json",
+      "sha256": "f8798baa711970b85b48026dd0339e2fb413d5d066dbe3166845a0d0c16240bc"
+    },
+    "post_M32_rank_cutset_upstream": {
+      "path": "q79_post_m32_global_gerbe_target_and_rank_cutset.packet.json",
+      "repository_commit": "8472ac9fe24a8dd9206470912c23268f9640ad30",
+      "sha256": "fd85686d84ceeb51a876311cb05c22cb641d4626c23c52651ba0fd18f57a9d13"
+    },
+    "rank_one_gate_upstream": {
+      "path": "candidate_data/selected_q79twistedspectralgerbelifthymandbianchiexecution/flat_analytic_gerbe_lift_gate.packet.json",
+      "repository_commit": "774bd880893043d5bcede64ae49020303e3d5d66",
+      "sha256": "4f6aba0ce7b2a0a586c49ef60740f08f77535536a421cdafe8704ec9af9a93b9"
+    },
+    "source_snapshot": {
+      "bytes": 2048,
+      "path": "q79_eta9_twisted_spectral_rank_divisibility.source.json",
+      "sha256": "b436525af4505892a249c19a71678853bea9afe29e982303265bb0cceecb8c8d"
+    }
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "schema": "mtt.cbf.q79-eta9-twisted-spectral-rank-divisibility.v1",
+  "status": "CLOSED_EXACT_LATE_CANDIDATE_APPLICATION_OF_ESTABLISHED_TWISTED_SPECTRAL_RANK_CUTSET",
+  "theorem_id": "CBF.T68",
+  "tier": "exact_application_of_established_general_theorem_to_exact_late_candidate_sources"
+}
