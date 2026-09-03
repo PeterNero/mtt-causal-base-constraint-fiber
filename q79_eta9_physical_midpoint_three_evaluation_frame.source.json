@@ -1,0 +1,69 @@
+{
+  "schema": "mtt.cbf.q79-eta9-physical-midpoint-three-evaluation-frame-source.v1",
+  "compiled_characteristic_zero_operator": {
+    "path": "q79_eta9_physical_char0_graph_operator.input.json.gz",
+    "bytes": 356759,
+    "sha256": "65f5a74df22d29a6ff27dfed7c2b48c8ac4bd2bac4809e939968bfdd28027a98",
+    "H4_repository_commit": "6018f1163dd0b29441b3fccdd9bb2aa78d815d88",
+    "UST_repository_commit": "011986e954c3cab6b673243fbaf46219a8951cc0"
+  },
+  "upstream_packets": {
+    "H4_char0_algebraization": {
+      "path": "q79_eta9_framed_member_char0_algebraization.input.json",
+      "bytes": 7358,
+      "sha256": "9fbea0b77d84c527ad253e85528f1146afa2336e22b23b186173a765316b751d"
+    },
+    "H4_physical_midpoint_atlas": {
+      "path": "q79_eta9_physical_midpoint_ramification_atlas_contract.input.json",
+      "bytes": 5702,
+      "sha256": "4dcec41a1356eb6060ee2188c6c8b453abaf775686f4b58cba64464d3267b519"
+    },
+    "H4_edge0_midpoint": {
+      "path": "q79_eta9_physical_midpoint_edge_0.input.json",
+      "bytes": 288060,
+      "sha256": "120b6af91f5c6642aa7836605145e2f36d96bd08c8358488bbd365c08b2398cb"
+    },
+    "H4_edge1_midpoint": {
+      "path": "q79_eta9_physical_midpoint_edge_1.input.json",
+      "bytes": 286511,
+      "sha256": "d993d652e5abe95c237aa7f234982d1e317fbeb8a8a6639ad21e348c2e4ef995"
+    },
+    "H4_edge2_midpoint": {
+      "path": "q79_eta9_physical_midpoint_edge_2.input.json",
+      "bytes": 286978,
+      "sha256": "72540158972564593c1c99dccbc26a36f075ed800ed27dc1a73f639323a5b8ca"
+    },
+    "H4_edge2_complete_branch_panel": {
+      "path": "q79_eta9_selected_member_edge2_complete_branch_panel.input.json",
+      "bytes": 1692,
+      "sha256": "f03f1eb745de276e3b731feeb713ee52f510231ad8c92325633fb572b4de727d"
+    },
+    "CBF_T71": {
+      "path": "q79_eta9_graph_tangent_multifiber_observability.packet.json",
+      "bytes": 5701,
+      "sha256": "294b63ab412ed0cda97eabb49068da2ff4f7def7d5d43ea94091659068ed682a"
+    }
+  },
+  "physical_row_selection": {
+    "segments_in_order": ["edge-0", "edge-1", "edge-2"],
+    "segment_parameter_center": "1/2",
+    "segment_parameter_halfwidth": "1/4294967296",
+    "selection_rule": "the first three consecutive rectangle-edge midpoints on the declared counterclockwise physical path",
+    "relation_pivots_zero_based": [5, 5, 11]
+  },
+  "rank_certificate": {
+    "gauge_drop_free_coordinate_zero_based": 106,
+    "gauge_drop_ambient_coordinate_zero_based": 232,
+    "selected_output_rows_zero_based": [
+      169, 172, 15, 93, 92, 21, 220, 168, 109, 89, 167, 72, 179, 222, 176, 225,
+      182, 16, 22, 185, 231, 181, 99, 147, 171, 177, 29, 227, 175, 192, 6, 229,
+      23, 66, 36, 166, 30, 226, 37, 71, 70, 38, 178, 100, 183, 149, 189, 96,
+      230, 33, 200, 144, 5, 174, 28, 186, 73, 42, 4, 187, 47, 61, 193, 9,
+      106, 194, 31, 234, 121, 40, 236, 32, 197, 41, 223, 25, 77, 131, 180, 50,
+      206, 201, 45, 79, 95, 195, 173, 196, 104, 203, 51, 101, 204, 58, 11, 97,
+      34, 76, 112, 228, 111, 7, 188, 105, 122, 10, 49, 119, 24, 98, 205, 113,
+      160, 123, 184, 62, 103, 35, 115, 114, 56, 65
+    ],
+    "selection_note": "Rows were chosen once by pivoted QR on midpoint centers; the theorem uses only the subsequent exact Arb determinant and Neumann checks."
+  }
+}

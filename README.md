@@ -2314,3 +2314,18 @@ This is exact coefficient observability, not physical BHT observability. The
 extra residue probes are not yet certified smooth panels on the selected
 characteristic-zero loop, and no Picard, normal-function or period rank is
 inferred from them.
+
+`Q79Eta9PhysicalMidpointThreeEvaluationFrameTheorem_v1.md` (`CBF.T72`) performs
+the missing characteristic-zero coefficient promotion. It replaces the
+residue probes by the actual `edge-0`, `edge-1` and `edge-2` midpoints of the
+selected physical loop. Their Fermat rows are independent, and their joined
+evaluation quotient has exact image rank 122 on the rank-122 projective graph
+tangent. A fixed-minor Neumann certificate keeps that rank on the product
+`|s_i-1/2| <= 2^-32`, with defect `0.198228356616... < 1`.
+
+This is a physical-path coefficient theorem, not the BHT endpoint. The three
+midpoints are H4-T152 squarefree ramification fibers, and the `edge-2` operator
+panel lies inside H4-T155's complete 252-branch panel. Complete branch carriers
+for `edge-0` and `edge-1`, overlapping six-segment transport, the rank-164
+relative evolution, 248-row handle accumulation and integral `beta_C` decision
+remain open.

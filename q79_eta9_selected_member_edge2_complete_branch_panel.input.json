@@ -1,0 +1,28 @@
+{
+  "all_passed": true,
+  "artifact": {
+    "bytes": 6977616,
+    "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/q79_eta9_selected_member_formal_complete_branch_panel_contract.packet.json",
+    "sha256": "66c2dba80ba5ea19de362582cf457b4a75cce806d8ac9981b57ff39107301066"
+  },
+  "checks": {
+    "all_198_ramification_and_54_node_tubes_are_present": true,
+    "all_252_tubes_have_strict_selected_source_Krawczyk_inclusions": true,
+    "all_31626_pairs_are_disjoint_over_the_complete_common_panel": true,
+    "no_B89_topology_or_finite_field_transport_is_imported": true,
+    "no_numerical_path_trajectory_is_used": true,
+    "the_single_order16_outlier_is_certified_at_order24_on_the_same_panel": true
+  },
+  "claim": "All 252 selected-member branch points have unique pairwise-disjoint formal continuations on the edge-2 panel |s-1/2| <= 2^-8.",
+  "frontier_after": "The complete local genus-82 carrier is certified by formal selected-source predictors on a width-1/128 physical panel.",
+  "frontier_before": "The complete carrier was certified only on the width-2^-19 midpoint panel.",
+  "guard": "The full six-segment path isotopy, global Artin word, integral transport and Deligne/HYM endpoint remain open.",
+  "id": "H4-T155",
+  "independent_replay": {
+    "bytes": 1129,
+    "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/q79_eta9_selected_member_formal_complete_branch_panel_contract.independent-replay.json",
+    "sha256": "86c4d2e90fbccb0cace29cfb251c969e3b550506b1fa54a9eec031f5bb4ca278"
+  },
+  "schema": "mtt.preprojection.certificate.v1",
+  "tier": "CHARACTERISTIC_ZERO_ARB_FORMAL_COMPLETE_SELECTED_SOURCE_BRANCH_PANEL_THEOREM"
+}

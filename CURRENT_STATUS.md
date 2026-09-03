@@ -2874,3 +2874,29 @@ rank to a Picard/BHT derivative. The next object is a three-panel smooth
 characteristic-zero atlas on the selected B loop, followed by rank-164
 transport and the actual 248-row handle integral. No observed value, fit
 parameter or selector was added.
+
+## CBF.T72 physical characteristic-zero three-evaluation frame
+
+`Q79Eta9PhysicalMidpointThreeEvaluationFrameTheorem_v1.md` promotes T71's
+finite-field observability result to the exact selected complex member and the
+declared physical path. The deterministic rows are the consecutive `edge-0`,
+`edge-1` and `edge-2` midpoints. Their Fermat weight determinant has certified
+absolute lower bound `0.328998691153...`, and all three are bound to the
+degree-198 squarefree H4-T152 midpoint packets.
+
+The characteristic-zero calculation uses the exact rank-126 incidence pivot
+and its rank-123 affine kernel. The radial member line is killed by every fiber
+quotient. A fixed `122 x 122` joined-evaluation minor excludes zero, so the
+actual physical three-row map has image rank 122 and projective kernel zero. A
+Neumann replay with defect `0.198228356616... < 1` proves the same rank on
+
+```text
+|s_i-1/2| <= 2^-32,  i=0,1,2.
+```
+
+This closes characteristic-zero coefficient observability and positive-width
+operator stability. It does not promote that rank to a Picard, normal-function
+or BHT derivative. H4-T155 supplies a complete 252-branch panel around
+`edge-2`; equivalent carriers at `edge-0` and `edge-1`, the six-segment overlap
+atlas, rank-164 transport, 248-row accumulation and `beta_C` remain open. No
+observed value, fit parameter or selector was added.

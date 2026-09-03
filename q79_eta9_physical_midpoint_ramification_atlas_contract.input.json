@@ -1,0 +1,119 @@
+{
+  "atlas": {
+    "connector_tangent_parity": true,
+    "connector_value_parity": true,
+    "edge0_direct_Qx_exclusion_count": 194,
+    "maximum_certified_root_speed_upper": 109.05437991618835,
+    "midpoint_count": 6,
+    "minimum_derivative_coefficient_relative_accuracy_bits": 112,
+    "minimum_pair_separation_lower": 0.00044284626931695003,
+    "ramification_algebra_dimension": 198,
+    "segments": [
+      "connector-out",
+      "edge-0",
+      "edge-1",
+      "edge-2",
+      "edge-3",
+      "connector-in"
+    ],
+    "total_certified_root_balls": 1188
+  },
+  "canonical_payload_sha256": "9736075959357f4fccc961020a36611f507d8f987cef1f9b972005eef8262073",
+  "checks": {
+    "all_1188_root_balls_are_midpointwise_pairwise_distinct": true,
+    "all_six_directional_coefficient_rows_retain_at_least_96_bits": true,
+    "all_six_saturated_polynomials_have_degree198": true,
+    "all_six_selected_physical_midpoints_are_bound": true,
+    "connector_values_agree_and_directional_derivatives_reverse": true,
+    "no_segmentwide_Deligne_beta_C_U_eta9_or_HYM_claim_is_made": true,
+    "the_rejected_B89_isotopy_is_not_used": true
+  },
+  "frontier": {
+    "closed": [
+      "degree-198 coefficient value and tangent rows at all six selected physical midpoints",
+      "squarefreeness of all six midpoint algebras",
+      "connector value equality and tangent sign reversal"
+    ],
+    "next_object": "Use the midpoint jets and separations to choose adaptive Taylor radii, add segment-quarter centers where needed, and certify an overlapping six-segment finite-etale cover.",
+    "still_open": [
+      "overlapping recentered panels covering every closed physical segment",
+      "pathwide intrinsic trace and compensator integration",
+      "rank-164 plus 248-coordinate BHT accumulation",
+      "global normal-function gauge, integral Deligne row, beta_C and U_eta9"
+    ]
+  },
+  "guardrails": {
+    "Gate1_is_frozen": true,
+    "edge0_squarefreeness_uses_distinct_root_balls_not_inconclusive_Qx_evaluations": true,
+    "finite_field_completion_is_not_characteristic_zero_connection_data": true,
+    "six_midpoint_fibers_are_not_retyped_as_segmentwide_coverage": true
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "schema": "mtt.preprojection.q79-eta9-physical-midpoint-ramification-atlas-contract.v1",
+  "source_bindings": {
+    "H4_T140_physical_path": {
+      "bytes": 33420,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_direct_operator_derivative_contract.packet.json",
+      "sha256": "8bc325a06a85eacdc1aedc175b8a23c736a2601ebb00d9ed8d62755b300fa4ba"
+    },
+    "H4_T151": {
+      "bytes": 4295,
+      "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/q79_eta9_local_finite_etale_ramification_panel_contract.packet.json",
+      "sha256": "a100b3c30e671ded30d95507383930ff57af096574062492a8e8f10d5a858129"
+    },
+    "independent_verifier": {
+      "bytes": 7528,
+      "path": "experiments/q79_eta9_ramification_coefficient_transport/verify_physical_midpoint_ramification_atlas.py",
+      "sha256": "6d0dac4cda7abfaf18f50f5ff4da535014045be7089646433fc4aa15ac8d63fc"
+    },
+    "midpoint_scout_compiler": {
+      "bytes": 13702,
+      "path": "experiments/q79_eta9_ramification_coefficient_transport/build_physical_midpoint_coefficient_jet_scout.py",
+      "sha256": "8d6fd9558ffde599970d7470a36d5bf2295b58bc6f2d3ca126872ac16dadee73"
+    },
+    "midpoint_scouts": {
+      "connector-in": {
+        "bytes": 287568,
+        "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_midpoint_jets/connector-in.packet.json",
+        "sha256": "f84abce770f366eef93a2731ee9b20d1fad43b88eda7abab75d8a610a3736771"
+      },
+      "connector-out": {
+        "bytes": 287554,
+        "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_midpoint_jets/connector-out.packet.json",
+        "sha256": "ace5fd7a15ff02b82c7007d09ac97ff09af7f7acb2d13b3484f5e7157cd4d6f0"
+      },
+      "edge-0": {
+        "bytes": 288060,
+        "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_midpoint_jets/edge-0.packet.json",
+        "sha256": "120b6af91f5c6642aa7836605145e2f36d96bd08c8358488bbd365c08b2398cb"
+      },
+      "edge-1": {
+        "bytes": 286511,
+        "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_midpoint_jets/edge-1.packet.json",
+        "sha256": "d993d652e5abe95c237aa7f234982d1e317fbeb8a8a6639ad21e348c2e4ef995"
+      },
+      "edge-2": {
+        "bytes": 286978,
+        "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_midpoint_jets/edge-2.packet.json",
+        "sha256": "72540158972564593c1c99dccbc26a36f075ed800ed27dc1a73f639323a5b8ca"
+      },
+      "edge-3": {
+        "bytes": 289900,
+        "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_midpoint_jets/edge-3.packet.json",
+        "sha256": "97afc61c58f486b3ab558f37019febf344b596836ff3d5f8021f5f9426a9159f"
+      }
+    },
+    "theorem": {
+      "bytes": 3571,
+      "path": "theorems/PREPROJECTION_Q79_ETA9_PHYSICAL_MIDPOINT_RAMIFICATION_ATLAS_THEOREM_v1.md",
+      "sha256": "aec51d53e485dfd453854329bae479f4ddee4b92f101124f6046c765ab83f7a0"
+    }
+  },
+  "status": "CLOSED_SIX_PHYSICAL_MIDPOINT_DEGREE198_RAMIFICATION_ATLAS",
+  "theorem_id": "H4-T152",
+  "tier": "CHARACTERISTIC_ZERO_ARB_PHYSICAL_MIDPOINT_COEFFICIENT_JET_AND_SQUAREFREE_THEOREM"
+}

@@ -1,0 +1,288 @@
+{
+  "all_checks_pass": true,
+  "canonical_payload_sha256": "c7ec8553a6d45a1dc85dbc870598dc59c018fd7718df4c7ce5d1aff16827be1e",
+  "characteristic_zero_rank": {
+    "affine_graph_tangent_rank": 123,
+    "ambient_coefficient_rank": 249,
+    "gauge_drop_ambient_coordinate_zero_based": 232,
+    "gauge_drop_free_coordinate_zero_based": 106,
+    "incidence_pivot_determinant_absolute_lower": "[1487821140019378937953347136071077597226779757711442982285186165310334984212231352645802997132798580869647113637891337764539532165324442873035130327927613847082870479.6567358694702990502312600384546640732954863273179609226399331345 +/- 1.86e-65]",
+    "incidence_rank": 126,
+    "joined_evaluation_image_rank": 122,
+    "projective_graph_tangent_rank": 122,
+    "projective_kernel_rank": 0,
+    "radial_kernel_rank": 1,
+    "restricted_minor_determinant_absolute_lower": "[1859060527587799.1441277774059297777876278995432423867991601586121766880475613089202992090324643233055612957069321534312189797985809162550523175577310769384238281707403871651371193521493528981668638542954766539360700405696085358652 +/- 3.57e-215]",
+    "selected_output_rows_zero_based": [
+      169,
+      172,
+      15,
+      93,
+      92,
+      21,
+      220,
+      168,
+      109,
+      89,
+      167,
+      72,
+      179,
+      222,
+      176,
+      225,
+      182,
+      16,
+      22,
+      185,
+      231,
+      181,
+      99,
+      147,
+      171,
+      177,
+      29,
+      227,
+      175,
+      192,
+      6,
+      229,
+      23,
+      66,
+      36,
+      166,
+      30,
+      226,
+      37,
+      71,
+      70,
+      38,
+      178,
+      100,
+      183,
+      149,
+      189,
+      96,
+      230,
+      33,
+      200,
+      144,
+      5,
+      174,
+      28,
+      186,
+      73,
+      42,
+      4,
+      187,
+      47,
+      61,
+      193,
+      9,
+      106,
+      194,
+      31,
+      234,
+      121,
+      40,
+      236,
+      32,
+      197,
+      41,
+      223,
+      25,
+      77,
+      131,
+      180,
+      50,
+      206,
+      201,
+      45,
+      79,
+      95,
+      195,
+      173,
+      196,
+      104,
+      203,
+      51,
+      101,
+      204,
+      58,
+      11,
+      97,
+      34,
+      76,
+      112,
+      228,
+      111,
+      7,
+      188,
+      105,
+      122,
+      10,
+      49,
+      119,
+      24,
+      98,
+      205,
+      113,
+      160,
+      123,
+      184,
+      62,
+      103,
+      35,
+      115,
+      114,
+      56,
+      65
+    ]
+  },
+  "checks": {
+    "a_122_by_122_restricted_center_minor_excludes_zero": true,
+    "all_three_midpoint_ramification_algebras_are_degree198_and_squarefree": true,
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "the_affine_graph_kernel_has_rank123_and_contains_the_radial_member": true,
+    "the_characteristic_zero_incidence_pivot_has_rank126": true,
+    "the_compiled_operator_is_bound_to_committed_H4_and_UST_sources": true,
+    "the_edge2_rank_panel_lies_inside_the_H4_T155_complete_branch_panel": true,
+    "the_only_possible_affine_blind_direction_is_the_exact_radial_member_line": true,
+    "the_projective_characteristic_zero_image_rank_is_exactly122": true,
+    "the_same_fixed_minor_is_invertible_on_three_positive_width_parameter_panels": true,
+    "the_selected_negative_Weierstrass_lift_remains_analytic_on_all_three_panels": true,
+    "the_three_physical_weight_rows_have_nonzero_characteristic_zero_determinant": true,
+    "the_three_rows_are_actual_edge0_edge1_edge2_physical_midpoints": true
+  },
+  "frontier_delta": {
+    "closed": [
+      "actual characteristic-zero physical realization of three independent evaluation rows",
+      "exact projective graph-tangent image rank122 at the three selected B-loop midpoints",
+      "positive-width rank stability of the same 122-row operator minor"
+    ],
+    "next_required_object": "Certify complete selected-source 252-branch panels around the edge-0 and edge-1 midpoint rows, then use overlapping path panels to transport the three 82-row evaluations through the rank-164 relative system.",
+    "not_closed": [
+      "complete 252-branch positive-width carriers on edge-0 and edge-1",
+      "overlapping coverage of all six physical path segments",
+      "rank-164 Gauss-Manin transport and 248-row BHT handle accumulation",
+      "integral-period reduction, beta_C and U_eta9"
+    ]
+  },
+  "guardrails": {
+    "claims_248_row_BHT_handle_sweep_is_executed": false,
+    "claims_HYM_SM_or_QG_endpoint_closure": false,
+    "claims_Picard_Abel_Jacobi_or_normal_function_rank122": false,
+    "claims_beta_C_or_U_eta9_is_computed": false,
+    "claims_complete_edge0_or_edge1_branch_carrier": false,
+    "claims_complete_six_segment_isotopy": false,
+    "claims_rank164_Gauss_Manin_transport_is_executed": false
+  },
+  "inputs": {
+    "CBF_T71": {
+      "bytes": 5701,
+      "path": "q79_eta9_graph_tangent_multifiber_observability.packet.json",
+      "sha256": "294b63ab412ed0cda97eabb49068da2ff4f7def7d5d43ea94091659068ed682a"
+    },
+    "H4_char0_algebraization": {
+      "bytes": 7358,
+      "path": "q79_eta9_framed_member_char0_algebraization.input.json",
+      "sha256": "9fbea0b77d84c527ad253e85528f1146afa2336e22b23b186173a765316b751d"
+    },
+    "H4_edge0_midpoint": {
+      "bytes": 288060,
+      "path": "q79_eta9_physical_midpoint_edge_0.input.json",
+      "sha256": "120b6af91f5c6642aa7836605145e2f36d96bd08c8358488bbd365c08b2398cb"
+    },
+    "H4_edge1_midpoint": {
+      "bytes": 286511,
+      "path": "q79_eta9_physical_midpoint_edge_1.input.json",
+      "sha256": "d993d652e5abe95c237aa7f234982d1e317fbeb8a8a6639ad21e348c2e4ef995"
+    },
+    "H4_edge2_complete_branch_panel": {
+      "bytes": 1692,
+      "path": "q79_eta9_selected_member_edge2_complete_branch_panel.input.json",
+      "sha256": "f03f1eb745de276e3b731feeb713ee52f510231ad8c92325633fb572b4de727d"
+    },
+    "H4_edge2_midpoint": {
+      "bytes": 286978,
+      "path": "q79_eta9_physical_midpoint_edge_2.input.json",
+      "sha256": "72540158972564593c1c99dccbc26a36f075ed800ed27dc1a73f639323a5b8ca"
+    },
+    "H4_physical_midpoint_atlas": {
+      "bytes": 5702,
+      "path": "q79_eta9_physical_midpoint_ramification_atlas_contract.input.json",
+      "sha256": "4dcec41a1356eb6060ee2188c6c8b453abaf775686f4b58cba64464d3267b519"
+    },
+    "compiled_characteristic_zero_operator": {
+      "bytes": 356759,
+      "path": "q79_eta9_physical_char0_graph_operator.input.json.gz",
+      "sha256": "65f5a74df22d29a6ff27dfed7c2b48c8ac4bd2bac4809e939968bfdd28027a98"
+    },
+    "source_snapshot": {
+      "bytes": 3258,
+      "path": "q79_eta9_physical_midpoint_three_evaluation_frame.source.json",
+      "sha256": "ca73b4dc37aad4832e54cef05840aacf2d9960423347bcb985435840b0e51eb7"
+    }
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0,
+    "panel_width_is_a_conservative_proof_radius_not_a_physical_parameter": true
+  },
+  "physical_frame": {
+    "fiber_relation_pivot_absolute_lowers": {
+      "edge-0": "[262130072531.33311673278447322712137525391018058668752281422977817895498530693781092159253658982212329954932994779355669372882076927805325628711663356917758224688959492064876392999188913977912031118606548035580094358853744646477567 +/- 3.74e-219]",
+      "edge-1": "[259310696234.15450273854993588403149900901202253557205518269524594088029930035624589933689563253467674330213194848584848076597436290666646955886372516929962861678670705632264652360354813033554060974721191976427034481387326872063262 +/- 3.64e-220]",
+      "edge-2": "[372896997591.02012065100977313834516534208264553920892082209841075968333038703014947989561093224000902447761319864453677946000059743949525391609635725000620882659750412838805724397660487424221982955563557820207292007486298500532125 +/- 1.77e-219]"
+    },
+    "fiber_relation_pivots_zero_based": {
+      "edge-0": 5,
+      "edge-1": 5,
+      "edge-2": 11
+    },
+    "midpoint_minimum_pair_separations": {
+      "edge-0": 0.0008164377157408229,
+      "edge-1": 0.0010815390585105398,
+      "edge-2": 0.0017165184775879373
+    },
+    "midpoint_parameter": "1/2",
+    "midpoint_root_counts": {
+      "edge-0": 198,
+      "edge-1": 198,
+      "edge-2": 198
+    },
+    "midpoint_weight_determinant_absolute_lower": "[0.32899869115304799384709801671037639209234253438914883790614779488243250152258656373555601341128934279716450324155766575207880770827606412725844846133048056366772137808935346624329112392863078132974769186977682050547271858611320704 +/- 7.00e-232]",
+    "segments": [
+      "edge-0",
+      "edge-1",
+      "edge-2"
+    ],
+    "selection_rule": "the first three consecutive rectangle-edge midpoints on the declared counterclockwise physical path"
+  },
+  "positive_width_operator_panel": {
+    "Neumann_infinity_norm_defect_upper": "[0.19822835661572767368077380993944243713972738091793402761770538079521355591743571532447790475827275346763442923308926173771279470105452692594576553068090428535658492870159167992387499157340029963731529755133800438573188685840505403 +/- 8.35e-231]",
+    "Weierstrass_radicand_absolute_lowers": {
+      "edge-0": "[340.41954959472574593704224846486728772060074396841178507346097083869569946355954878853215684415010138679696948262019785402340088225901567836019621448987708781364619325113487534694243707732423193497302233777831098118354007308925520 +/- 1.73e-228]",
+      "edge-1": "[4017.5974147433674140484771942933814813810360968033534869611578108546112033653659515109344553916619082537075028883713641897995642306436192651060692058275758258056876756312554498115011403231606275758942391584745836063141811745243475 +/- 3.16e-227]",
+      "edge-2": "[10260.854166363308122789866190807251245425678351214719816472058964473854254381660268459647567122615110973673360766262612206696835350922116575739369575808226889250261773663600531451757680502124522620343413863390905880746389132915301 +/- 1.94e-226]"
+    },
+    "cartesian_product_of_three_independent_parameter_boxes": true,
+    "conclusion": "the fixed 122x122 restricted evaluation minor is invertible for every triple in the declared product panel",
+    "fiber_relation_pivot_absolute_lowers": {
+      "edge-0": "[262130071786.51061843165286066800777854279315241051895411818853296488084330520011354423253379770001446471298004911568040209877692418691327557330298134092729966603923577698769361565616231752059432202655325840520292576467900800837054 +/- 3.71e-219]",
+      "edge-1": "[259310675268.21999600234922016748606826386996561705266916736428246629737841647517001028789702870200948177286426197724156100861614402568694200135026543712034126042521866751528193039005895273080699922345192645685585714120927111044395 +/- 1.08e-219]",
+      "edge-2": "[372896974853.93221615151458095500850211893457638244760218223132518488949567322757030312080916507860775378454768220279230723043753617101219300421300024949379763790896495234562504940242789033717281037410096093876095195008096031439694 +/- 2.75e-220]"
+    },
+    "parameter_box_each_segment": "|s-1/2| <= 1/4294967296",
+    "strictly_below_one": true,
+    "weight_determinant_absolute_lower": "[0.32899856130324017161391047869963361087509022036268803478445228409473017696430258359423632119857920847192660053459135733060063116539112327198219723674790651034322197861277246355160467761702993514608452674795004514072516904600073536 +/- 3.13e-232]"
+  },
+  "schema": "mtt.cbf.q79-eta9-physical-midpoint-three-evaluation-frame.v1",
+  "status": "CLOSED_CHARACTERISTIC_ZERO_PHYSICAL_THREE_EVALUATION_PROJECTIVE_RANK122_WITH_POSITIVE_WIDTH_OPERATOR_PANELS",
+  "theorem": {
+    "proof_logic": "The imported exact incidence theorem gives affine tangent rank123. The radial member line is killed by every fiber quotient, so the image rank is at most122. A characteristic-zero Arb 122x122 minor excludes zero at the center, and a fixed midpoint preconditioner has interval infinity-norm defect below one on the product panel, proving rank at least122 there.",
+    "statement": "For the exact selected characteristic-zero G3AJ member, the coefficient-evaluation quotients at the physical edge-0, edge-1 and edge-2 midpoints jointly separate all 122 projective graph-preserving tangent directions. The same rank holds throughout the declared positive-width product of edge panels."
+  },
+  "theorem_id": "CBF.T72",
+  "tier": "characteristic_zero_Arb_coefficient_evaluation_theorem_not_a_Picard_or_BHT_transport_result"
+}
