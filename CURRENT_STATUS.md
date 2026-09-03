@@ -2771,7 +2771,6 @@ B89 is already excluded from the admissible endpoint locus.
 the already-proved post-M32 QG rank cutset and applies it to the later exact
 B89/G3BI data. The determinant law is not rediscovered here. If transition
 matrices of a rank-`r` `alpha`-twisted object obey
-If transition matrices of a rank-`r` `alpha`-twisted object obey
 
 ```text
 g_ij g_jk g_ki = alpha_ijk I_r,
@@ -2804,3 +2803,38 @@ and run the normalized rank-one HYM chain only after a certified
 `beta_C=0` member is found. A nonzero-`beta_C` route would be a different
 higher-rank theory and must rederive the inverse transform, index, matter
 multiplicities and finite `27`-state comparison.
+
+## CBF.T69 framed graph-Prym spectral-rank exclusion
+
+`Q79Eta9FramedMemberSpectralRankExclusionTheorem_v1.md` consumes the newly
+committed H4-T132 calculation for the exact algebraic framed member `C_fr` in
+the G3AJ rank-123 fixed-residue graph-Prym ball. H4-T132 already proves
+
+```text
+n beta_C(C_fr) != 0 for every 1 <= n <= 1449
+```
+
+at every complex embedding of that same member. T69 does not repeat that
+period calculation. It applies T68's established determinant law: a
+rank-`r` twisted spectral object requires `r beta_C=0`.
+
+Therefore `C_fr` supports no selected twisted spectral object of any rank
+from 1 through 1,449. On the degree-three cover these would have inverse
+transform ranks
+
+```text
+3, 6, 9, ..., 4347.
+```
+
+The intended spectral-rank-one/inverse-rank-three endpoint is rejected, as
+are double traversal/rank two and the hypothetical spectral-rank-three route.
+Order 1,450 is only the first order not resolved by the current H4-T132
+interval widths; it is not a torsion candidate and supplies no object.
+
+This is the first exact same-residue G3AJ candidate decision after T68. It
+does not reject the remaining points of the rank-123 graph ball, and the
+all-zero RREF framing of `C_fr` is not a coordinate-free physical selector.
+The next accepted object is the graph-family normal-function map and its
+derivative on the 122 projective tangent directions. That map must either
+emit a certified beta-zero member or prove the beta-zero locus empty. No
+observed value, fit parameter or selector was added.

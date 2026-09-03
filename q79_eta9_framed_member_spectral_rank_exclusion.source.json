@@ -1,0 +1,46 @@
+{
+  "schema": "mtt.cbf.q79-eta9-framed-member-spectral-rank-exclusion-source.v1",
+  "sources": {
+    "H4_T132": {
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_commit": "0c92c4107a2c52acc743665f8b47670e107dd731",
+      "local_path": "q79_eta9_framed_member_char0_picard_embedding_binding.input.json",
+      "local_sha256": "6e28abaf6eafac91f502007310d662085f4b569455460d17023bf33478939e90",
+      "packet_path": "experiments/q79_eta9_graph_normal_duality/outputs/framed-member-char0-picard-embedding-binding/q79_eta9_framed_member_char0_picard_embedding_binding.packet.json",
+      "packet_git_blob": "a938fcd4c586e050f0ee323848897e49aa72365c",
+      "theorem_path": "theorems/PREPROJECTION_Q79_ETA9_FRAMED_MEMBER_CHAR0_PICARD_EMBEDDING_AND_LOW_ORDER_TRAVERSAL_OBSTRUCTION_THEOREM_v1.md",
+      "theorem_git_blob": "412f4dfe278da10ab1c4e5dfb87b08ad77f40e6c",
+      "theorem_id": "H4-T132",
+      "status": "CLOSED_EXACT_CHAR0_PICARD_EMBEDDING_BINDING_AND_LOW_ORDER_TRAVERSAL_OBSTRUCTION",
+      "candidate": "exact algebraic basis-and-RREF-framed member C_fr in the G3AJ rank-123 fixed-residue graph-Prym ball",
+      "class": "P=nu_alg(e_0), identified with the restricted primitive BHT/Deligne class beta_C on the same selected carrier",
+      "certified_nonzero_orders_inclusive": [
+        1,
+        1449
+      ],
+      "first_order_not_decided_by_current_interval_widths": 1450,
+      "double_traversal": {
+        "witness_coordinate_zero_based": 115,
+        "scaled_interval_outward_binary64": [
+          -0.5073402207344773,
+          -0.5039642136543987
+        ],
+        "certified_distance_to_Z_greater_than": 0.4926597792655228
+      },
+      "all_complex_embeddings_nonzero": true,
+      "coordinate_free_physical_member_selection": false,
+      "entire_rank123_graph_ball_rejected": false,
+      "observed_values_used": 0,
+      "fitted_parameters_used": 0
+    },
+    "T68": {
+      "local_path": "q79_eta9_twisted_spectral_rank_divisibility.packet.json",
+      "sha256": "b31b80c6eca068abc864815b4c8d3ba3ff646946c655ee8e52b79bd17dbceca8",
+      "theorem_id": "CBF.T68",
+      "cover_degree": 3,
+      "selected_spectral_rank": 1,
+      "selected_inverse_transform_rank": 3,
+      "rank_condition": "existence of a rank-r alpha-twisted locally free spectral object requires r[alpha]=0"
+    }
+  }
+}

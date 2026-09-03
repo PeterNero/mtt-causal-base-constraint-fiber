@@ -2278,3 +2278,22 @@ T67 therefore remains a rigorous method-member normalization and cannot be
 promoted as a physical value. The unchanged physical route must find a
 component-trivial, identity-component-zero G3AJ/G3BJ member before executing
 the rank-one HYM endpoint.
+
+`Q79Eta9FramedMemberSpectralRankExclusionTheorem_v1.md` (`CBF.T69`) applies
+the T68 rank-divisibility theorem to the first exact same-residue G3AJ member
+whose Deligne class has now been decided. H4-T132 binds its directed period
+calculation to the exact algebraic framed member `C_fr` and proves
+`n beta_C(C_fr) != 0` for every `1 <= n <= 1449`, at every complex embedding
+of that member. T69 consequently excludes twisted spectral ranks 1 through
+1,449 on `C_fr`; the degree-three inverse transforms would have ranks
+`3,6,9,...,4347`.
+
+In particular, neither double traversal nor a rank-two twisted replacement
+rescues this member. The intended rank-one/inverse-rank-three endpoint and a
+hypothetical spectral-rank-three/inverse-rank-nine endpoint are both
+impossible on `C_fr`. The first unresolved order 1,450 records only interval
+resolution loss, not torsion or object existence. The other points of the
+G3AJ rank-123 graph ball remain open because the deterministic all-zero RREF
+framing is not a coordinate-free MTT selector. The next computation must
+construct the graph-family `beta_C` map and derivative, then find a certified
+zero or prove that the selected beta-zero locus is empty.

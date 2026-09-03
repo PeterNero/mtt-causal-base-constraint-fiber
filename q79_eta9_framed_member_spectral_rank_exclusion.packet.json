@@ -1,0 +1,172 @@
+{
+  "all_checks_pass": true,
+  "candidate": {
+    "all_complex_embeddings_nonzero": true,
+    "class": "P=nu_alg(e_0)=restricted primitive BHT/Deligne class beta_C",
+    "family": "G3AJ rank-123 fixed-residue graph-Prym ball",
+    "name": "C_fr",
+    "selection_rule": "all 123 free correction digits are zero in the frozen coefficient basis and RREF order",
+    "selection_tier": "deterministic_reproducible_basis_framing_not_coordinate_free_physical_selection"
+  },
+  "canonical_payload_sha256": "54d0cb4fbb023434dacb453be601ca9a8a8b93cbfff0c6cb171fdc54a529ef19",
+  "checks": {
+    "H4_T132_binds_the_directed_class_to_one_exact_algebraic_G3AJ_member": true,
+    "H4_T132_identifies_that_Picard_point_with_the_restricted_primitive_BHT_Deligne_class": true,
+    "T68_requires_r_times_beta_C_to_vanish_for_a_rank_r_twisted_spectral_object": true,
+    "double_traversal_and_spectral_rank_two_inverse_rank_six_are_excluded": true,
+    "hypothetical_spectral_rank_three_inverse_rank_nine_is_excluded": true,
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "orders_one_through_1449_are_certified_nonzero_on_every_complex_embedding": true,
+    "the_first_unresolved_order_1450_would_have_inverse_transform_rank_4350": true,
+    "the_intended_spectral_rank_one_inverse_rank_three_endpoint_is_excluded": true,
+    "the_result_does_not_promote_the_basis_framing_to_physical_MTT_selection": true,
+    "the_result_does_not_reject_the_rank123_graph_ball": true,
+    "therefore_spectral_ranks_one_through_1449_are_excluded_for_this_member": true
+  },
+  "frontier_delta": {
+    "after": "the H4-T132 obstruction is now folded through the established rank cutset: C_fr admits no twisted spectral object of ranks 1 through 1449 and therefore cannot realize the intended inverse-rank-three endpoint or any degree-three inverse transform of ranks 3,6,...,4347",
+    "before": "T68 excluded B89 and G3BI at the intended ranks and requested explicit same-residue G3AJ candidates; H4-T132 separately rejected one exact framed G3AJ member through traversal order 1449",
+    "next_required_object": "construct the graph-family beta_C value map and derivative on the 122 projective tangent directions, then either certify a beta-zero member or prove the beta-zero locus empty; do not rerun C_fr, its embeddings, or low-rank traversals"
+  },
+  "guardrails": {
+    "claims_C_fr_is_physically_selected": false,
+    "claims_H4_T132_nonvanishing_is_new_here": false,
+    "claims_HYM_SM_or_QG_endpoint_closure": false,
+    "claims_a_replacement_beta_zero_member_exists": false,
+    "claims_rank1450_is_a_torsion_candidate": false,
+    "claims_the_T68_rank_theorem_is_new_here": false,
+    "claims_the_entire_G3AJ_ball_is_rejected": false
+  },
+  "inputs": {
+    "H4_T132": {
+      "bytes": 63077,
+      "path": "q79_eta9_framed_member_char0_picard_embedding_binding.input.json",
+      "sha256": "6e28abaf6eafac91f502007310d662085f4b569455460d17023bf33478939e90"
+    },
+    "H4_T132_upstream": {
+      "packet_git_blob": "a938fcd4c586e050f0ee323848897e49aa72365c",
+      "packet_path": "experiments/q79_eta9_graph_normal_duality/outputs/framed-member-char0-picard-embedding-binding/q79_eta9_framed_member_char0_picard_embedding_binding.packet.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_commit": "0c92c4107a2c52acc743665f8b47670e107dd731",
+      "theorem_git_blob": "412f4dfe278da10ab1c4e5dfb87b08ad77f40e6c",
+      "theorem_path": "theorems/PREPROJECTION_Q79_ETA9_FRAMED_MEMBER_CHAR0_PICARD_EMBEDDING_AND_LOW_ORDER_TRAVERSAL_OBSTRUCTION_THEOREM_v1.md"
+    },
+    "T68": {
+      "bytes": 12527,
+      "path": "q79_eta9_twisted_spectral_rank_divisibility.packet.json",
+      "sha256": "b31b80c6eca068abc864815b4c8d3ba3ff646946c655ee8e52b79bd17dbceca8"
+    },
+    "source_snapshot": {
+      "bytes": 2345,
+      "path": "q79_eta9_framed_member_spectral_rank_exclusion.source.json",
+      "sha256": "0bd4723be9c057add31e9b875b4f374b0a1c76bdaf17ae2cc50eb56b7c645719"
+    }
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "provenance": {
+    "H4_T132_role": "consumed exact algebraic/complex binding and certified nP nonvanishing; not reproved here",
+    "T68_role": "consumed established twisted-spectral rank-divisibility theorem; not reproved here"
+  },
+  "rank_exclusion": {
+    "certified_excluded_spectral_ranks_inclusive": [
+      1,
+      1449
+    ],
+    "corresponding_degree_three_inverse_transform_ranks": {
+      "first": 3,
+      "formula": "3*r",
+      "last": 4347,
+      "step": 3
+    },
+    "double_traversal": {
+      "H4_T132_witness": {
+        "certified_distance_to_Z_greater_than": 0.4926597792655228,
+        "scaled_interval_outward_binary64": [
+          -0.5073402207344773,
+          -0.5039642136543987
+        ],
+        "witness_coordinate_zero_based": 115
+      },
+      "decision": "REJECTED_FOR_C_fr",
+      "inverse_transform_rank": 6,
+      "spectral_rank_analogue": 2
+    },
+    "first_order_not_resolved_by_H4_T132_intervals": 1450,
+    "first_unresolved_corresponding_inverse_transform_rank": 4350,
+    "selected_endpoint": {
+      "decision": "REJECTED_FOR_C_fr",
+      "inverse_transform_rank": 3,
+      "spectral_rank": 1
+    },
+    "selected_rank_witnesses": [
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 3,
+        "spectral_rank": 1,
+        "twisted_object_existence": "REJECTED"
+      },
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 6,
+        "spectral_rank": 2,
+        "twisted_object_existence": "REJECTED"
+      },
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 9,
+        "spectral_rank": 3,
+        "twisted_object_existence": "REJECTED"
+      },
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 15,
+        "spectral_rank": 5,
+        "twisted_object_existence": "REJECTED"
+      },
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 27,
+        "spectral_rank": 9,
+        "twisted_object_existence": "REJECTED"
+      },
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 81,
+        "spectral_rank": 27,
+        "twisted_object_existence": "REJECTED"
+      },
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 744,
+        "spectral_rank": 248,
+        "twisted_object_existence": "REJECTED"
+      },
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 2187,
+        "spectral_rank": 729,
+        "twisted_object_existence": "REJECTED"
+      },
+      {
+        "H4_T132_proves_rank_times_beta_C_nonzero": true,
+        "degree_three_inverse_transform_rank": 4347,
+        "spectral_rank": 1449,
+        "twisted_object_existence": "REJECTED"
+      }
+    ],
+    "spectral_rank_three": {
+      "decision": "REJECTED_FOR_C_fr",
+      "inverse_transform_rank": 9
+    },
+    "twisted_rank_necessity": "a rank-r alpha-twisted locally free spectral object requires r*beta_C=0 on this carrier",
+    "unresolved_boundary": "rank 1450 is not a candidate and no torsion or object existence is inferred from loss of interval resolution"
+  },
+  "schema": "mtt.cbf.q79-eta9-framed-member-spectral-rank-exclusion.v1",
+  "status": "CLOSED_EXACT_FRAMED_GRAPH_PRYM_SPECTRAL_RANKS_1_THROUGH_1449_EXCLUDED",
+  "theorem_id": "CBF.T69",
+  "tier": "exact_cross_repository_application_to_one_algebraically_bound_directed_candidate"
+}
