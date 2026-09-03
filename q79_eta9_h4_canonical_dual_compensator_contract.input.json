@@ -1,0 +1,1126 @@
+{
+  "canonical_payload_sha256": "846d6155090693c71de2958e429a6967c82e357884174f7336efd386d8ad5770",
+  "checks": {
+    "all_1476_compensator_derivative_and_upper_source_coordinates_overlap_H4_T143": true,
+    "all_connector_covariance_relations_are_bit_exact": true,
+    "all_six_canonical_bilinears_are_certifiably_invertible": true,
+    "all_six_canonical_dual_midpoint_packets_pass": true,
+    "no_intrinsic_formula_pathwide_transport_integral_period_beta_C_or_U_eta9_claim_is_made": true,
+    "the_top_trace_dependency_is_compressed_to_one_symmetric_82_by_82_bilinear": true
+  },
+  "construction": {
+    "bilinear": "B=S*theta",
+    "bilinear_derivative": "B_prime=S_prime*theta+S*theta_prime",
+    "canonical_frame": "H01=V*, dual to H10=V",
+    "compensator_equations": [
+      "B*x+s_GM=0",
+      "B*x_prime+B_prime*x+s_GM_prime=0"
+    ],
+    "rows": [
+      {
+        "H4_T143_overlap": {
+          "compensator": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "7.52056952713076043437467887997627258300781250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e-7"
+          },
+          "compensator_derivative": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "36572.3550415039062500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "upper_source": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "36572.4873657226562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        "arrays": {
+          "canonical_bilinear": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_bilinear_center.npy",
+              "sha256": "6a821a65a92bbeb4e64d2452a1127f5f3f36f25478b194781d838333167fd900"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_bilinear_lo.npy",
+              "sha256": "5dc0338af5ae7a79eb1d1322cd89d9b9a986473dd8f6b826bb40303900a34db4"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 3.626132399696003e-19,
+            "maximum_double_double_tail_component_radius": 2.973311136562692e-31,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_bilinear_radius.npy",
+              "sha256": "dd90f27ebbcd57718f87577474d79ef344c0e18a15e371ccc6e5623f99a9c419"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_bilinear_tail.npy",
+              "sha256": "cb94fae3404c6f3e1827005f7f7e8955b9aabb8f3ea940a8935585e91c2033a0"
+            }
+          },
+          "canonical_bilinear_derivative": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_bilinear_derivative_center.npy",
+              "sha256": "2ca356c3eaf4cce4b6bd5b0c3421752f388d4e0c7b0dcf040c4a49a4a09ad941"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_bilinear_derivative_lo.npy",
+              "sha256": "3407ea30973742e5bc63ce789135d816d07a4dfa600021885ab5d640615c0e3b"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 1.2184895012312532e-17,
+            "maximum_double_double_tail_component_radius": 1.1105204157814231e-29,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_bilinear_derivative_radius.npy",
+              "sha256": "88e28598bd1d462c69d03fc45f1e95792b36fe1b9a179a84e390790520374078"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_bilinear_derivative_tail.npy",
+              "sha256": "f176a15d3b6a4b0a489994cbb51126c0bd44c7f4bb93d12a61d7a33aaf9fe6d7"
+            }
+          },
+          "canonical_compensator": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_compensator_center.npy",
+              "sha256": "31b51c5022a06fb45eada27b456a6bae29b20359c881af13597ef306552022cc"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_compensator_lo.npy",
+              "sha256": "4ce5b6146358738c876ea4c6248c36ee776dac7e58c3d2c0ef8f013b6a7040f4"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 1.2314071036639061e-06,
+            "maximum_double_double_tail_component_radius": 1.063569138537446e-06,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_compensator_radius.npy",
+              "sha256": "fa41eac67f7d80b903947cef1d90257525779c7489cef20544dbfd650a7ccc53"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_compensator_tail.npy",
+              "sha256": "e3fbebc8b0364c69375310275f3fdae7cce1e967b0d152e531f4f5683030b42a"
+            }
+          },
+          "canonical_compensator_derivative": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_compensator_derivative_center.npy",
+              "sha256": "fb44ded04ce5df99ff547976bfa0158d4d9ccd6b57a1d9cad146039ce365e3ed"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_compensator_derivative_lo.npy",
+              "sha256": "73ce8dff521eb6a64ebdc080179aff3ceed23cf45d6f77060ca25bff2d3ef3ee"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 51721.1204238385,
+            "maximum_double_double_tail_component_radius": 51721.12036132813,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_compensator_derivative_radius.npy",
+              "sha256": "cebc186542e33eaf79ac876fcb39091f5c986cb3a57e3926b7463e36c8463ba1"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_compensator_derivative_tail.npy",
+              "sha256": "0df3765338167bb957d0069059f1b0003d2f146c0a7a08f91a11bd1b7ed2d39d"
+            }
+          },
+          "canonical_upper_source": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_upper_source_center.npy",
+              "sha256": "f29b8c8798d8e3e0bf714192ce86e130482b0fb0ac73b44cded9b4d82eb669f3"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_upper_source_lo.npy",
+              "sha256": "14865d1184deb418578f3be13272f57c40defc15b7347860d9eb0dd6cbf7d854"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 51721.30759839352,
+            "maximum_double_double_tail_component_radius": 51721.30755615235,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_upper_source_radius.npy",
+              "sha256": "397ef1c6af7ccb5c4064bd791637a625fb71eed2e70cfc5c45fedf76d7448ce1"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.canonical_upper_source_tail.npy",
+              "sha256": "dcc4face8aebc7826c7a5a859a6fa8cbbb82ccd2fd080d05414c0d4c26c25ad3"
+            }
+          }
+        },
+        "determinant_abs_lower": "[3.24782431072784e-462 +/- 2.29e-477]",
+        "point_packet": {
+          "bytes": 14175,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_out_canonical_dual.packet.json",
+          "sha256": "809e78862e62a7f4182111ac790a38ace5f66c4d5fcaf8ee1297b0c5f1813267"
+        },
+        "segment": "connector-out"
+      },
+      {
+        "H4_T143_overlap": {
+          "compensator": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "0.000728220848031924106180667877197265625000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "compensator_derivative": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "55789790.1875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "upper_source": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "55790493.1875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        "arrays": {
+          "canonical_bilinear": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_bilinear_center.npy",
+              "sha256": "f0e51df1eec87bc844b4e65f980fecd171e35887e4b7c5e9ebb372e962fe6909"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_bilinear_lo.npy",
+              "sha256": "2c8584cd1f92a62aa728fed0e46623af9afc52659ccddf9887d0a8e3d24b905a"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 9.536114692855336e-20,
+            "maximum_double_double_tail_component_radius": 3.9001503179281343e-31,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_bilinear_radius.npy",
+              "sha256": "ff5b77fcb51301641e48f8a6902931cfc62f8ae42b0281cdacba38151b6825a5"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_bilinear_tail.npy",
+              "sha256": "dec0a401bd87110a05c49ea15d3ae8d24fa26266d19c0266a6f96fbb2574f5de"
+            }
+          },
+          "canonical_bilinear_derivative": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_bilinear_derivative_center.npy",
+              "sha256": "59560de05a41a951e43966c78988535c7881b08d49f7d0b5c852313e74cd4e3a"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_bilinear_derivative_lo.npy",
+              "sha256": "7e3f25c2d18d7215fb0ffde8ce7caa16da12d64a0ed7b9910e44c6331c7559bf"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 1.0577266988750684e-19,
+            "maximum_double_double_tail_component_radius": 7.515539884894644e-30,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_bilinear_derivative_radius.npy",
+              "sha256": "6aceba027220595debb183ae9136c33c2135975e7c8862ef4818082dd98ca2ae"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_bilinear_derivative_tail.npy",
+              "sha256": "d576593ea02b59dc3a3fc0f2696b9f78272354d67c0c941aabe4a073bdc1d970"
+            }
+          },
+          "canonical_compensator": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_compensator_center.npy",
+              "sha256": "61deb62ad0d1b316fb50d085cb3b7d0ad220ee82d3c62a70560c67843f717c85"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_compensator_lo.npy",
+              "sha256": "e52e5bf6c1951d38a387e4c86e59ec3418c65f56b4eddb431bf9b38350307493"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 0.0010299899909745893,
+            "maximum_double_double_tail_component_radius": 0.0010298597953806168,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_compensator_radius.npy",
+              "sha256": "1135f196fedb641066879447dccecf9ef95dbf2ab9e5f7c9e2709f1056d98b53"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_compensator_tail.npy",
+              "sha256": "1877464507b010b48e695161d6e41861361fb23adb5f1c289ac74f2f35cec900"
+            }
+          },
+          "canonical_compensator_derivative": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_compensator_derivative_center.npy",
+              "sha256": "7a21dbba855c017caaf1ae69a9cac84d6dab0e3009b99b36e36909dd37c8c09a"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_compensator_derivative_lo.npy",
+              "sha256": "2535b7b55f596f6661e54d55c2b3a0e4b1eec00bc4f0997e3b7d5e6cf34c7991"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 78898677.62500001,
+            "maximum_double_double_tail_component_radius": 78898677.62500001,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_compensator_derivative_radius.npy",
+              "sha256": "4ff71b2c9930b7809012e1784894bba663587e83e5f3b3c9640b6309ae9a05fe"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_compensator_derivative_tail.npy",
+              "sha256": "9e0ef3f58521f55b241921657cee0d28ef8c7cfd2e1453b3506ef5f76bd0e0bd"
+            }
+          },
+          "canonical_upper_source": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_upper_source_center.npy",
+              "sha256": "cb285fe2019f23d0e3d111e751b4d7ab945c0f8acf2ad7594645e0747987e3f4"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_upper_source_lo.npy",
+              "sha256": "25f2a1b4a04414f6ff1bccbfe99de3ce7ae435a4d55f4f9fa34b424ad8fc2ace"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 78899671.87500146,
+            "maximum_double_double_tail_component_radius": 78899671.87500001,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_upper_source_radius.npy",
+              "sha256": "69b78982b447a5ef0819428266d403b6b084fb1db23d2e72264908e842efe53d"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.canonical_upper_source_tail.npy",
+              "sha256": "4285e36d09e89ffc33c52cb660b9d5d82341ddd0ddb951dfec07f2e838f586e5"
+            }
+          }
+        },
+        "determinant_abs_lower": "[7.13848117807529e-498 +/- 1.68e-513]",
+        "point_packet": {
+          "bytes": 13992,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge0_canonical_dual.packet.json",
+          "sha256": "652053f1c290a09eb4aa7574dd117e3837e48c4a1c2810db5be84e60d5caf86b"
+        },
+        "segment": "edge-0"
+      },
+      {
+        "H4_T143_overlap": {
+          "compensator": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "0.000158033842126314993947744369506835937500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "compensator_derivative": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "5528995.70312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "upper_source": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "5529222.24218750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        "arrays": {
+          "canonical_bilinear": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_bilinear_center.npy",
+              "sha256": "e27c6b080e85402aeaca65dae4d3c7e3b39131691f155eb5e637a46ace1bc9fe"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_bilinear_lo.npy",
+              "sha256": "310ae1578ad3a4d48d76cc9d0340e544295e48bd3a59b078922ea9d4b8585ff3"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 9.393727988015045e-20,
+            "maximum_double_double_tail_component_radius": 4.381087462186299e-31,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_bilinear_radius.npy",
+              "sha256": "283e4cc1537264b16da885a7baff2f3e47b3472c4e8b9419f0c2ffc2ccf77056"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_bilinear_tail.npy",
+              "sha256": "72e76924454e689ea13932a541e8c6608d5cf5a1710d6859484323757b7dea09"
+            }
+          },
+          "canonical_bilinear_derivative": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_bilinear_derivative_center.npy",
+              "sha256": "ed59dab2d58893170d395cfd4e97974bc2f9048f9b48a23dabdd5e775c3512e2"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_bilinear_derivative_lo.npy",
+              "sha256": "2bc10ef10889e7534a89fe5d27525a857f37ec5cbe4c174eb171875e8cc4d755"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 2.7462268380357982e-18,
+            "maximum_double_double_tail_component_radius": 2.107539463902237e-29,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_bilinear_derivative_radius.npy",
+              "sha256": "0783098c56fc08fc815896cd93c5ff5c5a0447cb3b5e830c6d70aa33d5900484"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_bilinear_derivative_tail.npy",
+              "sha256": "7da6122406f24d7f2dc8197b9e932800df328f438c6c9c3490a1cfaa85b9cc92"
+            }
+          },
+          "canonical_compensator": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_compensator_center.npy",
+              "sha256": "a456d7ad88a045755ac7aaa26ac8a7f6f923ddf84d939ddd148766d6c18de1dc"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_compensator_lo.npy",
+              "sha256": "952829f6fbb4b514a6549b17aafd90140a459d5a69c3af842acc5aba22ff0201"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 0.00022360471868513972,
+            "maximum_double_double_tail_component_radius": 0.00022349360256157527,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_compensator_radius.npy",
+              "sha256": "81d138ae5729366fa48123de4561da0094f376b941ff6b4f55ab359ec1b4b1bf"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_compensator_tail.npy",
+              "sha256": "887653b648ab9e1fb75564b9747ea3a4fb2b8ec979b128c9760d702ffb59eaa4"
+            }
+          },
+          "canonical_compensator_derivative": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_compensator_derivative_center.npy",
+              "sha256": "3e0ace2ee09a115b3e783920c1bd80850f1dfa5c9a4111d95424b9bc7978cd64"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_compensator_derivative_lo.npy",
+              "sha256": "3ee3e39b894ec36757dc34d2313c8268d6a512fb6c5e1052c1194bb3b03a7713"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 7819180.695319296,
+            "maximum_double_double_tail_component_radius": 7819180.695312501,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_compensator_derivative_radius.npy",
+              "sha256": "8f485a19f69d695fd38364f54185b61a79ca7e323acc03307018e8e8ec5a8ba1"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_compensator_derivative_tail.npy",
+              "sha256": "b7cb219968ed544ecc64d062f89694c3bb5fb77746b1b054eb016050687165a5"
+            }
+          },
+          "canonical_upper_source": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_upper_source_center.npy",
+              "sha256": "716452f623a59a519a4756c5b104733d9bc1f9ead406441fd1440c85fbb89227"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_upper_source_lo.npy",
+              "sha256": "f2e9739cedb5af9d06652346f6d52ae2e6b2c308991eb727b216a81d31da8f54"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 7819501.070331781,
+            "maximum_double_double_tail_component_radius": 7819501.070312501,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_upper_source_radius.npy",
+              "sha256": "e8a612b2cea34e7452b3a4910b94697da70dd5e8abb7fbfc764d72629ad2d7ac"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.canonical_upper_source_tail.npy",
+              "sha256": "684686ed8e78461396fde90f000df2dcc20cf0502ea21434797f6549ae910eea"
+            }
+          }
+        },
+        "determinant_abs_lower": "[6.63791442000144e-465 +/- 3.43e-480]",
+        "point_packet": {
+          "bytes": 13993,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge1_canonical_dual.packet.json",
+          "sha256": "810f941053a52beb839d3e48bb54a316e8ee26b631a225d6e0af1d295ade99b7"
+        },
+        "segment": "edge-1"
+      },
+      {
+        "H4_T143_overlap": {
+          "compensator": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "0.392219401895999908447265625000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "compensator_derivative": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "3937485860864.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "upper_source": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "3937487495168.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        "arrays": {
+          "canonical_bilinear": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_bilinear_center.npy",
+              "sha256": "4d3229f74ee752f22b3a275df8e738a5ccbd2436f07669ed2dd25bbad9dc2de2"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_bilinear_lo.npy",
+              "sha256": "ef6ea4d88566a985be92ae659b0cd198863b6eca85e51a91d3b411b17a6a3898"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 1.445376907370937e-19,
+            "maximum_double_double_tail_component_radius": 3.005081093571491e-30,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_bilinear_radius.npy",
+              "sha256": "a9777e7416f7460e4bd9df75431b092eb2ac958f8dac51c9dd396c0e0da5d821"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_bilinear_tail.npy",
+              "sha256": "3ea9f0fddc95d6d5f69ef9a40a8de7f17259d7ef881878d3389b16632159ca2e"
+            }
+          },
+          "canonical_bilinear_derivative": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_bilinear_derivative_center.npy",
+              "sha256": "8be2e15b020d67a86edbc198cc47969e9d4125505d86fd6263421ad7d63f9346"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_bilinear_derivative_lo.npy",
+              "sha256": "620f3668f3b6d6537dfa6d4cd43bbc209540fa1f2144b51c48dc8faafdcfbc23"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 3.5040216023522044e-18,
+            "maximum_double_double_tail_component_radius": 1.643249384010925e-28,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_bilinear_derivative_radius.npy",
+              "sha256": "a95d523af9c99f55b78a1caede812f540d6c6380665fc2ceb29b64824e47616d"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_bilinear_derivative_tail.npy",
+              "sha256": "2bce4819652cf92660e479ff63fac64bd321f82e600785ecc45cee1153980170"
+            }
+          },
+          "canonical_compensator": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_compensator_center.npy",
+              "sha256": "b1e7a69568d1eb27f26de9a3b9bd600d31181c19ef8105796b82bf7edb520e53"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_compensator_lo.npy",
+              "sha256": "b30f979519f924dc753f5a826132c174ab7ca1897916581091643489e26f6a2c"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 0.5546826574311582,
+            "maximum_double_double_tail_component_radius": 0.5546819958835841,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_compensator_radius.npy",
+              "sha256": "4ed79d5660c95437a81d746b8bf808c891dca80c0f8d5ec34a5ea29bf5a8c0c8"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_compensator_tail.npy",
+              "sha256": "41dcc01278a827e0a767d57d653af8a78e5a48c59aefd9d2f185e972cb4b8420"
+            }
+          },
+          "canonical_compensator_derivative": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_compensator_derivative_center.npy",
+              "sha256": "4afd1a4e45d78c9d012cb34c8ce5ac05ffbdf04e3778c5930d17b9a58a1bb8ef"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_compensator_derivative_lo.npy",
+              "sha256": "f29bb3c6947995d8cb830e8cb7a2a039d353ead0ba96321ae62dc3d686f4dbfb"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 5568445890560.001,
+            "maximum_double_double_tail_component_radius": 5568445890560.001,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_compensator_derivative_radius.npy",
+              "sha256": "c8e275cebf18f67a8200839f2df15d4bc92f8876d6d30ef42477e7734ec9e876"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_compensator_derivative_tail.npy",
+              "sha256": "c8e275cebf18f67a8200839f2df15d4bc92f8876d6d30ef42477e7734ec9e876"
+            }
+          },
+          "canonical_upper_source": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_upper_source_center.npy",
+              "sha256": "6a1a64dd30ae30a1b848d3ab1ddee89c57356a5c2d8131a35aefb4cecab464d5"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_upper_source_lo.npy",
+              "sha256": "65c21ed8c321f46956b78fb2d1cb2dd571f900e7dec42a09222cdf9cfb2cb60c"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 5568448200704.001,
+            "maximum_double_double_tail_component_radius": 5568448200704.001,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_upper_source_radius.npy",
+              "sha256": "a36191bc02163479cbae00f075c4f7d9d9db92d3d8f0464d7d6b39dd157f04aa"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.canonical_upper_source_tail.npy",
+              "sha256": "a36191bc02163479cbae00f075c4f7d9d9db92d3d8f0464d7d6b39dd157f04aa"
+            }
+          }
+        },
+        "determinant_abs_lower": "[1.31900788521028e-528 +/- 4.77e-543]",
+        "point_packet": {
+          "bytes": 13982,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge2_canonical_dual.packet.json",
+          "sha256": "4e2685bdc0994000f7928aa3b124658eb8627171c811fb4a22a0b5d89dc2b18b"
+        },
+        "segment": "edge-2"
+      },
+      {
+        "H4_T143_overlap": {
+          "compensator": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "5.18114353503795754818384011741727590560913085937500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e-9"
+          },
+          "compensator_derivative": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "12.2618105858564376831054687500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "upper_source": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "12.2621607482433319091796875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        "arrays": {
+          "canonical_bilinear": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_bilinear_center.npy",
+              "sha256": "467841cea2ef7f1aeb49b721f583883d2981faa2a574ed4cdbd171975f03d674"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_bilinear_lo.npy",
+              "sha256": "0ea8f5a4ec7d83b9e1391859c008b5aa9480912059896fa0e0fbae84e6345a0d"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 1.1111580364814748e-19,
+            "maximum_double_double_tail_component_radius": 7.800483533564886e-32,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_bilinear_radius.npy",
+              "sha256": "cf6ab15735285399e0312c13bdef066b4e668610995aa5aba92fc38e3f098e2f"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_bilinear_tail.npy",
+              "sha256": "717a39d85493c2dace356e2b0294f6bb33e418d2707979b410989e4c928da78e"
+            }
+          },
+          "canonical_bilinear_derivative": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_bilinear_derivative_center.npy",
+              "sha256": "8c6d671e57701b32b4c6f66ab83bc3d22c649fb83804b4f23f8884b2750c612b"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_bilinear_derivative_lo.npy",
+              "sha256": "75b77e47ed85106bfceb23797ce0b8d57c290437806c7980b25b630c4d94b3c3"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 8.150185383677956e-19,
+            "maximum_double_double_tail_component_radius": 1.3717083962033774e-30,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_bilinear_derivative_radius.npy",
+              "sha256": "da6ce06d8eda85e3ce2a47743426d041d4335d4e74b4d07d2ad5ff9d4f138780"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_bilinear_derivative_tail.npy",
+              "sha256": "0a985c25ccc64fe5d0680bb0c1a0973a4b4dded96fbcf18e80ca67a1ac3a8458"
+            }
+          },
+          "canonical_compensator": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_compensator_center.npy",
+              "sha256": "e5abf5541e6f81dd366534b8dc711a8b5309e3c59357efc02dd7164235cc0532"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_compensator_lo.npy",
+              "sha256": "ad7cb3c1c06ae1534a871dbb896d12c433d5140153182a471dd36a5bb48280aa"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 4.4295339922400966e-08,
+            "maximum_double_double_tail_component_radius": 7.327243443933097e-09,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_compensator_radius.npy",
+              "sha256": "31413284a197557a78d67ae795572f2d06ffc9cbd45fc995f50763cbc17008d3"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_compensator_tail.npy",
+              "sha256": "58798d31e5ec0eac2788ba83e23bbe75b6e00f3fb10b590babeccb9327427f86"
+            }
+          },
+          "canonical_compensator_derivative": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_compensator_derivative_center.npy",
+              "sha256": "165984750b03a213015e236687dbb3fb31225dcb6679dc25550eb2b0d5b13c53"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_compensator_derivative_lo.npy",
+              "sha256": "30be166e085ac6066e4d3a5967b4acfeebea1681b97a0b8a19ab6dc945116efe"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 17.34082255775866,
+            "maximum_double_double_tail_component_radius": 17.34081876277924,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_compensator_derivative_radius.npy",
+              "sha256": "6c946a4dc845f4de8833647912bccd142f3700c592d7aa48cbc4f96de61ec655"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_compensator_derivative_tail.npy",
+              "sha256": "b289bfe8341c0a33570bf56ad7552756f7f297f40e9cf78722473498998d7411"
+            }
+          },
+          "canonical_upper_source": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_upper_source_center.npy",
+              "sha256": "79ea1ec877d186f6343d5398e3f5368b81a58dcfac714a25f47aa0e8fb5271cc"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_upper_source_lo.npy",
+              "sha256": "dc8ed5f097aea5c7e669cc67259cfc20482943b844310d8ef075046eef46823d"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 17.34131674089468,
+            "maximum_double_double_tail_component_radius": 17.341313958168033,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_upper_source_radius.npy",
+              "sha256": "6f24c230666d86dcb6ccc0a4295b96239fc4abf83188cd4e63e8fd105a5047af"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.canonical_upper_source_tail.npy",
+              "sha256": "58a29f509451140cb576f4df6b1b1adac9f8be03e2b15f1bcc27845b4b9d17a3"
+            }
+          }
+        },
+        "determinant_abs_lower": "[1.41748808945537e-496 +/- 2.43e-511]",
+        "point_packet": {
+          "bytes": 13998,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_edge3_canonical_dual.packet.json",
+          "sha256": "d3cf88a00566e1c94b0320eda2cff2e576a7605c5cfd313013c3086062f45fd0"
+        },
+        "segment": "edge-3"
+      },
+      {
+        "H4_T143_overlap": {
+          "compensator": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "7.52056952713076043437467887997627258300781250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e-7"
+          },
+          "compensator_derivative": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "36572.3550415039062500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "upper_source": {
+            "all_coordinate_differences_contain_zero": true,
+            "coordinates": 82,
+            "maximum_difference_radius": "36572.4873657226562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        "arrays": {
+          "canonical_bilinear": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_bilinear_center.npy",
+              "sha256": "5b5af7c2afbee11cfd31865ff92601293fad8b9420f43e9b679489c75684d962"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_bilinear_lo.npy",
+              "sha256": "4bd27dbc7c2b10bdc2c8037522638004abbd9d75aa80a5053b46d9964c31f79f"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 3.626132399696003e-19,
+            "maximum_double_double_tail_component_radius": 2.973311136562692e-31,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_bilinear_radius.npy",
+              "sha256": "dd90f27ebbcd57718f87577474d79ef344c0e18a15e371ccc6e5623f99a9c419"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_bilinear_tail.npy",
+              "sha256": "cb94fae3404c6f3e1827005f7f7e8955b9aabb8f3ea940a8935585e91c2033a0"
+            }
+          },
+          "canonical_bilinear_derivative": {
+            "center": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_bilinear_derivative_center.npy",
+              "sha256": "2ca356c3eaf4cce4b6bd5b0c3421752f388d4e0c7b0dcf040c4a49a4a09ad941"
+            },
+            "center_low": {
+              "bytes": 107712,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_bilinear_derivative_lo.npy",
+              "sha256": "3407ea30973742e5bc63ce789135d816d07a4dfa600021885ab5d640615c0e3b"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 1.2184895012312532e-17,
+            "maximum_double_double_tail_component_radius": 1.1105204157814231e-29,
+            "radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_bilinear_derivative_radius.npy",
+              "sha256": "88e28598bd1d462c69d03fc45f1e95792b36fe1b9a179a84e390790520374078"
+            },
+            "shape": [
+              82,
+              82
+            ],
+            "tail_radius": {
+              "bytes": 53920,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_bilinear_derivative_tail.npy",
+              "sha256": "f176a15d3b6a4b0a489994cbb51126c0bd44c7f4bb93d12a61d7a33aaf9fe6d7"
+            }
+          },
+          "canonical_compensator": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_compensator_center.npy",
+              "sha256": "31b51c5022a06fb45eada27b456a6bae29b20359c881af13597ef306552022cc"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_compensator_lo.npy",
+              "sha256": "4ce5b6146358738c876ea4c6248c36ee776dac7e58c3d2c0ef8f013b6a7040f4"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 1.2314071036639061e-06,
+            "maximum_double_double_tail_component_radius": 1.063569138537446e-06,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_compensator_radius.npy",
+              "sha256": "fa41eac67f7d80b903947cef1d90257525779c7489cef20544dbfd650a7ccc53"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_compensator_tail.npy",
+              "sha256": "e3fbebc8b0364c69375310275f3fdae7cce1e967b0d152e531f4f5683030b42a"
+            }
+          },
+          "canonical_compensator_derivative": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_compensator_derivative_center.npy",
+              "sha256": "da1c0cd1b06836fe22f53a3567272598cb15b8fe72eb08c52b51d8aec0793788"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_compensator_derivative_lo.npy",
+              "sha256": "52ef798b80432a52e8e8c433a2bbb3bf7edc494eb4fda8c8d7149f19de54b604"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 51721.1204238385,
+            "maximum_double_double_tail_component_radius": 51721.12036132813,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_compensator_derivative_radius.npy",
+              "sha256": "cebc186542e33eaf79ac876fcb39091f5c986cb3a57e3926b7463e36c8463ba1"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_compensator_derivative_tail.npy",
+              "sha256": "0df3765338167bb957d0069059f1b0003d2f146c0a7a08f91a11bd1b7ed2d39d"
+            }
+          },
+          "canonical_upper_source": {
+            "center": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_upper_source_center.npy",
+              "sha256": "ec0271e98924aaa9b08fd16d02c79388f102bfa3fa44acdfb7fcfc132b101ef1"
+            },
+            "center_low": {
+              "bytes": 1440,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_upper_source_lo.npy",
+              "sha256": "7a9995c18e0575080670550eb77b16bf08469afc943c90dd0f2afbb02bd6d1a1"
+            },
+            "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+            "maximum_component_radius": 51721.30759839352,
+            "maximum_double_double_tail_component_radius": 51721.30755615235,
+            "radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_upper_source_radius.npy",
+              "sha256": "397ef1c6af7ccb5c4064bd791637a625fb71eed2e70cfc5c45fedf76d7448ce1"
+            },
+            "shape": [
+              82
+            ],
+            "tail_radius": {
+              "bytes": 784,
+              "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.canonical_upper_source_tail.npy",
+              "sha256": "dcc4face8aebc7826c7a5a859a6fa8cbbb82ccd2fd080d05414c0d4c26c25ad3"
+            }
+          }
+        },
+        "determinant_abs_lower": "[3.24782431072784e-462 +/- 2.29e-477]",
+        "point_packet": {
+          "bytes": 14151,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_fm_connector_in_canonical_dual.packet.json",
+          "sha256": "45f8cc99052f05410e711f75ce6aa74a0c71ef5dd09dcdb93f9ded1ef961e235"
+        },
+        "segment": "connector-in"
+      }
+    ]
+  },
+  "frontier": {
+    "closed": [
+      "canonical V-dual symmetric compensator system at six selected midpoints",
+      "differentiated canonical compensator system",
+      "certified equivalence to the H4-T143 compensator and upper source",
+      "reduction of the remaining top-trace dependency to one symmetric 82 by 82 bilinear"
+    ],
+    "next_object": "Construct the same B directly from the conductor-adjoint differential frame and an algebraic Rauch/residue formula.",
+    "still_open": [
+      "intrinsic residue or dualizing construction of B without the H4-T141 top solve",
+      "adaptive path panels and global projective gauge compatibility",
+      "rank-164 transport, 248 accumulators and the integral Deligne quotient",
+      "beta_C and U_eta9"
+    ]
+  },
+  "guardrails": {
+    "Gate1_is_frozen": true,
+    "finite_field_completion_is_not_characteristic_zero_evidence": true,
+    "six_midpoints_are_not_called_pathwide_coverage": true,
+    "this_is_a_dependency_compression_not_yet_an_intrinsic_construction_of_B": true
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "schema": "mtt.preprojection.q79-eta9-framed-member-canonical-dual-compensator-contract.v1",
+  "six_midpoint_audit": {
+    "connector_checks": {
+      "canonical_bilinear_center": true,
+      "canonical_bilinear_derivative_center": true,
+      "canonical_bilinear_derivative_low": true,
+      "canonical_bilinear_derivative_radius": true,
+      "canonical_bilinear_derivative_tail": true,
+      "canonical_bilinear_low": true,
+      "canonical_bilinear_radius": true,
+      "canonical_bilinear_tail": true,
+      "canonical_compensator_center": true,
+      "canonical_compensator_derivative_center": true,
+      "canonical_compensator_derivative_low": true,
+      "canonical_compensator_derivative_radius": true,
+      "canonical_compensator_derivative_tail": true,
+      "canonical_compensator_low": true,
+      "canonical_compensator_radius": true,
+      "canonical_compensator_tail": true,
+      "canonical_upper_source_center": true,
+      "canonical_upper_source_low": true,
+      "canonical_upper_source_radius": true,
+      "canonical_upper_source_tail": true
+    },
+    "maximum_component_radii": {
+      "canonical_bilinear": 3.626132399696003e-19,
+      "canonical_bilinear_derivative": 1.2184895012312532e-17,
+      "canonical_compensator": 0.5546826574311582,
+      "canonical_compensator_derivative": 5568445890560.001,
+      "canonical_upper_source": 5568448200704.001
+    },
+    "minimum_bilinear_determinant_abs_lower": "[1.31900788521028e-528 +/- 4.77e-543]"
+  },
+  "source_bindings": {
+    "full_chain_runner": {
+      "bytes": 1365,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/run_framed_member_canonical_dual_compensator_chain.py",
+      "sha256": "1a42697ab8fb9d55a663511d2ac5b612f5e4ecfe488b24f979a84f8b17bb6caa"
+    },
+    "independent_verifier": {
+      "bytes": 7890,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/verify_framed_member_canonical_dual_compensator_contract.py",
+      "sha256": "215f0bcc60379f0bf8517ea5471e99c4a7f2cf32b378d811f583c3604a4c10ee"
+    },
+    "point_compiler": {
+      "bytes": 10768,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/probe_framed_member_canonical_dual_compensator.py",
+      "sha256": "0971d34016e8383b06238422fc966850b1a7c05d93722d9ae43107e2d4760e92"
+    },
+    "theorem": {
+      "bytes": 3227,
+      "path": "theorems/PREPROJECTION_Q79_ETA9_FRAMED_MEMBER_CANONICAL_DUAL_COMPENSATOR_THEOREM_v1.md",
+      "sha256": "f3e53497f8241ec4fa5cffdb9520d9614bacca942850e8143291c7f210697e55"
+    }
+  },
+  "status": "CLOSED_SIX_MIDPOINT_CANONICAL_DUAL_FRAME_COMPENSATOR_EQUIVALENCE",
+  "theorem_id": "H4-T145",
+  "tier": "CHARACTERISTIC_ZERO_ARB_DERIVED_FROM_CERTIFIED_H4_T142_H4_T143_BALLS"
+}

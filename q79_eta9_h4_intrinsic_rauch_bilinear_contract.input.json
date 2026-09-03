@@ -1,0 +1,122 @@
+{
+  "canonical_payload_sha256": "c28ccecfc231e05c27351f977a4599a12ed8479e41f1a29032f90830cb89120e",
+  "certification": {
+    "maximum_candidate_component_radius": 9.969196549080026e-117,
+    "maximum_critical_residual_component_radius": 6.210749804788473e-101,
+    "maximum_interval_newton_attempts": 1,
+    "maximum_plane_residual_component_radius": 2.6231631055732373e-100,
+    "maximum_refined_x_component_radius": 4.3670462564802354e-126,
+    "maximum_refined_y_component_radius": 2.853175528050954e-126,
+    "minimum_abs_Gx_lower": 1.2482932633744865e-05,
+    "minimum_abs_Gyy_lower": 3.290234770819207e-05,
+    "refined_x_boxes_not_overlapping_legacy_certified_x_boxes": 0
+  },
+  "checks": {
+    "all_198_selected_ramification_points_have_certified_critical_boxes": true,
+    "no_pathwide_period_beta_C_U_eta9_or_HYM_claim_is_made": true,
+    "the_Arb_candidate_entry_radii_are_below_1e_100": true,
+    "the_binary_and_certified_same_source_comparisons_both_agree_below_1e_8": true,
+    "the_certified_82_by_82_residue_bilinear_is_symmetric_and_full_rank_at_its_center": true,
+    "the_old_fixed_B89_Serre_sample_is_not_a_source": true,
+    "the_same_selected_member_top_relation_replays_below_1e_12": true
+  },
+  "construction": {
+    "bilinear": "sum_p g_i(p)g_j(p)G_t(p)/(G_x(p)^2 G_yy(p))",
+    "candidate_matrix": {
+      "all_ball_entries_are_symmetric": true,
+      "binary64_condition_number": 5857328204.936911,
+      "binary64_rank": 82,
+      "center": {
+        "bytes": 107712,
+        "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.candidate_center.npy",
+        "sha256": "929bf03ee85906c23658166280856a8d99a7d230dc943f03b4921b4a8a3cd58d"
+      },
+      "center_low": {
+        "bytes": 107712,
+        "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.candidate_lo.npy",
+        "sha256": "15b7f72865aa25a8a73d8f0b6a8a06e8dcdc8ecce543fdbc8f0d5ed49755c019"
+      },
+      "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+      "maximum_Arb_component_radius_before_binary_export": 9.969196549080026e-117,
+      "maximum_component_radius": 9.258879499109824e-15,
+      "maximum_double_double_tail_component_radius": 6.839237306840058e-31,
+      "radius": {
+        "bytes": 53920,
+        "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.candidate_radius.npy",
+        "sha256": "b462db1642c2067d960dbbfd281af4ab3be8ed1219f95be91cba167830a1a019"
+      },
+      "shape": [
+        82,
+        82
+      ],
+      "tail_radius": {
+        "bytes": 53920,
+        "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.candidate_tail.npy",
+        "sha256": "41d49d7b7e172ab3ae3b79b9ecfd275dc5466632951f4d46556adeded060f618"
+      }
+    },
+    "differential_frame": "P=D+wE maps to omega=(C*D-B*E)dx/G_y",
+    "excluded_plane_conductor_values": 54,
+    "fiber": "O=[1:0:-1]",
+    "ramification_points": 198,
+    "tangent": "A=[0:1:0]"
+  },
+  "frontier": {
+    "closed": [
+      "intrinsic Cech/Serre formula for the selected weight-one Higgs bilinear",
+      "certified selected-origin evaluation on all 198 normalization ramification points",
+      "same-selected-member projective replay against the Cayley top-line construction"
+    ],
+    "next_object": "Construct the degree-198 smooth-complete-intersection ramification quotient and its Grothendieck residue functional, then evaluate it on directed path panels.",
+    "still_open": [
+      "root-free normalized-ramification critical algebra",
+      "directed adaptive panel evaluation and derivative of the intrinsic bilinear",
+      "rank-164 integral transport and final Deligne period",
+      "beta_C and U_eta9"
+    ]
+  },
+  "guardrails": {
+    "GF11_or_F101_completion_is_not_used_as_characteristic_zero_connection_data": true,
+    "Gate1_is_frozen": true,
+    "an_origin_evaluation_is_not_called_pathwide_coverage": true,
+    "the_projective_comparison_scale_is_not_a_fitted_parameter": true
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "same_source_projective_replay": {
+    "binary_relative_frobenius": 6.85160591274626e-11,
+    "certified_relative_frobenius": 6.643133534969787e-11,
+    "certified_relative_infinity": 3.809164324105883e-11,
+    "projective_scale_is_diagnostic_not_a_parameter": true,
+    "top_relation_relative_residual": 3.3524625175704445e-16
+  },
+  "schema": "mtt.preprojection.q79-eta9-framed-member-intrinsic-rauch-bilinear-contract.v1",
+  "source_bindings": {
+    "binary_same_source_replay": {
+      "bytes": 3645,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_intrinsic_rauch_bilinear_scout.packet.json",
+      "sha256": "586e42b68292cb308779e68938a305acab2eefeb3fddb157f4f71c19b1247830"
+    },
+    "certified_critical_point_evaluation": {
+      "bytes": 8364,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.json",
+      "sha256": "58468451e7aac2f2da471bc22d107498be5be2bc5e78714ad2e10063030af136"
+    },
+    "independent_verifier": {
+      "bytes": 6420,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/verify_framed_member_intrinsic_rauch_bilinear_contract.py",
+      "sha256": "f7d721bd6a2fcaefe708c85c6f02bb7870a7f3da7f4871c134d038989e024c1e"
+    },
+    "theorem": {
+      "bytes": 6157,
+      "path": "theorems/PREPROJECTION_Q79_ETA9_FRAMED_MEMBER_INTRINSIC_RAUCH_BILINEAR_THEOREM_v1.md",
+      "sha256": "01d7873d19acf6232130b092ce1d28819aae6f4a88bd330b0ac89f808fbbb484"
+    }
+  },
+  "status": "CLOSED_SELECTED_ORIGIN_INTRINSIC_RAUCH_SERRE_BILINEAR",
+  "theorem_id": "H4-T146",
+  "tier": "CHARACTERISTIC_ZERO_CECH_SERRE_THEOREM_WITH_768_BIT_ARB_SELECTED_MEMBER_EVALUATION"
+}

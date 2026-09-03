@@ -1,0 +1,40 @@
+{
+  "adjunction_hypotheses": {
+    "canonical_bundle_is_trivial": true,
+    "divisors_are_smooth_at_the_selected_midpoints": true,
+    "h0_structure_sheaf": 1,
+    "h1_structure_sheaf": 0,
+    "surface": "the selected degree-two K3 surface S"
+  },
+  "claim_boundary": {
+    "coefficient_response_is_not_retyped_as_the_Abel_Jacobi_derivative": true,
+    "midpoint_nondegeneracy_is_not_retyped_as_a_quantitative_response_panel": true,
+    "no_BHT_period_Deligne_beta_C_U_eta9_HYM_SM_or_QG_value_is_claimed": true
+  },
+  "composition": {
+    "adjunction_map": "A_e: H0(S,O_S(C_e))/<F_e> -> H0(C_e,K_Ce)",
+    "canonical_dual_map": "B_e^flat: H0(C_e,K_Ce) -> H0(C_e,K_Ce)^*",
+    "response_map": "D=(direct_sum_e B_e^flat A_e) R",
+    "rank_rule": "postcomposition by an isomorphism preserves image rank and kernel"
+  },
+  "physical_rows": {
+    "midpoint_parameter": "1/2",
+    "operator_panel_halfwidth": "1/4294967296",
+    "segments": [
+      "edge-0",
+      "edge-1",
+      "edge-2"
+    ]
+  },
+  "schema": "mtt.cbf.q79-eta9-physical-canonical-dual-response-observability-source.v1",
+  "source_repositories": {
+    "CBF_predecessor_commit": "e79cdcbd9c74dbbf3994a424e2d8a5b93fa4ae8c",
+    "H4_dependency_commit": "db711e73328a2e80b3d9054fdd756aefd53febbc"
+  },
+  "surface_geometry": {
+    "H_square": 2,
+    "divisor_class": "C_e=9H",
+    "eta": 9,
+    "line_bundle": "O_S(9H)"
+  }
+}

@@ -2329,3 +2329,17 @@ panel lies inside H4-T155's complete 252-branch panel. Complete branch carriers
 for `edge-0` and `edge-1`, overlapping six-segment transport, the rank-164
 relative evolution, 248-row handle accumulation and integral `beta_C` decision
 remain open.
+
+`Q79Eta9PhysicalCanonicalDualResponseObservabilityTheorem_v1.md` (`CBF.T73`)
+uses K3 adjunction to identify each T72 quotient
+`H0(S,O_S(9H))/<F_e>` with `H0(C_e,K_Ce)`. H4-T145's three nondegenerate
+canonical-dual forms then define an invertible rank-246 post-map. Consequently
+the composed local Hodge/Serre response has the same exact image rank 122 as
+T72 and projective kernel zero. H4-T159 plus H4-T155 supply complete local
+252-branch carriers for all three rows.
+
+This is the first exact promotion from the physical coefficient frame to
+canonical differential/covector coordinates. It remains a midpoint theorem,
+not a declaration that coefficient evaluation equals the global Abel-Jacobi
+or BHT derivative. Positive-width canonical-bilinear nondegeneracy,
+six-segment transport, the 248-row accumulation and `beta_C` remain open.

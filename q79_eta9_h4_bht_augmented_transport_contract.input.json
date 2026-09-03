@@ -1,0 +1,350 @@
+{
+  "augmented_transport": {
+    "basis_intertwiner": "T_e maps the dynamic H4-T133 fiber quotient into the fixed GM H10 frame; R_GM=T_e R_dynamic and s_GM=T_e^(-T) s_dynamic",
+    "block_equation": "[p;z]'=[[C^T,0],[ell R^T H,0]][p;z]+[s_D;0]",
+    "elliptic_factor": "ell(t)=omega_E(q(t))*q'(t) in the chosen local coordinate",
+    "frame_convention": "nabla_t alpha_j=sum_i C_ij alpha_i; p_i=integral_lambda alpha_i",
+    "holomorphic_selector": "H:C^164->C^82 selects the H10 block",
+    "initial_data": "H4-T128 invariant integral relative lift, with H4-T131 fixed-fiber periods only as an initial readout",
+    "relative_period_equation": "p'=C^T p+s_D, p in C^164",
+    "restriction_operator": "R(t) is emitted by H4-T133 and charted by H4-T133A",
+    "surface_accumulator_equation": "z'=ell(t) R(t)^T H p, z in C^248"
+  },
+  "canonical_payload_sha256": "7619b877f749562e86deea6f0e296bbaaedafb41d34a579258a33971519272ff",
+  "cayley_gauge": {
+    "geometric_status": "constant auxiliary Cayley-coordinate gauge; no change to the framed zero locus",
+    "new_fit_parameters": 0,
+    "rule": "divide F and dF by the same global maximum coefficient magnitude",
+    "section_normalization": 2.0695992213918926e-12
+  },
+  "checks": {
+    "all_12_957_and_6786_original_relation_rows_are_used": true,
+    "all_six_dynamic_fiber_quotient_to_GM_basis_maps_have_rank82": true,
+    "all_six_midpoint_probes_replay_82_82_and_0_quotient_dimensions": true,
+    "all_six_physical_path_segments_are_sampled_on_the_exact_framed_member": true,
+    "both_Hodge_blocks_are_sampled_on_every_physical_segment": true,
+    "chart_homotopies_hold_the_base_point_fixed_and_do_not_enter_the_B_integral": true,
+    "connector_out_and_connector_in_actions_are_bit_exact_negatives": true,
+    "connector_out_and_connector_in_fiber_basis_maps_are_bit_exact_equal": true,
+    "every_fiber_to_GM_basis_reduction_residual_is_below_1e_8": true,
+    "every_sampled_recursive_residual_is_below_1e_8": true,
+    "no_path_integral_period_beta_C_or_U_eta9_decision_is_claimed": true,
+    "one_global_constant_Cayley_section_normalization_is_used": true,
+    "the_algebraic_transport_state_is_rank164_and_the_holomorphic_readout_is_rank82": true
+  },
+  "frontier": {
+    "closed": [
+      "constant Cayley balancing gauge for the exact framed member",
+      "all-original-row rank-164 backend execution at every physical segment midpoint",
+      "exact outward/return stem reversal",
+      "explicit rank-82 dynamic-fiber-to-fixed-GM basis intertwiners at all six physical midpoints",
+      "correct rank-164 transport versus rank-82 readout distinction",
+      "exact forward and scalar-adjoint BHT execution equations"
+    ],
+    "next_object": "Execute a low-order matrix-free convergence scout for p'=C^T p+s_D on the six physical segments, using edge 2 as the finest mesh, and accumulate one independently typed BHT detector before interval promotion.",
+    "still_open": [
+      "panelwise complete rank-164 action or matrix-free action along the six physical segments",
+      "same-gauge inhomogeneous relative source s_D for the selected framed divisor",
+      "directed residual-to-ODE and quadrature enclosure",
+      "248-row period quotient or a selected characteristic-zero detecting functional",
+      "beta_C and U_eta9 decision"
+    ]
+  },
+  "guardrails": {
+    "Gate1_is_not_recomputed": true,
+    "binary64_residuals_are_not_called_directed_bounds": true,
+    "finite_field_normal_rows_are_not_promoted_to_char0": true,
+    "four_sampled_columns_are_not_called_the_complete_connection": true,
+    "the_82_row_integrand_is_not_called_a_closed_82_state_connection": true
+  },
+  "midpoint_backend_audit": {
+    "maximum_fiber_to_GM_basis_condition_estimate": 25867.734879152078,
+    "maximum_fiber_to_GM_basis_reduction_relative_residual": 6.315598112628559e-15,
+    "maximum_recursive_reduction_relative_residual": 2.746579546330144e-10,
+    "physical_segments": [
+      "connector-out",
+      "edge-0",
+      "edge-1",
+      "edge-2",
+      "edge-3",
+      "connector-in"
+    ],
+    "rows": [
+      {
+        "fiber_relation_pivot_zero_based": 5,
+        "fiber_to_GM_basis_matrix": {
+          "bytes": 107712,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_connector_out_midpoint.packet.fiber_to_gm.npy",
+          "sha256": "67a1dcad26dac08a5d826c0bc7aebfca00e8e59d020c9a0440840b4a21b48c45"
+        },
+        "fiber_to_GM_condition_estimate": 7474.346645789474,
+        "fiber_to_GM_maximum_original_equation_reduction_relative_residual": 1.44349424796038e-15,
+        "matrix": {
+          "bytes": 10624,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_connector_out_midpoint.packet.npy",
+          "sha256": "d8f25f6c18979f474099478af0527f3e5470a66a2471bee88d71c9d8764aab4e"
+        },
+        "maximum_absolute_sampled_entry": 4889.113348904848,
+        "maximum_recursive_reduction_relative_residual": 6.04251325217785e-13,
+        "packet": {
+          "bytes": 12082,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_connector_out_midpoint.packet.json",
+          "sha256": "bfb8108905dc3b1852c3541b4690667ab0011788abad03ecaf4e5353f2509403"
+        },
+        "q": [
+          -0.02438940925864323,
+          -0.03649418240477871
+        ],
+        "q_tangent": [
+          -0.09755763703457292,
+          -0.14597672961911484
+        ],
+        "segment": "connector-out",
+        "segment_parameter": 0.5
+      },
+      {
+        "fiber_relation_pivot_zero_based": 5,
+        "fiber_to_GM_basis_matrix": {
+          "bytes": 107712,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge0_midpoint.packet.fiber_to_gm.npy",
+          "sha256": "1a5fccc6595dc44e55992773abb320e73260fcee350c9e2eedd2335538378729"
+        },
+        "fiber_to_GM_condition_estimate": 25867.734879152078,
+        "fiber_to_GM_maximum_original_equation_reduction_relative_residual": 6.315598112628559e-15,
+        "matrix": {
+          "bytes": 10624,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge0_midpoint.packet.npy",
+          "sha256": "13e278aa4e3543f17bebe036bcb141e244d1043f6cc245fb397da7fb6f6dc703"
+        },
+        "maximum_absolute_sampled_entry": 21563.901783438738,
+        "maximum_recursive_reduction_relative_residual": 4.3896446269748344e-12,
+        "packet": {
+          "bytes": 12049,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge0_midpoint.packet.json",
+          "sha256": "0a07f58f5c3393b5f39741e696906423991af0e2b5f8bae5bc767adc5a36f446"
+        },
+        "q": [
+          -0.03307085524933749,
+          -0.14597672961911484
+        ],
+        "q_tangent": [
+          0.12897356357047085,
+          0.0
+        ],
+        "segment": "edge-0",
+        "segment_parameter": 0.5
+      },
+      {
+        "fiber_relation_pivot_zero_based": 5,
+        "fiber_to_GM_basis_matrix": {
+          "bytes": 107712,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge1_midpoint.packet.fiber_to_gm.npy",
+          "sha256": "227931c176b1db02265fc0f72cca33323b7c75b3f1a19f432d1ae1f4a3c972e5"
+        },
+        "fiber_to_GM_condition_estimate": 24075.90949946607,
+        "fiber_to_GM_maximum_original_equation_reduction_relative_residual": 3.6905523389740094e-15,
+        "matrix": {
+          "bytes": 10624,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge1_midpoint.packet.npy",
+          "sha256": "343e04ea3205159d7cfd6b84c1b7aeee1751057913767ba5118895963f83fe50"
+        },
+        "maximum_absolute_sampled_entry": 14098.529156998653,
+        "maximum_recursive_reduction_relative_residual": 4.385687425738485e-12,
+        "packet": {
+          "bytes": 12042,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge1_midpoint.packet.json",
+          "sha256": "40bfd12f99e78b3091660c76913f04ceb8c0c9375b7b1602001b99e824f189e7"
+        },
+        "q": [
+          0.031415926535897934,
+          -0.05728040154160846
+        ],
+        "q_tangent": [
+          0.0,
+          0.17739265615501276
+        ],
+        "segment": "edge-1",
+        "segment_parameter": 0.5
+      },
+      {
+        "fiber_relation_pivot_zero_based": 11,
+        "fiber_to_GM_basis_matrix": {
+          "bytes": 107712,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge2_midpoint.packet.fiber_to_gm.npy",
+          "sha256": "cc869dc1b8318637aa66d97c4b915c8d3a1ea64c4f378ca1faf795a73fa4edd4"
+        },
+        "fiber_to_GM_condition_estimate": 13865.849144279564,
+        "fiber_to_GM_maximum_original_equation_reduction_relative_residual": 2.234280737922546e-15,
+        "matrix": {
+          "bytes": 10624,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge2_midpoint.packet.npy",
+          "sha256": "e2591ac0082473085fe53575df2df0907865790135b88b6a449153a779a79207"
+        },
+        "maximum_absolute_sampled_entry": 38528.33074972589,
+        "maximum_recursive_reduction_relative_residual": 2.746579546330144e-10,
+        "packet": {
+          "bytes": 12045,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge2_midpoint.packet.json",
+          "sha256": "4ae94707ae12816ff74ab3e6832b6c7e0ae9ec13d4e3977982fd3dfad65c896f"
+        },
+        "q": [
+          -0.03307085524933749,
+          0.031415926535897934
+        ],
+        "q_tangent": [
+          -0.12897356357047085,
+          0.0
+        ],
+        "segment": "edge-2",
+        "segment_parameter": 0.5
+      },
+      {
+        "fiber_relation_pivot_zero_based": 5,
+        "fiber_to_GM_basis_matrix": {
+          "bytes": 107712,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge3_midpoint.packet.fiber_to_gm.npy",
+          "sha256": "57fa51c9bba9093da2eceaf5e1b5179aebef5a6d2d9659a2f507b6d6783e600a"
+        },
+        "fiber_to_GM_condition_estimate": 5992.953454061169,
+        "fiber_to_GM_maximum_original_equation_reduction_relative_residual": 9.155133597044475e-16,
+        "matrix": {
+          "bytes": 10624,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge3_midpoint.packet.npy",
+          "sha256": "18394eae7c23007e592c174cfd47805e73e0beba5b9a5f70370def19844df148"
+        },
+        "maximum_absolute_sampled_entry": 2025.5552713211307,
+        "maximum_recursive_reduction_relative_residual": 5.492915769751887e-13,
+        "packet": {
+          "bytes": 12048,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_edge3_midpoint.packet.json",
+          "sha256": "10a0a18f5fb3762ec5a1b4905a3d91c6732cf9b1d40647d2587365d6e0d6f464"
+        },
+        "q": [
+          -0.09755763703457292,
+          -0.05728040154160845
+        ],
+        "q_tangent": [
+          0.0,
+          -0.17739265615501276
+        ],
+        "segment": "edge-3",
+        "segment_parameter": 0.5
+      },
+      {
+        "fiber_relation_pivot_zero_based": 5,
+        "fiber_to_GM_basis_matrix": {
+          "bytes": 107712,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_connector_in_midpoint.packet.fiber_to_gm.npy",
+          "sha256": "67a1dcad26dac08a5d826c0bc7aebfca00e8e59d020c9a0440840b4a21b48c45"
+        },
+        "fiber_to_GM_condition_estimate": 7474.346645789474,
+        "fiber_to_GM_maximum_original_equation_reduction_relative_residual": 1.44349424796038e-15,
+        "matrix": {
+          "bytes": 10624,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_connector_in_midpoint.packet.npy",
+          "sha256": "f2e1afd5c9b2765336e9f009cb696fa6d527cd7bf913ea795a8b7cba0435560e"
+        },
+        "maximum_absolute_sampled_entry": 4889.113348904848,
+        "maximum_recursive_reduction_relative_residual": 6.04251325217785e-13,
+        "packet": {
+          "bytes": 12079,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_gm_connector_in_midpoint.packet.json",
+          "sha256": "7219bcc4b7a56cad283ea106f66e5fcb6c52bb1d002d9c0d6ac76f2a69dd3cf3"
+        },
+        "q": [
+          -0.02438940925864323,
+          -0.03649418240477871
+        ],
+        "q_tangent": [
+          0.09755763703457292,
+          0.14597672961911484
+        ],
+        "segment": "connector-in",
+        "segment_parameter": 0.5
+      }
+    ],
+    "sampled_connection_columns_zero_based": [
+      0,
+      1,
+      82,
+      83
+    ],
+    "stem_fiber_basis_equality_maximum_absolute_residual": 0.0,
+    "stem_reversal_maximum_absolute_residual": 0.0,
+    "worst_segment": "edge-2"
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "path_typing": {
+    "coordinate_only_labels": [
+      "chart-in",
+      "chart-out",
+      "chart-switch-0",
+      "origin"
+    ],
+    "coordinate_only_rule": "q'=0, so both the geometric Gauss-Manin action and BHT base integral vanish; apply only the recorded frame transition",
+    "physical_base_segments": [
+      "connector-out",
+      "edge-0",
+      "edge-1",
+      "edge-2",
+      "edge-3",
+      "connector-in"
+    ]
+  },
+  "scalar_goal_adjoint": {
+    "backward_equation": "-lambda_p'=C lambda_p+ell H^T R d; lambda_z=d is constant",
+    "complex_numerical_implementation": "use the corresponding Hermitian-adjoint representation with explicit conjugation convention",
+    "production_state_rank_per_detector": 164,
+    "purpose": "decide one detecting functional d^T z(T) without storing 248 accumulators",
+    "readout": "d^T z(T)=lambda_p(0)^T p(0)+integral lambda_p^T s_D",
+    "terminal_condition": "lambda_z(T)=d, lambda_p(T)=0"
+  },
+  "schema": "mtt.preprojection.q79-eta9-framed-member-bht-augmented-transport-contract.v1",
+  "source_bindings": {
+    "H4_T133A_pivot_atlas": {
+      "bytes": 10467,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_selected_b_handle_restriction_atlas_scout.packet.json",
+      "sha256": "f468100e79c652001e922c30b74115e9cf43cf0ab790171590b11b16db885e6b"
+    },
+    "H4_T133_bridge": {
+      "bytes": 58056,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_bht_fiber_evaluation_and_handle_sweep.packet.json",
+      "sha256": "f8aedd6d277497ad0e5692a158c1571c6306d446f2721791bcf71f17c1deb18e"
+    },
+    "independent_verifier": {
+      "bytes": 7997,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/verify_framed_member_bht_augmented_transport_contract.py",
+      "sha256": "e0d2795523da4bb7ddbfa96fba53ff32102be0dc75425db759f15b51d1605a97"
+    },
+    "probe_builder": {
+      "bytes": 17178,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/probe_framed_member_charzero_gm_backend.py",
+      "sha256": "5a8cc1a86ed6796f88662990fa2434c2d4c054d905a41d237b18f536b8b9b89e"
+    },
+    "selected_direct_B_loop": {
+      "bytes": 6932191,
+      "path": "experiments/q79_eta9_graph_normal_duality/outputs/framed-member-selected-direct-288-loop/q79_eta9_framed_member_selected_direct_288_loop_pilot.packet.json",
+      "sha256": "d46dd090821c5c6e988b3d5618364eea46179c25883b970a10e8175ad1425956"
+    },
+    "theorem": {
+      "bytes": 6480,
+      "path": "theorems/PREPROJECTION_Q79_ETA9_FRAMED_MEMBER_BHT_AUGMENTED_TRANSPORT_CONTRACT_THEOREM_v1.md",
+      "sha256": "c48beb4533abe331239b3a04e1b43c530cb5d2faf98c24a71018aad34baca917"
+    }
+  },
+  "state_correction": {
+    "algebraic_de_Rham_transport_rank": 164,
+    "full_forward_augmented_rank": 412,
+    "holomorphic_readout_rank": 82,
+    "normal_first_augmented_rank_after_char0_normal_operator": 290,
+    "reason": "the rank-82 holomorphic subbundle is not Gauss-Manin flat; its derivative uses the complementary rank-82 de Rham block",
+    "surface_accumulator_rank": 248
+  },
+  "status": "CLOSED_FRAMED_MEMBER_CAYLEY_BALANCING_AND_SIX_SEGMENT_MIDPOINT_BACKEND_AUDIT_PATH_EXECUTION_OPEN",
+  "theorem_id": "H4-T134",
+  "tier": "EXACT_TRANSPORT_FORMULA_AND_BINARY64_SAME_MEMBER_BACKEND_AUDIT"
+}

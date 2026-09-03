@@ -2900,3 +2900,31 @@ or BHT derivative. H4-T155 supplies a complete 252-branch panel around
 `edge-2`; equivalent carriers at `edge-0` and `edge-1`, the six-segment overlap
 atlas, rank-164 transport, 248-row accumulation and `beta_C` remain open. No
 observed value, fit parameter or selector was added.
+
+## CBF.T73 physical canonical-dual response observability
+
+`Q79Eta9PhysicalCanonicalDualResponseObservabilityTheorem_v1.md` closes the
+local response-space bridge left open by T72. For every selected midpoint
+curve `C_e` on the degree-two K3, the divisor exact sequence and
+`K_S=O_S`, `H1(S,O_S)=0` give the canonical adjunction isomorphism
+
+```text
+H0(S,O_S(9H))/<F_e>  ->  H0(C_e,K_Ce).
+```
+
+Here `(9H)^2=162`, so K3 Riemann-Roch and adjunction give `83 -> 82` exactly.
+The T72 relation pivots `5,5,11` agree with H4-T134's charts at the same
+`edge-0/1/2` midpoints. H4-T145 supplies a symmetric invertible `82 x 82`
+canonical-dual form on each target. Their rank-246 direct sum is an
+isomorphism, so postcomposition preserves T72's image rank 122 and its sole
+affine radial kernel. The induced projective canonical-dual response has
+kernel zero.
+
+H4-T159 now supplies complete 252-branch carriers on the matching `edge-0`
+and `edge-1` `2^-32` boxes, while H4-T155 supplies `edge-2`. The response-rank
+theorem itself is certified at the three midpoint balls. It is not yet a
+quantitative canonical-bilinear panel theorem and is not the global Picard,
+Abel-Jacobi, normal-function or BHT derivative. The next exact target is to
+evaluate H4-T147's finite-trace bilinear over those three panels and preserve
+its nondegeneracy before six-segment transport. No observed value, fit
+parameter or selector was added.

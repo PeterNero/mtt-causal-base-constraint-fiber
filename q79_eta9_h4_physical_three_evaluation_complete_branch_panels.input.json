@@ -1,0 +1,251 @@
+{
+  "canonical_payload_sha256": "5378d1e77c08224741d830bb42995ddacfe96daa338496e06ab2dc1665c72a51",
+  "checks": {
+    "all_31626_pairs_are_disjoint_on_each_complete_panel": true,
+    "both_panels_equal_the_T72_operator_neighborhoods": true,
+    "edge_0_and_edge_1_each_have_all_198_ramification_tubes": true,
+    "edge_0_and_edge_1_each_have_all_54_conductor_node_tubes": true,
+    "every_branch_is_bound_to_the_exact_selected_G3AJ_member": true,
+    "no_B89_topology_or_finite_field_transport_is_imported": true
+  },
+  "controlling_blocker": "B.ETA9.01",
+  "frontier": {
+    "closed": [
+      "complete 252-branch selected-source carriers around all three T72 evaluation rows",
+      "positive-width characteristic-zero persistence and pairwise disjointness at the same 2^-32 operator neighborhoods",
+      "portable source binding for every transitive interval engine used by these certificates"
+    ],
+    "next_object": "Differentiate the divisor-to-Picard/Abel-Jacobi map on this three-row certified carrier and compare its image with the T72 rank-122 frame.",
+    "still_open": [
+      "the Picard/Abel-Jacobi derivative that maps the certified moving divisors to the physical response rows",
+      "a global six-segment branch isotopy if a full-path transport theorem is pursued",
+      "the Deligne beta, C_U_eta9 and HYM endpoint"
+    ]
+  },
+  "guardrails": {
+    "claims_Deligne_beta_C_U_eta9_or_HYM": false,
+    "coefficient_evaluation_is_not_the_Picard_or_Abel_Jacobi_derivative": true,
+    "local_complete_branch_panels_are_not_a_global_path_isotopy": true
+  },
+  "imported_edge_2_predecessor": {
+    "scope": "complete 252-branch positive-width selected-source panel at edge-2@1/2",
+    "theorem_id": "H4-T155"
+  },
+  "newly_certified_segments": {
+    "edge-0": {
+      "certificate": {
+        "certified_pairwise_disjointness_relations": 31626,
+        "conductor_node_branches": 54,
+        "maximum_residual_coordinate_radius": 1.904309918827319e-11,
+        "minimum_node_Krawczyk_margin": 1.374504776155401e-14,
+        "minimum_ramification_Krawczyk_margin": 1.0425349309825368e-15,
+        "node_rows_sha256": "47ba8cdab81414ddfaa2a568aa19abd258784d1a79db219062777b4179ef6c2f",
+        "ramification_branches": 198,
+        "ramification_rows_sha256": "666d8af7ad7ba3fd9d7a631dd1283e408e8c7afa3ee0f516471b1520747a394a",
+        "separation": {
+          "certified_pairs": 31626,
+          "coarse_pairs": 31626,
+          "leaf_intervals": 31626,
+          "maximum_refinement_depth": 0,
+          "minimum_modulus_lower": 0.00043240672219869704,
+          "refined_pair_count": 0,
+          "refined_pairs": []
+        },
+        "total_branches": 252
+      },
+      "panel": {
+        "Taylor_order": 10,
+        "branch_range": [
+          0,
+          252
+        ],
+        "precision_bits": 768,
+        "predictor_degree": 8,
+        "q_center": "[-0.033070855249337489057327200818173088758156110997913604371005953371358677200504566109865504442962936604644474201694208706322867914544849005794583563427946804570323297470050768193552343439006090363536964070095982657023055496218243995 +/- 1.84e-232] + [-0.14597672961911481791658303357329605197232496346261351110487572247929793255308491314908956459883924753995062783023913513486413606307133068186910147674195867449328570949864953408166303576887514062723221692031280565215050935250106716 +/- 4.20e-231]j",
+        "q_halfwidth": "[3.0028997820445998311952517671030069515168576031767140413054916679131258867386102721163003098398496994965688822244774444398380052596495872415526377739958286166575801790258918611615868231856999878231800959624393104427675696789752914e-11 +/- 2.18e-241] + [+/- 1.85e-318]j",
+        "segment": "edge-0",
+        "segment_midpoint": "1/2",
+        "segment_parameter_halfwidth": "1/4294967296"
+      },
+      "source_bindings": {
+        "H4_T152_midpoint": {
+          "bytes": 285625,
+          "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_midpoint_jets/edge-0.packet.json",
+          "sha256": "2eac77ea0ce96dccaa97a770216ca71a8af59f398c27be9640bce1823d753afc"
+        },
+        "node_midpoint_scout": {
+          "bytes": 52312,
+          "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-0/node-roots.json",
+          "sha256": "bec3bfeb9f59f6ffa330a5dd87ae8942d8bcbc9a50582dae8827568c31296e1f"
+        },
+        "node_shards": {
+          "nodes-000-027": {
+            "bytes": 345751,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-0/nodes-000-027.json",
+            "sha256": "9f9f5d1b47b8e19c3451900d5a48b8f26e63ef81c5bf079325dae4b0ff0c2661"
+          },
+          "nodes-027-054": {
+            "bytes": 349174,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-0/nodes-027-054.json",
+            "sha256": "9f48d48cffe2f5423b199c3b25dd8601fcb8f2c815df4302722a1463e6e20543"
+          }
+        },
+        "ramification_shards": {
+          "ramification-000-050": {
+            "bytes": 917037,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-0/ramification-000-050.json",
+            "sha256": "ccf181aafede6409c4484b184cbd8b6cfd930e4efbadc7667f88e0405ede5f9f"
+          },
+          "ramification-050-100": {
+            "bytes": 927579,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-0/ramification-050-100.json",
+            "sha256": "6218d01af7c9dadf92e333b43bd12d065d60aa703986309b654d4c9e8ba404f8"
+          },
+          "ramification-100-150": {
+            "bytes": 916074,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-0/ramification-100-150.json",
+            "sha256": "e144302acd071af9d5ba97fe14007cacb6ba8c1178213a4c10a18f21f6d5e3ec"
+          },
+          "ramification-150-198": {
+            "bytes": 885814,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-0/ramification-150-198.json",
+            "sha256": "46de93867943e02b41cee44db914fb1270c0a3d22d690154e8d6e66b64539063"
+          }
+        }
+      }
+    },
+    "edge-1": {
+      "certificate": {
+        "certified_pairwise_disjointness_relations": 31626,
+        "conductor_node_branches": 54,
+        "maximum_residual_coordinate_radius": 5.900544241002075e-11,
+        "minimum_node_Krawczyk_margin": 2.948372769037115e-15,
+        "minimum_ramification_Krawczyk_margin": 5.384206721601259e-15,
+        "node_rows_sha256": "d611d36dad83ad49b2a6c8a654a43ca95b458a3a048c030e9bfb441595021038",
+        "ramification_branches": 198,
+        "ramification_rows_sha256": "bce73937a169768aeb74e84de52ef6e536cdb36b0ad8ac45a1c147debbc96498",
+        "separation": {
+          "certified_pairs": 31626,
+          "coarse_pairs": 31626,
+          "leaf_intervals": 31626,
+          "maximum_refinement_depth": 0,
+          "minimum_modulus_lower": 9.73821632620056e-05,
+          "refined_pair_count": 0,
+          "refined_pairs": []
+        },
+        "total_branches": 252
+      },
+      "panel": {
+        "Taylor_order": 10,
+        "branch_range": [
+          0,
+          252
+        ],
+        "precision_bits": 768,
+        "predictor_degree": 8,
+        "q_center": "[0.031415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482 +/- 3.45e-232] + [-0.057280401541608442765978299870250511565176634734431226447563138278109884245111411581404608172709038430064573482553156034196598808487912429775923941330336931659391434235815074435303719661322825538964198638012347947745587445608155337 +/- 2.68e-232]j",
+        "q_halfwidth": "[+/- 2.14e-319] + [4.1302446312041196576601235989036755825927634131248241596535120253073074066999136268945856218286887328087377523857159121272869992341575330166694491827684334867584647267514122485350498979702738620465629865555305827597585463380865668e-11 +/- 4.63e-241]j",
+        "segment": "edge-1",
+        "segment_midpoint": "1/2",
+        "segment_parameter_halfwidth": "1/4294967296"
+      },
+      "source_bindings": {
+        "H4_T152_midpoint": {
+          "bytes": 284077,
+          "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_midpoint_jets/edge-1.packet.json",
+          "sha256": "224c791718ae3f626907262a166f1a84d8344114bc3a50b278a62bd6d6df537a"
+        },
+        "node_midpoint_scout": {
+          "bytes": 52225,
+          "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-1/node-roots.json",
+          "sha256": "88e8f9d47685006b34aa0f8b22d78af3f819635c92b1faa335d096e824c253cc"
+        },
+        "node_shards": {
+          "nodes-000-027": {
+            "bytes": 346409,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-1/nodes-000-027.json",
+            "sha256": "9fa1e770a1868d81590876d5dd71e77d0cced7d5acf3a4d2d84b6e2c657a5a32"
+          },
+          "nodes-027-054": {
+            "bytes": 347238,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-1/nodes-027-054.json",
+            "sha256": "145d9c78718ae4471fc87a6d47cceef4cbc1b315ce43b526be55b867def7b0f5"
+          }
+        },
+        "ramification_shards": {
+          "ramification-000-050": {
+            "bytes": 929757,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-1/ramification-000-050.json",
+            "sha256": "0a31eb3eed1c891dfa42e6212ad3b729b818d59f3a010f94b947513d7f856d65"
+          },
+          "ramification-050-100": {
+            "bytes": 920107,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-1/ramification-050-100.json",
+            "sha256": "44f334e059d93bb7678890a3e88515572c8bb86d5c26789efda79583c9b5ac10"
+          },
+          "ramification-100-150": {
+            "bytes": 932049,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-1/ramification-100-150.json",
+            "sha256": "d8042401a21e10cc5de21b81e01533e25b7abf2c741ea1699e7b50e0a10b50e9"
+          },
+          "ramification-150-198": {
+            "bytes": 887543,
+            "path": "experiments/q79_eta9_ramification_coefficient_transport/outputs/physical_three_evaluation_panels/edge-1/ramification-150-198.json",
+            "sha256": "fbe2daa372b6f23a5516c2b6bd3c56fcf2e152b7be400df44ca6c97488eb245c"
+          }
+        }
+      }
+    }
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "physical_evaluation_rows": [
+    "edge-0@1/2",
+    "edge-1@1/2",
+    "edge-2@1/2"
+  ],
+  "schema": "mtt.preprojection.q79-eta9-physical-three-evaluation-complete-branch-panels.v1",
+  "source_bindings": {
+    "Taylor_Krawczyk_engine": {
+      "bytes": 43486,
+      "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_taylor_flint.py",
+      "sha256": "e3f7ed8b4aaf6f35dd6a26716cbd32388e38a64a1bc34a3f11592b1cf3db4f37"
+    },
+    "Taylor_series_lift_engine": {
+      "bytes": 49918,
+      "path": "experiments/q79_eta9_b89_moving_branch_polynomial/certify_moving_carrier_edge.py",
+      "sha256": "0cf455025317856bb12777e58ad2ff4087784061c57c167012eef94804c0ccca"
+    },
+    "aggregate_builder": {
+      "bytes": 16081,
+      "path": "experiments/q79_eta9_ramification_coefficient_transport/build_physical_three_evaluation_complete_branch_panels.py",
+      "sha256": "7c220e9a4e7090ff8e4dafcfa9e8a5e532f5da63c6309d8b9002ef8bae531f2a"
+    },
+    "interval_Krawczyk_engine": {
+      "bytes": 51922,
+      "path": "experiments/q79_eta9_b89_family_branch_braid_pilot/certify_rectangle_family_flint.py",
+      "sha256": "941a8f77c2ce6ba505980828eadfdc42df04ba3a395e327ff414a54c4a61b12b"
+    },
+    "node_compiler": {
+      "bytes": 13624,
+      "path": "experiments/q79_eta9_ramification_coefficient_transport/certify_physical_member_node_panel_scout.py",
+      "sha256": "08749ba1442cec93351cd906adaf7b5fd9b7f8118d1a7fe608241df7efccccbf"
+    },
+    "ramification_compiler": {
+      "bytes": 18600,
+      "path": "experiments/q79_eta9_ramification_coefficient_transport/certify_physical_member_ramification_panel_scout.py",
+      "sha256": "24b9e3b27eeb0687c479895c49aa249e9f6559a3102c3d269bd71892a1aeaeb9"
+    },
+    "reproducible_shard_runner": {
+      "bytes": 7823,
+      "path": "experiments/q79_eta9_ramification_coefficient_transport/run_physical_three_evaluation_panel_shards.py",
+      "sha256": "fe39314d2b3f342231130610d425e3058a05ea6d035a1c03c87bdc0ddb357396"
+    }
+  },
+  "status": "CLOSED_T72_PHYSICAL_EDGE0_EDGE1_SELECTED_SOURCE_252_BRANCH_PANELS",
+  "theorem_id": "H4-T159",
+  "tier": "CHARACTERISTIC_ZERO_ARB_PHYSICAL_THREE_EVALUATION_SOURCE_PANEL_THEOREM"
+}

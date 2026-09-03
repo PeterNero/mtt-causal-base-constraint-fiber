@@ -1,0 +1,140 @@
+{
+  "canonical_payload_sha256": "2c10b42920fa45117b5b9b1770150cad0ccb070870dff1f389782ed63886d46d",
+  "checks": {
+    "Gx_and_Gyy_are_units_on_every_selected_idempotent": true,
+    "no_pathwide_integral_Deligne_beta_C_U_eta9_or_HYM_claim_is_made": true,
+    "the_directed_derivative_is_fixed_by_implicit_critical_transport": true,
+    "the_exported_idempotent_trace_reconstructs_H4_T146_below_1e_14": true,
+    "the_finite_trace_bilinear_has_rank82": true,
+    "the_finite_trace_bilinear_is_symmetric_to_binary_replay_precision": true,
+    "the_saturated_selected_ramification_algebra_has_dimension198": true,
+    "the_trace_definition_is_invariant_under_idempotent_permutation": true
+  },
+  "finite_algebra": {
+    "bilinear_trace": "B_ij=Tr_A(m_(g_i*g_j*G_t/(G_x^2*G_yy)))",
+    "definition": "A_ram=C[x,y]/((G,G_y):(B,C)^infinity)",
+    "dimension": 198,
+    "directed_derivative": "B'_ij=Tr_A(m_(D_ram(g_i*g_j*G_t/(G_x^2*G_yy))))",
+    "directed_velocity": {
+      "v_x": "-G_t/G_x",
+      "v_y": "-(G_yt+G_yx*v_x)/G_yy"
+    },
+    "idempotent_replay": {
+      "diagonal_weight": {
+        "center": {
+          "bytes": 3296,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.ramification_weight_center.npy",
+          "sha256": "984ae53481704c6650c7e5dfe43e30d5167c647605911cc51da270bdf5ab820f"
+        },
+        "center_low": {
+          "bytes": 3296,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.ramification_weight_lo.npy",
+          "sha256": "062ffd089d4b84b972f2e861f32355ee5c45b42ebd81bb991e74e23d8bcd647c"
+        },
+        "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+        "maximum_component_radius": 9.073684653094936e-10,
+        "maximum_double_double_tail_component_radius": 3.706681589600108e-26,
+        "radius": {
+          "bytes": 1712,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.ramification_weight_radius.npy",
+          "sha256": "265158e4fefc4c7a059e45d4b1cf76f87af447a39900d53664c1dd5773e3a1f1"
+        },
+        "shape": [
+          198
+        ],
+        "tail_radius": {
+          "bytes": 1712,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.ramification_weight_tail.npy",
+          "sha256": "967e9ece6e948d223bb57bb80a37f06a905a9b1f73fe5fe465cda4cccc20b064"
+        }
+      },
+      "evaluation_frame": {
+        "center": {
+          "bytes": 259904,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.ramification_frame_center.npy",
+          "sha256": "8c3ef4c651ce56d801eb01124b7f8a0fc7f732903ed4bb724b9cdf9fb30ac8a6"
+        },
+        "center_low": {
+          "bytes": 259904,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.ramification_frame_lo.npy",
+          "sha256": "8cc7994ba7f46e372f3bfdca41984bc167831ff32eeddc9b66fbbc8c0e4d2b44"
+        },
+        "lossless_representation": "center+center_low with tail_radius in each real and imaginary component",
+        "maximum_component_radius": 79432.22819595409,
+        "maximum_double_double_tail_component_radius": 2.2244440115941193e-12,
+        "radius": {
+          "bytes": 130016,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.ramification_frame_radius.npy",
+          "sha256": "ce975fa1e1d8f9485791c00f1a53ff06eae66d6d068e1f29d4433364bf66f65f"
+        },
+        "shape": [
+          198,
+          82
+        ],
+        "tail_radius": {
+          "bytes": 130016,
+          "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.ramification_frame_tail.npy",
+          "sha256": "152d1e4148c4639e32499e47cc1cee277bcdb9edff1e9c7dd57780fb87a96834"
+        }
+      },
+      "rank": 82,
+      "relative_frobenius_drift": 3.455699265918027e-16
+    },
+    "reduced": true,
+    "unit_lower_bounds": {
+      "G_x": 1.2482932633744865e-05,
+      "G_yy": 3.290234770819207e-05
+    }
+  },
+  "frontier": {
+    "closed": [
+      "root-label-independent finite-algebra trace definition of the intrinsic bilinear",
+      "exact implicit critical-point velocity and finite-trace derivative rule",
+      "lossless selected-origin idempotent replay"
+    ],
+    "next_object": "Build a conditioned quotient frame for A_ram and certify the unit lower bounds over the first physical path panel.",
+    "still_open": [
+      "stable root-free quotient coordinates for computation",
+      "one common finite-etale tube over each physical adaptive panel",
+      "pathwide intrinsic compensator and rank-164 plus 248-accumulator integration",
+      "Deligne row, beta_C and U_eta9"
+    ]
+  },
+  "guardrails": {
+    "Gate1_is_frozen": true,
+    "finite_field_completion_is_not_characteristic_zero_connection_data": true,
+    "root_order_is_not_part_of_the_trace": true,
+    "the_exported_idempotents_are_a_verification_frame_not_the_definition": true
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "schema": "mtt.preprojection.q79-eta9-normalized-ramification-finite-trace-contract.v1",
+  "source_bindings": {
+    "H4_T146": {
+      "bytes": 6288,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_intrinsic_rauch_bilinear_contract.packet.json",
+      "sha256": "7a9d6b5606ec8dd0e79532c1d17b8d38d35ecb089af634628ee0498c0b55e5b3"
+    },
+    "certified_critical_frame": {
+      "bytes": 8364,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_certified_rauch_bilinear_scout.packet.json",
+      "sha256": "58468451e7aac2f2da471bc22d107498be5be2bc5e78714ad2e10063030af136"
+    },
+    "independent_verifier": {
+      "bytes": 5243,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/verify_framed_member_normalized_ramification_trace_contract.py",
+      "sha256": "d46882363ed2fd25f0ae75a629637647e460490bee0374f05d26e60b096c56b0"
+    },
+    "theorem": {
+      "bytes": 4292,
+      "path": "theorems/PREPROJECTION_Q79_ETA9_NORMALIZED_RAMIFICATION_FINITE_TRACE_THEOREM_v1.md",
+      "sha256": "289bc8f3c647d0ec59221132247ba83da6058c8277abe1e850f37482141fed91"
+    }
+  },
+  "status": "CLOSED_NORMALIZED_RAMIFICATION_FINITE_TRACE_AND_DIRECTED_DERIVATIVE_RULE",
+  "theorem_id": "H4-T147",
+  "tier": "CHARACTERISTIC_ZERO_FINITE_ETALE_ALGEBRA_THEOREM_WITH_LOSSLESS_ORIGIN_REPLAY"
+}
