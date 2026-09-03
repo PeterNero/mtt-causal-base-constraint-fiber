@@ -1,0 +1,154 @@
+{
+  "all_checks_pass": true,
+  "canonical_payload_sha256": "7cb7d1035d5118c87ce668cb2fb3bf512e903ec1903166b3cb481b0033641eff",
+  "checks": {
+    "all_four_probe_points_lie_on_the_Fermat_cubic_mod101": true,
+    "e3_is_selected_by_the_declared_lexicographic_rule": true,
+    "every_tested_pair_has_image_rank111_and_projective_kernel11": true,
+    "no_smooth_fiber_Picard_Deligne_or_BHT_claim_is_made": true,
+    "one_fiber_images_have_ranks70_70_68_70": true,
+    "the_canonical_rank123_graph_kernel_replays_G3AK": true,
+    "the_independent_triple_common_affine_kernel_is_exactly_the_radial_line": true,
+    "the_independent_triple_e0_e1_e3_has_image_rank122": true,
+    "the_independent_triple_projective_kernel_is_zero": true,
+    "the_linearly_dependent_triple_e0_e1_e2_stays_at_rank111": true
+  },
+  "evaluation_points": {
+    "e0": {
+      "coordinates_mod101": [
+        1,
+        0,
+        -1
+      ],
+      "relation_pivot_zero_based": 0,
+      "single_image_rank": 70,
+      "single_projective_kernel_rank": 52
+    },
+    "e1": {
+      "coordinates_mod101": [
+        0,
+        1,
+        -1
+      ],
+      "relation_pivot_zero_based": 0,
+      "single_image_rank": 70,
+      "single_projective_kernel_rank": 52
+    },
+    "e2": {
+      "coordinates_mod101": [
+        1,
+        -1,
+        0
+      ],
+      "relation_pivot_zero_based": 0,
+      "single_image_rank": 68,
+      "single_projective_kernel_rank": 54
+    },
+    "e3": {
+      "coordinates_mod101": [
+        1,
+        1,
+        75
+      ],
+      "relation_pivot_zero_based": 0,
+      "single_image_rank": 70,
+      "single_projective_kernel_rank": 52
+    }
+  },
+  "frontier_delta": {
+    "closed": "a minimal witnessed three-evaluation coefficient panel with zero projective blind sector",
+    "next_required_object": "Use three independent smooth characteristic-zero panels along the selected B-loop atlas, then transport their 82-row states with the rank-164 Gauss-Manin system; do not substitute these residue coefficient ranks for the BHT derivative.",
+    "not_closed": "smoothness of the e1/e3 fibers, Picard or normal-function observability, characteristic-zero promotion, and the physical B-handle integral"
+  },
+  "guardrails": {
+    "claims_HYM_SM_or_QG_endpoint_closure": false,
+    "claims_Picard_or_normal_function_derivative_rank122": false,
+    "claims_a_beta_zero_member_exists": false,
+    "claims_beta_C_is_computed": false,
+    "claims_characteristic_zero_rank_promotion": false,
+    "claims_e1_or_e3_is_a_certified_smooth_physical_fiber": false,
+    "claims_selected_complex_path_coverage": false
+  },
+  "inputs": {
+    "CBF_T70": {
+      "bytes": 9808,
+      "path": "q79_eta9_graph_tangent_single_fiber_rank.packet.json",
+      "sha256": "003d415c836f1cb679681fbf8ef0bf387d555a721d3edddc4629c5f89d031484"
+    },
+    "T70_builder_backend": {
+      "bytes": 17169,
+      "path": "build_q79_eta9_graph_tangent_single_fiber_rank.py",
+      "sha256": "eeb676d34e852350406c76882901952869d4501ca382c1557a16e0e4e4fd314d"
+    },
+    "UST_G3AD": {
+      "bytes": 133146,
+      "path": "ust_g3ad_fixed_fq_second_h_graph_obstruction.input.json",
+      "sha256": "46cfea7564e0e81abf5ab8171bfa74987349e33d277088b3de0a996fc71f067e"
+    },
+    "UST_G3AK_matrix": {
+      "bytes": 250992,
+      "path": "ust_g3ak_incidence_matrix.input.f101e6.u8",
+      "sha256": "72371ec2a7cd126cdf507436126eaf510c39cf12bac074ddeb7fa25c6ff56d2f"
+    },
+    "UST_G3AK_packet": {
+      "bytes": 25069,
+      "path": "ust_g3ak_full_graph_incidence_normal_decomposition.input.json",
+      "sha256": "376fb1bfb8fbe46391a409e5176392082463ad63f14f3d13e1a1e04f61374a23"
+    },
+    "source_snapshot": {
+      "bytes": 1235,
+      "path": "q79_eta9_graph_tangent_multifiber_observability.source.json",
+      "sha256": "4f9e352734d7d0cf4c620420b5065f0653607db1622099d9dc688eabf7e6ab77"
+    }
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0,
+    "probe_points_are_deterministic_algebraic_test_rows_not_physical_knobs": true
+  },
+  "rank_panel": {
+    "all_pair_image_ranks": {
+      "e0+e1": 111,
+      "e0+e2": 111,
+      "e0+e3": 111,
+      "e1+e2": 111,
+      "e1+e3": 111,
+      "e2+e3": 111
+    },
+    "all_pair_projective_kernel_rank": 11,
+    "dependent_triple": {
+      "elliptic_weight_span_rank": 2,
+      "image_rank": 111,
+      "points": [
+        "e0",
+        "e1",
+        "e2"
+      ],
+      "projective_kernel_rank": 11
+    },
+    "independent_triple": {
+      "affine_common_kernel": "the radial selected-member line <F>",
+      "affine_common_kernel_rank": 1,
+      "determinant_mod101": 77,
+      "elliptic_weight_span_rank": 3,
+      "image_rank": 122,
+      "points": [
+        "e0",
+        "e1",
+        "e3"
+      ],
+      "projective_kernel_rank": 0,
+      "projectively_injective": true
+    },
+    "projective_graph_tangent_rank": 122
+  },
+  "schema": "mtt.cbf.q79-eta9-graph-tangent-multifiber-observability.v1",
+  "status": "CLOSED_EXACT_SELECTED_RESIDUE_THREE_EVALUATION_PROJECTIVE_OBSERVABILITY_RANK122",
+  "theorem": {
+    "interpretation": "Three linearly independent elliptic evaluation rows are sufficient for coefficient-level observability on this selected carrier, while two are not.",
+    "statement": "For the selected residue graph-incidence family, the three coefficient-evaluation quotients at e0,e1,e3 jointly separate all 122 projective graph-preserving tangent directions. Every tested pair has image rank 111 and leaves kernel rank 11; the dependent triple e0,e1,e2 also remains rank111."
+  },
+  "theorem_id": "CBF.T71",
+  "tier": "exact_F101e6_coefficient_evaluation_theorem_not_a_physical_period_result"
+}

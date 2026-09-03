@@ -2854,3 +2854,23 @@ derivative of the Picard, Abel-Jacobi, Deligne or BHT maps. The completed
 pathwide BHT sweep for `C_fr` remains the next physical object; its later
 122-direction derivative must retain the explicit rank-52 fiber-blind sector.
 No observed value, fit parameter or selector was added.
+
+## CBF.T71 three-evaluation coefficient observability
+
+`Q79Eta9GraphTangentMultifiberObservabilityTheorem_v1.md` extends T70 from
+one evaluation quotient to a deterministic residue panel. The single-row
+image ranks at four Fermat-cubic points are `70,70,68,70`. Every tested pair
+has image rank 111 and leaves 11 projective graph-tangent directions unseen.
+
+The triple `(e0,e1,e2)` is linearly dependent in the elliptic three-coordinate
+carrier and remains rank 111. Replacing `e2` by the first deterministic
+independent probe `e3=(1,1,75)` gives image rank 122. Its affine common kernel
+is only the radial member line, so the projective kernel is zero.
+
+This closes coefficient observability on one selected residue panel and
+proves that one or two readouts are incomplete there. It does not certify the
+extra probes as smooth characteristic-zero physical fibers or promote the
+rank to a Picard/BHT derivative. The next object is a three-panel smooth
+characteristic-zero atlas on the selected B loop, followed by rank-164
+transport and the actual 248-row handle integral. No observed value, fit
+parameter or selector was added.

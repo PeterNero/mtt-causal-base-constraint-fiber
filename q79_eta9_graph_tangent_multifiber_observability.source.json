@@ -1,0 +1,28 @@
+{
+  "schema": "mtt.cbf.q79-eta9-graph-tangent-multifiber-observability-source.v1",
+  "sources": {
+    "CBF_T70": {
+      "local_path": "q79_eta9_graph_tangent_single_fiber_rank.packet.json",
+      "local_sha256": "003d415c836f1cb679681fbf8ef0bf387d555a721d3edddc4629c5f89d031484",
+      "theorem_id": "CBF.T70"
+    },
+    "UST_G3AD": {
+      "local_path": "ust_g3ad_fixed_fq_second_h_graph_obstruction.input.json",
+      "local_sha256": "46cfea7564e0e81abf5ab8171bfa74987349e33d277088b3de0a996fc71f067e"
+    },
+    "UST_G3AK": {
+      "repository_commit": "011986e954c3cab6b673243fbaf46219a8951cc0",
+      "local_packet_path": "ust_g3ak_full_graph_incidence_normal_decomposition.input.json",
+      "local_packet_sha256": "376fb1bfb8fbe46391a409e5176392082463ad63f14f3d13e1a1e04f61374a23",
+      "local_matrix_path": "ust_g3ak_incidence_matrix.input.f101e6.u8",
+      "local_matrix_sha256": "72371ec2a7cd126cdf507436126eaf510c39cf12bac074ddeb7fa25c6ff56d2f"
+    }
+  },
+  "evaluation_points_mod101": {
+    "e0": [1, 0, -1],
+    "e1": [0, 1, -1],
+    "e2": [1, -1, 0],
+    "e3": [1, 1, 75]
+  },
+  "e3_selection_rule": "lexicographically first (1,a,b) with 1<=a,b<=100, 1+a^3+b^3=0 mod101, and determinant(e0,e1,(1,a,b)) nonzero mod101"
+}

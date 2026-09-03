@@ -2302,3 +2302,15 @@ the additional 89 directions supply 59 new image dimensions modulo it.
 This is not a normal-function derivative. It proves the size of the
 coefficient-level one-fiber control and the exact blind sector that any later
 Picard/BHT derivative calculation must handle.
+
+`Q79Eta9GraphTangentMultifiberObservabilityTheorem_v1.md` (`CBF.T71`) then
+constructs the first finite residue panel that removes this coefficient blind
+sector. Every tested pair of Fermat-cubic evaluation rows has image rank 111
+and leaves projective kernel rank 11. A dependent third row adds nothing; the
+deterministically selected independent triple `(e0,e1,e3)` has image rank 122
+and projective kernel zero.
+
+This is exact coefficient observability, not physical BHT observability. The
+extra residue probes are not yet certified smooth panels on the selected
+characteristic-zero loop, and no Picard, normal-function or period rank is
+inferred from them.
