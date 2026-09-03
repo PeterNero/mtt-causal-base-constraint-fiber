@@ -1,41 +1,62 @@
 {
   "all_checks_pass": true,
-  "candidate": {
-    "all_complex_embeddings_nonzero": true,
-    "class": "P=nu_alg(e_0)=restricted primitive BHT/Deligne class beta_C",
-    "family": "G3AJ rank-123 fixed-residue graph-Prym ball",
-    "name": "C_fr",
-    "selection_rule": "all 123 free correction digits are zero in the frozen coefficient basis and RREF order",
-    "selection_tier": "deterministic_reproducible_basis_framing_not_coordinate_free_physical_selection"
+  "canonical_payload_sha256": "b026c6aae6b9d06a63b8e3d6e59f7bb7c22646ebc668d13c3567a9044ae5a4ef",
+  "carrier_ledger": {
+    "evaluation_quotient": {
+      "consequence": "one fixed fiber omits 166 primitive surface directions and cannot replace the handle sweep",
+      "kernel_rank": 166,
+      "map": "(V tensor W)/<F> -> V/<F_e>",
+      "rank": 82
+    },
+    "fixed_fiber_picard_point": {
+      "holomorphic_row_rank": 82,
+      "role": "initial condition for moving relative-chain transport",
+      "symbol": "P_e0=nu_alg(e_0)"
+    },
+    "global_BHT_class": {
+      "decision": "OPEN",
+      "definition": "integral around the selected B handle of the transported normal-function integrand modulo the integral period lattice",
+      "primitive_surface_row_rank": 248,
+      "symbol": "beta_C"
+    }
   },
-  "canonical_payload_sha256": "54d0cb4fbb023434dacb453be601ca9a8a8b93cbfff0c6cb171fdc54a529ef19",
   "checks": {
-    "H4_T132_binds_the_directed_class_to_one_exact_algebraic_G3AJ_member": true,
-    "H4_T132_identifies_that_Picard_point_with_the_restricted_primitive_BHT_Deligne_class": true,
-    "T68_requires_r_times_beta_C_to_vanish_for_a_rank_r_twisted_spectral_object": true,
-    "double_traversal_and_spectral_rank_two_inverse_rank_six_are_excluded": true,
-    "hypothetical_spectral_rank_three_inverse_rank_nine_is_excluded": true,
+    "H4_T132_fixed_fiber_point_is_nonzero_through_order1449": true,
+    "H4_T133_distinguishes_the82_row_fiber_carrier_from_the248_row_surface_carrier": true,
+    "H4_T133_proves_the_fiber_evaluation_kernel_has_rank166": true,
+    "H4_T133_withdraws_fixed_fiber_nonidentity_implies_beta_C_nonzero": true,
+    "T68_rank_divisibility_lemma_remains_valid": true,
+    "T68_requires_the_global_normalized_beta_C_not_the_fixed_fiber_initial_point": true,
+    "double_traversal_of_the_fixed_fiber_point_does_not_decide_double_BHT_sweep": true,
     "no_observed_value_or_fit_parameter_is_used": true,
-    "orders_one_through_1449_are_certified_nonzero_on_every_complex_embedding": true,
-    "the_first_unresolved_order_1450_would_have_inverse_transform_rank_4350": true,
-    "the_intended_spectral_rank_one_inverse_rank_three_endpoint_is_excluded": true,
-    "the_result_does_not_promote_the_basis_framing_to_physical_MTT_selection": true,
-    "the_result_does_not_reject_the_rank123_graph_ball": true,
-    "therefore_spectral_ranks_one_through_1449_are_excluded_for_this_member": true
+    "no_spectral_rank_is_excluded_by_T132_plus_T68_without_the_missing_BHT_sweep": true,
+    "the_intended_rank_one_inverse_rank_three_endpoint_returns_to_open": true
+  },
+  "correction": {
+    "invalid_inference_removed": "n*P_e0!=0 does not imply n*beta_C!=0",
+    "reason": "H4-T133 proves that H4-T132 computed an 82-coordinate fixed-fiber Picard initial point, not the 248-coordinate normalized BHT handle integral beta_C required by T68",
+    "retained_H4_T132_result": "n*P_e0 is nonzero for every integer 1<=n<=1449 at every complex embedding of the exact framed member",
+    "retained_T68_result": "a rank-r alpha-twisted locally free spectral object requires r[alpha]=0",
+    "supersedes": "the T69 claim at commit 274730e that spectral ranks 1 through 1449 are excluded on C_fr"
   },
   "frontier_delta": {
-    "after": "the H4-T132 obstruction is now folded through the established rank cutset: C_fr admits no twisted spectral object of ranks 1 through 1449 and therefore cannot realize the intended inverse-rank-three endpoint or any degree-three inverse transform of ranks 3,6,...,4347",
-    "before": "T68 excluded B89 and G3BI at the intended ranks and requested explicit same-residue G3AJ candidates; H4-T132 separately rejected one exact framed G3AJ member through traversal order 1449",
-    "next_required_object": "construct the graph-family beta_C value map and derivative on the 122 projective tangent directions, then either certify a beta-zero member or prove the beta-zero locus empty; do not rerun C_fr, its embeddings, or low-rank traversals"
+    "closed_here": "the false fixed-fiber-to-global-beta promotion is removed and machine-checked",
+    "execution_order": [
+      "propagate the rank-164 relative de Rham state around the selected B loop",
+      "integrate all 248 quotient rows or a characteristic-zero 126-row normal projection",
+      "reduce the result modulo the integral period lattice",
+      "only then apply the T68 spectral-rank divisibility test"
+    ],
+    "next_required_object": "Continue lambda_inv around the selected B loop with the characteristic-zero relative Gauss-Manin connection and integrate the 248 quotient rows (or 126 characteristic-zero normal rows) using R(e)."
   },
   "guardrails": {
     "claims_C_fr_is_physically_selected": false,
-    "claims_H4_T132_nonvanishing_is_new_here": false,
     "claims_HYM_SM_or_QG_endpoint_closure": false,
-    "claims_a_replacement_beta_zero_member_exists": false,
-    "claims_rank1450_is_a_torsion_candidate": false,
-    "claims_the_T68_rank_theorem_is_new_here": false,
-    "claims_the_entire_G3AJ_ball_is_rejected": false
+    "claims_any_spectral_rank_is_excluded_for_C_fr": false,
+    "claims_beta_C_is_computed": false,
+    "claims_double_fixed_fiber_traversal_equals_double_BHT_sweep": false,
+    "claims_fixed_fiber_P_equals_global_beta_C": false,
+    "claims_the_entire_G3AJ_ball_is_decided": false
   },
   "inputs": {
     "H4_T132": {
@@ -43,13 +64,10 @@
       "path": "q79_eta9_framed_member_char0_picard_embedding_binding.input.json",
       "sha256": "6e28abaf6eafac91f502007310d662085f4b569455460d17023bf33478939e90"
     },
-    "H4_T132_upstream": {
-      "packet_git_blob": "a938fcd4c586e050f0ee323848897e49aa72365c",
-      "packet_path": "experiments/q79_eta9_graph_normal_duality/outputs/framed-member-char0-picard-embedding-binding/q79_eta9_framed_member_char0_picard_embedding_binding.packet.json",
-      "repository": "mtt-preprojection-repair-calculus",
-      "repository_commit": "0c92c4107a2c52acc743665f8b47670e107dd731",
-      "theorem_git_blob": "412f4dfe278da10ab1c4e5dfb87b08ad77f40e6c",
-      "theorem_path": "theorems/PREPROJECTION_Q79_ETA9_FRAMED_MEMBER_CHAR0_PICARD_EMBEDDING_AND_LOW_ORDER_TRAVERSAL_OBSTRUCTION_THEOREM_v1.md"
+    "H4_T133": {
+      "bytes": 58056,
+      "path": "q79_eta9_bht_fiber_evaluation_and_handle_sweep.input.json",
+      "sha256": "f8aedd6d277497ad0e5692a158c1571c6306d446f2721791bcf71f17c1deb18e"
     },
     "T68": {
       "bytes": 12527,
@@ -57,9 +75,21 @@
       "sha256": "b31b80c6eca068abc864815b4c8d3ba3ff646946c655ee8e52b79bd17dbceca8"
     },
     "source_snapshot": {
-      "bytes": 2345,
+      "bytes": 2652,
       "path": "q79_eta9_framed_member_spectral_rank_exclusion.source.json",
-      "sha256": "0bd4723be9c057add31e9b875b4f374b0a1c76bdaf17ae2cc50eb56b7c645719"
+      "sha256": "359338db375b70b262a0081001c9795945c467c8a569eff05891621aa2b46a54"
+    },
+    "upstream": {
+      "H4_T132": {
+        "packet_git_blob": "a938fcd4c586e050f0ee323848897e49aa72365c",
+        "repository_commit": "0c92c4107a2c52acc743665f8b47670e107dd731",
+        "theorem_git_blob": "412f4dfe278da10ab1c4e5dfb87b08ad77f40e6c"
+      },
+      "H4_T133": {
+        "packet_git_blob": "1b81d6f73d2d262182be7ec04f8aefaee058a987",
+        "repository_commit": "0c92c4107a2c52acc743665f8b47670e107dd731",
+        "theorem_git_blob": "8ac02e14fa2ff47baa6f437111e131ef47046570"
+      }
     }
   },
   "parameter_ledger": {
@@ -67,106 +97,16 @@
     "new_discrete_fit_parameters": 0,
     "observed_values_used": 0
   },
-  "provenance": {
-    "H4_T132_role": "consumed exact algebraic/complex binding and certified nP nonvanishing; not reproved here",
-    "T68_role": "consumed established twisted-spectral rank-divisibility theorem; not reproved here"
+  "schema": "mtt.cbf.q79-eta9-framed-member-spectral-rank-scope.v2",
+  "spectral_rank_decision": {
+    "double_traversal_or_rank_two": "OPEN_AT_THE_GLOBAL_BHT_LEVEL",
+    "necessary_condition": "rank r requires r*beta_C=0",
+    "rank1450": "NO_SPECIAL_STATUS; it was only the first unresolved fixed-fiber interval order",
+    "ranks_1_through_1449": "UNDECIDED_BY_THE_FIXED_FIBER_CALCULATION",
+    "selected_inverse_transform_rank_three": "OPEN",
+    "selected_spectral_rank_one": "OPEN"
   },
-  "rank_exclusion": {
-    "certified_excluded_spectral_ranks_inclusive": [
-      1,
-      1449
-    ],
-    "corresponding_degree_three_inverse_transform_ranks": {
-      "first": 3,
-      "formula": "3*r",
-      "last": 4347,
-      "step": 3
-    },
-    "double_traversal": {
-      "H4_T132_witness": {
-        "certified_distance_to_Z_greater_than": 0.4926597792655228,
-        "scaled_interval_outward_binary64": [
-          -0.5073402207344773,
-          -0.5039642136543987
-        ],
-        "witness_coordinate_zero_based": 115
-      },
-      "decision": "REJECTED_FOR_C_fr",
-      "inverse_transform_rank": 6,
-      "spectral_rank_analogue": 2
-    },
-    "first_order_not_resolved_by_H4_T132_intervals": 1450,
-    "first_unresolved_corresponding_inverse_transform_rank": 4350,
-    "selected_endpoint": {
-      "decision": "REJECTED_FOR_C_fr",
-      "inverse_transform_rank": 3,
-      "spectral_rank": 1
-    },
-    "selected_rank_witnesses": [
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 3,
-        "spectral_rank": 1,
-        "twisted_object_existence": "REJECTED"
-      },
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 6,
-        "spectral_rank": 2,
-        "twisted_object_existence": "REJECTED"
-      },
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 9,
-        "spectral_rank": 3,
-        "twisted_object_existence": "REJECTED"
-      },
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 15,
-        "spectral_rank": 5,
-        "twisted_object_existence": "REJECTED"
-      },
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 27,
-        "spectral_rank": 9,
-        "twisted_object_existence": "REJECTED"
-      },
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 81,
-        "spectral_rank": 27,
-        "twisted_object_existence": "REJECTED"
-      },
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 744,
-        "spectral_rank": 248,
-        "twisted_object_existence": "REJECTED"
-      },
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 2187,
-        "spectral_rank": 729,
-        "twisted_object_existence": "REJECTED"
-      },
-      {
-        "H4_T132_proves_rank_times_beta_C_nonzero": true,
-        "degree_three_inverse_transform_rank": 4347,
-        "spectral_rank": 1449,
-        "twisted_object_existence": "REJECTED"
-      }
-    ],
-    "spectral_rank_three": {
-      "decision": "REJECTED_FOR_C_fr",
-      "inverse_transform_rank": 9
-    },
-    "twisted_rank_necessity": "a rank-r alpha-twisted locally free spectral object requires r*beta_C=0 on this carrier",
-    "unresolved_boundary": "rank 1450 is not a candidate and no torsion or object existence is inferred from loss of interval resolution"
-  },
-  "schema": "mtt.cbf.q79-eta9-framed-member-spectral-rank-exclusion.v1",
-  "status": "CLOSED_EXACT_FRAMED_GRAPH_PRYM_SPECTRAL_RANKS_1_THROUGH_1449_EXCLUDED",
+  "status": "CORRECTED_RETRACTION_FIXED_FIBER_PICARD_POINT_DOES_NOT_EXCLUDE_GLOBAL_SPECTRAL_RANKS",
   "theorem_id": "CBF.T69",
-  "tier": "exact_cross_repository_application_to_one_algebraically_bound_directed_candidate"
+  "tier": "exact_cross_repository_carrier_scope_and_logical_dependency_audit"
 }

@@ -1,5 +1,5 @@
 {
-  "schema": "mtt.cbf.q79-eta9-framed-member-spectral-rank-exclusion-source.v1",
+  "schema": "mtt.cbf.q79-eta9-framed-member-spectral-rank-scope-source.v2",
   "sources": {
     "H4_T132": {
       "repository": "mtt-preprojection-repair-calculus",
@@ -12,26 +12,25 @@
       "theorem_git_blob": "412f4dfe278da10ab1c4e5dfb87b08ad77f40e6c",
       "theorem_id": "H4-T132",
       "status": "CLOSED_EXACT_CHAR0_PICARD_EMBEDDING_BINDING_AND_LOW_ORDER_TRAVERSAL_OBSTRUCTION",
-      "candidate": "exact algebraic basis-and-RREF-framed member C_fr in the G3AJ rank-123 fixed-residue graph-Prym ball",
-      "class": "P=nu_alg(e_0), identified with the restricted primitive BHT/Deligne class beta_C on the same selected carrier",
-      "certified_nonzero_orders_inclusive": [
-        1,
-        1449
-      ],
-      "first_order_not_decided_by_current_interval_widths": 1450,
-      "double_traversal": {
-        "witness_coordinate_zero_based": 115,
-        "scaled_interval_outward_binary64": [
-          -0.5073402207344773,
-          -0.5039642136543987
-        ],
-        "certified_distance_to_Z_greater_than": 0.4926597792655228
-      },
-      "all_complex_embeddings_nonzero": true,
-      "coordinate_free_physical_member_selection": false,
-      "entire_rank123_graph_ball_rejected": false,
-      "observed_values_used": 0,
-      "fitted_parameters_used": 0
+      "retained_claim": "the fixed-fiber point P=nu_alg(e_0) is nonzero after multiplication by every integer 1 through 1449",
+      "withdrawn_interpretation": "P is not the 248-row normalized BHT handle integral beta_C"
+    },
+    "H4_T133": {
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_commit": "0c92c4107a2c52acc743665f8b47670e107dd731",
+      "local_path": "q79_eta9_bht_fiber_evaluation_and_handle_sweep.input.json",
+      "local_sha256": "f8aedd6d277497ad0e5692a158c1571c6306d446f2721791bcf71f17c1deb18e",
+      "packet_path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_bht_fiber_evaluation_and_handle_sweep.packet.json",
+      "packet_git_blob": "1b81d6f73d2d262182be7ec04f8aefaee058a987",
+      "theorem_path": "theorems/PREPROJECTION_Q79_ETA9_BHT_FIBER_EVALUATION_AND_HANDLE_SWEEP_THEOREM_v1.md",
+      "theorem_git_blob": "8ac02e14fa2ff47baa6f437111e131ef47046570",
+      "theorem_id": "H4-T133",
+      "status": "CLOSED_EXACT_FIBER_RESTRICTION_AND_BHT_HANDLE_SWEEP_REDUCTION_BETA_OPEN",
+      "carrier_dimensions": {
+        "fixed_fiber": 82,
+        "primitive_surface": 248,
+        "evaluation_kernel": 166
+      }
     },
     "T68": {
       "local_path": "q79_eta9_twisted_spectral_rank_divisibility.packet.json",

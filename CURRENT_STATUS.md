@@ -2804,37 +2804,29 @@ and run the normalized rank-one HYM chain only after a certified
 higher-rank theory and must rederive the inverse transform, index, matter
 multiplicities and finite `27`-state comparison.
 
-## CBF.T69 framed graph-Prym spectral-rank exclusion
+## CBF.T69 fixed-fiber/global-BHT scope correction
 
-`Q79Eta9FramedMemberSpectralRankExclusionTheorem_v1.md` consumes the newly
-committed H4-T132 calculation for the exact algebraic framed member `C_fr` in
-the G3AJ rank-123 fixed-residue graph-Prym ball. H4-T132 already proves
-
-```text
-n beta_C(C_fr) != 0 for every 1 <= n <= 1449
-```
-
-at every complex embedding of that same member. T69 does not repeat that
-period calculation. It applies T68's established determinant law: a
-rank-`r` twisted spectral object requires `r beta_C=0`.
-
-Therefore `C_fr` supports no selected twisted spectral object of any rank
-from 1 through 1,449. On the degree-three cover these would have inverse
-transform ranks
+`Q79Eta9FramedMemberSpectralRankExclusionTheorem_v1.md` now corrects the
+first T69 packet at commit `274730e`. H4-T132 rigorously proves
 
 ```text
-3, 6, 9, ..., 4347.
+n P_e0 != 0 for every 1 <= n <= 1449
 ```
 
-The intended spectral-rank-one/inverse-rank-three endpoint is rejected, as
-are double traversal/rank two and the hypothetical spectral-rank-three route.
-Order 1,450 is only the first order not resolved by the current H4-T132
-interval widths; it is not a torsion candidate and supplies no object.
+for one exact genus-82 fixed-fiber Picard point. H4-T133, however, proves
+that this 82-row point is an initial condition for the moving relative-chain
+transport, not the 248-row normalized BHT handle integral `beta_C`. The
+fixed-fiber evaluation quotient has kernel rank 166.
 
-This is the first exact same-residue G3AJ candidate decision after T68. It
-does not reject the remaining points of the rank-123 graph ball, and the
-all-zero RREF framing of `C_fr` is not a coordinate-free physical selector.
-The next accepted object is the graph-family normal-function map and its
-derivative on the 122 projective tangent directions. That map must either
-emit a certified beta-zero member or prove the beta-zero locus empty. No
-observed value, fit parameter or selector was added.
+T68's determinant theorem remains valid: a rank-`r` twisted spectral object
+requires `r beta_C=0`. The invalid step was replacing `beta_C` by `P_e0`.
+Consequently T69 no longer excludes spectral ranks 1 through 1,449. The
+intended spectral-rank-one/inverse-rank-three endpoint, double traversal and
+all higher ranks are open at the global BHT level for `C_fr`.
+
+The next accepted object is the completed same-member B-handle sweep:
+propagate the rank-164 relative de Rham state, integrate the 248 surface rows
+or a separately proved characteristic-zero 126-row normal projection, and
+reduce modulo the integral period lattice. Only that result may be passed to
+T68. The 122-direction graph-family search comes afterward. No observed
+value, fit parameter or selector was added.

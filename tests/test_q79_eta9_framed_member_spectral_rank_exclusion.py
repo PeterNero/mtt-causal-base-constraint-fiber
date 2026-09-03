@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PACKET = ROOT / "q79_eta9_framed_member_spectral_rank_exclusion.packet.json"
 
 
-class Q79Eta9FramedMemberSpectralRankExclusionTests(unittest.TestCase):
+class Q79Eta9FramedMemberSpectralRankScopeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         subprocess.run(
@@ -33,35 +33,30 @@ class Q79Eta9FramedMemberSpectralRankExclusionTests(unittest.TestCase):
         )
         self.assertIn("CBF.T69 verification: PASS", result.stdout)
 
-    def test_complete_certified_rank_range_is_excluded(self) -> None:
-        rank = self.packet["rank_exclusion"]
-        self.assertEqual(
-            rank["certified_excluded_spectral_ranks_inclusive"], [1, 1449]
-        )
-        self.assertEqual(
-            rank["corresponding_degree_three_inverse_transform_ranks"],
-            {"first": 3, "formula": "3*r", "last": 4347, "step": 3},
-        )
+    def test_carriers_are_distinct(self) -> None:
+        ledger = self.packet["carrier_ledger"]
+        self.assertEqual(ledger["fixed_fiber_picard_point"]["holomorphic_row_rank"], 82)
+        self.assertEqual(ledger["global_BHT_class"]["primitive_surface_row_rank"], 248)
+        self.assertEqual(ledger["evaluation_quotient"]["kernel_rank"], 166)
 
-    def test_intended_endpoint_and_double_traversal_are_rejected(self) -> None:
-        rank = self.packet["rank_exclusion"]
-        self.assertEqual(rank["selected_endpoint"]["decision"], "REJECTED_FOR_C_fr")
+    def test_fixed_fiber_result_is_retained(self) -> None:
+        correction = self.packet["correction"]
+        self.assertIn("1<=n<=1449", correction["retained_H4_T132_result"])
+        self.assertIn("does not imply", correction["invalid_inference_removed"])
+
+    def test_spectral_ranks_are_reopened(self) -> None:
+        decision = self.packet["spectral_rank_decision"]
         self.assertEqual(
-            rank["double_traversal"]["decision"], "REJECTED_FOR_C_fr"
+            decision["ranks_1_through_1449"],
+            "UNDECIDED_BY_THE_FIXED_FIBER_CALCULATION",
         )
-        self.assertEqual(rank["spectral_rank_three"]["decision"], "REJECTED_FOR_C_fr")
+        self.assertEqual(decision["selected_spectral_rank_one"], "OPEN")
+        self.assertEqual(decision["selected_inverse_transform_rank_three"], "OPEN")
 
-    def test_resolution_loss_is_not_torsion_evidence(self) -> None:
-        rank = self.packet["rank_exclusion"]
-        self.assertEqual(rank["first_order_not_resolved_by_H4_T132_intervals"], 1450)
-        self.assertEqual(rank["first_unresolved_corresponding_inverse_transform_rank"], 4350)
-        self.assertIn("not a candidate", rank["unresolved_boundary"])
-
-    def test_candidate_scope_is_preserved(self) -> None:
-        candidate = self.packet["candidate"]
-        self.assertEqual(candidate["name"], "C_fr")
-        self.assertIn("not_coordinate_free", candidate["selection_tier"])
-        self.assertFalse(self.packet["guardrails"]["claims_the_entire_G3AJ_ball_is_rejected"])
+    def test_global_bht_sweep_is_next(self) -> None:
+        frontier = self.packet["frontier_delta"]
+        self.assertIn("Gauss-Manin", frontier["next_required_object"])
+        self.assertEqual(len(frontier["execution_order"]), 4)
 
     def test_no_parameters_or_observations(self) -> None:
         self.assertEqual(

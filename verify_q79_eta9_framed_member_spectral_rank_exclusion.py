@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independently verify the CBF.T69 spectral-rank exclusion packet."""
+"""Independently verify the corrected CBF.T69 scope packet."""
 
 from __future__ import annotations
 
@@ -29,10 +29,7 @@ def sha256(path: Path) -> str:
 
 def canonical_sha256(payload: dict[str, Any]) -> str:
     encoded = json.dumps(
-        payload,
-        sort_keys=True,
-        separators=(",", ":"),
-        ensure_ascii=True,
+        payload, sort_keys=True, separators=(",", ":"), ensure_ascii=True
     ).encode("ascii")
     return hashlib.sha256(encoded).hexdigest()
 
@@ -48,11 +45,11 @@ def verify_binding(binding: dict[str, Any]) -> dict[str, Any]:
 def main() -> int:
     packet = load(PACKET)
     require(
-        packet["schema"]
-        == "mtt.cbf.q79-eta9-framed-member-spectral-rank-exclusion.v1",
+        packet["schema"] == "mtt.cbf.q79-eta9-framed-member-spectral-rank-scope.v2",
         "packet schema",
     )
     require(packet["theorem_id"] == "CBF.T69", "theorem id")
+    require(packet["status"].startswith("CORRECTED_RETRACTION_"), "status")
     claimed_hash = packet["canonical_payload_sha256"]
     unsigned = dict(packet)
     unsigned.pop("canonical_payload_sha256")
@@ -60,91 +57,55 @@ def main() -> int:
 
     source = verify_binding(packet["inputs"]["source_snapshot"])
     require(source == load(SOURCE), "source replay")
+
     t68 = verify_binding(packet["inputs"]["T68"])
     require(t68["theorem_id"] == "CBF.T68", "T68 theorem")
-    require(
-        t68["endpoint_decision"]["cover_degree"] == 3
-        and t68["endpoint_decision"]["unchanged_MTT_BHT_spectral_rank"] == 1
-        and t68["endpoint_decision"]["unchanged_inverse_transform_rank"] == 3,
-        "T68 endpoint",
-    )
+    require(t68["endpoint_decision"]["required_class"] == "beta_C=0", "T68 gate")
     require(
         "r[alpha]=0" in t68["general_theorem"]["cohomology_consequence"],
-        "rank-divisibility law",
+        "T68 determinant law",
     )
 
-    h4_source = source["sources"]["H4_T132"]
-    h4 = verify_binding(packet["inputs"]["H4_T132"])
-    require(h4["theorem_id"] == "H4-T132", "H4 theorem")
+    h132 = verify_binding(packet["inputs"]["H4_T132"])
+    require(h132["theorem_id"] == "H4-T132", "H4-T132 theorem")
     require(
-        h4["traversal_torsion_decision"]["certified_nonzero_orders_inclusive"]
+        h132["traversal_torsion_decision"]["certified_nonzero_orders_inclusive"]
         == [1, 1449],
-        "H4 order range",
-    )
-    require(
-        h4["traversal_torsion_decision"]
-        ["first_order_not_decided_by_current_interval_widths"]
-        == 1450,
-        "H4 first open order",
-    )
-    require(
-        h4["checks"]["one_nonidentity_complex_base_change_proves_the_algebraic_point_is_nonidentity"],
-        "H4 embeddings",
-    )
-    require(not h4["guardrails"]["claims_the_RREF_framing_is_coordinate_free"], "H4 selection")
-    require(not h4["guardrails"]["claims_the_entire_rank123_G3AJ_graph_ball_is_rejected"], "H4 family guard")
-    require(
-        sha256(ROOT / h4_source["local_path"]) == h4_source["local_sha256"],
-        "source H4 binding",
+        "H4-T132 retained result",
     )
 
-    rank = packet["rank_exclusion"]
+    h133 = verify_binding(packet["inputs"]["H4_T133"])
+    require(h133["theorem_id"] == "H4-T133", "H4-T133 theorem")
+    restriction = h133["fiber_evaluation_operator"]
     require(
-        rank["certified_excluded_spectral_ranks_inclusive"] == [1, 1449],
-        "excluded ranks",
+        (restriction["domain_rank"], restriction["codomain_rank"], restriction["kernel_rank"])
+        == (248, 82, 166),
+        "H4-T133 quotient dimensions",
     )
-    inverse = rank["corresponding_degree_three_inverse_transform_ranks"]
+    require(h133["frontier"]["beta_C_decision"] == "OPEN", "global beta open")
     require(
-        inverse == {"first": 3, "formula": "3*r", "last": 4347, "step": 3},
-        "inverse ranks",
+        "the fixed-fiber solve alone rejects the candidate from U_eta9"
+        in h133["scope_correction"]["withdrawn_as_unproved"],
+        "scope withdrawal",
     )
+
+    ledger = packet["carrier_ledger"]
+    require(ledger["fixed_fiber_picard_point"]["holomorphic_row_rank"] == 82, "fiber rank")
+    require(ledger["global_BHT_class"]["primitive_surface_row_rank"] == 248, "surface rank")
+    require(ledger["evaluation_quotient"]["kernel_rank"] == 166, "kernel rank")
+
+    decision = packet["spectral_rank_decision"]
     require(
-        rank["selected_endpoint"]
-        == {
-            "decision": "REJECTED_FOR_C_fr",
-            "inverse_transform_rank": 3,
-            "spectral_rank": 1,
-        },
-        "selected endpoint",
+        decision["ranks_1_through_1449"]
+        == "UNDECIDED_BY_THE_FIXED_FIBER_CALCULATION",
+        "rank range reopened",
     )
+    require(decision["selected_spectral_rank_one"] == "OPEN", "rank one open")
+    require(decision["selected_inverse_transform_rank_three"] == "OPEN", "rank three open")
     require(
-        rank["double_traversal"]["spectral_rank_analogue"] == 2
-        and rank["double_traversal"]["inverse_transform_rank"] == 6
-        and rank["double_traversal"]["decision"] == "REJECTED_FOR_C_fr",
-        "double traversal",
+        decision["double_traversal_or_rank_two"] == "OPEN_AT_THE_GLOBAL_BHT_LEVEL",
+        "double traversal open",
     )
-    require(
-        rank["spectral_rank_three"]["inverse_transform_rank"] == 9
-        and rank["spectral_rank_three"]["decision"] == "REJECTED_FOR_C_fr",
-        "rank three",
-    )
-    require(
-        rank["first_order_not_resolved_by_H4_T132_intervals"] == 1450
-        and rank["first_unresolved_corresponding_inverse_transform_rank"] == 4350,
-        "resolution boundary",
-    )
-    for witness in rank["selected_rank_witnesses"]:
-        spectral_rank = witness["spectral_rank"]
-        require(1 <= spectral_rank <= 1449, "witness range")
-        require(
-            witness["H4_T132_proves_rank_times_beta_C_nonzero"],
-            "witness nonzero",
-        )
-        require(witness["twisted_object_existence"] == "REJECTED", "witness")
-        require(
-            witness["degree_three_inverse_transform_rank"] == 3 * spectral_rank,
-            "witness inverse rank",
-        )
 
     require(packet["all_checks_pass"] and all(packet["checks"].values()), "checks")
     require(not any(packet["guardrails"].values()), "guardrails")
@@ -160,7 +121,7 @@ def main() -> int:
 
     print(
         "CBF.T69 verification: PASS "
-        "spectral-ranks=1..1449 rejected inverse-ranks=3..4347 step3"
+        "fixed-fiber-rank=82 global-rank=248 kernel=166 spectral-decision=OPEN"
     )
     return 0
 

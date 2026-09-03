@@ -2279,21 +2279,15 @@ promoted as a physical value. The unchanged physical route must find a
 component-trivial, identity-component-zero G3AJ/G3BJ member before executing
 the rank-one HYM endpoint.
 
-`Q79Eta9FramedMemberSpectralRankExclusionTheorem_v1.md` (`CBF.T69`) applies
-the T68 rank-divisibility theorem to the first exact same-residue G3AJ member
-whose Deligne class has now been decided. H4-T132 binds its directed period
-calculation to the exact algebraic framed member `C_fr` and proves
-`n beta_C(C_fr) != 0` for every `1 <= n <= 1449`, at every complex embedding
-of that member. T69 consequently excludes twisted spectral ranks 1 through
-1,449 on `C_fr`; the degree-three inverse transforms would have ranks
-`3,6,9,...,4347`.
+`Q79Eta9FramedMemberSpectralRankExclusionTheorem_v1.md` (`CBF.T69`) is now a
+scope-correction theorem. H4-T132's exact result is retained: the genus-82
+fixed-fiber Picard point `P_e0` is nonzero through multiplication order 1,449.
+H4-T133 proves that this is not the 248-row normalized BHT handle integral
+`beta_C`; the fiber-evaluation quotient omits a rank-166 kernel. The original
+T69 spectral-rank exclusion at commit `274730e` is therefore retracted.
 
-In particular, neither double traversal nor a rank-two twisted replacement
-rescues this member. The intended rank-one/inverse-rank-three endpoint and a
-hypothetical spectral-rank-three/inverse-rank-nine endpoint are both
-impossible on `C_fr`. The first unresolved order 1,450 records only interval
-resolution loss, not torsion or object existence. The other points of the
-G3AJ rank-123 graph ball remain open because the deterministic all-zero RREF
-framing is not a coordinate-free MTT selector. The next computation must
-construct the graph-family `beta_C` map and derivative, then find a certified
-zero or prove that the selected beta-zero locus is empty.
+T68's determinant law still requires `r beta_C=0`, but ranks 1 through 1,449,
+the selected rank-one/inverse-rank-three endpoint and double traversal remain
+open until the same-member B-handle sweep is completed. The immediate target
+is the rank-164 Gauss-Manin transport plus 248-row accumulation and integral
+period reduction. A 122-direction graph-family search is logically later.

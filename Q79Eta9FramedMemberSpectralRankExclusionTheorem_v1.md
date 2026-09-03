@@ -1,135 +1,118 @@
-# CBF.T69 q79 eta9 framed-member spectral-rank exclusion theorem
+# CBF.T69 q79 eta9 fixed-fiber/global-BHT scope correction theorem
 
 ## Status
 
-`CLOSED_EXACT_FRAMED_GRAPH_PRYM_SPECTRAL_RANKS_1_THROUGH_1449_EXCLUDED`
+`CORRECTED_RETRACTION_FIXED_FIBER_PICARD_POINT_DOES_NOT_EXCLUDE_GLOBAL_SPECTRAL_RANKS`
 
-This theorem consumes, without re-proving, two established results:
+This theorem corrects the first T69 packet at commit `274730e`. That packet
+applied the valid T68 twisted-rank determinant law to the wrong geometric
+class. The correction preserves every calculation that H4-T132 actually
+established and removes only the unsupported promotion to the global BHT
+class.
 
-1. H4-T132 binds a directed period calculation to one exact algebraic member
-   `C_fr` of the G3AJ rank-123 fixed-residue graph-Prym ball and proves
-   `n beta_C(C_fr) != 0` for every integer `1 <= n <= 1449`.
-2. CBF.T68 imports the post-M32 twisted-spectral determinant theorem: a
-   rank-`r` locally free `alpha`-twisted spectral object can exist only if
-   `r[alpha]=0`.
+## 1. What H4-T132 proved
 
-T69 applies the second statement to the first. It does not relabel either
-input theorem as new.
-
-## 1. Same-member input
-
-The H4-T132 member is not B89 or G3BI. It is the exact algebraization of the
-deterministic framed point obtained by setting all 123 free correction digits
-to zero in the frozen coefficient basis and RREF order. It lies in the G3AJ
-graph-Prym ball. The associated algebraic relative-Picard point is
+For the exact algebraic framed member `C_fr`, H4-T132 studies the degree-zero
+point
 
 ```text
-P=nu_alg(e_0)=[pi^*O_K3(H-Rminus)|C_fr].
+P_e0=nu_alg(e_0) in Pic^0(C_e0)
 ```
 
-The same-source comparison identifies `P` with the restricted primitive
-BHT/Deligne class `beta_C` on this carrier. H4-T132 proves that the directed
-complex calculation is a base change of this exact algebraic point, not a
-floating surrogate. It then certifies
+on one selected genus-82 fiber. It proves, at every complex embedding,
 
 ```text
-nP != 0 for every 1 <= n <= 1449.
+n P_e0 != 0 for every 1 <= n <= 1449.
 ```
 
-In particular, a double shared-circle traversal does not annul the class.
-Order 1450 is merely the first order not resolved by the current interval
-widths; it is not a torsion candidate.
+The all-zero RREF framing remains deterministic rather than a coordinate-free
+physical selection. Order 1450 remains merely the first multiplication not
+resolved by those interval widths.
 
-## 2. Rank-divisibility lemma
+## 2. What H4-T133 corrected
 
-Let an `alpha`-twisted spectral object of rank `r` have transition matrices
-obeying
+Let
 
 ```text
-g_ij g_jk g_ki = alpha_ijk I_r.
+V=H0(S,O_S(9H)),       dim V=83,
+W=H0(E,O_E(3[0])),     dim W=3.
 ```
 
-Taking determinants gives
+The primitive surface carrier and one fixed-fiber carrier are
 
 ```text
-delta(det g)_ijk = alpha_ijk^r,
+(V tensor W)/<F>,      rank 248,
+V/<F_e>,               rank 82.
 ```
 
-so existence requires `r[alpha]=0`. Restricting to `C_fr` gives the necessary
-condition
+H4-T133 proves that evaluation at a smooth fiber induces a surjection
 
 ```text
-r beta_C(C_fr)=0.
+r_e:(V tensor W)/<F> -> V/<F_e>
 ```
 
-This is the already established T68/post-M32 theorem.
-
-## 3. Theorem
-
-**Framed-Member Spectral-Rank Exclusion.** No locally free twisted spectral
-object of rank `r` with `1 <= r <= 1449` exists on `C_fr` for the selected
-normalized BHT gerbe.
-
-**Proof.** Such an object would force `r beta_C(C_fr)=0` by the determinant
-law. H4-T132 proves the opposite for every integer in the stated range. This
-contradiction excludes the object. QED.
-
-The selected cover has degree three. A spectral rank `r` would therefore have
-inverse-transform rank `3r`. The exact consequences include:
+with kernel rank `166`. More importantly, the H4-T132 point is the initial
+relative-Picard state for a moving chain. The normalized class required by the
+BHT endpoint is instead the full handle sweep
 
 ```text
-spectral rank 1 -> inverse rank 3 -> rejected
-spectral rank 2 -> inverse rank 6 -> rejected
-spectral rank 3 -> inverse rank 9 -> rejected
-...
-spectral rank 1449 -> inverse rank 4347 -> rejected.
+beta_C,j = integral_B sum_r R_rj(e) a_r(e) omega_E(e)
+           modulo Pi_C(H2(C,Z)).
 ```
 
-Thus the framed member cannot be rescued by double traversal, by the intended
-rank-one construction, or by any low-rank higher-twist replacement in the
-certified range. The first unresolved order would correspond to inverse rank
-4350 and has no positive existence evidence.
+The nonzero initial point does not determine that closed-loop integral.
+Transport can add, cancel or period-shift contributions along the loop.
 
-## 4. What changed
+## 3. Why the old exclusion does not follow
 
-T68 requested explicit same-residue graph-Prym candidates after excluding B89
-and G3BI. H4-T132 has now supplied and decided the first such exact candidate.
-T69 folds that decision into the endpoint rank theorem:
+T68 proves the determinant condition
 
 ```text
-B89                         rejected for intended rank
-G3BI                        rejected for intended rank
-C_fr in the G3AJ graph ball rejected for every spectral rank 1..1449
+rank-r twisted spectral object exists  =>  r beta_C=0.
 ```
 
-This is a genuine candidate elimination, not another normalization or method
-packet. It also shows that moving to spectral rank two does not save this
-member.
-
-## 5. Boundary and next target
-
-The result is scoped to `C_fr`. Its all-zero RREF framing is deterministic and
-reproducible but has not been derived as a coordinate-free physical MTT
-selector. T69 does not reject the other points of the G3AJ rank-123 ball and
-does not prove that a beta-zero member exists.
-
-The next nonduplicative object is the graph-family normal-function map
+H4-T132 proves
 
 ```text
-Beta: B_graph -> Pic^0(C/B_graph)
+r P_e0 != 0,  1 <= r <= 1449.
 ```
 
-together with its derivative on the 122 projective tangent directions. The
-correct execution order is:
+Since `P_e0` and `beta_C` are not the same object, these two statements cannot
+be combined to infer `r beta_C != 0`. The earlier T69 implication therefore
+fails at its middle identification, not in either input theorem.
 
-1. derive `dBeta` from the already selected family source and common marking;
-2. apply the exact normal quotient as a cheap compatibility test;
-3. if compatible, solve for and certify a different member with `Beta=0`;
-4. if incompatible throughout the selected branch, prove the beta-zero locus
-   empty and retire the rank-one q79 endpoint.
+## 4. Corrected theorem
 
-Repeating `C_fr`, changing its complex embedding, doubling its traversal, or
-testing another low spectral rank cannot advance the proof.
+**Fixed-Fiber/Global-BHT Scope Correction.** The H4-T132 non-torsion result
+for `P_e0` excludes no spectral rank by itself. In particular, spectral ranks
+`1` through `1449`, the intended spectral rank `1`/inverse-transform rank `3`
+endpoint, and the global double-traversal or rank-`2` alternative all remain
+undecided for `C_fr`.
+
+**Proof.** H4-T133 gives the exact carrier distinction and explicitly
+withdraws the implication from fixed-fiber nonidentity to nonzero global
+`beta_C`. T68 requires multiplication of the latter class. No theorem in the
+bound inputs identifies the two classes. Hence the premise needed for the old
+rank exclusion is absent. QED.
+
+This is a retraction of one derived claim, not a retraction of the H4-T132
+period computation or the T68 determinant theorem.
+
+## 5. Frontier
+
+The next decisive computation is no longer a 122-direction family search.
+First decide the already explicit member `C_fr` correctly:
+
+1. propagate its rank-164 relative de Rham state around the selected B loop;
+2. integrate all 248 quotient rows, or a separately proved characteristic-zero
+   126-row normal projection;
+3. reduce the result modulo the integral period lattice;
+4. apply T68 only to that global class.
+
+H4-T134 and its successors provide substantial pieces of the transport
+backend. They do not turn the fixed-fiber point into the completed sweep.
+Only after the global calculation is certified should the 122-dimensional
+graph-family derivative be used to search for another member.
 
 ## 6. Reproduction
 
@@ -139,4 +122,4 @@ python verify_q79_eta9_framed_member_spectral_rank_exclusion.py
 python -m unittest tests.test_q79_eta9_framed_member_spectral_rank_exclusion -q
 ```
 
-No observed value, fitted parameter or physical selector is used.
+No observed value, fitted parameter or physical selector is introduced.
