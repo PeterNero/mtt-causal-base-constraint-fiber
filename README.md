@@ -498,6 +498,12 @@ HYM endpoint. See `CURRENT_STATUS.md` for the exact missing ranges and
   hard-interval driver preserving the established dyadic proof policy.
 - `verify_q79_b89_relaxed_predictor_adaptive_source_isotopy.py`: independent
   verifier binding the recovery worker hashes and seed-policy declaration.
+- `q79_b89_hard_interval_recovery_campaign.json`: immutable 24-job partition of
+  the exact 192-interval T53 branch gap, including predecessor lineage and
+  capsule hashes.
+- `verify_q79_b89_hard_interval_recovery_campaign.py`: verifies source locks,
+  exact nonoverlapping coverage and, when given the runtime root, every queued
+  job's entrypoint, arguments, output and capsule binding.
 - `constraint_compression_leakage.packet.json`: generated exact certificate.
 - `repair_fixedpoint_gauge_descent.packet.json`: generated repair/symmetry
   certificate.

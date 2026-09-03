@@ -2186,14 +2186,12 @@ edge 1: [432,444), [449,456), [492,516), [552,564), [792,804)
 edge 2: [181,325)
 ```
 
-Two jobs are still running on `[432,444)` and `[449,456)`. They are not part of
-the certified count. If both pass the same ingestion gate, branch coverage will
-become `2003/2195`, leaving 192 intervals. The current T54 downstream packet
-has been rebuilt and independently replayed at `1984/2195`; its decision remains
-`STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING`. The static rank-164 replay still
-has `rank(M-I)=42` over `F2` and witness pairing one. B89 is therefore not yet
-rejected. The portable frontier freeze now passes `13/13` checks, including the
-cancelled-prefix/remainder lineage check.
+At that checkpoint, two jobs were still running on `[432,444)` and `[449,456)`.
+Their later verified ingestion is recorded in the recovery section below. The
+static rank-164 replay had `rank(M-I)=42` over `F2` and witness pairing one, but
+B89 was not rejected because branch coverage remained incomplete. The portable
+frontier freeze passed `13/13` checks, including the cancelled-prefix/remainder
+lineage check.
 
 ### 2026-09-03 T53 hard-interval recovery
 
@@ -2219,6 +2217,15 @@ the binary64-aware seed threshold `2^-52` while preserving all Krawczyk,
 separation, guide-homotopy and endpoint-binding checks. A hard edge-2 pilot on
 interval 183 completed without subdivision and passed its independent `10/10`
 verifier. Old workers and packet hashes remain unchanged.
+
+The complete retry is now an explicit 24-job campaign rather than an informal
+queue state. Twelve four-interval edge-1 jobs and twelve twelve-interval edge-2
+jobs partition all 192 missing intervals exactly once. At submission checkpoint,
+16 were running and 8 queued. The campaign manifest is
+`q79_b89_hard_interval_recovery_campaign.json`; its independent static/runtime
+verifier passes `574/574`. Submission still contributes no certified coverage.
+Each returned capsule must pass hash verification and the independent scientific
+verifier before ingestion and T54 reconstruction.
 
 ## CBF.T55 same-source principal-symbol reduction
 
