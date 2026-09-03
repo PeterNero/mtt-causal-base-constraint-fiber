@@ -87,6 +87,30 @@ class RecursiveReplacementIngestTests(unittest.TestCase):
             MODULE.process_result_allowed({"state": "succeeded", "exit_code": 0})
         )
 
+    def test_relaxed_predictor_profile_selects_versioned_verifier(self) -> None:
+        command, verifier = MODULE.verifier_command(
+            "branch",
+            2,
+            ROOT / "packet.json",
+            ROOT / "upstream",
+            "relaxed_predictor_v1",
+        )
+        self.assertEqual(
+            verifier.name,
+            "verify_q79_b89_relaxed_predictor_adaptive_source_isotopy.py",
+        )
+        self.assertEqual(command[1], str(verifier))
+
+    def test_unknown_branch_verification_profile_is_rejected(self) -> None:
+        with self.assertRaises(AssertionError):
+            MODULE.verifier_command(
+                "branch",
+                2,
+                ROOT / "packet.json",
+                ROOT / "upstream",
+                "unreviewed",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

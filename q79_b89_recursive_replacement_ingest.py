@@ -68,10 +68,21 @@ def verifier_command(
     edge: int,
     packet_path: Path,
     upstream_root: Path,
+    verification_profile: str = "standard",
 ) -> tuple[list[str], Path]:
     pilot = upstream_root / "experiments/q79_eta9_b89_family_branch_braid_pilot"
     if carrier == "branch":
-        verifier = ROOT / "verify_q79_b89_accelerated_adaptive_source_isotopy.py"
+        if verification_profile == "standard":
+            verifier = ROOT / "verify_q79_b89_accelerated_adaptive_source_isotopy.py"
+        elif verification_profile == "relaxed_predictor_v1":
+            verifier = (
+                ROOT
+                / "verify_q79_b89_relaxed_predictor_adaptive_source_isotopy.py"
+            )
+        else:
+            raise AssertionError(
+                f"unknown branch verification profile {verification_profile}"
+            )
         source = (
             upstream_root
             / "experiments/q79_eta9_b89_relative_adjoint_compiler/"
@@ -232,7 +243,11 @@ def verify_capsule(
         )
 
     command, verifier = verifier_command(
-        campaign_row["carrier"], int(campaign_row["edge"]), destination, upstream_root
+        campaign_row["carrier"],
+        int(campaign_row["edge"]),
+        destination,
+        upstream_root,
+        str(campaign_row.get("verification_profile", "standard")),
     )
     completed = subprocess.run(
         command,

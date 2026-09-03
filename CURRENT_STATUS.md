@@ -2195,6 +2195,31 @@ has `rank(M-I)=42` over `F2` and witness pairing one. B89 is therefore not yet
 rejected. The portable frontier freeze now passes `13/13` checks, including the
 cancelled-prefix/remainder lineage check.
 
+### 2026-09-03 T53 hard-interval recovery
+
+The two previously running edge-1 jobs completed and passed the same immutable
+capsule, payload-hash and independent `10/10` verifier gate. They add 19 exact
+intervals, so the current carrier state is
+
+```text
+boundary carrier: 2195/2195, complete
+branch carrier:   2003/2195, incomplete
+```
+
+The remaining 192 intervals are edge 1 `[492,516)`, `[552,564)`, `[792,804)`
+and edge 2 `[181,325)`. They may not be skipped under the present theorem:
+complete coverage is a premise of the joint same-source isotopy assembly.
+
+The edge-1 failures were execution timeouts on twelve-interval shards. The
+edge-2 failures had a distinct and now isolated cause: the predictor-only
+Newton iteration stagnated between roughly `2.8e-17` and `5.6e-17`, just above
+its old `2^-55` stopping threshold. The later interval Krawczyk enclosure, not
+this predictor threshold, is the proof gate. A versioned recovery worker uses
+the binary64-aware seed threshold `2^-52` while preserving all Krawczyk,
+separation, guide-homotopy and endpoint-binding checks. A hard edge-2 pilot on
+interval 183 completed without subdivision and passed its independent `10/10`
+verifier. Old workers and packet hashes remain unchanged.
+
 ## CBF.T55 same-source principal-symbol reduction
 
 `SameSourcePrincipalSymbolMetricActionScaleAndHodgeNaturalityTheorem.v1`

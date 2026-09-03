@@ -320,9 +320,9 @@ python verify_q79_symmetric_response_transferred_m4.py --recompute
 ## Live B89 campaign frontier
 
 The T53 same-source isotopy campaign is consolidated in the hash-verified
-result index and current coverage report. At the 2026-09-02 checkpoint the
+result index and current coverage report. At the 2026-09-03 checkpoint the
 signed-boundary carrier is complete at `2195/2195`; the branch carrier is
-certified at `1984/2195`. Exactly 211 branch intervals remain. This is a
+certified at `2003/2195`. Exactly 192 branch intervals remain. This is a
 coverage and downstream-readiness result, not a B89 rejection or a physical
 HYM endpoint. See `CURRENT_STATUS.md` for the exact missing ranges and
 `Q79B89DownstreamPromotionReadinessTheorem_v1.md` for the promotion boundary.
@@ -492,6 +492,12 @@ HYM endpoint. See `CURRENT_STATUS.md` for the exact missing ranges and
   partition plus explicitly linked cancelled-prefix remainder recovery.
 - `q79_b89_recursive_replacement_campaign_status.json`: process-state and
   independent-ingestion audit; process success alone is never coverage.
+- `q79_b89_relaxed_predictor_source_isotopy_worker.py`: versioned hard-cell
+  worker that changes only the non-proof Newton seed threshold.
+- `q79_b89_relaxed_predictor_adaptive_source_isotopy_worker.py`: recursive
+  hard-interval driver preserving the established dyadic proof policy.
+- `verify_q79_b89_relaxed_predictor_adaptive_source_isotopy.py`: independent
+  verifier binding the recovery worker hashes and seed-policy declaration.
 - `constraint_compression_leakage.packet.json`: generated exact certificate.
 - `repair_fixedpoint_gauge_descent.packet.json`: generated repair/symmetry
   certificate.

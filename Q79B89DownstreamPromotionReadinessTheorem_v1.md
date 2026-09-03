@@ -43,11 +43,10 @@ same-source class with the B-handle Deligne-Leray transgression.
 
 ## Current boundary
 
-At the 2026-09-02 consolidated checkpoint the boundary carrier is complete at
+At the 2026-09-03 consolidated checkpoint the boundary carrier is complete at
 `2195/2195`, while the branch carrier is independently certified at
-`1984/2195`. Its 211 missing intervals are edge 1 `[432,444)`, `[449,456)`,
-`[492,516)`, `[552,564)`, `[792,804)` and edge 2 `[181,325)`. Running jobs do
-not count as coverage. B89 is therefore not yet rejected. On exact branch
+`2003/2195`. Its 192 missing intervals are edge 1 `[492,516)`, `[552,564)`,
+`[792,804)` and edge 2 `[181,325)`. B89 is therefore not yet rejected. On exact branch
 completion the decision changes from
 `STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING` to
 `READY_FOR_JOINT_ASSEMBLY_AND_B89_PROMOTION`; this transition is derived from
