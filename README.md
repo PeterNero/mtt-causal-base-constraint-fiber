@@ -2159,3 +2159,35 @@ observed value or selector.
 
 The focused builder, independent replay and eight T63 unit tests pass. The
 full canonical repository suite passes all 609 tests.
+
+`Q79Eta9CayleySerreTraceNormalizationTheorem_v1.md` (`CBF.T64`) closes the
+intrinsic normalization formula behind H4-T136's six projective Serre source
+lifts. The curve is embedded in `Y=P(O(6H)+O(9H))`; Cox multiplication sends
+the old `(18,1)` top line to critical degree `(9,3)`, and
+`integral_Y xi^4=585` fixes the absolute toric residue.
+
+The raw B89 Cox representative does not produce the required rank-one
+unsaturated critical quotient. T64 therefore uses the determinant-one
+coordinate gauge
+`f9 -> f9+(x^3+y^3+z^3+w)f6`, transported by
+`U_old=U_new+(x^3+y^3+z^3+w)V`. It leaves the curve and physical classes
+unchanged. Exact `GF(21817)` elimination then gives a one-dimensional critical
+quotient (`9361-9360`), verifies the Cox-product intertwiner on all `2584` old
+top monomials and evaluates the toric Jacobian nontrivially.
+
+The resulting toric and Serre scales
+
+```text
+s_toric=585*f_crit(M*w^9*V)/f_crit(J_toric),
+s_C=(585/2)*f_crit(M*w^9*V)/f_crit(J_toric)
+```
+
+are independent of the auxiliary critical functional and add no parameter.
+The `1/2` is Mavlyutov's exact `c_(1,2)` cup-product factor.
+B89 remains rejected by CBF.T54; it is only the exact regression member for
+this family-wide normalization theorem. Complex panel values, their
+derivatives, directed rank-164 transport, the 248-row period quotient and the
+physical eta9 member remain open.
+
+The focused builder, independent verifier and six T64 tests pass. The full
+canonical repository suite passes all 615 tests.

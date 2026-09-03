@@ -2648,3 +2648,59 @@ input, fit, parameter or selector.
 
 Verification: the focused builder, independent replay and eight T63 unit
 tests pass; the full canonical repository suite passes all 609 tests.
+
+## CBF.T64 q79 eta9 Cayley-Serre trace normalization
+
+`Q79Eta9CayleySerreTraceNormalizationTheorem_v1.md` removes the projective
+`TopTrace[1494]=1` ambiguity left by H4-T136. For every smooth degree `(6,9)`
+curve in `P(1,1,1,3)`, its Cayley ambient is
+
+```text
+Y=P(O(6H)+O(9H)),
+beta0=(-9,2),
+5xi-beta0=(9,3),
+M=x*y*z*w*U*V of degree (-9,2).
+```
+
+The initial fixed-B89 Cox representative does not produce the required
+rank-one unsaturated critical quotient, so it is not used. The
+determinant-one graded gauge
+
+```text
+B3=x^3+y^3+z^3+w,
+f9_regular=f9_physical+B3*f6,
+U_old=U_new+B3*V
+```
+
+leaves the complete intersection unchanged. At the existing good reduction
+`p=21817`, root `5`, exact elimination of all `16740` critical relation rows
+has rank `9360` in `9361` monomials. The stored dual functional annihilates
+every relation, multiplication by `M` intertwines all `2584` transported old
+top monomials with the H4-T96 trace line, and the Cox toric Jacobian is nonzero.
+
+The projective-bundle intersection is exact:
+
+```text
+integral_Y xi^4=(6^3+6^2*9+6*9^2+9^3)/3=585.
+```
+
+Hence the intrinsic toric and Serre scales are the basis-independent residue
+quotients
+
+```text
+s_toric=585*f_crit(M*m_1494)/f_crit(J_toric),
+s_C=(585/2)*f_crit(M*m_1494)/f_crit(J_toric),
+m_1494=w^9*V.
+```
+
+The factor `1/2` is the exact Mavlyutov `c_(1,2)` cup-product coefficient,
+not a fitted normalization.
+
+This closes the source and formula for normalization with no observed input,
+fit parameter or selector. It does not reinstate the already rejected B89
+test member. The next physical execution must reconstruct the first surviving
+same-residue member, evaluate `s_C` and `s_C'` on directed panels, and then run
+the rank-164 transport, 248-row BHT accumulation and period quotient.
+
+The focused builder, independent verifier and six T64 tests pass. The full
+canonical repository suite passes all 615 tests.

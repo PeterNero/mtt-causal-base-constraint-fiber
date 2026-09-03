@@ -1,0 +1,275 @@
+{
+  "checks": {
+    "H4_T136_and_H4_T140_use_the_same_projective_coordinate_1494": true,
+    "multiplication_by_the_Cox_product_maps_18_1_to_9_3": true,
+    "the_Cayley_class_is_big_and_nef": true,
+    "the_Cayley_gauge_is_triangular_with_determinant_one": true,
+    "the_Cayley_gauge_leaves_the_complete_intersection_unchanged": true,
+    "the_Cayley_projective_bundle_degree_matrix_has_rank_two": true,
+    "the_Cox_coordinate_product_has_degree_minus9_2": true,
+    "the_Cox_critical_degree_is_9_3": true,
+    "the_Cox_multiplier_intertwines_the_top_and_critical_lines": true,
+    "the_Cox_multiplier_is_nonzero_at_the_good_reduction": true,
+    "the_Mavlyutov_c12_cup_factor_is_one_half": true,
+    "the_absolute_Serre_pairing_scale_is_nonzero_mod21817": true,
+    "the_absolute_toric_trace_scale_is_nonzero_mod21817": true,
+    "the_five_Cox_sections_have_class_xi": true,
+    "the_fixed_test_member_has_a_proper_good_reduction_smoothness_certificate": true,
+    "the_good_reduction_critical_quotient_has_dimension_one": true,
+    "the_normalization_uses_no_observed_value_or_fit_parameter": true,
+    "the_p21817_root5_place_is_unramified": true,
+    "the_projective_bundle_intersection_xi4_is_585": true,
+    "the_selected_four_ray_minor_has_determinant_one": true,
+    "the_stored_critical_functional_annihilates_all16740_relations": true,
+    "the_symmetric_cubic_has_weighted_degree_three": true,
+    "the_toric_Jacobian_has_nonzero_critical_quotient_value": true,
+    "the_toric_Jacobian_is_in_the_critical_degree": true
+  },
+  "critical_quotient_witness": {
+    "Mavlyutov_c12_mod21817": 10909,
+    "ambient_monomials": 9361,
+    "basis_sha256": "fe79b0c5d07a7d89f034f4ecfb1c06d8d7a90f8e43e83f891fd0581240ce5a1d",
+    "canonical_Serre_pairing_scale_mod21817": 3659,
+    "canonical_toric_trace_scale_mod21817": 7318,
+    "functional_sha256": "aed5750a9c693186e09750b63c1f05f573d38e572a3a131c5513930127e6dd48",
+    "minimal_polynomial_derivative": 10994,
+    "minimal_polynomial_value": 0,
+    "prime": 21817,
+    "quotient_dimension": 1,
+    "relation_rank": 9360,
+    "relation_rows": 16740,
+    "relation_rows_by_section": {
+      "Phi": 3348,
+      "UPhi_U": 3348,
+      "wPhi_w": 3348,
+      "yPhi_y": 3348,
+      "zPhi_z": 3348
+    },
+    "split_root": 5,
+    "top_to_critical_embedding_ratio": 18989,
+    "toric_Jacobian_quotient_value": 3107,
+    "toric_Jacobian_sha256": "e3cb3a492bc1f2a253ebd7415178fa8496f01d296cb614860a272d1991b99256",
+    "toric_Jacobian_term_count": 8568
+  },
+  "frontier_delta": {
+    "after": "The scale is a canonical Cox-residue evaluation fixed by xi^4=585. A complete exact good-reduction witness on the rejected B89 test member proves the top-to-critical multiplier is nonzero and gives the first absolute coordinate scale; the formula applies to every smooth degree-(6,9) member and uses no period or physical fit.",
+    "before": "TopTrace[1494]=1 was only a projective chart and intrinsic residue/integral normalization was unspecified.",
+    "next": "Apply the same algebraic scalar formula to the first surviving selected candidate and at every framed-member panel in multiprecision, then perform directed rank-164 transport and the period quotient."
+  },
+  "geometry": {
+    "Cayley_bundle": "Y=P(O(6H)+O(9H))",
+    "Cayley_class_xi": [
+      0,
+      1
+    ],
+    "Cox_degree_matrix": [
+      [
+        1,
+        1,
+        1,
+        3,
+        -6,
+        -9
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    ],
+    "Cox_product_degree": [
+      -9,
+      2
+    ],
+    "Cox_variables": [
+      "x",
+      "y",
+      "z",
+      "w",
+      "U",
+      "V"
+    ],
+    "ambient": "P(1,1,1,3)",
+    "anticanonical_class_beta0": [
+      -9,
+      2
+    ],
+    "critical_degree_5xi_minus_beta0": [
+      9,
+      3
+    ],
+    "ray_matrix_columns": [
+      [
+        -1,
+        -1,
+        -3,
+        -3
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ]
+    ],
+    "regularizing_Cayley_gauge": {
+      "B3": "x^3+y^3+z^3+w",
+      "bundle_coordinate_transport": "U_old=U_new+B3*V",
+      "determinant": 1,
+      "is_physical_parameter": false,
+      "physical_complete_intersection_changed": false,
+      "physical_equation_transport": "f9_regular=f9_physical+B3*f6"
+    },
+    "selected_ray_minor": [
+      "rho_y",
+      "rho_z",
+      "rho_w",
+      "rho_U"
+    ],
+    "selected_ray_minor_determinant": 1,
+    "semiample": {
+      "xi_is_big": "integral_Y xi^4=585>0",
+      "xi_is_nef": "O_Y(1) is globally generated because O(6H) and O(9H) are globally generated"
+    },
+    "top_degree": [
+      18,
+      1
+    ]
+  },
+  "guardrails": {
+    "a_projective_chart_coordinate_is_called_a_physical_period": false,
+    "directed_path_transport_or_period_quotient_is_claimed": false,
+    "the_B89_member_is_reinstated_after_its_Deligne_rejection": false,
+    "the_GF21817_scale_is_called_the_selected_complex_member_scale": false,
+    "the_trace_normalization_is_called_a_beta_C_or_U_eta9_decision": false
+  },
+  "inputs": {
+    "H4_T136": {
+      "bytes": 16545,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_serre_source_lift_contract.packet.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "b2c7fc6a516270bcd6957cb289a41a385f88af01e48bdb01744d61b2942c6f12"
+    },
+    "H4_T140": {
+      "bytes": 33420,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_direct_operator_derivative_contract.packet.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "8bc325a06a85eacdc1aedc175b8a23c736a2601ebb00d9ed8d62755b300fa4ba"
+    },
+    "H4_T96": {
+      "bytes": 5094,
+      "path": "experiments/q79_eta9_b89_curve_higgs_pilot/q79_eta9_b89_curve_higgs_pilot.packet.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "ff6bf49edc47f8feac80b3d8eef9f521b1d7f6bc17fd5853301c71af6cdf8c33"
+    },
+    "H4_T96_result": {
+      "bytes": 428792,
+      "path": "experiments/q79_eta9_b89_curve_higgs_pilot/kernel_results/36cb7494-7785-4064-83e5-b74b1707229b/outputs/higgs_p21817_r5_O.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "606e27b325641a02e0f4eb4b8f38f606c03887b0cf44cdf48cd624054e2b2611"
+    },
+    "critical_dual_witness": {
+      "bytes": 98779,
+      "path": "q79_eta9_cayley_serre_trace_normalization.witness.json",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "sha256": "bda51300379edf0bcd4dea1b4a34ab4a87e9a06d233f291ddf0b9987054561a6"
+    },
+    "curve_backend": {
+      "bytes": 17795,
+      "path": "experiments/q79_eta9_b89_curve_higgs_pilot/compute_curve_higgs_modp.py",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "f9e2638be0de49946203c6273d475e98943a9447acb1f9280a46970b3aab4350"
+    },
+    "fixed_B89_smooth_endpoint": {
+      "bytes": 75552,
+      "path": "inputs/q79_eta9_g3bj_chart_updates/ust_g3bi_explicit_root_start.packet.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "f828986fbf8a4172d58476eade557df0a0724735efcc4b1786836eced3b6bbc9"
+    },
+    "fixed_B89_source": {
+      "bytes": 25911,
+      "path": "experiments/q79_eta9_b89_relative_adjoint_compiler/q79_eta9_b89_relative_adjoint_worker_input.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "1a10757e81c4d3efb1ce450f26a3370998221313fa5ecdd0db56e769da22e262"
+    },
+    "q79_K3_toric_trace": {
+      "bytes": 6924,
+      "path": "q79_k3_delta_toric_trace.packet.json",
+      "repository": "mtt-eta9-parallel-shards",
+      "sha256": "ca448cd113b1d009ae8e20499aede516bc8532962abe21809a26d2a95decf5ca"
+    }
+  },
+  "normalization_contract": {
+    "Cox_multiplier": "M=x*y*z*w*U*V",
+    "adjunction_compatibility": "Tr_C=Tr_K3 o delta for 0->O_S->O_S(C)->K_C->0",
+    "canonical_Serre_pairing_trace": "Tr_C([P])=c_12*Res_Y([M*P]) with c_12=1/2 in the adopted algebraic de Rham convention",
+    "canonical_toric_trace": "lambda_C([P])=Res_Y([M*P])",
+    "directed_derivative_rule": {
+      "Serre_matrix": "S_abs'=s_C'*S_proj+s_C*S_proj'",
+      "required_new_scalar": "s_C' is obtained by differentiating the same Cox-residue quotient; it is not an independent input",
+      "source_lift": "h_abs'=h_proj'/s_C-(s_C'/s_C^2)*h_proj",
+      "trace": "f_abs'=s_C'*f_proj+s_C*f_proj'"
+    },
+    "general_Serre_scale_formula": "s_C=c_12*(integral_Y xi^4)*f_crit(M*m_1494)/f_crit(J_toric), c_12=1/2",
+    "general_toric_scale_formula": "s_toric=(integral_Y xi^4)*f_crit(M*m_1494)/f_crit(J_toric)",
+    "good_reduction_Serre_scale_mod21817": 3659,
+    "good_reduction_toric_scale_mod21817": 7318,
+    "projective_functional": "f_1494=1 with monomial w^9*V",
+    "top_class": "[P] in R_(18,1)",
+    "transport_rule": "replace every projective f,S,h by s_C*f,s_C*S,h/s_C respectively; source covectors and physical pairings are unchanged"
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "normalization_choices_promoted_to_physics": 0,
+    "observed_values_used": 0
+  },
+  "projective_bundle_intersection": {
+    "Cox_trace_property": "Res_Y(J_toric)=integral_Y xi^4=585",
+    "Mavlyutov_c12": "1/2",
+    "Mavlyutov_exponent": "1+3+1+3=8, hence positive sign",
+    "complete_homogeneous_h3_6_9": 1755,
+    "relations": [
+      "H^3=1/3 on P(1,1,1,3)",
+      "(xi-6H)(xi-9H)=0"
+    ],
+    "xi_four": 585
+  },
+  "references": [
+    "https://arxiv.org/abs/alg-geom/9410017",
+    "https://arxiv.org/abs/alg-geom/9506024",
+    "https://arxiv.org/abs/math/9812163",
+    "https://arxiv.org/abs/math/0610228"
+  ],
+  "schema": "mtt.cbf.q79-eta9-cayley-serre-trace-normalization.v1",
+  "status": "CLOSED_CANONICAL_CAYLEY_SERRE_TRACE_NORMALIZATION_FORMULA_AND_EXACT_GOOD_REDUCTION_WITNESS",
+  "theorem_id": "CBF.T64",
+  "tier": "EXACT_CHARACTERISTIC_ZERO_TRACE_THEOREM_PLUS_EXACT_GF21817_COORDINATE_WITNESS"
+}
