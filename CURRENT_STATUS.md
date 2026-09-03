@@ -2592,3 +2592,59 @@ remain open and physical counters stay `0/3`, `0/3`, `0/7`. T62 adds no
 observed input, fit, continuous parameter or discrete selector. Focused
 evidence is `37/37` builder checks, `44/44` independent checks and 13 tests;
 the full canonical repository suite passes all 594 tests.
+
+## CBF.T63 q79 eta9 family value-map cutset
+
+`Q79Eta9GraphFamilyNormalFunctionValueMapTheorem_v1.md` consolidates the
+latest q79 eta9 family results without rerunning their expensive source
+calculations. It independently decodes the selected `F_101^6` matrices and
+proves
+
+```text
+0 -> GF(101^6)^122 --D--> GF(101^6)^248 --N--> GF(101^6)^126 -> 0
+```
+
+is exact: `rank(D)=122`, `rank(N)=126`, and `ND=0`. Therefore
+`im(D)=ker(N)`. At the finite linear tier, an affine source `b` can be
+cancelled by one unique tangent displacement exactly when `Nb=0`. The
+independent graph-normal packet also gives an invertible `126x126`
+intertwiner between the graph-incidence complement and this normal quotient.
+
+This closes the finite decision geometry, not the characteristic-zero value.
+A modularly nonzero normal residual is a valid one-way obstruction; modular
+zero is not characteristic-zero vanishing and is not a nonlinear beta root.
+The already-closed FSB.03g Hensel/root-selection theorem remains the correct
+promotion step once a complete same-source `beta_C` value exists.
+
+T63 also records an important correction from H4-T133. Surface primitive data
+have 248 rows, whereas restriction to one genus-82 fiber has rank 82 and
+kernel rank 166. Thus the H4-T132 fixed-fiber Picard nonidentity remains a
+valid same-member initial-condition and low-order non-torsion result, but it
+does not by itself reject that member from the beta-zero locus. Repeating
+fixed-fiber solves cannot replace the moving BHT handle integral.
+
+The correctly typed characteristic-zero execution now has:
+
+```text
+rank-164 Gauss-Manin period state,
+rank-82 holomorphic readout,
+rank-248 surface accumulator,
+six physical B-loop segments.
+```
+
+H4-T134--T136 provide same-member transport backends, boundary sources and
+projective `H01` source lifts at all six segment midpoints. They remain
+binary64 point replays, not panelwise directed transport. Accepted
+characteristic-zero value rows therefore remain `0/248`, and accepted
+characteristic-zero normal rows remain `0/126`.
+
+The next object is now fixed: intrinsically normalize the H4-T136 source,
+then execute multiprecision panelwise rank-164 action and same-member source
+on edge 2 and edge 0 with directed ODE/quadrature bounds. Extend the passing
+construction to the remaining four segments, quotient by periods, and feed
+the resulting `beta_C` to the finite one-way or explicit characteristic-zero
+normal test. `B.ETA9.01` and `B.ETA9.02` remain open. T63 adds no observed
+input, fit, parameter or selector.
+
+Verification: the focused builder, independent replay and eight T63 unit
+tests pass; the full canonical repository suite passes all 609 tests.

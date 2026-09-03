@@ -2126,3 +2126,36 @@ The physical HYM endpoint and `0/7` rows remain open. T62 passes `37/37`
 builder checks, `44/44` independent checks and 13 focused tests, with no new
 parameter, fit, observed input or discrete selector; the full canonical suite
 passes all 594 tests.
+
+`Q79Eta9GraphFamilyNormalFunctionValueMapTheorem_v1.md` (`CBF.T63`) closes
+the selected finite q79 eta9 tangent-normal sequence. Direct decoding and two
+independent exact computations give
+
+```text
+rank(D)=122, rank(N)=126, ND=0,
+im(D)=ker(N) in F_101^6^248.
+```
+
+The associated `126x126` graph-complement/normal-quotient intertwiner is
+invertible. Hence `Nb=0` is the complete finite linear solvability test for
+`b+Dt=0`, with a unique `t` when it exists. This is not a nonlinear
+characteristic-zero beta-root claim.
+
+T63 also incorporates the H4-T133 correction to the earlier fixed-fiber
+interpretation. The surface source has 248 primitive rows, while restriction
+to one genus-82 fiber has rank 82 and kernel rank 166. H4-T132 therefore
+retains its exact same-member fixed-fiber and non-torsion content, but its
+nonidentity result does not reject the framed member from the beta-zero locus.
+
+The true BHT execution is now sharply typed: a rank-164 Gauss-Manin state, an
+82-row holomorphic readout and a 248-row accumulator over six physical
+segments. H4-T134--T136 supply all six midpoint backends, boundary sources
+and projective `H01` lifts. Intrinsic source normalization, panelwise complete
+action/source, directed integration and the period quotient remain open, so
+accepted characteristic-zero rows remain `0/248` (or `0/126` after a genuine
+characteristic-zero normal operator). The next calculation starts on stiff
+edge 2 with edge 0 as its comparison panel. T63 adds no parameter, fit,
+observed value or selector.
+
+The focused builder, independent replay and eight T63 unit tests pass. The
+full canonical repository suite passes all 609 tests.
