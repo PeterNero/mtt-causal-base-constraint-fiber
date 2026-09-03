@@ -2191,3 +2191,18 @@ physical eta9 member remain open.
 
 The focused builder, independent verifier and six T64 tests pass. The full
 canonical repository suite passes all 615 tests.
+
+`Q79Eta9DirectedCayleySerreScaleTheorem_v1.md` (`CBF.T65`) proves the exact
+top-anchor reduction needed to execute T64: `2584` critical coordinates are
+fixed by H4-T141 and `6777` remain. It then tests three predeclared full-rank
+row gauges for the reduced edge-2 system. Refining each frozen-binary system
+with 512-bit Arb arithmetic drives every residual below `1e-80`, yet the
+three scale midpoints disagree by at least `4.09%`.
+
+T65 therefore rejects promotion of the current binary scale and derivative.
+This is a numerical-method cutset, not a rejection of T64's exact formula or
+of a common characteristic-zero functional. The next valid execution must
+enclose the actual geometric coefficients and H4-T141 anchors, prove a strict
+Neumann inverse bound, check all `13014` nonzero rows and exclude zero from
+the denominator ball. No observed value, fit parameter or physical selector
+is added. The independent verifier and eight focused tests pass.

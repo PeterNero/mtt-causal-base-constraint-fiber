@@ -1,0 +1,70 @@
+{
+  "canonical_payload_sha256": "f4b3ab6725887e3de658890a1b95d3954f6a9473716119cf0c1bccd45b59a68b",
+  "checks": {
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "the_minor_is_selected_after_exact_top_embedding_elimination": true,
+    "the_seeded_ID_selects_6777_distinct_original_rows": true,
+    "the_selected_edge2_minor_has_a_complete_sparse_LU": true
+  },
+  "elapsed_seconds": 20.357117699924856,
+  "guardrails": {
+    "B89_framed_member_is_called_physically_selected": false,
+    "condition_estimate_is_called_a_directed_bound": false,
+    "edge2_selection_is_called_pathwide": false
+  },
+  "minor": {
+    "condition_infinity_estimate_not_a_bound": 152850876172919.03,
+    "factor_nonzero_entries": 9084258,
+    "infinity_norm": 45.27217092207539,
+    "inverse_infinity_norm_estimate_not_a_bound": 3376265662983.408,
+    "nonzero_entries": 353585,
+    "shape": [
+      6777,
+      6777
+    ]
+  },
+  "reduced_system": {
+    "free_columns": 6777,
+    "matrix_input": {
+      "bytes": 760084,
+      "path": "certificates/q79_eta9_cayley_critical_reduced_edge2.npz",
+      "sha256": "b876bed1b55cc363d69fe5210f9f5e55843dea9af480dec409e8fa8e91613190"
+    },
+    "metadata_input": {
+      "bytes": 134306,
+      "path": "certificates/q79_eta9_cayley_critical_reduced_edge2.meta.json",
+      "sha256": "edcaf1a20bb41d6053553ff6a807585fcc1f3bf33770603504489fd79c28826f"
+    },
+    "nonzero_entries": 650225,
+    "shape": [
+      13014,
+      6777
+    ],
+    "top_embedding_pivots": 2584
+  },
+  "schema": "mtt.cbf.q79-eta9-cayley-critical-rank-revealing-minor.v1",
+  "selection": {
+    "algorithm": "scipy seeded randomized interpolative decomposition of the transposed top-anchored balanced critical relation matrix",
+    "interpolation_shape": [
+      6777,
+      6237
+    ],
+    "seed": 7909,
+    "selected_row_maximum": 16739,
+    "selected_row_minimum": 0,
+    "selected_row_replay": true,
+    "selected_rows": {
+      "bytes": 54344,
+      "path": "q79_eta9_cayley_critical_rank_revealing_rows.npy",
+      "sha256": "af0519e57da97f20c7119e108ed42b036ea4dfee5f67cf8ea671e3800c4bcae5"
+    },
+    "source_point": {
+      "lift_sign": -1,
+      "parameter": 0.5,
+      "segment": "edge-2"
+    },
+    "unselected_nonzero_rows": 6237
+  },
+  "status": "COMPLEX_EDGE2_RANK_REVEALING_MINOR_SCOUT",
+  "theorem_id": "CBF.T65"
+}

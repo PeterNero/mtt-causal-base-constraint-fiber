@@ -2704,3 +2704,25 @@ the rank-164 transport, 248-row BHT accumulation and period quotient.
 
 The focused builder, independent verifier and six T64 tests pass. The full
 canonical repository suite passes all 615 tests.
+
+## CBF.T65 directed Cayley-Serre scale stability cutset
+
+`Q79Eta9DirectedCayleySerreScaleTheorem_v1.md` executes the first complex
+extension test for the T64 normalization formula. The exact finite-field
+minor has rank `9360` in `9361` columns. The exact Cayley top embedding fixes
+`2584` critical coordinates and reduces the complex extension problem to a
+`13014 x 6777` relation system.
+
+Three predeclared rank-revealing row gauges, with seeds `7909`, `7919` and
+`7933`, were independently refined after freezing all coefficients as exact
+dyadics. Every residual falls below `1e-80`, but the smallest pairwise scale
+gap is about `4.09%`. The seed-7909 ordinary binary solve also differs
+materially from its own exact-dyadic refinement. Hence small residuals do not
+support a row-gauge-independent scale in the frozen-binary model.
+
+No T65 scout value or derivative is promoted. This leaves T64 and H4-T141
+intact and isolates the next required object: one characteristic-zero
+coefficient-ball `6777 x 6777` inverse certificate with a strict Neumann
+bound, all-row replay and a denominator ball excluding zero. The result adds
+no observed input, fit parameter or selector. Eight focused tests and the
+independent T65 verifier pass.

@@ -1,0 +1,40 @@
+{
+  "canonical_payload_sha256": "4270bd5165bc465a9e52cb03b84b0d62dfb62c48923fab844cf1c3a8419dd857",
+  "denominator_coefficients": {
+    "bytes": 108560,
+    "path": "certificates/q79_eta9_cayley_critical_refinement_seed7919/denominator_coefficients.npy",
+    "sha256": "f9306fc2bb86cc603d652f0eb6f412c67fef4110bc6f5954fad4a97372624c28"
+  },
+  "denominator_constant": {
+    "bytes": 144,
+    "path": "certificates/q79_eta9_cayley_critical_refinement_seed7919/denominator_constant.npy",
+    "sha256": "9153f7249f4754bc3ad9ed8e3dcca33bf44b2e37f5edaaeb852550cdef725af1"
+  },
+  "lift_sign": -1,
+  "matrix": {
+    "bytes": 1238903,
+    "path": "certificates/q79_eta9_cayley_critical_refinement_seed7919/balanced_matrix.npz",
+    "sha256": "27b0354585c39fa55b7ebf6bf4970db6f665b6bc85943a6d97af6e909a98e61b"
+  },
+  "matrix_nonzeros": 354160,
+  "matrix_shape": [
+    6777,
+    6777
+  ],
+  "parameter": 0.5,
+  "rhs": {
+    "bytes": 108560,
+    "path": "certificates/q79_eta9_cayley_critical_refinement_seed7919/balanced_rhs.npy",
+    "sha256": "da180c53e7bc47e0d193edaa35bdc312937ce3af7d89d51d4336c45a70ef44fb"
+  },
+  "schema": "mtt.cbf.q79-eta9-cayley-critical-binary-refinement-input.v1",
+  "seed": 7919,
+  "segment": "edge-2",
+  "selected_rows": {
+    "bytes": 54344,
+    "path": "certificates/q79_eta9_cayley_critical_refinement_seed7919/selected_original_rows.npy",
+    "sha256": "9fd113e3173111feb44b3a583fe0e7c03e203956fc6f90581056712c2283ca33"
+  },
+  "top_anchor_coordinates": 2584,
+  "unknowns_after_top_anchor": 6777
+}

@@ -1,0 +1,155 @@
+{
+  "canonical_Serre_scale_Arb": "[293941.652115996497297185905994052367001323729160948738170132398215147046334482763568221294481931879443925956503199549881735990175256231377916786732058808 +/- 3.37e-148] + [-1520172.90000209943011619165986871486889761699280883538931147345284719907915330263591131579121547766921027816747514839428990422884646712496991744885667144 +/- 8.70e-148]j",
+  "canonical_Serre_scale_midpoint": [
+    293941.6521159965,
+    -1520172.9000020993
+  ],
+  "canonical_payload_sha256": "55e85dee0fca3c7f29e6ed70e45201ae514d39fbecee2db1ae07a342397bbc41",
+  "checks": {
+    "Arb_residual_refinement_improves_the_initial_binary_solve": true,
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "the_refined_binary_denominator_excludes_zero_arithmetically": true,
+    "the_selected_binary_matrix_has_a_complete_sparse_LU": true
+  },
+  "factor": {
+    "L_nonzeros": 3705502,
+    "U_nonzeros": 5378839
+  },
+  "guardrails": {
+    "a_physical_eta9_selection_is_claimed": false,
+    "frozen_binary_coefficients_are_called_exact_geometry": false,
+    "the_Arb_arithmetic_radius_is_called_a_forward_error_bound": false
+  },
+  "input": {
+    "canonical_payload_sha256": "a5f86c693f91223f0bdbdc5d57edd25891507665171fbdd79cc1153dc7feee5b",
+    "denominator_coefficients": {
+      "bytes": 108560,
+      "path": "certificates/q79_eta9_cayley_critical_refinement_seed7909/denominator_coefficients.npy",
+      "sha256": "7d5b097ef7907648f91bfb3ab362bf975d9aa884f289e1170562e76c81e06bac"
+    },
+    "denominator_constant": {
+      "bytes": 144,
+      "path": "certificates/q79_eta9_cayley_critical_refinement_seed7909/denominator_constant.npy",
+      "sha256": "9153f7249f4754bc3ad9ed8e3dcca33bf44b2e37f5edaaeb852550cdef725af1"
+    },
+    "lift_sign": -1,
+    "matrix": {
+      "bytes": 1223314,
+      "path": "certificates/q79_eta9_cayley_critical_refinement_seed7909/balanced_matrix.npz",
+      "sha256": "eadeaa52370105566a48f89baf5ff6610fb310162ff1938bf326e492c23c4bd7"
+    },
+    "matrix_nonzeros": 353585,
+    "matrix_shape": [
+      6777,
+      6777
+    ],
+    "parameter": 0.5,
+    "rhs": {
+      "bytes": 108560,
+      "path": "certificates/q79_eta9_cayley_critical_refinement_seed7909/balanced_rhs.npy",
+      "sha256": "360a31675d1a596932fdda5d328fe6eb19268b742e1389cd7644f7485414f5c6"
+    },
+    "schema": "mtt.cbf.q79-eta9-cayley-critical-binary-refinement-input.v1",
+    "seed": 7909,
+    "segment": "edge-2",
+    "selected_rows": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_refinement_seed7909/selected_original_rows.npy",
+      "sha256": "af0519e57da97f20c7119e108ed42b036ea4dfee5f67cf8ea671e3800c4bcae5"
+    },
+    "top_anchor_coordinates": 2584,
+    "unknowns_after_top_anchor": 6777
+  },
+  "iterations_requested": 24,
+  "next": "Replace every frozen binary matrix, top-anchor and Jacobian coefficient by its selected 512-bit characteristic-zero ball and certify the inverse by a strict Neumann bound.",
+  "precision_bits": 512,
+  "refinement": {
+    "final_maximum_residual_ball_component_upper": 2.422206844264476e-92,
+    "final_maximum_residual_midpoint": 2.0545446799168453e-92,
+    "history": [
+      {
+        "iteration": 0,
+        "maximum_residual_ball_component_upper": 1.6419386862290282e-14,
+        "maximum_residual_midpoint": 1.3028883227537329e-14
+      },
+      {
+        "iteration": 1,
+        "maximum_residual_ball_component_upper": 5.346983898967698e-21,
+        "maximum_residual_midpoint": 4.6600816929487555e-21
+      },
+      {
+        "iteration": 2,
+        "maximum_residual_ball_component_upper": 2.4169451132312974e-26,
+        "maximum_residual_midpoint": 2.361213922331846e-26
+      },
+      {
+        "iteration": 3,
+        "maximum_residual_ball_component_upper": 7.410767790837206e-32,
+        "maximum_residual_midpoint": 5.745251456439066e-32
+      },
+      {
+        "iteration": 4,
+        "maximum_residual_ball_component_upper": 3.7366557751736904e-37,
+        "maximum_residual_midpoint": 2.801634718012242e-37
+      },
+      {
+        "iteration": 5,
+        "maximum_residual_ball_component_upper": 6.296187895716278e-43,
+        "maximum_residual_midpoint": 4.778006367682122e-43
+      },
+      {
+        "iteration": 6,
+        "maximum_residual_ball_component_upper": 2.4775948633122804e-48,
+        "maximum_residual_midpoint": 1.8292993905640703e-48
+      },
+      {
+        "iteration": 7,
+        "maximum_residual_ball_component_upper": 7.363649311253928e-54,
+        "maximum_residual_midpoint": 7.183371640583693e-54
+      },
+      {
+        "iteration": 8,
+        "maximum_residual_ball_component_upper": 2.173495131018565e-59,
+        "maximum_residual_midpoint": 1.925130106558684e-59
+      },
+      {
+        "iteration": 9,
+        "maximum_residual_ball_component_upper": 9.486363541743728e-65,
+        "maximum_residual_midpoint": 7.857810505832073e-65
+      },
+      {
+        "iteration": 10,
+        "maximum_residual_ball_component_upper": 2.595725213123584e-70,
+        "maximum_residual_midpoint": 1.975047086150561e-70
+      },
+      {
+        "iteration": 11,
+        "maximum_residual_ball_component_upper": 1.1540629562112962e-75,
+        "maximum_residual_midpoint": 8.174406284274698e-76
+      },
+      {
+        "iteration": 12,
+        "maximum_residual_ball_component_upper": 4.942708172237828e-81,
+        "maximum_residual_midpoint": 4.267412448856605e-81
+      },
+      {
+        "iteration": 13,
+        "maximum_residual_ball_component_upper": 8.892827446491994e-87,
+        "maximum_residual_midpoint": 8.734969871064206e-87
+      },
+      {
+        "iteration": 14,
+        "maximum_residual_ball_component_upper": 2.422206844264476e-92,
+        "maximum_residual_midpoint": 2.0545446799168453e-92
+      }
+    ]
+  },
+  "schema": "mtt.cbf.q79-eta9-cayley-critical-binary-mixed-refinement.v1",
+  "status": "EXACT_DYADIC_MATRIX_MIXED_REFINEMENT_SCOUT",
+  "theorem_id": "CBF.T65",
+  "toric_Jacobian_coordinate_Arb": "[3.58640773758704824772135371190087675750296795396055134551022316745129723324391691477378081081046244136897680569747780989560595947844332632494975201406450e-5 +/- 6.57e-159] + [0.000185477621554845044786446813301628348432452521407497684233302039476261390001831135816282943803549359974477738285453708524963993977286088112580906175514892 +/- 1.37e-157]j",
+  "toric_Jacobian_coordinate_midpoint": [
+    3.586407737587048e-05,
+    0.00018547762155484505
+  ]
+}

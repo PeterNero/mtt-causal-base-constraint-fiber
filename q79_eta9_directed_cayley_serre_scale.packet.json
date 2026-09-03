@@ -1,0 +1,364 @@
+{
+  "all_checks_pass": true,
+  "binary_row_gauge_audit": {
+    "decision": {
+      "binary_coefficient_derivative_is_promoted": false,
+      "binary_coefficient_scale_is_promoted": false,
+      "characteristic_zero_coefficient_ball_extension_is_required": true,
+      "reason": "all three exact-dyadic residual refinements converge below 1e-80, but the resulting row-gauge scale midpoints disagree by more than one percent"
+    },
+    "maximum_pairwise_Serre_scale_relative_gap": 0.12162426673863673,
+    "minimum_pairwise_Serre_scale_relative_gap": 0.04092308588910227,
+    "pairwise": [
+      {
+        "Serre_scale_absolute_gap": 65576.9722670883,
+        "Serre_scale_relative_gap": 0.04092308588910227,
+        "seeds": [
+          7909,
+          7919
+        ],
+        "toric_Jacobian_absolute_gap": 7.73090926890388e-06,
+        "toric_Jacobian_relative_gap": 0.040923085889102324
+      },
+      {
+        "Serre_scale_absolute_gap": 152366.8245393389,
+        "Serre_scale_relative_gap": 0.09840717109654776,
+        "seeds": [
+          7909,
+          7933
+        ],
+        "toric_Jacobian_absolute_gap": 2.0418276114916657e-05,
+        "toric_Jacobian_relative_gap": 0.09840717109654779
+      },
+      {
+        "Serre_scale_absolute_gap": 194896.13243092346,
+        "Serre_scale_relative_gap": 0.12162426673863673,
+        "seeds": [
+          7919,
+          7933
+        ],
+        "toric_Jacobian_absolute_gap": 2.5235537541337558e-05,
+        "toric_Jacobian_relative_gap": 0.1216242667386368
+      }
+    ],
+    "purpose": "predeclared row-gauge stability test for the frozen-binary coefficient model",
+    "rows": [
+      {
+        "Serre_scale_midpoint": [
+          293941.6521159965,
+          -1520172.9000020993
+        ],
+        "final_exact_dyadic_residual_component_upper": 2.422206844264476e-92,
+        "matrix_nonzeros": 353585,
+        "matrix_sha256": "eadeaa52370105566a48f89baf5ff6610fb310162ff1938bf326e492c23c4bd7",
+        "seed": 7909,
+        "selected_rows_sha256": "af0519e57da97f20c7119e108ed42b036ea4dfee5f67cf8ea671e3800c4bcae5",
+        "source_packet": {
+          "bytes": 6414,
+          "path": "q79_eta9_cayley_critical_binary_mixed_refinement_seed7909.packet.json",
+          "repository": "mtt-causal-base-constraint-fiber",
+          "sha256": "48bd626234ab7a87e656cc38d54c9e811ef314d23af82eb1807cc376b4dcc6ec"
+        },
+        "toric_Jacobian_coordinate_midpoint": [
+          3.586407737587048e-05,
+          0.00018547762155484505
+        ]
+      },
+      {
+        "Serre_scale_midpoint": [
+          341125.4178549821,
+          -1565714.436454079
+        ],
+        "final_exact_dyadic_residual_component_upper": 1.6499424455447428e-94,
+        "matrix_nonzeros": 354160,
+        "matrix_sha256": "27b0354585c39fa55b7ebf6bf4970db6f665b6bc85943a6d97af6e909a98e61b",
+        "seed": 7919,
+        "selected_rows_sha256": "9fd113e3173111feb44b3a583fe0e7c03e203956fc6f90581056712c2283ca33",
+        "source_packet": {
+          "bytes": 6415,
+          "path": "q79_eta9_cayley_critical_binary_mixed_refinement_seed7919.packet.json",
+          "repository": "mtt-causal-base-constraint-fiber",
+          "sha256": "383e9f13b2333cd8a1e47206e34570d4c124102acfbc5530a1b499f4e80226fa"
+        },
+        "toric_Jacobian_coordinate_midpoint": [
+          3.8857421570276894e-05,
+          0.00017834972925362183
+        ]
+      },
+      {
+        "Serre_scale_midpoint": [
+          326644.57678362646,
+          -1371357.0139603699
+        ],
+        "final_exact_dyadic_residual_component_upper": 4.189553174000249e-94,
+        "matrix_nonzeros": 355035,
+        "matrix_sha256": "4103a2e52b9234a8eaa23edf550c88da42ffe311dbd82b091d3895e3deb9e836",
+        "seed": 7933,
+        "selected_rows_sha256": "892a00b0dd6351340cb69c47596565bc6aabea2f352c54e50f17d9d51e5087c5",
+        "source_packet": {
+          "bytes": 6419,
+          "path": "q79_eta9_cayley_critical_binary_mixed_refinement_seed7933.packet.json",
+          "repository": "mtt-causal-base-constraint-fiber",
+          "sha256": "0daf1161e55b743d8b1c7303c00826e7e69a03f7831ca7cba415265dd4b84a87"
+        },
+        "toric_Jacobian_coordinate_midpoint": [
+          4.80766537214415e-05,
+          0.00020184096407734257
+        ]
+      }
+    ],
+    "scope": "This rejects numerical promotion from frozen binary coefficients; it neither rejects nor evaluates the common characteristic-zero geometric functional.",
+    "seed7909_binary64_to_exact_dyadic_refinement_relative_gap": 0.03228619304302732
+  },
+  "canonical_payload_sha256": "239f5429ee1315309605b22485f442ba2feb8d359903ba111c1e91478c34c27a",
+  "checks": {
+    "all_exact_dyadic_refinement_residuals_are_below_1e_80": true,
+    "both_all_row_derivative_residuals_are_below_1e_8": true,
+    "both_all_row_value_residuals_are_below_1e_8": true,
+    "both_binary64_Serre_scale_scouts_are_nonzero": true,
+    "both_complex_minor_factorizations_are_nonsingular": true,
+    "both_top_embedding_derivatives_match_H4_T141_below_1e_10": true,
+    "both_top_embeddings_match_H4_T141_below_1e_12": true,
+    "edge2_and_edge0_use_the_same_hash_bound_complex_minor": true,
+    "frozen_binary_coefficients_fail_the_one_percent_gauge_stability_test": true,
+    "no_binary_scale_or_derivative_is_promoted": true,
+    "no_observed_value_fit_parameter_or_selector_is_used": true,
+    "the_exact_good_reduction_selects_9360_original_relation_rows": true,
+    "the_three_selected_row_gauges_are_distinct": true,
+    "the_top_embedding_eliminates_2584_coordinates": true,
+    "three_predeclared_binary_row_gauges_are_replayed": true
+  },
+  "formula": {
+    "canonical_Serre_scale": "s_C=(585/2)*f_crit(M*m_1494)/f_crit(J_toric)",
+    "critical_functional": "R_critical*f=0 after eliminating the 2584 E_M anchor coordinates",
+    "critical_functional_derivative": "R_critical*f'=-R_critical'*f with the differentiated H4 anchor",
+    "derivative": "s_C'=(585/2)*(a'*b-a*b')/b^2",
+    "top_anchor": "E_M*f=f_H4 and E_M*f'=f_H4'"
+  },
+  "frontier": {
+    "after": "The H4-T141 top functional is embedded through the Cayley multiplier and 2584 coordinates are eliminated. Three predeclared 6777-row gauges all refine their frozen binary systems below 1e-80 residual, yet disagree by more than one percent. Therefore no binary scale or derivative is promoted, and coefficient exactness is isolated as the next cutset.",
+    "before": "T64 supplied the exact scale formula and H4-T141 supplied only projective directed top traces; the finite-field original-row minor was too ill-conditioned over the complex framed member.",
+    "next": "Construct the selected characteristic-zero coefficient balls, certify one exact 6777-row inverse by a strict Neumann bound, and test all remaining relation rows before evaluating denominator and derivative balls."
+  },
+  "guardrails": {
+    "a_binary_scout_value_is_called_the_canonical_geometric_scale": false,
+    "beta_C_or_U_eta9_is_claimed": false,
+    "binary64_residuals_are_called_directed_interval_bounds": false,
+    "exact_dyadic_arithmetic_radii_are_called_forward_error_bounds": false,
+    "the_framed_graph_member_is_called_physically_selected": false,
+    "two_midpoints_are_called_a_pathwide_execution": false
+  },
+  "minors": {
+    "complex_top_anchored": {
+      "columns": 6777,
+      "rows": 6777,
+      "selected_rows_sha256": "af0519e57da97f20c7119e108ed42b036ea4dfee5f67cf8ea671e3800c4bcae5",
+      "selection_seed": 7909
+    },
+    "exact_good_reduction": {
+      "columns": 9360,
+      "deleted_column_zero_based": 0,
+      "rows": 9360,
+      "selected_rows_sha256": "472390f8ff6347c0678fcbc8d8e5317b1abbdb11115be4aa83c48969bddefd8e"
+    }
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "rows": [
+    {
+      "Cox_multiplier_coordinate": [
+        1.0,
+        0.0
+      ],
+      "Cox_multiplier_coordinate_derivative": [
+        0.0,
+        0.0
+      ],
+      "H4_T141_point_packet": {
+        "bytes": 14400,
+        "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_edge2_directed_top_trace_probe.packet.json",
+        "repository": "mtt-preprojection-repair-calculus",
+        "sha256": "fc70066017478d4b987bd04959011542def24586496a46591b84a60fc3a2466d"
+      },
+      "arrays": {
+        "critical_functional": {
+          "bytes": 149904,
+          "path": "q79_eta9_directed_cayley_serre_scale.edge-2.functional.npy",
+          "repository": "mtt-causal-base-constraint-fiber",
+          "sha256": "19f0ad95b7fbf19d6e6934555856dd48c427ad24af1fbd7944ad7e797f7bf942"
+        },
+        "critical_functional_derivative": {
+          "bytes": 149904,
+          "path": "q79_eta9_directed_cayley_serre_scale.edge-2.functional_derivative.npy",
+          "repository": "mtt-causal-base-constraint-fiber",
+          "sha256": "b5ecab99c1653966467f27573978be9e91322bfd698e4f367d1efabc3a28a8ac"
+        }
+      },
+      "cancellation_audit": {
+        "discarded_nondivisible_derivative_relative_maximum": 5.22193447697377e-19,
+        "discarded_nondivisible_value_relative_maximum": 1.8626098427544877e-17
+      },
+      "canonical_Serre_scale": [
+        344123.2782571445,
+        -1525843.5381460243
+      ],
+      "canonical_Serre_scale_derivative": [
+        -9199355.568995755,
+        10115495.499126706
+      ],
+      "critical_derivative_relation_nonzeros": 699732,
+      "critical_functional_free_coordinates": 6777,
+      "critical_functional_top_anchor_rows": 2584,
+      "critical_relation_nonzeros": 1175148,
+      "diagnostics": {
+        "all_row_derivative_absolute_residual": 3.6162727378014714e-11,
+        "all_row_derivative_relative_residual": 4.24370166029624e-18,
+        "all_row_value_absolute_residual": 9.094947017729282e-13,
+        "all_row_value_relative_residual": 1.3627269104430616e-18,
+        "balanced_one_norm": 46.911137379624755,
+        "condition_one_norm_estimate": 1566803794789.4614,
+        "factor_L_nonzeros": 3705502,
+        "factor_U_nonzeros": 5378839,
+        "factor_seconds": 14.830320499953814,
+        "inverse_one_norm_estimate": 33399398997.94419,
+        "selected_derivative_backward_error": 1.2568134036125117e-18,
+        "selected_value_backward_error": 1.4665650210544881e-18,
+        "top_embedding_derivative_relative_residual": 1.6829161950597968e-16,
+        "top_embedding_value_relative_residual": 1.6199607880385616e-16,
+        "total_seconds": 26.976728700101376
+      },
+      "lift_sign": -1,
+      "parameter": 0.5,
+      "section_normalization": 2.0695992213942223e-12,
+      "segment": "edge-2",
+      "top_functional_normalization_column_zero_based": 1494,
+      "toric_Jacobian_coordinate": [
+        4.1140874475376066e-05,
+        0.00018241874769373
+      ],
+      "toric_Jacobian_coordinate_derivative": [
+        -0.00047426260099850946,
+        0.0015643349369105488
+      ],
+      "toric_Jacobian_derivative_terms": 9113,
+      "toric_Jacobian_terms": 9113
+    },
+    {
+      "Cox_multiplier_coordinate": [
+        1.0,
+        0.0
+      ],
+      "Cox_multiplier_coordinate_derivative": [
+        0.0,
+        0.0
+      ],
+      "H4_T141_point_packet": {
+        "bytes": 14037,
+        "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_edge0_directed_top_trace_probe.packet.json",
+        "repository": "mtt-preprojection-repair-calculus",
+        "sha256": "73d3224542c56f941e9c60a64c88275d5f48105eb7e0c421b9d6d742929d82e5"
+      },
+      "arrays": {
+        "critical_functional": {
+          "bytes": 149904,
+          "path": "q79_eta9_directed_cayley_serre_scale.edge-0.functional.npy",
+          "repository": "mtt-causal-base-constraint-fiber",
+          "sha256": "93c30085f667715d7652c72ecba99254ac906f7b74b2809119338f4ce8aeec8b"
+        },
+        "critical_functional_derivative": {
+          "bytes": 149904,
+          "path": "q79_eta9_directed_cayley_serre_scale.edge-0.functional_derivative.npy",
+          "repository": "mtt-causal-base-constraint-fiber",
+          "sha256": "3f6dd1ccd551076ed86e87070ab5ae2730236211624c8dc0ae66431726e3531f"
+        }
+      },
+      "cancellation_audit": {
+        "discarded_nondivisible_derivative_relative_maximum": 2.148948805015779e-18,
+        "discarded_nondivisible_value_relative_maximum": 9.512617437557205e-18
+      },
+      "canonical_Serre_scale": [
+        -195809.8633672804,
+        -93021.64739226464
+      ],
+      "canonical_Serre_scale_derivative": [
+        -106636.35712385761,
+        686731.8998674362
+      ],
+      "critical_derivative_relation_nonzeros": 699732,
+      "critical_functional_free_coordinates": 6777,
+      "critical_functional_top_anchor_rows": 2584,
+      "critical_relation_nonzeros": 1175148,
+      "diagnostics": {
+        "all_row_derivative_absolute_residual": 1.1369146627682677e-10,
+        "all_row_derivative_relative_residual": 2.711152617264779e-17,
+        "all_row_value_absolute_residual": 5.9543803516143485e-12,
+        "all_row_value_relative_residual": 6.0614869286941015e-18,
+        "balanced_one_norm": 46.67421270279337,
+        "condition_one_norm_estimate": 2021074598441.3032,
+        "factor_L_nonzeros": 3718363,
+        "factor_U_nonzeros": 5458880,
+        "factor_seconds": 15.763308199937455,
+        "inverse_one_norm_estimate": 43301739470.376656,
+        "selected_derivative_backward_error": 9.563671159519864e-19,
+        "selected_value_backward_error": 1.5607096516447686e-18,
+        "top_embedding_derivative_relative_residual": 1.4580318229784583e-16,
+        "top_embedding_value_relative_residual": 3.397412858278223e-17,
+        "total_seconds": 27.410051199956797
+      },
+      "lift_sign": -1,
+      "parameter": 0.5,
+      "section_normalization": 2.0695992213942223e-12,
+      "segment": "edge-0",
+      "top_functional_normalization_column_zero_based": 1494,
+      "toric_Jacobian_coordinate": [
+        -0.0012187457917800515,
+        0.0005789787059455875
+      ],
+      "toric_Jacobian_coordinate_derivative": [
+        -0.002894048504010552,
+        -0.0032147646844632102
+      ],
+      "toric_Jacobian_derivative_terms": 9109,
+      "toric_Jacobian_terms": 9109
+    }
+  ],
+  "schema": "mtt.cbf.q79-eta9-directed-cayley-serre-scale.v1",
+  "source_bindings": {
+    "H4_T141_contract": {
+      "bytes": 19450,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_directed_top_trace_contract.packet.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "3916b006d857122fdb3c69cb1f1f05bab2baf82bad9474018216178b708d570f"
+    },
+    "T64_packet": {
+      "bytes": 10216,
+      "path": "q79_eta9_cayley_serre_trace_normalization.packet.json",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "sha256": "96d0e3f76babc287d77c9618ebd4ee82494e23e0ef80c2802568dbbecde401c9"
+    },
+    "T65_complex_minor_packet": {
+      "bytes": 2332,
+      "path": "q79_eta9_cayley_critical_rank_revealing_minor.packet.json",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "sha256": "a175e3248612ce7b0eacb7261c3c089934136ee47f172cd9c2a89b7d3c5b9e2f"
+    },
+    "T65_complex_minor_rows": {
+      "bytes": 54344,
+      "path": "q79_eta9_cayley_critical_rank_revealing_rows.npy",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "sha256": "af0519e57da97f20c7119e108ed42b036ea4dfee5f67cf8ea671e3800c4bcae5"
+    },
+    "T65_exact_good_reduction_minor": {
+      "bytes": 95778,
+      "path": "q79_eta9_cayley_critical_minor.witness.json",
+      "repository": "mtt-causal-base-constraint-fiber",
+      "sha256": "9d07ad77533a5c4f354f27268c1e3c0a1f0a4307e4686a6efbd70b3915d84e4f"
+    }
+  },
+  "status": "FROZEN_BINARY_CAYLEY_SERRE_SCALE_PROMOTION_REJECTED_BY_ROW_GAUGE_TEST",
+  "theorem_id": "CBF.T65",
+  "tier": "EXACT_FINITE_RANK_CERTIFICATE_PLUS_REPRODUCIBLE_BINARY_STABILITY_REJECTION"
+}
