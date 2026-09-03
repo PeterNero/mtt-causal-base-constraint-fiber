@@ -1,0 +1,6994 @@
+{
+  "schema": "mtt.unified-source.g3ad-fixed-fq-second-h-graph-obstruction.v1",
+  "theorem_id": "UST.G3AD",
+  "status": "CLOSED_EXACT_FIRST_ORDER_FIXED_FQ_SELECTED_SECOND_H_GRAPH_NOGO",
+  "inputs": {
+    "global_FQ": {
+      "repository": "20 Mathematical Language Discovery Program",
+      "source_path": "q79_eta9_global_f0_lift.packet.json",
+      "sha256": "ff59b7cd459d29473e656c0f3ed9e588fb7475970d4885b55e336e7d48404937",
+      "git_blob": "64158d330bc95fb29488aab81438389e9005a12a",
+      "hash_convention": "UTF-8 bytes with CRLF normalized to LF (Git blob content)"
+    },
+    "number_field_lift": {
+      "repository": "20 Mathematical Language Discovery Program",
+      "source_path": "q79_eta9_number_field_smooth_lift.packet.json",
+      "sha256": "3bc518f182b8f8c24cdd6550d3805a3733b24ea59b112557982a548a299bfbf8",
+      "git_blob": "28b3242b60c85e77349f52290fca7068bb9bf764",
+      "hash_convention": "UTF-8 bytes with CRLF normalized to LF (Git blob content)"
+    },
+    "second_H_graph_map": {
+      "repository": "20 Mathematical Language Discovery Program",
+      "source_path": "q79_primitive_h_marked_map_padic_compiler.packet.json",
+      "sha256": "f2ceee38d9469411b57f82ecaa8613435ef6654c88bce9ffe993a215eca3421d",
+      "git_blob": "df24408bde414fc93217de03ad44eb5958d12155",
+      "hash_convention": "UTF-8 bytes with CRLF normalized to LF (Git blob content)"
+    },
+    "q79_K3_base": {
+      "repository": "mtt-protospinor-gr-response-proof",
+      "source_path": "q79_degree2_k3_fuyau_torsion_glsm_base_certificate.json",
+      "sha256": "67b39e3053280ad0c8ccde2a0011848159cf353f7b62414c57b6f6418babc22b",
+      "git_blob": "94ed5127f9f460ed7abe552f17d34965b63c8f5b",
+      "hash_convention": "UTF-8 bytes with CRLF normalized to LF (Git blob content)"
+    },
+    "local_G3AC_packet": {
+      "path": "state/ust_g3ac_eta9_graph_prym_orbit.packet.json",
+      "sha256": "944004bddaeabf126adb6ae314ff7bf4180244f72c4734de2d7c846781a810c7"
+    }
+  },
+  "completion_ring": {
+    "prime": 101,
+    "precision": 2,
+    "modulus": 10201,
+    "gamma_relation_coefficients_ascending": [
+      64,
+      16,
+      33,
+      44,
+      89,
+      24,
+      1
+    ],
+    "residue_degree": 6,
+    "alpha_residue_gamma_coordinates": [
+      23,
+      97,
+      74,
+      65,
+      33,
+      98
+    ],
+    "mu_residue_gamma_coordinates": [
+      78,
+      5,
+      27,
+      36,
+      68,
+      3
+    ],
+    "alpha_hensel_lift_gamma_coordinates_mod1012": [
+      3356,
+      4137,
+      2296,
+      3095,
+      6598,
+      8683
+    ],
+    "mu_hensel_lift_gamma_coordinates_mod1012": [
+      8057,
+      5863,
+      835,
+      2561,
+      1280,
+      8184
+    ],
+    "alpha_plus_mu_minus_gamma_mod1012": [
+      1212,
+      9999,
+      3131,
+      5656,
+      7878,
+      6666
+    ],
+    "alpha_cubic_zero_mod1012": true,
+    "mu_square_plus3_zero_mod1012": true,
+    "warning": "The integer-lift generator gamma is not identified with alpha+mu beyond the special fiber; the cubic graph field is embedded by its unique selected Hensel root."
+  },
+  "fixed_FQ": {
+    "formula": "F_Q=A0*T0+A1*T1+A2*T2",
+    "coefficient_lift_rule": "gamma-basis residues are lifted to representatives in [0,100]",
+    "nonzero_gamma_rows": [
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          9,
+          0,
+          0
+        ],
+        "one_coefficients_ascending": [
+          73,
+          18,
+          67
+        ],
+        "mu_coefficients_ascending": [
+          75,
+          8,
+          14
+        ],
+        "gamma_coefficients_ascending": [
+          57,
+          59,
+          40,
+          71,
+          7,
+          73
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          8,
+          1,
+          0
+        ],
+        "one_coefficients_ascending": [
+          84,
+          80,
+          14
+        ],
+        "mu_coefficients_ascending": [
+          9,
+          90,
+          11
+        ],
+        "gamma_coefficients_ascending": [
+          80,
+          78,
+          28,
+          41,
+          52,
+          76
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          8,
+          0,
+          1
+        ],
+        "one_coefficients_ascending": [
+          32,
+          11,
+          25
+        ],
+        "mu_coefficients_ascending": [
+          39,
+          46,
+          58
+        ],
+        "gamma_coefficients_ascending": [
+          81,
+          64,
+          98,
+          21,
+          100,
+          30
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          2,
+          0
+        ],
+        "one_coefficients_ascending": [
+          33,
+          66,
+          41
+        ],
+        "mu_coefficients_ascending": [
+          95,
+          30,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          90,
+          78,
+          52,
+          55,
+          15,
+          44
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          1,
+          1
+        ],
+        "one_coefficients_ascending": [
+          27,
+          31,
+          79
+        ],
+        "mu_coefficients_ascending": [
+          97,
+          57,
+          77
+        ],
+        "gamma_coefficients_ascending": [
+          36,
+          13,
+          18,
+          71,
+          27,
+          18
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          0,
+          2
+        ],
+        "one_coefficients_ascending": [
+          100,
+          73,
+          58
+        ],
+        "mu_coefficients_ascending": [
+          53,
+          21,
+          88
+        ],
+        "gamma_coefficients_ascending": [
+          21,
+          15,
+          22,
+          99,
+          77,
+          71
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          3,
+          0
+        ],
+        "one_coefficients_ascending": [
+          79,
+          100,
+          93
+        ],
+        "mu_coefficients_ascending": [
+          99,
+          94,
+          39
+        ],
+        "gamma_coefficients_ascending": [
+          43,
+          72,
+          56,
+          25,
+          90,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          2,
+          1
+        ],
+        "one_coefficients_ascending": [
+          89,
+          15,
+          92
+        ],
+        "mu_coefficients_ascending": [
+          39,
+          34,
+          61
+        ],
+        "gamma_coefficients_ascending": [
+          13,
+          4,
+          86,
+          80,
+          62,
+          69
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          1,
+          2
+        ],
+        "one_coefficients_ascending": [
+          23,
+          53,
+          57
+        ],
+        "mu_coefficients_ascending": [
+          8,
+          86,
+          92
+        ],
+        "gamma_coefficients_ascending": [
+          61,
+          19,
+          38,
+          39,
+          56,
+          61
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          0,
+          3
+        ],
+        "one_coefficients_ascending": [
+          76,
+          84,
+          37
+        ],
+        "mu_coefficients_ascending": [
+          88,
+          98,
+          24
+        ],
+        "gamma_coefficients_ascending": [
+          26,
+          61,
+          35,
+          30,
+          98,
+          96
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          4,
+          0
+        ],
+        "one_coefficients_ascending": [
+          15,
+          87,
+          10
+        ],
+        "mu_coefficients_ascending": [
+          60,
+          82,
+          17
+        ],
+        "gamma_coefficients_ascending": [
+          28,
+          89,
+          82,
+          55,
+          94,
+          51
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          3,
+          1
+        ],
+        "one_coefficients_ascending": [
+          89,
+          48,
+          8
+        ],
+        "mu_coefficients_ascending": [
+          93,
+          7,
+          35
+        ],
+        "gamma_coefficients_ascending": [
+          34,
+          56,
+          56,
+          39,
+          17,
+          80
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          2,
+          2
+        ],
+        "one_coefficients_ascending": [
+          87,
+          37,
+          7
+        ],
+        "mu_coefficients_ascending": [
+          45,
+          48,
+          79
+        ],
+        "gamma_coefficients_ascending": [
+          84,
+          71,
+          93,
+          17,
+          39,
+          26
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          1,
+          3
+        ],
+        "one_coefficients_ascending": [
+          84,
+          34,
+          24
+        ],
+        "mu_coefficients_ascending": [
+          69,
+          89,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          50,
+          38,
+          40,
+          0,
+          49,
+          94
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          0,
+          4
+        ],
+        "one_coefficients_ascending": [
+          0,
+          15,
+          25
+        ],
+        "mu_coefficients_ascending": [
+          44,
+          27,
+          85
+        ],
+        "gamma_coefficients_ascending": [
+          70,
+          46,
+          58,
+          37,
+          69,
+          59
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          5,
+          0
+        ],
+        "one_coefficients_ascending": [
+          71,
+          30,
+          56
+        ],
+        "mu_coefficients_ascending": [
+          76,
+          26,
+          17
+        ],
+        "gamma_coefficients_ascending": [
+          53,
+          98,
+          53,
+          43,
+          58,
+          54
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          4,
+          1
+        ],
+        "one_coefficients_ascending": [
+          13,
+          100,
+          59
+        ],
+        "mu_coefficients_ascending": [
+          58,
+          25,
+          5
+        ],
+        "gamma_coefficients_ascending": [
+          57,
+          51,
+          93,
+          43,
+          76,
+          31
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          3,
+          2
+        ],
+        "one_coefficients_ascending": [
+          53,
+          66,
+          68
+        ],
+        "mu_coefficients_ascending": [
+          7,
+          20,
+          48
+        ],
+        "gamma_coefficients_ascending": [
+          51,
+          17,
+          36,
+          21,
+          93,
+          41
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          2,
+          3
+        ],
+        "one_coefficients_ascending": [
+          4,
+          32,
+          4
+        ],
+        "mu_coefficients_ascending": [
+          43,
+          53,
+          46
+        ],
+        "gamma_coefficients_ascending": [
+          47,
+          84,
+          100,
+          30,
+          90,
+          97
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          1,
+          4
+        ],
+        "one_coefficients_ascending": [
+          30,
+          6,
+          87
+        ],
+        "mu_coefficients_ascending": [
+          49,
+          57,
+          65
+        ],
+        "gamma_coefficients_ascending": [
+          19,
+          27,
+          38,
+          23,
+          80,
+          24
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          0,
+          5
+        ],
+        "one_coefficients_ascending": [
+          13,
+          61,
+          54
+        ],
+        "mu_coefficients_ascending": [
+          4,
+          9,
+          4
+        ],
+        "gamma_coefficients_ascending": [
+          85,
+          96,
+          65,
+          58,
+          92,
+          53
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          6,
+          0
+        ],
+        "one_coefficients_ascending": [
+          6,
+          82,
+          26
+        ],
+        "mu_coefficients_ascending": [
+          30,
+          76,
+          91
+        ],
+        "gamma_coefficients_ascending": [
+          59,
+          94,
+          0,
+          9,
+          45,
+          77
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          5,
+          1
+        ],
+        "one_coefficients_ascending": [
+          37,
+          43,
+          74
+        ],
+        "mu_coefficients_ascending": [
+          40,
+          10,
+          22
+        ],
+        "gamma_coefficients_ascending": [
+          28,
+          45,
+          1,
+          74,
+          85,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          4,
+          2
+        ],
+        "one_coefficients_ascending": [
+          48,
+          79,
+          15
+        ],
+        "mu_coefficients_ascending": [
+          31,
+          31,
+          89
+        ],
+        "gamma_coefficients_ascending": [
+          37,
+          99,
+          77,
+          95,
+          82,
+          65
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          3,
+          3
+        ],
+        "one_coefficients_ascending": [
+          52,
+          79,
+          5
+        ],
+        "mu_coefficients_ascending": [
+          38,
+          49,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          67,
+          47,
+          76,
+          100,
+          90,
+          76
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          1,
+          5
+        ],
+        "one_coefficients_ascending": [
+          28,
+          16,
+          35
+        ],
+        "mu_coefficients_ascending": [
+          36,
+          11,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          82,
+          76,
+          57,
+          62,
+          10,
+          45
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          0,
+          6
+        ],
+        "one_coefficients_ascending": [
+          7,
+          7,
+          13
+        ],
+        "mu_coefficients_ascending": [
+          33,
+          60,
+          37
+        ],
+        "gamma_coefficients_ascending": [
+          98,
+          27,
+          11,
+          40,
+          97,
+          68
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          7,
+          0
+        ],
+        "one_coefficients_ascending": [
+          32,
+          7,
+          97
+        ],
+        "mu_coefficients_ascending": [
+          51,
+          93,
+          6
+        ],
+        "gamma_coefficients_ascending": [
+          49,
+          11,
+          54,
+          14,
+          42,
+          76
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          6,
+          1
+        ],
+        "one_coefficients_ascending": [
+          62,
+          36,
+          58
+        ],
+        "mu_coefficients_ascending": [
+          41,
+          28,
+          34
+        ],
+        "gamma_coefficients_ascending": [
+          28,
+          35,
+          8,
+          52,
+          46,
+          16
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          5,
+          2
+        ],
+        "one_coefficients_ascending": [
+          18,
+          93,
+          76
+        ],
+        "mu_coefficients_ascending": [
+          85,
+          68,
+          45
+        ],
+        "gamma_coefficients_ascending": [
+          25,
+          54,
+          89,
+          90,
+          68,
+          94
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          4,
+          3
+        ],
+        "one_coefficients_ascending": [
+          24,
+          15,
+          95
+        ],
+        "mu_coefficients_ascending": [
+          21,
+          39,
+          7
+        ],
+        "gamma_coefficients_ascending": [
+          79,
+          10,
+          70,
+          32,
+          66,
+          18
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          1,
+          6
+        ],
+        "one_coefficients_ascending": [
+          51,
+          16,
+          96
+        ],
+        "mu_coefficients_ascending": [
+          87,
+          76,
+          38
+        ],
+        "gamma_coefficients_ascending": [
+          54,
+          68,
+          37,
+          12,
+          80,
+          53
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          0,
+          7
+        ],
+        "one_coefficients_ascending": [
+          46,
+          67,
+          96
+        ],
+        "mu_coefficients_ascending": [
+          9,
+          18,
+          78
+        ],
+        "gamma_coefficients_ascending": [
+          11,
+          31,
+          95,
+          14,
+          21,
+          97
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          8,
+          0
+        ],
+        "one_coefficients_ascending": [
+          38,
+          65,
+          15
+        ],
+        "mu_coefficients_ascending": [
+          82,
+          97,
+          37
+        ],
+        "gamma_coefficients_ascending": [
+          64,
+          20,
+          1,
+          89,
+          43,
+          10
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          7,
+          1
+        ],
+        "one_coefficients_ascending": [
+          53,
+          5,
+          21
+        ],
+        "mu_coefficients_ascending": [
+          15,
+          87,
+          51
+        ],
+        "gamma_coefficients_ascending": [
+          78,
+          74,
+          91,
+          66,
+          55,
+          81
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          6,
+          2
+        ],
+        "one_coefficients_ascending": [
+          98,
+          86,
+          15
+        ],
+        "mu_coefficients_ascending": [
+          97,
+          95,
+          90
+        ],
+        "gamma_coefficients_ascending": [
+          89,
+          63,
+          78,
+          18,
+          63,
+          44
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          5,
+          3
+        ],
+        "one_coefficients_ascending": [
+          41,
+          64,
+          25
+        ],
+        "mu_coefficients_ascending": [
+          68,
+          21,
+          35
+        ],
+        "gamma_coefficients_ascending": [
+          13,
+          75,
+          38,
+          57,
+          31,
+          37
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          1,
+          7
+        ],
+        "one_coefficients_ascending": [
+          5,
+          44,
+          9
+        ],
+        "mu_coefficients_ascending": [
+          82,
+          18,
+          92
+        ],
+        "gamma_coefficients_ascending": [
+          71,
+          53,
+          3,
+          87,
+          40,
+          97
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          0,
+          8
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          87,
+          84,
+          45
+        ],
+        "gamma_coefficients_ascending": [
+          81,
+          22,
+          17,
+          10,
+          40,
+          10
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          9,
+          0
+        ],
+        "one_coefficients_ascending": [
+          4,
+          27,
+          44
+        ],
+        "mu_coefficients_ascending": [
+          3,
+          96,
+          33
+        ],
+        "gamma_coefficients_ascending": [
+          3,
+          70,
+          4,
+          64,
+          91,
+          93
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          8,
+          1
+        ],
+        "one_coefficients_ascending": [
+          40,
+          83,
+          11
+        ],
+        "mu_coefficients_ascending": [
+          30,
+          37,
+          84
+        ],
+        "gamma_coefficients_ascending": [
+          2,
+          72,
+          35,
+          90,
+          10,
+          7
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          7,
+          2
+        ],
+        "one_coefficients_ascending": [
+          77,
+          85,
+          67
+        ],
+        "mu_coefficients_ascending": [
+          51,
+          99,
+          57
+        ],
+        "gamma_coefficients_ascending": [
+          41,
+          45,
+          87,
+          60,
+          69,
+          11
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          6,
+          3
+        ],
+        "one_coefficients_ascending": [
+          69,
+          83,
+          10
+        ],
+        "mu_coefficients_ascending": [
+          14,
+          34,
+          7
+        ],
+        "gamma_coefficients_ascending": [
+          2,
+          7,
+          24,
+          5,
+          79,
+          42
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          1,
+          8
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          52,
+          44,
+          65
+        ],
+        "gamma_coefficients_ascending": [
+          99,
+          48,
+          8,
+          6,
+          63,
+          13
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          0,
+          9
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          62,
+          85,
+          70
+        ],
+        "gamma_coefficients_ascending": [
+          7,
+          37,
+          61,
+          72,
+          92,
+          68
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          6,
+          0,
+          0
+        ],
+        "one_coefficients_ascending": [
+          94,
+          48,
+          48
+        ],
+        "mu_coefficients_ascending": [
+          7,
+          53,
+          87
+        ],
+        "gamma_coefficients_ascending": [
+          11,
+          67,
+          31,
+          70,
+          23,
+          45
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          5,
+          1,
+          0
+        ],
+        "one_coefficients_ascending": [
+          3,
+          57,
+          22
+        ],
+        "mu_coefficients_ascending": [
+          24,
+          26,
+          54
+        ],
+        "gamma_coefficients_ascending": [
+          65,
+          34,
+          46,
+          5,
+          8,
+          75
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          5,
+          0,
+          1
+        ],
+        "one_coefficients_ascending": [
+          12,
+          99,
+          4
+        ],
+        "mu_coefficients_ascending": [
+          88,
+          59,
+          87
+        ],
+        "gamma_coefficients_ascending": [
+          26,
+          58,
+          41,
+          67,
+          44,
+          62
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          2,
+          0
+        ],
+        "one_coefficients_ascending": [
+          91,
+          2,
+          90
+        ],
+        "mu_coefficients_ascending": [
+          20,
+          61,
+          62
+        ],
+        "gamma_coefficients_ascending": [
+          67,
+          47,
+          18,
+          17,
+          14,
+          86
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          1,
+          1
+        ],
+        "one_coefficients_ascending": [
+          81,
+          80,
+          47
+        ],
+        "mu_coefficients_ascending": [
+          52,
+          42,
+          93
+        ],
+        "gamma_coefficients_ascending": [
+          14,
+          82,
+          97,
+          14,
+          36,
+          64
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          0,
+          2
+        ],
+        "one_coefficients_ascending": [
+          92,
+          90,
+          76
+        ],
+        "mu_coefficients_ascending": [
+          6,
+          37,
+          76
+        ],
+        "gamma_coefficients_ascending": [
+          5,
+          49,
+          28,
+          5,
+          84,
+          71
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          3,
+          0
+        ],
+        "one_coefficients_ascending": [
+          85,
+          87,
+          18
+        ],
+        "mu_coefficients_ascending": [
+          7,
+          53,
+          87
+        ],
+        "gamma_coefficients_ascending": [
+          74,
+          95,
+          75,
+          42,
+          75,
+          92
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          2,
+          1
+        ],
+        "one_coefficients_ascending": [
+          43,
+          68,
+          53
+        ],
+        "mu_coefficients_ascending": [
+          24,
+          26,
+          54
+        ],
+        "gamma_coefficients_ascending": [
+          49,
+          49,
+          53,
+          59,
+          48,
+          88
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          1,
+          2
+        ],
+        "one_coefficients_ascending": [
+          89,
+          18,
+          37
+        ],
+        "mu_coefficients_ascending": [
+          88,
+          59,
+          87
+        ],
+        "gamma_coefficients_ascending": [
+          6,
+          18,
+          82,
+          15,
+          93,
+          64
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          0,
+          3
+        ],
+        "one_coefficients_ascending": [
+          32,
+          79,
+          67
+        ],
+        "mu_coefficients_ascending": [
+          72,
+          62,
+          54
+        ],
+        "gamma_coefficients_ascending": [
+          40,
+          81,
+          11,
+          46,
+          9,
+          66
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          4,
+          0
+        ],
+        "one_coefficients_ascending": [
+          3,
+          57,
+          22
+        ],
+        "mu_coefficients_ascending": [
+          24,
+          26,
+          54
+        ],
+        "gamma_coefficients_ascending": [
+          65,
+          34,
+          46,
+          5,
+          8,
+          75
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          3,
+          1
+        ],
+        "one_coefficients_ascending": [
+          9,
+          46,
+          68
+        ],
+        "mu_coefficients_ascending": [
+          7,
+          19,
+          48
+        ],
+        "gamma_coefficients_ascending": [
+          39,
+          67,
+          64,
+          38,
+          68,
+          4
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          2,
+          2
+        ],
+        "one_coefficients_ascending": [
+          62,
+          76,
+          70
+        ],
+        "mu_coefficients_ascending": [
+          43,
+          76,
+          70
+        ],
+        "gamma_coefficients_ascending": [
+          22,
+          16,
+          58,
+          76,
+          74,
+          76
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          1,
+          3
+        ],
+        "one_coefficients_ascending": [
+          76,
+          54,
+          93
+        ],
+        "mu_coefficients_ascending": [
+          86,
+          29,
+          30
+        ],
+        "gamma_coefficients_ascending": [
+          56,
+          80,
+          66,
+          91,
+          59,
+          40
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          0,
+          4
+        ],
+        "one_coefficients_ascending": [
+          84,
+          53,
+          88
+        ],
+        "mu_coefficients_ascending": [
+          68,
+          41,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          30,
+          30,
+          49,
+          85,
+          56,
+          31
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          5,
+          0
+        ],
+        "one_coefficients_ascending": [
+          98,
+          48,
+          64
+        ],
+        "mu_coefficients_ascending": [
+          68,
+          59,
+          28
+        ],
+        "gamma_coefficients_ascending": [
+          54,
+          100,
+          66,
+          66,
+          31,
+          41
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          4,
+          1
+        ],
+        "one_coefficients_ascending": [
+          67,
+          31,
+          46
+        ],
+        "mu_coefficients_ascending": [
+          68,
+          43,
+          28
+        ],
+        "gamma_coefficients_ascending": [
+          40,
+          61,
+          41,
+          93,
+          1,
+          12
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          3,
+          2
+        ],
+        "one_coefficients_ascending": [
+          31,
+          61,
+          49
+        ],
+        "mu_coefficients_ascending": [
+          41,
+          80,
+          80
+        ],
+        "gamma_coefficients_ascending": [
+          43,
+          76,
+          5,
+          100,
+          94,
+          6
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          2,
+          3
+        ],
+        "one_coefficients_ascending": [
+          87,
+          34,
+          63
+        ],
+        "mu_coefficients_ascending": [
+          2,
+          86,
+          39
+        ],
+        "gamma_coefficients_ascending": [
+          37,
+          98,
+          58,
+          14,
+          9,
+          3
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          1,
+          4
+        ],
+        "one_coefficients_ascending": [
+          3,
+          93,
+          65
+        ],
+        "mu_coefficients_ascending": [
+          28,
+          74,
+          58
+        ],
+        "gamma_coefficients_ascending": [
+          19,
+          40,
+          91,
+          12,
+          31,
+          60
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          0,
+          5
+        ],
+        "one_coefficients_ascending": [
+          83,
+          51,
+          12
+        ],
+        "mu_coefficients_ascending": [
+          23,
+          24,
+          22
+        ],
+        "gamma_coefficients_ascending": [
+          35,
+          28,
+          28,
+          36,
+          39,
+          81
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          6,
+          0
+        ],
+        "one_coefficients_ascending": [
+          41,
+          30,
+          44
+        ],
+        "mu_coefficients_ascending": [
+          2,
+          25,
+          74
+        ],
+        "gamma_coefficients_ascending": [
+          10,
+          83,
+          94,
+          47,
+          68,
+          16
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          5,
+          1
+        ],
+        "one_coefficients_ascending": [
+          42,
+          92,
+          34
+        ],
+        "mu_coefficients_ascending": [
+          36,
+          20,
+          38
+        ],
+        "gamma_coefficients_ascending": [
+          28,
+          34,
+          52,
+          16,
+          77,
+          6
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          4,
+          2
+        ],
+        "one_coefficients_ascending": [
+          93,
+          98,
+          9
+        ],
+        "mu_coefficients_ascending": [
+          59,
+          79,
+          21
+        ],
+        "gamma_coefficients_ascending": [
+          50,
+          68,
+          74,
+          28,
+          0,
+          49
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          3,
+          3
+        ],
+        "one_coefficients_ascending": [
+          94,
+          45,
+          42
+        ],
+        "mu_coefficients_ascending": [
+          79,
+          85,
+          7
+        ],
+        "gamma_coefficients_ascending": [
+          9,
+          94,
+          19,
+          28,
+          87,
+          100
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          1,
+          5
+        ],
+        "one_coefficients_ascending": [
+          57,
+          91,
+          8
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          47,
+          65,
+          65,
+          20,
+          33,
+          94
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          0,
+          6
+        ],
+        "one_coefficients_ascending": [
+          63,
+          83,
+          91
+        ],
+        "mu_coefficients_ascending": [
+          2,
+          34,
+          48
+        ],
+        "gamma_coefficients_ascending": [
+          18,
+          75,
+          49,
+          64,
+          30,
+          2
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          9,
+          0,
+          0
+        ],
+        "one_coefficients_ascending": [
+          28,
+          83,
+          34
+        ],
+        "mu_coefficients_ascending": [
+          75,
+          8,
+          14
+        ],
+        "gamma_coefficients_ascending": [
+          44,
+          62,
+          27,
+          93,
+          36,
+          18
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          8,
+          1,
+          0
+        ],
+        "one_coefficients_ascending": [
+          17,
+          21,
+          87
+        ],
+        "mu_coefficients_ascending": [
+          9,
+          90,
+          11
+        ],
+        "gamma_coefficients_ascending": [
+          7,
+          75,
+          66,
+          22,
+          16,
+          29
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          8,
+          0,
+          1
+        ],
+        "one_coefficients_ascending": [
+          69,
+          90,
+          76
+        ],
+        "mu_coefficients_ascending": [
+          39,
+          46,
+          58
+        ],
+        "gamma_coefficients_ascending": [
+          55,
+          21,
+          29,
+          9,
+          9,
+          100
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          2,
+          0
+        ],
+        "one_coefficients_ascending": [
+          68,
+          35,
+          60
+        ],
+        "mu_coefficients_ascending": [
+          95,
+          30,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          86,
+          72,
+          36,
+          10,
+          94,
+          87
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          1,
+          1
+        ],
+        "one_coefficients_ascending": [
+          74,
+          70,
+          22
+        ],
+        "mu_coefficients_ascending": [
+          97,
+          57,
+          77
+        ],
+        "gamma_coefficients_ascending": [
+          69,
+          45,
+          9,
+          29,
+          28,
+          51
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          0,
+          2
+        ],
+        "one_coefficients_ascending": [
+          1,
+          28,
+          43
+        ],
+        "mu_coefficients_ascending": [
+          53,
+          21,
+          88
+        ],
+        "gamma_coefficients_ascending": [
+          40,
+          85,
+          18,
+          84,
+          45,
+          86
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          3,
+          0
+        ],
+        "one_coefficients_ascending": [
+          22,
+          1,
+          8
+        ],
+        "mu_coefficients_ascending": [
+          99,
+          94,
+          39
+        ],
+        "gamma_coefficients_ascending": [
+          68,
+          13,
+          97,
+          81,
+          74,
+          22
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          2,
+          1
+        ],
+        "one_coefficients_ascending": [
+          12,
+          86,
+          9
+        ],
+        "mu_coefficients_ascending": [
+          39,
+          34,
+          61
+        ],
+        "gamma_coefficients_ascending": [
+          44,
+          54,
+          56,
+          92,
+          15,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          1,
+          2
+        ],
+        "one_coefficients_ascending": [
+          78,
+          48,
+          44
+        ],
+        "mu_coefficients_ascending": [
+          8,
+          86,
+          92
+        ],
+        "gamma_coefficients_ascending": [
+          98,
+          11,
+          39,
+          14,
+          46,
+          73
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          0,
+          3
+        ],
+        "one_coefficients_ascending": [
+          25,
+          17,
+          64
+        ],
+        "mu_coefficients_ascending": [
+          88,
+          98,
+          24
+        ],
+        "gamma_coefficients_ascending": [
+          35,
+          22,
+          79,
+          32,
+          59,
+          8
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          4,
+          0
+        ],
+        "one_coefficients_ascending": [
+          86,
+          14,
+          91
+        ],
+        "mu_coefficients_ascending": [
+          60,
+          82,
+          17
+        ],
+        "gamma_coefficients_ascending": [
+          92,
+          66,
+          91,
+          99,
+          60,
+          9
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          3,
+          1
+        ],
+        "one_coefficients_ascending": [
+          12,
+          53,
+          93
+        ],
+        "mu_coefficients_ascending": [
+          93,
+          7,
+          35
+        ],
+        "gamma_coefficients_ascending": [
+          36,
+          87,
+          28,
+          34,
+          62,
+          38
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          2,
+          2
+        ],
+        "one_coefficients_ascending": [
+          14,
+          64,
+          94
+        ],
+        "mu_coefficients_ascending": [
+          45,
+          48,
+          79
+        ],
+        "gamma_coefficients_ascending": [
+          45,
+          96,
+          51,
+          44,
+          17,
+          35
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          1,
+          3
+        ],
+        "one_coefficients_ascending": [
+          17,
+          67,
+          77
+        ],
+        "mu_coefficients_ascending": [
+          69,
+          89,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          28,
+          59,
+          76,
+          44,
+          71,
+          15
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          0,
+          4
+        ],
+        "one_coefficients_ascending": [
+          0,
+          86,
+          76
+        ],
+        "mu_coefficients_ascending": [
+          44,
+          27,
+          85
+        ],
+        "gamma_coefficients_ascending": [
+          25,
+          35,
+          3,
+          10,
+          17,
+          52
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          5,
+          0
+        ],
+        "one_coefficients_ascending": [
+          30,
+          71,
+          45
+        ],
+        "mu_coefficients_ascending": [
+          76,
+          26,
+          17
+        ],
+        "gamma_coefficients_ascending": [
+          97,
+          89,
+          99,
+          95,
+          66,
+          45
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          4,
+          1
+        ],
+        "one_coefficients_ascending": [
+          88,
+          1,
+          42
+        ],
+        "mu_coefficients_ascending": [
+          58,
+          25,
+          5
+        ],
+        "gamma_coefficients_ascending": [
+          64,
+          53,
+          58,
+          37,
+          65,
+          91
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          3,
+          2
+        ],
+        "one_coefficients_ascending": [
+          48,
+          35,
+          33
+        ],
+        "mu_coefficients_ascending": [
+          7,
+          20,
+          48
+        ],
+        "gamma_coefficients_ascending": [
+          37,
+          19,
+          15,
+          49,
+          70,
+          56
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          2,
+          3
+        ],
+        "one_coefficients_ascending": [
+          97,
+          69,
+          97
+        ],
+        "mu_coefficients_ascending": [
+          43,
+          53,
+          46
+        ],
+        "gamma_coefficients_ascending": [
+          64,
+          12,
+          13,
+          48,
+          39,
+          23
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          1,
+          4
+        ],
+        "one_coefficients_ascending": [
+          71,
+          95,
+          14
+        ],
+        "mu_coefficients_ascending": [
+          49,
+          57,
+          65
+        ],
+        "gamma_coefficients_ascending": [
+          49,
+          11,
+          99,
+          73,
+          96,
+          82
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          0,
+          5
+        ],
+        "one_coefficients_ascending": [
+          88,
+          40,
+          47
+        ],
+        "mu_coefficients_ascending": [
+          4,
+          9,
+          4
+        ],
+        "gamma_coefficients_ascending": [
+          40,
+          95,
+          16,
+          51,
+          3,
+          60
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          6,
+          0
+        ],
+        "one_coefficients_ascending": [
+          95,
+          19,
+          75
+        ],
+        "mu_coefficients_ascending": [
+          30,
+          76,
+          91
+        ],
+        "gamma_coefficients_ascending": [
+          97,
+          32,
+          54,
+          43,
+          0,
+          52
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          5,
+          1
+        ],
+        "one_coefficients_ascending": [
+          64,
+          58,
+          27
+        ],
+        "mu_coefficients_ascending": [
+          40,
+          10,
+          22
+        ],
+        "gamma_coefficients_ascending": [
+          67,
+          78,
+          5,
+          67,
+          76,
+          85
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          4,
+          2
+        ],
+        "one_coefficients_ascending": [
+          53,
+          22,
+          86
+        ],
+        "mu_coefficients_ascending": [
+          31,
+          31,
+          89
+        ],
+        "gamma_coefficients_ascending": [
+          27,
+          6,
+          87,
+          89,
+          97,
+          97
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          3,
+          3
+        ],
+        "one_coefficients_ascending": [
+          49,
+          22,
+          96
+        ],
+        "mu_coefficients_ascending": [
+          38,
+          49,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          94,
+          67,
+          28,
+          52,
+          53,
+          66
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          1,
+          5
+        ],
+        "one_coefficients_ascending": [
+          73,
+          85,
+          66
+        ],
+        "mu_coefficients_ascending": [
+          36,
+          11,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          92,
+          61,
+          13,
+          48,
+          45,
+          86
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          0,
+          6
+        ],
+        "one_coefficients_ascending": [
+          94,
+          94,
+          88
+        ],
+        "mu_coefficients_ascending": [
+          33,
+          60,
+          37
+        ],
+        "gamma_coefficients_ascending": [
+          57,
+          27,
+          20,
+          33,
+          46,
+          3
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          7,
+          0
+        ],
+        "one_coefficients_ascending": [
+          69,
+          94,
+          4
+        ],
+        "mu_coefficients_ascending": [
+          51,
+          93,
+          6
+        ],
+        "gamma_coefficients_ascending": [
+          85,
+          92,
+          25,
+          77,
+          44,
+          81
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          6,
+          1
+        ],
+        "one_coefficients_ascending": [
+          39,
+          65,
+          43
+        ],
+        "mu_coefficients_ascending": [
+          41,
+          28,
+          34
+        ],
+        "gamma_coefficients_ascending": [
+          7,
+          11,
+          26,
+          100,
+          32,
+          11
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          5,
+          2
+        ],
+        "one_coefficients_ascending": [
+          83,
+          8,
+          25
+        ],
+        "mu_coefficients_ascending": [
+          85,
+          68,
+          45
+        ],
+        "gamma_coefficients_ascending": [
+          15,
+          20,
+          17,
+          15,
+          62,
+          42
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          4,
+          3
+        ],
+        "one_coefficients_ascending": [
+          77,
+          86,
+          6
+        ],
+        "mu_coefficients_ascending": [
+          21,
+          39,
+          7
+        ],
+        "gamma_coefficients_ascending": [
+          75,
+          16,
+          17,
+          97,
+          75,
+          2
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          1,
+          6
+        ],
+        "one_coefficients_ascending": [
+          50,
+          85,
+          5
+        ],
+        "mu_coefficients_ascending": [
+          87,
+          76,
+          38
+        ],
+        "gamma_coefficients_ascending": [
+          97,
+          0,
+          64,
+          32,
+          8,
+          27
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          0,
+          7
+        ],
+        "one_coefficients_ascending": [
+          55,
+          34,
+          5
+        ],
+        "mu_coefficients_ascending": [
+          9,
+          18,
+          78
+        ],
+        "gamma_coefficients_ascending": [
+          41,
+          68,
+          48,
+          70,
+          17,
+          74
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          8,
+          0
+        ],
+        "one_coefficients_ascending": [
+          63,
+          36,
+          86
+        ],
+        "mu_coefficients_ascending": [
+          82,
+          97,
+          37
+        ],
+        "gamma_coefficients_ascending": [
+          11,
+          17,
+          63,
+          85,
+          73,
+          59
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          7,
+          1
+        ],
+        "one_coefficients_ascending": [
+          48,
+          96,
+          80
+        ],
+        "mu_coefficients_ascending": [
+          15,
+          87,
+          51
+        ],
+        "gamma_coefficients_ascending": [
+          1,
+          8,
+          99,
+          90,
+          16,
+          78
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          6,
+          2
+        ],
+        "one_coefficients_ascending": [
+          3,
+          15,
+          86
+        ],
+        "mu_coefficients_ascending": [
+          97,
+          95,
+          90
+        ],
+        "gamma_coefficients_ascending": [
+          61,
+          26,
+          62,
+          11,
+          20,
+          17
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          5,
+          3
+        ],
+        "one_coefficients_ascending": [
+          60,
+          37,
+          76
+        ],
+        "mu_coefficients_ascending": [
+          68,
+          21,
+          35
+        ],
+        "gamma_coefficients_ascending": [
+          56,
+          52,
+          3,
+          23,
+          78,
+          21
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          1,
+          7
+        ],
+        "one_coefficients_ascending": [
+          96,
+          57,
+          92
+        ],
+        "mu_coefficients_ascending": [
+          82,
+          18,
+          92
+        ],
+        "gamma_coefficients_ascending": [
+          67,
+          71,
+          88,
+          81,
+          31,
+          15
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          0,
+          8
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          87,
+          84,
+          45
+        ],
+        "gamma_coefficients_ascending": [
+          81,
+          22,
+          17,
+          10,
+          40,
+          10
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          9,
+          0
+        ],
+        "one_coefficients_ascending": [
+          97,
+          74,
+          57
+        ],
+        "mu_coefficients_ascending": [
+          3,
+          96,
+          33
+        ],
+        "gamma_coefficients_ascending": [
+          70,
+          11,
+          81,
+          92,
+          73,
+          56
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          8,
+          1
+        ],
+        "one_coefficients_ascending": [
+          61,
+          18,
+          90
+        ],
+        "mu_coefficients_ascending": [
+          30,
+          37,
+          84
+        ],
+        "gamma_coefficients_ascending": [
+          44,
+          36,
+          56,
+          32,
+          23,
+          26
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          7,
+          2
+        ],
+        "one_coefficients_ascending": [
+          24,
+          16,
+          34
+        ],
+        "mu_coefficients_ascending": [
+          51,
+          99,
+          57
+        ],
+        "gamma_coefficients_ascending": [
+          69,
+          79,
+          56,
+          58,
+          19,
+          55
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          6,
+          3
+        ],
+        "one_coefficients_ascending": [
+          32,
+          18,
+          91
+        ],
+        "mu_coefficients_ascending": [
+          14,
+          34,
+          7
+        ],
+        "gamma_coefficients_ascending": [
+          41,
+          53,
+          19,
+          64,
+          6,
+          77
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          1,
+          8
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          52,
+          44,
+          65
+        ],
+        "gamma_coefficients_ascending": [
+          99,
+          48,
+          8,
+          6,
+          63,
+          13
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          0,
+          9
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          62,
+          85,
+          70
+        ],
+        "gamma_coefficients_ascending": [
+          7,
+          37,
+          61,
+          72,
+          92,
+          68
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          6,
+          0,
+          0
+        ],
+        "one_coefficients_ascending": [
+          94,
+          48,
+          48
+        ],
+        "mu_coefficients_ascending": [
+          94,
+          48,
+          14
+        ],
+        "gamma_coefficients_ascending": [
+          76,
+          51,
+          68,
+          70,
+          27,
+          31
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          5,
+          1,
+          0
+        ],
+        "one_coefficients_ascending": [
+          3,
+          57,
+          22
+        ],
+        "mu_coefficients_ascending": [
+          77,
+          75,
+          47
+        ],
+        "gamma_coefficients_ascending": [
+          36,
+          1,
+          41,
+          81,
+          44,
+          36
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          5,
+          0,
+          1
+        ],
+        "one_coefficients_ascending": [
+          12,
+          99,
+          4
+        ],
+        "mu_coefficients_ascending": [
+          13,
+          42,
+          14
+        ],
+        "gamma_coefficients_ascending": [
+          25,
+          84,
+          64,
+          40,
+          86,
+          14
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          2,
+          0
+        ],
+        "one_coefficients_ascending": [
+          91,
+          2,
+          90
+        ],
+        "mu_coefficients_ascending": [
+          81,
+          40,
+          39
+        ],
+        "gamma_coefficients_ascending": [
+          6,
+          45,
+          59,
+          67,
+          54,
+          29
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          1,
+          1
+        ],
+        "one_coefficients_ascending": [
+          81,
+          80,
+          47
+        ],
+        "mu_coefficients_ascending": [
+          49,
+          59,
+          8
+        ],
+        "gamma_coefficients_ascending": [
+          50,
+          1,
+          17,
+          28,
+          91,
+          6
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          0,
+          2
+        ],
+        "one_coefficients_ascending": [
+          92,
+          90,
+          76
+        ],
+        "mu_coefficients_ascending": [
+          95,
+          64,
+          25
+        ],
+        "gamma_coefficients_ascending": [
+          15,
+          9,
+          4,
+          84,
+          27,
+          100
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          3,
+          0
+        ],
+        "one_coefficients_ascending": [
+          85,
+          87,
+          18
+        ],
+        "mu_coefficients_ascending": [
+          94,
+          48,
+          14
+        ],
+        "gamma_coefficients_ascending": [
+          38,
+          79,
+          11,
+          42,
+          79,
+          78
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          2,
+          1
+        ],
+        "one_coefficients_ascending": [
+          43,
+          68,
+          53
+        ],
+        "mu_coefficients_ascending": [
+          77,
+          75,
+          47
+        ],
+        "gamma_coefficients_ascending": [
+          20,
+          16,
+          48,
+          34,
+          84,
+          49
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          1,
+          2
+        ],
+        "one_coefficients_ascending": [
+          89,
+          18,
+          37
+        ],
+        "mu_coefficients_ascending": [
+          13,
+          42,
+          14
+        ],
+        "gamma_coefficients_ascending": [
+          5,
+          44,
+          4,
+          89,
+          34,
+          16
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          0,
+          3
+        ],
+        "one_coefficients_ascending": [
+          32,
+          79,
+          67
+        ],
+        "mu_coefficients_ascending": [
+          29,
+          39,
+          47
+        ],
+        "gamma_coefficients_ascending": [
+          71,
+          34,
+          41,
+          85,
+          49,
+          27
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          4,
+          0
+        ],
+        "one_coefficients_ascending": [
+          3,
+          57,
+          22
+        ],
+        "mu_coefficients_ascending": [
+          77,
+          75,
+          47
+        ],
+        "gamma_coefficients_ascending": [
+          36,
+          1,
+          41,
+          81,
+          44,
+          36
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          3,
+          1
+        ],
+        "one_coefficients_ascending": [
+          9,
+          46,
+          68
+        ],
+        "mu_coefficients_ascending": [
+          94,
+          82,
+          53
+        ],
+        "gamma_coefficients_ascending": [
+          78,
+          91,
+          27,
+          61,
+          49,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          2,
+          2
+        ],
+        "one_coefficients_ascending": [
+          62,
+          76,
+          70
+        ],
+        "mu_coefficients_ascending": [
+          58,
+          25,
+          31
+        ],
+        "gamma_coefficients_ascending": [
+          75,
+          66,
+          78,
+          16,
+          33,
+          83
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          1,
+          3
+        ],
+        "one_coefficients_ascending": [
+          76,
+          54,
+          93
+        ],
+        "mu_coefficients_ascending": [
+          15,
+          72,
+          71
+        ],
+        "gamma_coefficients_ascending": [
+          19,
+          44,
+          54,
+          34,
+          52,
+          13
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          0,
+          4
+        ],
+        "one_coefficients_ascending": [
+          84,
+          53,
+          88
+        ],
+        "mu_coefficients_ascending": [
+          33,
+          60,
+          20
+        ],
+        "gamma_coefficients_ascending": [
+          43,
+          96,
+          53,
+          32,
+          15,
+          49
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          5,
+          0
+        ],
+        "one_coefficients_ascending": [
+          98,
+          48,
+          64
+        ],
+        "mu_coefficients_ascending": [
+          33,
+          42,
+          73
+        ],
+        "gamma_coefficients_ascending": [
+          12,
+          17,
+          21,
+          27,
+          57,
+          89
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          4,
+          1
+        ],
+        "one_coefficients_ascending": [
+          67,
+          31,
+          46
+        ],
+        "mu_coefficients_ascending": [
+          33,
+          58,
+          73
+        ],
+        "gamma_coefficients_ascending": [
+          10,
+          29,
+          18,
+          27,
+          8,
+          33
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          3,
+          2
+        ],
+        "one_coefficients_ascending": [
+          31,
+          61,
+          49
+        ],
+        "mu_coefficients_ascending": [
+          60,
+          21,
+          21
+        ],
+        "gamma_coefficients_ascending": [
+          66,
+          20,
+          73,
+          29,
+          21,
+          8
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          2,
+          3
+        ],
+        "one_coefficients_ascending": [
+          87,
+          34,
+          63
+        ],
+        "mu_coefficients_ascending": [
+          99,
+          15,
+          62
+        ],
+        "gamma_coefficients_ascending": [
+          15,
+          49,
+          3,
+          61,
+          49,
+          94
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          1,
+          4
+        ],
+        "one_coefficients_ascending": [
+          3,
+          93,
+          65
+        ],
+        "mu_coefficients_ascending": [
+          73,
+          27,
+          43
+        ],
+        "gamma_coefficients_ascending": [
+          63,
+          1,
+          65,
+          89,
+          12,
+          18
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          0,
+          5
+        ],
+        "one_coefficients_ascending": [
+          83,
+          51,
+          12
+        ],
+        "mu_coefficients_ascending": [
+          78,
+          77,
+          79
+        ],
+        "gamma_coefficients_ascending": [
+          6,
+          43,
+          37,
+          19,
+          73,
+          7
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          6,
+          0
+        ],
+        "one_coefficients_ascending": [
+          41,
+          30,
+          44
+        ],
+        "mu_coefficients_ascending": [
+          99,
+          76,
+          27
+        ],
+        "gamma_coefficients_ascending": [
+          34,
+          53,
+          71,
+          12,
+          47,
+          3
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          5,
+          1
+        ],
+        "one_coefficients_ascending": [
+          42,
+          92,
+          34
+        ],
+        "mu_coefficients_ascending": [
+          65,
+          81,
+          63
+        ],
+        "gamma_coefficients_ascending": [
+          98,
+          99,
+          55,
+          65,
+          41,
+          87
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          4,
+          2
+        ],
+        "one_coefficients_ascending": [
+          93,
+          98,
+          9
+        ],
+        "mu_coefficients_ascending": [
+          42,
+          22,
+          80
+        ],
+        "gamma_coefficients_ascending": [
+          89,
+          88,
+          56,
+          29,
+          38,
+          12
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          3,
+          3
+        ],
+        "one_coefficients_ascending": [
+          94,
+          45,
+          42
+        ],
+        "mu_coefficients_ascending": [
+          22,
+          16,
+          94
+        ],
+        "gamma_coefficients_ascending": [
+          14,
+          61,
+          95,
+          30,
+          79,
+          100
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          1,
+          5
+        ],
+        "one_coefficients_ascending": [
+          57,
+          91,
+          8
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          47,
+          65,
+          65,
+          20,
+          33,
+          94
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          0,
+          6
+        ],
+        "one_coefficients_ascending": [
+          63,
+          83,
+          91
+        ],
+        "mu_coefficients_ascending": [
+          99,
+          67,
+          53
+        ],
+        "gamma_coefficients_ascending": [
+          43,
+          57,
+          72,
+          62,
+          46,
+          47
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          9,
+          0,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          59,
+          56,
+          42
+        ],
+        "gamma_coefficients_ascending": [
+          93,
+          59,
+          34,
+          0,
+          19,
+          66
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          8,
+          1,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          2,
+          44,
+          18
+        ],
+        "gamma_coefficients_ascending": [
+          13,
+          76,
+          2,
+          34,
+          9,
+          66
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          8,
+          0,
+          1
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          67,
+          27,
+          72
+        ],
+        "gamma_coefficients_ascending": [
+          91,
+          68,
+          53,
+          28,
+          87,
+          27
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          2,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          92,
+          92,
+          63
+        ],
+        "gamma_coefficients_ascending": [
+          62,
+          43,
+          50,
+          94,
+          85,
+          27
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          1,
+          1
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          45,
+          14,
+          45
+        ],
+        "gamma_coefficients_ascending": [
+          36,
+          35,
+          9,
+          91,
+          22,
+          63
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          7,
+          0,
+          2
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          19,
+          91,
+          85
+        ],
+        "gamma_coefficients_ascending": [
+          91,
+          68,
+          56,
+          29,
+          22,
+          78
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          3,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          93,
+          46,
+          22
+        ],
+        "gamma_coefficients_ascending": [
+          54,
+          43,
+          70,
+          67,
+          65,
+          58
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          2,
+          1
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          49,
+          89,
+          83
+        ],
+        "gamma_coefficients_ascending": [
+          38,
+          28,
+          84,
+          58,
+          6,
+          60
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          1,
+          2
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          72,
+          98,
+          48
+        ],
+        "gamma_coefficients_ascending": [
+          68,
+          57,
+          54,
+          43,
+          68,
+          83
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          6,
+          0,
+          3
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          47,
+          11,
+          18
+        ],
+        "gamma_coefficients_ascending": [
+          64,
+          18,
+          77,
+          69,
+          87,
+          30
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          4,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          3,
+          38,
+          80
+        ],
+        "gamma_coefficients_ascending": [
+          64,
+          93,
+          60,
+          98,
+          34,
+          53
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          3,
+          1
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          43,
+          29,
+          99
+        ],
+        "gamma_coefficients_ascending": [
+          51,
+          46,
+          91,
+          70,
+          70,
+          99
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          2,
+          2
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          85,
+          60,
+          68
+        ],
+        "gamma_coefficients_ascending": [
+          18,
+          80,
+          42,
+          42,
+          65,
+          20
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          1,
+          3
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          80,
+          13,
+          5
+        ],
+        "gamma_coefficients_ascending": [
+          55,
+          4,
+          30,
+          72,
+          46,
+          74
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          5,
+          0,
+          4
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          11,
+          91,
+          8
+        ],
+        "gamma_coefficients_ascending": [
+          96,
+          73,
+          67,
+          26,
+          0,
+          32
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          5,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          76,
+          77,
+          5
+        ],
+        "gamma_coefficients_ascending": [
+          70,
+          86,
+          67,
+          76,
+          39,
+          8
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          4,
+          1
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          16,
+          65,
+          11
+        ],
+        "gamma_coefficients_ascending": [
+          12,
+          18,
+          61,
+          30,
+          23,
+          22
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          3,
+          2
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          64,
+          18,
+          5
+        ],
+        "gamma_coefficients_ascending": [
+          84,
+          74,
+          37,
+          82,
+          25,
+          6
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          2,
+          3
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          16,
+          47,
+          63
+        ],
+        "gamma_coefficients_ascending": [
+          13,
+          30,
+          6,
+          63,
+          60,
+          80
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          1,
+          4
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          96,
+          33,
+          58
+        ],
+        "gamma_coefficients_ascending": [
+          2,
+          89,
+          47,
+          99,
+          15,
+          86
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          4,
+          0,
+          5
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          18,
+          55,
+          56
+        ],
+        "gamma_coefficients_ascending": [
+          18,
+          27,
+          54,
+          83,
+          39,
+          52
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          6,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          34,
+          91,
+          81
+        ],
+        "gamma_coefficients_ascending": [
+          62,
+          85,
+          36,
+          67,
+          46,
+          93
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          5,
+          1
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          48,
+          39,
+          26
+        ],
+        "gamma_coefficients_ascending": [
+          76,
+          70,
+          39,
+          88,
+          22,
+          82
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          4,
+          2
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          82,
+          73,
+          3
+        ],
+        "gamma_coefficients_ascending": [
+          38,
+          68,
+          39,
+          57,
+          65,
+          27
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          3,
+          3
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          95,
+          65,
+          42
+        ],
+        "gamma_coefficients_ascending": [
+          89,
+          4,
+          59,
+          48,
+          85,
+          37
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          1,
+          5
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          9,
+          24,
+          44
+        ],
+        "gamma_coefficients_ascending": [
+          63,
+          90,
+          36,
+          94,
+          65,
+          59
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          3,
+          0,
+          6
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          23,
+          89,
+          41
+        ],
+        "gamma_coefficients_ascending": [
+          15,
+          97,
+          20,
+          12,
+          1,
+          71
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          7,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          1,
+          95,
+          62
+        ],
+        "gamma_coefficients_ascending": [
+          51,
+          17,
+          58,
+          64,
+          25,
+          88
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          6,
+          1
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          70,
+          97,
+          7
+        ],
+        "gamma_coefficients_ascending": [
+          7,
+          79,
+          5,
+          31,
+          54,
+          26
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          5,
+          2
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          70,
+          52,
+          31
+        ],
+        "gamma_coefficients_ascending": [
+          51,
+          87,
+          18,
+          92,
+          63,
+          83
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          4,
+          3
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          16,
+          51,
+          58
+        ],
+        "gamma_coefficients_ascending": [
+          56,
+          27,
+          33,
+          76,
+          12,
+          77
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          1,
+          6
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          43,
+          68,
+          68
+        ],
+        "gamma_coefficients_ascending": [
+          78,
+          9,
+          75,
+          13,
+          7,
+          64
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          2,
+          0,
+          7
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          48,
+          11,
+          50
+        ],
+        "gamma_coefficients_ascending": [
+          38,
+          83,
+          70,
+          81,
+          43,
+          71
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          8,
+          0
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          85,
+          86,
+          43
+        ],
+        "gamma_coefficients_ascending": [
+          8,
+          43,
+          17,
+          83,
+          55,
+          82
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          7,
+          1
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          97,
+          16,
+          28
+        ],
+        "gamma_coefficients_ascending": [
+          7,
+          58,
+          50,
+          74,
+          75,
+          33
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          6,
+          2
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          98,
+          34,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          6,
+          96,
+          56,
+          59,
+          22,
+          57
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          5,
+          3
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          20,
+          38,
+          37
+        ],
+        "gamma_coefficients_ascending": [
+          40,
+          9,
+          66,
+          10,
+          78,
+          34
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          1,
+          7
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          85,
+          15,
+          11
+        ],
+        "gamma_coefficients_ascending": [
+          98,
+          75,
+          59,
+          88,
+          4,
+          25
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          1,
+          0,
+          8
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          90,
+          66,
+          57
+        ],
+        "gamma_coefficients_ascending": [
+          42,
+          75,
+          35,
+          80,
+          17,
+          80
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          7,
+          2
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          16,
+          95,
+          95
+        ],
+        "gamma_coefficients_ascending": [
+          28,
+          15,
+          5,
+          49,
+          71,
+          27
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          6,
+          3
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          34,
+          85,
+          94
+        ],
+        "gamma_coefficients_ascending": [
+          68,
+          43,
+          37,
+          56,
+          23,
+          63
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          1,
+          8
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          12,
+          49,
+          15
+        ],
+        "gamma_coefficients_ascending": [
+          85,
+          81,
+          64,
+          48,
+          100,
+          3
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "base_degree9",
+        "powers_xyz": [
+          0,
+          0,
+          9
+        ],
+        "one_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "mu_coefficients_ascending": [
+          92,
+          74,
+          55
+        ],
+        "gamma_coefficients_ascending": [
+          56,
+          94,
+          84,
+          71,
+          29,
+          39
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          6,
+          0,
+          0
+        ],
+        "one_coefficients_ascending": [
+          55,
+          89,
+          65
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          1,
+          87,
+          85,
+          43,
+          41,
+          51
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          5,
+          1,
+          0
+        ],
+        "one_coefficients_ascending": [
+          53,
+          15,
+          74
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          9,
+          45,
+          47,
+          52,
+          40,
+          42
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          5,
+          0,
+          1
+        ],
+        "one_coefficients_ascending": [
+          87,
+          66,
+          21
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          11,
+          92,
+          66,
+          14,
+          63,
+          71
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          2,
+          0
+        ],
+        "one_coefficients_ascending": [
+          56,
+          18,
+          23
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          42,
+          63,
+          23,
+          41,
+          9,
+          29
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          1,
+          1
+        ],
+        "one_coefficients_ascending": [
+          90,
+          69,
+          85
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          25,
+          78,
+          62,
+          14,
+          36,
+          69
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          4,
+          0,
+          2
+        ],
+        "one_coefficients_ascending": [
+          17,
+          66,
+          78
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          44,
+          5,
+          32,
+          66,
+          36,
+          22
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          3,
+          0
+        ],
+        "one_coefficients_ascending": [
+          55,
+          89,
+          65
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          1,
+          87,
+          85,
+          43,
+          41,
+          51
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          2,
+          1
+        ],
+        "one_coefficients_ascending": [
+          53,
+          15,
+          74
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          9,
+          45,
+          47,
+          52,
+          40,
+          42
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          1,
+          2
+        ],
+        "one_coefficients_ascending": [
+          87,
+          66,
+          21
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          11,
+          92,
+          66,
+          14,
+          63,
+          71
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          3,
+          0,
+          3
+        ],
+        "one_coefficients_ascending": [
+          93,
+          55,
+          64
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          88,
+          81,
+          6,
+          47,
+          73,
+          44
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          4,
+          0
+        ],
+        "one_coefficients_ascending": [
+          53,
+          15,
+          74
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          9,
+          45,
+          47,
+          52,
+          40,
+          42
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          3,
+          1
+        ],
+        "one_coefficients_ascending": [
+          42,
+          84,
+          44
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          53,
+          54,
+          89,
+          55,
+          72,
+          100
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          2,
+          2
+        ],
+        "one_coefficients_ascending": [
+          90,
+          69,
+          85
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          25,
+          78,
+          62,
+          14,
+          36,
+          69
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          1,
+          3
+        ],
+        "one_coefficients_ascending": [
+          35,
+          73,
+          25
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          28,
+          26,
+          27,
+          97,
+          21,
+          82
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          2,
+          0,
+          4
+        ],
+        "one_coefficients_ascending": [
+          81,
+          51,
+          30
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          59,
+          16,
+          51,
+          20,
+          90,
+          87
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          5,
+          0
+        ],
+        "one_coefficients_ascending": [
+          56,
+          18,
+          23
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          42,
+          63,
+          23,
+          41,
+          9,
+          29
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          4,
+          1
+        ],
+        "one_coefficients_ascending": [
+          35,
+          81,
+          20
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          24,
+          92,
+          78,
+          72,
+          96,
+          18
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          3,
+          2
+        ],
+        "one_coefficients_ascending": [
+          70,
+          81,
+          51
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          53,
+          50,
+          79,
+          17,
+          76,
+          64
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          2,
+          3
+        ],
+        "one_coefficients_ascending": [
+          66,
+          34,
+          25
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          71,
+          81,
+          70,
+          87,
+          47,
+          98
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          1,
+          4
+        ],
+        "one_coefficients_ascending": [
+          50,
+          58,
+          43
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          92,
+          16,
+          97,
+          74,
+          65,
+          69
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          1,
+          0,
+          5
+        ],
+        "one_coefficients_ascending": [
+          61,
+          73,
+          33
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          72,
+          51,
+          24,
+          60,
+          81,
+          45
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          6,
+          0
+        ],
+        "one_coefficients_ascending": [
+          19,
+          51,
+          99
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          26,
+          17,
+          63,
+          67,
+          52,
+          33
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          5,
+          1
+        ],
+        "one_coefficients_ascending": [
+          78,
+          45,
+          61
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          13,
+          99,
+          12,
+          80,
+          74,
+          50
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          4,
+          2
+        ],
+        "one_coefficients_ascending": [
+          56,
+          61,
+          4
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          54,
+          21,
+          18,
+          58,
+          23,
+          51
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          3,
+          3
+        ],
+        "one_coefficients_ascending": [
+          34,
+          13,
+          98
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          99,
+          27,
+          92,
+          13,
+          53,
+          38
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          1,
+          5
+        ],
+        "one_coefficients_ascending": [
+          52,
+          21,
+          64
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          73,
+          15,
+          15,
+          59,
+          62,
+          45
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "basis_kind": "K3_sheet_times_degree6",
+        "powers_xyz": [
+          0,
+          0,
+          6
+        ],
+        "one_coefficients_ascending": [
+          30,
+          80,
+          58
+        ],
+        "mu_coefficients_ascending": [
+          0,
+          0,
+          0
+        ],
+        "gamma_coefficients_ascending": [
+          31,
+          38,
+          15,
+          8,
+          45,
+          22
+        ]
+      }
+    ],
+    "nonzero_gamma_row_count": 214
+  },
+  "selected_second_H_graph": {
+    "line": "y=1, z=r*x+w",
+    "sheet_relation": "y_h^2=F6(x,1,r*x+w)",
+    "F6_integer_expression": "4*x**6 + 7*x**5*z - 3*x**4*y**2 - 6*x**4*y*z - 4*x**4*z**2 + 6*x**3*y**3 - 5*x**3*y**2*z + 6*x**3*y*z**2 - 3*x**3*z**3 + 2*x**2*y**4 + 3*x**2*y**3*z + 2*x**2*y**2*z**2 + 10*x**2*y*z**3 + 10*x**2*z**4 - x*y**5 - x*y**4*z - 7*x*y**3*z**2 - 8*x*y**2*z**3 - 9*x*y*z**4 - 2*x*z**5 + 2*y**6 + y**5*z + 4*y**4*z**2 + y**3*z**3 + 2*y**2*z**4 + 4*y*z**5 + z**6",
+    "line_sextic_mod1012_in_gamma_basis": [
+      [
+        2184,
+        3255,
+        802,
+        7192,
+        8198,
+        2074
+      ],
+      [
+        8436,
+        4659,
+        1467,
+        7907,
+        6116,
+        5552
+      ],
+      [
+        3988,
+        5970,
+        711,
+        1649,
+        2361,
+        9196
+      ],
+      [
+        8253,
+        4090,
+        2842,
+        2918,
+        1286,
+        4753
+      ],
+      [
+        3062,
+        1042,
+        3245,
+        5350,
+        9808,
+        121
+      ],
+      [
+        2937,
+        3558,
+        4488,
+        6491,
+        205,
+        9849
+      ],
+      [
+        10155,
+        2906,
+        9465,
+        1611,
+        518,
+        4856
+      ]
+    ],
+    "Fermat_coordinates": {
+      "T0": "12Q^2-k*S*y_h",
+      "T1": "12Q^2+k*S*y_h",
+      "T2": "6P*Q"
+    },
+    "cubic_mod1012_data": {
+      "source_coordinates_mod1012_in_alpha_basis": {
+        "r": [
+          8332,
+          9802,
+          3277
+        ],
+        "w": [
+          7767,
+          6240,
+          2992
+        ],
+        "v": [
+          5610,
+          923,
+          4407
+        ],
+        "s": [
+          9696,
+          9495,
+          3838
+        ]
+      },
+      "P_mod1012_in_alpha_basis": [
+        [
+          1015,
+          2244,
+          4836
+        ],
+        [
+          8639,
+          6868,
+          6175
+        ],
+        [
+          420,
+          2815,
+          7745
+        ],
+        [
+          4541,
+          1178,
+          4299
+        ]
+      ],
+      "Q_mod1012_in_alpha_basis": [
+        [
+          2777,
+          5207,
+          4398
+        ],
+        [
+          1675,
+          3214,
+          759
+        ],
+        [
+          8132,
+          2867,
+          9690
+        ],
+        [
+          1
+        ]
+      ],
+      "S_mod1012_in_alpha_basis": [
+        [
+          4849,
+          1654,
+          2351
+        ],
+        [
+          8892,
+          8798,
+          4720
+        ],
+        [
+          3538,
+          3931,
+          415
+        ],
+        [
+          1
+        ]
+      ],
+      "lambda_mod1012_in_alpha_basis": [
+        2233,
+        3051,
+        4470
+      ],
+      "Fermat_k_mod1012_in_alpha_basis": [
+        4953,
+        8188,
+        3110
+      ]
+    },
+    "embedded_mod1012_data": {
+      "source_coordinates_mod1012_in_gamma_basis": {
+        "r": [
+          645,
+          3845,
+          5239,
+          7250,
+          4391,
+          3173
+        ],
+        "w": [
+          7731,
+          8933,
+          3613,
+          8669,
+          605,
+          5014
+        ],
+        "v": [
+          2440,
+          4487,
+          2830,
+          5664,
+          9325,
+          1177
+        ],
+        "s": [
+          326,
+          1107,
+          2094,
+          8246,
+          1851,
+          704
+        ]
+      },
+      "P_mod1012_in_gamma_basis": [
+        [
+          1393,
+          3561,
+          4511,
+          2445,
+          8312,
+          3070
+        ],
+        [
+          9529,
+          6331,
+          3353,
+          5667,
+          1115,
+          10010
+        ],
+        [
+          1968,
+          457,
+          1474,
+          1222,
+          8623,
+          6853
+        ],
+        [
+          5175,
+          1766,
+          6338,
+          3700,
+          3497,
+          53
+        ]
+      ],
+      "Q_mod1012_in_gamma_basis": [
+        [
+          3911,
+          1728,
+          4237,
+          2868,
+          1806,
+          9564
+        ],
+        [
+          4913,
+          7658,
+          1123,
+          4094,
+          9088,
+          7843
+        ],
+        [
+          5127,
+          5961,
+          2156,
+          7739,
+          4272,
+          1855
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "S_mod1012_in_gamma_basis": [
+        [
+          3766,
+          2208,
+          327,
+          5825,
+          7524,
+          312
+        ],
+        [
+          7342,
+          1778,
+          9245,
+          9286,
+          6675,
+          4700
+        ],
+        [
+          8757,
+          8563,
+          2598,
+          6133,
+          1889,
+          6374
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "lambda_mod1012_in_gamma_basis": [
+        7269,
+        9466,
+        8690,
+        5310,
+        6948,
+        2165
+      ],
+      "Fermat_k_mod1012_in_gamma_basis": [
+        9536,
+        3959,
+        4023,
+        2711,
+        23,
+        7689
+      ]
+    },
+    "marked_map_identity_zero_mod1012": true,
+    "Fermat_square_root_identity_zero_mod1012": true
+  },
+  "restriction_test": {
+    "special_fiber_restriction_zero_mod101": true,
+    "restricted_section_max_x_degree": 15,
+    "first_order_rows": [
+      {
+        "sheet_parity": "even",
+        "x_degree": 0,
+        "gamma_coefficients_mod101": [
+          21,
+          98,
+          96,
+          70,
+          54,
+          94
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 1,
+        "gamma_coefficients_mod101": [
+          91,
+          46,
+          23,
+          100,
+          57,
+          70
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 2,
+        "gamma_coefficients_mod101": [
+          29,
+          75,
+          98,
+          91,
+          67,
+          30
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 3,
+        "gamma_coefficients_mod101": [
+          54,
+          72,
+          16,
+          5,
+          8,
+          47
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 4,
+        "gamma_coefficients_mod101": [
+          74,
+          95,
+          29,
+          85,
+          52,
+          95
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 5,
+        "gamma_coefficients_mod101": [
+          64,
+          42,
+          80,
+          84,
+          37,
+          96
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 6,
+        "gamma_coefficients_mod101": [
+          97,
+          35,
+          70,
+          40,
+          69,
+          93
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 7,
+        "gamma_coefficients_mod101": [
+          80,
+          81,
+          27,
+          71,
+          19,
+          25
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 8,
+        "gamma_coefficients_mod101": [
+          40,
+          95,
+          1,
+          66,
+          2,
+          74
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 9,
+        "gamma_coefficients_mod101": [
+          12,
+          68,
+          78,
+          50,
+          29,
+          100
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 10,
+        "gamma_coefficients_mod101": [
+          45,
+          99,
+          11,
+          28,
+          78,
+          15
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 11,
+        "gamma_coefficients_mod101": [
+          70,
+          87,
+          96,
+          27,
+          24,
+          1
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 12,
+        "gamma_coefficients_mod101": [
+          62,
+          68,
+          53,
+          84,
+          9,
+          51
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 13,
+        "gamma_coefficients_mod101": [
+          31,
+          85,
+          63,
+          89,
+          86,
+          47
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 14,
+        "gamma_coefficients_mod101": [
+          89,
+          11,
+          9,
+          80,
+          100,
+          36
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 15,
+        "gamma_coefficients_mod101": [
+          56,
+          3,
+          91,
+          67,
+          58,
+          6
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 0,
+        "gamma_coefficients_mod101": [
+          58,
+          50,
+          16,
+          42,
+          16,
+          73
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 1,
+        "gamma_coefficients_mod101": [
+          40,
+          50,
+          47,
+          51,
+          26,
+          67
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 2,
+        "gamma_coefficients_mod101": [
+          49,
+          62,
+          27,
+          94,
+          12,
+          22
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 3,
+        "gamma_coefficients_mod101": [
+          82,
+          86,
+          74,
+          61,
+          6,
+          26
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 4,
+        "gamma_coefficients_mod101": [
+          29,
+          65,
+          59,
+          56,
+          60,
+          89
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 5,
+        "gamma_coefficients_mod101": [
+          91,
+          61,
+          76,
+          0,
+          83,
+          30
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 6,
+        "gamma_coefficients_mod101": [
+          56,
+          17,
+          70,
+          37,
+          33,
+          30
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 7,
+        "gamma_coefficients_mod101": [
+          25,
+          9,
+          53,
+          5,
+          64,
+          68
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 8,
+        "gamma_coefficients_mod101": [
+          83,
+          16,
+          53,
+          68,
+          25,
+          2
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 9,
+        "gamma_coefficients_mod101": [
+          21,
+          95,
+          58,
+          10,
+          91,
+          56
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 10,
+        "gamma_coefficients_mod101": [
+          67,
+          79,
+          100,
+          3,
+          32,
+          99
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 11,
+        "gamma_coefficients_mod101": [
+          75,
+          59,
+          33,
+          82,
+          66,
+          63
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 12,
+        "gamma_coefficients_mod101": [
+          94,
+          16,
+          73,
+          10,
+          75,
+          65
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 13,
+        "gamma_coefficients_mod101": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 14,
+        "gamma_coefficients_mod101": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 15,
+        "gamma_coefficients_mod101": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "first_order_rows_sha256": "b50bfa294cfa414cf66646edcfba9c5dfed7ec7b200291b44114b561c300415b",
+    "nonzero_first_order_rows": [
+      {
+        "sheet_parity": "even",
+        "x_degree": 0,
+        "gamma_coefficients_mod101": [
+          21,
+          98,
+          96,
+          70,
+          54,
+          94
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 1,
+        "gamma_coefficients_mod101": [
+          91,
+          46,
+          23,
+          100,
+          57,
+          70
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 2,
+        "gamma_coefficients_mod101": [
+          29,
+          75,
+          98,
+          91,
+          67,
+          30
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 3,
+        "gamma_coefficients_mod101": [
+          54,
+          72,
+          16,
+          5,
+          8,
+          47
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 4,
+        "gamma_coefficients_mod101": [
+          74,
+          95,
+          29,
+          85,
+          52,
+          95
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 5,
+        "gamma_coefficients_mod101": [
+          64,
+          42,
+          80,
+          84,
+          37,
+          96
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 6,
+        "gamma_coefficients_mod101": [
+          97,
+          35,
+          70,
+          40,
+          69,
+          93
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 7,
+        "gamma_coefficients_mod101": [
+          80,
+          81,
+          27,
+          71,
+          19,
+          25
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 8,
+        "gamma_coefficients_mod101": [
+          40,
+          95,
+          1,
+          66,
+          2,
+          74
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 9,
+        "gamma_coefficients_mod101": [
+          12,
+          68,
+          78,
+          50,
+          29,
+          100
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 10,
+        "gamma_coefficients_mod101": [
+          45,
+          99,
+          11,
+          28,
+          78,
+          15
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 11,
+        "gamma_coefficients_mod101": [
+          70,
+          87,
+          96,
+          27,
+          24,
+          1
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 12,
+        "gamma_coefficients_mod101": [
+          62,
+          68,
+          53,
+          84,
+          9,
+          51
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 13,
+        "gamma_coefficients_mod101": [
+          31,
+          85,
+          63,
+          89,
+          86,
+          47
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 14,
+        "gamma_coefficients_mod101": [
+          89,
+          11,
+          9,
+          80,
+          100,
+          36
+        ]
+      },
+      {
+        "sheet_parity": "even",
+        "x_degree": 15,
+        "gamma_coefficients_mod101": [
+          56,
+          3,
+          91,
+          67,
+          58,
+          6
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 0,
+        "gamma_coefficients_mod101": [
+          58,
+          50,
+          16,
+          42,
+          16,
+          73
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 1,
+        "gamma_coefficients_mod101": [
+          40,
+          50,
+          47,
+          51,
+          26,
+          67
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 2,
+        "gamma_coefficients_mod101": [
+          49,
+          62,
+          27,
+          94,
+          12,
+          22
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 3,
+        "gamma_coefficients_mod101": [
+          82,
+          86,
+          74,
+          61,
+          6,
+          26
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 4,
+        "gamma_coefficients_mod101": [
+          29,
+          65,
+          59,
+          56,
+          60,
+          89
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 5,
+        "gamma_coefficients_mod101": [
+          91,
+          61,
+          76,
+          0,
+          83,
+          30
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 6,
+        "gamma_coefficients_mod101": [
+          56,
+          17,
+          70,
+          37,
+          33,
+          30
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 7,
+        "gamma_coefficients_mod101": [
+          25,
+          9,
+          53,
+          5,
+          64,
+          68
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 8,
+        "gamma_coefficients_mod101": [
+          83,
+          16,
+          53,
+          68,
+          25,
+          2
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 9,
+        "gamma_coefficients_mod101": [
+          21,
+          95,
+          58,
+          10,
+          91,
+          56
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 10,
+        "gamma_coefficients_mod101": [
+          67,
+          79,
+          100,
+          3,
+          32,
+          99
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 11,
+        "gamma_coefficients_mod101": [
+          75,
+          59,
+          33,
+          82,
+          66,
+          63
+        ]
+      },
+      {
+        "sheet_parity": "odd",
+        "x_degree": 12,
+        "gamma_coefficients_mod101": [
+          94,
+          16,
+          73,
+          10,
+          75,
+          65
+        ]
+      }
+    ],
+    "nonzero_first_order_row_count": 29,
+    "first_nonzero_row": {
+      "sheet_parity": "even",
+      "x_degree": 0,
+      "gamma_coefficients_mod101": [
+        21,
+        98,
+        96,
+        70,
+        54,
+        94
+      ]
+    },
+    "restriction_zero_mod1012": false
+  },
+  "theorem": {
+    "name": "FixedFQSelectedSecondHGraphFirstOrderObstructionTheorem",
+    "statement": "In the selected unramified completion at 101, embed the compatible second-H graph branch by the Hensel lifts of alpha and its marked degree-three Fermat map. The fixed explicit number-field lift F_Q restricts to zero modulo 101, but its displayed divided-by-101 restriction is nonzero modulo 101. Hence this fixed F_Q does not contain that selected 101-adic graph lift, and it cannot be the same-member realization of the G3AC graph-Prym divisor.",
+    "tier": "CLOSED_EXACT_FINITE_RING_FIRST_ORDER_OBSTRUCTION"
+  },
+  "frontier_delta": {
+    "fixed_FQ_selected_second_H_graph_compatibility_decided": true,
+    "fixed_FQ_selected_second_H_graph_compatible": false,
+    "fixed_FQ_same_member_graph_prym_route_retired": true,
+    "existential_G3AC_graph_prym_family_affected": false,
+    "next_route": "Solve the eta9 coefficient and beta_C equations inside the irreducible 33-dimensional graph-preserving family; do not continue the fixed-F_Q orbit as the visible Prym source."
+  },
+  "scope": {
+    "excludes_only_the_fixed_integer_gamma_coefficient_lift": true,
+    "excludes_all_graph_preserving_eta9_members": false,
+    "proves_no_other_nonambient_Prym_class_on_fixed_FQ": false,
+    "selects_a_unique_graph_preserving_member": false,
+    "computes_beta_C": false,
+    "constructs_visible_V3_HYM": false,
+    "closes_B_ETA9_01": false,
+    "closes_B_ETA9_02": false,
+    "closes_B_HS_01": false
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_physics_inputs": 0
+  },
+  "guardrails": {
+    "claims_fixed_FQ_has_no_other_Prym_class": false,
+    "claims_all_graph_preserving_members_fail": false,
+    "claims_beta_C_is_decided": false,
+    "claims_visible_V3_is_constructed": false,
+    "claims_physical_Hull_Strominger_endpoint": false,
+    "uses_observed_physics_values": false,
+    "adds_fitted_parameter": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "mtt.cbf.q79-eta9-graph-tangent-single-fiber-rank-source.v1",
+  "sources": {
+    "UST_G3AD": {
+      "repository": "mtt-unified-source-theorem",
+      "repository_commit": "011986e954c3cab6b673243fbaf46219a8951cc0",
+      "local_path": "ust_g3ad_fixed_fq_second_h_graph_obstruction.input.json",
+      "local_sha256": "46cfea7564e0e81abf5ab8171bfa74987349e33d277088b3de0a996fc71f067e",
+      "upstream_path": "state/ust_g3ad_fixed_fq_second_h_graph_obstruction.packet.json",
+      "upstream_git_blob": "c305c362ca5d78a8c1ce4bb7da32225e58dcb82d"
+    },
+    "UST_G3AK": {
+      "repository": "mtt-unified-source-theorem",
+      "repository_commit": "011986e954c3cab6b673243fbaf46219a8951cc0",
+      "local_packet_path": "ust_g3ak_full_graph_incidence_normal_decomposition.input.json",
+      "local_packet_sha256": "376fb1bfb8fbe46391a409e5176392082463ad63f14f3d13e1a1e04f61374a23",
+      "local_matrix_path": "ust_g3ak_incidence_matrix.input.f101e6.u8",
+      "local_matrix_sha256": "72371ec2a7cd126cdf507436126eaf510c39cf12bac074ddeb7fa25c6ff56d2f",
+      "upstream_packet_path": "state/ust_g3ak_full_graph_incidence_normal_decomposition.packet.json",
+      "upstream_packet_git_blob": "ccc17d35046aa5695507f8b6bac1cdcde4b827c0",
+      "upstream_matrix_path": "state/ust_g3ak_incidence_matrix.f101e6.u8",
+      "upstream_matrix_git_blob": "e14449a40928ecd040d7ee37ab378fe6da265b37"
+    },
+    "H4_T133": {
+      "repository": "mtt-preprojection-repair-calculus",
+      "repository_commit": "0c92c4107a2c52acc743665f8b47670e107dd731",
+      "local_path": "q79_eta9_bht_fiber_evaluation_and_handle_sweep.input.json",
+      "local_sha256": "f8aedd6d277497ad0e5692a158c1571c6306d446f2721791bcf71f17c1deb18e",
+      "upstream_packet_git_blob": "1b81d6f73d2d262182be7ec04f8aefaee058a987"
+    }
+  },
+  "selected_fiber": {
+    "name": "Fermat origin e_0",
+    "elliptic_evaluation_weights": [1, 0, -1],
+    "coefficient_rule": "F_e0=A_0-A_2"
+  }
+}

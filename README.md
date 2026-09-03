@@ -2291,3 +2291,14 @@ the selected rank-one/inverse-rank-three endpoint and double traversal remain
 open until the same-member B-handle sweep is completed. The immediate target
 is the rank-164 Gauss-Manin transport plus 248-row accumulation and integral
 period reduction. A 122-direction graph-family search is logically later.
+
+`Q79Eta9GraphTangentSingleFiberRankTheorem_v1.md` (`CBF.T70`) performs the
+exact family-level coefficient calculation needed for that later search. On
+the selected residue carrier, the rank-122 projective graph tangent maps to
+the Fermat-origin rank-82 fiber quotient with image rank 70, kernel rank 52
+and cokernel rank 12. The old rank-33 principal slice has image rank only 11;
+the additional 89 directions supply 59 new image dimensions modulo it.
+
+This is not a normal-function derivative. It proves the size of the
+coefficient-level one-fiber control and the exact blind sector that any later
+Picard/BHT derivative calculation must handle.

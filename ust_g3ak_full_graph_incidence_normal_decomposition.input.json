@@ -1,0 +1,1394 @@
+{
+  "schema": "mtt.unified-source.g3ak-full-graph-incidence-normal-decomposition.v1",
+  "theorem_id": "UST.G3AK",
+  "status": "CLOSED_EXACT_FULL_GRAPH_INCIDENCE_TANGENT122_TRUE_NORMAL126_SELECTED_RESIDUE_DECOMPOSITION",
+  "inputs": {
+    "ust_g3ad_fixed_fq_second_h_graph_obstruction.packet": {
+      "path": "state/ust_g3ad_fixed_fq_second_h_graph_obstruction.packet.json",
+      "sha256": "46cfea7564e0e81abf5ab8171bfa74987349e33d277088b3de0a996fc71f067e"
+    },
+    "ust_g3af_two_h_joint_coefficient_lift.packet": {
+      "path": "state/ust_g3af_two_h_joint_coefficient_lift.packet.json",
+      "sha256": "cb1953935bb3bc421c054077d1442ba39a300dda9209730c9b741527df277e87"
+    },
+    "ust_g3ag_three_graph_joint_coefficient_lift.packet": {
+      "path": "state/ust_g3ag_three_graph_joint_coefficient_lift.packet.json",
+      "sha256": "5e63a1b1a121ba194e1eafd6ac503fc7dee94e70c383c2e221431849923d17c2"
+    },
+    "ust_g3ah_formal_coefficient_kernel.packet": {
+      "path": "state/ust_g3ah_formal_coefficient_kernel.packet.json",
+      "sha256": "dc4baba98109c809a24c2970424e7e2a0dbc7b9ecfdfea30b997ca0730942d83"
+    },
+    "ust_g3ai_second_h_marked_map_all_orders.packet": {
+      "path": "state/ust_g3ai_second_h_marked_map_all_orders.packet.json",
+      "sha256": "704006f49889eb094d86c4fefc524566a1159a512127a96d293d5cfa320b8210"
+    },
+    "ust_g3aj_residue_ball_smooth_graph_prym.packet": {
+      "path": "state/ust_g3aj_residue_ball_smooth_graph_prym.packet.json",
+      "sha256": "37b837a069ff48b2b2c4645404d5664f24427476ceb9588bf27254a16e6680bc"
+    }
+  },
+  "residue_field": {
+    "description": "F_101[gamma]/(M)",
+    "prime": 101,
+    "gamma_relation_coefficients_ascending": [
+      64,
+      16,
+      33,
+      44,
+      89,
+      24,
+      1
+    ],
+    "extension_degree": 6
+  },
+  "incidence_certificate": {
+    "source_rank": 249,
+    "coordinate_row_count": 168,
+    "coordinate_row_redundancy": 42,
+    "geometric_target_rank": 126,
+    "rank": 126,
+    "pivot_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      111,
+      112,
+      119,
+      120,
+      128,
+      129,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      156,
+      157,
+      158,
+      159,
+      160,
+      166,
+      167,
+      168,
+      169
+    ],
+    "free_columns_zero_based": [
+      25,
+      32,
+      33,
+      40,
+      41,
+      42,
+      49,
+      50,
+      51,
+      52,
+      80,
+      100,
+      106,
+      107,
+      108,
+      109,
+      110,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      155,
+      161,
+      162,
+      163,
+      164,
+      165,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248
+    ],
+    "matrix_sha256": "0b72a98cafbc912254625e4e379a8e8b73dbde7b7c150f5ac7b272c62f34fc93",
+    "matrix_artifact": {
+      "path": "state/ust_g3ak_incidence_matrix.f101e6.u8",
+      "sha256": "72371ec2a7cd126cdf507436126eaf510c39cf12bac074ddeb7fa25c6ff56d2f",
+      "bytes": 250992,
+      "shape": [
+        168,
+        249,
+        6
+      ],
+      "layout": "row-major field elements; six ascending gamma coefficients per element"
+    },
+    "canonical_kernel_basis_sha256": "21518f84a39c47d2e369e1ada651f8d369a895d17a945048694e3f54d66ee956"
+  },
+  "selected_graph_union": {
+    "first_H_line": "z-r1*x-w1*y",
+    "first_H_r_gamma_coordinates": [
+      9,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_H_w_gamma_coordinates": [
+      52,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "second_H_line": "z-r2*x-w2*y",
+    "second_H_r_gamma_coordinates": [
+      39,
+      7,
+      88,
+      79,
+      48,
+      42
+    ],
+    "second_H_w_gamma_coordinates": [
+      55,
+      45,
+      78,
+      84,
+      100,
+      65
+    ],
+    "four_H_quartic": "8*x^4+8*x^2*y*z+8*x*y^3-3*x*z^3+8*y^2*z^2",
+    "union_terms": [
+      {
+        "powers_xyz": [
+          0,
+          2,
+          4
+        ],
+        "gamma_coefficients": [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "powers_xyz": [
+          0,
+          3,
+          3
+        ],
+        "gamma_coefficients": [
+          53,
+          44,
+          83,
+          35,
+          8,
+          86
+        ]
+      },
+      {
+        "powers_xyz": [
+          0,
+          4,
+          2
+        ],
+        "gamma_coefficients": [
+          54,
+          35,
+          27,
+          99,
+          89,
+          73
+        ]
+      },
+      {
+        "powers_xyz": [
+          1,
+          0,
+          5
+        ],
+        "gamma_coefficients": [
+          98,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "powers_xyz": [
+          1,
+          1,
+          4
+        ],
+        "gamma_coefficients": [
+          18,
+          34,
+          32,
+          50,
+          98,
+          94
+        ]
+      },
+      {
+        "powers_xyz": [
+          1,
+          2,
+          3
+        ],
+        "gamma_coefficients": [
+          25,
+          95,
+          56,
+          0,
+          75,
+          28
+        ]
+      },
+      {
+        "powers_xyz": [
+          1,
+          3,
+          2
+        ],
+        "gamma_coefficients": [
+          93,
+          92,
+          6,
+          27,
+          100,
+          33
+        ]
+      },
+      {
+        "powers_xyz": [
+          1,
+          4,
+          1
+        ],
+        "gamma_coefficients": [
+          53,
+          44,
+          83,
+          35,
+          8,
+          86
+        ]
+      },
+      {
+        "powers_xyz": [
+          1,
+          5,
+          0
+        ],
+        "gamma_coefficients": [
+          54,
+          35,
+          27,
+          99,
+          89,
+          73
+        ]
+      },
+      {
+        "powers_xyz": [
+          2,
+          0,
+          4
+        ],
+        "gamma_coefficients": [
+          43,
+          21,
+          62,
+          35,
+          43,
+          25
+        ]
+      },
+      {
+        "powers_xyz": [
+          2,
+          1,
+          3
+        ],
+        "gamma_coefficients": [
+          14,
+          16,
+          23,
+          53,
+          13,
+          76
+        ]
+      },
+      {
+        "powers_xyz": [
+          2,
+          2,
+          2
+        ],
+        "gamma_coefficients": [
+          33,
+          43,
+          56,
+          67,
+          30,
+          80
+        ]
+      },
+      {
+        "powers_xyz": [
+          2,
+          3,
+          1
+        ],
+        "gamma_coefficients": [
+          74,
+          80,
+          30,
+          73,
+          8,
+          40
+        ]
+      },
+      {
+        "powers_xyz": [
+          2,
+          4,
+          0
+        ],
+        "gamma_coefficients": [
+          85,
+          92,
+          6,
+          27,
+          100,
+          33
+        ]
+      },
+      {
+        "powers_xyz": [
+          3,
+          0,
+          3
+        ],
+        "gamma_coefficients": [
+          58,
+          13,
+          48,
+          89,
+          17,
+          78
+        ]
+      },
+      {
+        "powers_xyz": [
+          3,
+          1,
+          2
+        ],
+        "gamma_coefficients": [
+          20,
+          45,
+          3,
+          75,
+          20,
+          68
+        ]
+      },
+      {
+        "powers_xyz": [
+          3,
+          2,
+          1
+        ],
+        "gamma_coefficients": [
+          85,
+          92,
+          6,
+          27,
+          100,
+          33
+        ]
+      },
+      {
+        "powers_xyz": [
+          3,
+          3,
+          0
+        ],
+        "gamma_coefficients": [
+          81,
+          100,
+          74,
+          32,
+          22,
+          95
+        ]
+      },
+      {
+        "powers_xyz": [
+          4,
+          0,
+          2
+        ],
+        "gamma_coefficients": [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "powers_xyz": [
+          4,
+          1,
+          1
+        ],
+        "gamma_coefficients": [
+          33,
+          43,
+          56,
+          67,
+          30,
+          80
+        ]
+      },
+      {
+        "powers_xyz": [
+          4,
+          2,
+          0
+        ],
+        "gamma_coefficients": [
+          54,
+          35,
+          27,
+          99,
+          89,
+          73
+        ]
+      },
+      {
+        "powers_xyz": [
+          5,
+          0,
+          1
+        ],
+        "gamma_coefficients": [
+          20,
+          45,
+          3,
+          75,
+          20,
+          68
+        ]
+      },
+      {
+        "powers_xyz": [
+          5,
+          1,
+          0
+        ],
+        "gamma_coefficients": [
+          85,
+          92,
+          6,
+          27,
+          100,
+          33
+        ]
+      },
+      {
+        "powers_xyz": [
+          6,
+          0,
+          0
+        ],
+        "gamma_coefficients": [
+          81,
+          100,
+          74,
+          32,
+          22,
+          95
+        ]
+      }
+    ]
+  },
+  "principal_slice": {
+    "affine_rank": 33,
+    "labels": [
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "target_coordinate": 0,
+        "kind": "s_union_times_K3_sheet",
+        "powers_xyz": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "target_coordinate": 1,
+        "kind": "s_union_times_K3_sheet",
+        "powers_xyz": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_degree3",
+        "powers_xyz": [
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "target_coordinate": 2,
+        "kind": "s_union_times_K3_sheet",
+        "powers_xyz": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "columns_sha256": "60023bf2896fafb59ded40019086e88ba7627bbcdb5e8f54319c0b4c0eb286a1",
+    "lies_in_full_incidence_kernel": true,
+    "selected_member_is_independent_from_slice": true
+  },
+  "full_graph_preserving_frame": {
+    "affine_kernel_rank": 123,
+    "radial_rank": 1,
+    "projective_tangent_rank": 122,
+    "principal_tangent_rank": 33,
+    "additional_tangent_rank": 89,
+    "extra_kernel_basis_positions_zero_based": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      39,
+      40,
+      41,
+      42,
+      43,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122
+    ],
+    "extra_kernel_free_columns_zero_based": [
+      118,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      161,
+      162,
+      163,
+      164,
+      165,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248
+    ],
+    "selected_member_sha256": "d0e67fcaedf65aa00d2a4b62030fad5a97403bab2dec64e9a54f71cd2566c994",
+    "projective_tangent_frame_sha256": "9935e0f3e3ea5ece66ddb74a1d39e6ea9104786d57e848f6ba1c98a06f7c5d25",
+    "kernel_frame_sha256": "9833dd3e92fd82a27e9b0ecf4bf7824a8799b203621e51fe15b6a523dca28b1f"
+  },
+  "exact_normal_sequence": {
+    "homogeneous_sequence": "0 -> K_123 -> V_249 -> R_126 -> 0",
+    "projective_sequence": "0 -> K/<F> (rank122) -> V/<F> (rank248) -> R (rank126) -> 0",
+    "old_principal_slice_sequence": "0 -> (K/<F>)/L_33 (rank89) -> (V/<F>)/L_33 (rank215) -> R_126 -> 0",
+    "dimension_identity": "215=89+126",
+    "true_incidence_normal_rank": 126,
+    "old_215_quotient_was_not_purely_normal": true,
+    "incidence_complement_standard_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      111,
+      112,
+      119,
+      120,
+      128,
+      129,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      156,
+      157,
+      158,
+      159,
+      160,
+      166,
+      167,
+      168,
+      169
+    ],
+    "full_249_frame_rank": 249
+  },
+  "checks": {
+    "G3AG_incidence_matrix_is_reconstructed_hash_exactly": true,
+    "selected_residue_incidence_rank_is126": true,
+    "canonical_incidence_kernel_rank_is123": true,
+    "selected_F0_residue_member_lies_in_the_kernel": true,
+    "degree_six_union_of_H_H_4H_source_equations_is_emitted": true,
+    "all33_principal_s_union_directions_lie_in_the_full_kernel": true,
+    "F0_plus_the33_principal_directions_have_rank34": true,
+    "exactly89_additional_kernel_directions_complete_the_projective_tangent": true,
+    "the_projective_graph_preserving_tangent_has_rank122": true,
+    "the_true_incidence_normal_quotient_has_rank126": true,
+    "the_old_rank215_slice_quotient_splits_dimensionally_as89_plus126": true,
+    "kernel_frame_plus126_incidence_complement_columns_has_rank249": true
+  },
+  "theorem": {
+    "name": "FullGraphIncidenceTangentAndNormalDecompositionTheorem",
+    "statement": "On the selected eta9 residue carrier, the three-graph incidence map V_249 to R_126 has rank 126 and kernel K of rank 123. The selected member F and the 33 principal s_union*H directions span rank 34 inside K. A canonical exact extension supplies 89 further graph-preserving directions, so K/<F> has rank 122. Consequently the true projective incidence-normal quotient has rank 126. The earlier quotient by only the 33-direction principal slice has rank 215 because it contains both the omitted rank-89 tangent sector and the rank-126 true normal sector.",
+    "tier": "CLOSED_EXACT_SELECTED_RESIDUE_LINEAR_ALGEBRA_AND_FORMAL_RANK_PROMOTION"
+  },
+  "frontier_delta": {
+    "old_structural_normal_compatibility_count": 215,
+    "corrected_full_incidence_normal_compatibility_count": 126,
+    "newly_exposed_graph_preserving_tangent_directions": 89,
+    "next_required_object": "Evaluate the carrier-specific primitive Deligne/Gauss-Manin response on the full rank-122 projective tangent frame, not only the 33 principal directions; then test the rank-126 conormal component and solve the residual rank-122 system."
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_physics_inputs": 0,
+    "rank123_is_deformation_module_not_physical_parameter_count": true,
+    "rank89_is_omitted_tangent_dimension_not_new_knobs": true
+  },
+  "guardrails": {
+    "claims_the_fixed_CQ_D_N_S_matrices_transfer_to_this_carrier": false,
+    "claims_the_full_Deligne_derivative_is_computed": false,
+    "claims_beta_C_is_emitted_or_zero": false,
+    "claims_the126_incidence_conormal_rows_are_Deligne_syzygies": false,
+    "claims_a_physical_kernel_direction_is_selected": false,
+    "claims_visible_V3_HYM_or_Hull_Strominger_endpoint": false,
+    "closes_B_ETA9_01": false,
+    "closes_B_ETA9_02": false,
+    "closes_B_HS_01": false
+  }
+}

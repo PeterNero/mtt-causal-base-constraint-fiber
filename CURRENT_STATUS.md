@@ -2830,3 +2830,27 @@ or a separately proved characteristic-zero 126-row normal projection, and
 reduce modulo the integral period lattice. Only that result may be passed to
 T68. The 122-direction graph-family search comes afterward. No observed
 value, fit parameter or selector was added.
+
+## CBF.T70 graph-tangent single-fiber rank
+
+`Q79Eta9GraphTangentSingleFiberRankTheorem_v1.md` computes the exact selected-
+residue restriction of the complete UST.G3AK graph-preserving coefficient
+tangent to the Fermat-origin fiber. Two independent elimination routes give
+
+```text
+projective graph tangent       122
+fixed-fiber image               70
+fixed-fiber invisible kernel    52
+fixed-fiber cokernel             12
+```
+
+The old 33-direction principal slice has image rank only 11. The 89 extra
+graph-preserving directions therefore add 59 new image dimensions modulo the
+principal image. This proves quantitatively why the principal slice was too
+small and why a single-fiber test still cannot select one family member.
+
+T70 is strictly coefficient-level. It does not retype rank 70 as the
+derivative of the Picard, Abel-Jacobi, Deligne or BHT maps. The completed
+pathwide BHT sweep for `C_fr` remains the next physical object; its later
+122-direction derivative must retain the explicit rank-52 fiber-blind sector.
+No observed value, fit parameter or selector was added.
