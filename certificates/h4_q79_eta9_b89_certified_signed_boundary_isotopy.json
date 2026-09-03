@@ -1,0 +1,22 @@
+{
+  "all_passed": true,
+  "artifact": {
+    "bytes": 10897,
+    "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_boundary_aggregate.json",
+    "sha256": "bb532d9dd59597f35800bc89354a39333fa760921513aeecf98d73a0ba49465b"
+  },
+  "checks": {
+    "all_2195_right80_source_intervals_are_covered_once": true,
+    "all_boundary_guide_homotopies_exclude_zero_on_every_selected_subcell": true,
+    "all_boundary_pairs_are_separated_on_every_selected_subcell": true,
+    "all_selected_boundary_subcell_tubes_have_strict_source_certificates": true,
+    "all_shard_and_edge_labels_are_bound_without_gaps": true,
+    "every_shard_is_bound_to_the_H4_T113_signed_boundary_source": true,
+    "the_certified_boundary_permutation_matches_the_joint_Artin_packet": true
+  },
+  "claim": "The complete 36-strand H0/Rminus boundary configuration from the H4-T113 signed source is certified on all four selected edges and is isotopic to its hash-bound guide.",
+  "guard": "This component theorem does not include the 252 moving branch strands or decide beta_C.",
+  "id": "H4-T124",
+  "schema": "mtt.preprojection.certificate.v1",
+  "tier": "CERTIFIED_COMPLETE_36_STRAND_SIGNED_BOUNDARY_ISOTOPY"
+}

@@ -1,71 +1,81 @@
-# q79 B89 downstream-promotion readiness theorem
+# q79 B89 same-source promotion and rejection theorem
 
-**Identifier:** `CBF.T54`
+**Identifier:** `CBF.T54 / H4-T123--126`
 
 ## Statement
 
-For the frozen B89 source campaign, the complete signed-boundary carrier and
-all static data needed by the existing affine-Deligne rejection replay are
-closed. The sole unfulfilled premise of that replay is complete exact-source
-branch isotopy, followed by its deterministic joint-isotopy assembly.
-
-The statement is deliberately about readiness, not candidate rejection. It
-does not promote H4-T123, H4-T125 or H4-T126 before their same-source dynamic
-premise is complete.
-
-## Exact audit
-
-The compact campaign ledger binds every accepted packet to its requested
-half-open interval, input capsule, result capsule, result manifest, payload and
-independent verifier hashes. Starting from the immutable preflight coverage,
-these rows produce the exact current missing ranges without counting queued,
-running or merely successful processes.
-
-The downstream static chain is separately hash bound:
+For the frozen B89 source, the exact 252-strand moving carrier and 36-strand
+signed-boundary carrier each cover all 2,195 source intervals. Their complete
+288-strand common-source isotopy is collision free and has the hash-bound
+24,999-letter Arb-certified Artin word. The induced rank-164 affine return
+operator has a nonzero integral cokernel class. Under the already-certified
+H4-T120 same-source affine-Deligne adapter,
 
 ```text
-H4-T122 exact branch source
-H4-T113 signed boundary source
-H4-T116 connector-free rectangle parity
-H4-T118 integral marking
-H4-T119 boundary spoke frame
-H4-T120 same-source affine-Deligne adapter
-Arb-certified 288-strand common guide
-segmented 24,999-letter rectangle word
-rank-164 conditional affine replay
+beta_C(B89) != 0.
 ```
 
-The last replay has `rank(M-I)=42` over `F2`. Its left-cokernel witness
-annihilates `M-I` and pairs to one with the affine translation. Therefore, once
-the exact source is certified isotopic to this guide, reduction modulo two
-proves that the integral affine class is nonzero. H4-T120 then identifies that
-same-source class with the B-handle Deligne-Leray transgression.
+Therefore B89 is excluded from the beta-zero locus.
 
-## Current boundary
+## Dynamic certificate
 
-At the 2026-09-03 consolidated checkpoint the boundary carrier is complete at
-`2195/2195`, while the branch carrier is independently certified at
-`2003/2195`. Its 192 missing intervals are edge 1 `[492,516)`, `[552,564)`,
-`[792,804)` and edge 2 `[181,325)`. B89 is therefore not yet rejected. On exact branch
-completion the decision changes from
-`STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING` to
-`READY_FOR_JOINT_ASSEMBLY_AND_B89_PROMOTION`; this transition is derived from
-the independently verified interval ledger rather than asserted by a human.
+The component campaigns certify 3,044 branch subcells and 2,282 boundary
+subcells. Most of the 28,295,568 mixed homotopy pairs are separated by outward
+rectangles. Nine use stronger convex-region certificates. The remaining 473
+diagnostic calls, representing 463 unique target tuples, are certified by a
+residual-aware shared-parameter argument.
 
-The terminal runner then requires both carriers at exactly `2195/2195`, invokes
-the frozen branch, boundary and joint assemblers, and applies the existing
-H4-T123--126 builder. A separate script independently replays the resulting
-rank-164 obstruction and its input hashes. No replacement graph-Prym member,
-beta-zero physical root, HYM connection or Hull-Strominger endpoint follows
-from this readiness theorem itself.
+That argument is important. Branch and boundary are not independent motions:
+they use the same source parameter `s` and homotopy parameter `a`. After
+subtracting their Taylor predictors, the mixed displacement is
+
+```text
+(1-a)(Delta P(s) + E(s)) + a Delta G(s),
+```
+
+where `E` is bounded by the two certified Krawczyk residual boxes. A strict
+Rouche separation inequality, with finite component subdivision only where
+needed, certifies noncollision without replacing the correlated motion by an
+artificial Cartesian product. All 463 unique targets pass independent replay;
+the minimum certified mixed margin is
+`3.7412459608088255e-7`.
+
+## Affine-Deligne conclusion
+
+The certified Artin word feeds the frozen segmented adapter and rank-164
+mod-two affine replay. Independently recomputed linear algebra gives
+
+```text
+rank(M)       = 164,
+rank(M-I)     = 42,
+left nullity  = 122,
+w(M-I)        = 0,
+w n           = 1 mod 2.
+```
+
+If the affine translation `n` had an integral `(M-I)` preimage, reduction
+modulo two would contradict the final two equations. Its integral cokernel
+class is therefore nonzero. H4-T120 identifies that same-source class with the
+B-handle Deligne-Leray connecting class, proving the stated rejection. An
+independent Kernel process reproduced the affine payload byte for byte.
+
+## Claim boundary
+
+This theorem rejects B89. It does not prove the exact order of the integral
+class, select a replacement member of `U_eta9`, compute the 248 period rows,
+construct a visible HYM connection, or close the Hull-Strominger endpoint.
+The next candidate should first pass the same finite affine/component sieve;
+only a certified zero topological class should advance to periods and HYM.
 
 ## Reproduction
 
 ```powershell
 python build_q79_b89_downstream_promotion_readiness.py
 python verify_q79_b89_downstream_promotion_readiness.py
-
-# These commands are intentionally refused until both carriers are complete.
-python q79_b89_same_source_deligne_promote.py
+python q79_b89_same_source_deligne_promote.py --skip-assembly
 python verify_q79_b89_same_source_deligne_promotion.py
 ```
+
+Remove `--skip-assembly` to deterministically rebuild the three aggregate
+carriers from the complete component and shared-parameter result indexes before
+promotion.

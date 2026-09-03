@@ -1,0 +1,51 @@
+{
+  "schema": "mtt.cbf.q79-b89-joint-shared-parameter-campaign.v1",
+  "created_at": "2026-09-03T09:00:00Z",
+  "purpose": "Certify all 463 unique unresolved mixed targets by subtracting branch and boundary Taylor predictors before interval evaluation, preserving the common source and homotopy parameters and including both Krawczyk residual radii.",
+  "frontier_before": {
+    "diagnostic_atoms": 473,
+    "unique_targets": 463,
+    "source_intervals": 365,
+    "edge_label_tracks": 12
+  },
+  "source_locks": {
+    "diagnostic": {"path": "q79_b89_joint_mixed_separation_diagnostic.json", "sha256": "af5afb2e6cec6389dbc0f26376ea7b9ae193337c7681a3117c5142efba716516"},
+    "worker": {"path": "q79_b89_joint_shared_parameter_worker.py", "sha256": "c446ce0f6292efa3861371053c67743e172342329aa605bad902064c91a664d6"},
+    "campaign_worker": {"path": "q79_b89_joint_shared_parameter_campaign_worker.py", "sha256": "54f0e55e569884bcb60376bb49bdf328c5ab59a2142d7dd9532512a4f29d700b"},
+    "independent_verifier": {"path": "verify_q79_b89_joint_shared_parameter.py", "sha256": "57d5d26f41f16838ab446b2459f0188c8a0b5b17d86e61c40a06064a026ffd98"},
+    "campaign_verifier": {"path": "verify_q79_b89_joint_shared_parameter_campaign.py", "sha256": "13f75c1e305861def5e263c0439396ffa7ba35c8ffa2d92712612bbda73e72e7"}
+  },
+  "method": {
+    "source_coordinate": "Delta P(s) = P_branch(s) - P_boundary(s)",
+    "guide_coordinate": "Delta G(s) = G_branch(s) - G_boundary(s)",
+    "homotopy": "(1-a)(Delta P(s)+E(s)) + a Delta G(s)",
+    "residual_bound": "|E| is bounded by the sum of the two certified Krawczyk x residual boxes",
+    "acceptance": "strict residual-aware Rouche inequality, with strict noncollinearity or positive-alignment fallback",
+    "precision_bits": 512,
+    "maximum_parameter_depth": 24
+  },
+  "jobs": [
+    {"edge": 0, "interval_start": 114, "interval_stop": 144, "targets": 28, "id": "4d11766c-3f52-44c2-8dfe-86f190ebccd7", "input_capsule_sha256": "4b42915e634ca146bcaa91c17c4e4ed798171917be76e599e1cc3f005256a883", "output": "outputs/t53-shared-e0-i114-144.json"},
+    {"edge": 0, "interval_start": 144, "interval_stop": 172, "targets": 25, "id": "93c048c7-f3a4-4d32-8f81-568bf1976bc8", "input_capsule_sha256": "4b42915e634ca146bcaa91c17c4e4ed798171917be76e599e1cc3f005256a883", "output": "outputs/t53-shared-e0-i144-172.json"},
+    {"edge": 0, "interval_start": 172, "interval_stop": 202, "targets": 24, "id": "09a3e752-ef4b-4d91-9ed7-feac77ceb862", "input_capsule_sha256": "4b42915e634ca146bcaa91c17c4e4ed798171917be76e599e1cc3f005256a883", "output": "outputs/t53-shared-e0-i172-202.json"},
+    {"edge": 1, "interval_start": 125, "interval_stop": 150, "targets": 25, "id": "f882d55e-2bb4-4bd5-89e1-b3031adf68ad", "input_capsule_sha256": "f4c74b330def7c4848d1a7bb512d9295bbf480150e3f78483783413c4ec0bd9e", "output": "outputs/t53-shared-e1-i125-150.json"},
+    {"edge": 1, "interval_start": 150, "interval_stop": 338, "targets": 25, "id": "5a4c81a7-e01b-42a3-858d-ee5986aec53b", "input_capsule_sha256": "f4c74b330def7c4848d1a7bb512d9295bbf480150e3f78483783413c4ec0bd9e", "output": "outputs/t53-shared-e1-i150-338.json"},
+    {"edge": 1, "interval_start": 338, "interval_stop": 369, "targets": 40, "id": "a52e9703-909e-423e-a3f9-b45e79cf4f5a", "input_capsule_sha256": "f4c74b330def7c4848d1a7bb512d9295bbf480150e3f78483783413c4ec0bd9e", "output": "outputs/t53-shared-e1-i338-369.json"},
+    {"edge": 1, "interval_start": 369, "interval_stop": 394, "targets": 25, "id": "cb16a271-8d80-455d-bb8e-96f09a4b56b4", "input_capsule_sha256": "f4c74b330def7c4848d1a7bb512d9295bbf480150e3f78483783413c4ec0bd9e", "output": "outputs/t53-shared-e1-i369-394.json"},
+    {"edge": 1, "interval_start": 394, "interval_stop": 489, "targets": 33, "id": "32fd66e6-44cf-4247-bd6c-bb5759e01c0f", "input_capsule_sha256": "f4c74b330def7c4848d1a7bb512d9295bbf480150e3f78483783413c4ec0bd9e", "output": "outputs/t53-shared-e1-i394-489.json"},
+    {"edge": 1, "interval_start": 489, "interval_stop": 517, "targets": 39, "id": "99a80208-2ec2-46a1-a0e7-8763c1ac316e", "input_capsule_sha256": "f4c74b330def7c4848d1a7bb512d9295bbf480150e3f78483783413c4ec0bd9e", "output": "outputs/t53-shared-e1-i489-517.json"},
+    {"edge": 1, "interval_start": 517, "interval_stop": 523, "targets": 10, "id": "8af1324f-8e7b-48ae-852a-e32c6713a816", "input_capsule_sha256": "f4c74b330def7c4848d1a7bb512d9295bbf480150e3f78483783413c4ec0bd9e", "output": "outputs/t53-shared-e1-i517-523.json"},
+    {"edge": 2, "interval_start": 166, "interval_stop": 265, "targets": 27, "id": "55fd0b2c-fa84-4ea6-b343-e0d1c69a25b4", "input_capsule_sha256": "ba30746ee06bf73a11fa868a2808bea0ea40db60b51c226b8f2c78dac180d626", "output": "outputs/t53-shared-e2-i166-265.json"},
+    {"edge": 2, "interval_start": 265, "interval_stop": 359, "targets": 27, "id": "42166f34-aed7-4083-ae74-121623547cee", "input_capsule_sha256": "ba30746ee06bf73a11fa868a2808bea0ea40db60b51c226b8f2c78dac180d626", "output": "outputs/t53-shared-e2-i265-359.json"},
+    {"edge": 2, "interval_start": 360, "interval_stop": 406, "targets": 41, "id": "af385e9b-9423-4000-ab98-a7aca4d9a3b6", "input_capsule_sha256": "ba30746ee06bf73a11fa868a2808bea0ea40db60b51c226b8f2c78dac180d626", "output": "outputs/t53-shared-e2-i360-406.json"},
+    {"edge": 2, "interval_start": 406, "interval_stop": 459, "targets": 32, "id": "6c60294d-897a-4b40-bcaa-3fcf917d44ea", "input_capsule_sha256": "ba30746ee06bf73a11fa868a2808bea0ea40db60b51c226b8f2c78dac180d626", "output": "outputs/t53-shared-e2-i406-459.json"},
+    {"edge": 2, "interval_start": 461, "interval_stop": 486, "targets": 32, "id": "762beb89-04e0-4fd8-884d-1191b4cf4be3", "input_capsule_sha256": "ba30746ee06bf73a11fa868a2808bea0ea40db60b51c226b8f2c78dac180d626", "output": "outputs/t53-shared-e2-i461-486.json"},
+    {"edge": 2, "interval_start": 486, "interval_stop": 498, "targets": 30, "id": "a6e8c480-b62b-47a2-a2ef-c43e0f7466a3", "input_capsule_sha256": "ba30746ee06bf73a11fa868a2808bea0ea40db60b51c226b8f2c78dac180d626", "output": "outputs/t53-shared-e2-i486-498.json"}
+  ],
+  "guardrails": {
+    "process_success_is_not_proof": true,
+    "independent_replay_required": true,
+    "component_carriers_remain_separately_certified": true,
+    "claims_B89_or_beta_C": false
+  }
+}

@@ -15,10 +15,11 @@ class SameSourceDelignePromotionTests(unittest.TestCase):
     def complete_packet(self):
         return {
             "theorem_id": "CBF.T54",
-            "decision": "READY_FOR_JOINT_ASSEMBLY_AND_B89_PROMOTION",
+            "decision": "READY_FOR_B89_PROMOTION",
             "coverage": {
                 "branch": {"certified_intervals": 2195, "complete": True},
                 "boundary": {"certified_intervals": 2195, "complete": True},
+                "joint": {"complete": True},
             },
             "checks": {"coverage": True},
             "guardrails": {"premature_claim": False},

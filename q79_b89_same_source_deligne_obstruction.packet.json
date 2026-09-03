@@ -1,0 +1,155 @@
+{
+  "Deligne_conclusion": {
+    "B89_beta_zero_locus_membership": false,
+    "H4_T120_identity": "[n]=delta(nu_D)|_gamma for nu_D=AJ(D)",
+    "beta_C_B89": "NONZERO",
+    "period_rows_required_for_this_rejection": 0,
+    "replacement_U_eta9_member_selected": false
+  },
+  "certified_replay": {
+    "Artin_word_length": 24999,
+    "left_nullity_M_minus_I_over_F2": 122,
+    "rank_M_minus_I_over_F2": 42,
+    "rank_M_over_F2": 164,
+    "semantic_fields_equal_to_independently_replayed_conditional_packet": [
+      "action_mod2",
+      "affine_translation_mod2",
+      "mod2_obstruction_witness",
+      "rectangle_endpoint_permutation",
+      "rectangle_sheet_relabeling",
+      "rectangle_event_counts",
+      "invariants",
+      "decision"
+    ],
+    "translation_support": 85,
+    "witness_pairing_mod2": 1,
+    "witness_support": 21
+  },
+  "checks": {
+    "H4_T120_identifies_this_same_source_affine_class_with_the_Deligne_connecting_class": true,
+    "a_nonzero_mod_two_cokernel_class_forbids_an_integral_M_minus_I_preimage": true,
+    "all_branch_boundary_pairs_are_separated_during_the_common_288_strand_isotopy": true,
+    "an_isolated_Kernel_process_reproduces_the_certified_affine_packet_byte_for_byte": true,
+    "beta_C_of_B89_is_nonzero_and_B89_is_excluded_from_the_beta_zero_locus": true,
+    "the_252_moving_branch_strands_are_certified_from_the_H4_T122_exact_source": true,
+    "the_36_signed_boundary_strands_are_certified_from_the_H4_T113_source": true,
+    "the_certified_word_replay_agrees_with_the_prior_conditional_replay_in_every_semantic_field": true,
+    "the_exact_source_braid_is_bound_to_the_24999_letter_Arb_certified_Artin_word": true,
+    "the_mod_two_witness_annihilates_M_minus_I_and_pairs_one_with_n": true
+  },
+  "controlling_blockers": [
+    "B.ETA9.01",
+    "B.ETA9.02",
+    "B.HS.01"
+  ],
+  "frontier_delta": {
+    "after": "The exact H4-T122/H4-T113 source braid is certified through the complete 288-strand isotopy. Its nonzero mod-two affine class is therefore an unconditional same-source Deligne obstruction, so B89 is rejected from the beta-zero locus without a 248-period computation.",
+    "before": "B89 had a reproducible nonzero affine class, but the complete characteristic-zero moving 288-strand isotopy was not certified."
+  },
+  "guardrails": {
+    "claims_B89_is_a_member_of_U_eta9": false,
+    "claims_B_ETA9_01_is_globally_closed": false,
+    "claims_a_248_coordinate_period_image_was_computed": false,
+    "claims_a_replacement_beta_zero_member_was_selected": false,
+    "claims_a_visible_HYM_or_Hull_Strominger_endpoint": false,
+    "claims_the_new_replay_proves_exact_order_two_over_Z": false
+  },
+  "inputs": {
+    "H4_T113_signed_boundary": {
+      "bytes": 2101,
+      "path": "mtt-preprojection-repair-calculus/certificates/h4_q79_eta9_b89_certified_signed_boundary_braid.json",
+      "sha256": "101ac57f5c2effca50db58d9d9db29b0972c86be31fb9cbad8214519ea8b1895"
+    },
+    "H4_T116_connector_free_parity": {
+      "bytes": 2948,
+      "path": "mtt-preprojection-repair-calculus/certificates/h4_q79_eta9_b89_selected_rectangle_connector_free_parity.json",
+      "sha256": "24cf10fc0990e63b74426d9a0eaa35a17d91a744f1f3abeafcc878a36c59abd7"
+    },
+    "H4_T118_integral_marking": {
+      "bytes": 2136,
+      "path": "mtt-preprojection-repair-calculus/certificates/h4_q79_eta9_b89_certified_comb_h1_intertwiner.json",
+      "sha256": "de71d57035d801ba3ec1d45341ee19f92f6a4521531f4158758135d9d0cf0052"
+    },
+    "H4_T119_boundary_spokes": {
+      "bytes": 2695,
+      "path": "mtt-preprojection-repair-calculus/certificates/h4_q79_eta9_b89_certified_boundary_spoke_frame.json",
+      "sha256": "1850b60c72c2d77d312a9c76beb8cc88bb5900078d68cd53000e2fbb7e47656e"
+    },
+    "H4_T120_affine_Deligne_adapter_certificate": {
+      "bytes": 1735,
+      "path": "mtt-preprojection-repair-calculus/certificates/h4_q79_eta9_b89_affine_deligne_adapter.json",
+      "sha256": "058e8478f86eae139fdbd19831f762c7697f2d4fadf4251e471792bfdb9a0bda"
+    },
+    "H4_T120_affine_Deligne_adapter_packet": {
+      "bytes": 5782,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_affine_deligne_adapter/q79_eta9_b89_affine_deligne_adapter.packet.json",
+      "sha256": "fcf34d9ab6ff70496bbaf28593f546c8ad514e683aae62c945d3cddad5436617"
+    },
+    "H4_T122_exact_carrier": {
+      "bytes": 1260,
+      "path": "mtt-preprojection-repair-calculus/certificates/h4_q79_eta9_b89_exact_integral_carrier.json",
+      "sha256": "0408a2c2d44b9d3cfc76018cf85e300313682db2a592ae958ed8cf2289048389"
+    },
+    "boundary_isotopy": {
+      "bytes": 10897,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_boundary_aggregate.json",
+      "sha256": "bb532d9dd59597f35800bc89354a39333fa760921513aeecf98d73a0ba49465b"
+    },
+    "branch_isotopy": {
+      "bytes": 35627,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_branch_aggregate.json",
+      "sha256": "2762bdf9427bae3e81aeaa7859068a2249c2178ffc19f752d1cabf54f08acb64"
+    },
+    "certified_affine_obstruction": {
+      "bytes": 279038,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/certified-common-grid-right80-mod2-affine-obstruction.json",
+      "sha256": "72b8cb52c1b6ee62091d3331798c7f32e388895356e82905e9f311b257157651"
+    },
+    "conditional_affine_obstruction": {
+      "bytes": 279038,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/family-global-right80-plus-rectangle-mod2-affine-obstruction.json",
+      "sha256": "a50af6c694374e0dd94021a3c4db47d2b1040e783b4dea75229fa8b593db342d"
+    },
+    "independent_affine_replay_campaign": {
+      "bytes": 1112,
+      "path": "mtt-preprojection-h4t108/experiments/q79_eta9_selected_component_scout/outputs/q79-eta9-b89-certified-affine-replay.packet.json",
+      "sha256": "b6d2309aedf74a55e88160f0c0629e1566b9d0b6bec6de6b02235d6c9d3f4f4b"
+    },
+    "joint_Artin": {
+      "bytes": 1856413,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/certified-common-grid-right80-joint-artin.json",
+      "sha256": "ea575aae1795a9b7dddcb6bf83554bbc25ec07ea5137c8a3443456ad7173041f"
+    },
+    "joint_isotopy": {
+      "bytes": 209317,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_joint_aggregate.json",
+      "sha256": "b2b9bdbf3ca50e690dba251955e02c9ee27735c9cb408e9f677e521854edac2d"
+    },
+    "segmented_adapter": {
+      "bytes": 2982541,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/certified-common-grid-right80-segmented-adapter.json",
+      "sha256": "38ccfc5ed6657bb730beb7ebf3d825954085e0f8dce16b1c1ec195c55e37c2c6"
+    }
+  },
+  "integral_argument": {
+    "assume_zero": "If [n]=0 in coker(M-I) over Z, then n=(M-I)b for an integral b.",
+    "conclusion": "[n] is nonzero over Z; exact torsion order is not needed here.",
+    "reduce_mod_two": "Reduction modulo two would put n_bar in im(M_bar-I).",
+    "witness_contradiction": "w(M_bar-I)=0 but w n_bar=1."
+  },
+  "next": {
+    "rule": "Apply the finite affine/component sieve before any dense 248-row period transport; only a certified zero topological class advances to normalized periods and HYM.",
+    "target": "the next same-residue candidate not already rejected, beginning with the beta-zero-capable G3AJ/G3BJ branch inventory"
+  },
+  "schema": "mtt.preprojection.q79-eta9-b89-certified-affine-deligne-obstruction.v1",
+  "selected_source": {
+    "absolute_integral_rank": 164,
+    "candidate": "B89",
+    "divisor": "D=(C intersect H0)-(C intersect Rminus)",
+    "moving_strands": 252,
+    "path": "positive-lift connector-free hybrid right-80 rectangle",
+    "signed_boundary_strands": 36
+  },
+  "theorem_id": "H4-T126",
+  "tier": "CERTIFIED_CHARACTERISTIC_ZERO_SAME_SOURCE_DELIGNE_OBSTRUCTION"
+}

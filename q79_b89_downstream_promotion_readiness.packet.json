@@ -1,14 +1,14 @@
 {
   "checks": {
-    "after_complete_branch_coverage_joint_assembly_is_the_only_missing_premise_for_the_existing_B89_rejection_replay": true,
-    "all_compact_campaign_attestations_bind_to_exact_requested_ranges_and_hashes": true,
+    "all_463_hard_mixed_targets_have_independently_verified_shared_parameter_certificates": true,
+    "all_dynamic_premises_for_the_existing_B89_rejection_replay_are_complete": true,
+    "an_independent_kernel_process_reproduced_the_affine_payload_byte_for_byte": true,
     "the_H4_T113_T116_T118_T119_T120_and_T122_static_authorities_are_hash_bound": true,
-    "the_boundary_carrier_is_complete_after_independent_requester_verification": true,
-    "the_common_grid_Artin_word_and_segmented_rectangle_adapter_are_closed": true,
-    "the_conditional_rank_164_replay_has_rank_M_minus_I_42_and_a_pairing_one_left_witness": true,
-    "the_dynamic_decision_is_determined_only_by_independently_verified_branch_coverage": true,
-    "the_remaining_branch_ranges_are_computed_exactly_without_counting_process_only_success": true,
-    "timeout_labeled_results_require_a_zero_exit_manifest_and_the_same_independent_audit": true
+    "the_complete_288_strand_same_source_isotopy_is_collision_free": true,
+    "the_exact_252_strand_branch_carrier_is_complete_on_all_2195_source_intervals": true,
+    "the_exact_36_strand_signed_boundary_carrier_is_complete_on_all_2195_source_intervals": true,
+    "the_joint_isotopy_is_hash_bound_to_the_24999_letter_Arb_certified_Artin_word": true,
+    "the_rank_164_replay_has_rank_M_minus_I_42_and_a_pairing_one_left_witness": true
   },
   "conditional_obstruction": {
     "left_nullity_M_minus_I_over_F2": 122,
@@ -21,57 +21,28 @@
   },
   "coverage": {
     "boundary": {
-      "campaign_delta_intervals": 255,
-      "campaign_verified_packets": 65,
       "certified_intervals": 2195,
       "complete": true,
-      "missing_ranges": {
-        "0": [],
-        "1": [],
-        "2": [],
-        "3": []
-      },
       "target_intervals": 2195
     },
     "branch": {
-      "campaign_delta_intervals": 1625,
-      "campaign_verified_packets": 138,
-      "certified_intervals": 2003,
-      "complete": false,
-      "missing_ranges": {
-        "0": [],
-        "1": [
-          [
-            492,
-            516
-          ],
-          [
-            552,
-            564
-          ],
-          [
-            792,
-            804
-          ]
-        ],
-        "2": [
-          [
-            181,
-            325
-          ]
-        ],
-        "3": []
-      },
+      "certified_intervals": 2195,
+      "complete": true,
       "target_intervals": 2195
+    },
+    "joint": {
+      "complete": true,
+      "hard_diagnostic_calls": 473,
+      "mixed_pairs": 28295568,
+      "unique_hard_targets": 463
     }
   },
-  "decision": "STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING",
+  "decision": "READY_FOR_B89_PROMOTION",
   "guardrails": {
-    "claims_B89_is_already_rejected": false,
     "claims_a_replacement_graph_Prym_member": false,
     "claims_beta_C_zero_or_a_HYM_endpoint": false,
-    "claims_branch_isotopy_complete_without_exact_verified_coverage": false,
-    "claims_joint_isotopy_before_assembly": false
+    "claims_exact_order_two_over_Z": false,
+    "claims_the_B89_rejection_before_running_H4_T120_promotion": false
   },
   "inputs": {
     "H4_T113_signed_boundary": {
@@ -109,15 +80,15 @@
       "path": "mtt-preprojection-repair-calculus/certificates/h4_q79_eta9_b89_exact_integral_carrier.json",
       "sha256": "0408a2c2d44b9d3cfc76018cf85e300313682db2a592ae958ed8cf2289048389"
     },
-    "campaign": {
-      "bytes": 83492,
-      "path": "mtt-causal-base-constraint-fiber/q79_b89_recursive_replacement_campaign.json",
-      "sha256": "6ee7f616de4327df42e326dc988d9c00b7e147672390d44500ef08855c7f396b"
+    "boundary_isotopy": {
+      "bytes": 10897,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_boundary_aggregate.json",
+      "sha256": "bb532d9dd59597f35800bc89354a39333fa760921513aeecf98d73a0ba49465b"
     },
-    "campaign_status": {
-      "bytes": 150586,
-      "path": "mtt-causal-base-constraint-fiber/q79_b89_recursive_replacement_campaign_status.json",
-      "sha256": "036479982964dcb75487654fada72c8e4d54768df48cc4f07815e32ac5359637"
+    "branch_isotopy": {
+      "bytes": 35627,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_branch_aggregate.json",
+      "sha256": "2762bdf9427bae3e81aeaa7859068a2249c2178ffc19f752d1cabf54f08acb64"
     },
     "common_grid_Artin": {
       "bytes": 1856413,
@@ -129,25 +100,44 @@
       "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/certified-common-grid-right80-mod2-affine-obstruction.json",
       "sha256": "72b8cb52c1b6ee62091d3331798c7f32e388895356e82905e9f311b257157651"
     },
-    "preflight_coverage": {
-      "bytes": 1464,
-      "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_preflight_coverage_report.json",
-      "sha256": "78a2e0c4e7c4cf46093d234e02e5430d24aaa6405030e0d7bb82072239d84ddc"
+    "coverage_report": {
+      "bytes": 1093,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_coverage_report.json",
+      "sha256": "d60a25c777515b8c0b840452011a95f8f5acc69d6168822cbd28b5b1559a8324"
+    },
+    "independent_affine_replay": {
+      "bytes": 1112,
+      "path": "mtt-preprojection-h4t108/experiments/q79_eta9_selected_component_scout/outputs/q79-eta9-b89-certified-affine-replay.packet.json",
+      "sha256": "b6d2309aedf74a55e88160f0c0629e1566b9d0b6bec6de6b02235d6c9d3f4f4b"
+    },
+    "joint_isotopy": {
+      "bytes": 209317,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_joint_aggregate.json",
+      "sha256": "b2b9bdbf3ca50e690dba251955e02c9ee27735c9cb408e9f677e521854edac2d"
+    },
+    "joint_replay_audit": {
+      "bytes": 188518,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_joint_mixed_separation_replay_audit.json",
+      "sha256": "8051824f0728d3e3c6aa85f1c4d19f4584becbc9127c3635803417a18e3252cd"
     },
     "segmented_adapter": {
       "bytes": 2982541,
       "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/certified-common-grid-right80-segmented-adapter.json",
       "sha256": "38ccfc5ed6657bb730beb7ebf3d825954085e0f8dce16b1c1ec195c55e37c2c6"
+    },
+    "shared_parameter_result_index": {
+      "bytes": 169935,
+      "path": "mtt-causal-base-constraint-fiber/q79_b89_joint_shared_parameter_results/index.json",
+      "sha256": "36aba6892f1c8e193a09477c7f4e48077d8a1dd47a60054b489454afed5c0cb4"
     }
   },
   "promotion_chain": [
-    "complete the exact 252-strand branch campaign",
-    "assemble the branch and joint 288-strand same-source isotopy",
-    "replay the existing hash-bound rank-164 mod-two affine operator",
-    "apply H4-T120 to infer a nonzero B-handle Deligne-Leray transgression",
-    "reject B89 from the beta-zero locus"
+    "apply the frozen H4-T123 and H4-T124 component promotions",
+    "apply H4-T125 to the completed same-source 288-strand isotopy",
+    "replay the hash-bound rank-164 mod-two affine operator",
+    "apply H4-T120 and H4-T126 to reject B89 from the beta-zero locus"
   ],
-  "schema": "mtt.cbf.q79-b89-downstream-promotion-readiness.v1",
+  "schema": "mtt.cbf.q79-b89-downstream-promotion-readiness.v2",
   "theorem_id": "CBF.T54",
-  "tier": "EXACT_DOWNSTREAM_READINESS_AND_DYNAMIC_COVERAGE_AUDIT"
+  "tier": "EXACT_COMPLETE_DYNAMIC_AND_STATIC_PROMOTION_READINESS"
 }

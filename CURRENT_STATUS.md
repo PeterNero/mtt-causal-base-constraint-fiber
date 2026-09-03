@@ -2227,6 +2227,43 @@ verifier passes `574/574`. Submission still contributes no certified coverage.
 Each returned capsule must pass hash verification and the independent scientific
 verifier before ingestion and T54 reconstruction.
 
+### 2026-09-03 T53 terminal same-source closure and B89 rejection
+
+All 24 hard-interval recovery jobs completed and independently verified. The
+component carrier state is now
+
+```text
+boundary carrier: 2195/2195, complete
+branch carrier:   2195/2195, complete
+```
+
+Joint assembly initially isolated 473 hard diagnostic calls, representing 463
+unique mixed branch-boundary targets. The old independent convex-set fallback
+discarded the common source parameter and was too coarse. The replacement
+shared-parameter theorem retains the common source and homotopy parameters,
+subtracts the two Taylor predictors, and bounds only their certified Krawczyk
+residual. All 463 targets pass independent replay. The full 288-strand joint
+isotopy therefore passes across 28,295,568 mixed pairs with global minimum
+certified separation `3.7412459608088255e-7`.
+
+CBF.T54 now reports `READY_FOR_B89_PROMOTION`. The frozen H4-T123--126
+promotion and its independent verifier both pass:
+
+```text
+rank(M)       = 164 over F2
+rank(M-I)     = 42 over F2
+w(M-I)        = 0
+w n           = 1
+beta_C(B89)   != 0
+```
+
+Thus B89 is rejected from the beta-zero locus without computing 248 period
+rows. This closes the B89 candidate test, not the eta9 physical endpoint:
+no replacement graph-Prym member, normalized periods, HYM connection or
+Hull-Strominger solution is selected. The next target is the first remaining
+same-residue candidate in the beta-zero-capable G3AJ/G3BJ inventory, using the
+finite affine/component sieve before dense period transport.
+
 ## CBF.T55 same-source principal-symbol reduction
 
 `SameSourcePrincipalSymbolMetricActionScaleAndHodgeNaturalityTheorem.v1`

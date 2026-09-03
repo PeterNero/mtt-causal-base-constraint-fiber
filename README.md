@@ -317,15 +317,20 @@ from the routine suite because it evaluates 3,869,500 admissible quadruples:
 python verify_q79_symmetric_response_transferred_m4.py --recompute
 ```
 
-## Live B89 campaign frontier
+## B89 same-source result
 
-The T53 same-source isotopy campaign is consolidated in the hash-verified
-result index and current coverage report. At the 2026-09-03 checkpoint the
-signed-boundary carrier is complete at `2195/2195`; the branch carrier is
-certified at `2003/2195`. Exactly 192 branch intervals remain. This is a
-coverage and downstream-readiness result, not a B89 rejection or a physical
-HYM endpoint. See `CURRENT_STATUS.md` for the exact missing ranges and
-`Q79B89DownstreamPromotionReadinessTheorem_v1.md` for the promotion boundary.
+The T53 source campaign is complete: branch and signed-boundary carriers both
+cover `2195/2195` source intervals. A residual-aware shared-parameter theorem
+independently certifies all 463 hard mixed targets while preserving their common
+source and homotopy parameters. The full 288-strand isotopy passes on
+`28,295,568` mixed pairs and is hash-bound to the 24,999-letter certified
+Artin word.
+
+The H4-T123--126 promotion and independent rank-164 replay now prove
+`beta_C(B89) != 0`; B89 is rejected from the beta-zero locus. This is a
+candidate-elimination theorem, not selection of a replacement graph-Prym
+member, HYM connection or Hull-Strominger endpoint. See `CURRENT_STATUS.md`
+and `Q79B89DownstreamPromotionReadinessTheorem_v1.md`.
 
 ## Repository map
 

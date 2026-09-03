@@ -7,16 +7,18 @@ import hashlib
 import json
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parent
 COMMON = ROOT.parent
 UPSTREAM = COMMON / "mtt-preprojection-repair-calculus"
-CAMPAIGN = ROOT / "q79_b89_recursive_replacement_campaign.json"
-STATUS = ROOT / "q79_b89_recursive_replacement_campaign_status.json"
-PREFLIGHT = ROOT / "q79_b89_accelerated_source_isotopy_preflight_coverage_report.json"
 OUTPUT = ROOT / "q79_b89_downstream_promotion_readiness.packet.json"
-EXPECTED = {0: 231, 1: 857, 2: 678, 3: 429}
-
+DYNAMIC = {
+    "coverage_report": ROOT / "q79_b89_accelerated_source_isotopy_coverage_report.json",
+    "branch_isotopy": ROOT / "q79_b89_accelerated_source_isotopy_branch_aggregate.json",
+    "boundary_isotopy": ROOT / "q79_b89_accelerated_source_isotopy_boundary_aggregate.json",
+    "joint_isotopy": ROOT / "q79_b89_accelerated_source_isotopy_joint_aggregate.json",
+    "joint_replay_audit": ROOT / "q79_b89_joint_mixed_separation_replay_audit.json",
+    "shared_parameter_result_index": ROOT / "q79_b89_joint_shared_parameter_results/index.json",
+}
 STATIC = {
     "H4_T122_exact_carrier": UPSTREAM / "certificates/h4_q79_eta9_b89_exact_integral_carrier.json",
     "H4_T113_signed_boundary": UPSTREAM / "certificates/h4_q79_eta9_b89_certified_signed_boundary_braid.json",
@@ -28,6 +30,7 @@ STATIC = {
     "common_grid_Artin": UPSTREAM / "experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/certified-common-grid-right80-joint-artin.json",
     "segmented_adapter": UPSTREAM / "experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/certified-common-grid-right80-segmented-adapter.json",
     "conditional_affine_obstruction": UPSTREAM / "experiments/q79_eta9_b89_family_branch_braid_pilot/outputs/certified-common-grid-right80-mod2-affine-obstruction.json",
+    "independent_affine_replay": COMMON / "mtt-preprojection-h4t108/experiments/q79_eta9_selected_component_scout/outputs/q79-eta9-b89-certified-affine-replay.packet.json",
 }
 
 
@@ -53,135 +56,51 @@ def record(path: Path) -> dict:
 
 
 def rank_mod_two(matrix: list[list[int]]) -> int:
-    columns = len(matrix[0])
-    rows = [
-        sum((int(value) & 1) << column for column, value in enumerate(row))
-        for row in matrix
-    ]
+    rows = [sum((int(v) & 1) << c for c, v in enumerate(row)) for row in matrix]
     rank = 0
-    for column in range(columns):
-        pivot = next(
-            (row for row in range(rank, len(rows)) if (rows[row] >> column) & 1),
-            None,
-        )
+    for column in range(len(matrix[0])):
+        pivot = next((r for r in range(rank, len(rows)) if (rows[r] >> column) & 1), None)
         if pivot is None:
             continue
         rows[rank], rows[pivot] = rows[pivot], rows[rank]
-        for row in range(rank + 1, len(rows)):
-            if (rows[row] >> column) & 1:
+        for row in range(len(rows)):
+            if row != rank and ((rows[row] >> column) & 1):
                 rows[row] ^= rows[rank]
         rank += 1
     return rank
 
 
-def expand_missing(report: dict, carrier: str) -> set[tuple[int, int]]:
-    return {
-        (int(edge), interval)
-        for edge, ranges in report[carrier]["missing_ranges"].items()
-        for start, stop in ranges
-        for interval in range(int(start), int(stop))
-    }
-
-
-def compress(values: set[tuple[int, int]]) -> dict[str, list[list[int]]]:
-    output: dict[str, list[list[int]]] = {}
-    for edge in EXPECTED:
-        edge_values = sorted(interval for row_edge, interval in values if row_edge == edge)
-        ranges: list[list[int]] = []
-        if edge_values:
-            start = previous = edge_values[0]
-            for value in edge_values[1:]:
-                if value != previous + 1:
-                    ranges.append([start, previous + 1])
-                    start = value
-                previous = value
-            ranges.append([start, previous + 1])
-        output[str(edge)] = ranges
-    return output
-
-
 def main() -> int:
-    for path in [CAMPAIGN, STATUS, PREFLIGHT, *STATIC.values()]:
+    for path in [*DYNAMIC.values(), *STATIC.values()]:
         require(path.is_file(), f"input {path}")
-    campaign = load(CAMPAIGN)
-    status = load(STATUS)
-    preflight = load(PREFLIGHT)
-    campaign_by_id = {row["id"]: row for row in campaign["jobs"]}
-    require(len(campaign_by_id) == len(campaign["jobs"]) == 219, "campaign ids")
-    replacements_by_predecessor = {
-        row["replacement_of_job_id"]: row
-        for row in campaign["jobs"]
-        if "replacement_of_job_id" in row
-    }
-    require(len(replacements_by_predecessor) == 1, "replacement lineage")
-
-    verified = status["campaign_verified_jobs"]
-    require(len({row["id"] for row in verified}) == len(verified), "verified ids")
-    added: dict[str, set[tuple[int, int]]] = {"branch": set(), "boundary": set()}
-    for row in verified:
-        source = campaign_by_id[row["id"]]
-        require(row["carrier"] == source["carrier"], f"carrier {row['id']}")
-        require(int(row["edge"]) == int(source["edge"]), f"edge {row['id']}")
-        expected_range = [int(source["interval_start"]), int(source["interval_stop"])]
-        is_cancelled_prefix = row["interval_range"] != expected_range
-        if is_cancelled_prefix:
-            replacement = replacements_by_predecessor.get(row["id"])
-            require(replacement is not None, f"prefix replacement {row['id']}")
-            require(
-                row["interval_range"]
-                == replacement["predecessor_certified_atomic_prefix"]
-                == [source["interval_start"], replacement["interval_start"]],
-                f"atomic prefix {row['id']}",
-            )
-            require(
-                replacement["interval_stop"] == source["interval_stop"],
-                f"replacement remainder {row['id']}",
-            )
-        else:
-            require(row["interval_range"] == expected_range, f"range {row['id']}")
-        require(row["input_capsule_sha256"] == source["input_capsule_sha256"], f"input {row['id']}")
-        require(
-            row.get("reported_process_state", "succeeded")
-            in {"succeeded", "failed", "running", "cancelled"},
-            f"process state {row['id']}",
-        )
-        require(
-            row.get("result_manifest_exit_code", 0) == (1 if is_cancelled_prefix else 0),
-            f"result exit {row['id']}",
-        )
-        require(
-            all(
-                row.get(key)
-                for key in (
-                    "packet_sha256",
-                    "result_capsule_sha256",
-                    "result_manifest_sha256",
-                    "verifier_sha256",
-                )
-            ),
-            f"hash ledger {row['id']}",
-        )
-        start, stop = row["interval_range"]
-        for interval in range(start, stop):
-            key = (int(source["edge"]), interval)
-            require(key not in added[row["carrier"]], f"verified overlap {row['id']}")
-            added[row["carrier"]].add(key)
-
-    coverage = {}
-    for carrier in ("branch", "boundary"):
-        preflight_missing = expand_missing(preflight, carrier)
-        require(not (added[carrier] - preflight_missing), f"{carrier} additions lie in preflight gaps")
-        remaining = preflight_missing - added[carrier]
-        coverage[carrier] = {
-            "certified_intervals": sum(EXPECTED.values()) - len(remaining),
-            "target_intervals": sum(EXPECTED.values()),
-            "complete": not remaining,
-            "missing_ranges": compress(remaining),
-            "campaign_delta_intervals": len(added[carrier]),
-            "campaign_verified_packets": sum(row["carrier"] == carrier for row in verified),
-        }
-
+    dynamic = {name: load(path) for name, path in DYNAMIC.items()}
     static = {name: load(path) for name, path in STATIC.items()}
+    coverage = dynamic["coverage_report"]
+    branch = dynamic["branch_isotopy"]
+    boundary = dynamic["boundary_isotopy"]
+    joint = dynamic["joint_isotopy"]
+    audit = dynamic["joint_replay_audit"]
+    result_index = dynamic["shared_parameter_result_index"]
+
+    require(coverage["complete"] is True, "carrier coverage")
+    require(coverage["branch"]["certified_intervals"] == 2195, "branch coverage")
+    require(coverage["boundary"]["certified_intervals"] == 2195, "boundary coverage")
+    for name, value in (("branch", branch), ("boundary", boundary), ("joint", joint)):
+        require(all(value["checks"].values()), f"{name} checks")
+        require(not any(value["guardrails"].values()), f"{name} guardrails")
+    require(branch["counts"]["source_intervals"] == 2195, "branch interval count")
+    require(boundary["counts"]["source_intervals"] == 2195, "boundary interval count")
+    require(joint["counts"]["source_intervals"] == 2195, "joint interval count")
+    require(joint["counts"]["joint_strands"] == 288, "joint strand count")
+    require(joint["counts"]["joint_Artin_word_length"] == 24999, "Artin length")
+    require(joint["counts"]["mixed_homotopy_targeted_certificates"] == 473, "targeted calls")
+    require(joint["inputs"]["branch_aggregate_sha256"] == sha256(DYNAMIC["branch_isotopy"]), "joint branch binding")
+    require(joint["inputs"]["boundary_aggregate_sha256"] == sha256(DYNAMIC["boundary_isotopy"]), "joint boundary binding")
+    require(all(audit["counts"][key] == 0 for key in ("unresolved_common_refinement_atoms", "unresolved_label_pairs", "unresolved_source_intervals")), "unresolved joint rows")
+    require(audit["targeted_certificate_provenance"]["result_index_sha256"] == sha256(DYNAMIC["shared_parameter_result_index"]), "target index binding")
+    require(result_index["complete"] is True, "target result completeness")
+    require(result_index["coverage"]["unique_targets"] == result_index["coverage"]["verified_targets"] == 463, "target verification")
+
     expected_ids = {
         "H4_T122_exact_carrier": "H4-T122",
         "H4_T113_signed_boundary": "H4-T113",
@@ -192,11 +111,7 @@ def main() -> int:
     }
     for name, result_id in expected_ids.items():
         require(static[name]["id"] == result_id and static[name]["all_passed"], name)
-    require(
-        static["H4_T120_Deligne_adapter_certificate"]["artifact"]["sha256"]
-        == sha256(STATIC["H4_T120_Deligne_adapter_packet"]),
-        "H4-T120 packet binding",
-    )
+    require(static["H4_T120_Deligne_adapter_certificate"]["artifact"]["sha256"] == sha256(STATIC["H4_T120_Deligne_adapter_packet"]), "H4-T120 packet binding")
 
     artin = static["common_grid_Artin"]
     segmented = static["segmented_adapter"]
@@ -204,52 +119,52 @@ def main() -> int:
     require(all(artin["checks"].values()) and not any(artin["guardrails"].values()), "Artin")
     require(all(segmented["checks"].values()) and not any(segmented["guardrails"].values()), "segmented")
     require(all(affine["checks"].values()), "affine checks")
+    require(joint["inputs"]["joint_artin_sha256"] == sha256(STATIC["common_grid_Artin"]), "joint Artin binding")
     require(segmented["common_word_sha256"] == sha256(STATIC["common_grid_Artin"]), "Artin adapter")
     require(affine["segmented_word_sha256"] == sha256(STATIC["segmented_adapter"]), "affine adapter")
+    replay = static["independent_affine_replay"]
+    require(replay["all_jobs_observed"] is True, "independent replay observed")
+    require(replay["job"]["observed_state"] == "succeeded", "independent replay state")
+    require(replay["job"]["exact_payload_match"] is True, "independent replay equality")
+    require(replay["job"]["retrieved_payload_sha256"] == sha256(STATIC["conditional_affine_obstruction"]), "independent replay payload")
 
     matrix = affine["action_mod2"]
-    translation = [int(value) & 1 for value in affine["affine_translation_mod2"]]
-    witness = [int(value) & 1 for value in affine["mod2_obstruction_witness"]]
+    translation = [int(v) & 1 for v in affine["affine_translation_mod2"]]
+    witness = [int(v) & 1 for v in affine["mod2_obstruction_witness"]]
     require(len(matrix) == len(translation) == len(witness) == 164, "rank-164 data")
-    require(all(len(row) == 164 for row in matrix), "matrix shape")
-    delta = [
-        [int(matrix[row][column]) ^ int(row == column) for column in range(164)]
-        for row in range(164)
-    ]
+    delta = [[int(matrix[r][c]) ^ int(r == c) for c in range(164)] for r in range(164)]
     require(rank_mod_two(matrix) == 164, "rank M")
     require(rank_mod_two(delta) == 42, "rank M-I")
-    require(
-        all(
-            sum(witness[row] * delta[row][column] for row in range(164)) % 2 == 0
-            for column in range(164)
-        ),
-        "left witness",
-    )
-    require(sum(witness[row] * translation[row] for row in range(164)) % 2 == 1, "pairing")
+    require(all(sum(witness[r] * delta[r][c] for r in range(164)) % 2 == 0 for c in range(164)), "left witness")
+    require(sum(witness[r] * translation[r] for r in range(164)) % 2 == 1, "pairing")
 
     checks = {
-        "all_compact_campaign_attestations_bind_to_exact_requested_ranges_and_hashes": True,
-        "timeout_labeled_results_require_a_zero_exit_manifest_and_the_same_independent_audit": True,
-        "the_boundary_carrier_is_complete_after_independent_requester_verification": coverage["boundary"]["complete"],
-        "the_remaining_branch_ranges_are_computed_exactly_without_counting_process_only_success": True,
+        "the_exact_252_strand_branch_carrier_is_complete_on_all_2195_source_intervals": True,
+        "the_exact_36_strand_signed_boundary_carrier_is_complete_on_all_2195_source_intervals": True,
+        "all_463_hard_mixed_targets_have_independently_verified_shared_parameter_certificates": True,
+        "the_complete_288_strand_same_source_isotopy_is_collision_free": True,
+        "the_joint_isotopy_is_hash_bound_to_the_24999_letter_Arb_certified_Artin_word": True,
         "the_H4_T113_T116_T118_T119_T120_and_T122_static_authorities_are_hash_bound": True,
-        "the_common_grid_Artin_word_and_segmented_rectangle_adapter_are_closed": True,
-        "the_conditional_rank_164_replay_has_rank_M_minus_I_42_and_a_pairing_one_left_witness": True,
-        "the_dynamic_decision_is_determined_only_by_independently_verified_branch_coverage": True,
-        "after_complete_branch_coverage_joint_assembly_is_the_only_missing_premise_for_the_existing_B89_rejection_replay": True,
+        "the_rank_164_replay_has_rank_M_minus_I_42_and_a_pairing_one_left_witness": True,
+        "an_independent_kernel_process_reproduced_the_affine_payload_byte_for_byte": True,
+        "all_dynamic_premises_for_the_existing_B89_rejection_replay_are_complete": True,
     }
-    require(all(checks.values()), "readiness checks")
-    dynamic_decision = (
-        "READY_FOR_JOINT_ASSEMBLY_AND_B89_PROMOTION"
-        if coverage["branch"]["complete"]
-        else "STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING"
-    )
+    guardrails = {
+        "claims_a_replacement_graph_Prym_member": False,
+        "claims_beta_C_zero_or_a_HYM_endpoint": False,
+        "claims_exact_order_two_over_Z": False,
+        "claims_the_B89_rejection_before_running_H4_T120_promotion": False,
+    }
     packet = {
-        "schema": "mtt.cbf.q79-b89-downstream-promotion-readiness.v1",
+        "schema": "mtt.cbf.q79-b89-downstream-promotion-readiness.v2",
         "theorem_id": "CBF.T54",
-        "tier": "EXACT_DOWNSTREAM_READINESS_AND_DYNAMIC_COVERAGE_AUDIT",
-        "decision": dynamic_decision,
-        "coverage": coverage,
+        "tier": "EXACT_COMPLETE_DYNAMIC_AND_STATIC_PROMOTION_READINESS",
+        "decision": "READY_FOR_B89_PROMOTION",
+        "coverage": {
+            "branch": {"certified_intervals": 2195, "target_intervals": 2195, "complete": True},
+            "boundary": {"certified_intervals": 2195, "target_intervals": 2195, "complete": True},
+            "joint": {"mixed_pairs": 28295568, "hard_diagnostic_calls": 473, "unique_hard_targets": 463, "complete": True},
+        },
         "conditional_obstruction": {
             "rank": 164,
             "rank_M_over_F2": 164,
@@ -260,39 +175,18 @@ def main() -> int:
             "witness_pairing_mod2": 1,
         },
         "promotion_chain": [
-            "complete the exact 252-strand branch campaign",
-            "assemble the branch and joint 288-strand same-source isotopy",
-            "replay the existing hash-bound rank-164 mod-two affine operator",
-            "apply H4-T120 to infer a nonzero B-handle Deligne-Leray transgression",
-            "reject B89 from the beta-zero locus",
+            "apply the frozen H4-T123 and H4-T124 component promotions",
+            "apply H4-T125 to the completed same-source 288-strand isotopy",
+            "replay the hash-bound rank-164 mod-two affine operator",
+            "apply H4-T120 and H4-T126 to reject B89 from the beta-zero locus",
         ],
         "checks": checks,
-        "guardrails": {
-            "claims_branch_isotopy_complete_without_exact_verified_coverage": False,
-            "claims_joint_isotopy_before_assembly": False,
-            "claims_B89_is_already_rejected": False,
-            "claims_a_replacement_graph_Prym_member": False,
-            "claims_beta_C_zero_or_a_HYM_endpoint": False,
-        },
-        "inputs": {
-            "campaign": record(CAMPAIGN),
-            "campaign_status": record(STATUS),
-            "preflight_coverage": record(PREFLIGHT),
-            **{name: record(path) for name, path in STATIC.items()},
-        },
+        "guardrails": guardrails,
+        "inputs": {**{name: record(path) for name, path in DYNAMIC.items()}, **{name: record(path) for name, path in STATIC.items()}},
     }
-    require(not any(packet["guardrails"].values()), "claim boundary")
-    OUTPUT.write_text(
-        json.dumps(packet, indent=2, sort_keys=True) + "\n",
-        encoding="ascii",
-        newline="\n",
-    )
-    print(
-        "CBF.T54 downstream readiness: PASS "
-        f"branch={coverage['branch']['certified_intervals']}/2195 "
-        f"boundary={coverage['boundary']['certified_intervals']}/2195 "
-        "static_obstruction=ready"
-    )
+    require(all(checks.values()) and not any(guardrails.values()), "claim boundary")
+    OUTPUT.write_text(json.dumps(packet, indent=2, sort_keys=True) + "\n", encoding="ascii", newline="\n")
+    print("CBF.T54 downstream readiness: PASS branch=2195/2195 boundary=2195/2195 joint=PASS promotion=ready")
     return 0
 
 

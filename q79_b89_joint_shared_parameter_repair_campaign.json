@@ -1,0 +1,27 @@
+{
+  "schema": "mtt.cbf.q79-b89-joint-shared-parameter-repair-campaign.v1",
+  "created_at": "2026-09-03T09:15:00Z",
+  "reason": "The standard edge-2 slice reached a boundary component Krawczyk failure at interval 382 before mixed-homotopy evaluation. Two dyadic half-cells independently pass for both affected target pairs.",
+  "replaces_job_id": "af385e9b-9423-4000-ab98-a7aca4d9a3b6",
+  "source_locks": {
+    "diagnostic": {"path": "q79_b89_joint_mixed_separation_diagnostic.json", "sha256": "af5afb2e6cec6389dbc0f26376ea7b9ae193337c7681a3117c5142efba716516"},
+    "shared_worker": {"path": "q79_b89_joint_shared_parameter_worker.py", "sha256": "c446ce0f6292efa3861371053c67743e172342329aa605bad902064c91a664d6"},
+    "repair_worker": {"path": "q79_b89_joint_shared_parameter_repair_worker.py", "sha256": "0934e76211143d84bee62252fd1016ebeefe1eea5762db5da7ecca2806dba604"},
+    "independent_verifier": {"path": "verify_q79_b89_joint_shared_parameter_repair.py", "sha256": "f078fba44e7ee9d91ffa3d160084813e4bd1b81e419aee41ab8be1c7a3297610"}
+  },
+  "job": {
+    "edge": 2,
+    "interval_start": 360,
+    "interval_stop": 406,
+    "targets": 41,
+    "id": "cb48b4fb-35b5-4c3c-a167-fceca6230fe0",
+    "input_capsule_sha256": "705d6eb2e8e10609bd491f0a0fbe267f9e5703174e9ebbe7b44c3ede4358056e",
+    "output": "outputs/t53-shared-repair-e2-i360-406.json"
+  },
+  "guardrails": {
+    "component_failure_is_not_mixed_homotopy_failure": true,
+    "every_parent_requires_a_gap_free_subcell_cover": true,
+    "every_subcell_requires_independent_replay": true,
+    "claims_B89_or_beta_C": false
+  }
+}

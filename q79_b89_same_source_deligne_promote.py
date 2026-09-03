@@ -16,6 +16,7 @@ READINESS = ROOT / "q79_b89_downstream_promotion_readiness.packet.json"
 BRANCH = ROOT / "q79_b89_accelerated_source_isotopy_branch_aggregate.json"
 BOUNDARY = ROOT / "q79_b89_accelerated_source_isotopy_boundary_aggregate.json"
 JOINT = ROOT / "q79_b89_accelerated_source_isotopy_joint_aggregate.json"
+JOINT_RESULTS = ROOT / "q79_b89_joint_shared_parameter_results/index.json"
 OUTPUT = ROOT / "q79_b89_same_source_deligne_obstruction.packet.json"
 CERTIFICATES = ROOT / "certificates"
 
@@ -41,11 +42,12 @@ def promotion_ready(packet: dict) -> bool:
     coverage = packet.get("coverage", {})
     return (
         packet.get("theorem_id") == "CBF.T54"
-        and packet.get("decision") == "READY_FOR_JOINT_ASSEMBLY_AND_B89_PROMOTION"
+        and packet.get("decision") == "READY_FOR_B89_PROMOTION"
         and coverage.get("branch", {}).get("certified_intervals") == 2195
         and coverage.get("branch", {}).get("complete") is True
         and coverage.get("boundary", {}).get("certified_intervals") == 2195
         and coverage.get("boundary", {}).get("complete") is True
+        and coverage.get("joint", {}).get("complete") is True
         and all(packet.get("checks", {}).values())
         and not any(packet.get("guardrails", {}).values())
     )
@@ -73,7 +75,7 @@ def configure_builder(module, upstream: Path) -> None:
         "segmented_adapter": pilot / "outputs/certified-common-grid-right80-segmented-adapter.json",
         "certified_affine_obstruction": pilot / "outputs/certified-common-grid-right80-mod2-affine-obstruction.json",
         "conditional_affine_obstruction": pilot / "outputs/family-global-right80-plus-rectangle-mod2-affine-obstruction.json",
-        "independent_affine_replay_campaign": pilot / "kernel_certified_affine_replay_campaign.json",
+        "independent_affine_replay_campaign": common / "mtt-preprojection-h4t108/experiments/q79_eta9_selected_component_scout/outputs/q79-eta9-b89-certified-affine-replay.packet.json",
     }
 
 
@@ -101,6 +103,8 @@ def main() -> int:
                 str(upstream),
                 "--result-index",
                 str(ROOT / "q79_b89_accelerated_source_isotopy_result_index.json"),
+                "--joint-refinement-index",
+                str(JOINT_RESULTS),
             ],
             cwd=ROOT,
             check=True,

@@ -1,0 +1,4839 @@
+{
+  "all_fallback_margins_strictly_positive": true,
+  "fallback_pair_certificates": [
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 112,
+      "strict_separation_margin": 3.456237617097079e-05
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 116,
+      "strict_separation_margin": 3.5575690421473876e-05
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 118,
+      "strict_separation_margin": 5.795087104965697e-05
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 202,
+      "strict_separation_margin": 0.0004372604618400421
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 203,
+      "strict_separation_margin": 1.9704497547569794e-05
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 322,
+      "strict_separation_margin": 0.00025868763537486704
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 400,
+      "strict_separation_margin": 2.3124840008525358e-05
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 422,
+      "strict_separation_margin": 0.0001316774067870063
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 440,
+      "strict_separation_margin": 6.946577809884795e-06
+    }
+  ],
+  "method": "Decimal separating-axis certificate for convex hull(center, guide endpoints) plus source-disc radius",
+  "rectangle_pair_certificates": 28295086,
+  "schema": "mtt.cbf.q79-b89-mixed-convex-region-fallback.v1",
+  "unresolved_mixed_pairs": [
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 114
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 115
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 116
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 117
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 118
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 119
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 120
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 121
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 122
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 123
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 124
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 125
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 126
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 127
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 128
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 129
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 130
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 131
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 131
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 132
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 133
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 133
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 134
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 135
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 137
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 142
+    },
+    {
+      "boundary_label": 3,
+      "branch_label": 16,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 143
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 143
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 144
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 145
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 146
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 147
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 148
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 149
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 150
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 151
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 152
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 154
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 156
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 158
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 159
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 160
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 161
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 162
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 163
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 164
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 165
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 166
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 167
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 168
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 169
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 170
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 171
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 172
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 173
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 174
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 175
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 176
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 177
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 178
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 179
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 180
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 181
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 182
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 183
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 184
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 185
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 194
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 195
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 196
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 197
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 198
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 199
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 200
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 200
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 201
+    },
+    {
+      "boundary_label": 7,
+      "branch_label": 42,
+      "edge": 0,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 201
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 125
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 126
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 127
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 128
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 129
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 130
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 131
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 132
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 133
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 134
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 135
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 136
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 137
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 138
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 139
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 140
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 141
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 142
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 143
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 144
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 145
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 146
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 147
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 148
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 149
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 150
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 151
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 152
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 153
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 154
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 155
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 156
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 157
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 158
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 159
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 160
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 161
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 162
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 163
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 164
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 165
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 166
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 167
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 168
+    },
+    {
+      "boundary_label": 31,
+      "branch_label": 49,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 169
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 333
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 334
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 335
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 336
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 337
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 338
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 339
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 340
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 342
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 348
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 349
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 350
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 350
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 351
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 351
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 352
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 352
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 353
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 353
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 354
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 354
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 355
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 355
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 356
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 356
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 357
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 357
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 358
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 358
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 359
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 359
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 360
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 360
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 361
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 361
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 362
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 362
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 363
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 363
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 364
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 364
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 365
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 366
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 367
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 368
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 369
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 370
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 371
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 372
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 373
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 374
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 375
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 376
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 377
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 378
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 379
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 380
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 381
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 382
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 383
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 384
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 385
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 386
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 387
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 388
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 389
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 390
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 391
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 392
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 393
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 394
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 395
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 396
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 397
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 398
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 399
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 401
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 403
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 408
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 411
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 414
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 415
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 417
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 418
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/4",
+        "1/2"
+      ],
+      "interval": 418
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 419
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/4",
+        "1/2"
+      ],
+      "interval": 419
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 420
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "1/4",
+        "1/2"
+      ],
+      "interval": 420
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 421
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 422
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 423
+    },
+    {
+      "boundary_label": 21,
+      "branch_label": 88,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 424
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 484
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 484
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 485
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 485
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 486
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 486
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 487
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 487
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 488
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 488
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 489
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 490
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 491
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 491
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 492
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 492
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 493
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 494
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 495
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 496
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 498
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 499
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 501
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 503
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 504
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 505
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 506
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 507
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 508
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 508
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 509
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 509
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 510
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 510
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 511
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 511
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 512
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 12,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 512
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 512
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 513
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 12,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 513
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 513
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 514
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 12,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 514
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 514
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 515
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 515
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 516
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 516
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 517
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 12,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 517
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 517
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 518
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 518
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 519
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 519
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 520
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 521
+    },
+    {
+      "boundary_label": 24,
+      "branch_label": 19,
+      "edge": 1,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 522
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 65,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 166
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 65,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 167
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 65,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 168
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 65,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 169
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 65,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 170
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 243
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 245
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 247
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 248
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 249
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 250
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 251
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 252
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 253
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 254
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 255
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 256
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 257
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 258
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 259
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 259
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 260
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 261
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 261
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 262
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 263
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 264
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 265
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 266
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 267
+    },
+    {
+      "boundary_label": 15,
+      "branch_label": 170,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 268
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 301
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 318
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 320
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 327
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 328
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 330
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 331
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 332
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 333
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 333
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 334
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 334
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 335
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 336
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 337
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 349
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 350
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 351
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 352
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 353
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 354
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 356
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 358
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 360
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 368
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 369
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 371
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 372
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 372
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 380
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 380
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 381
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 382
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 382
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 383
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 383
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 383
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 384
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 6,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 384
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 384
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 385
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 385
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 386
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 387
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 388
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 388
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 388
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 388
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 388
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 389
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 389
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 389
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 389
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 389
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 390
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 390
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 390
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 390
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 391
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 391
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 392
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 392
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 393
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 393
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 393
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 394
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 394
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 401
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 402
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 403
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 403
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 404
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 404
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 405
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 406
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 407
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 408
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 409
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 410
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 411
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 412
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 413
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 414
+    },
+    {
+      "boundary_label": 5,
+      "branch_label": 172,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 422
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 441
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 441
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 442
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 443
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 443
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 444
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 444
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 445
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 445
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 446
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 446
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 447
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 447
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 448
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 449
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 449
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 450
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 451
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 452
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 453
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 454
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 458
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 461
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 462
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 463
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 464
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 465
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 465
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 466
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 466
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 467
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/4",
+        "1/2"
+      ],
+      "interval": 467
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 467
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 467
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 468
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 468
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 469
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 470
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 470
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 471
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 472
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 473
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 474
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 475
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 476
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 477
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 478
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 479
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 480
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 481
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 482
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 483
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 484
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 485
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1"
+      ],
+      "interval": 486
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 487
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 487
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 488
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 488
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 489
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 489
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 490
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 490
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 491
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/4",
+        "1/2"
+      ],
+      "interval": 491
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 491
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 491
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 492
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/4",
+        "1/2"
+      ],
+      "interval": 492
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 65,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 492
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 492
+    },
+    {
+      "boundary_label": 6,
+      "branch_label": 65,
+      "edge": 2,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 492
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 492
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 493
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 493
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/4"
+      ],
+      "interval": 494
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/4",
+        "1/2"
+      ],
+      "interval": 494
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "3/4"
+      ],
+      "interval": 494
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "3/4",
+        "1"
+      ],
+      "interval": 494
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 495
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 495
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 496
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "1/2",
+        "1"
+      ],
+      "interval": 496
+    },
+    {
+      "boundary_label": 10,
+      "branch_label": 214,
+      "edge": 2,
+      "fraction": [
+        "0",
+        "1/2"
+      ],
+      "interval": 497
+    }
+  ]
+}

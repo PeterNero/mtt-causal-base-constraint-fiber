@@ -1,0 +1,24 @@
+{
+  "all_passed": true,
+  "artifact": {
+    "bytes": 35627,
+    "path": "mtt-causal-base-constraint-fiber/q79_b89_accelerated_source_isotopy_branch_aggregate.json",
+    "sha256": "2762bdf9427bae3e81aeaa7859068a2249c2178ffc19f752d1cabf54f08acb64"
+  },
+  "checks": {
+    "all_2195_selected_source_intervals_are_covered_once": true,
+    "all_adaptively_selected_branch_tubes_have_strict_source_Krawczyk_certificates": true,
+    "all_four_rectangle_edges_are_bound_in_order": true,
+    "all_predictor_to_guide_pair_homotopies_exclude_zero_on_every_selected_subcell": true,
+    "all_same_parameter_branch_pairs_are_separated_on_every_selected_subcell": true,
+    "all_within_and_cross_shard_labels_are_bound_without_gaps": true,
+    "every_shard_is_bound_to_the_H4_T122_exact_characteristic_zero_source": true,
+    "the_certified_closure_permutation_matches_the_hash_bound_Artin_word": true,
+    "the_exact_source_branch_braid_is_isotopic_to_the_stored_Artin_braid": true
+  },
+  "claim": "The complete 252-strand moving B89 branch configuration from the H4-T122 exact source is certified on all four selected edges and is isotopic to its hash-bound Artin guide.",
+  "guard": "This component theorem does not include the 36 signed boundary strands or decide beta_C.",
+  "id": "H4-T123",
+  "schema": "mtt.preprojection.certificate.v1",
+  "tier": "CERTIFIED_COMPLETE_252_STRAND_CHARACTERISTIC_ZERO_SOURCE_ISOTOPY"
+}

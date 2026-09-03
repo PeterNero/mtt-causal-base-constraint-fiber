@@ -14,36 +14,18 @@
   },
   "branch": {
     "carrier": "branch",
-    "certified_intervals": 2003,
-    "complete": false,
+    "certified_intervals": 2195,
+    "complete": true,
     "missing_ranges": {
       "0": [],
-      "1": [
-        [
-          492,
-          516
-        ],
-        [
-          552,
-          564
-        ],
-        [
-          792,
-          804
-        ]
-      ],
-      "2": [
-        [
-          181,
-          325
-        ]
-      ],
+      "1": [],
+      "2": [],
       "3": []
     },
-    "shards": 157,
+    "shards": 181,
     "target_intervals": 2195
   },
-  "complete": false,
+  "complete": true,
   "guardrails": {
     "claims_affine_Deligne_rejection": false,
     "complete_coverage_is_required_before_assembly": true,
@@ -52,6 +34,6 @@
     "partial_atomic_checkpoints_count_only_their_certified_prefix": true
   },
   "result_index_path": "C:\\Users\\nero_\\Downloads\\TEXPAPERS\\mtt-causal-base-constraint-fiber\\q79_b89_accelerated_source_isotopy_result_index.json",
-  "result_index_sha256": "ec2193f1f3d091002d37854898d69dc09b9866e5cbc585810b5cc645efedd5d4",
+  "result_index_sha256": "1e43377b299b2c2571f68c6d32a7fc1971d28a706fa94cfede9db3dea274bdfc",
   "schema": "mtt.cbf.q79-b89-flexible-result-coverage.v1"
 }

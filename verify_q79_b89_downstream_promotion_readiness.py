@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent verifier for CBF.T54 downstream-promotion readiness."""
+"""Independent verifier for current CBF.T54 downstream readiness."""
 
 from __future__ import annotations
 
@@ -7,11 +7,9 @@ import hashlib
 import json
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parent
 COMMON = ROOT.parent
 PACKET = ROOT / "q79_b89_downstream_promotion_readiness.packet.json"
-EXPECTED = {0: 231, 1: 857, 2: 678, 3: 429}
 
 
 def require(condition: bool, message: str) -> None:
@@ -19,34 +17,19 @@ def require(condition: bool, message: str) -> None:
         raise AssertionError(message)
 
 
-def sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
-
-
 def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="ascii"))
 
 
-def expand(ranges: dict[str, list[list[int]]]) -> set[tuple[int, int]]:
-    return {
-        (int(edge), interval)
-        for edge, rows in ranges.items()
-        for start, stop in rows
-        for interval in range(int(start), int(stop))
-    }
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def rank_mod_two(matrix: list[list[int]]) -> int:
-    rows = [
-        sum((int(value) & 1) << column for column, value in enumerate(row))
-        for row in matrix
-    ]
+    rows = [sum((int(v) & 1) << c for c, v in enumerate(row)) for row in matrix]
     rank = 0
     for column in range(len(matrix[0])):
-        pivot = next(
-            (row for row in range(rank, len(rows)) if (rows[row] >> column) & 1),
-            None,
-        )
+        pivot = next((r for r in range(rank, len(rows)) if (rows[r] >> column) & 1), None)
         if pivot is None:
             continue
         rows[rank], rows[pivot] = rows[pivot], rows[rank]
@@ -59,102 +42,55 @@ def rank_mod_two(matrix: list[list[int]]) -> int:
 
 def main() -> int:
     packet = load(PACKET)
+    require(packet["schema"].endswith(".v2"), "schema")
     require(packet["theorem_id"] == "CBF.T54", "identity")
+    inputs = {}
     for name, row in packet["inputs"].items():
         path = COMMON / row["path"]
         require(path.is_file(), f"input {name}")
         require(path.stat().st_size == row["bytes"], f"bytes {name}")
         require(sha256(path) == row["sha256"], f"hash {name}")
+        inputs[name] = load(path)
 
-    campaign = load(COMMON / packet["inputs"]["campaign"]["path"])
-    status = load(COMMON / packet["inputs"]["campaign_status"]["path"])
-    preflight = load(COMMON / packet["inputs"]["preflight_coverage"]["path"])
-    jobs = {row["id"]: row for row in campaign["jobs"]}
-    require(len(jobs) == 219, "campaign jobs")
-    replacements_by_predecessor = {
-        row["replacement_of_job_id"]: row
-        for row in campaign["jobs"]
-        if "replacement_of_job_id" in row
-    }
-    require(len(replacements_by_predecessor) == 1, "replacement lineage")
-    additions = {"branch": set(), "boundary": set()}
-    for row in status["campaign_verified_jobs"]:
-        source = jobs[row["id"]]
-        require(row["carrier"] == source["carrier"], "carrier")
-        require(row["edge"] == source["edge"], "edge")
-        expected_range = [source["interval_start"], source["interval_stop"]]
-        is_cancelled_prefix = row["interval_range"] != expected_range
-        if is_cancelled_prefix:
-            replacement = replacements_by_predecessor.get(row["id"])
-            require(replacement is not None, "prefix replacement")
-            require(
-                row["interval_range"]
-                == replacement["predecessor_certified_atomic_prefix"]
-                == [source["interval_start"], replacement["interval_start"]],
-                "atomic prefix",
-            )
-            require(replacement["interval_stop"] == source["interval_stop"], "remainder")
-        else:
-            require(row["interval_range"] == expected_range, "range")
-        require(row["input_capsule_sha256"] == source["input_capsule_sha256"], "capsule")
-        require(
-            row.get("reported_process_state", "succeeded")
-            in {"succeeded", "failed", "running", "cancelled"},
-            "process state",
-        )
-        require(
-            row.get("result_manifest_exit_code", 0) == (1 if is_cancelled_prefix else 0),
-            "result exit",
-        )
-        for interval in range(*row["interval_range"]):
-            key = (row["edge"], interval)
-            require(key not in additions[row["carrier"]], "overlap")
-            additions[row["carrier"]].add(key)
+    coverage = inputs["coverage_report"]
+    branch = inputs["branch_isotopy"]
+    boundary = inputs["boundary_isotopy"]
+    joint = inputs["joint_isotopy"]
+    audit = inputs["joint_replay_audit"]
+    index = inputs["shared_parameter_result_index"]
+    require(coverage["complete"] is True, "coverage complete")
+    require(coverage["branch"]["certified_intervals"] == 2195, "branch coverage")
+    require(coverage["boundary"]["certified_intervals"] == 2195, "boundary coverage")
+    require(branch["counts"]["source_intervals"] == boundary["counts"]["source_intervals"] == 2195, "component intervals")
+    require(all(branch["checks"].values()) and not any(branch["guardrails"].values()), "branch")
+    require(all(boundary["checks"].values()) and not any(boundary["guardrails"].values()), "boundary")
+    require(all(joint["checks"].values()) and not any(joint["guardrails"].values()), "joint")
+    require(joint["inputs"]["branch_aggregate_sha256"] == packet["inputs"]["branch_isotopy"]["sha256"], "joint branch")
+    require(joint["inputs"]["boundary_aggregate_sha256"] == packet["inputs"]["boundary_isotopy"]["sha256"], "joint boundary")
+    mixed_total = sum(joint["counts"][key] for key in ("mixed_homotopy_rectangle_certificates", "mixed_homotopy_convex_region_certificates", "mixed_homotopy_targeted_certificates"))
+    require(mixed_total == 28295568, "mixed total")
+    require(index["complete"] is True, "result index")
+    require(index["coverage"]["unique_targets"] == index["coverage"]["verified_targets"] == 463, "verified targets")
+    require(audit["targeted_certificate_provenance"]["result_index_sha256"] == packet["inputs"]["shared_parameter_result_index"]["sha256"], "audit index")
+    require(all(audit["counts"][key] == 0 for key in ("unresolved_common_refinement_atoms", "unresolved_label_pairs", "unresolved_source_intervals")), "audit unresolved")
 
-    for carrier in ("branch", "boundary"):
-        original_missing = expand(preflight[carrier]["missing_ranges"])
-        require(not (additions[carrier] - original_missing), f"{carrier} outside gap")
-        missing = original_missing - additions[carrier]
-        row = packet["coverage"][carrier]
-        require(expand(row["missing_ranges"]) == missing, f"{carrier} missing")
-        require(
-            row["certified_intervals"] == sum(EXPECTED.values()) - len(missing),
-            f"{carrier} count",
-        )
-        require(row["complete"] == (not missing), f"{carrier} completion")
-
-    affine = load(COMMON / packet["inputs"]["conditional_affine_obstruction"]["path"])
+    affine = inputs["conditional_affine_obstruction"]
     matrix = affine["action_mod2"]
-    translation = [int(value) & 1 for value in affine["affine_translation_mod2"]]
-    witness = [int(value) & 1 for value in affine["mod2_obstruction_witness"]]
-    delta = [
-        [int(matrix[row][column]) ^ int(row == column) for column in range(164)]
-        for row in range(164)
-    ]
+    translation = [int(v) & 1 for v in affine["affine_translation_mod2"]]
+    witness = [int(v) & 1 for v in affine["mod2_obstruction_witness"]]
+    delta = [[int(matrix[r][c]) ^ int(r == c) for c in range(164)] for r in range(164)]
     require(rank_mod_two(matrix) == 164, "rank M")
     require(rank_mod_two(delta) == 42, "rank M-I")
-    require(
-        all(
-            sum(witness[row] * delta[row][column] for row in range(164)) % 2 == 0
-            for column in range(164)
-        ),
-        "left witness",
-    )
-    require(sum(witness[row] * translation[row] for row in range(164)) % 2 == 1, "pairing")
-    require(packet["coverage"]["boundary"]["complete"], "boundary complete")
-    expected_decision = (
-        "READY_FOR_JOINT_ASSEMBLY_AND_B89_PROMOTION"
-        if packet["coverage"]["branch"]["complete"]
-        else "STATIC_ENDPOINT_READY_BRANCH_ISOTOPY_PENDING"
-    )
-    require(packet["decision"] == expected_decision, "decision")
-    require(all(packet["checks"].values()), "checks")
-    require(not any(packet["guardrails"].values()), "guardrails")
-    print(
-        "CBF.T54 independent replay: PASS "
-        f"branch={packet['coverage']['branch']['certified_intervals']}/2195 "
-        "boundary=2195/2195 rank(M-I)=42 pairing=1"
-    )
+    require(all(sum(witness[r] * delta[r][c] for r in range(164)) % 2 == 0 for c in range(164)), "left witness")
+    require(sum(witness[r] * translation[r] for r in range(164)) % 2 == 1, "pairing")
+    replay = inputs["independent_affine_replay"]
+    require(replay["all_jobs_observed"] is True, "replay observed")
+    require(replay["job"]["observed_state"] == "succeeded", "replay state")
+    require(replay["job"]["exact_payload_match"] is True, "replay equality")
+    require(replay["job"]["retrieved_payload_sha256"] == packet["inputs"]["conditional_affine_obstruction"]["sha256"], "replay payload")
+    require(packet["decision"] == "READY_FOR_B89_PROMOTION", "decision")
+    require(all(packet["checks"].values()) and not any(packet["guardrails"].values()), "claim boundary")
+    print("CBF.T54 independent replay: PASS branch=2195/2195 boundary=2195/2195 mixed=28295568 promotion=ready")
     return 0
 
 
