@@ -2206,3 +2206,53 @@ enclose the actual geometric coefficients and H4-T141 anchors, prove a strict
 Neumann inverse bound, check all `13014` nonzero rows and exclude zero from
 the denominator ball. No observed value, fit parameter or physical selector
 is added. The independent verifier and eight focused tests pass.
+
+`Q79Eta9CayleyCriticalCharacteristicZeroExtensionTheorem_v1.md` (`CBF.T66`)
+replaces T65's frozen-binary comparison by one coefficient-ball system over
+the selected seed-7909 Cayley minor. A binary64 sparse inverse is used only as
+a preconditioner. Thirty-six cancellation-sensitive rows are recomputed with
+512-bit Arb arithmetic, giving
+
+```text
+||I-PA||_infinity <= 0.484076176568743 < 1.
+```
+
+The resulting Neumann margin is `0.515923823431257`, so the exact
+characteristic-zero `6777 x 6777` operator is invertible. Forward balls for
+the value and first derivative satisfy every one of the 16,740 original
+relation rows. The independent coordinate-box contraction still contains
+zero in the toric-Jacobian denominator, so T66 certifies the inverse and all
+relation rows but does not promote a scale. It adds no observed value,
+continuous parameter, discrete selector or physical endpoint claim.
+
+`Q79Eta9CayleyCriticalCorrelatedReadoutTheorem_v1.md` (`CBF.T67`) closes the
+remaining same-source scalar execution on that declared branch. Signed
+binary64 corrections preserve the high-precision characteristic-zero
+coefficient and H4-T141 source centers, while small nonnegative tails retain
+the genuine Arb uncertainty. Exact Cayley transport puts every pivot value
+and derivative on one common 2,584-coordinate top source. Adjoint solves then
+contract the 6,777-dimensional extension without replacing its correlations
+by an independent coordinate box.
+
+The certified disks are
+
+```text
+D  =  3.546101021348808e-05 + 1.795488342992707e-04 i
+     +/- 1.671626130599143e-20,
+D' = -7.201503518702864e-04 + 8.723385313448658e-04 i
+     +/- 1.195484433400900e-13.
+```
+
+Both exclude zero. Therefore T64's canonical formula emits
+
+```text
+s_C  =  309666.0027514012 - 1567924.023635981 i,
+s_C' = -8712642.17150278 + 4654975.173896328 i,
+```
+
+with absolute errors at most `1.460e-10` and `1.044e-3`, respectively; the
+relative error of `s_C` is below `9.134e-17`. An independent exported-array
+reconstruction still excludes zero with lower bounds `1.811e-4` for `D` and
+`1.060e-3` for `D'`. T67 adds no fit parameter or selector. It does not select
+the physical q79 HYM endpoint, prove `beta_C=0`, execute the final physical
+meridian/period readout or compare with an observed Standard Model value.

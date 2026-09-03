@@ -1,0 +1,396 @@
+{
+  "all_checks_pass": true,
+  "arrays": {
+    "derivative_constant_correction": {
+      "bytes": 108560,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/derivative_constant_correction.npy",
+      "sha256": "5bf28f107b644d3e015626155e729073e3441ec6e8e1fa14528b0bd9504220a5"
+    },
+    "derivative_constant_tail": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/derivative_constant_tail.npy",
+      "sha256": "2a1ef01b86e4ba9021621566870f9fdc54ebb81e951a77904146460f76c55983"
+    },
+    "jacobian_correction": {
+      "bytes": 149904,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/jacobian_correction.npy",
+      "sha256": "ed7366651e977f4a45f5963ec554e611da2830b5f22c7bb597432bc10cb1cc5e"
+    },
+    "jacobian_derivative_correction": {
+      "bytes": 149904,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/jacobian_derivative_correction.npy",
+      "sha256": "8063fb69c13759248e69fefa522a6be1d477d53a9f90a9326362fda185e0f054"
+    },
+    "jacobian_derivative_tail": {
+      "bytes": 75016,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/jacobian_derivative_tail.npy",
+      "sha256": "e5e27a60d9fb953c3939cf396af8abc925167b70ceb7e73e53828514040ba018"
+    },
+    "jacobian_tail": {
+      "bytes": 75016,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/jacobian_tail.npy",
+      "sha256": "0e04723ea9aba2cc88381ab321528fd88beddc3ac86496f3b1d1443790901c79"
+    },
+    "pivot_derivative_correction": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_derivative_correction.npy",
+      "sha256": "14c49e448f26223ceda02b3b35931514a507b7dc1d112556e11c65da065fac84"
+    },
+    "pivot_derivative_tail": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_derivative_tail.npy",
+      "sha256": "741aac452d9cf0ca042ed90d9bd05bdaac62d07b0f471c42de2bb7c435bfeb87"
+    },
+    "pivot_value_correction": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_value_correction.npy",
+      "sha256": "4e7fded4999a5dd7ea17b1e470db2a8a76ee588eec9589dd1d662270daa864a4"
+    },
+    "pivot_value_tail": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_value_tail.npy",
+      "sha256": "7eefe537a0533f9449e214a6e86c2dded86075da328d145680f0758e8ff70c93"
+    },
+    "top_derivative_center": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/top_derivative_center.npy",
+      "sha256": "02adfd6ebf0fa0e71e7097baa320cb21823d6455a0d8ffb404df5b5a4b6dfec9"
+    },
+    "top_derivative_radius": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/top_derivative_radius.npy",
+      "sha256": "ccfdae850c30f7afdbfc9c26cab9070420459b16c71ec875628cdd49239c052d"
+    },
+    "top_value_center": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/top_value_center.npy",
+      "sha256": "f0905b3139b91c4c757b479337134d6ae8bae6681dc2bd291901f4cc09f5ee1e"
+    },
+    "top_value_radius": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/top_value_radius.npy",
+      "sha256": "54e1b1b74384cd3218108764ecac5512da3ca728961b71dc25a8b681c02addd3"
+    },
+    "value_rhs_correction": {
+      "bytes": 108560,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/value_rhs_correction.npy",
+      "sha256": "0164dc25f20993c90617df5eaea17a6a371d5e600db0b0602d6501262f1d6ba2"
+    },
+    "value_rhs_tail": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/value_rhs_tail.npy",
+      "sha256": "a39c0e6c6aaf3e49e82d59e6bd1526dd963a959073c635766b3d5f9627803be0"
+    }
+  },
+  "base_input": {
+    "bytes": 16161,
+    "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/metadata.json",
+    "sha256": "596e45d40429eae241e9f43fef00442cbfe8eb11bf3e9267281860a554e0c093"
+  },
+  "canonical_payload_sha256": "fcd3cc1a10c5308b77b1a8791043530cc7d8115596547775ceae2ba95b4fde5e",
+  "checks": {
+    "every_remaining_tail_is_nonnegative": true,
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "the_common_top_source_replays_the_pivot_centers": true,
+    "the_derivative_constant_tail_retains_no_more_than_the_previous_source_bound": true,
+    "the_derivative_coupling_tail_is_smaller_than_1e_28": true,
+    "the_matrix_tail_is_smaller_than_1e_28": true,
+    "the_pivot_signed_tail_is_finite": true,
+    "the_pivot_source_map_derivative_tail_is_smaller_than_1e_28": true,
+    "the_pivot_source_map_tail_is_smaller_than_1e_28": true,
+    "the_signed_derivative_correction_covers_the_support_union": true,
+    "the_signed_matrix_correction_covers_the_support_union": true,
+    "the_toric_Jacobian_signed_tail_is_finite": true,
+    "the_value_rhs_tail_retains_no_more_than_the_previous_source_bound": true
+  },
+  "diagnostics": {
+    "balanced_derivative_coupling": {
+      "binary_center_support": 220128,
+      "exact_support": 220128,
+      "maximum_exact_Arb_radius_component": 1.2762892860402554e-133,
+      "maximum_remaining_tail_component": 3.0153099430752834e-32,
+      "maximum_signed_correction_component": 4.701469779566293e-16,
+      "union_support": 220128
+    },
+    "balanced_matrix": {
+      "binary_center_support": 353585,
+      "exact_support": 353585,
+      "maximum_exact_Arb_radius_component": 2.298832000493309e-133,
+      "maximum_remaining_tail_component": 1.5629044351187052e-32,
+      "maximum_signed_correction_component": 2.9212788028646248e-16,
+      "union_support": 353585
+    },
+    "derivative_constant": {
+      "maximum_remaining_tail_component": 2.2525140398743657e-09,
+      "maximum_signed_correction_component": 2.6243961826489343e-15
+    },
+    "pivot_derivative": {
+      "maximum_remaining_tail_component": 2.0737076378979374e-10,
+      "maximum_signed_correction_component": 1.2793585635328952e-16
+    },
+    "pivot_source_map": {
+      "binary_center_support": 137435,
+      "exact_support": 137435,
+      "maximum_exact_Arb_radius_component": 3.0868118504370224e-133,
+      "maximum_remaining_tail_component": 2.3155070536873986e-32,
+      "maximum_signed_correction_component": 3.6522631523972807e-16,
+      "union_support": 137435
+    },
+    "pivot_source_map_derivative": {
+      "binary_center_support": 79753,
+      "exact_support": 79753,
+      "maximum_exact_Arb_radius_component": 8.060644208084248e-134,
+      "maximum_remaining_tail_component": 3.122127751704157e-32,
+      "maximum_signed_correction_component": 6.020528553984164e-16,
+      "union_support": 79753
+    },
+    "pivot_value": {
+      "maximum_remaining_tail_component": 6.647446007118729e-17,
+      "maximum_signed_correction_component": 9.343112221393834e-17
+    },
+    "toric_jacobian": {
+      "maximum_remaining_tail_component": 6.6247999219933375e-21,
+      "maximum_signed_correction_component": 0.00011932308402837961
+    },
+    "toric_jacobian_derivative": {
+      "maximum_remaining_tail_component": 8.999488222338101e-23,
+      "maximum_signed_correction_component": 1.5267554485237663e-06
+    },
+    "value_rhs": {
+      "maximum_remaining_tail_component": 6.780827555335972e-16,
+      "maximum_signed_correction_component": 4.133326526647857e-16
+    }
+  },
+  "dimensions": {
+    "critical_basis": 9361,
+    "free_coordinates": 6777,
+    "full_relation_rows": 16740,
+    "nonzero_reduced_rows": 13014,
+    "selected_rows": 6777,
+    "top_anchor": 2584
+  },
+  "geometry": {
+    "exact_q_ball": "[-0.0330708552493374890573272008181730887581561109979136043710059533713586772005045661098655044429629366046444742016942087063228679145448490057945835634279468 +/- 4.16e-155] + [0.0314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848 +/- 1.45e-155]j",
+    "lift_sign": -1,
+    "member_diagnostics": {
+      "gamma": "[-19.5607444690885352369652860439611599736247860616036879360791319876034154504552133817906454257945633589764804152602536264947607520241692781959307455949486 +/- 1.41e-152] + [+/- 5.14e-307]j",
+      "maximum_coefficient_absolute_upper": "[483185338332.055389438477074936171078298561459855881289878159367017362124697105537486725054922566382949967662971279662200503243271532390198460506458954132 +/- 7.01e-143]",
+      "maximum_coefficient_radius": "[5.41433848100691486719411058240853049897023654116184479701008196715229531312602861672597512156711242312915989512515983709426919244854876747347343506571118e-121 +/- 3.88e-274]",
+      "maximum_incidence_residual_absolute_upper": "[2.16212605740573512968449548802090899822138537296063986324204225838594007853629558909644986891305986549700820002350993531150233002315548571590733364208251e-117 +/- 2.76e-271]",
+      "minimum_nonzero_coefficient_absolute_lower": "[2096484.26297204294683528230232722747500750491126162655698475605856590994902971658043760056148779579920403167567688040531129143328918521192401942232324885 +/- 3.34e-147]",
+      "mu": "[+/- 2.88e-308] + [1.73205080756887729352744634150587236694280525381038062805580697945193301690880003708114618675724857567562614141540670302996994509499895247881165551209437 +/- 3.65e-153]j",
+      "rho": "[1.53340623701638747752783132528017405939096207471817467896121634860655892150948845842105223370840504683758235971188092569227823421388039446210378760025944 +/- 4.39e-153] + [+/- 1.23e-307]j",
+      "selected_minor_determinant_absolute_lower": "[1.48782114001937893795334713607107759722677975771144298228518616531033498421223135264580299713279858086964711363789133776453953217926350304204785258780968e+165 +/- 1.80e+12]",
+      "selected_minor_rows_zero_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164
+      ]
+    },
+    "parameter": 0.5,
+    "precision_bits": 512,
+    "segment": "edge-2",
+    "selection_seed": 7909
+  },
+  "matrices": {
+    "balanced_derivative_coupling_correction": {
+      "bytes": 761611,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/balanced_derivative_coupling_correction.npz",
+      "sha256": "ec183753ef20b7ddaaf80960e76e2be7cd39b6fdfd6bdf3b3bb9525f3294797d"
+    },
+    "balanced_derivative_coupling_tail": {
+      "bytes": 478308,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/balanced_derivative_coupling_tail.npz",
+      "sha256": "0136e21f819d169060ada5b349287ba3913523052390dfeee5c27eaa90f1cd7a"
+    },
+    "balanced_matrix_correction": {
+      "bytes": 1227765,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/balanced_matrix_correction.npz",
+      "sha256": "a43c8a13980b910eb6c958708a9a65e7454fc08c943dad8aa77788c5a771a353"
+    },
+    "balanced_matrix_tail": {
+      "bytes": 702821,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/balanced_matrix_tail.npz",
+      "sha256": "5a10c42b022d97475ea6a7f41c1ac8f5003e09dc581ab096be00bad07a8b4fe6"
+    },
+    "pivot_from_top_map": {
+      "bytes": 21040,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_from_top_map.npz",
+      "sha256": "a1e17d607a52a6767902f436e27b7b5aa416c970693193892a5e017fc4bb603b"
+    },
+    "pivot_source_map_center": {
+      "bytes": 230896,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_source_map_center.npz",
+      "sha256": "170dbc5f4e4ed85cd24b18f58886efdcbd7ece30c4630e0beab9ae6009b210ec"
+    },
+    "pivot_source_map_correction": {
+      "bytes": 221003,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_source_map_correction.npz",
+      "sha256": "95a3b442c279ccca2e2d7b083dfce61b9e1944e149c6b9c3907b345f12a70c39"
+    },
+    "pivot_source_map_derivative_center": {
+      "bytes": 127454,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_source_map_derivative_center.npz",
+      "sha256": "cce84af6b87c67a5ff965be1dbd7fdaaa4b40633936d2e6a4ccc6c12f19b7ce7"
+    },
+    "pivot_source_map_derivative_correction": {
+      "bytes": 126736,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_source_map_derivative_correction.npz",
+      "sha256": "b2aba4cc4a6358a2cf41dcc5239ae381be601f3cca6d43774edf3f2dfe5a9ee1"
+    },
+    "pivot_source_map_derivative_tail": {
+      "bytes": 92930,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_source_map_derivative_tail.npz",
+      "sha256": "15bb341ec6345e42f1e0860d4de22da9dce282c3b099434b930385e4a318826b"
+    },
+    "pivot_source_map_tail": {
+      "bytes": 152493,
+      "path": "certificates/q79_eta9_cayley_critical_signed_correction_seed7909/pivot_source_map_tail.npz",
+      "sha256": "7a34fb1fff246845e80d66b226de49de4c7f998ee0dbbd8d106560c928dd1e6c"
+    }
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "precision_bits": 512,
+  "representation": {
+    "formula": "exact coefficient in binary64 center + signed binary64 correction + component tail",
+    "purpose": "retain deterministic cancellation discarded by independent first-order coefficient boxes",
+    "tail_semantics": {
+      "matrix_and_coupling": "outward arithmetic remainder after the signed correction",
+      "pivot_source_maps": "outward arithmetic remainder after the signed correction",
+      "pivots": "outward remainder plus genuine upstream top-anchor source width",
+      "rhs_and_derivative_constant": "outward remainder plus genuine upstream top-anchor source width",
+      "top_anchor_map": "the exact integral square-zero Cayley inverse I-N",
+      "toric_jacobian": "outward arithmetic remainder after the signed correction"
+    }
+  },
+  "schema": "mtt.cbf.q79-eta9-cayley-critical-signed-correction.v1",
+  "status": "PORTABLE_SIGNED_DOUBLE_DOUBLE_CHARACTERISTIC_ZERO_SOURCE",
+  "theorem_id": "CBF.T67"
+}

@@ -1,0 +1,383 @@
+{
+  "Neumann_row_bounds": {
+    "bytes": 20792,
+    "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/upstream_replay.packet.Neumann_row_bounds.npy",
+    "sha256": "16254c9795735090e0576bcfa9937a8343bc59c90457c0f6fc93f803da1d7f61"
+  },
+  "canonical_payload_sha256": "761b27fceb3acd7f778c3e7fa88d107332785664a06704d08efdaa7c6e7d3658",
+  "checks": {
+    "no_normal_equation_is_used_by_the_directed_certificate": true,
+    "no_period_beta_C_or_U_eta9_claim_is_made": true,
+    "the_exact_Arb_coefficient_matrix_has_a_strict_Neumann_inverse_certificate": true,
+    "the_normalization_coordinate_is_exactly_one_with_zero_radius": true,
+    "the_normalization_derivative_is_exactly_zero_with_zero_radius": true,
+    "the_same_2583_original_rows_form_a_complete_sparse_minor": true,
+    "the_value_and_derivative_forward_radii_are_finite": true
+  },
+  "elapsed_seconds": 85.24687969998922,
+  "geometry": {
+    "coefficient_ball_precision_bits": 512,
+    "exact_q_ball": "[-0.0330708552493374890573272008181730887581561109979136043710059533713586772005045661098655044429629366046444742016942087063228679145448490057945835634279468 +/- 4.16e-155] + [0.0314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848 +/- 1.45e-155]j",
+    "lift_sign": -1,
+    "member_diagnostics": {
+      "gamma": "[-19.5607444690885352369652860439611599736247860616036879360791319876034154504552133817906454257945633589764804152602536264947607520241692781959307455949486 +/- 1.41e-152] + [+/- 5.14e-307]j",
+      "maximum_coefficient_absolute_upper": "[483185338332.055389438477074936171078298561459855881289878159367017362124697105537486725054922566382949967662971279662200503243271532390198460506458954132 +/- 7.01e-143]",
+      "maximum_coefficient_radius": "[5.41433848100691486719411058240853049897023654116184479701008196715229531312602861672597512156711242312915989512515983709426919244854876747347343506571118e-121 +/- 3.88e-274]",
+      "maximum_incidence_residual_absolute_upper": "[2.16212605740573512968449548802090899822138537296063986324204225838594007853629558909644986891305986549700820002350993531150233002315548571590733364208251e-117 +/- 2.76e-271]",
+      "minimum_nonzero_coefficient_absolute_lower": "[2096484.26297204294683528230232722747500750491126162655698475605856590994902971658043760056148779579920403167567688040531129143328918521192401942232324885 +/- 3.34e-147]",
+      "mu": "[+/- 2.88e-308] + [1.73205080756887729352744634150587236694280525381038062805580697945193301690880003708114618675724857567562614141540670302996994509499895247881165551209437 +/- 3.65e-153]j",
+      "rho": "[1.53340623701638747752783132528017405939096207471817467896121634860655892150948845842105223370840504683758235971188092569227823421388039446210378760025944 +/- 4.39e-153] + [+/- 1.23e-307]j",
+      "selected_minor_determinant_absolute_lower": "[1.48782114001937893795334713607107759722677975771144298228518616531033498421223135264580299713279858086964711363789133776453953217926350304204785258780968e+165 +/- 1.80e+12]",
+      "selected_minor_rows_zero_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164
+      ]
+    },
+    "parameter": 0.5,
+    "segment": "edge-2"
+  },
+  "guardrails": {
+    "Gate1_is_not_recomputed": true,
+    "downstream_Serre_connection_and_compensator_balls_are_not_claimed": true,
+    "finite_field_completion_is_not_used": true,
+    "the_certificate_is_pointwise_not_pathwise": true,
+    "the_projective_trace_scale_is_not_integral_normalization": true
+  },
+  "method": {
+    "exact_matrix": "Arb balls from the exact framed-member coefficients and exact selected path constants",
+    "forward_error": "||(I-R*A)^-1||_inf <= 1/(1-eta), applied separately to value and derivative residuals",
+    "inverse_rows": "binary64 values interpreted as exact dyadics",
+    "norm": "abs(real)+abs(imag), dominating the complex modulus",
+    "roundoff": "outward IEEE-754 operation-count bounds for sparse products, dense-sparse products, sums and diagonal subtraction"
+  },
+  "minor": {
+    "factor_nonzero_entries": 2004201,
+    "inverse_certificate": {
+      "maximum_column_nonzeros": 138,
+      "maximum_diagonal_subtraction_bound": 1.776356839403482e-15,
+      "maximum_exact_coefficient_correction": 1.1842426204094183e-05,
+      "maximum_inverse_component_row_sum": 526864599.60404295,
+      "maximum_midpoint_inverse_residual": 2.51575947281055e-07,
+      "maximum_product_roundoff_bound": 0.00326329866755618,
+      "maximum_total_Neumann_row": 0.003275392669709332,
+      "maximum_total_row_zero_based": 404,
+      "strict_Neumann_margin": 0.9967246073302907
+    },
+    "maximum_coefficient_error_row_sum": 9.783400339322859e-14,
+    "nonzero_entries": 123250,
+    "shape": [
+      2583,
+      2583
+    ]
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "schema": "mtt.preprojection.q79-eta9-framed-member-directed-top-trace-probe.v1",
+  "source_bindings": {
+    "H4_T136_midpoint": {
+      "bytes": 7993,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/framed_member_serre_source_lift_edge_2_midpoint.packet.json",
+      "sha256": "e53f92d5389ddbf89dbbcef8823b689fdbcc28bce0b1d80de0494f336038fa9f"
+    },
+    "H4_T140_midpoint": {
+      "bytes": 13372,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_edge2_direct_operator_derivative_probe.packet.json",
+      "sha256": "f2afafbb105212e1c8ea2290d397958ff588db7f4be20ab0649d3d93b19d4f32"
+    },
+    "K3_source": {
+      "bytes": 25911,
+      "path": "experiments/q79_eta9_b89_relative_adjoint_compiler/q79_eta9_b89_relative_adjoint_worker_input.json",
+      "sha256": "1a10757e81c4d3efb1ce450f26a3370998221313fa5ecdd0db56e769da22e262"
+    },
+    "directed_compiler": {
+      "bytes": 35543,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/probe_framed_member_directed_top_trace.py",
+      "sha256": "7ca9fca72d85d9bb83022be53f4a76afbe5216d9ba02f5cc34bd0ecf8061c8a9"
+    },
+    "minor_packet": {
+      "bytes": 1807,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_top_trace_rank_revealing_minor.packet.json",
+      "sha256": "a2ff9a08818a834f7b7c6f09aaf6564c7d0d081c901aee1861ec52797d4fa4fb"
+    }
+  },
+  "status": "CLOSED_DIRECTED_TOP_TRACE_VALUE_AND_DERIVATIVE_AT_ONE_SELECTED_MIDPOINT",
+  "tier": "CHARACTERISTIC_ZERO_ARB_COEFFICIENT_BALL_AND_DYADIC_NEUMANN_FORWARD_ERROR",
+  "top_trace_derivative": {
+    "center": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/upstream_replay.packet.top_functional_derivative_center.npy",
+      "sha256": "02adfd6ebf0fa0e71e7097baa320cb21823d6455a0d8ffb404df5b5a4b6dfec9"
+    },
+    "equation": "R_selected*f_prime=-R_selected_prime*f; f_prime[1494]=0",
+    "maximum_balanced_coordinate_radius": 1.073727508567602e-11,
+    "maximum_center_delta_from_H4_T140": 8.619703317780393e-08,
+    "maximum_component_radius": 6.74469200173801e-11,
+    "maximum_full_relation_midpoint_residual": 5.107025913275721e-15,
+    "maximum_true_value_uncertainty_rhs_correction": 4.262813693427698e-18,
+    "mixed_precision_refinement": {
+      "final_residual_ball_component_upper": 1.8403271394248368e-96,
+      "final_residual_midpoint": 1.3155368084655852e-96,
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_residual_ball_component_upper": 5.890242098034566e-16,
+          "maximum_residual_midpoint": 5.49233300857629e-16
+        },
+        {
+          "iteration": 1,
+          "maximum_residual_ball_component_upper": 6.562451736915339e-26,
+          "maximum_residual_midpoint": 4.860229782034075e-26
+        },
+        {
+          "iteration": 2,
+          "maximum_residual_ball_component_upper": 9.387262786796626e-35,
+          "maximum_residual_midpoint": 8.76245210200284e-35
+        },
+        {
+          "iteration": 3,
+          "maximum_residual_ball_component_upper": 1.2583526258937006e-43,
+          "maximum_residual_midpoint": 9.81765776548119e-44
+        },
+        {
+          "iteration": 4,
+          "maximum_residual_ball_component_upper": 1.9709327403853632e-52,
+          "maximum_residual_midpoint": 1.5034867625951749e-52
+        },
+        {
+          "iteration": 5,
+          "maximum_residual_ball_component_upper": 2.818284506941509e-61,
+          "maximum_residual_midpoint": 2.2496860024381855e-61
+        },
+        {
+          "iteration": 6,
+          "maximum_residual_ball_component_upper": 3.596394109902572e-70,
+          "maximum_residual_midpoint": 2.859840573387076e-70
+        },
+        {
+          "iteration": 7,
+          "maximum_residual_ball_component_upper": 6.763269973632406e-79,
+          "maximum_residual_midpoint": 5.389603269098812e-79
+        },
+        {
+          "iteration": 8,
+          "maximum_residual_ball_component_upper": 9.344643502199173e-88,
+          "maximum_residual_midpoint": 7.503463805443689e-88
+        },
+        {
+          "iteration": 9,
+          "maximum_residual_ball_component_upper": 1.8403271394248368e-96,
+          "maximum_residual_midpoint": 1.3155368084655852e-96
+        }
+      ],
+      "initial_residual_midpoint": 5.49233300857629e-16,
+      "iterations": 10
+    },
+    "radius": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/upstream_replay.packet.top_functional_derivative_radius.npy",
+      "sha256": "ccfdae850c30f7afdbfc9c26cab9070420459b16c71ec875628cdd49239c052d"
+    }
+  },
+  "top_trace_value": {
+    "center": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/upstream_replay.packet.top_functional_center.npy",
+      "sha256": "f0905b3139b91c4c757b479337134d6ae8bae6681dc2bd291901f4cc09f5ee1e"
+    },
+    "equation": "R_selected[:,non1494]*f_non1494=-R_selected[:,1494]; f[1494]=1",
+    "maximum_balanced_coordinate_radius": 1.216713035240025e-90,
+    "maximum_center_delta_from_H4_T136": 7.0588456885234416e-09,
+    "maximum_component_radius": 2.800631121323723e-17,
+    "maximum_full_relation_midpoint_residual": 2.6888213877640515e-16,
+    "mixed_precision_refinement": {
+      "final_residual_ball_component_upper": 1.6235552850261804e-98,
+      "final_residual_midpoint": 1.3115624380911703e-98,
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_residual_ball_component_upper": 1.3452566865986463e-17,
+          "maximum_residual_midpoint": 1.0583912135904696e-17
+        },
+        {
+          "iteration": 1,
+          "maximum_residual_ball_component_upper": 7.332200909869116e-28,
+          "maximum_residual_midpoint": 5.2830140609926245e-28
+        },
+        {
+          "iteration": 2,
+          "maximum_residual_ball_component_upper": 1.0793744561063294e-36,
+          "maximum_residual_midpoint": 8.407440514919911e-37
+        },
+        {
+          "iteration": 3,
+          "maximum_residual_ball_component_upper": 2.2230046939484898e-45,
+          "maximum_residual_midpoint": 1.5746627342821057e-45
+        },
+        {
+          "iteration": 4,
+          "maximum_residual_ball_component_upper": 2.3447633422720895e-54,
+          "maximum_residual_midpoint": 1.6669870615424113e-54
+        },
+        {
+          "iteration": 5,
+          "maximum_residual_ball_component_upper": 4.468317444662507e-63,
+          "maximum_residual_midpoint": 3.3029915175279056e-63
+        },
+        {
+          "iteration": 6,
+          "maximum_residual_ball_component_upper": 6.851197081777483e-72,
+          "maximum_residual_midpoint": 4.845981955486007e-72
+        },
+        {
+          "iteration": 7,
+          "maximum_residual_ball_component_upper": 7.637149616748022e-81,
+          "maximum_residual_midpoint": 6.59851955840048e-81
+        },
+        {
+          "iteration": 8,
+          "maximum_residual_ball_component_upper": 1.181827645050992e-89,
+          "maximum_residual_midpoint": 8.583439523541391e-90
+        },
+        {
+          "iteration": 9,
+          "maximum_residual_ball_component_upper": 1.6235552850261804e-98,
+          "maximum_residual_midpoint": 1.3115624380911703e-98
+        }
+      ],
+      "initial_residual_midpoint": 1.0583912135904696e-17,
+      "iterations": 10
+    },
+    "radius": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/upstream_replay.packet.top_functional_radius.npy",
+      "sha256": "54e1b1b74384cd3218108764ecac5512da3ca728961b71dc25a8b681c02addd3"
+    }
+  }
+}

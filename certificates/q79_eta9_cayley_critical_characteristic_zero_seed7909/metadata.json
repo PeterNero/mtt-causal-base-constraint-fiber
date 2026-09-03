@@ -1,0 +1,396 @@
+{
+  "arrays": {
+    "column_factor": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/column_factor.npy",
+      "sha256": "f2c44f935cea2b53084f9db12aefff5b986aa7b922d5d526c6775fb144977a94"
+    },
+    "derivative_constant_center": {
+      "bytes": 108560,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/derivative_constant_center.npy",
+      "sha256": "c804b0a28e1d4109fd616ecf199841a8cb30a1fc39358da5ca7c1af8bb4559ba"
+    },
+    "derivative_constant_error": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/derivative_constant_error.npy",
+      "sha256": "7bfd3d137c5fa4bd747762d7f6cdaa871b08e8c267c162a2887cf77661a05423"
+    },
+    "embedding_pivots": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/embedding_pivots.npy",
+      "sha256": "4d0b5bb92f869b3b40b9217d300f07f12ec2070cb105535182c31bd33cdd747e"
+    },
+    "free_columns": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/free_columns.npy",
+      "sha256": "62135cffdfb67aa598908f578c053beeef033fdc1645398694825188216feb94"
+    },
+    "jacobian_center": {
+      "bytes": 149904,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/jacobian_center.npy",
+      "sha256": "5ac105fef356395297bd6eb1671d98de684db23282a004774793db9d4325d43c"
+    },
+    "jacobian_derivative_center": {
+      "bytes": 149904,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/jacobian_derivative_center.npy",
+      "sha256": "e870f953a57d1f1ef6b7217e148f7960ddab80020478a5e72e2fe68d4bcac1c0"
+    },
+    "jacobian_derivative_error": {
+      "bytes": 75016,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/jacobian_derivative_error.npy",
+      "sha256": "fb9197f800b352416ec62a105cde05b65c558c119cfe91abe2c4d6e429ff94b6"
+    },
+    "jacobian_error": {
+      "bytes": 75016,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/jacobian_error.npy",
+      "sha256": "cf2f5cef6acb9550ab68f9bd2c61a88ae13a2e830bcf7dd897ca44b081f8e199"
+    },
+    "pivot_derivative_center": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/pivot_derivative_center.npy",
+      "sha256": "cb0eb17573292ebe200836f2d738eddae7bbb3ade820a0d8f745fa2639e2dbe4"
+    },
+    "pivot_derivative_radius": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/pivot_derivative_radius.npy",
+      "sha256": "2e534a9c33b06dd7f392462722a5becb91532a0f1fa0a2ee42ac7885f40c38bf"
+    },
+    "pivot_value_center": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/pivot_value_center.npy",
+      "sha256": "d095211b4f78f5aabb507f885aa937adbcce42842e73f1d43d5d1c58447cc9cb"
+    },
+    "pivot_value_radius": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/pivot_value_radius.npy",
+      "sha256": "2f939d1637896b13823d7403f4d3a8e0b2c6052d47879e7e907e65ab29574681"
+    },
+    "row_factor": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/row_factor.npy",
+      "sha256": "40128032464b4898658b745691bc9af0424e525d1f3cb564e7fbf6e9edc724f6"
+    },
+    "selected_rows": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/selected_rows.npy",
+      "sha256": "af0519e57da97f20c7119e108ed42b036ea4dfee5f67cf8ea671e3800c4bcae5"
+    },
+    "value_rhs_center": {
+      "bytes": 108560,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/value_rhs_center.npy",
+      "sha256": "6c26e8092c71770581439d14a3bb46983526bd4d50af431be437c60bd3199fc0"
+    },
+    "value_rhs_error": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/value_rhs_error.npy",
+      "sha256": "96e507584a44af300c9ba75a0a4fb777bb4c18767f95dbf5347198123ded26a8"
+    }
+  },
+  "binary_cancellation_audit": {
+    "discarded_nondivisible_derivative_relative_maximum": 9.639785195912488e-19,
+    "discarded_nondivisible_value_relative_maximum": 1.6641705761498992e-17
+  },
+  "canonical_payload_sha256": "101a2da670ab99cb2d357be520c0a1656329f9d7fcad1582a01f0f27fe8ab583",
+  "checks": {
+    "all_characteristic_zero_coefficient_errors_are_finite": true,
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "the_exact_top_embedding_is_square_zero_unipotent": true,
+    "the_selected_system_has_6777_rows_and_columns": true,
+    "the_toric_Jacobian_and_derivative_are_enclosed": true,
+    "the_value_and_derivative_anchor_errors_are_finite": true
+  },
+  "coefficient_error_summary": {
+    "balanced_matrix_maximum_entry": 1.5725833168507192e-15,
+    "balanced_matrix_maximum_row_sum": 6.427260442875076e-14,
+    "derivative_constant_maximum_error": 2.2525154769378317e-09,
+    "full_derivative_relation_maximum_entry": 1.2597936646700667e-14,
+    "full_relation_maximum_entry": 7.63823628891875e-15,
+    "jacobian_derivative_maximum_error": 1.5267554485237665e-06,
+    "jacobian_maximum_error": 0.00011932308402837963,
+    "value_rhs_maximum_error": 1.091415408198383e-15
+  },
+  "dimensions": {
+    "critical_basis": 9361,
+    "free_coordinates": 6777,
+    "full_relation_rows": 16740,
+    "nonzero_reduced_rows": 13014,
+    "selected_rows": 6777,
+    "top_anchor": 2584
+  },
+  "elapsed_seconds": 173.2577578999335,
+  "exact_cancellation_audit": {
+    "discarded_nondivisible_derivative_absolute_upper": "[2.72423266022190801522513237014313372954112780664939659508726006826265057731891885299043006043887315378864198909984637243799274908057656454878089883908146e-125 +/- 3.31e-278]",
+    "discarded_nondivisible_value_absolute_upper": "[1.04080636104985024823933389589569854259899273252883843967953265090107031840918824548478223042649246780460753079648646716781469951543587683101701049385684e-124 +/- 1.22e-277]"
+  },
+  "exact_polynomials": {
+    "toric_Jacobian": {
+      "bytes": 6460452,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/toric_jacobian_exact_balls.json",
+      "sha256": "aca52a9768c0d78538d48ef56b548b79c309de57990e324b5877fb12fe07055a"
+    }
+  },
+  "geometry": {
+    "exact_q_ball": "[-0.0330708552493374890573272008181730887581561109979136043710059533713586772005045661098655044429629366046444742016942087063228679145448490057945835634279468 +/- 4.16e-155] + [0.0314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848 +/- 1.45e-155]j",
+    "lift_sign": -1,
+    "member_diagnostics": {
+      "gamma": "[-19.5607444690885352369652860439611599736247860616036879360791319876034154504552133817906454257945633589764804152602536264947607520241692781959307455949486 +/- 1.41e-152] + [+/- 5.14e-307]j",
+      "maximum_coefficient_absolute_upper": "[483185338332.055389438477074936171078298561459855881289878159367017362124697105537486725054922566382949967662971279662200503243271532390198460506458954132 +/- 7.01e-143]",
+      "maximum_coefficient_radius": "[5.41433848100691486719411058240853049897023654116184479701008196715229531312602861672597512156711242312915989512515983709426919244854876747347343506571118e-121 +/- 3.88e-274]",
+      "maximum_incidence_residual_absolute_upper": "[2.16212605740573512968449548802090899822138537296063986324204225838594007853629558909644986891305986549700820002350993531150233002315548571590733364208251e-117 +/- 2.76e-271]",
+      "minimum_nonzero_coefficient_absolute_lower": "[2096484.26297204294683528230232722747500750491126162655698475605856590994902971658043760056148779579920403167567688040531129143328918521192401942232324885 +/- 3.34e-147]",
+      "mu": "[+/- 2.88e-308] + [1.73205080756887729352744634150587236694280525381038062805580697945193301690880003708114618675724857567562614141540670302996994509499895247881165551209437 +/- 3.65e-153]j",
+      "rho": "[1.53340623701638747752783132528017405939096207471817467896121634860655892150948845842105223370840504683758235971188092569227823421388039446210378760025944 +/- 4.39e-153] + [+/- 1.23e-307]j",
+      "selected_minor_determinant_absolute_lower": "[1.48782114001937893795334713607107759722677975771144298228518616531033498421223135264580299713279858086964711363789133776453953217926350304204785258780968e+165 +/- 1.80e+12]",
+      "selected_minor_rows_zero_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164
+      ]
+    },
+    "parameter": 0.5,
+    "precision_bits": 512,
+    "segment": "edge-2",
+    "selection_seed": 7909
+  },
+  "matrices": {
+    "balanced_derivative_coupling_center": {
+      "bytes": 748251,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/balanced_derivative_coupling_center.npz",
+      "sha256": "653e292361854c27b21b3efbc2f227c68ce0b54321529f03bee64ba81777aba0"
+    },
+    "balanced_derivative_coupling_error": {
+      "bytes": 470876,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/balanced_derivative_coupling_error.npz",
+      "sha256": "47bc6af4837a849bb8d23cd130b1b288ffb19bc7c82883636e02528d29a2ba4c"
+    },
+    "balanced_matrix_center": {
+      "bytes": 1216891,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/balanced_matrix_center.npz",
+      "sha256": "4fa111d50032a40d7711b0395afebd59e8fc4b4416bc9f6ff38535fe47920f04"
+    },
+    "balanced_matrix_error": {
+      "bytes": 788046,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/balanced_matrix_error.npz",
+      "sha256": "d912458cf9927d84fa5cd2e85b11eec0b36fd8693485e4b4ea8d6ddcbc657f9d"
+    },
+    "full_relation_center": {
+      "bytes": 1002365,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/full_relation_center.npz",
+      "sha256": "da9911511789d3bbf970bc90985c65ffb2e73f7776bcc5002c121241c2206839"
+    },
+    "full_relation_derivative_center": {
+      "bytes": 649049,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/full_relation_derivative_center.npz",
+      "sha256": "b19f0a82411bd9cf8c30924711f971938325da5123b01d29aec7fed1e9ee726f"
+    },
+    "full_relation_derivative_error": {
+      "bytes": 545553,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/full_relation_derivative_error.npz",
+      "sha256": "b03f047285ebca01df47d69a8a1dc917ced6e0d3ba96d0fa3b316bf113ea3d9c"
+    },
+    "full_relation_error": {
+      "bytes": 925057,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/full_relation_error.npz",
+      "sha256": "548118422bff915ec39316779db48f302917deba1a8ae6ea1071220670c8f071"
+    }
+  },
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "representation": {
+    "center": "binary64 coefficient used by the existing complex scout",
+    "error": "outward float upper bound enclosing the 512-bit Arb coefficient around that center",
+    "norm": "abs(real)+abs(imag)",
+    "worker_contract": "replace each complex midpoint z and component error e by [Re(z)+/-e]+i[Im(z)+/-e]"
+  },
+  "schema": "mtt.cbf.q79-eta9-cayley-critical-characteristic-zero-input.v1",
+  "source_bindings": {
+    "H4_T141_contract": {
+      "bytes": 19450,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_directed_top_trace_contract.packet.json",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "3916b006d857122fdb3c69cb1f1f05bab2baf82bad9474018216178b708d570f"
+    },
+    "H4_T141_derivative_center": {
+      "bytes": 41472,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_edge2_directed_top_trace_probe.packet.top_functional_derivative_center.npy",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "02adfd6ebf0fa0e71e7097baa320cb21823d6455a0d8ffb404df5b5a4b6dfec9"
+    },
+    "H4_T141_derivative_radius": {
+      "bytes": 20800,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_edge2_directed_top_trace_probe.packet.top_functional_derivative_radius.npy",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "ccfdae850c30f7afdbfc9c26cab9070420459b16c71ec875628cdd49239c052d"
+    },
+    "H4_T141_value_center": {
+      "bytes": 41472,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_edge2_directed_top_trace_probe.packet.top_functional_center.npy",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "f0905b3139b91c4c757b479337134d6ae8bae6681dc2bd291901f4cc09f5ee1e"
+    },
+    "H4_T141_value_radius": {
+      "bytes": 20800,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_edge2_directed_top_trace_probe.packet.top_functional_radius.npy",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "54e1b1b74384cd3218108764ecac5512da3ca728961b71dc25a8b681c02addd3"
+    },
+    "T65_packet": {
+      "bytes": 15927,
+      "path": "q79_eta9_directed_cayley_serre_scale.packet.json",
+      "sha256": "c6db5506a469a667f3c08ba467d507d9b294e1ead909a5be8f88b549067c2671"
+    },
+    "T65_selected_rows": {
+      "bytes": 54344,
+      "path": "certificates/q79_eta9_cayley_critical_refinement_seed7909/selected_original_rows.npy",
+      "sha256": "af0519e57da97f20c7119e108ed42b036ea4dfee5f67cf8ea671e3800c4bcae5"
+    },
+    "exact_ball_compiler": {
+      "bytes": 35543,
+      "path": "experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/probe_framed_member_directed_top_trace.py",
+      "repository": "mtt-preprojection-repair-calculus",
+      "sha256": "7ca9fca72d85d9bb83022be53f4a76afbe5216d9ba02f5cc34bd0ecf8061c8a9"
+    },
+    "preparer": {
+      "bytes": 34617,
+      "path": "prepare_q79_eta9_cayley_critical_characteristic_zero_input.py",
+      "sha256": "33c8ffea2baba320b1b118f55e3cdd0f3349ce29c6de2a58a370ec0146726bf8"
+    }
+  },
+  "status": "PORTABLE_CHARACTERISTIC_ZERO_COMPONENT_BALL_INPUT",
+  "theorem_id": "CBF.T66",
+  "top_embedding": {
+    "inverse_formula": "(I+N)^-1=I-N because N^2=0",
+    "nilpotence_index": 2,
+    "off_diagonal_nonzeros": 4356,
+    "shape": [
+      2584,
+      2584
+    ]
+  }
+}

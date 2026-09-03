@@ -1,0 +1,93 @@
+{
+  "all_checks_pass": true,
+  "arrays": {
+    "derivative_center": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/derivative_center.npy",
+      "sha256": "02adfd6ebf0fa0e71e7097baa320cb21823d6455a0d8ffb404df5b5a4b6dfec9"
+    },
+    "derivative_correction": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/derivative_correction.npy",
+      "sha256": "386f63387623957f288a3a4b7b5c8aa2ac7123e3eb903d9d371041991d8a8587"
+    },
+    "derivative_tail": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/derivative_tail.npy",
+      "sha256": "8caedc6bbd269e7bd168ede1b3b7b1de6683d0958231d404c45d6ced3ff7a4ae"
+    },
+    "value_center": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/value_center.npy",
+      "sha256": "f0905b3139b91c4c757b479337134d6ae8bae6681dc2bd291901f4cc09f5ee1e"
+    },
+    "value_correction": {
+      "bytes": 41472,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/value_correction.npy",
+      "sha256": "be3642472a97ef5771f4753934cb4e2e83dfc9767ae9ed04edd3cb1324c40d22"
+    },
+    "value_tail": {
+      "bytes": 20800,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/value_tail.npy",
+      "sha256": "960f29e8f6d8bbb7b046100305c686f7074123aaa100c3051225ddd406bc7c1b"
+    }
+  },
+  "canonical_payload_sha256": "95050597288a2bbee018c42f805cf5e33d962ec7d03cb993b217ed1f1dee4b25",
+  "checks": {
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "the_balanced_to_top_column_scale_is_replayed_in_Arb": true,
+    "the_derivative_feedback_uses_the_promoted_value_tail": true,
+    "the_derivative_tail_retains_the_genuine_forward_uncertainty": true,
+    "the_original_H4_T141_runner_passes_unchanged": true,
+    "the_value_conversion_width_is_replaced_by_a_signed_correction": true
+  },
+  "diagnostics": {
+    "column_scale_replay_absolute_upper": 0.0,
+    "derivative": {
+      "maximum_genuine_forward_tail_component": 1.4569349162736243e-24,
+      "maximum_signed_correction_component": 5.093345367093502e-16
+    },
+    "old_value_tail_feedback_maximum": 4.262813693427698e-18,
+    "promoted_derivative_balanced_radius": 2.220958444440708e-25,
+    "promoted_value_tail_feedback_maximum": 4.2016182812340795e-34,
+    "promoted_value_tail_ratio": 9.856443615427132e-17,
+    "upstream_derivative_balanced_radius": 1.073727508567602e-11,
+    "upstream_value_balanced_radius": 1.216713035240025e-90,
+    "value": {
+      "maximum_genuine_forward_tail_component": 1.617226186017182e-33,
+      "maximum_signed_correction_component": 2.800631121323722e-17
+    }
+  },
+  "normalization_column_zero_based": 1494,
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "precision_bits": 512,
+  "representation": {
+    "derivative_tail_retains_the_certified_forward_error": true,
+    "formula": "Arb center = binary64 center + signed binary64 correction + genuine component tail",
+    "value_tail_excludes_binary64_center_conversion": true
+  },
+  "schema": "mtt.cbf.q79-eta9-cayley-top-signed-source.v1",
+  "source_bindings": {
+    "upstream_contract": {
+      "bytes": 19450,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/outputs/q79_eta9_framed_member_directed_top_trace_contract.packet.json",
+      "sha256": "3916b006d857122fdb3c69cb1f1f05bab2baf82bad9474018216178b708d570f"
+    },
+    "upstream_replay": {
+      "bytes": 14155,
+      "path": "certificates/q79_eta9_cayley_top_signed_source_seed7909/upstream_replay.packet.json",
+      "sha256": "336556b2502aff7ac1609b1629d50c2e8cf04ccff84af601709c95d03af650f2"
+    },
+    "upstream_runner": {
+      "bytes": 35543,
+      "path": "mtt-preprojection-repair-calculus/experiments/q79_eta9_bht_fiber_evaluation_and_handle_sweep/probe_framed_member_directed_top_trace.py",
+      "sha256": "7ca9fca72d85d9bb83022be53f4a76afbe5216d9ba02f5cc34bd0ecf8061c8a9"
+    }
+  },
+  "status": "PORTABLE_SIGNED_ARB_TOP_SOURCE",
+  "theorem_id": "CBF.T67.TOP"
+}

@@ -1,0 +1,389 @@
+{
+  "Neumann_row_bounds": {
+    "bytes": 54344,
+    "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.Neumann_row_bounds.npy",
+    "sha256": "e3ca4809001b9688bd0bfb8e60d07b795cbd1990e85d30143bb60d1a4978a0f4"
+  },
+  "all_checks_pass": false,
+  "all_row_audit": {
+    "derivative": {
+      "all_rows_enclose_zero": true,
+      "maximum_enclosure_radius_component": 4080007662.324733,
+      "maximum_midpoint_residual_component": 1.5521361973469542e-11,
+      "maximum_midpoint_to_radius_ratio": 4.64436474201387e-06,
+      "rows": 16740,
+      "rows_enclosing_zero": 16740
+    },
+    "value": {
+      "all_rows_enclose_zero": true,
+      "maximum_enclosure_radius_component": 7.035026502489442,
+      "maximum_midpoint_residual_component": 1.4779288903810086e-12,
+      "maximum_midpoint_to_radius_ratio": 0.00042029081761313245,
+      "rows": 16740,
+      "rows_enclosing_zero": 16740
+    }
+  },
+  "arrays": {
+    "Neumann_row_bounds": {
+      "bytes": 54344,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.Neumann_row_bounds.npy",
+      "sha256": "e3ca4809001b9688bd0bfb8e60d07b795cbd1990e85d30143bb60d1a4978a0f4"
+    },
+    "coarse_Neumann_row_bounds": {
+      "bytes": 54344,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.coarse_Neumann_row_bounds.npy",
+      "sha256": "dccee8ca4a3784b1b04e84b1e43c0b1206020f779079035fb1baf2d36db5b61c"
+    },
+    "critical_functional_center": {
+      "bytes": 149904,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.critical_functional_center.npy",
+      "sha256": "5c23783dad76458f909e31cc9d36af2d284ac510a19a5291cbaf28e2ecb6ef71"
+    },
+    "critical_functional_derivative_center": {
+      "bytes": 149904,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.critical_functional_derivative_center.npy",
+      "sha256": "9b6debf690c62281e298a78168ada32b16c758c10e85d71840639720d2913dcb"
+    },
+    "critical_functional_derivative_radius": {
+      "bytes": 75016,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.critical_functional_derivative_radius.npy",
+      "sha256": "7d663cc3d103902a81cdb6fc6d6a7f4efc90ba7b5591f4e6e8831f183811b965"
+    },
+    "critical_functional_radius": {
+      "bytes": 75016,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.critical_functional_radius.npy",
+      "sha256": "aaab836a289d75bdc75d1626d8c1514ebb063f902207cc282abbd9c1f592809c"
+    },
+    "targeted_coefficient_correction_bounds": {
+      "bytes": 416,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_coefficient_correction_bounds.npy",
+      "sha256": "1502153da75458122bbd617ba6b7f95d81268621926808367fc533cc37a495b1"
+    },
+    "targeted_inverse_rows": {
+      "bytes": 3903680,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_inverse_rows.npy",
+      "sha256": "066dfb2ad50b0e0c7357011f78c30f9d3e43ba2c3e7cb0312542a3e37b03bb40"
+    },
+    "targeted_midpoint_residual_bounds": {
+      "bytes": 416,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_midpoint_residual_bounds.npy",
+      "sha256": "7638e2ce59c3d2928e7b94ad422affb29b16578fb0022b3b33bf85dd979bc9cc"
+    },
+    "targeted_row_indices": {
+      "bytes": 416,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_row_indices.npy",
+      "sha256": "f4b5c9b851cf5e980a51c670721d7d1cd6832b08548a09b2371a443016f17704"
+    },
+    "targeted_total_bounds": {
+      "bytes": 416,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_total_bounds.npy",
+      "sha256": "984ee9e7f5986ef44af13d6ab5e9b4683b5516bd9b1b956a74b0dfd50ec8d78e"
+    }
+  },
+  "canonical_Serre_scale": {
+    "derivative_ball": null,
+    "formula": "s_C=585/(2D), s_C'=-(585/2)D'/D^2",
+    "value_ball": null
+  },
+  "canonical_payload_sha256": "3527def885e8530e0416b399d294dc706754a5214b138e6afe33a30dd7f4ad79",
+  "checks": {
+    "all_16740_derivative_relation_rows_enclose_zero": true,
+    "all_16740_value_relation_rows_enclose_zero": true,
+    "no_observed_value_or_fit_parameter_is_used": true,
+    "the_binary_midpoint_matrix_has_a_complete_sparse_LU": true,
+    "the_characteristic_zero_coefficient_errors_are_nonnegative": true,
+    "the_exact_characteristic_zero_matrix_has_a_strict_Neumann_inverse": true,
+    "the_scale_and_derivative_balls_are_emitted": false,
+    "the_toric_Jacobian_denominator_ball_excludes_zero": false
+  },
+  "derivative_solution": {
+    "maximum_balanced_coordinate_forward_radius": 9036125.361868264,
+    "maximum_critical_coordinate_radius": 37995270.56250001,
+    "mixed_refinement": {
+      "final_residual_ball_component_upper": 9.057328441031133e-05,
+      "final_residual_midpoint": 4.679816110065814e-95,
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_residual_ball_component_upper": 9.057328447614124e-05,
+          "maximum_residual_midpoint": 8.972448727606075e-14
+        },
+        {
+          "iteration": 1,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 1.56860297454319e-21
+        },
+        {
+          "iteration": 2,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 4.898698810173872e-27
+        },
+        {
+          "iteration": 3,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 1.1546901230996246e-32
+        },
+        {
+          "iteration": 4,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 1.9759999923641164e-38
+        },
+        {
+          "iteration": 5,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 4.627692420090575e-44
+        },
+        {
+          "iteration": 6,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 1.310970192528216e-49
+        },
+        {
+          "iteration": 7,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 2.363564587309793e-55
+        },
+        {
+          "iteration": 8,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 4.620250006419216e-61
+        },
+        {
+          "iteration": 9,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 9.571315005887777e-67
+        },
+        {
+          "iteration": 10,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 1.8907309748195426e-72
+        },
+        {
+          "iteration": 11,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 4.317454838114313e-78
+        },
+        {
+          "iteration": 12,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 1.4911966248557473e-83
+        },
+        {
+          "iteration": 13,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 2.405608160402186e-89
+        },
+        {
+          "iteration": 14,
+          "maximum_residual_ball_component_upper": 9.057328441031133e-05,
+          "maximum_residual_midpoint": 4.679816110065814e-95
+        }
+      ],
+      "iterations": 15
+    }
+  },
+  "downstream_replay": {
+    "method": "recomputed from stored certified functional balls using outward sparse sums and exact 512-bit toric-Jacobian coefficient balls",
+    "runner_sha256": "65739367e59184a6f880b493ffc357970b2ba5629a6d931c582c5d8978661f84"
+  },
+  "elapsed_seconds": 539.4412057000009,
+  "factor": {
+    "L_nonzeros": 3705412,
+    "U_nonzeros": 5378715,
+    "seconds": 15.432199499991839
+  },
+  "guardrails": {
+    "an_interval_containing_zero_is_inverted": false,
+    "beta_C_or_the_248_row_period_readout_is_claimed": false,
+    "one_midpoint_is_called_a_pathwise_certificate": false,
+    "the_pointwise_B89_method_member_is_called_physically_selected": false
+  },
+  "input": {
+    "bytes": 16161,
+    "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/metadata.json",
+    "sha256": "596e45d40429eae241e9f43fef00442cbfe8eb11bf3e9267281860a554e0c093"
+  },
+  "inverse_certificate": {
+    "maximum_coarse_Neumann_row": 36.24959375711889,
+    "maximum_coarse_row_zero_based": 3288,
+    "maximum_column_nonzeros": 131,
+    "maximum_diagonal_subtraction_bound": 1.7763569188095897e-15,
+    "maximum_exact_coefficient_correction": 0.10670754291112086,
+    "maximum_inverse_component_row_sum": 4318871552241.037,
+    "maximum_midpoint_inverse_residual": 0.0033064297385912824,
+    "maximum_product_roundoff_bound": 36.13957978446916,
+    "maximum_targeted_Arb_coefficient_correction": 0.10670754291104054,
+    "maximum_targeted_Arb_midpoint_residual": 0.0023754681886796196,
+    "maximum_targeted_Arb_total": 0.10908301109972016,
+    "maximum_total_Neumann_row": 0.484076176568743,
+    "maximum_total_row_zero_based": 594,
+    "strict_Neumann_margin": 0.515923823431257,
+    "targeted_Arb_row_count": 36
+  },
+  "next": "Inspect the failed downstream interval check; retain the strict inverse certificate and improve only the responsible enclosure.",
+  "parameter_ledger": {
+    "new_continuous_fit_parameters": 0,
+    "new_discrete_fit_parameters": 0,
+    "observed_values_used": 0
+  },
+  "precision_bits": 512,
+  "schema": "mtt.cbf.q79-eta9-cayley-critical-characteristic-zero-neumann.v1",
+  "status": "CHARACTERISTIC_ZERO_INVERSE_CERTIFIED_DOWNSTREAM_INTERVAL_EXIT_OPEN",
+  "targeted_high_precision_refinement": {
+    "arithmetic": "512-bit Arb over exact binary64 dyadic midpoints",
+    "coarse_Neumann_row_bounds": {
+      "bytes": 54344,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.coarse_Neumann_row_bounds.npy",
+      "sha256": "dccee8ca4a3784b1b04e84b1e43c0b1206020f779079035fb1baf2d36db5b61c"
+    },
+    "coefficient_correction_bounds": {
+      "bytes": 416,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_coefficient_correction_bounds.npy",
+      "sha256": "1502153da75458122bbd617ba6b7f95d81268621926808367fc533cc37a495b1"
+    },
+    "inverse_rows": {
+      "bytes": 3903680,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_inverse_rows.npy",
+      "sha256": "066dfb2ad50b0e0c7357011f78c30f9d3e43ba2c3e7cb0312542a3e37b03bb40"
+    },
+    "midpoint_residual_bounds": {
+      "bytes": 416,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_midpoint_residual_bounds.npy",
+      "sha256": "7638e2ce59c3d2928e7b94ad422affb29b16578fb0022b3b33bf85dd979bc9cc"
+    },
+    "row_indices": {
+      "bytes": 416,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_row_indices.npy",
+      "sha256": "f4b5c9b851cf5e980a51c670721d7d1cd6832b08548a09b2371a443016f17704"
+    },
+    "selection_rule": "coarse_Neumann_row_bound >= 1",
+    "total_bounds": {
+      "bytes": 416,
+      "path": "q79_eta9_cayley_critical_characteristic_zero_neumann.packet.targeted_total_bounds.npy",
+      "sha256": "984ee9e7f5986ef44af13d6ab5e9b4683b5516bd9b1b956a74b0dfd50ec8d78e"
+    }
+  },
+  "theorem_id": "CBF.T66",
+  "tier": "CHARACTERISTIC_ZERO_COMPONENT_BALL_PLUS_DYADIC_NEUMANN_FORWARD_ERROR",
+  "toric_Jacobian": {
+    "denominator_ball": "[+/- 2.03e+6] + [+/- 2.03e+6]j",
+    "denominator_diagnostics": {
+      "absolute_lower": 0.0,
+      "absolute_upper": 2861369.481401546,
+      "component_radius_upper": 4046587.5273437505,
+      "midpoint_imaginary": 0.00017960927693929334,
+      "midpoint_real": 3.517648617018166e-05
+    },
+    "derivative_ball": "[+/- 1.16e+15] + [+/- 1.16e+15]j",
+    "derivative_term_count": 9299,
+    "derivative_terms": {
+      "J_derivative_times_functional": {
+        "absolute_lower": 0.0,
+        "absolute_upper": 29420.96847462883,
+        "component_radius_upper": 41607.53256225587,
+        "midpoint_imaginary": -5.067637814858874e-07,
+        "midpoint_real": 7.220873855755176e-05
+      },
+      "J_times_functional_derivative": {
+        "absolute_lower": 0.0,
+        "absolute_upper": 1639398398189620.0,
+        "component_radius_upper": 2318459448852480.5,
+        "midpoint_imaginary": 0.0008768951401017394,
+        "midpoint_real": -0.000784599421678451
+      }
+    },
+    "exact_ball_source": {
+      "bytes": 6460452,
+      "path": "certificates/q79_eta9_cayley_critical_characteristic_zero_seed7909/toric_jacobian_exact_balls.json",
+      "sha256": "aca52a9768c0d78538d48ef56b548b79c309de57990e324b5877fb12fe07055a"
+    },
+    "excludes_zero": false,
+    "value_term_count": 9299
+  },
+  "value_solution": {
+    "maximum_balanced_coordinate_forward_radius": 0.015801739474100854,
+    "maximum_critical_coordinate_radius": 0.06644345261158377,
+    "mixed_refinement": {
+      "final_residual_ball_component_upper": 9.214704482985632e-13,
+      "final_residual_midpoint": 2.2729848078035945e-94,
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_residual_ball_component_upper": 9.331269011126723e-13,
+          "maximum_residual_midpoint": 8.265307569533589e-15
+        },
+        {
+          "iteration": 1,
+          "maximum_residual_ball_component_upper": 9.214704498494089e-13,
+          "maximum_residual_midpoint": 7.759812634491507e-21
+        },
+        {
+          "iteration": 2,
+          "maximum_residual_ball_component_upper": 9.214704482985656e-13,
+          "maximum_residual_midpoint": 1.811648168087304e-26
+        },
+        {
+          "iteration": 3,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 4.755988525180679e-32
+        },
+        {
+          "iteration": 4,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 1.1132780907153062e-37
+        },
+        {
+          "iteration": 5,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 2.384834677394623e-43
+        },
+        {
+          "iteration": 6,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 3.832590603149664e-49
+        },
+        {
+          "iteration": 7,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 8.845997197015501e-55
+        },
+        {
+          "iteration": 8,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 1.7426452478620146e-60
+        },
+        {
+          "iteration": 9,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 4.7076588835025293e-66
+        },
+        {
+          "iteration": 10,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 8.527481807943073e-72
+        },
+        {
+          "iteration": 11,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 1.8544741255623096e-77
+        },
+        {
+          "iteration": 12,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 3.9059939151082446e-83
+        },
+        {
+          "iteration": 13,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 1.1132495627242123e-88
+        },
+        {
+          "iteration": 14,
+          "maximum_residual_ball_component_upper": 9.214704482985632e-13,
+          "maximum_residual_midpoint": 2.2729848078035945e-94
+        }
+      ],
+      "iterations": 15
+    }
+  }
+}

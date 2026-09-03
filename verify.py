@@ -137,6 +137,8 @@ def main() -> None:
     run(sys.executable, "build_q79_eta9_cayley_serre_trace_normalization.py")
     run(sys.executable, "verify_q79_eta9_cayley_serre_trace_normalization.py")
     run(sys.executable, "verify_q79_eta9_directed_cayley_serre_scale.py")
+    run(sys.executable, "verify_q79_eta9_cayley_critical_characteristic_zero_neumann.py")
+    run(sys.executable, "verify_q79_eta9_cayley_critical_correlated_readout.py")
     run(sys.executable, "verify_q79_b89_accelerated_source_isotopy.py")
     run(sys.executable, "verify_q79_b89_source_isotopy_frontier_freeze.py")
     run(sys.executable, "build_q79_b89_downstream_promotion_readiness.py")
